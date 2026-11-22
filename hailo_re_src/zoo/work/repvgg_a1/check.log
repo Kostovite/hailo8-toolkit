@@ -1,0 +1,4 @@
+UNSUPPORTED repvgg_a1/avgpool1 (avgpool): NotImplementedError: repvgg_a1/avgpool1: avgpool
+UNSUPPORTED repvgg_a1/fc1 (dense): NotImplementedError: repvgg_a1/fc1: dense
+24/26 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '22/22', 'avgpool': '0/1', 'dense': '0/1'}

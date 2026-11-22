@@ -1,0 +1,43 @@
+[36m<Hailo Model Zoo INFO> Start run for network vit_tiny_bn ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to vit_tiny_bn from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.36)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  25%|██▌       | 16/64 [01:30<04:32,  5.67s/entries]Calibration:  50%|█████     | 32/64 [01:31<01:16,  2.38s/entries]Calibration:  75%|███████▌  | 48/64 [01:33<00:21,  1.33s/entries]Calibration: 100%|██████████| 64/64 [01:34<00:00,  1.20entries/s]Calibration: 100%|██████████| 64/64 [01:34<00:00,  1.20entries/s]Calibration: 100%|██████████| 64/64 [01:34<00:00,  1.48s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:36.77)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.37)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer vit_tiny_bn/conv1/conv_op, using max shift instead. delta=0.9025
+[info] No shifts available for layer vit_tiny_bn/conv1/conv_op, using max shift instead. delta=0.4512
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax1/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax2/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax3/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax4/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax5/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax6/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax7/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax8/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax9/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax10/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax11/act_op
+[info] activation fitting started for vit_tiny_bn/reduce_sum_softmax12/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/vit_tiny_bn/vit_tiny_bn.har

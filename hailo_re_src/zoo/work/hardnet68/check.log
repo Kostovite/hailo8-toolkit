@@ -1,0 +1,4 @@
+UNSUPPORTED hardnet68/avgpool1 (avgpool): NotImplementedError: hardnet68/avgpool1: avgpool
+UNSUPPORTED hardnet68/fc1 (dense): NotImplementedError: hardnet68/fc1: dense
+108/110 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '67/67', 'maxpool': '4/4', 'concat': '35/35', 'avgpool': '0/1', 'dense': '0/1'}

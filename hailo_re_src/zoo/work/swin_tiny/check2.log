@@ -1,0 +1,46 @@
+MISMATCH swin_tiny/input_layer1 (input_layer): 147401/150528 max 15
+MISMATCH swin_tiny/format_conversion3 (format_conversion): 200898/301056 max 147
+UNSUPPORTED swin_tiny/matmul1 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul2 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [3, 49] but got:  | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion4 (format_conversion): 234282/301056 max 174
+MISMATCH swin_tiny/format_conversion7 (format_conversion): 248860/301056 max 114
+UNSUPPORTED swin_tiny/matmul3 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul4 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [3, 49] but got:  | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion8 (format_conversion): 248451/301056 max 108
+MISMATCH swin_tiny/format_conversion13 (format_conversion): 123886/150528 max 150
+UNSUPPORTED swin_tiny/matmul5 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul6 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [6, 49] but got:  | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion14 (format_conversion): 126149/150528 max 150
+MISMATCH swin_tiny/format_conversion17 (format_conversion): 123386/150528 max 133
+UNSUPPORTED swin_tiny/matmul7 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul8 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [6, 49] but got:  | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion18 (format_conversion): 123573/150528 max 94
+MISMATCH swin_tiny/format_conversion23 (format_conversion): 62318/75264 max 148
+UNSUPPORTED swin_tiny/matmul9 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul10 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion24 (format_conversion): 63276/75264 max 153
+MISMATCH swin_tiny/format_conversion27 (format_conversion): 62129/75264 max 159
+UNSUPPORTED swin_tiny/matmul11 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul12 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion28 (format_conversion): 62314/75264 max 127
+MISMATCH swin_tiny/format_conversion31 (format_conversion): 62388/75264 max 141
+UNSUPPORTED swin_tiny/matmul13 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul14 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion32 (format_conversion): 63327/75264 max 124
+MISMATCH swin_tiny/format_conversion35 (format_conversion): 61637/75264 max 164
+UNSUPPORTED swin_tiny/matmul15 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul16 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion36 (format_conversion): 61012/75264 max 111
+MISMATCH swin_tiny/format_conversion39 (format_conversion): 61476/75264 max 120
+UNSUPPORTED swin_tiny/matmul17 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul18 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion40 (format_conversion): 62275/75264 max 118
+MISMATCH swin_tiny/format_conversion43 (format_conversion): 60651/75264 max 146
+UNSUPPORTED swin_tiny/matmul19 (matmul): NotImplementedError: RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 d | chain: atomic op Matmul
+UNSUPPORTED swin_tiny/matmul20 (matmul): NotImplementedError: RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: | chain: atomic op Matmul
+MISMATCH swin_tiny/format_conversion44 (format_conversion): 57377/75264 max 79
+MISMATCH swin_tiny/reduce_mean1_layer_normalization24 (reduce_mean): 18/49 max 2
+UNSUPPORTED swin_tiny/avgpool1 (avgpool): NotImplementedError: NotImplementedError: swin_tiny/avgpool1: avgpool | chain: atomic op AvgPoolOp (swin_tiny/avgpool1/avgpool_op)
+UNSUPPORTED swin_tiny/fc1 (dense): NotImplementedError: NotImplementedError: swin_tiny/fc1: dense | chain: atomic op FlattenOp (swin_tiny/fc1/flatten_op)
+505/549 checked layers exact when chained from raw pixels
+{'const_input': '17/17', 'input_layer': '0/1', 'normalization': '8/8', 'conv': '105/105', 'format_conversion': '35/55', 'activation': '57/57', 'reduce_mean': '28/29', 'ew_sub': '41/41', 'feature_multiplier': '29/29', 'ew_mult': '41/41', 'matmul': '4/24', 'ew_add': '41/41', 'reduce_max': '12/12', 'reduce_sum': '12/12', 'slice': '40/40', 'concat': '23/23', 'dw': '12/12', 'avgpool': '0/1', 'dense': '0/1'}

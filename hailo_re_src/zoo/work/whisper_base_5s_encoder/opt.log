@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network whisper_base_5s_encoder ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 222, in optimize
+    runner = ClientRunner(hw_arch=args.hw_arch, har=args.har_path)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 148, in __init__
+    self.load_har(har=har)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 1900, in load_har
+    har = HailoArchive.load(har_path, temp_dir=self._temp_dir.name)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/hailo_archive/hailo_archive.py", line 548, in load
+    with HailoArchiveLoader(har_path) as har_loader:
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/hailo_archive/hailo_archive.py", line 557, in __init__
+    self._har_file = tarfile.open(self._path, "r:*")
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/tarfile.py", line 1853, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/tarfile.py", line 1919, in gzopen
+    fileobj = GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/gzip.py", line 174, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'parsed.har'

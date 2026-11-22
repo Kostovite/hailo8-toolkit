@@ -1,0 +1,10 @@
+WARNING ⚠️ torchvision==0.27 is incompatible with torch==2.7.
+Run 'pip install torchvision==0.22' to fix torchvision or 'pip install -U torch torchvision' to update both.
+For a full compatibility table see https://github.com/pytorch/vision#installation
+shard 0: 8/4601 9.7 img/s
+shard 0: 808/4601 9.4 img/s
+shard 0: 1608/4601 8.5 img/s
+shard 0: 2408/4601 7.5 img/s
+shard 0: 3208/4601 6.9 img/s
+shard 0: 4008/4601 6.6 img/s
+shard 0 DONE 4601 in 706s

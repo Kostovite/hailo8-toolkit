@@ -1,0 +1,7 @@
+0 router/conv5 (296, 1, 1, 21)
+1 router/conv4 (296, 1, 1, 6)
+2 router/conv3 (296, 1, 1, 3)
+RESULT lang n 296 agreement 1.0000 logit_mae 0.0108
+RESULT kind n 296 agreement 1.0000 logit_mae 0.0135
+RESULT body n 296 agreement 1.0000 logit_mae 0.0050
+GATE PASS min 0.99

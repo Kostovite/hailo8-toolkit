@@ -1,0 +1,19 @@
+8/2770 16.2 img/s
+208/2770 25.3 img/s
+408/2770 25.7 img/s
+608/2770 25.8 img/s
+808/2770 25.9 img/s
+1008/2770 25.9 img/s
+1208/2770 26.0 img/s
+1408/2770 26.0 img/s
+1608/2770 26.0 img/s
+1808/2770 26.0 img/s
+2008/2770 26.0 img/s
+2208/2770 26.0 img/s
+2408/2770 26.0 img/s
+2608/2770 26.1 img/s
+saved out/chipb_tpc.npz {'best/conv81': ((2770, 112, 112, 14), dtype('uint16')), 'best/conv78': ((2770, 112, 112, 4), dtype('uint16')), 'best/conv97': ((2770, 56, 56, 14), dtype('uint16')), 'best/conv94': ((2770, 56, 56, 4), dtype('uint16')), 'best/conv109': ((2770, 28, 28, 4), dtype('uint16')), 'best/conv112': ((2770, 28, 28, 14), dtype('uint16'))}
+
+real	1m50.847s
+user	0m19.486s
+sys	0m18.289s

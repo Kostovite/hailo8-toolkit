@@ -1,0 +1,2 @@
+521/703 checked layers exact when chained from raw pixels
+{'input_layer': '0/1', 'activation': '144/144', 'normalization': '5/5', 'external_pad': '0/1', 'conv': '106/106', 'reduce_mean': '0/29', 'ew_sub': '41/41', 'feature_multiplier': '0/29', 'ew_mult': '12/41', 'dw': '36/36', 'ew_add': '48/48', 'format_conversion': '61/101', 'reduce_sum': '18/24', 'precision_splitter': '0/12', 'shortcut': '12/12', 'concat': '12/24', 'matmul': '8/24', 'reduce_max': '6/12', 'resize': '12/12', 'avgpool': '0/1'}

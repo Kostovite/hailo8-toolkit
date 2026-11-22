@@ -1,0 +1,1 @@
+2026-10-25 12:03:17,464 - WARNING - pyhailort.py:1031 - Given input data dtype (uint8) is different than inferred dtype (uint16). conversion for every frame will reduce performance

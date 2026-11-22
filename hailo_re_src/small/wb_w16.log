@@ -1,0 +1,10 @@
+116 layers -> ../small/w16_s4600_ints.npz
+best/conv_feature_splitter1_2: decomposed bias stored within 5285412 of the trained value (max |bias| 5318038)
+best/conv60: decomposed bias stored within 57702689 of the trained value (max |bias| 57735456)
+best/conv_feature_splitter6_2: decomposed bias stored within 1252676994 of the trained value (max |bias| 1252709760)
+best/conv2: decomposed bias stored within 45806866 of the trained value (max |bias| 45839632)
+wrote 116 kernels, 108 biases -> ../small/y26n_w16_s4600.har (verified against the translated params)
+ops pickle converted 660
+154/154 checked layers exact when chained from raw pixels
+{"tag": "n_w16_s4600_rt", "result": Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart#ultralytics-settings.}
+TRAINING EVAL: 0.7836650528049885 / 0.6647178013426911

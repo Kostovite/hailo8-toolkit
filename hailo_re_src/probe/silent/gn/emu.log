@@ -1,0 +1,9 @@
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimizati /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gm_sub/op_gm_sub
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gm_rms/op_gm_rms
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gm_mean_c/op_gm_mean_c
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gm_mean_hw/op_gm_mean_hw
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gn1_hw_first/op_gn1_hw_first
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gn1_dup/op_gn1_dup
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gn1_gap/op_gn1_gap
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_groupnorm1/op_groupnorm1
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_groupnorm/op_groupnorm

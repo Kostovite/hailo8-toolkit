@@ -35,7 +35,7 @@ s_quant(){ if declare -F r_alls >/dev/null; then ( r_alls ) || return 1; fi; hen
            "$HPY" -u $CVD/lib/quantize.py $OUT/parsed.har $OUT/q.har $OUT/calib.npy $QMODE $NORM $OPT "${x[@]}"; }
 s_emu(){ EMU_ROWS=${FP_ROWS:-32} bash $CVD/lib/emu_shard.sh $OUT/q.har $OUT/eval_x.npy $OUT/emu_fp fp $G0 && bash $CVD/lib/gpu_emu.sh $OUT/q.har $OUT/eval_x.npy $OUT/emu_q $G0; }
 s_gate_fp(){ python3 $CVD/lib/compare.py $OUT/ref $OUT/emu_fp ${FP_TOL:-1e-3}; }
-s_compile(){ henv; export OMP_NUM_THREADS=16; flock $CVD/runs/.compile.lock bash $CVD/lib/compile_fast.sh $R $OUT/q.har $OUT/model.hef && "$HPY" -u $QAT/tools/fixes/hailo8_guard.py $OUT/model.hef $OUT/q.har; }   # replay cache, see lib/compile_fast.sh
+s_compile(){ henv; export OMP_NUM_THREADS=16; flock $CVD/runs/.compile.lock bash $CVD/lib/compile_fast.sh $R $OUT/q.har $OUT/model.hef && "$HPY" -u $QAT/tools/fixes/hailo8_guard.py $OUT/model.hef $OUT/model_compiled.har "" $OUT/q.har; }   # replay cache, see lib/compile_fast.sh
 s_chip(){ henv; flock $CHIP_LOCK "$HPY" -u $CVD/lib/chip.py $OUT/model.hef $OUT/eval_x.npy $OUT/chip $CHIP_FMT; }
 run export  r_export
 run prep    r_prep

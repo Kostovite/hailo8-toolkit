@@ -1,0 +1,5 @@
+MISMATCH person_attr_resnet_v1_18/input_layer1 (input_layer): 148511/150528 max 19
+UNSUPPORTED person_attr_resnet_v1_18/avgpool1 (avgpool): NotImplementedError: person_attr_resnet_v1_18/avgpool1: avgpool
+UNSUPPORTED person_attr_resnet_v1_18/fc1 (dense): NotImplementedError: person_attr_resnet_v1_18/fc1: dense
+22/25 checked layers exact when chained from raw pixels
+{'input_layer': '0/1', 'normalization': '1/1', 'conv': '20/20', 'maxpool': '1/1', 'avgpool': '0/1', 'dense': '0/1'}

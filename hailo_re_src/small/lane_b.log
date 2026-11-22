@@ -1,0 +1,5 @@
+LANE_B teacher cache 307 s
+LANE_B EXP n_qat_e3 s2000 {"tag": "exp_n_qat_e3_s2000", "result": {"mAP50": 0.7674881551223159, "mAP50_95": 0.6325975222767393, "P": 0.7590977577674817, "R": 0.7181387414268169, "shards": 1}}
+LANE_B EXP n_qat_e3 s2300 {"tag": "exp_n_qat_e3_s2300", "result": {"mAP50": 0.7694684597439366, "mAP50_95": 0.6337916550896104, "P": 0.7954467408577722, "R": 0.6901659144838121, "shards": 1}}
+LANE_B QAT+eval 690 s
+LANE_B DONE

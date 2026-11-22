@@ -1,0 +1,37 @@
+[36m<Hailo Model Zoo INFO> Start run for network scrfd_500m ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to scrfd_500m from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.39)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:21<22:14, 21.18s/entries]Calibration:   5%|▍         | 3/64 [00:21<05:38,  5.55s/entries]Calibration:   8%|▊         | 5/64 [00:21<02:41,  2.73s/entries]Calibration:  11%|█         | 7/64 [00:21<01:31,  1.60s/entries]Calibration:  14%|█▍        | 9/64 [00:21<00:56,  1.02s/entries]Calibration:  17%|█▋        | 11/64 [00:21<00:36,  1.45entries/s]Calibration:  20%|██        | 13/64 [00:22<00:24,  2.07entries/s]Calibration:  23%|██▎       | 15/64 [00:22<00:17,  2.86entries/s]Calibration:  27%|██▋       | 17/64 [00:22<00:12,  3.84entries/s]Calibration:  30%|██▉       | 19/64 [00:22<00:08,  5.03entries/s]Calibration:  33%|███▎      | 21/64 [00:22<00:06,  6.33entries/s]Calibration:  36%|███▌      | 23/64 [00:22<00:05,  7.72entries/s]Calibration:  39%|███▉      | 25/64 [00:22<00:04,  8.92entries/s]Calibration:  42%|████▏     | 27/64 [00:22<00:03,  9.84entries/s]Calibration:  45%|████▌     | 29/64 [00:23<00:03, 10.78entries/s]Calibration:  48%|████▊     | 31/64 [00:23<00:02, 11.75entries/s]Calibration:  52%|█████▏    | 33/64 [00:23<00:02, 12.37entries/s]Calibration:  55%|█████▍    | 35/64 [00:23<00:02, 12.89entries/s]Calibration:  58%|█████▊    | 37/64 [00:23<00:01, 13.66entries/s]Calibration:  61%|██████    | 39/64 [00:23<00:01, 14.19entries/s]Calibration:  64%|██████▍   | 41/64 [00:23<00:01, 14.57entries/s]Calibration:  67%|██████▋   | 43/64 [00:24<00:01, 15.16entries/s]Calibration:  70%|███████   | 45/64 [00:24<00:01, 15.23entries/s]Calibration:  73%|███████▎  | 47/64 [00:24<00:01, 15.60entries/s]Calibration:  77%|███████▋  | 49/64 [00:24<00:01, 14.78entries/s]Calibration:  80%|███████▉  | 51/64 [00:24<00:00, 14.01entries/s]Calibration:  83%|████████▎ | 53/64 [00:24<00:00, 13.52entries/s]Calibration:  86%|████████▌ | 55/64 [00:24<00:00, 13.06entries/s]Calibration:  89%|████████▉ | 57/64 [00:25<00:00, 12.86entries/s]Calibration:  92%|█████████▏| 59/64 [00:25<00:00, 12.78entries/s]Calibration:  95%|█████████▌| 61/64 [00:25<00:00, 12.55entries/s]Calibration:  98%|█████████▊| 63/64 [00:25<00:00, 12.67entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00, 12.67entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00,  2.49entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:26.92)
+[info] Output layer scrfd_500m/conv26 with sigmoid activation was detected. Forcing its output range to be [0, 1] (original range was [0.00020207853231113404, 0.8952259421348572]).
+[info] Output layer scrfd_500m/conv32 with sigmoid activation was detected. Forcing its output range to be [0, 1] (original range was [0.0008935601799748838, 0.8258488178253174]).
+[info] Output layer scrfd_500m/conv38 with sigmoid activation was detected. Forcing its output range to be [0, 1] (original range was [0.0008866686839610338, 0.700634777545929]).
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer scrfd_500m/conv33/conv_op, using max shift instead. delta=0.1324
+[info] No shifts available for layer scrfd_500m/conv33/conv_op, using max shift instead. delta=0.0662
+[info] No shifts available for layer scrfd_500m/conv38/conv_op, using max shift instead. delta=0.7562
+[info] No shifts available for layer scrfd_500m/conv39/conv_op, using max shift instead. delta=0.7664
+[info] No shifts available for layer scrfd_500m/conv39/conv_op, using max shift instead. delta=0.3832
+[info] No shifts available for layer scrfd_500m/conv39/conv_op, using max shift instead. delta=0.3832
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/scrfd_500m/scrfd_500m.har

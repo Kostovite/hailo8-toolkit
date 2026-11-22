@@ -1,0 +1,14 @@
+[hsim_sm52] register fatbin from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/platform/../../libtensorflow_framework.so.2 magic=0x466243b1 version=1
+[hsim_sm52] register fatbin from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/platform/../../libtensorflow_framework.so.2 magic=0x466243b1 version=1
+2026-10-22 03:40:38.960206: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+[hsim_sm52] register fatbin from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/platform/../_pywrap_tensorflow_internal.so magic=0x466243b1 version=1
+2026-10-22 03:40:39.002099: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[hsim_sm52] register fatbin from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/emulator/emulator/lib/HSim.so magic=0x466243b1 version=2 -> sm_52 image
+2026-10-22 03:40:55.274278: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2026-10-22 03:41:26.432558: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+captured 144 conv layers, 0 atomic ops -> /mnt/storage/tmp/claude-1005/-mnt-storage-lib-project-models/350d256b-4abf-4ee9-8419-160b9eb7ff76/scratchpad/cap_gpu
+
+real	0m57.095s
+user	4m23.981s
+sys	0m53.184s

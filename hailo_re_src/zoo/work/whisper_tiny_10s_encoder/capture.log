@@ -1,0 +1,23 @@
+2026-10-23 20:08:23.449413: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 20:08:23.490826: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/capture.py", line 198, in <module>
+    runner = ClientRunner(har=HAR)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 148, in __init__
+    self.load_har(har=har)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 1900, in load_har
+    har = HailoArchive.load(har_path, temp_dir=self._temp_dir.name)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/hailo_archive/hailo_archive.py", line 548, in load
+    with HailoArchiveLoader(har_path) as har_loader:
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/hailo_archive/hailo_archive.py", line 557, in __init__
+    self._har_file = tarfile.open(self._path, "r:*")
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/tarfile.py", line 1853, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/tarfile.py", line 1919, in gzopen
+    fileobj = GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/gzip.py", line 174, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/whisper_tiny_10s_encoder/quant.har'

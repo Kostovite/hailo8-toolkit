@@ -1,0 +1,33 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov8s_bbox_decoding_only ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolov8s_bbox_decoding_only from l0.alls
+[info] Running bbox decoding only on CPU is computationally expensive, since the decoding is done over all the proposals. Please consider running full NMS.
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 232, in optimize
+    optimize_model(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 351, in optimize_model
+    optimize_full_precision_model(runner, calib_feed_callback, logger, model_script, resize, input_conversion, classes)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 337, in optimize_full_precision_model
+    runner.optimize_full_precision(calib_data=calib_feed_callback)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 2095, in optimize_full_precision
+    self._optimize_full_precision(data_continer)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 2098, in _optimize_full_precision
+    self._sdk_backend.optimize_full_precision(data_continer)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py", line 1664, in optimize_full_precision
+    model, params = self._apply_model_modification_commands(model, params, update_model_and_params)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py", line 1552, in _apply_model_modification_commands
+    model, params = command.apply(model, params, hw_consts=self.hw_arch.consts)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/script_parser/nms_postprocess_command.py", line 379, in apply
+    self._get_config_file_from_path()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/script_parser/nms_postprocess_command.py", line 536, in _get_config_file_from_path
+    raise AllocatorScriptParserException(
+hailo_sdk_client.sdk_backend.sdk_backend_exceptions.AllocatorScriptParserException: Post-process config file isn't found in /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/unreleased/yolov8s_bbox_decoding_only_nms_config.json. Please make sure the given path is relative to the .alls file location, or it is a global path.

@@ -1,0 +1,10 @@
+[36m<Hailo Model Zoo INFO> Start run for network vit_tiny ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model vit_tiny
+[info] Restored ONNX model vit_tiny (completion time: 00:00:02.19)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:04.44)
+[info] Simplified ONNX model for a parsing retry attempt (completion time: 00:00:10.96)
+[info] Start nodes mapped from original model: 'input.1': 'vit_tiny/input_layer1'.
+[info] End nodes mapped from original model: '/head/Gemm'.
+[info] Translation completed on ONNX model vit_tiny (completion time: 00:00:13.75)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/vit_tiny/vit_tiny.har

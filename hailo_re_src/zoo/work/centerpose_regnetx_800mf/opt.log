@@ -1,0 +1,31 @@
+[36m<Hailo Model Zoo INFO> Start run for network centerpose_regnetx_800mf ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to centerpose_regnetx_800mf from l0.alls
+[info] The flag emulator_support was not given for bgr_to_rgb conversion. using emulator_support=True. See usage guidelines at: Dataflow Compiler User Guide / Building Models / Model Optimization / Model Scripts
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.48)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [00:31<03:37,  3.88s/entries]Calibration:  25%|██▌       | 16/64 [00:33<01:24,  1.77s/entries]Calibration:  38%|███▊      | 24/64 [00:35<00:44,  1.11s/entries]Calibration:  50%|█████     | 32/64 [00:38<00:25,  1.27entries/s]Calibration:  62%|██████▎   | 40/64 [00:40<00:14,  1.64entries/s]Calibration:  75%|███████▌  | 48/64 [00:42<00:08,  2.00entries/s]Calibration:  88%|████████▊ | 56/64 [00:45<00:03,  2.35entries/s]Calibration: 100%|██████████| 64/64 [00:54<00:00,  1.52entries/s]Calibration: 100%|██████████| 64/64 [00:54<00:00,  1.52entries/s]Calibration: 100%|██████████| 64/64 [00:54<00:00,  1.18entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:55.76)
+[info] Output layer centerpose_regnetx_800mf/conv60 with sigmoid activation was detected. Forcing its output range to be [0, 1] (original range was [2.4406688583593678e-17, 0.9142861366271973]).
+[info] Output layer centerpose_regnetx_800mf/conv64 with sigmoid activation was detected. Forcing its output range to be [0, 1] (original range was [3.724484055603338e-33, 0.977314829826355]).
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/centerpose_regnetx_800mf/centerpose_regnetx_800mf.har

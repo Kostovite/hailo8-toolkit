@@ -1,0 +1,95 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+WARNING ⚠️ torchvision==0.27 is incompatible with torch==2.7.
+Run 'pip install torchvision==0.22' to fix torchvision or 'pip install -U torch torchvision' to update both.
+For a full compatibility table see https://github.com/pytorch/vision#installation
+4/256
+8/256
+12/256
+16/256
+20/256
+24/256
+28/256
+32/256
+36/256
+40/256
+44/256
+48/256
+52/256
+56/256
+60/256
+64/256
+68/256
+72/256
+76/256
+80/256
+84/256
+88/256
+92/256
+96/256
+100/256
+104/256
+108/256
+112/256
+116/256
+120/256
+124/256
+128/256
+132/256
+136/256
+140/256
+144/256
+148/256
+152/256
+156/256
+160/256
+164/256
+168/256
+172/256
+176/256
+180/256
+184/256
+188/256
+192/256
+196/256
+200/256
+204/256
+208/256
+212/256
+216/256
+220/256
+224/256
+228/256
+232/256
+236/256
+240/256
+244/256
+248/256
+252/256
+256/256
+best/conv70                              conv           4.0612e-04  cum 79.46%
+best/conv86                              conv           5.4253e-05  cum 90.07%
+best/conv100                             conv           1.3658e-05  cum 92.74%
+best/conv97                              conv           8.7497e-06  cum 94.46%
+best/conv69                              conv           3.9617e-06  cum 95.23%
+best/conv83                              conv           3.0711e-06  cum 95.83%
+best/conv_feature_splitter11_2           conv           1.8208e-06  cum 96.19%
+best/conv85                              conv           1.1140e-06  cum 96.41%
+best/conv67                              conv           1.0381e-06  cum 96.61%
+best/conv60                              conv           9.5312e-07  cum 96.80%
+best/conv_feature_splitter6_2            conv           9.4798e-07  cum 96.98%
+best/conv_feature_splitter10_2           conv           8.2693e-07  cum 97.14%
+best/conv66                              conv           8.2517e-07  cum 97.31%
+best/conv2                               conv           7.8842e-07  cum 97.46%
+best/dw6                                 dw             7.4045e-07  cum 97.60%
+best/conv_feature_splitter8_2            conv           7.0571e-07  cum 97.74%
+best/conv99                              conv           7.0054e-07  cum 97.88%
+best/conv1                               conv           5.8630e-07  cum 97.99%
+best/dw2                                 dw             5.7416e-07  cum 98.11%
+best/conv73                              conv           5.4300e-07  cum 98.21%
+best/conv_feature_splitter11_3           conv           4.6416e-07  cum 98.30%
+best/conv58                              conv           4.5352e-07  cum 98.39%
+best/conv64                              conv           3.6804e-07  cum 98.46%
+best/conv21                              conv           3.0357e-07  cum 98.52%
+best/conv98                              conv           2.9629e-07  cum 98.58%

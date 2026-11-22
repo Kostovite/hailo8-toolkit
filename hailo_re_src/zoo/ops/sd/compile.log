@@ -1,0 +1,9 @@
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[error] Mapping Failed (allocation time: 19s)
+Assignment of the node needs super-defuse
+[?25h
+[error] Failed to produce compiled graph
+ERR Compilation failed: Assignment of the node needs super-defuse

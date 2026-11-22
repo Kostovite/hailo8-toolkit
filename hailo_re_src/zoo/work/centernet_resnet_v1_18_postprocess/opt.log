@@ -1,0 +1,30 @@
+[36m<Hailo Model Zoo INFO> Start run for network centernet_resnet_v1_18_postprocess ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to centernet_resnet_v1_18_postprocess from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.26)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [00:13<03:21,  3.36s/entries]Calibration:  12%|█▎        | 8/64 [00:14<01:23,  1.48s/entries]Calibration:  19%|█▉        | 12/64 [00:14<00:46,  1.13entries/s]Calibration:  25%|██▌       | 16/64 [00:15<00:29,  1.65entries/s]Calibration:  31%|███▏      | 20/64 [00:16<00:19,  2.22entries/s]Calibration:  38%|███▊      | 24/64 [00:16<00:14,  2.77entries/s]Calibration:  44%|████▍     | 28/64 [00:17<00:11,  3.24entries/s]Calibration:  50%|█████     | 32/64 [00:18<00:08,  3.75entries/s]Calibration:  56%|█████▋    | 36/64 [00:19<00:06,  4.21entries/s]Calibration:  62%|██████▎   | 40/64 [00:19<00:05,  4.58entries/s]Calibration:  69%|██████▉   | 44/64 [00:20<00:04,  4.98entries/s]Calibration:  75%|███████▌  | 48/64 [00:21<00:03,  5.14entries/s]Calibration:  81%|████████▏ | 52/64 [00:21<00:02,  5.18entries/s]Calibration:  88%|████████▊ | 56/64 [00:22<00:01,  5.08entries/s]Calibration:  94%|█████████▍| 60/64 [00:23<00:00,  5.26entries/s]Calibration: 100%|██████████| 64/64 [00:24<00:00,  5.40entries/s]Calibration: 100%|██████████| 64/64 [00:24<00:00,  5.40entries/s]Calibration: 100%|██████████| 64/64 [00:24<00:00,  2.64entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:24.92)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer centernet_resnet_v1_18_postprocess/conv27/conv_op, using max shift instead. delta=0.4837
+[info] No shifts available for layer centernet_resnet_v1_18_postprocess/conv27/conv_op, using max shift instead. delta=0.2419
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/centernet_resnet_v1_18_postprocess/centernet_resnet_v1_18_postprocess.har

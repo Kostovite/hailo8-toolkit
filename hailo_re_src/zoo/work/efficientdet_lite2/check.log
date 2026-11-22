@@ -1,0 +1,24 @@
+MISMATCH efficientdet_lite2/maxpool1 (maxpool): 4026/5488 max 129
+SHAPE efficientdet_lite2/resize1 (resize) got (1, 112, 4, 4) ref (1, 112, 7, 7)
+MISMATCH efficientdet_lite2/maxpool3 (maxpool): 66747/87808 max 109
+MISMATCH efficientdet_lite2/maxpool4 (maxpool): 16637/21952 max 98
+MISMATCH efficientdet_lite2/maxpool5 (maxpool): 4127/5488 max 117
+SHAPE efficientdet_lite2/resize5 (resize) got (1, 112, 4, 4) ref (1, 112, 7, 7)
+MISMATCH efficientdet_lite2/maxpool7 (maxpool): 66565/87808 max 127
+MISMATCH efficientdet_lite2/maxpool8 (maxpool): 16468/21952 max 99
+MISMATCH efficientdet_lite2/maxpool9 (maxpool): 4078/5488 max 117
+SHAPE efficientdet_lite2/resize9 (resize) got (1, 112, 4, 4) ref (1, 112, 7, 7)
+MISMATCH efficientdet_lite2/maxpool11 (maxpool): 65597/87808 max 99
+MISMATCH efficientdet_lite2/maxpool12 (maxpool): 16681/21952 max 134
+MISMATCH efficientdet_lite2/maxpool13 (maxpool): 4025/5488 max 107
+SHAPE efficientdet_lite2/resize13 (resize) got (1, 112, 4, 4) ref (1, 112, 7, 7)
+MISMATCH efficientdet_lite2/maxpool15 (maxpool): 65390/87808 max 135
+MISMATCH efficientdet_lite2/maxpool16 (maxpool): 16653/21952 max 122
+MISMATCH efficientdet_lite2/maxpool17 (maxpool): 4011/5488 max 122
+SHAPE efficientdet_lite2/resize17 (resize) got (1, 112, 4, 4) ref (1, 112, 7, 7)
+MISMATCH efficientdet_lite2/maxpool19 (maxpool): 66849/87808 max 109
+MISMATCH efficientdet_lite2/maxpool20 (maxpool): 17033/21952 max 128
+MISMATCH efficientdet_lite2/maxpool21 (maxpool): 4046/5488 max 85
+UNSUPPORTED efficientdet_lite2/ssd_nms_postprocess (postprocess): NotImplementedError: efficientdet_lite2/ssd_nms_postprocess: postprocess
+302/324 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '128/128', 'dw': '101/101', 'maxpool': '6/22', 'resize': '15/20', 'ew_add': '50/50', 'postprocess': '0/1'}

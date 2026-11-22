@@ -67,11 +67,21 @@ Stages: `export prep data parse quant emu gate_fp gate_q compile chip gate_chip`
 1. **Replay.** The architecture signature (layer names, types, shapes, precision; not the weights) is looked up in
    `compile_cache/RECIPE_SIG.auto.alls`. On a hit, the stored allocator solution is replayed and the search is skipped
    (router: 37 s to 16 s, identical outputs).
-2. **Fast portfolio, on a miss.** The stock compiler runs with the hook at default level, as parallel candidates: the
-   default caps plus `resources_param` at each value in `FASTC_UTILS` (default `0.7 0.8 0.9`). Each candidate is
-   RAM-capped by systemd (`MEMMAX`, default 24G). Every candidate that compiles is benchmarked on the chip with
-   `hailortcli`. The fastest wins; it must be more than 0.5 % faster to beat an earlier candidate. Its solution goes into
-   the replay cache.
+2. **Fast portfolio, on a miss.** The compiler runs with the hook at default level, as parallel candidates.
+   - **Stock-solver candidates:** default caps, plus `resources_param` at each value in `FASTC_UTILS` (default
+     `0.7 0.8 0.9`).
+   - **Modern-solver candidates:** `srv_d` and `srv_u0.8` (set with `FASTC_SRV_UTILS`; `FASTC_SRV_DEFAULT=0` drops them).
+     Their cache misses go to `hailo_re_src/turbo/cpserver.py`, which runs modern multi-worker CP-SAT and is started
+     automatically. It solves in seconds problems the embedded solver gives up on after about 50 s; see
+     `hailo_re_src/turbo/SOLVER_FINDINGS.md`.
+   - **Separate caches:** each solver has its own memo cache (`compile_cache/cpsat`, `compile_cache/cpsat_srv`).
+   - **Isolation:** every candidate is RAM-capped by systemd (`MEMMAX`, default 24G) and has a private SDK home.
+     Concurrent DFC compilers otherwise race on the log-file rotation and abort with "unexpected crash".
+   - **Guard:** every candidate that compiles must pass `hailo8_guard` (all 6 known silent-wrong chip patterns), run on
+     its COMPILED HAR. The checks for a split attention matmul and a wrongly lowered deconv need the allocator's own
+     script, which the quantized HAR does not have.
+   - **Pick:** guard-clean candidates are benchmarked on the chip with `hailortcli`. The fastest wins; it must be more
+     than 0.5 % faster to beat an earlier candidate. Its solution goes into the replay cache.
 3. **`COMPILE_OPT=max`** forces the stock `compiler_optimization_level=max`. It is not recommended:
    - level max walks the cap from 120 % down to 75 % in 2.5 % steps, one attempt at a time, and each failed attempt
      waits for a wall-clock timeout (about 14 min on orient3);

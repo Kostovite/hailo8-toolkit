@@ -1,0 +1,16 @@
+MISMATCH efficientdet_lite0/maxpool1 (maxpool): 1135/1600 max 68
+SHAPE efficientdet_lite0/resize1 (resize) got (1, 64, 3, 3) ref (1, 64, 5, 5)
+MISMATCH efficientdet_lite0/maxpool3 (maxpool): 18452/25600 max 114
+MISMATCH efficientdet_lite0/maxpool4 (maxpool): 4472/6400 max 88
+MISMATCH efficientdet_lite0/maxpool5 (maxpool): 1133/1600 max 97
+SHAPE efficientdet_lite0/resize5 (resize) got (1, 64, 3, 3) ref (1, 64, 5, 5)
+MISMATCH efficientdet_lite0/maxpool7 (maxpool): 18638/25600 max 104
+MISMATCH efficientdet_lite0/maxpool8 (maxpool): 4469/6400 max 73
+MISMATCH efficientdet_lite0/maxpool9 (maxpool): 1123/1600 max 67
+SHAPE efficientdet_lite0/resize9 (resize) got (1, 64, 3, 3) ref (1, 64, 5, 5)
+MISMATCH efficientdet_lite0/maxpool11 (maxpool): 19017/25600 max 72
+MISMATCH efficientdet_lite0/maxpool12 (maxpool): 4579/6400 max 41
+MISMATCH efficientdet_lite0/maxpool13 (maxpool): 1125/1600 max 33
+UNSUPPORTED efficientdet_lite0/ssd_nms_postprocess (postprocess): NotImplementedError: NotImplementedError: efficientdet_lite0/ssd_nms_postprocess: postprocess | chain: efficientdet_lite0/ssd_nms_postprocess
+225/239 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '102/102', 'dw': '80/80', 'maxpool': '4/14', 'resize': '9/12', 'ew_add': '28/28', 'postprocess': '0/1'}

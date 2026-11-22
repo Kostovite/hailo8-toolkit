@@ -1,0 +1,3 @@
+UNSUPPORTED damoyolo_tinynasL20_T/space_to_depth1 (space_to_depth): NotImplementedError: damoyolo_tinynasL20_T/space_to_depth1: space_to_depth
+109/110 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'space_to_depth': '0/1', 'conv': '77/77', 'maxpool': '3/3', 'concat': '11/11', 'ew_add': '15/15', 'resize': '2/2'}

@@ -1,0 +1,8 @@
+[36m<Hailo Model Zoo INFO> Start run for network hand_landmark_lite ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+hand_landmark_lite.zip:   0%|          | 0.00/2.16M [00:00<?, ?B/s]hand_landmark_lite.zip:   1%|          | 20.0k/2.16M [00:00<00:23, 95.7kB/s]hand_landmark_lite.zip:   3%|▎         | 68.0k/2.16M [00:00<00:12, 174kB/s] hand_landmark_lite.zip:   7%|▋         | 156k/2.16M [00:00<00:07, 285kB/s] hand_landmark_lite.zip:  15%|█▌        | 340k/2.16M [00:00<00:03, 519kB/s]hand_landmark_lite.zip:  33%|███▎      | 732k/2.16M [00:01<00:01, 1.00MB/s]hand_landmark_lite.zip:  67%|██████▋   | 1.45M/2.16M [00:01<00:00, 1.87MB/s]hand_landmark_lite.zip:  84%|████████▍ | 1.81M/2.16M [00:01<00:00, 1.83MB/s]hand_landmark_lite.zip:  91%|█████████ | 1.96M/2.16M [00:01<00:00, 1.48MB/s]hand_landmark_lite.zip: 100%|██████████| 2.16M/2.16M [00:01<00:00, 1.31MB/s]
+[info] Translation started on Tensorflow model hand_landmark_lite
+[info] Start nodes mapped from original model: 'input': 'hand_landmark_lite/input_layer1'.
+[info] End nodes mapped from original model: 'Sigmoid', 'const_fold_opt__503/BiasAdd', 'Sigmoid_1', 'const_fold_opt__501/BiasAdd'.
+[info] Translation completed on Tensorflow model hand_landmark_lite (completion time: 00:00:00.69)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/hand_landmark_lite/hand_landmark_lite.har

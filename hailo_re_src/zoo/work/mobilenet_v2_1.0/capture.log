@@ -1,0 +1,15 @@
+2026-10-23 20:44:33.515153: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 20:44:33.593100: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-23 20:44:45.903404: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2026-10-23 20:44:45.903464: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:137] retrieving CUDA diagnostic information for host: uslib
+2026-10-23 20:44:45.903473: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:144] hostname: uslib
+2026-10-23 20:44:45.903514: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:168] libcuda reported version is: 560.28.3
+2026-10-23 20:44:45.903540: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:172] kernel reported version is: 560.28.3
+2026-10-23 20:44:45.903548: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:259] kernel version seems to match DSO: 560.28.3
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/capture.py", line 203, in <module>
+    flow.set_bit_exact(True)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/inference_flow.py", line 248, in set_bit_exact
+    raise AccelerasImplementationError("Not all layers in the models support bit exact")
+hailo_model_optimization.acceleras.utils.acceleras_exceptions.AccelerasImplementationError: Not all layers in the models support bit exact

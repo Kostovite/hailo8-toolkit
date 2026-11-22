@@ -1,0 +1,3 @@
+[SDK_QUANTIZED] FAILED: PermissionError: [Errno 13] Permission denied: '/mnt/storage/anaconda3/envs/hailo_env/etc/hailo'
+[SDK_BIT_EXACT] FAILED: PermissionError: [Errno 13] Permission denied: '/mnt/storage/anaconda3/envs/hailo_env/etc/hailo'
+[hw] shape=(4, 19, 5, 100) nonzero=110

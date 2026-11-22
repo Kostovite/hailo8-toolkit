@@ -1,0 +1,21 @@
+[36m<Hailo Model Zoo INFO> Start run for network stereonet ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 229, in optimize
+    calib_feed_callback = prepare_calibration_data(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 310, in prepare_calibration_data
+    calib_feed_callback = make_calibset_callback(network_info, preproc_callback, calib_path)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 271, in make_calibset_callback
+    data_feed_cb = _make_dataset_callback(network_info, preproc_callback, calib_path, dataset_name)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 248, in _make_dataset_callback
+    return _make_data_feed_callback(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 237, in _make_data_feed_callback
+    raise ValueError(f"Folder data path is currently not supported for {network_info.network.network_name}")
+ValueError: Folder data path is currently not supported for stereonet

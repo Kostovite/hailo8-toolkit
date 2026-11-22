@@ -1,0 +1,16 @@
+[36m<Hailo Model Zoo INFO> Start run for network segformer_b0_bn ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+segformer_b0_512x1024_bn.zip:   0%|          | 0.00/13.2M [00:00<?, ?B/s]segformer_b0_512x1024_bn.zip:   0%|          | 20.0k/13.2M [00:00<02:16, 101kB/s]segformer_b0_512x1024_bn.zip:   0%|          | 52.0k/13.2M [00:00<01:39, 138kB/s]segformer_b0_512x1024_bn.zip:   1%|          | 136k/13.2M [00:00<00:50, 270kB/s] segformer_b0_512x1024_bn.zip:   2%|▏         | 292k/13.2M [00:00<00:28, 476kB/s]segformer_b0_512x1024_bn.zip:   5%|▍         | 612k/13.2M [00:01<00:14, 886kB/s]segformer_b0_512x1024_bn.zip:   9%|▉         | 1.23M/13.2M [00:01<00:07, 1.70MB/s]segformer_b0_512x1024_bn.zip:  12%|█▏        | 1.56M/13.2M [00:01<00:07, 1.69MB/s]segformer_b0_512x1024_bn.zip:  18%|█▊        | 2.43M/13.2M [00:01<00:04, 2.59MB/s]segformer_b0_512x1024_bn.zip:  21%|██        | 2.80M/13.2M [00:01<00:04, 2.36MB/s]segformer_b0_512x1024_bn.zip:  35%|███▍      | 4.61M/13.2M [00:02<00:01, 4.55MB/s]segformer_b0_512x1024_bn.zip:  41%|████      | 5.39M/13.2M [00:02<00:01, 4.35MB/s]segformer_b0_512x1024_bn.zip:  47%|████▋     | 6.17M/13.2M [00:02<00:01, 4.27MB/s]segformer_b0_512x1024_bn.zip:  53%|█████▎    | 6.98M/13.2M [00:02<00:01, 4.25MB/s]segformer_b0_512x1024_bn.zip:  59%|█████▉    | 7.81M/13.2M [00:02<00:01, 4.26MB/s]segformer_b0_512x1024_bn.zip:  66%|██████▌   | 8.64M/13.2M [00:03<00:01, 4.27MB/s]segformer_b0_512x1024_bn.zip:  72%|███████▏  | 9.48M/13.2M [00:03<00:00, 4.31MB/s]segformer_b0_512x1024_bn.zip:  78%|███████▊  | 10.3M/13.2M [00:03<00:00, 4.33MB/s]segformer_b0_512x1024_bn.zip:  85%|████████▌ | 11.2M/13.2M [00:03<00:00, 4.37MB/s]segformer_b0_512x1024_bn.zip:  92%|█████████▏| 12.1M/13.2M [00:03<00:00, 4.42MB/s]segformer_b0_512x1024_bn.zip:  98%|█████████▊| 13.0M/13.2M [00:04<00:00, 4.45MB/s]segformer_b0_512x1024_bn.zip: 100%|██████████| 13.2M/13.2M [00:04<00:00, 3.40MB/s]
+[info] Translation started on ONNX model segformer_b0_bn
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 208, in parse
+    parse_model(runner, network_info, ckpt_path=args.ckpt_path, results_dir=args.results_dir, logger=logger)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 126, in parse_model
+    raise Exception(f"Encountered error during parsing: {err}") from None
+Exception: Encountered error during parsing: [Errno 2] No such file or directory: '/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/data/models_files/Segmentation/Cityscapes/segformer_b0_512x1024_bn/pretrained/2023-09-04/segformer_b0_512x1024_bn.onnx'

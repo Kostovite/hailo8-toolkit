@@ -1,0 +1,46 @@
+[36m<Hailo Model Zoo INFO> Start run for network vit_small ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to vit_small from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.36)
+[info] Starting LayerNorm Decomposition
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  25%|██▌       | 16/64 [00:44<02:13,  2.78s/entries]Calibration:  50%|█████     | 32/64 [00:45<00:37,  1.17s/entries]Calibration:  75%|███████▌  | 48/64 [00:45<00:10,  1.53entries/s]Calibration: 100%|██████████| 64/64 [00:46<00:00,  2.38entries/s]Calibration: 100%|██████████| 64/64 [00:46<00:00,  2.38entries/s]Calibration: 100%|██████████| 64/64 [00:46<00:00,  1.37entries/s]
+[info] Model Optimization Algorithm LayerNorm Decomposition is done (completion time is 00:01:02.97)
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  25%|██▌       | 16/64 [03:54<11:44, 14.67s/entries]Calibration:  50%|█████     | 32/64 [03:57<03:17,  6.16s/entries]Calibration:  75%|███████▌  | 48/64 [04:00<00:54,  3.42s/entries]Calibration: 100%|██████████| 64/64 [04:03<00:00,  2.14s/entries]Calibration: 100%|██████████| 64/64 [04:03<00:00,  2.14s/entries]Calibration: 100%|██████████| 64/64 [04:03<00:00,  3.80s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:04:08.73)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.05)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:02.62)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer vit_small/conv1/conv_op, using max shift instead. delta=0.4755
+[info] No shifts available for layer vit_small/conv1/conv_op, using max shift instead. delta=0.2377
+[info] activation fitting started for vit_small/reduce_sum_softmax1/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax2/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax3/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax4/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax5/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax6/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax7/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax8/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax9/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax10/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax11/act_op
+[info] activation fitting started for vit_small/reduce_sum_softmax12/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/vit_small/vit_small.har

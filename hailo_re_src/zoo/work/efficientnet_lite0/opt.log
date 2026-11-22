@@ -1,0 +1,30 @@
+[36m<Hailo Model Zoo INFO> Start run for network efficientnet_lite0 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to efficientnet_lite0 from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Checker Config:	Batch size was greater than calibset size, using batch size 16
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.35)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  50%|█████     | 32/64 [00:24<00:24,  1.30entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00,  2.93entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00,  2.93entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00,  2.47entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:27.20)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[warning] Layer Noise Analysis:	Batch size was greater than dataset_size, using batch_size 16
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/efficientnet_lite0/efficientnet_lite0.har

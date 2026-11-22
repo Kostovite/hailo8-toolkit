@@ -1,0 +1,6 @@
+2026-10-23 22:26:49.093091: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 22:26:49.157529: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-23 22:27:07.448120: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2026-10-23 22:27:47.276299: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+captured 155 conv layers, 709 atomic ops -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/capture_mTPC_qat

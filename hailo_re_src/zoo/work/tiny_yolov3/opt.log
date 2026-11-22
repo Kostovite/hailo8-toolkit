@@ -1,0 +1,30 @@
+[36m<Hailo Model Zoo INFO> Start run for network tiny_yolov3 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to tiny_yolov3 from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.09)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/layers/activations/leaky_relu.py:41: UserWarning: Argument `alpha` is deprecated. Use `negative_slope` instead.
+  warnings.warn(
+Calibration:   6%|▋         | 4/64 [00:07<01:59,  1.99s/entries]Calibration:  12%|█▎        | 8/64 [00:08<00:48,  1.17entries/s]Calibration:  19%|█▉        | 12/64 [00:08<00:25,  2.02entries/s]Calibration:  25%|██▌       | 16/64 [00:08<00:15,  3.13entries/s]Calibration:  31%|███▏      | 20/64 [00:08<00:09,  4.57entries/s]Calibration:  38%|███▊      | 24/64 [00:08<00:06,  6.40entries/s]Calibration:  44%|████▍     | 28/64 [00:09<00:04,  8.54entries/s]Calibration:  50%|█████     | 32/64 [00:09<00:02, 10.95entries/s]Calibration:  56%|█████▋    | 36/64 [00:09<00:02, 13.56entries/s]Calibration:  62%|██████▎   | 40/64 [00:09<00:01, 16.22entries/s]Calibration:  69%|██████▉   | 44/64 [00:09<00:01, 18.58entries/s]Calibration:  75%|███████▌  | 48/64 [00:09<00:00, 20.53entries/s]Calibration:  81%|████████▏ | 52/64 [00:09<00:00, 22.25entries/s]Calibration:  88%|████████▊ | 56/64 [00:10<00:00, 22.64entries/s]Calibration:  94%|█████████▍| 60/64 [00:10<00:00, 22.53entries/s]Calibration: 100%|██████████| 64/64 [00:10<00:00, 23.02entries/s]Calibration: 100%|██████████| 64/64 [00:10<00:00, 23.02entries/s]Calibration: 100%|██████████| 64/64 [00:10<00:00,  6.09entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:10.88)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/tiny_yolov3/tiny_yolov3.har

@@ -1,0 +1,31 @@
+[info] Translation started on ONNX model Greater_mask_p1p0
+[info] Restored ONNX model Greater_mask_p1p0 (completion time: 00:00:00.01)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.40)
+[info] Start nodes mapped from original model: 'x': 'Greater_mask_p1p0/input_layer1'.
+[info] End nodes mapped from original model: 'Conv_7'.
+[info] Translation completed on ONNX model Greater_mask_p1p0 (completion time: 00:00:00.56)
+[info] Loading model script commands to Greater_mask_p1p0 from string
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.01)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:00<00:41,  1.51entries/s]Calibration: 100%|██████████| 64/64 [00:00<00:00,  1.51entries/s]Calibration: 100%|██████████| 64/64 [00:00<00:00, 83.65entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:00.81)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3/Greater_mask_p1p0/q.har
+{"case": "Greater_mask_p1p0", "stage": "ok", "hn_types": ["activation", "conv"], "activations": ["threshold"], "prec": "a8_w8", "sqnr_native_db": 348.82728271162637, "sqnr_hw_db": 24.242088908415234, "seconds": 5.4}

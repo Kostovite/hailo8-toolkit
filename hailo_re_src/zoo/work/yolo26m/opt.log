@@ -1,0 +1,31 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolo26m ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolo26m from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.55)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [01:20<09:22, 10.04s/entries]Calibration:  25%|██▌       | 16/64 [01:24<03:34,  4.46s/entries]Calibration:  38%|███▊      | 24/64 [01:29<01:47,  2.68s/entries]Calibration:  50%|█████     | 32/64 [01:33<00:59,  1.85s/entries]Calibration:  62%|██████▎   | 40/64 [01:38<00:33,  1.39s/entries]Calibration:  75%|███████▌  | 48/64 [01:43<00:17,  1.12s/entries]Calibration:  88%|████████▊ | 56/64 [01:48<00:07,  1.02entries/s]Calibration: 100%|██████████| 64/64 [01:52<00:00,  1.20entries/s]Calibration: 100%|██████████| 64/64 [01:52<00:00,  1.20entries/s]Calibration: 100%|██████████| 64/64 [01:52<00:00,  1.76s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:55.81)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.09)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] activation fitting started for yolo26m/reduce_sum_softmax1/act_op
+[info] activation fitting started for yolo26m/reduce_sum_softmax2/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolo26m/yolo26m.har

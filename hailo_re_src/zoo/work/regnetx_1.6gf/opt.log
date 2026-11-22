@@ -1,0 +1,29 @@
+[36m<Hailo Model Zoo INFO> Start run for network regnetx_1.6gf ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to regnetx_1_6gf from l0.alls
+[warning] DEPRECATION WARNING: Performance parameter key 'optimization_level' is deprecated, please use 'compiler_optimization_level' instead.
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.81)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:27<28:41, 27.33s/entries]Calibration:   5%|▍         | 3/64 [00:27<07:15,  7.14s/entries]Calibration:   8%|▊         | 5/64 [00:27<03:27,  3.51s/entries]Calibration:  11%|█         | 7/64 [00:27<01:57,  2.06s/entries]Calibration:  14%|█▍        | 9/64 [00:27<01:12,  1.31s/entries]Calibration:  17%|█▋        | 11/64 [00:28<00:46,  1.14entries/s]Calibration:  20%|██        | 13/64 [00:28<00:31,  1.64entries/s]Calibration:  23%|██▎       | 15/64 [00:28<00:21,  2.28entries/s]Calibration:  27%|██▋       | 17/64 [00:28<00:15,  3.11entries/s]Calibration:  30%|██▉       | 19/64 [00:28<00:10,  4.12entries/s]Calibration:  33%|███▎      | 21/64 [00:28<00:08,  5.32entries/s]Calibration:  36%|███▌      | 23/64 [00:28<00:06,  6.73entries/s]Calibration:  39%|███▉      | 25/64 [00:29<00:04,  8.20entries/s]Calibration:  42%|████▏     | 27/64 [00:29<00:03,  9.64entries/s]Calibration:  45%|████▌     | 29/64 [00:29<00:03, 10.93entries/s]Calibration:  48%|████▊     | 31/64 [00:29<00:02, 12.12entries/s]Calibration:  52%|█████▏    | 33/64 [00:29<00:02, 13.07entries/s]Calibration:  55%|█████▍    | 35/64 [00:29<00:02, 13.68entries/s]Calibration:  58%|█████▊    | 37/64 [00:29<00:01, 13.98entries/s]Calibration:  61%|██████    | 39/64 [00:29<00:01, 14.70entries/s]Calibration:  64%|██████▍   | 41/64 [00:30<00:01, 15.01entries/s]Calibration:  67%|██████▋   | 43/64 [00:30<00:01, 14.33entries/s]Calibration:  70%|███████   | 45/64 [00:30<00:01, 14.37entries/s]Calibration:  73%|███████▎  | 47/64 [00:30<00:01, 14.19entries/s]Calibration:  77%|███████▋  | 49/64 [00:30<00:01, 14.18entries/s]Calibration:  80%|███████▉  | 51/64 [00:30<00:00, 14.77entries/s]Calibration:  83%|████████▎ | 53/64 [00:30<00:00, 15.14entries/s]Calibration:  86%|████████▌ | 55/64 [00:31<00:00, 15.21entries/s]Calibration:  89%|████████▉ | 57/64 [00:31<00:00, 15.52entries/s]Calibration:  92%|█████████▏| 59/64 [00:31<00:00, 15.61entries/s]Calibration:  95%|█████████▌| 61/64 [00:31<00:00, 15.68entries/s]Calibration:  98%|█████████▊| 63/64 [00:31<00:00, 16.05entries/s]Calibration: 100%|██████████| 64/64 [00:31<00:00, 16.05entries/s]Calibration: 100%|██████████| 64/64 [00:31<00:00,  2.03entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:32.82)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/regnetx_1.6gf/regnetx_1.6gf.har

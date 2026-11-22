@@ -1,0 +1,32 @@
+[36m<Hailo Model Zoo INFO> Start run for network lightface_slim ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to lightface_slim from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.28)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [00:16<01:52,  2.01s/entries]Calibration:  25%|██▌       | 16/64 [00:16<00:40,  1.20entries/s]Calibration:  50%|█████     | 32/64 [00:16<00:10,  3.14entries/s]Calibration:  75%|███████▌  | 48/64 [00:16<00:02,  5.74entries/s]Calibration: 100%|██████████| 64/64 [00:16<00:00,  9.23entries/s]Calibration: 100%|██████████| 64/64 [00:16<00:00,  9.23entries/s]Calibration: 100%|██████████| 64/64 [00:16<00:00,  3.82entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:17.47)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer lightface_slim/conv20/conv_op, using max shift instead. delta=0.3313
+[info] No shifts available for layer lightface_slim/conv21/conv_op, using max shift instead. delta=0.3496
+[info] No shifts available for layer lightface_slim/conv21/conv_op, using max shift instead. delta=0.1748
+[info] No shifts available for layer lightface_slim/conv21/conv_op, using max shift instead. delta=0.1748
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/lightface_slim/lightface_slim.har

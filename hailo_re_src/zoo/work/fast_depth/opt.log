@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network fast_depth ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to fast_depth from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.58)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [00:16<01:52,  2.00s/entries]Calibration:  25%|██▌       | 16/64 [00:16<00:40,  1.19entries/s]Calibration:  38%|███▊      | 24/64 [00:16<00:18,  2.11entries/s]Calibration:  50%|█████     | 32/64 [00:16<00:09,  3.32entries/s]Calibration:  62%|██████▎   | 40/64 [00:17<00:04,  4.88entries/s]Calibration:  75%|███████▌  | 48/64 [00:17<00:02,  6.80entries/s]Calibration:  88%|████████▊ | 56/64 [00:17<00:00,  9.11entries/s]Calibration: 100%|██████████| 64/64 [00:17<00:00, 11.93entries/s]Calibration: 100%|██████████| 64/64 [00:17<00:00, 11.93entries/s]Calibration: 100%|██████████| 64/64 [00:17<00:00,  3.58entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:18.59)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/fast_depth/fast_depth.har

@@ -1,0 +1,2 @@
+44/52 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '7/7', 'concat': '3/3', 'feature_splitter': '8/8', 'feature_multiplier': '0/8', 'ew_sub': '8/8', 'ew_mult': '8/8', 'ew_add': '8/8'}

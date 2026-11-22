@@ -1,0 +1,9 @@
+126 layers -> ../out/q4_s3000_ints.npz
+pass 0: 6 layers stored a shifted bias: dw1 [21], conv46 [1], conv48 [42], dw6 [-8], conv95 [1], conv97 [1]
+pass 1: 6 layers stored a shifted bias: dw1 [-21], conv46 [-1], conv48 [-42], dw6 [8], conv95 [-1], conv97 [-1]
+wrote 126 kernels, 126 biases -> ../yolo26m_v14sec_q4_s3000.har (verified against the translated params)
+155/155 checked layers exact when chained from raw pixels
+{"tag": "q4_s3000_har", "result": {"mAP50": 0.8936352039637875, "mAP50_95": 0.827379374343107, "P": 0.870988689031822, "R": 0.8920126333931773, "shards": 1}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+{"tag": "bench_q4_s3000_har", "result": {"mAP50": 0.9136088084757196, "mAP50_95": 0.8374808575027788, "P": 0.913107784781234, "R": 0.8836435429093084, "shards": 1}}
+Q4HAR DONE

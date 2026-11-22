@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network resnext26_32x4d ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to resnext26_32x4d from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.55)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:14<15:41, 14.95s/entries]Calibration:   5%|▍         | 3/64 [00:15<03:59,  3.93s/entries]Calibration:   8%|▊         | 5/64 [00:15<01:55,  1.96s/entries]Calibration:  11%|█         | 7/64 [00:15<01:06,  1.16s/entries]Calibration:  14%|█▍        | 9/64 [00:15<00:41,  1.32entries/s]Calibration:  17%|█▋        | 11/64 [00:15<00:27,  1.91entries/s]Calibration:  20%|██        | 13/64 [00:15<00:19,  2.62entries/s]Calibration:  23%|██▎       | 15/64 [00:16<00:13,  3.62entries/s]Calibration:  28%|██▊       | 18/64 [00:16<00:08,  5.42entries/s]Calibration:  31%|███▏      | 20/64 [00:16<00:06,  6.70entries/s]Calibration:  34%|███▍      | 22/64 [00:16<00:05,  8.00entries/s]Calibration:  38%|███▊      | 24/64 [00:16<00:04,  8.92entries/s]Calibration:  41%|████      | 26/64 [00:16<00:03,  9.85entries/s]Calibration:  44%|████▍     | 28/64 [00:16<00:03, 10.75entries/s]Calibration:  47%|████▋     | 30/64 [00:17<00:02, 11.52entries/s]Calibration:  50%|█████     | 32/64 [00:17<00:02, 12.08entries/s]Calibration:  53%|█████▎    | 34/64 [00:17<00:02, 12.99entries/s]Calibration:  56%|█████▋    | 36/64 [00:17<00:02, 13.57entries/s]Calibration:  59%|█████▉    | 38/64 [00:17<00:01, 14.35entries/s]Calibration:  62%|██████▎   | 40/64 [00:17<00:01, 15.47entries/s]Calibration:  66%|██████▌   | 42/64 [00:17<00:01, 15.73entries/s]Calibration:  69%|██████▉   | 44/64 [00:17<00:01, 16.17entries/s]Calibration:  72%|███████▏  | 46/64 [00:18<00:01, 17.11entries/s]Calibration:  75%|███████▌  | 48/64 [00:18<00:00, 17.67entries/s]Calibration:  78%|███████▊  | 50/64 [00:18<00:00, 17.83entries/s]Calibration:  81%|████████▏ | 52/64 [00:18<00:00, 18.05entries/s]Calibration:  84%|████████▍ | 54/64 [00:18<00:00, 18.10entries/s]Calibration:  88%|████████▊ | 56/64 [00:18<00:00, 18.14entries/s]Calibration:  91%|█████████ | 58/64 [00:18<00:00, 16.91entries/s]Calibration:  94%|█████████▍| 60/64 [00:18<00:00, 16.86entries/s]Calibration:  97%|█████████▋| 62/64 [00:19<00:00, 16.03entries/s]Calibration: 100%|██████████| 64/64 [00:19<00:00, 16.04entries/s]Calibration: 100%|██████████| 64/64 [00:19<00:00, 16.04entries/s]Calibration: 100%|██████████| 64/64 [00:19<00:00,  3.34entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:19.94)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/resnext26_32x4d/resnext26_32x4d.har

@@ -1,0 +1,19 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/evaluate.py", line 293, in <module>
+    main()
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/evaluate.py", line 256, in main
+    fn = y26_heads(hn, params, dev, args.pt, ints=ints, impl=args.impl, apu=apu) if e2e else hailo_heads(hn, params, dev)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/evaluate.py", line 150, in y26_heads
+    net = qatfast.QATNet(hn, params, dev).to(dev).eval()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/qatfast.py", line 471, in __init__
+    self.mac[key] = (WideConv if wide else MACConv)(P.conv[n], dev, ca)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/qatfast.py", line 402, in __init__
+    assert "bias_factor" in r.files, "a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE"
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE

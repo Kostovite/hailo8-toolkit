@@ -1,0 +1,3 @@
+MISMATCH swin_tiny/reduce_mean1_layer_normalization24 (reduce_mean): 18/49 max 2
+548/549 checked layers exact when chained from raw pixels
+{'const_input': '17/17', 'input_layer': '1/1', 'normalization': '8/8', 'conv': '105/105', 'format_conversion': '55/55', 'activation': '57/57', 'reduce_mean': '28/29', 'ew_sub': '41/41', 'feature_multiplier': '29/29', 'ew_mult': '41/41', 'matmul': '24/24', 'ew_add': '41/41', 'reduce_max': '12/12', 'reduce_sum': '12/12', 'slice': '40/40', 'concat': '23/23', 'dw': '12/12', 'avgpool': '1/1', 'dense': '1/1'}

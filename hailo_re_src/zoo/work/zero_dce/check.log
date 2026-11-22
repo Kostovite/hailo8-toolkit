@@ -1,0 +1,10 @@
+UNSUPPORTED zero_dce/square1 (feature_multiplier): NotImplementedError: zero_dce/square1: feature_multiplier
+UNSUPPORTED zero_dce/square2 (feature_multiplier): NotImplementedError: zero_dce/square2: feature_multiplier
+UNSUPPORTED zero_dce/square3 (feature_multiplier): NotImplementedError: zero_dce/square3: feature_multiplier
+UNSUPPORTED zero_dce/square4 (feature_multiplier): NotImplementedError: zero_dce/square4: feature_multiplier
+UNSUPPORTED zero_dce/square5 (feature_multiplier): NotImplementedError: zero_dce/square5: feature_multiplier
+UNSUPPORTED zero_dce/square6 (feature_multiplier): NotImplementedError: zero_dce/square6: feature_multiplier
+UNSUPPORTED zero_dce/square7 (feature_multiplier): NotImplementedError: zero_dce/square7: feature_multiplier
+UNSUPPORTED zero_dce/square8 (feature_multiplier): NotImplementedError: zero_dce/square8: feature_multiplier
+44/52 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '7/7', 'concat': '3/3', 'feature_splitter': '8/8', 'feature_multiplier': '0/8', 'ew_sub': '8/8', 'ew_mult': '8/8', 'ew_add': '8/8'}

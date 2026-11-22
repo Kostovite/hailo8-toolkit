@@ -1,0 +1,11 @@
+[36m<Hailo Model Zoo INFO> Start run for network scrfd_2.5g ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+scrfd_2.5g.zip:   0%|          | 0.00/2.91M [00:00<?, ?B/s]scrfd_2.5g.zip:   1%|          | 20.0k/2.91M [00:00<00:29, 101kB/s]scrfd_2.5g.zip:   2%|▏         | 68.0k/2.91M [00:00<00:16, 185kB/s]scrfd_2.5g.zip:   5%|▌         | 156k/2.91M [00:00<00:09, 304kB/s] scrfd_2.5g.zip:  11%|█▏        | 340k/2.91M [00:00<00:04, 552kB/s]scrfd_2.5g.zip:  23%|██▎       | 700k/2.91M [00:01<00:02, 1.01MB/s]scrfd_2.5g.zip:  42%|████▏     | 1.21M/2.91M [00:01<00:01, 1.48MB/s]scrfd_2.5g.zip:  43%|████▎     | 1.25M/2.91M [00:01<00:01, 1.15MB/s]scrfd_2.5g.zip:  87%|████████▋ | 2.54M/2.91M [00:01<00:00, 2.92MB/s]scrfd_2.5g.zip: 100%|█████████▉| 2.90M/2.91M [00:01<00:00, 2.59MB/s]scrfd_2.5g.zip: 100%|██████████| 2.91M/2.91M [00:01<00:00, 1.67MB/s]
+[info] Found a '.' character in net_name, which isn't supported. New net_name is scrfd_2_5g
+[info] Translation started on ONNX model scrfd_2_5g
+[info] Restored ONNX model scrfd_2_5g (completion time: 00:00:00.07)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.70)
+[info] Start nodes mapped from original model: 'input.1': 'scrfd_2_5g/input_layer1'.
+[info] End nodes mapped from original model: 'Mul_116', 'Conv_114', 'Conv_117', 'Mul_140', 'Conv_138', 'Conv_141', 'Mul_164', 'Conv_162', 'Conv_165'.
+[info] Translation completed on ONNX model scrfd_2_5g (completion time: 00:00:01.21)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/scrfd_2.5g/scrfd_2.5g.har

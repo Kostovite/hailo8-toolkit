@@ -1,0 +1,8 @@
+UNSUPPORTED yolov9c/avgpool1 (avgpool): NotImplementedError: yolov9c/avgpool1: avgpool
+UNSUPPORTED yolov9c/avgpool2 (avgpool): NotImplementedError: yolov9c/avgpool2: avgpool
+UNSUPPORTED yolov9c/avgpool3 (avgpool): NotImplementedError: yolov9c/avgpool3: avgpool
+UNSUPPORTED yolov9c/avgpool4 (avgpool): NotImplementedError: yolov9c/avgpool4: avgpool
+UNSUPPORTED yolov9c/avgpool5 (avgpool): NotImplementedError: yolov9c/avgpool5: avgpool
+UNSUPPORTED yolov9c/yolov8_nms_postprocess (postprocess): NotImplementedError: yolov9c/yolov8_nms_postprocess: postprocess
+222/228 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '152/152', 'ew_add': '16/16', 'concat': '32/32', 'avgpool': '0/5', 'feature_splitter': '10/10', 'maxpool': '8/8', 'resize': '2/2', 'postprocess': '0/1'}

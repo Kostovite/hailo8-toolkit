@@ -1,0 +1,31 @@
+UNSUPPORTED vit_pose_small_bn/const_input1 (const_input): NotImplementedError: vit_pose_small_bn/const_input1: const_input
+UNSUPPORTED vit_pose_small_bn/external_pad1 (external_pad): NotImplementedError: vit_pose_small_bn/external_pad1: external_pad
+UNSUPPORTED vit_pose_small_bn/batch_norm1 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm1: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm2 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm2: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm4 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm4: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm5 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm5: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm7 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm7: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm8 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm8: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm10 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm10: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm11 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm11: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm13 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm13: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm14 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm14: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm16 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm16: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm17 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm17: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm19 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm19: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm20 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm20: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm22 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm22: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm23 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm23: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm25 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm25: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm26 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm26: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm28 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm28: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm29 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm29: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm31 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm31: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm32 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm32: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm34 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm34: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm35 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm35: batch_norm
+UNSUPPORTED vit_pose_small_bn/batch_norm37 (batch_norm): NotImplementedError: vit_pose_small_bn/batch_norm37: batch_norm
+UNSUPPORTED vit_pose_small_bn/deconv1 (deconv): NotImplementedError: vit_pose_small_bn/deconv1: deconv
+UNSUPPORTED vit_pose_small_bn/deconv2 (deconv): NotImplementedError: vit_pose_small_bn/deconv2: deconv
+152/181 checked layers exact when chained from raw pixels
+{'const_input': '0/1', 'input_layer': '1/1', 'normalization': '1/1', 'external_pad': '0/1', 'conv': '74/74', 'format_conversion': '2/2', 'ew_add': '1/1', 'batch_norm': '0/25', 'matmul': '24/24', 'reduce_max': '12/12', 'ew_sub': '12/12', 'activation': '1/1', 'reduce_sum': '12/12', 'ew_mult': '12/12', 'deconv': '0/2'}

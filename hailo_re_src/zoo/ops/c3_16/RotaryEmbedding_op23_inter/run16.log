@@ -1,0 +1,437 @@
+[info] Translation started on ONNX model RotaryEmbedding_op23_inter
+[info] Restored ONNX model RotaryEmbedding_op23_inter (completion time: 00:00:00.02)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.46)
+[info] Start nodes mapped from original model: 'x': 'RotaryEmbedding_op23_inter/input_layer1'.
+[info] End nodes mapped from original model: 'Conv_7'.
+[info] Translation completed on ONNX model RotaryEmbedding_op23_inter (completion time: 00:00:00.72)
+[info] Translation started on ONNX model RotaryEmbedding_op23_inter
+[info] Restored ONNX model RotaryEmbedding_op23_inter (completion time: 00:00:00.00)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.18)
+[info] Start nodes mapped from original model: 'x': 'RotaryEmbedding_op23_inter/input_layer1'.
+[info] End nodes mapped from original model: 'Conv_7'.
+[info] Translation completed on ONNX model RotaryEmbedding_op23_inter (completion time: 00:00:00.36)
+[info] Loading model script commands to RotaryEmbedding_op23_inter from string
+[info] Loading model script commands to RotaryEmbedding_op23_inter from string
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.17)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:21<22:20, 21.28s/entries]Calibration:  19%|█▉        | 12/64 [00:21<01:06,  1.28s/entries]Calibration:  38%|███▊      | 24/64 [00:21<00:21,  1.90entries/s]Calibration:  55%|█████▍    | 35/64 [00:21<00:08,  3.33entries/s]Calibration:  75%|███████▌  | 48/64 [00:21<00:02,  5.67entries/s]Calibration:  94%|█████████▍| 60/64 [00:21<00:00,  8.60entries/s]Calibration: 100%|██████████| 64/64 [00:21<00:00,  8.60entries/s]Calibration: 100%|██████████| 64/64 [00:21<00:00,  2.92entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:22.35)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/RotaryEmbedding_op23_inter/q.har
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 0s 346ms
+[info] Trying to compile the network in a single context
+[info] Using Single-context flow
+[info] Resources optimization params: max_control_utilization=75%, max_compute_utilization=75%, max_compute_16bit_utilization=75%, max_memory_utilization (weights)=75%, max_input_aligner_utilization=75%, max_apu_utilization=75%
+[info] Validating layers feasibility
+[info] output_layer1: Pass
+[info] input_layer1: Pass
+[info] const_input1: Pass
+[info] sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_ew_mult1_slice1_slice10-11_3: Pass
+[info] sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_7: Pass
+[info] sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_ew_4: Pass
+[info] const_input2: Pass
+[info] mul_and_add2: Pass
+[info] sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_6: Pass
+[info] sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_5: Pass
+[info] sh_from_input_layer1_to_ew_mult1_slice1_slice10-11_1: Pass
+[info] sh_from_input_layer1_to_sh_from_input_layer1_to_ew_mult1_slice1_slice10-11_1_slice12-14_2: Pass
+[info] slice1: Pass
+[info] mul_and_add1_concat1_transpose: Pass
+[info] slice11: Pass
+[info] slice12: Pass
+[info] ew_mult1: Pass
+[info] mul_and_add1: Pass
+[info] slice10: Pass
+[info] mul_and_add2_concat1_transpose: Pass
+[info] slice10_concat1_transpose: Pass
+[info] slice14: Pass
+[info] mul_and_add5_concat1_transpose: Pass
+[info] slice16: Pass
+[info] slice13: Pass
+[info] slice13_concat1_transpose: Pass
+[info] mul_and_add3: Pass
+[info] mul_and_add9_concat1_transpose: Pass
+[info] mul_and_add3_concat1_transpose: Pass
+[info] slice15: Pass
+[info] slice22: Pass
+[info] mul_and_add4: Pass
+[info] mul_and_add4_concat1_transpose: Pass
+[info] mul_and_add8_concat1_transpose: Pass
+[info] slice15_concat1_transpose: Pass
+[info] slice17: Pass
+[info] mul_and_add5: Pass
+[info] slice18_concat1_transpose: Pass
+[info] slice18: Pass
+[info] slice24_concat1_transpose: Pass
+[info] slice19: Pass
+[info] auto_reshape_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_layer1_to_sh_from_input_laye: Pass
+[info] slice20_concat1_transpose: Pass
+[info] mul_and_add9: Pass
+[info] slice21: Pass
+[info] slice17_concat1_transpose: Pass
+[info] slice2: Pass
+[info] mul_and_add6: Pass
+[info] slice24: Pass
+[info] concat_f_from_concat_f_from_concat_f_from_mul_and_add1_concat1_transpose_slice7_concat1_transpose_mu: Pass
+[info] slice20: Pass
+[info] slice3_concat1_transpose: Pass
+[info] mul_and_add7_concat1_transpose: Pass
+[info] concat_f_from_concat_f_from_concat_f_from_concat_f_from_concat_f_from_mul_and_add1_concat1_transpose: Pass
+[info] mul_and_add10_concat1_transpose: Pass
+[info] slice22_concat1_transpose: Pass
+[info] slice23: Pass
+[info] mul_and_add7: Pass
+[info] mul_and_add11_concat1_transpose: Pass
+[info] mul_and_add6_concat1_transpose: Pass
+[info] slice7_concat1_transpose: Pass
+[info] conv1_sd0: Pass
+[info] mul_and_add10: Pass
+[info] slice3: Pass
+[info] slice5: Pass
+[info] slice4: Pass
+[info] slice6: Pass
+[info] mul_and_add11: Pass
+[info] mul_and_add8: Pass
+[info] slice9: Pass
+[info] slice7: Pass
+[info] mul_and_add12_concat1_transpose: Pass
+[info] mul_and_add12: Pass
+[info] concat_f_from_concat_f_from_concat_f_from_concat_f_from_concat_f_from_concat_f_from_mul_and_add1_con: Pass
+[info] concat1: Pass
+[info] concat_f_from_concat_f_from_concat_f_from_concat_f_from_mul_and_add1_concat1_transpose_slice7_concat: Pass
+[info] ew_mult2: Pass
+[info] slice5_concat1_transpose: Pass
+[info] slice8: Pass
+[info] concat_f_from_concat_f_from_mul_and_add1_concat1_transpose_slice7_concat1_transpose_mul_and_add7_con: Pass
+[info] slice8_concat1_transpose: Pass
+[info] concat_f_from_concat_f_from_concat_f_from_concat_f_from_concat_f_from_concat_f_from_concat_f_from_mu: Pass
+[info] concat_f_from_mul_and_add1_concat1_transpose_slice7_concat1_transpose_mul_and_add7_concat1_transpose: Pass
+[info] concat1_ew_mult2_transpose: Pass
+[info] conv1_sdc: Pass
+[info] conv1_sd1: Pass
+[info] ew_add1: Pass
+[info] Layers feasibility validated successfully
+[info] Running resources allocation (mapping) flow, time per context: 59m 59s
+
+
+[info] Context:0/0 Iteration 0: Mapping prepost...          
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  *          *          *          *          *          *          *          *          V       
+ worker1                                                                                                  
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1                                                                                                  
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  *          *          *          *          *          *          *          *          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  *          *          *          *          *          *          *          *          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  *          V          *          *          *          *          *          *          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          *          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3                                                                                                  
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  *          *          *          *          *          *          *          *          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          *          *          *          *          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 0: Trying parallel splits...   
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0                                                                                                  
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  *          *          *          *          *          *          *          *          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2                                                                                                  
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  *          *          *          *          *          *          *          *          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  *          *          *          *          *          *          *          *          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  *          *          *          *          *          *          V          *          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:00
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:01
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:01
+[info] Context:0/0 Iteration 4: Trying parallel mapping...  
+          cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+ worker0  V          V          V          V          V          V          V          V          V       
+ worker1  V          V          V          V          V          V          V          V          V       
+ worker2  *          *          *          *          *          *          *          *          V       
+ worker3  V          V          V          V          V          V          V          V          V       
+
+  00:04
+
+[info] Iterations: 4
+Reverts on cluster mapping: 0
+Reverts on inter-cluster connectivity: 0
+Reverts on pre-mapping validation: 0
+Reverts on split failed: 0
+[info] +-----------+---------------------+---------------------+--------------------+
+[info] | Cluster   | Control Utilization | Compute Utilization | Memory Utilization |
+[info] +-----------+---------------------+---------------------+--------------------+
+[info] | cluster_0 | 87.5%               | 21.9%               | 19.5%              |
+[info] | cluster_1 | 87.5%               | 21.9%               | 22.7%              |
+[info] | cluster_2 | 93.8%               | 23.4%               | 19.5%              |
+[info] | cluster_3 | 50%                 | 12.5%               | 12.5%              |
+[info] | cluster_4 | 75%                 | 18.8%               | 18.8%              |
+[info] | cluster_5 | 68.8%               | 17.2%               | 14.8%              |
+[info] | cluster_6 | 18.8%               | 4.7%                | 6.3%               |
+[info] | cluster_7 | 43.8%               | 20.3%               | 21.1%              |
+[info] +-----------+---------------------+---------------------+--------------------+
+[info] | Total     | 65.6%               | 17.6%               | 16.9%              |
+[info] +-----------+---------------------+---------------------+--------------------+
+[info] Successful Mapping (allocation time: 10s)
+[info] Compiling kernels of RotaryEmbedding_op23_inter_context_0...
+[info] Bandwidth of model inputs: 0.0703125 Mbps, outputs: 0.140625 Mbps (for a single frame)
+[info] Bandwidth of DDR buffers: 0.0 Mbps (for a single frame)
+[info] Bandwidth of inter context tensors: 0.0 Mbps (for a single frame)
+[info] Building HEF...
+[info] Successful Compilation (compilation time: 0s)
+{"case": "RotaryEmbedding_op23_inter", "stage": "ok", "hn_types": ["concat", "const_input", "conv", "ew_add", "ew_mult", "normalization", "slice"], "activations": [], "prec": "max16", "prec_layers": [["const_input1", "a8_w8_a8"], ["const_input2", "a8_w8_a8"], ["input_layer1", "a8_w8_a8"], ["ew_add1", "a8_w8_a16"], ["conv1", "a16_w16_a16"], ["output_layer1", "a16_w16"]], "prec_skipped": [], "sqnr_native_db": 148.0386096590886, "sqnr_hw_db": 34.67716144612039, "hef_MB": 1.09, "seconds": 70.3}

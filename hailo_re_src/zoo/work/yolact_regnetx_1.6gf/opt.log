@@ -1,0 +1,37 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolact_regnetx_1.6gf ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolact_regnetx_1_6gf from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.99)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [00:38<09:44,  9.74s/entries]Calibration:  12%|█▎        | 8/64 [00:41<04:04,  4.37s/entries]Calibration:  19%|█▉        | 12/64 [00:43<02:13,  2.56s/entries]Calibration:  25%|██▌       | 16/64 [00:44<01:22,  1.72s/entries]Calibration:  31%|███▏      | 20/64 [00:46<00:54,  1.25s/entries]Calibration:  38%|███▊      | 24/64 [00:48<00:38,  1.03entries/s]Calibration:  44%|████▍     | 28/64 [00:50<00:29,  1.24entries/s]Calibration:  50%|█████     | 32/64 [00:51<00:21,  1.46entries/s]Calibration:  56%|█████▋    | 36/64 [00:53<00:17,  1.64entries/s]Calibration:  62%|██████▎   | 40/64 [00:55<00:13,  1.72entries/s]Calibration:  69%|██████▉   | 44/64 [00:57<00:10,  1.87entries/s]Calibration:  75%|███████▌  | 48/64 [00:59<00:08,  1.91entries/s]Calibration:  81%|████████▏ | 52/64 [01:02<00:06,  1.74entries/s]Calibration:  88%|████████▊ | 56/64 [01:04<00:04,  1.66entries/s]Calibration:  94%|█████████▍| 60/64 [01:07<00:02,  1.67entries/s]Calibration: 100%|██████████| 64/64 [01:09<00:00,  1.71entries/s]Calibration: 100%|██████████| 64/64 [01:09<00:00,  1.71entries/s]Calibration: 100%|██████████| 64/64 [01:09<00:00,  1.08s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:11.17)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv63/conv_op, using max shift instead. delta=0.5994
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv63/conv_op, using max shift instead. delta=0.2997
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv78/conv_op, using max shift instead. delta=0.3622
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv78/conv_op, using max shift instead. delta=0.1811
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv83/conv_op, using max shift instead. delta=0.5008
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv83/conv_op, using max shift instead. delta=0.2504
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv85/conv_op, using max shift instead. delta=0.4611
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv85/conv_op, using max shift instead. delta=0.2305
+[info] No shifts available for layer yolact_regnetx_1_6gf/conv83/conv_op, using max shift instead. delta=0.2504
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolact_regnetx_1.6gf/yolact_regnetx_1.6gf.har

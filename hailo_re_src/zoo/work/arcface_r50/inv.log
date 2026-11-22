@@ -1,0 +1,2 @@
+60/86 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '53/53', 'batch_norm': '0/25', 'ew_add': '4/4', 'dw': '1/1', 'dense': '0/1'}

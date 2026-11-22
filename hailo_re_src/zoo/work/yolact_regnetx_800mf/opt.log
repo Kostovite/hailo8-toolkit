@@ -1,0 +1,55 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolact_regnetx_800mf ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolact_regnetx_800mf from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.00)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [00:40<10:14, 10.24s/entries]Calibration:  12%|█▎        | 8/64 [00:42<04:07,  4.43s/entries]Calibration:  19%|█▉        | 12/64 [00:43<02:13,  2.57s/entries]Calibration:  25%|██▌       | 16/64 [00:45<01:21,  1.70s/entries]Calibration:  31%|███▏      | 20/64 [00:46<00:52,  1.20s/entries]Calibration:  38%|███▊      | 24/64 [00:47<00:36,  1.11entries/s]Calibration:  44%|████▍     | 28/64 [00:49<00:25,  1.41entries/s]Calibration:  50%|█████     | 32/64 [00:50<00:18,  1.70entries/s]Calibration:  56%|█████▋    | 36/64 [00:51<00:14,  1.97entries/s]Calibration:  62%|██████▎   | 40/64 [00:53<00:10,  2.20entries/s]Calibration:  69%|██████▉   | 44/64 [00:54<00:08,  2.40entries/s]Calibration:  75%|███████▌  | 48/64 [00:55<00:06,  2.56entries/s]Calibration:  81%|████████▏ | 52/64 [00:57<00:04,  2.63entries/s]Calibration:  88%|████████▊ | 56/64 [00:58<00:02,  2.75entries/s]Calibration:  94%|█████████▍| 60/64 [00:59<00:01,  2.91entries/s]Calibration: 100%|██████████| 64/64 [01:00<00:00,  3.01entries/s]Calibration: 100%|██████████| 64/64 [01:00<00:00,  3.01entries/s]Calibration: 100%|██████████| 64/64 [01:00<00:00,  1.05entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:02.68)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer yolact_regnetx_800mf/conv57/conv_op, using max shift instead. delta=0.5067
+[info] No shifts available for layer yolact_regnetx_800mf/conv57/conv_op, using max shift instead. delta=0.2534
+[info] No shifts available for layer yolact_regnetx_800mf/conv62/conv_op, using max shift instead. delta=0.4771
+[info] No shifts available for layer yolact_regnetx_800mf/conv62/conv_op, using max shift instead. delta=0.2385
+[info] No shifts available for layer yolact_regnetx_800mf/conv65/conv_op, using max shift instead. delta=0.1468
+[info] No shifts available for layer yolact_regnetx_800mf/conv65/conv_op, using max shift instead. delta=0.0734
+[info] No shifts available for layer yolact_regnetx_800mf/conv72/conv_op, using max shift instead. delta=0.3393
+[info] No shifts available for layer yolact_regnetx_800mf/conv72/conv_op, using max shift instead. delta=0.1696
+[info] No shifts available for layer yolact_regnetx_800mf/conv73/conv_op, using max shift instead. delta=0.0439
+[info] No shifts available for layer yolact_regnetx_800mf/conv73/conv_op, using max shift instead. delta=0.0219
+[info] No shifts available for layer yolact_regnetx_800mf/conv72/conv_op, using max shift instead. delta=0.1696
+[info] No shifts available for layer yolact_regnetx_800mf/conv76/conv_op, using max shift instead. delta=0.1684
+[info] No shifts available for layer yolact_regnetx_800mf/conv76/conv_op, using max shift instead. delta=0.0842
+[info] No shifts available for layer yolact_regnetx_800mf/conv73/conv_op, using max shift instead. delta=0.0219
+[info] No shifts available for layer yolact_regnetx_800mf/conv77/conv_op, using max shift instead. delta=0.4788
+[info] No shifts available for layer yolact_regnetx_800mf/conv77/conv_op, using max shift instead. delta=0.2394
+[info] No shifts available for layer yolact_regnetx_800mf/conv79/conv_op, using max shift instead. delta=0.2626
+[info] No shifts available for layer yolact_regnetx_800mf/conv79/conv_op, using max shift instead. delta=0.1313
+[info] No shifts available for layer yolact_regnetx_800mf/conv77/conv_op, using max shift instead. delta=0.2394
+[info] No shifts available for layer yolact_regnetx_800mf/conv83/conv_op, using max shift instead. delta=0.6595
+[info] No shifts available for layer yolact_regnetx_800mf/conv83/conv_op, using max shift instead. delta=0.3298
+[info] No shifts available for layer yolact_regnetx_800mf/conv79/conv_op, using max shift instead. delta=0.1313
+[info] No shifts available for layer yolact_regnetx_800mf/conv85/conv_op, using max shift instead. delta=0.4548
+[info] No shifts available for layer yolact_regnetx_800mf/conv85/conv_op, using max shift instead. delta=0.2274
+[info] No shifts available for layer yolact_regnetx_800mf/conv86/conv_op, using max shift instead. delta=0.5884
+[info] No shifts available for layer yolact_regnetx_800mf/conv86/conv_op, using max shift instead. delta=0.2942
+[info] No shifts available for layer yolact_regnetx_800mf/conv85/conv_op, using max shift instead. delta=0.2274
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolact_regnetx_800mf/yolact_regnetx_800mf.har

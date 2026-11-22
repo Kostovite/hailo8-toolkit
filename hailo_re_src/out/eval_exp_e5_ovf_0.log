@@ -1,0 +1,6 @@
+WARNING ⚠️ torchvision==0.27 is incompatible with torch==2.7.
+Run 'pip install torchvision==0.22' to fix torchvision or 'pip install -U torch torchvision' to update both.
+For a full compatibility table see https://github.com/pytorch/vision#installation
+100/229 3.64 img/s
+200/229 4.57 img/s
+wrote stats ../out/stats_exp_e5_ovf_0.npz

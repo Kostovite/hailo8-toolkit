@@ -1,0 +1,18 @@
+WARNING ⚠️ Error decoding JSON from $HOME/.config/Ultralytics/settings.json. Starting with an empty dictionary.
+Creating new Ultralytics Settings v0.0.6 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+100/1385 18.93 img/s
+200/1385 22.88 img/s
+300/1385 24.59 img/s
+400/1385 25.54 img/s
+500/1385 26.14 img/s
+600/1385 26.57 img/s
+700/1385 26.89 img/s
+800/1385 27.16 img/s
+900/1385 27.37 img/s
+1000/1385 27.55 img/s
+1100/1385 27.68 img/s
+1200/1385 27.76 img/s
+1300/1385 27.82 img/s
+wrote stats ../out/stats_nb_n_w16allL_3ep_s2300_0.npz

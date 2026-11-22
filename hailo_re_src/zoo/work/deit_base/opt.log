@@ -1,0 +1,46 @@
+[36m<Hailo Model Zoo INFO> Start run for network deit_base ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to deit_base from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.35)
+[info] Starting LayerNorm Decomposition
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [00:38<04:29,  4.82s/entries]Calibration:  25%|██▌       | 16/64 [00:39<01:37,  2.04s/entries]Calibration:  38%|███▊      | 24/64 [00:40<00:46,  1.15s/entries]Calibration:  50%|█████     | 32/64 [00:40<00:23,  1.35entries/s]Calibration:  62%|██████▎   | 40/64 [00:41<00:12,  1.98entries/s]Calibration:  75%|███████▌  | 48/64 [00:42<00:05,  2.73entries/s]Calibration:  88%|████████▊ | 56/64 [00:43<00:02,  3.62entries/s]Calibration: 100%|██████████| 64/64 [00:43<00:00,  4.57entries/s]Calibration: 100%|██████████| 64/64 [00:43<00:00,  4.57entries/s]Calibration: 100%|██████████| 64/64 [00:43<00:00,  1.46entries/s]
+[info] Model Optimization Algorithm LayerNorm Decomposition is done (completion time is 00:00:58.89)
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [03:21<23:32, 25.22s/entries]Calibration:  25%|██▌       | 16/64 [03:23<08:26, 10.55s/entries]Calibration:  38%|███▊      | 24/64 [03:26<03:54,  5.87s/entries]Calibration:  50%|█████     | 32/64 [03:28<01:57,  3.67s/entries]Calibration:  62%|██████▎   | 40/64 [03:31<00:59,  2.46s/entries]Calibration:  75%|███████▌  | 48/64 [03:34<00:27,  1.75s/entries]Calibration:  88%|████████▊ | 56/64 [03:36<00:10,  1.28s/entries]Calibration: 100%|██████████| 64/64 [03:39<00:00,  1.03entries/s]Calibration: 100%|██████████| 64/64 [03:39<00:00,  1.03entries/s]Calibration: 100%|██████████| 64/64 [03:39<00:00,  3.43s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:03:46.46)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.08)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:03.16)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer deit_base/conv1/conv_op, using max shift instead. delta=0.1812
+[info] No shifts available for layer deit_base/conv1/conv_op, using max shift instead. delta=0.0906
+[info] activation fitting started for deit_base/reduce_sum_softmax1/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax2/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax3/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax4/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax5/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax6/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax7/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax8/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax9/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax10/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax11/act_op
+[info] activation fitting started for deit_base/reduce_sum_softmax12/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/deit_base/deit_base.har

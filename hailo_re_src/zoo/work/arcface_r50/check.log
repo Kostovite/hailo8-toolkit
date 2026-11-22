@@ -1,0 +1,28 @@
+UNSUPPORTED arcface_r50/batch_norm1 (batch_norm): NotImplementedError: arcface_r50/batch_norm1: batch_norm
+UNSUPPORTED arcface_r50/batch_norm2 (batch_norm): NotImplementedError: arcface_r50/batch_norm2: batch_norm
+UNSUPPORTED arcface_r50/batch_norm3 (batch_norm): NotImplementedError: arcface_r50/batch_norm3: batch_norm
+UNSUPPORTED arcface_r50/batch_norm4 (batch_norm): NotImplementedError: arcface_r50/batch_norm4: batch_norm
+UNSUPPORTED arcface_r50/batch_norm5 (batch_norm): NotImplementedError: arcface_r50/batch_norm5: batch_norm
+UNSUPPORTED arcface_r50/batch_norm6 (batch_norm): NotImplementedError: arcface_r50/batch_norm6: batch_norm
+UNSUPPORTED arcface_r50/batch_norm7 (batch_norm): NotImplementedError: arcface_r50/batch_norm7: batch_norm
+UNSUPPORTED arcface_r50/batch_norm8 (batch_norm): NotImplementedError: arcface_r50/batch_norm8: batch_norm
+UNSUPPORTED arcface_r50/batch_norm9 (batch_norm): NotImplementedError: arcface_r50/batch_norm9: batch_norm
+UNSUPPORTED arcface_r50/batch_norm10 (batch_norm): NotImplementedError: arcface_r50/batch_norm10: batch_norm
+UNSUPPORTED arcface_r50/batch_norm11 (batch_norm): NotImplementedError: arcface_r50/batch_norm11: batch_norm
+UNSUPPORTED arcface_r50/batch_norm12 (batch_norm): NotImplementedError: arcface_r50/batch_norm12: batch_norm
+UNSUPPORTED arcface_r50/batch_norm13 (batch_norm): NotImplementedError: arcface_r50/batch_norm13: batch_norm
+UNSUPPORTED arcface_r50/batch_norm14 (batch_norm): NotImplementedError: arcface_r50/batch_norm14: batch_norm
+UNSUPPORTED arcface_r50/batch_norm15 (batch_norm): NotImplementedError: arcface_r50/batch_norm15: batch_norm
+UNSUPPORTED arcface_r50/batch_norm16 (batch_norm): NotImplementedError: arcface_r50/batch_norm16: batch_norm
+UNSUPPORTED arcface_r50/batch_norm17 (batch_norm): NotImplementedError: arcface_r50/batch_norm17: batch_norm
+UNSUPPORTED arcface_r50/batch_norm18 (batch_norm): NotImplementedError: arcface_r50/batch_norm18: batch_norm
+UNSUPPORTED arcface_r50/batch_norm19 (batch_norm): NotImplementedError: arcface_r50/batch_norm19: batch_norm
+UNSUPPORTED arcface_r50/batch_norm20 (batch_norm): NotImplementedError: arcface_r50/batch_norm20: batch_norm
+UNSUPPORTED arcface_r50/batch_norm21 (batch_norm): NotImplementedError: arcface_r50/batch_norm21: batch_norm
+UNSUPPORTED arcface_r50/batch_norm22 (batch_norm): NotImplementedError: arcface_r50/batch_norm22: batch_norm
+UNSUPPORTED arcface_r50/batch_norm23 (batch_norm): NotImplementedError: arcface_r50/batch_norm23: batch_norm
+UNSUPPORTED arcface_r50/batch_norm24 (batch_norm): NotImplementedError: arcface_r50/batch_norm24: batch_norm
+UNSUPPORTED arcface_r50/batch_norm25 (batch_norm): NotImplementedError: arcface_r50/batch_norm25: batch_norm
+UNSUPPORTED arcface_r50/fc1 (dense): NotImplementedError: arcface_r50/fc1: dense
+60/86 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '53/53', 'batch_norm': '0/25', 'ew_add': '4/4', 'dw': '1/1', 'dense': '0/1'}

@@ -1,0 +1,6 @@
+[HailoRT] [warning] Desc page size value (1024) is not optimal for performance.
+0 gridnet/conv20 (400, 448, 448, 96)
+1 gridnet/conv19 (400, 224, 224, 128)
+RESULT chip_u70 n 400 exact 0.8625 GriTS-Top 97.10
+RESULT identical_structure_vs_torch 1.0000  exact torch 0.8625 -> 0.8625
+GATE PASS

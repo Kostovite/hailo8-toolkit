@@ -1,0 +1,14 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/916 18.46 img/s
+200/916 24.07 img/s
+300/916 26.67 img/s
+400/916 27.88 img/s
+500/916 28.72 img/s
+600/916 29.56 img/s
+700/916 30.21 img/s
+800/916 30.64 img/s
+900/916 30.95 img/s
+wrote stats ../out/stats_exp_n_w16L_3ep_s2300_0.npz
+{"mAP50": 0.7803284774885042, "mAP50_95": 0.6596765016982766, "P": 0.7768655788595678, "R": 0.7328433187796993, "kind": "hailo", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/n_L0w16top8.hn", "shape": [640, 640], "n": 916, "sec": 30}

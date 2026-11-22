@@ -1,0 +1,37 @@
+MISMATCH paddle_ocr_v5_mobile_detection/conv3 (conv): 1/1566720 max 4
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool2 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool2: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc3 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc3: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc4 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc4: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool3 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool3: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc5 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc5: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc6 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc6: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool4 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool4: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc7 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc7: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc8 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc8: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/reducing_avgpool1 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/reducing_avgpool1: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool1 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool1: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc1 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc1: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc2 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc2: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool5 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool5: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc9 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc9: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc10 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc10: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool6 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool6: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc11 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc11: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc12 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc12: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool7 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool7: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc13 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc13: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc14 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc14: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool8 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool8: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc15 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc15: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc16 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc16: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool9 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool9: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc17 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc17: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc18 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc18: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/reducing_avgpool10 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/reducing_avgpool10: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/avgpool10 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_detection/avgpool10: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc19 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc19: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/fc20 (dense): NotImplementedError: paddle_ocr_v5_mobile_detection/fc20: dense
+UNSUPPORTED paddle_ocr_v5_mobile_detection/deconv1 (deconv): NotImplementedError: paddle_ocr_v5_mobile_detection/deconv1: deconv
+UNSUPPORTED paddle_ocr_v5_mobile_detection/deconv2 (deconv): NotImplementedError: paddle_ocr_v5_mobile_detection/deconv2: deconv
+111/146 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'activation': '16/16', 'normalization': '15/15', 'conv': '27/28', 'dw': '14/14', 'avgpool': '0/12', 'dense': '0/20', 'resize': '16/16', 'ew_mult': '10/10', 'ew_add': '11/11', 'concat': '1/1', 'deconv': '0/2'}

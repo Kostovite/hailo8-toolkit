@@ -1,0 +1,103 @@
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[turbo] cp_model_params '' -> 'num_search_workers:16' (cp_model_params set to num_search_workers:16
+)
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 7s 672ms
+[info] Trying to compile the network in a single context
+[info] Single context flow failed: Recoverable single context error
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 11s 363ms
+[info] Using Multi-context flow
+[info] Resources optimization params: max_control_utilization=60%, max_compute_utilization=60%, max_compute_16bit_utilization=60%, max_memory_utilization (weights)=60%, max_input_aligner_utilization=60%, max_apu_utilization=60%
+[info] Finding the best partition to contexts...
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1024 14:40:41.621,793 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666485568666666 num_search_workers: 16
+I1024 14:40:51.829,406 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666468747 num_search_workers: 16
+I1024 14:41:03.959,101 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.66648411 num_search_workers: 16
+I1024 14:41:14.737,075 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666495549333334 num_search_workers: 16
+I1024 14:41:26.638,039 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666456151000002 num_search_workers: 16
+I1024 14:41:37.354,933 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666469787333334 num_search_workers: 16
+I1024 14:41:48.620,748 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.66648658 num_search_workers: 16
+I1024 14:41:59.918,735 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666482202333334 num_search_workers: 16
+I1024 14:42:10.102,595 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.66647162 num_search_workers: 16
+I1024 14:42:20.93,271 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666457249 num_search_workers: 16
+I1024 14:42:31.20,836 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666324488666667 num_search_workers: 16
+I1024 14:42:41.139,204 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666435988666667 num_search_workers: 16
+I1024 14:42:51.777,307 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666434412666668 num_search_workers: 16
+I1024 14:43:01.768,846 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666448314 num_search_workers: 16
+I1024 14:43:11.702,478 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666467925333333 num_search_workers: 16
+I1024 14:43:21.444,264 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666467195666666 num_search_workers: 16
+I1024 14:43:32.05,155 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666474327 num_search_workers: 16
+I1024 14:43:43.447,121 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666387490666668 num_search_workers: 16
+I1024 14:43:54.905,092 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666485923666666 num_search_workers: 16
+I1024 14:44:08.213,091 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666491031 num_search_workers: 16
+I1024 14:44:19.368,994 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666513071 num_search_workers: 16
+I1024 14:44:30.581,645 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666487857666667 num_search_workers: 16
+I1024 14:44:42.32,240 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666481014333332 num_search_workers: 16
+I1024 14:44:53.586,598 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666438907 num_search_workers: 16
+I1024 14:45:05.223,691 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666436673666666 num_search_workers: 16
+I1024 14:45:17.820,535 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666419717 num_search_workers: 16
+I1024 14:45:29.101,419 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666376328333332 num_search_workers: 16
+I1024 14:45:41.742,338 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666416827 num_search_workers: 16
+I1024 14:45:53.574,922 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666477416666666 num_search_workers: 16
+I1024 14:46:04.41,651 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666414710666668 num_search_workers: 16
+I1024 14:46:16.07,980 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666452082333333 num_search_workers: 16
+I1024 14:46:26.557,547 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666446546 num_search_workers: 16
+I1024 14:46:38.166,316 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666241837 num_search_workers: 16
+I1024 14:46:49.590,190 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666424732333333 num_search_workers: 16
+I1024 14:47:00.612,390 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666365783333333 num_search_workers: 16
+I1024 14:47:14.835,742 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666401323666665 num_search_workers: 16
+I1024 14:47:26.477,161 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666454391 num_search_workers: 16
+I1024 14:47:37.362,167 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.665605007 num_search_workers: 16
+I1024 14:47:39.174,696 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666434939666669 num_search_workers: 16
+I1024 14:47:51.897,004 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666436917666669 num_search_workers: 16
+I1024 14:48:06.95,144 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666455962 num_search_workers: 16
+I1024 14:48:18.485,929 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666459669666668 num_search_workers: 16
+I1024 14:48:30.577,530 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666473971333335 num_search_workers: 16
+I1024 14:48:42.239,468 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666483286 num_search_workers: 16
+I1024 14:48:53.390,705 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666472281 num_search_workers: 16
+I1024 14:49:05.437,952 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666491775666668 num_search_workers: 16
+I1024 14:49:17.955,062 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666477075666666 num_search_workers: 16
+I1024 14:49:29.65,605 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666488335 num_search_workers: 16
+I1024 14:49:40.136,322 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666462685 num_search_workers: 16
+I1024 14:49:51.705,644 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666438136666667 num_search_workers: 16
+I1024 14:50:03.614,893 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666438474666666 num_search_workers: 16
+I1024 14:50:14.877,344 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666443410666666 num_search_workers: 16
+I1024 14:50:27.207,286 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666446609666668 num_search_workers: 16
+I1024 14:50:39.425,558 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666432972 num_search_workers: 16
+I1024 14:50:49.866,065 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666452881 num_search_workers: 16
+I1024 14:51:00.301,972 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666440339333334 num_search_workers: 16
+I1024 14:51:11.125,142 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666468960666666 num_search_workers: 16
+I1024 14:51:21.628,664 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666458289666668 num_search_workers: 16
+I1024 14:51:33.266,029 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666487958333331 num_search_workers: 16
+I1024 14:51:45.728,770 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666480586666669 num_search_workers: 16
+I1024 14:51:57.160,058 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.66647783 num_search_workers: 16
+I1024 14:52:09.921,196 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666474851333334 num_search_workers: 16
+I1024 14:52:21.848,526 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666428042333333 num_search_workers: 16
+I1024 14:52:34.933,523 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666441407 num_search_workers: 16
+I1024 14:52:47.63,570 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666466096 num_search_workers: 16
+I1024 14:53:00.503,396 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666417562333333 num_search_workers: 16
+I1024 14:53:12.892,256 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666472796 num_search_workers: 16
+I1024 14:53:25.469,938 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666483281666668 num_search_workers: 16
+I1024 14:53:37.522,060 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666461035333334 num_search_workers: 16
+I1024 14:53:49.169,829 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666453294666667 num_search_workers: 16
+I1024 14:54:00.833,977 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666432093 num_search_workers: 16
+I1024 14:54:12.310,637 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666430427666665 num_search_workers: 16
+I1024 14:54:24.458,868 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666308459 num_search_workers: 16
+I1024 14:54:35.735,865 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.66642804 num_search_workers: 16
+I1024 14:54:46.954,396 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666450124333334 num_search_workers: 16
+I1024 14:54:58.204,507 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666465737666666 num_search_workers: 16
+I1024 14:55:09.387,303 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666467937666667 num_search_workers: 16
+I1024 14:55:20.232,822 4,115,688 cp_model_solver.cc:2,092] Parameters: max_deterministic_time: 21.666416343333335 num_search_workers: 16
+[<==>....................................] 
+[error] Mapping Failed (allocation time: 15m 6s)
+Compiler could not find a valid partition to contexts. Most common error is: PrePostAgent shutdown requested before match was found with 76/172 failures.
+[?25h
+[error] Failed to produce compiled graph
+[error] BackendAllocatorException: Compilation failed: Compiler could not find a valid partition to contexts. Most common error is: PrePostAgent shutdown requested before match was found with 76/172 failures.
+
+real	15m30.759s
+user	19m0.574s
+sys	0m47.016s

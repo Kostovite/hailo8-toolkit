@@ -1,0 +1,104 @@
+[36m<Hailo Model Zoo INFO> Start run for network r3d_18 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to r3d_18 from l0.alls
+[warning] Model script is empty
+[info] Starting Model Optimization
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 232, in optimize
+    optimize_model(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 353, in optimize_model
+    runner.optimize(calib_feed_callback)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 2206, in optimize
+    result = self._optimize(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 2025, in _optimize
+    checkpoint_info = self._sdk_backend.full_quantization(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py", line 1138, in full_quantization
+    new_checkpoint_info = self._full_acceleras_run(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py", line 1357, in _full_acceleras_run
+    mo_config = parser.run()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/tools/mo_script_parser.py", line 86, in run
+    default_cfg = self._parse_flavor_to_default_cfg(flavors_commands)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/tools/mo_script_parser.py", line 113, in _parse_flavor_to_default_cfg
+    data_length = get_tf_dataset_length(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/utils/tf_utils.py", line 140, in get_tf_dataset_length
+    dataset_length = convert_and_get_length(data, data_type, threshold)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/utils/tf_utils.py", line 111, in convert_and_get_length
+    dataset, _ = data_to_dataset(data, data_type)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/utils/dataset_util.py", line 274, in data_to_dataset
+    dataset = data()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 272, in <lambda>
+    return lambda: data_feed_cb().dataset
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 243, in <lambda>
+    return lambda: func(*args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/utils/data.py", line 121, in __init__
+    dataset = dataset.map(self._preproc_callback)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2341, in map
+    return map_op._map_v2(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/data/ops/map_op.py", line 43, in _map_v2
+    return _MapDataset(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/data/ops/map_op.py", line 157, in __init__
+    self._map_func = structured_function.StructuredFunctionWrapper(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/data/ops/structured_function.py", line 265, in __init__
+    self._function = fn_factory()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 1251, in get_concrete_function
+    concrete = self._get_concrete_function_garbage_collected(*args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 1221, in _get_concrete_function_garbage_collected
+    self._initialize(args, kwargs, add_initializers_to=initializers)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 696, in _initialize
+    self._concrete_variable_creation_fn = tracing_compilation.trace_function(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 178, in trace_function
+    concrete_function = _maybe_define_function(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 283, in _maybe_define_function
+    concrete_function = _create_concrete_function(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 310, in _create_concrete_function
+    traced_func_graph = func_graph_module.func_graph_from_py_func(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/framework/func_graph.py", line 1059, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 599, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/data/ops/structured_function.py", line 231, in wrapped_fn
+    ret = wrapper_helper(*args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/data/ops/structured_function.py", line 161, in wrapper_helper
+    ret = autograph.tf_convert(self._func, ag_ctx)(*nested_args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 693, in wrapper
+    raise e.ag_error_metadata.to_exception(e)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 690, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filebe82nvoe.py", line 21, in tf__preprocessing_fn
+    (image, image_info) = ag__.converted_call(ag__.ld(preprocessing_callback), (ag__.ld(image), ag__.ld(image_info), ag__.ld(height), ag__.ld(width)), dict(flip=ag__.ld(flip), **ag__.ld(kwargs)), fscope)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+    result = converted_f(*effective_args, **kwargs)
+  File "/tmp/__autograph_generated_filewm3zt4z6.py", line 11, in tf__r3d_18_preprocessing
+    image = ag__.converted_call(ag__.ld(tf).transpose, (ag__.ld(image),), dict(perm=[3, 0, 1, 2]), fscope)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 377, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/ops/weak_tensor_ops.py", line 88, in wrapper
+    return op(*args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 1056, in _create_c_op
+    raise ValueError(e.message)
+ValueError: in user code:
+
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/preprocessing/preprocessing_factory.py", line 97, in preprocessing_fn  *
+        image, image_info = preprocessing_callback(image, image_info, height, width, flip=flip, **kwargs)
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/preprocessing/video_classification_preprocessing.py", line 14, in r3d_18_preprocessing  *
+        image = tf.transpose(image, perm=[3, 0, 1, 2])  # [num_frames, h, w, 3]
+
+    ValueError: Dimension must be 3 but is 4 for '{{node transpose}} = Transpose[T=DT_FLOAT, Tperm=DT_INT32](Cast, transpose/perm)' with input shapes: [?,?,3], [4].
+

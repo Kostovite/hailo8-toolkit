@@ -1,0 +1,17 @@
+UNSUPPORTED levit256/const_input1 (const_input): NotImplementedError: levit256/const_input1: const_input
+UNSUPPORTED levit256/const_input10 (const_input): NotImplementedError: levit256/const_input10: const_input
+UNSUPPORTED levit256/const_input11 (const_input): NotImplementedError: levit256/const_input11: const_input
+UNSUPPORTED levit256/const_input12 (const_input): NotImplementedError: levit256/const_input12: const_input
+UNSUPPORTED levit256/const_input13 (const_input): NotImplementedError: levit256/const_input13: const_input
+UNSUPPORTED levit256/const_input14 (const_input): NotImplementedError: levit256/const_input14: const_input
+UNSUPPORTED levit256/const_input2 (const_input): NotImplementedError: levit256/const_input2: const_input
+UNSUPPORTED levit256/const_input3 (const_input): NotImplementedError: levit256/const_input3: const_input
+UNSUPPORTED levit256/const_input4 (const_input): NotImplementedError: levit256/const_input4: const_input
+UNSUPPORTED levit256/const_input5 (const_input): NotImplementedError: levit256/const_input5: const_input
+UNSUPPORTED levit256/const_input6 (const_input): NotImplementedError: levit256/const_input6: const_input
+UNSUPPORTED levit256/const_input7 (const_input): NotImplementedError: levit256/const_input7: const_input
+UNSUPPORTED levit256/const_input8 (const_input): NotImplementedError: levit256/const_input8: const_input
+UNSUPPORTED levit256/const_input9 (const_input): NotImplementedError: levit256/const_input9: const_input
+UNSUPPORTED levit256/avgpool1 (avgpool): NotImplementedError: levit256/avgpool1: avgpool
+309/324 checked layers exact when chained from raw pixels
+{'const_input': '0/14', 'input_layer': '1/1', 'normalization': '1/1', 'conv': '90/90', 'format_conversion': '5/5', 'activation': '57/57', 'reduce_sum': '28/28', 'concat': '14/14', 'matmul': '28/28', 'ew_add': '41/41', 'reduce_max': '14/14', 'ew_sub': '14/14', 'ew_mult': '14/14', 'dw': '2/2', 'avgpool': '0/1'}

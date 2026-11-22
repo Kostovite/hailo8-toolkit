@@ -1,0 +1,1512 @@
+1792828231 [info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+1792828231 [info] Loading network parameters
+1792828231 [info] Starting Hailo allocation and compilation flow
+1792828231 [info] Building optimization options for network layers...
+1792828239 [info] Successfully built optimization options - 7s 313ms
+1792828239 [info] Trying to compile the network in a single context
+1792828239 [info] Single context flow failed: Recoverable single context error
+1792828239 [info] Building optimization options for network layers...
+1792828249 [info] Successfully built optimization options - 10s 97ms
+1792828249 [info] Using Multi-context flow
+1792828249 [info] Resources optimization params: max_control_utilization=60%, max_compute_utilization=60%, max_compute_16bit_utilization=60%, max_memory_utilization (weights)=60%, max_input_aligner_utilization=60%, max_apu_utilization=60%
+1792828249 [info] Finding the best partition to contexts...
+1792828274 [info] Found valid partition to 3 contexts
+1792828274 
+1792828274 [info] Iteration #4 - 3 contexts,
+1792828274 [info] Searching for a better partition...
+1792828297 [info] Found valid partition to 3 contexts, Performance improved by 0.6%
+1792828297 
+1792828297 [info] Iteration #8 - 3 contexts,
+1792828297 [info] Searching for a better partition...
+1792828338 [info] Found valid partition to 3 contexts, Performance improved by 13.5%
+1792828338 
+1792828338 [info] Iteration #12 - 3 contexts,
+1792828339 [info] Searching for a better partition...
+1792828360 [info] Found valid partition to 3 contexts, Performance improved by 0.0%
+1792828360 
+1792828360 [info] Iteration #14 - 3 contexts,
+1792828360 [info] Searching for a better partition...
+1792828381 [info] Found valid partition to 3 contexts, Performance improved by 1.9%
+1792828381 
+1792828381 [info] Iteration #16 - 3 contexts,
+1792828381 [info] Searching for a better partition...
+1792828402 [info] Found valid partition to 3 contexts, Performance improved by 14.4%
+1792828402 
+1792828402 [info] Iteration #20 - 3 contexts,
+1792828402 [info] Searching for a better partition...
+1792828422 [info] Found valid partition to 3 contexts, Performance improved by 0.5%
+1792828422 
+1792828422 [info] Iteration #22 - 3 contexts,
+1792828422 [info] Searching for a better partition...
+1792828470 [info] Found valid partition to 3 contexts, Performance improved by 2.0%
+1792828470 
+1792828470 [info] Iteration #28 - 3 contexts,
+1792828470 [info] Searching for a better partition...
+1792828489 [info] Found valid partition to 3 contexts, Performance improved by 2.8%
+1792828489 
+1792828489 [info] Iteration #30 - 3 contexts,
+1792828489 [info] Searching for a better partition...
+1792828557 [info] Found valid partition to 3 contexts, Performance improved by 4.6%
+1792828557 
+1792828557 [info] Iteration #36 - 3 contexts,
+1792828557 [info] Searching for a better partition...
+1792828601 [info] Found valid partition to 3 contexts, Performance improved by 20.7%
+1792828601 
+1792828601 [info] Iteration #40 - 3 contexts,
+1792828601 [info] Searching for a better partition...
+1792828724 [<==>....................................] 
+1792828724 [info] Partition to contexts finished successfully
+1792828724 [info] Partitioner finished after 123 iterations, Time it took: 7m 55s 405ms
+1792828724 [info] Applying selected partition to 3 contexts...
+1792828773 [info] Validating layers feasibility
+1792828773 [info] input_layer1: Pass
+1792828773 [info] normalization1: Pass
+1792828773 [info] conv1_sd1: Pass
+1792828773 [info] conv1_sd2: Pass
+1792828773 [info] conv1_sd0: Pass
+1792828773 [info] conv1_sd3: Pass
+1792828773 [info] conv1_ws: Pass
+1792828773 [info] conv1_sdc: Pass
+1792828773 [info] conv2_ws: Pass
+1792828773 [info] conv2_sdc: Pass
+1792828773 [info] conv5: Pass
+1792828773 [info] conv2_sd0: Pass
+1792828773 [info] conv_feature_splitter1_1: Pass
+1792828773 [info] conv2_sd1: Pass
+1792828773 [info] conv_feature_splitter1_2: Pass
+1792828773 [info] conv_feature_splitter2_1: Pass
+1792828773 [info] conv_feature_splitter2_2: Pass
+1792828773 [info] conv4: Pass
+1792828773 [info] conv2_sd2: Pass
+1792828773 [info] ew_add1: Pass
+1792828773 [info] conv7_sd3: Pass
+1792828773 [info] conv7_sd1: Pass
+1792828773 [info] conv7_sdc: Pass
+1792828773 [info] conv6: Pass
+1792828773 [info] conv7_sd2: Pass
+1792828773 [info] conv7_sd0: Pass
+1792828773 [info] conv7_ws: Pass
+1792828773 [info] concat1: Pass
+1792828773 [info] conv9: Pass
+1792828773 [info] conv10: Pass
+1792828774 [info] concat2: Pass
+1792828774 [info] ew_add2: Pass
+1792828774 [info] conv_feature_splitter3_1: Pass
+1792828774 [info] conv14: Pass
+1792828774 [info] conv15: Pass
+1792828774 [info] conv12_sdc: Pass
+1792828774 [info] conv11: Pass
+1792828774 [info] conv_feature_splitter3_2: Pass
+1792828774 [info] conv16: Pass
+1792828774 [info] conv12_ws: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2071: Pass
+1792828774 [info] ew_add3: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2073: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2075: Pass
+1792828774 [info] conv17: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2077: Pass
+1792828774 [info] conv18: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2079: Pass
+1792828774 [info] ew_add4: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2081: Pass
+1792828774 [info] conv19: Pass
+1792828774 [info] best_best_context_0_to_best_context_1_2083: Pass
+1792828774 [info] auto_reshape_from_input_layer1_to_normalization1: Pass
+1792828774 [info] ew_add5: Pass
+1792828774 [info] conv12_sd1: Pass
+1792828774 [info] conv_feature_splitter4_1: Pass
+1792828774 [info] conv24: Pass
+1792828774 [info] conv27: Pass
+1792828774 [info] conv20: Pass
+1792828774 [info] conv_feature_splitter4_2: Pass
+1792828774 [info] conv25: Pass
+1792828774 [info] conv21: Pass
+1792828774 [info] conv26: Pass
+1792828774 [info] concat4: Pass
+1792828774 [info] concat3: Pass
+1792828774 [info] concat6: Pass
+1792828774 [info] conv28: Pass
+1792828774 [info] conv30: Pass
+1792828774 [info] conv12_sd0: Pass
+1792828774 [info] concat5: Pass
+1792828774 [info] concat7: Pass
+1792828774 [info] conv29: Pass
+1792828774 [info] ew_add6: Pass
+1792828774 [info] maxpool1: Pass
+1792828774 [info] conv_feature_splitter6_1: Pass
+1792828775 [info] conv_feature_splitter5_2: Pass
+1792828775 [info] maxpool3: Pass
+1792828775 [info] conv32: Pass
+1792828775 [info] conv_feature_splitter6_3: Pass
+1792828775 [info] maxpool2: Pass
+1792828775 [info] conv31: Pass
+1792828775 [info] conv_feature_splitter5_1: Pass
+1792828775 [info] conv_feature_splitter6_2: Pass
+1792828775 [info] ew_add7: Pass
+1792828775 [info] conv33: Pass
+1792828775 [info] conv22: Pass
+1792828775 [info] activation1: Pass
+1792828775 [info] matmul1: Pass
+1792828775 [info] ew_mult_softmax1: Pass
+1792828775 [info] reduce_max_softmax1: Pass
+1792828775 [info] dw1_defuse_width_feature_reshape: Pass
+1792828775 [info] reduce_sum_softmax1: Pass
+1792828775 [info] conv36: Pass
+1792828775 [info] matmul2_reshape: Pass
+1792828775 [info] matmul2: Pass
+1792828775 [info] ew_sub_softmax1: Pass
+1792828775 [info] dw1_defuse_reshape_hxf_to_w_transposed: Pass
+1792828775 [info] concat8: Pass
+1792828775 [info] conv37: Pass
+1792828775 [info] conv39: Pass
+1792828775 [info] conv38: Pass
+1792828775 [info] concat9: Pass
+1792828775 [info] resize1: Pass
+1792828775 [info] conv43: Pass
+1792828775 [info] conv44: Pass
+1792828775 [info] concat14: Pass
+1792828775 [info] conv41: Pass
+1792828775 [info] conv42: Pass
+1792828775 [info] ew_add11: Pass
+1792828775 [info] concat10: Pass
+1792828775 [info] conv_feature_splitter7_1: Pass
+1792828775 [info] ew_add12: Pass
+1792828775 [info] conv45: Pass
+1792828775 [info] conv_feature_splitter7_2: Pass
+1792828775 [info] conv46: Pass
+1792828775 [info] resize2: Pass
+1792828776 [info] conv47: Pass
+1792828776 [info] concat11: Pass
+1792828776 [info] output_layer1: Pass
+1792828776 [info] conv51: Pass
+1792828776 [info] output_layer2: Pass
+1792828776 [info] conv53: Pass
+1792828776 [info] conv62: Pass
+1792828776 [info] conv50: Pass
+1792828776 [info] dw1_defuse_1x1: Pass
+1792828776 [info] conv52: Pass
+1792828776 [info] best_best_context_1_to_best_context_2_2086: Pass
+1792828776 [info] best_best_context_1_to_best_context_2_2088: Pass
+1792828776 [info] concat13: Pass
+1792828776 [info] best_best_context_1_to_best_context_2_2091: Pass
+1792828776 [info] conv48: Pass
+1792828776 [info] auto_reshape_from_conv64_to_output_layer2: Pass
+1792828776 [info] concat12: Pass
+1792828776 [info] ew_add13: Pass
+1792828776 [info] conv64: Pass
+1792828776 [info] auto_reshape_from_conv61_to_output_layer1: Pass
+1792828776 [info] conv72: Pass
+1792828776 [info] conv_feature_splitter8_2: Pass
+1792828776 [info] conv63: Pass
+1792828776 [info] conv70: Pass
+1792828776 [info] conv54: Pass
+1792828776 [info] conv61: Pass
+1792828776 [info] conv55: Pass
+1792828776 [info] conv69: Pass
+1792828776 [info] conv58: Pass
+1792828776 [info] conv60: Pass
+1792828776 [info] conv59: Pass
+1792828776 [info] conv_feature_splitter9_1: Pass
+1792828776 [info] concat15: Pass
+1792828776 [info] conv66: Pass
+1792828776 [info] dw3_sd1: Pass
+1792828776 [info] best_best_context_0_to_best_context_1_2074: Pass
+1792828776 [info] best_best_context_0_to_best_context_1_2076: Pass
+1792828776 [info] dw3_sdc: Pass
+1792828776 [info] conv_feature_splitter8_1: Pass
+1792828776 [info] conv68: Pass
+1792828776 [info] ew_add15: Pass
+1792828776 [info] dw2_sd1: Pass
+1792828777 [info] conv67: Pass
+1792828777 [info] conv56: Pass
+1792828777 [info] best_best_context_0_to_best_context_1_2078: Pass
+1792828777 [info] conv57: Pass
+1792828777 [info] best_best_context_0_to_best_context_1_2072: Pass
+1792828777 [info] concat17: Pass
+1792828777 [info] conv71: Pass
+1792828777 [info] dw3_sd0: Pass
+1792828777 [info] conv74: Pass
+1792828777 [info] best_best_context_0_to_best_context_1_2084: Pass
+1792828777 [info] conv73: Pass
+1792828777 [info] dw2_sdc: Pass
+1792828777 [info] conv_feature_splitter9_2: Pass
+1792828777 [info] best_best_context_0_to_best_context_1_2080: Pass
+1792828777 [info] concat16: Pass
+1792828777 [info] ew_add16: Pass
+1792828777 [info] ew_add14: Pass
+1792828777 [info] dw2_sd0: Pass
+1792828777 [info] best_best_context_0_to_best_context_1_2082: Pass
+1792828777 [info] output_layer3: Pass
+1792828777 [info] conv76: Pass
+1792828777 [info] output_layer4: Pass
+1792828777 [info] concat18: Pass
+1792828777 [info] conv75_sdc: Pass
+1792828777 [info] conv75_sd2: Pass
+1792828777 [info] conv75_ws: Pass
+1792828777 [info] conv77: Pass
+1792828777 [info] conv75_sd0: Pass
+1792828777 [info] conv82_dc: Pass
+1792828777 [info] conv83_dc: Pass
+1792828777 [info] dw4_d2: Pass
+1792828777 [info] conv75_sd1: Pass
+1792828777 [info] dw4_d0: Pass
+1792828777 [info] dw5_sd1: Pass
+1792828777 [info] dw4_d1: Pass
+1792828777 [info] conv_feature_splitter10_1: Pass
+1792828777 [info] dw4_fs: Pass
+1792828777 [info] dw5_sd2: Pass
+1792828777 [info] conv82_d1: Pass
+1792828777 [info] dw5_sd0: Pass
+1792828777 [info] ew_mult_softmax2_dc: Pass
+1792828777 [info] conv_feature_splitter10_2: Pass
+1792828777 [info] dw4_dc: Pass
+1792828777 [info] dw4_d3: Pass
+1792828777 [info] output_layer5: Pass
+1792828778 [info] output_layer6: Pass
+1792828778 [info] conv82_d0: Pass
+1792828778 [info] conv80: Pass
+1792828778 [info] auto_reshape_from_conv80_to_output_layer4: Pass
+1792828778 [info] reduce_sum_softmax2: Pass
+1792828778 [info] auto_reshape_from_conv77_to_output_layer3: Pass
+1792828778 [info] auto_reshape_from_conv94_to_output_layer6: Pass
+1792828778 [info] auto_reshape_from_conv91_to_output_layer5: Pass
+1792828778 [info] activation2: Pass
+1792828778 [info] conv78: Pass
+1792828778 [info] conv83_d0: Pass
+1792828778 [info] conv79: Pass
+1792828778 [info] dw5_sdc: Pass
+1792828778 [info] conv83_d1: Pass
+1792828778 [info] ew_add17: Pass
+1792828778 [info] conv_feature_splitter11_1: Pass
+1792828778 [info] conv_feature_splitter11_3: Pass
+1792828778 [info] dw7_fs: Pass
+1792828778 [info] conv_feature_splitter11_2: Pass
+1792828778 [info] conv89_ws: Pass
+1792828778 [info] best_best_context_1_to_best_context_2_2087: Pass
+1792828778 [info] dw6_defuse_width_feature_reshape: Pass
+1792828778 [info] dw6_defuse_reshape_hxf_to_w_transposed: Pass
+1792828778 [info] reduce_max_softmax2: Pass
+1792828778 [info] ew_sub_softmax2_d0: Pass
+1792828778 [info] ew_mult_softmax2_d0: Pass
+1792828778 [info] ew_sub_softmax2_dc: Pass
+1792828778 [info] matmul3: Pass
+1792828778 [info] dw6_defuse_1x1_dc: Pass
+1792828778 [info] matmul4_reshape: Pass
+1792828778 [info] ew_sub_softmax2_d1: Pass
+1792828778 [info] ew_mult_softmax2_d1: Pass
+1792828778 [info] best_best_context_1_to_best_context_2_2089: Pass
+1792828778 [info] dw8: Pass
+1792828778 [info] best_best_context_1_to_best_context_2_2092: Pass
+1792828778 [info] conv89_sd0: Pass
+1792828778 [info] conv90: Pass
+1792828778 [info] conv89_sdc: Pass
+1792828778 [info] dw7_dc: Pass
+1792828778 [info] concat19: Pass
+1792828778 [info] conv88_dc: Pass
+1792828778 [info] conv85: Pass
+1792828779 [info] dw7_d1: Pass
+1792828779 [info] conv91: Pass
+1792828779 [info] conv93: Pass
+1792828779 [info] conv94: Pass
+1792828779 [info] dw7_d0: Pass
+1792828779 [info] conv92: Pass
+1792828779 [info] conv89_sd1: Pass
+1792828779 [info] dw7_d2: Pass
+1792828779 [info] conv87: Pass
+1792828779 [info] conv88_d0: Pass
+1792828779 [info] conv86: Pass
+1792828779 [info] conv88_d1: Pass
+1792828779 [info] matmul4: Pass
+1792828779 [info] dw6_defuse_1x1_d1: Pass
+1792828779 [info] dw6_defuse_1x1_d0: Pass
+1792828779 [info] Layers feasibility validated successfully
+1792828779 [info] Running resources allocation (mapping) flow, time per context: 59m 59s
+1792828779 
+1792828779 
+1792828779 [info] Context:0/0 Iteration 0: Mapping prepost...          
+1792828779           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828779  worker0  *          *          *          *          *          *          *          *          V       
+1792828779  worker1                                                                                                  
+1792828779  worker2                                                                                                  
+1792828779  worker3                                                                                                  
+1792828779 
+1792828779   00:00
+1792828779 [info] Context:0/2 Iteration 0: Trying parallel splits...   
+1792828779           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828779  worker0                                                                                                  
+1792828779  worker1                                                                                                  
+1792828779  worker2                                                                                                  
+1792828779  worker3                                                                                                  
+1792828779 
+1792828779   00:01
+1792828779 [info] Context:0/2 Iteration 0: Trying parallel splits...   
+1792828779           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828779  worker0                                                                                                  
+1792828779  worker1                                                                                                  
+1792828779  worker2                                                                                                  
+1792828779  worker3  *          *          *          *          *          *          *          *          V       
+1792828779 
+1792828780   00:01
+1792828780 [info] Context:0/2 Iteration 0: Trying parallel splits...   
+1792828780           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828780  worker0                                                                                                  
+1792828780  worker1  *          *          *          *          *          *          *          *          V       
+1792828780  worker2                                                                                                  
+1792828780  worker3  *          *          *          *          *          *          *          *          V       
+1792828780 
+1792828780   00:01
+1792828780 [info] Context:0/2 Iteration 0: Trying parallel splits...   
+1792828780           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828780  worker0                                                                                                  
+1792828780  worker1  *          *          *          *          *          *          *          *          V       
+1792828780  worker2                                                                                                  
+1792828780  worker3  *          *          *          *          *          *          *          *          V       
+1792828780 
+1792828780   00:01
+1792828780 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828780           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828780  worker0  *          *          *          *          *          *          *          *          V       
+1792828780  worker1  *          *          *          *          *          *          *          *          V       
+1792828780  worker2                                                                                                  
+1792828780  worker3  *          *          *          *          *          *          *          *          V       
+1792828780 
+1792828780   00:01
+1792828780 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828780           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828780  worker0  *          *          *          *          *          *          *          *          V       
+1792828780  worker1  *          *          *          *          *          *          *          *          V       
+1792828780  worker2                                                                                                  
+1792828780  worker3  *          *          *          *          *          *          *          *          V       
+1792828780 
+1792828780   00:01
+1792828780 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828780           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828780  worker0  *          *          *          *          *          *          *          *          V       
+1792828780  worker1  *          *          *          *          *          *          *          *          V       
+1792828780  worker2                                                                                                  
+1792828780  worker3  *          *          *          *          *          V          *          *          V       
+1792828780 
+1792828780   00:01
+1792828780 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828781           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828781  worker0  *          *          *          *          *          *          *          *          V       
+1792828781  worker1  *          *          *          *          *          *          *          *          V       
+1792828781  worker2                                                                                                  
+1792828781  worker3  V          *          *          *          V          V          V          V          V       
+1792828781 
+1792828781   00:01
+1792828781 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828781           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828781  worker0  *          *          *          *          *          *          *          *          V       
+1792828781  worker1  *          *          *          *          *          *          *          *          V       
+1792828781  worker2                                                                                                  
+1792828781  worker3  V          *          V          *          V          V          V          V          V       
+1792828781 
+1792828781   00:01
+1792828781 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828781           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828781  worker0  *          *          *          *          *          *          *          *          V       
+1792828781  worker1  *          *          *          *          *          *          *          *          V       
+1792828781  worker2                                                                                                  
+1792828781  worker3  V          *          V          *          V          V          V          V          V       
+1792828781 
+1792828781   00:01
+1792828781 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828781           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828781  worker0  *          *          *          *          *          *          *          *          V       
+1792828781  worker1  *          *          *          *          *          *          *          *          V       
+1792828781  worker2                                                                                                  
+1792828781  worker3  V          *          V          *          V          V          V          V          V       
+1792828781 
+1792828781   00:02
+1792828781 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828781           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828781  worker0  *          *          *          *          *          *          *          *          V       
+1792828781  worker1  *          *          *          *          *          *          *          *          V       
+1792828781  worker2                                                                                                  
+1792828781  worker3  V          *          V          *          V          V          V          V          V       
+1792828781 
+1792828781   00:02
+1792828781 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828781           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828782  worker0  *          *          *          *          *          *          *          *          V       
+1792828782  worker1  *          *          *          *          *          *          *          *          V       
+1792828782  worker2  *          *          *          *          *          *          *          *          V       
+1792828782  worker3  V          *          V          *          V          V          V          V          V       
+1792828782 
+1792828782   00:02
+1792828782 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828782           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828782  worker0  *          *          *          *          *          *          *          *          V       
+1792828782  worker1  *          *          *          *          *          *          *          *          V       
+1792828782  worker2  *          *          *          *          *          *          *          V          V       
+1792828782  worker3  V          *          V          *          V          V          V          V          V       
+1792828782 
+1792828782   00:02
+1792828782 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828782           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828782  worker0  *          *          *          *          *          *          *          *          V       
+1792828782  worker1  *          *          *          *          *          *          *          *          V       
+1792828782  worker2  *          V          *          V          *          *          *          V          V       
+1792828782  worker3  V          *          V          *          V          V          V          V          V       
+1792828782 
+1792828782   00:02
+1792828782 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828782           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828782  worker0  *          *          *          *          *          *          *          *          V       
+1792828782  worker1  *          *          *          *          *          *          *          *          V       
+1792828782  worker2  V          V          V          V          V          V          *          V          V       
+1792828782  worker3  V          *          V          *          V          V          V          V          V       
+1792828782 
+1792828782   00:02
+1792828782 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828782           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828782  worker0  *          *          *          *          *          *          *          *          V       
+1792828782  worker1  *          *          *          *          *          *          *          *          V       
+1792828782  worker2  V          V          V          V          V          V          V          V          V       
+1792828782  worker3  V          *          V          *          V          V          V          V          V       
+1792828782 
+1792828782   00:02
+1792828782 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828782           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828782  worker0  *          *          *          *          *          *          *          *          V       
+1792828782  worker1  *          *          *          *          *          *          *          *          V       
+1792828783  worker2  V          V          V          V          V          V          V          V          V       
+1792828783  worker3  V          *          V          *          V          V          V          V          V       
+1792828783 
+1792828783   00:02
+1792828783 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828783           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828783  worker0  *          *          *          *          *          *          *          *          V       
+1792828783  worker1  *          *          *          *          *          *          *          *          V       
+1792828783  worker2  V          V          V          V          V          V          V          V          V       
+1792828783  worker3  V          *          V          *          V          V          V          V          V       
+1792828783 
+1792828783   00:02
+1792828783 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828783           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828783  worker0  *          *          *          *          *          *          *          *          V       
+1792828783  worker1  *          *          *          *          *          *          *          *          V       
+1792828783  worker2  V          V          V          V          V          V          V          V          V       
+1792828783  worker3  V          *          V          *          V          V          V          V          V       
+1792828783 
+1792828783   00:02
+1792828783 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828783           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828783  worker0  *          *          *          *          *          *          *          *          V       
+1792828783  worker1  *          *          *          *          *          *          *          *          V       
+1792828783  worker2  V          V          V          V          V          V          V          V          V       
+1792828783  worker3  V          *          V          *          V          V          V          V          V       
+1792828783 
+1792828783   00:02
+1792828783 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828783           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828783  worker0  *          *          *          *          *          *          *          *          V       
+1792828783  worker1  *          *          *          *          *          *          *          *          V       
+1792828783  worker2  V          V          V          V          V          V          V          V          V       
+1792828783  worker3  V          *          V          *          V          V          V          V          V       
+1792828783 
+1792828783   00:02
+1792828783 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828783           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828783  worker0  *          *          *          *          *          *          *          *          V       
+1792828783  worker1  *          *          *          *          *          *          *          V          V       
+1792828784  worker2  V          V          V          V          V          V          V          V          V       
+1792828784  worker3  V          *          V          *          V          V          V          V          V       
+1792828784 
+1792828784   00:02
+1792828784 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828784           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828784  worker0  *          *          *          *          *          *          *          *          V       
+1792828784  worker1  V          V          *          *          *          V          *          V          V       
+1792828784  worker2  V          V          V          V          V          V          V          V          V       
+1792828784  worker3  V          *          V          *          V          V          V          V          V       
+1792828784 
+1792828784   00:02
+1792828784 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828784           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828784  worker0  *          *          *          *          *          *          *          *          V       
+1792828784  worker1  V          V          *          V          V          V          *          V          V       
+1792828784  worker2  V          V          V          V          V          V          V          V          V       
+1792828784  worker3  V          *          V          *          V          V          V          V          V       
+1792828784 
+1792828784   00:02
+1792828784 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828784           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828784  worker0  *          *          *          *          *          *          *          *          V       
+1792828784  worker1  V          V          *          V          V          V          V          V          V       
+1792828784  worker2  V          V          V          V          V          V          V          V          V       
+1792828784  worker3  V          *          V          *          V          V          V          V          V       
+1792828784 
+1792828784   00:02
+1792828784 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828784           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828784  worker0  *          *          *          *          *          *          *          *          V       
+1792828784  worker1  V          V          *          V          V          V          V          V          V       
+1792828784  worker2  V          V          V          V          V          V          V          V          V       
+1792828784  worker3  V          *          V          *          V          V          V          V          V       
+1792828784 
+1792828784   00:02
+1792828784 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828784           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828784  worker0  *          *          *          *          *          *          *          *          V       
+1792828784  worker1  V          V          *          V          V          V          V          V          V       
+1792828784  worker2  V          V          V          V          V          V          V          V          V       
+1792828785  worker3  V          *          V          *          V          V          V          V          V       
+1792828785 
+1792828785   00:02
+1792828785 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828785           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828785  worker0  *          *          *          *          *          *          *          *          V       
+1792828785  worker1  V          V          *          V          V          V          V          V          V       
+1792828785  worker2  V          V          V          V          V          V          V          V          V       
+1792828785  worker3  V          *          V          *          V          V          V          V          V       
+1792828785 
+1792828785   00:02
+1792828785 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828785           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828785  worker0  *          *          *          *          *          *          *          *          V       
+1792828785  worker1  V          V          *          V          V          V          V          V          V       
+1792828785  worker2  V          V          V          V          V          V          V          V          V       
+1792828785  worker3  V          *          V          *          V          V          V          V          V       
+1792828785 
+1792828785   00:03
+1792828785 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828785           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828785  worker0  *          *          *          *          *          *          *          V          V       
+1792828785  worker1  V          V          *          V          V          V          V          V          V       
+1792828785  worker2  V          V          V          V          V          V          V          V          V       
+1792828785  worker3  V          *          V          *          V          V          V          V          V       
+1792828785 
+1792828785   00:03
+1792828785 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828785           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828785  worker0  V          *          *          V          *          *          *          V          V       
+1792828785  worker1  V          V          *          V          V          V          V          V          V       
+1792828785  worker2  V          V          V          V          V          V          V          V          V       
+1792828785  worker3  V          *          V          *          V          V          V          V          V       
+1792828785 
+1792828785   00:03
+1792828785 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828785           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828785  worker0  V          V          V          V          *          *          V          V          V       
+1792828785  worker1  V          V          *          V          V          V          V          V          V       
+1792828785  worker2  V          V          V          V          V          V          V          V          V       
+1792828785  worker3  V          *          V          *          V          V          V          V          V       
+1792828786 
+1792828786   00:03
+1792828786 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828786           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828786  worker0  V          V          V          V          *          V          V          V          V       
+1792828786  worker1  V          V          *          V          V          V          V          V          V       
+1792828786  worker2  V          V          V          V          V          V          V          V          V       
+1792828786  worker3  V          *          V          *          V          V          V          V          V       
+1792828786 
+1792828786   00:03
+1792828786 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828786           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828786  worker0  V          V          V          V          *          V          V          V          V       
+1792828786  worker1  V          V          *          V          V          V          V          V          V       
+1792828786  worker2  V          V          V          V          V          V          V          V          V       
+1792828786  worker3  V          *          V          *          V          V          V          V          V       
+1792828786 
+1792828786   00:03
+1792828786 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828786           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828786  worker0  V          V          V          V          *          V          V          V          V       
+1792828786  worker1  V          V          *          V          V          V          V          V          V       
+1792828786  worker2  V          V          V          V          V          V          V          V          V       
+1792828786  worker3  V          *          V          *          V          V          V          V          V       
+1792828786 
+1792828786   00:03
+1792828786 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828786           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828786  worker0  V          V          V          V          *          V          V          V          V       
+1792828786  worker1  V          V          *          V          V          V          V          V          V       
+1792828786  worker2  V          V          V          V          V          V          V          V          V       
+1792828786  worker3  V          *          V          *          V          V          V          V          V       
+1792828786 
+1792828786   00:03
+1792828786 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828786           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828786  worker0  V          V          V          V          V          V          V          V          V       
+1792828786  worker1  V          V          *          V          V          V          V          V          V       
+1792828786  worker2  V          V          V          V          V          V          V          V          V       
+1792828786  worker3  V          *          V          *          V          V          V          V          V       
+1792828786 
+1792828786   00:03
+1792828787 [info] Context:0/2 Iteration 4: Trying parallel mapping...  
+1792828787           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828787  worker0  V          V          V          V          V          V          V          V          V       
+1792828787  worker1  V          V          V          V          V          V          V          V          V       
+1792828787  worker2  V          V          V          V          V          V          V          V          V       
+1792828787  worker3  V          *          V          *          V          V          V          V          V       
+1792828787 
+1792828787   00:04
+1792828787 
+1792828787 
+1792828787 [info] Context:1/2 Iteration 0: Trying parallel splits...   
+1792828787           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828787  worker0                                                                                                  
+1792828787  worker1                                                                                                  
+1792828787  worker2                                                                                                  
+1792828787  worker3                                                                                                  
+1792828787 
+1792828787   00:05
+1792828787 [info] Context:1/2 Iteration 0: Trying parallel splits...   
+1792828787           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828787  worker0                                                                                                  
+1792828787  worker1  *          *          *          *          *          *          *          *          V       
+1792828787  worker2                                                                                                  
+1792828787  worker3                                                                                                  
+1792828787 
+1792828787   00:06
+1792828787 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828787           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828787  worker0  *          *          *          *          *          *          *          *          V       
+1792828787  worker1  *          *          *          *          *          *          *          *          V       
+1792828787  worker2                                                                                                  
+1792828787  worker3                                                                                                  
+1792828787 
+1792828787   00:06
+1792828787 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828787           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828787  worker0  *          *          *          *          *          *          *          *          V       
+1792828787  worker1  *          *          *          *          *          *          *          *          V       
+1792828787  worker2  *          *          *          *          *          *          *          *          V       
+1792828787  worker3                                                                                                  
+1792828787 
+1792828787   00:06
+1792828788 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828788           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828788  worker0  *          *          *          *          *          *          *          *          V       
+1792828788  worker1  *          *          *          *          *          *          *          *          V       
+1792828788  worker2  *          *          *          *          *          *          *          *          V       
+1792828788  worker3  *          *          *          *          *          *          *          *          V       
+1792828788 
+1792828788   00:06
+1792828788 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828788           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828788  worker0  *          *          *          *          *          *          *          *          V       
+1792828788  worker1  *          *          *          *          *          *          *          *          V       
+1792828788  worker2  *          *          *          *          *          *          *          *          V       
+1792828788  worker3  *          *          *          *          *          *          *          *          V       
+1792828788 
+1792828788   00:06
+1792828788 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828788           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828788  worker0  *          *          *          *          *          *          *          *          V       
+1792828788  worker1  *          *          V          V          *          *          *          *          V       
+1792828788  worker2  *          *          *          *          *          *          *          *          V       
+1792828788  worker3  *          *          *          *          *          *          *          *          V       
+1792828788 
+1792828788   00:06
+1792828788 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828788           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828788  worker0  *          *          *          *          *          *          *          *          V       
+1792828788  worker1  *          *          V          V          *          *          V          V          V       
+1792828788  worker2  *          *          *          *          *          *          *          *          V       
+1792828788  worker3  *          *          *          *          *          *          *          *          V       
+1792828788 
+1792828788   00:06
+1792828788 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828788           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828788  worker0  *          *          *          *          *          *          *          *          V       
+1792828788  worker1  V          *          V          V          V          *          V          V          V       
+1792828788  worker2  *          *          *          *          *          *          *          *          V       
+1792828788  worker3  *          *          *          *          *          *          *          *          V       
+1792828788 
+1792828788   00:06
+1792828788 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828788           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828789  worker0  *          *          *          *          *          *          *          *          V       
+1792828789  worker1  V          *          V          V          V          *          V          V          V       
+1792828789  worker2  *          *          *          *          *          *          *          *          V       
+1792828789  worker3  *          *          *          *          *          *          *          *          V       
+1792828789 
+1792828789   00:06
+1792828789 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828789           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828789  worker0  *          *          *          *          *          *          *          *          V       
+1792828789  worker1  V          *          V          V          V          *          V          V          V       
+1792828789  worker2  *          *          *          *          *          *          *          *          V       
+1792828789  worker3  *          *          *          *          *          *          *          *          V       
+1792828789 
+1792828789   00:06
+1792828789 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828789           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828789  worker0  *          *          *          *          *          *          *          *          V       
+1792828789  worker1  V          *          V          V          V          V          V          V          V       
+1792828789  worker2  *          *          *          *          *          *          *          *          V       
+1792828789  worker3  *          *          *          *          *          *          *          *          V       
+1792828789 
+1792828789   00:06
+1792828789 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828789           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828789  worker0  *          *          *          *          *          *          *          *          V       
+1792828789  worker1  V          *          V          V          V          V          V          V          V       
+1792828789  worker2  *          *          *          *          *          *          *          *          V       
+1792828789  worker3  *          *          *          *          *          *          *          *          V       
+1792828789 
+1792828789   00:06
+1792828789 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828789           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828789  worker0  *          *          *          *          *          *          *          *          V       
+1792828789  worker1  V          *          V          V          V          V          V          V          V       
+1792828789  worker2  *          *          *          *          *          *          *          *          V       
+1792828789  worker3  *          *          *          *          *          *          *          *          V       
+1792828789 
+1792828789   00:06
+1792828789 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828789           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828789  worker0  V          *          *          *          *          *          *          V          V       
+1792828789  worker1  V          *          V          V          V          V          V          V          V       
+1792828790  worker2  *          *          *          *          *          *          *          *          V       
+1792828790  worker3  *          *          *          *          *          *          *          *          V       
+1792828790 
+1792828790   00:06
+1792828790 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828790           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828790  worker0  V          V          *          V          V          *          V          V          V       
+1792828790  worker1  V          *          V          V          V          V          V          V          V       
+1792828790  worker2  *          *          *          *          *          *          *          *          V       
+1792828790  worker3  *          *          *          *          *          *          *          *          V       
+1792828790 
+1792828790   00:06
+1792828790 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828790           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828790  worker0  V          V          V          V          V          V          V          V          V       
+1792828790  worker1  V          *          V          V          V          V          V          V          V       
+1792828790  worker2  *          *          *          *          *          *          *          *          V       
+1792828790  worker3  *          *          *          *          *          *          *          *          V       
+1792828790 
+1792828790   00:06
+1792828790 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828790           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828790  worker0  V          V          V          V          V          V          V          V          V       
+1792828790  worker1  V          *          V          V          V          V          V          V          V       
+1792828790  worker2  *          *          *          *          *          *          *          *          V       
+1792828790  worker3  *          *          *          *          *          *          *          *          V       
+1792828790 
+1792828790   00:06
+1792828790 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828790           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828790  worker0  V          V          V          V          V          V          V          V          V       
+1792828790  worker1  V          *          V          V          V          V          V          V          V       
+1792828790  worker2  *          *          *          *          *          *          *          *          V       
+1792828790  worker3  *          *          *          *          *          *          *          *          V       
+1792828790 
+1792828790   00:06
+1792828790 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828790           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828790  worker0  V          V          V          V          V          V          V          V          V       
+1792828790  worker1  V          *          V          V          V          V          V          V          V       
+1792828790  worker2  *          *          *          *          *          *          *          *          V       
+1792828790  worker3  *          *          *          *          *          *          *          *          V       
+1792828791 
+1792828791   00:06
+1792828791 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828791           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828791  worker0  V          V          V          V          V          V          V          V          V       
+1792828791  worker1  V          *          V          V          V          V          V          V          V       
+1792828791  worker2  *          *          *          *          *          *          *          *          V       
+1792828791  worker3  *          *          *          *          *          *          *          *          V       
+1792828791 
+1792828791   00:06
+1792828791 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828791           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828791  worker0  V          V          V          V          V          V          V          V          V       
+1792828791  worker1  V          *          V          V          V          V          V          V          V       
+1792828791  worker2  *          *          *          *          *          *          *          *          V       
+1792828791  worker3  *          *          *          *          *          *          *          *          V       
+1792828791 
+1792828791   00:06
+1792828791 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828791           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828791  worker0  V          V          V          V          V          V          V          V          V       
+1792828791  worker1  V          *          V          V          V          V          V          V          V       
+1792828791  worker2  *          *          *          *          *          *          *          *          V       
+1792828791  worker3  *          *          *          *          *          *          *          *          V       
+1792828791 
+1792828791   00:07
+1792828791 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828791           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828791  worker0  V          V          V          V          V          V          V          V          V       
+1792828791  worker1  V          *          V          V          V          V          V          V          V       
+1792828791  worker2  *          *          *          *          *          *          *          V          V       
+1792828791  worker3  *          *          *          *          *          *          *          *          V       
+1792828791 
+1792828791   00:07
+1792828791 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828791           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828791  worker0  V          V          V          V          V          V          V          V          V       
+1792828791  worker1  V          *          V          V          V          V          V          V          V       
+1792828791  worker2  V          V          *          V          *          V          *          V          V       
+1792828791  worker3  *          *          *          *          *          *          *          *          V       
+1792828791 
+1792828791   00:07
+1792828791 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828792           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828792  worker0  V          V          V          V          V          V          V          V          V       
+1792828792  worker1  V          *          V          V          V          V          V          V          V       
+1792828792  worker2  V          V          V          V          V          V          *          V          V       
+1792828792  worker3  *          *          *          *          *          *          *          *          V       
+1792828792 
+1792828792   00:07
+1792828792 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828792           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828792  worker0  V          V          V          V          V          V          V          V          V       
+1792828792  worker1  V          *          V          V          V          V          V          V          V       
+1792828792  worker2  V          V          V          V          V          V          *          V          V       
+1792828792  worker3  *          *          *          *          *          *          *          *          V       
+1792828792 
+1792828792   00:07
+1792828792 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828792           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828792  worker0  V          V          V          V          V          V          V          V          V       
+1792828792  worker1  V          *          V          V          V          V          V          V          V       
+1792828792  worker2  V          V          V          V          V          V          *          V          V       
+1792828792  worker3  *          *          *          *          *          *          *          *          V       
+1792828792 
+1792828792   00:07
+1792828792 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828792           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828792  worker0  V          V          V          V          V          V          V          V          V       
+1792828792  worker1  V          *          V          V          V          V          V          V          V       
+1792828792  worker2  V          V          V          V          V          V          *          V          V       
+1792828792  worker3  *          *          *          *          *          *          *          *          V       
+1792828792 
+1792828792   00:07
+1792828792 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828792           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828792  worker0  V          V          V          V          V          V          V          V          V       
+1792828792  worker1  V          *          V          V          V          V          V          V          V       
+1792828792  worker2  V          V          V          V          V          V          *          V          V       
+1792828792  worker3  *          *          *          *          *          *          *          *          V       
+1792828792 
+1792828792   00:07
+1792828792 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828792           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828792  worker0  V          V          V          V          V          V          V          V          V       
+1792828792  worker1  V          V          V          V          V          V          V          V          V       
+1792828793  worker2  V          V          V          V          V          V          *          V          V       
+1792828793  worker3  *          *          *          *          *          *          *          *          V       
+1792828793 
+1792828793   00:08
+1792828793 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828793           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828793  worker0  V          V          V          V          V          V          V          V          V       
+1792828793  worker1  V          V          V          V          V          V          V          V          V       
+1792828793  worker2  V          V          V          V          V          V          *          V          V       
+1792828793  worker3  *          *          *          *          *          *          *          *          V       
+1792828793 
+1792828793   00:09
+1792828793 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828793           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828793  worker0  V          V          V          V          V          V          V          V          V       
+1792828793  worker1  V          V          V          V          V          V          V          V          V       
+1792828793  worker2  V          V          V          V          V          V          *          V          V       
+1792828793  worker3  *          *          *          V          *          *          *          *          V       
+1792828793 
+1792828793   00:09
+1792828793 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828793           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828793  worker0  V          V          V          V          V          V          V          V          V       
+1792828793  worker1  V          V          V          V          V          V          V          V          V       
+1792828793  worker2  V          V          V          V          V          V          *          V          V       
+1792828793  worker3  V          V          V          V          V          *          *          *          V       
+1792828793 
+1792828793   00:09
+1792828793 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828793           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828793  worker0  V          V          V          V          V          V          V          V          V       
+1792828793  worker1  V          V          V          V          V          V          V          V          V       
+1792828793  worker2  V          V          V          V          V          V          *          V          V       
+1792828793  worker3  V          V          V          V          V          V          V          V          V       
+1792828793 
+1792828793   00:09
+1792828793 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828793           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828793  worker0  V          V          V          V          V          V          V          V          V       
+1792828793  worker1  V          V          V          V          V          V          V          V          V       
+1792828793  worker2  V          V          V          V          V          V          *          V          V       
+1792828793  worker3  V          V          V          V          V          V          V          V          V       
+1792828794 
+1792828794   00:09
+1792828794 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828794           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828794  worker0  V          V          V          V          V          V          V          V          V       
+1792828794  worker1  V          V          V          V          V          V          V          V          V       
+1792828794  worker2  V          V          V          V          V          V          *          V          V       
+1792828794  worker3  V          V          V          V          V          V          V          V          V       
+1792828794 
+1792828794   00:09
+1792828794 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828794           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828794  worker0  V          V          V          V          V          V          V          V          V       
+1792828794  worker1  V          V          V          V          V          V          V          V          V       
+1792828794  worker2  V          V          V          V          V          V          *          V          V       
+1792828794  worker3  V          V          V          V          V          V          V          V          V       
+1792828794 
+1792828794   00:09
+1792828794 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828794           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828794  worker0  V          V          V          V          V          V          V          V          V       
+1792828794  worker1  V          V          V          V          V          V          V          V          V       
+1792828794  worker2  V          V          V          V          V          V          *          V          V       
+1792828794  worker3  V          V          V          V          V          V          V          V          V       
+1792828794 
+1792828794   00:09
+1792828794 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828794           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828794  worker0  V          V          V          V          V          V          V          V          V       
+1792828794  worker1  V          V          V          V          V          V          V          V          V       
+1792828794  worker2  V          V          V          V          V          V          *          V          V       
+1792828794  worker3  V          V          V          V          V          V          V          V          V       
+1792828794 
+1792828794   00:09
+1792828794 [info] Context:1/2 Iteration 4: Trying parallel mapping...  
+1792828794           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828794  worker0  V          V          V          V          V          V          V          V          V       
+1792828794  worker1  V          V          V          V          V          V          V          V          V       
+1792828794  worker2  V          V          V          V          V          V          V          V          V       
+1792828794  worker3  V          V          V          V          V          V          V          V          V       
+1792828794 
+1792828794   00:10
+1792828794 
+1792828795 
+1792828795 [info] Context:2/2 Iteration 0: Trying parallel splits...   
+1792828795           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828795  worker0                                                                                                  
+1792828795  worker1                                                                                                  
+1792828795  worker2                                                                                                  
+1792828795  worker3                                                                                                  
+1792828795 
+1792828795   00:10
+1792828795 [info] Context:2/2 Iteration 0: Trying parallel splits...   
+1792828795           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828795  worker0                                                                                                  
+1792828795  worker1                                                                                                  
+1792828795  worker2  *          *          *          *          *          *          *          *          V       
+1792828795  worker3                                                                                                  
+1792828795 
+1792828795   00:11
+1792828795 [info] Context:2/2 Iteration 0: Trying parallel splits...   
+1792828795           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828795  worker0                                                                                                  
+1792828795  worker1  *          *          *          *          *          *          *          *          V       
+1792828795  worker2  *          *          *          *          *          *          *          *          V       
+1792828795  worker3                                                                                                  
+1792828795 
+1792828795   00:11
+1792828795 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828795           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828795  worker0  *          *          *          *          *          *          *          *          V       
+1792828795  worker1  *          *          *          *          *          *          *          *          V       
+1792828795  worker2  *          *          *          *          *          *          *          *          V       
+1792828795  worker3                                                                                                  
+1792828795 
+1792828795   00:11
+1792828795 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828795           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828795  worker0  *          *          *          *          *          *          *          *          V       
+1792828795  worker1  *          *          *          *          *          *          *          *          V       
+1792828795  worker2  *          *          *          *          *          *          *          *          V       
+1792828795  worker3                                                                                                  
+1792828795 
+1792828796   00:11
+1792828796 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828796           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828796  worker0  *          *          *          *          *          *          *          *          V       
+1792828796  worker1  *          *          *          *          *          *          *          *          V       
+1792828796  worker2  *          *          *          *          *          *          *          *          V       
+1792828796  worker3  *          *          *          *          *          *          *          *          V       
+1792828796 
+1792828796   00:11
+1792828796 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828796           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828796  worker0  *          *          *          *          *          *          *          *          V       
+1792828796  worker1  *          *          *          *          *          *          *          *          V       
+1792828796  worker2  V          *          *          *          *          *          *          *          V       
+1792828796  worker3  *          *          *          *          *          *          *          *          V       
+1792828796 
+1792828796   00:11
+1792828796 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828796           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828796  worker0  *          *          *          *          *          *          *          *          V       
+1792828796  worker1  *          *          *          *          *          *          *          *          V       
+1792828796  worker2  V          *          *          *          *          *          *          *          V       
+1792828796  worker3  *          *          *          *          *          *          *          *          V       
+1792828796 
+1792828796   00:11
+1792828796 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828796           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828796  worker0  *          *          *          *          *          *          *          *          V       
+1792828796  worker1  *          *          *          *          *          *          *          *          V       
+1792828796  worker2  V          *          *          *          *          *          *          *          V       
+1792828796  worker3  *          *          *          *          *          *          *          *          V       
+1792828796 
+1792828796   00:11
+1792828796 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828796           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828796  worker0  *          *          *          *          *          *          *          *          V       
+1792828796  worker1  *          *          *          *          *          *          *          *          V       
+1792828796  worker2  V          V          V          *          *          *          *          *          V       
+1792828796  worker3  *          *          *          *          *          *          *          *          V       
+1792828797 
+1792828797   00:11
+1792828797 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828797           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828797  worker0  *          *          *          *          *          *          *          *          V       
+1792828797  worker1  *          *          *          *          *          *          *          *          V       
+1792828797  worker2  V          V          V          *          *          *          V          *          V       
+1792828797  worker3  *          *          *          *          *          *          *          *          V       
+1792828797 
+1792828797   00:11
+1792828797 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828797           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828797  worker0  *          *          *          *          *          *          *          *          V       
+1792828797  worker1  *          *          *          *          *          *          *          *          V       
+1792828797  worker2  V          V          V          *          X          *          V          *          V       
+1792828797  worker3  *          *          *          *          *          *          *          *          V       
+1792828797 
+1792828797   00:11
+1792828797 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828797           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828797  worker0  *          *          *          *          *          *          *          *          V       
+1792828797  worker1  *          *          *          *          *          *          *          *          V       
+1792828797  worker2  V          V          V          *          X          *          V          *          V       
+1792828797  worker3  *          *          *          *          *          *          *          *          V       
+1792828797 
+1792828797   00:12
+1792828797 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828797           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828797  worker0  *          *          *          *          *          *          *          *          V       
+1792828797  worker1  *          *          *          *          *          *          *          *          V       
+1792828797  worker2  V          V          V          *          X          *          V          *          V       
+1792828797  worker3  *          V          *          *          *          *          *          *          V       
+1792828797 
+1792828797   00:12
+1792828797 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828797           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828797  worker0  *          *          *          *          *          *          *          *          V       
+1792828797  worker1  *          *          *          *          *          *          *          *          V       
+1792828797  worker2  V          V          V          *          X          *          V          *          V       
+1792828797  worker3  V          V          X          *          V          *          *          V          V       
+1792828797 
+1792828797   00:12
+1792828797 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828797           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828797  worker0  *          *          *          *          *          *          *          *          V       
+1792828797  worker1  *          *          *          *          *          *          *          *          V       
+1792828798  worker2  V          V          V          *          X          *          V          *          V       
+1792828798  worker3  V          V          X          *          V          V          V          V          V       
+1792828798 
+1792828798   00:12
+1792828798 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828798           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828798  worker0  *          *          *          *          *          *          *          *          V       
+1792828798  worker1  *          *          *          *          *          *          *          *          V       
+1792828798  worker2  V          V          V          *          X          *          V          *          V       
+1792828798  worker3  V          V          X          V          V          V          V          V          V       
+1792828798 
+1792828798   00:12
+1792828798 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828798           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828798  worker0  *          *          *          *          *          *          *          *          V       
+1792828798  worker1  *          *          *          *          *          *          *          *          V       
+1792828798  worker2  V          V          V          *          X          *          V          *          V       
+1792828798  worker3  V          V          X          V          V          V          V          V          V       
+1792828798 
+1792828798   00:12
+1792828798 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828798           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828798  worker0  *          *          *          *          *          *          *          *          V       
+1792828798  worker1  *          *          *          *          *          *          *          *          V       
+1792828798  worker2  V          V          V          *          X          *          V          *          V       
+1792828798  worker3  V          V          X          V          V          V          V          V          V       
+1792828798 
+1792828798   00:12
+1792828798 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828798           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828798  worker0  *          *          *          *          *          *          *          *          V       
+1792828798  worker1  *          *          *          *          *          *          *          *          V       
+1792828798  worker2  V          V          V          *          X          *          V          *          V       
+1792828798  worker3  V          V          X          V          V          V          V          V          V       
+1792828798 
+1792828798   00:12
+1792828798 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828798           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828798  worker0  *          *          *          *          *          *          *          *          V       
+1792828798  worker1  *          *          V          *          *          *          *          *          V       
+1792828798  worker2  V          V          V          *          X          *          V          *          V       
+1792828798  worker3  V          V          X          V          V          V          V          V          V       
+1792828798 
+1792828798   00:12
+1792828798 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828798           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828799  worker0  *          *          *          *          *          *          *          *          V       
+1792828799  worker1  V          *          V          V          *          *          X          V          V       
+1792828799  worker2  V          V          V          *          X          *          V          *          V       
+1792828799  worker3  V          V          X          V          V          V          V          V          V       
+1792828799 
+1792828799   00:12
+1792828799 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828799           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828799  worker0  *          *          *          *          *          *          *          *          V       
+1792828799  worker1  V          *          V          V          V          V          X          V          V       
+1792828799  worker2  V          V          V          *          X          *          V          *          V       
+1792828799  worker3  V          V          X          V          V          V          V          V          V       
+1792828799 
+1792828799   00:12
+1792828799 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828799           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828799  worker0  *          *          *          *          *          *          *          *          V       
+1792828799  worker1  V          *          V          V          V          V          X          V          V       
+1792828799  worker2  V          V          V          *          X          *          V          *          V       
+1792828799  worker3  V          V          X          V          V          V          V          V          V       
+1792828799 
+1792828799   00:12
+1792828799 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828799           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828799  worker0  *          *          *          *          *          *          *          *          V       
+1792828799  worker1  V          *          V          V          V          V          X          V          V       
+1792828799  worker2  V          V          V          *          X          *          V          *          V       
+1792828799  worker3  V          V          X          V          V          V          V          V          V       
+1792828799 
+1792828799   00:12
+1792828799 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828799           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828799  worker0  *          *          *          *          *          *          *          *          V       
+1792828799  worker1  V          *          V          V          V          V          X          V          V       
+1792828799  worker2  V          V          V          *          X          *          V          *          V       
+1792828799  worker3  V          V          X          V          V          V          V          V          V       
+1792828799 
+1792828799   00:12
+1792828799 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828799           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828799  worker0  *          *          *          *          *          *          *          *          V       
+1792828799  worker1  V          *          V          V          V          V          X          V          V       
+1792828800  worker2  V          V          V          *          X          *          V          *          V       
+1792828800  worker3  V          V          X          V          V          V          V          V          V       
+1792828800 
+1792828800   00:12
+1792828800 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828800           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828800  worker0  *          *          *          *          *          *          *          *          V       
+1792828800  worker1  V          *          V          V          V          V          X          V          V       
+1792828800  worker2  V          V          V          *          X          *          V          *          V       
+1792828800  worker3  V          V          X          V          V          V          V          V          V       
+1792828800 
+1792828800   00:12
+1792828800 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828800           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828800  worker0  *          *          *          *          *          *          *          *          V       
+1792828800  worker1  V          *          V          V          V          V          X          V          V       
+1792828800  worker2  V          V          V          *          X          *          V          *          V       
+1792828800  worker3  V          V          X          V          V          V          V          V          V       
+1792828800 
+1792828800   00:12
+1792828800 [info] Context:2/2 Iteration 4: Trying parallel mapping...  
+1792828800           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828800  worker0  *          *          *          *          *          *          *          *          V       
+1792828800  worker1  V          V          V          V          V          V          X          V          V       
+1792828800  worker2  V          V          V          *          X          *          V          *          V       
+1792828800  worker3  V          V          X          V          V          V          V          V          V       
+1792828800 
+1792828800   00:15
+1792828800 [info] Context:2/2 Iteration 4: Trying parallel splits...   
+1792828800           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828800  worker0                                                                                                  
+1792828800  worker1                                                                                                  
+1792828800  worker2                                                                                                  
+1792828800  worker3                                                                                                  
+1792828800 
+1792828800   00:16
+1792828800 [info] Context:2/2 Iteration 4: Trying parallel splits...   
+1792828800           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828800  worker0                                                                                                  
+1792828800  worker1  *          *          *          *          *          *          *          *          V       
+1792828800  worker2                                                                                                  
+1792828800  worker3                                                                                                  
+1792828800 
+1792828801   00:16
+1792828801 [info] Context:2/2 Iteration 4: Trying parallel splits...   
+1792828801           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828801  worker0                                                                                                  
+1792828801  worker1  *          *          *          *          *          *          *          *          V       
+1792828801  worker2                                                                                                  
+1792828801  worker3  *          *          *          *          *          *          *          *          V       
+1792828801 
+1792828801   00:16
+1792828801 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828801           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828801  worker0  *          *          *          *          *          *          *          *          V       
+1792828801  worker1  *          *          *          *          *          *          *          *          V       
+1792828801  worker2                                                                                                  
+1792828801  worker3  *          *          *          *          *          *          *          *          V       
+1792828801 
+1792828801   00:16
+1792828801 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828801           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828801  worker0  *          *          *          *          *          *          *          *          V       
+1792828801  worker1  *          *          *          *          *          *          *          *          V       
+1792828801  worker2                                                                                                  
+1792828801  worker3  *          *          *          *          *          *          *          *          V       
+1792828801 
+1792828801   00:16
+1792828801 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828801           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828801  worker0  *          *          *          *          *          *          *          *          V       
+1792828801  worker1  *          *          *          *          *          *          *          *          V       
+1792828801  worker2                                                                                                  
+1792828801  worker3  *          *          *          *          *          *          *          *          V       
+1792828801 
+1792828801   00:16
+1792828801 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828801           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828801  worker0  *          *          *          *          *          *          *          *          V       
+1792828801  worker1  *          *          X          *          *          *          *          *          V       
+1792828801  worker2                                                                                                  
+1792828801  worker3  *          *          *          *          *          *          *          *          V       
+1792828801 
+1792828801   00:16
+1792828801 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828801           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828801  worker0  *          *          *          *          *          *          *          *          V       
+1792828802  worker1  *          *          X          *          *          *          V          *          V       
+1792828802  worker2                                                                                                  
+1792828802  worker3  *          *          *          *          *          *          *          *          V       
+1792828802 
+1792828802   00:16
+1792828802 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828802           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828802  worker0  *          *          *          *          *          *          *          *          V       
+1792828802  worker1  *          *          X          *          *          *          V          *          V       
+1792828802  worker2                                                                                                  
+1792828802  worker3  *          *          *          *          *          *          *          *          V       
+1792828802 
+1792828802   00:16
+1792828802 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828802           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828802  worker0  *          *          *          *          *          *          V          *          V       
+1792828802  worker1  *          *          X          *          *          *          V          *          V       
+1792828802  worker2                                                                                                  
+1792828802  worker3  *          *          *          *          *          *          *          *          V       
+1792828802 
+1792828802   00:16
+1792828802 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828802           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828802  worker0  V          *          *          *          *          *          V          *          V       
+1792828802  worker1  *          *          X          *          *          *          V          *          V       
+1792828802  worker2                                                                                                  
+1792828802  worker3  *          *          *          *          *          *          *          *          V       
+1792828802 
+1792828802   00:16
+1792828802 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828802           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828802  worker0  V          *          *          *          V          *          V          V          V       
+1792828802  worker1  *          *          X          *          *          *          V          *          V       
+1792828802  worker2                                                                                                  
+1792828802  worker3  *          *          *          *          *          *          *          *          V       
+1792828802 
+1792828802   00:16
+1792828802 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828802           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828803  worker0  V          V          V          V          V          *          V          V          V       
+1792828803  worker1  *          *          X          *          *          *          V          *          V       
+1792828803  worker2                                                                                                  
+1792828803  worker3  *          *          *          *          *          *          *          *          V       
+1792828803 
+1792828803   00:16
+1792828803 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828803           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828803  worker0  V          V          V          V          V          *          V          V          V       
+1792828803  worker1  *          *          X          *          *          *          V          *          V       
+1792828803  worker2                                                                                                  
+1792828803  worker3  *          *          *          *          *          *          *          *          V       
+1792828803 
+1792828803   00:16
+1792828803 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828803           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828803  worker0  V          V          V          V          V          *          V          V          V       
+1792828803  worker1  *          *          X          *          *          *          V          *          V       
+1792828803  worker2                                                                                                  
+1792828803  worker3  *          *          *          *          *          *          *          *          V       
+1792828803 
+1792828803   00:16
+1792828803 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828803           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828803  worker0  V          V          V          V          V          *          V          V          V       
+1792828803  worker1  *          *          X          *          *          *          V          *          V       
+1792828803  worker2                                                                                                  
+1792828803  worker3  *          *          *          *          *          *          *          *          V       
+1792828803 
+1792828803   00:16
+1792828803 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828803           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828803  worker0  V          V          V          V          V          *          V          V          V       
+1792828803  worker1  *          *          X          *          *          *          V          *          V       
+1792828803  worker2  *          *          *          *          *          *          *          *          V       
+1792828803  worker3  *          *          *          *          *          *          *          *          V       
+1792828803 
+1792828803   00:17
+1792828803 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828803           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828803  worker0  V          V          V          V          V          *          V          V          V       
+1792828803  worker1  *          *          X          *          *          *          V          *          V       
+1792828804  worker2  V          *          *          *          *          *          *          *          V       
+1792828804  worker3  *          *          *          *          *          *          *          *          V       
+1792828804 
+1792828804   00:17
+1792828804 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828804           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828804  worker0  V          V          V          V          V          *          V          V          V       
+1792828804  worker1  *          *          X          *          *          *          V          *          V       
+1792828804  worker2  V          *          *          *          *          *          V          *          V       
+1792828804  worker3  *          *          *          *          *          *          *          *          V       
+1792828804 
+1792828804   00:17
+1792828804 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828804           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828804  worker0  V          V          V          V          V          *          V          V          V       
+1792828804  worker1  *          *          X          *          *          *          V          *          V       
+1792828804  worker2  V          V          *          *          V          V          V          *          V       
+1792828804  worker3  *          *          *          *          *          *          *          *          V       
+1792828804 
+1792828804   00:17
+1792828804 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828804           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828804  worker0  V          V          V          V          V          *          V          V          V       
+1792828804  worker1  *          *          X          *          *          *          V          *          V       
+1792828804  worker2  V          V          V          *          V          V          V          *          V       
+1792828804  worker3  *          *          *          *          *          *          *          *          V       
+1792828804 
+1792828804   00:17
+1792828804 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828804           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828804  worker0  V          V          V          V          V          *          V          V          V       
+1792828804  worker1  *          *          X          *          *          *          V          *          V       
+1792828804  worker2  V          V          V          V          V          V          V          *          V       
+1792828804  worker3  *          *          *          *          *          *          *          *          V       
+1792828804 
+1792828804   00:17
+1792828804 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828804           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828804  worker0  V          V          V          V          V          *          V          V          V       
+1792828804  worker1  *          *          X          *          *          *          V          *          V       
+1792828804  worker2  V          V          V          V          V          V          V          *          V       
+1792828804  worker3  *          *          *          *          *          *          *          *          V       
+1792828804 
+1792828804   00:17
+1792828805 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828805           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828805  worker0  V          V          V          V          V          *          V          V          V       
+1792828805  worker1  *          *          X          *          *          *          V          *          V       
+1792828805  worker2  V          V          V          V          V          V          V          *          V       
+1792828805  worker3  *          *          *          *          *          *          *          *          V       
+1792828805 
+1792828805   00:17
+1792828805 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828805           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828805  worker0  V          V          V          V          V          V          V          V          V       
+1792828805  worker1  *          *          X          *          *          *          V          *          V       
+1792828805  worker2  V          V          V          V          V          V          V          *          V       
+1792828805  worker3  *          *          *          *          *          *          *          *          V       
+1792828805 
+1792828805   00:20
+1792828805 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828805           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828805  worker0  V          V          V          V          V          V          V          V          V       
+1792828805  worker1  *          *          X          *          *          *          V          *          V       
+1792828805  worker2  V          V          V          V          V          V          V          *          V       
+1792828805  worker3  *          *          *          *          *          *          *          *          V       
+1792828805 
+1792828805   00:20
+1792828805 [info] Context:2/2 Iteration 8: Trying parallel mapping...  
+1792828805           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+1792828805  worker0  V          V          V          V          V          V          V          V          V       
+1792828805  worker1  *          *          X          *          *          *          V          *          V       
+1792828805  worker2  V          V          V          V          V          V          V          V          V       
+1792828805  worker3  *          *          *          *          *          *          *          *          V       
+1792828805 
+1792828805   00:21
+1792828805 
+1792828805 [info] best_context_0 (best_context_0):
+1792828805 Iterations: 4
+1792828805 Reverts on cluster mapping: 0
+1792828805 Reverts on inter-cluster connectivity: 0
+1792828805 Reverts on pre-mapping validation: 0
+1792828805 Reverts on split failed: 0
+1792828805 [info] best_context_1 (best_context_1):
+1792828805 Iterations: 4
+1792828805 Reverts on cluster mapping: 0
+1792828805 Reverts on inter-cluster connectivity: 0
+1792828805 Reverts on pre-mapping validation: 0
+1792828806 Reverts on split failed: 0
+1792828806 [info] best_context_2 (best_context_2):
+1792828806 Iterations: 8
+1792828806 Reverts on cluster mapping: 3
+1792828806 Reverts on inter-cluster connectivity: 0
+1792828806 Reverts on pre-mapping validation: 1
+1792828806 Reverts on split failed: 0
+1792828806 [info] best_context_0 utilization: 
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | Cluster   | Control Utilization | Compute Utilization | Memory Utilization |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | cluster_0 | 31.3%               | 7.8%                | 12.5%              |
+1792828806 [info] | cluster_1 | 68.8%               | 34.4%               | 50%                |
+1792828806 [info] | cluster_2 | 81.3%               | 42.2%               | 41.4%              |
+1792828806 [info] | cluster_3 | 50%                 | 18.8%               | 25%                |
+1792828806 [info] | cluster_4 | 100%                | 48.4%               | 57%                |
+1792828806 [info] | cluster_5 | 87.5%               | 37.5%               | 46.1%              |
+1792828806 [info] | cluster_6 | 37.5%               | 14.1%               | 18.8%              |
+1792828806 [info] | cluster_7 | 25%                 | 6.3%                | 7.8%               |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | Total     | 60.2%               | 26.2%               | 32.3%              |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] best_context_1 utilization: 
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | Cluster   | Control Utilization | Compute Utilization | Memory Utilization |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | cluster_0 | 6.3%                | 6.3%                | 5.5%               |
+1792828806 [info] | cluster_1 | 75%                 | 23.4%               | 44.5%              |
+1792828806 [info] | cluster_2 | 100%                | 37.5%               | 37.5%              |
+1792828806 [info] | cluster_3 | 68.8%               | 25%                 | 27.3%              |
+1792828806 [info] | cluster_4 | 37.5%               | 12.5%               | 19.5%              |
+1792828806 [info] | cluster_5 | 87.5%               | 37.5%               | 34.4%              |
+1792828806 [info] | cluster_6 | 93.8%               | 32.8%               | 35.9%              |
+1792828806 [info] | cluster_7 | 12.5%               | 3.1%                | 4.7%               |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | Total     | 60.2%               | 22.3%               | 26.2%              |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] best_context_2 utilization: 
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | Cluster   | Control Utilization | Compute Utilization | Memory Utilization |
+1792828806 [info] +-----------+---------------------+---------------------+--------------------+
+1792828806 [info] | cluster_0 | 62.5%               | 20.3%               | 35.9%              |
+1792828806 [info] | cluster_1 | 56.3%               | 28.1%               | 28.1%              |
+1792828806 [info] | cluster_2 | 62.5%               | 35.9%               | 32.8%              |
+1792828807 [info] | cluster_3 | 87.5%               | 31.3%               | 36.7%              |
+1792828807 [info] | cluster_4 | 43.8%               | 20.3%               | 21.1%              |
+1792828807 [info] | cluster_5 | 87.5%               | 100%                | 53.9%              |
+1792828807 [info] | cluster_6 | 31.3%               | 18.8%               | 30.5%              |
+1792828807 [info] | cluster_7 | 18.8%               | 4.7%                | 7.8%               |
+1792828807 [info] +-----------+---------------------+---------------------+--------------------+
+1792828807 [info] | Total     | 56.3%               | 32.4%               | 30.9%              |
+1792828807 [info] +-----------+---------------------+---------------------+--------------------+
+1792828807 [info] Successful Mapping (allocation time: 9m 19s)
+1792828807 [info] Compiling kernels of best_context_0...
+1792828807 [info] Compiling kernels of best_context_1...
+1792828807 [info] Compiling kernels of best_context_2...
+1792828807 [info] Bandwidth of model inputs: 9.375 Mbps, outputs: 2.30713 Mbps (for a single frame)
+1792828807 [info] Bandwidth of DDR buffers: 0.0 Mbps (for a single frame)
+1792828807 [info] Bandwidth of inter context tensors: 24.231 Mbps (for a single frame)
+1792828807 [info] Building HEF...
+1792828809 [info] Successful Compilation (compilation time: 10s)
+1792828817 compiled in 586 s -> nano_base.hef (7.6 MB)
+1792828818 [info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/cprof/nano/nano_base_compiled.har
+1792828819 
+1792828819 real	10m1.389s
+1792828819 user	24m18.893s
+1792828819 sys	4m12.440s

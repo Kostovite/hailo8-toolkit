@@ -1,0 +1,21 @@
+MISMATCH efficientdet_lite1/maxpool1 (maxpool): 2267/3168 max 102
+MISMATCH efficientdet_lite1/maxpool2 (maxpool): 551/792 max 88
+MISMATCH efficientdet_lite1/maxpool3 (maxpool): 37117/50688 max 116
+MISMATCH efficientdet_lite1/maxpool4 (maxpool): 9175/12672 max 106
+MISMATCH efficientdet_lite1/maxpool5 (maxpool): 2273/3168 max 112
+MISMATCH efficientdet_lite1/maxpool6 (maxpool): 515/792 max 81
+MISMATCH efficientdet_lite1/maxpool7 (maxpool): 37251/50688 max 121
+MISMATCH efficientdet_lite1/maxpool8 (maxpool): 9320/12672 max 84
+MISMATCH efficientdet_lite1/maxpool9 (maxpool): 2184/3168 max 104
+MISMATCH efficientdet_lite1/maxpool10 (maxpool): 461/792 max 53
+MISMATCH efficientdet_lite1/maxpool11 (maxpool): 36621/50688 max 104
+MISMATCH efficientdet_lite1/maxpool12 (maxpool): 9253/12672 max 94
+MISMATCH efficientdet_lite1/maxpool13 (maxpool): 2201/3168 max 114
+MISMATCH efficientdet_lite1/maxpool14 (maxpool): 489/792 max 46
+MISMATCH efficientdet_lite1/maxpool15 (maxpool): 36976/50688 max 127
+MISMATCH efficientdet_lite1/maxpool16 (maxpool): 9504/12672 max 94
+MISMATCH efficientdet_lite1/maxpool17 (maxpool): 2228/3168 max 74
+MISMATCH efficientdet_lite1/maxpool18 (maxpool): 496/792 max 28
+UNSUPPORTED efficientdet_lite1/ssd_nms_postprocess (postprocess): NotImplementedError: efficientdet_lite1/ssd_nms_postprocess: postprocess
+270/289 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '120/120', 'dw': '93/93', 'maxpool': '0/18', 'resize': '16/16', 'ew_add': '39/39', 'postprocess': '0/1'}

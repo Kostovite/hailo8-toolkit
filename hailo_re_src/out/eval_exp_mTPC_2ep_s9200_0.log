@@ -1,0 +1,5 @@
+100/458 4.00 img/s
+200/458 4.93 img/s
+300/458 5.32 img/s
+400/458 5.51 img/s
+wrote stats ../out/stats_exp_mTPC_2ep_s9200_0.npz

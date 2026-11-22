@@ -1,0 +1,116 @@
+[36m<Hailo Model Zoo INFO> Start run for network siglip_b_16_image_encoder ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to siglip_b_16_image_encoder from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.00)
+[info] Starting LayerNorm Decomposition
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:34<36:33, 34.81s/entries]Calibration:   3%|▎         | 2/64 [00:34<14:54, 14.43s/entries]Calibration:   5%|▍         | 3/64 [00:35<08:02,  7.91s/entries]Calibration:   6%|▋         | 4/64 [00:35<04:51,  4.85s/entries]Calibration:   8%|▊         | 5/64 [00:35<03:06,  3.16s/entries]Calibration:   9%|▉         | 6/64 [00:35<02:03,  2.14s/entries]Calibration:  11%|█         | 7/64 [00:35<01:25,  1.50s/entries]Calibration:  12%|█▎        | 8/64 [00:35<01:00,  1.08s/entries]Calibration:  14%|█▍        | 9/64 [00:36<00:44,  1.24entries/s]Calibration:  16%|█▌        | 10/64 [00:36<00:32,  1.65entries/s]Calibration:  17%|█▋        | 11/64 [00:36<00:24,  2.14entries/s]Calibration:  19%|█▉        | 12/64 [00:36<00:19,  2.68entries/s]Calibration:  20%|██        | 13/64 [00:36<00:15,  3.25entries/s]Calibration:  22%|██▏       | 14/64 [00:36<00:13,  3.83entries/s]Calibration:  23%|██▎       | 15/64 [00:37<00:11,  4.35entries/s]Calibration:  25%|██▌       | 16/64 [00:37<00:09,  4.82entries/s]Calibration:  27%|██▋       | 17/64 [00:37<00:09,  5.04entries/s]Calibration:  28%|██▊       | 18/64 [00:37<00:08,  5.31entries/s]Calibration:  30%|██▉       | 19/64 [00:37<00:07,  5.66entries/s]Calibration:  31%|███▏      | 20/64 [00:37<00:07,  5.89entries/s]Calibration:  33%|███▎      | 21/64 [00:38<00:07,  5.86entries/s]Calibration:  34%|███▍      | 22/64 [00:38<00:07,  5.78entries/s]Calibration:  36%|███▌      | 23/64 [00:38<00:07,  5.75entries/s]Calibration:  38%|███▊      | 24/64 [00:38<00:06,  5.88entries/s]Calibration:  39%|███▉      | 25/64 [00:38<00:06,  6.07entries/s]Calibration:  41%|████      | 26/64 [00:38<00:06,  6.16entries/s]Calibration:  42%|████▏     | 27/64 [00:39<00:06,  6.12entries/s]Calibration:  44%|████▍     | 28/64 [00:39<00:05,  6.13entries/s]Calibration:  45%|████▌     | 29/64 [00:39<00:05,  6.19entries/s]Calibration:  47%|████▋     | 30/64 [00:39<00:05,  6.20entries/s]Calibration:  48%|████▊     | 31/64 [00:39<00:05,  6.26entries/s]Calibration:  50%|█████     | 32/64 [00:39<00:05,  6.34entries/s]Calibration:  52%|█████▏    | 33/64 [00:40<00:04,  6.41entries/s]Calibration:  53%|█████▎    | 34/64 [00:40<00:04,  6.43entries/s]Calibration:  55%|█████▍    | 35/64 [00:40<00:04,  6.41entries/s]Calibration:  56%|█████▋    | 36/64 [00:40<00:04,  6.39entries/s]Calibration:  58%|█████▊    | 37/64 [00:40<00:04,  6.39entries/s]Calibration:  59%|█████▉    | 38/64 [00:40<00:04,  6.39entries/s]Calibration:  61%|██████    | 39/64 [00:40<00:03,  6.39entries/s]Calibration:  62%|██████▎   | 40/64 [00:41<00:03,  6.42entries/s]Calibration:  64%|██████▍   | 41/64 [00:41<00:03,  6.42entries/s]Calibration:  66%|██████▌   | 42/64 [00:41<00:03,  6.38entries/s]Calibration:  67%|██████▋   | 43/64 [00:41<00:03,  6.10entries/s]Calibration:  69%|██████▉   | 44/64 [00:41<00:03,  5.90entries/s]Calibration:  70%|███████   | 45/64 [00:41<00:03,  5.78entries/s]Calibration:  72%|███████▏  | 46/64 [00:42<00:03,  5.54entries/s]Calibration:  73%|███████▎  | 47/64 [00:42<00:03,  4.96entries/s]Calibration:  75%|███████▌  | 48/64 [00:42<00:03,  4.90entries/s]Calibration:  77%|███████▋  | 49/64 [00:42<00:02,  5.01entries/s]Calibration:  78%|███████▊  | 50/64 [00:42<00:02,  5.11entries/s]Calibration:  80%|███████▉  | 51/64 [00:43<00:02,  5.17entries/s]Calibration:  81%|████████▏ | 52/64 [00:43<00:02,  5.19entries/s]Calibration:  83%|████████▎ | 53/64 [00:43<00:02,  5.22entries/s]Calibration:  84%|████████▍ | 54/64 [00:43<00:01,  5.22entries/s]Calibration:  86%|████████▌ | 55/64 [00:43<00:01,  5.28entries/s]Calibration:  88%|████████▊ | 56/64 [00:44<00:01,  5.35entries/s]Calibration:  89%|████████▉ | 57/64 [00:44<00:01,  5.41entries/s]Calibration:  91%|█████████ | 58/64 [00:44<00:01,  5.43entries/s]Calibration:  92%|█████████▏| 59/64 [00:44<00:00,  5.45entries/s]Calibration:  94%|█████████▍| 60/64 [00:44<00:00,  5.48entries/s]Calibration:  95%|█████████▌| 61/64 [00:45<00:00,  5.50entries/s]Calibration:  97%|█████████▋| 62/64 [00:45<00:00,  5.35entries/s]Calibration:  98%|█████████▊| 63/64 [00:45<00:00,  5.36entries/s]Calibration: 100%|██████████| 64/64 [00:45<00:00,  5.67entries/s]Calibration: 100%|██████████| 64/64 [00:45<00:00,  5.67entries/s]Calibration: 100%|██████████| 64/64 [00:45<00:00,  1.40entries/s]
+[info] Model Optimization Algorithm LayerNorm Decomposition is done (completion time is 00:00:59.70)
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [02:57<3:06:51, 177.96s/entries]Calibration:   3%|▎         | 2/64 [02:58<1:15:55, 73.47s/entries] Calibration:   5%|▍         | 3/64 [02:58<40:43, 40.05s/entries]  Calibration:   6%|▋         | 4/64 [02:58<24:21, 24.35s/entries]Calibration:   8%|▊         | 5/64 [02:59<15:24, 15.68s/entries]Calibration:   9%|▉         | 6/64 [02:59<10:05, 10.45s/entries]Calibration:  11%|█         | 7/64 [02:59<06:46,  7.12s/entries]Calibration:  12%|█▎        | 8/64 [03:00<04:37,  4.96s/entries]Calibration:  14%|█▍        | 9/64 [03:03<03:59,  4.35s/entries]Calibration:  16%|█▌        | 10/64 [03:03<02:47,  3.10s/entries]Calibration:  17%|█▋        | 11/64 [03:03<01:59,  2.25s/entries]Calibration:  19%|█▉        | 12/64 [03:04<01:26,  1.67s/entries]Calibration:  20%|██        | 13/64 [03:04<01:04,  1.27s/entries]Calibration:  22%|██▏       | 14/64 [03:04<00:49,  1.02entries/s]Calibration:  23%|██▎       | 15/64 [03:05<00:38,  1.28entries/s]Calibration:  25%|██▌       | 16/64 [03:05<00:30,  1.56entries/s]Calibration:  27%|██▋       | 17/64 [03:05<00:25,  1.83entries/s]Calibration:  28%|██▊       | 18/64 [03:05<00:21,  2.16entries/s]Calibration:  30%|██▉       | 19/64 [03:06<00:18,  2.46entries/s]Calibration:  31%|███▏      | 20/64 [03:06<00:16,  2.71entries/s]Calibration:  33%|███▎      | 21/64 [03:06<00:14,  2.92entries/s]Calibration:  34%|███▍      | 22/64 [03:07<00:13,  3.08entries/s]Calibration:  36%|███▌      | 23/64 [03:07<00:12,  3.21entries/s]Calibration:  38%|███▊      | 24/64 [03:07<00:12,  3.31entries/s]Calibration:  39%|███▉      | 25/64 [03:07<00:11,  3.36entries/s]Calibration:  41%|████      | 26/64 [03:08<00:11,  3.40entries/s]Calibration:  42%|████▏     | 27/64 [03:08<00:11,  3.30entries/s]Calibration:  44%|████▍     | 28/64 [03:08<00:11,  3.26entries/s]Calibration:  45%|████▌     | 29/64 [03:09<00:10,  3.21entries/s]Calibration:  47%|████▋     | 30/64 [03:09<00:10,  3.20entries/s]Calibration:  48%|████▊     | 31/64 [03:09<00:10,  3.20entries/s]Calibration:  50%|█████     | 32/64 [03:10<00:10,  3.16entries/s]Calibration:  52%|█████▏    | 33/64 [03:10<00:09,  3.11entries/s]Calibration:  53%|█████▎    | 34/64 [03:10<00:09,  3.14entries/s]Calibration:  55%|█████▍    | 35/64 [03:11<00:09,  3.17entries/s]Calibration:  56%|█████▋    | 36/64 [03:11<00:08,  3.19entries/s]Calibration:  58%|█████▊    | 37/64 [03:11<00:08,  3.10entries/s]Calibration:  59%|█████▉    | 38/64 [03:12<00:09,  2.86entries/s]Calibration:  61%|██████    | 39/64 [03:12<00:09,  2.57entries/s]Calibration:  62%|██████▎   | 40/64 [03:13<00:09,  2.51entries/s]Calibration:  64%|██████▍   | 41/64 [03:13<00:08,  2.67entries/s]Calibration:  66%|██████▌   | 42/64 [03:13<00:07,  2.77entries/s]Calibration:  67%|██████▋   | 43/64 [03:13<00:07,  2.88entries/s]Calibration:  69%|██████▉   | 44/64 [03:14<00:06,  3.09entries/s]Calibration:  70%|███████   | 45/64 [03:14<00:05,  3.25entries/s]Calibration:  72%|███████▏  | 46/64 [03:14<00:05,  3.30entries/s]Calibration:  73%|███████▎  | 47/64 [03:15<00:05,  3.26entries/s]Calibration:  75%|███████▌  | 48/64 [03:15<00:04,  3.23entries/s]Calibration:  77%|███████▋  | 49/64 [03:15<00:04,  3.21entries/s]Calibration:  78%|███████▊  | 50/64 [03:16<00:04,  3.24entries/s]Calibration:  80%|███████▉  | 51/64 [03:16<00:03,  3.29entries/s]Calibration:  81%|████████▏ | 52/64 [03:16<00:03,  3.37entries/s]Calibration:  83%|████████▎ | 53/64 [03:16<00:03,  3.42entries/s]Calibration:  84%|████████▍ | 54/64 [03:17<00:02,  3.46entries/s]Calibration:  86%|████████▌ | 55/64 [03:17<00:02,  3.41entries/s]Calibration:  88%|████████▊ | 56/64 [03:17<00:02,  3.35entries/s]Calibration:  89%|████████▉ | 57/64 [03:18<00:02,  3.47entries/s]Calibration:  91%|█████████ | 58/64 [03:18<00:01,  3.64entries/s]Calibration:  92%|█████████▏| 59/64 [03:18<00:01,  3.78entries/s]Calibration:  94%|█████████▍| 60/64 [03:18<00:01,  3.86entries/s]Calibration:  95%|█████████▌| 61/64 [03:19<00:00,  3.58entries/s]Calibration:  97%|█████████▋| 62/64 [03:19<00:00,  3.39entries/s]Calibration:  98%|█████████▊| 63/64 [03:19<00:00,  3.32entries/s]Calibration: 100%|██████████| 64/64 [03:20<00:00,  3.19entries/s]Calibration: 100%|██████████| 64/64 [03:20<00:00,  3.19entries/s]Calibration: 100%|██████████| 64/64 [03:20<00:00,  3.13s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:03:26.31)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:01.52)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer siglip_b_16_image_encoder/conv1/conv_op, using max shift instead. delta=3.4547
+[info] No shifts available for layer siglip_b_16_image_encoder/conv1/conv_op, using max shift instead. delta=1.7273
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax1/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv3/conv_op, using max shift instead. delta=0.0063
+[info] No shifts available for layer siglip_b_16_image_encoder/conv3/conv_op, using max shift instead. delta=0.0032
+[info] No shifts available for layer siglip_b_16_image_encoder/conv1/conv_op, using max shift instead. delta=1.7273
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax2/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv7/conv_op, using max shift instead. delta=1.1202
+[info] No shifts available for layer siglip_b_16_image_encoder/conv7/conv_op, using max shift instead. delta=0.5601
+[info] No shifts available for layer siglip_b_16_image_encoder/conv9/conv_op, using max shift instead. delta=0.2839
+[info] No shifts available for layer siglip_b_16_image_encoder/conv9/conv_op, using max shift instead. delta=0.1420
+[info] No shifts available for layer siglip_b_16_image_encoder/conv7/conv_op, using max shift instead. delta=0.5601
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax3/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv11/conv_op, using max shift instead. delta=0.8309
+[info] No shifts available for layer siglip_b_16_image_encoder/conv11/conv_op, using max shift instead. delta=0.4155
+[info] No shifts available for layer siglip_b_16_image_encoder/conv9/conv_op, using max shift instead. delta=0.1420
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax4/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv15/conv_op, using max shift instead. delta=1.1061
+[info] No shifts available for layer siglip_b_16_image_encoder/conv15/conv_op, using max shift instead. delta=0.5531
+[info] No shifts available for layer siglip_b_16_image_encoder/conv17/conv_op, using max shift instead. delta=0.3252
+[info] No shifts available for layer siglip_b_16_image_encoder/conv17/conv_op, using max shift instead. delta=0.1626
+[info] No shifts available for layer siglip_b_16_image_encoder/conv15/conv_op, using max shift instead. delta=0.5531
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax5/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv19/conv_op, using max shift instead. delta=0.2134
+[info] No shifts available for layer siglip_b_16_image_encoder/conv19/conv_op, using max shift instead. delta=0.1067
+[info] No shifts available for layer siglip_b_16_image_encoder/conv17/conv_op, using max shift instead. delta=0.1626
+[info] No shifts available for layer siglip_b_16_image_encoder/conv21/conv_op, using max shift instead. delta=1.2294
+[info] No shifts available for layer siglip_b_16_image_encoder/conv21/conv_op, using max shift instead. delta=0.6147
+[info] No shifts available for layer siglip_b_16_image_encoder/conv19/conv_op, using max shift instead. delta=0.1067
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax6/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv23/conv_op, using max shift instead. delta=1.5612
+[info] No shifts available for layer siglip_b_16_image_encoder/conv23/conv_op, using max shift instead. delta=0.7806
+[info] No shifts available for layer siglip_b_16_image_encoder/conv21/conv_op, using max shift instead. delta=0.6147
+[info] No shifts available for layer siglip_b_16_image_encoder/conv25/conv_op, using max shift instead. delta=1.3758
+[info] No shifts available for layer siglip_b_16_image_encoder/conv25/conv_op, using max shift instead. delta=0.6879
+[info] No shifts available for layer siglip_b_16_image_encoder/conv23/conv_op, using max shift instead. delta=0.7806
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax7/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv27/conv_op, using max shift instead. delta=4.7532
+[info] No shifts available for layer siglip_b_16_image_encoder/conv27/conv_op, using max shift instead. delta=2.3766
+[info] No shifts available for layer siglip_b_16_image_encoder/conv25/conv_op, using max shift instead. delta=0.6879
+[info] No shifts available for layer siglip_b_16_image_encoder/conv29/conv_op, using max shift instead. delta=3.0895
+[info] No shifts available for layer siglip_b_16_image_encoder/conv29/conv_op, using max shift instead. delta=1.5447
+[info] No shifts available for layer siglip_b_16_image_encoder/conv27/conv_op, using max shift instead. delta=2.3766
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax8/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv31/conv_op, using max shift instead. delta=5.3139
+[info] No shifts available for layer siglip_b_16_image_encoder/conv31/conv_op, using max shift instead. delta=2.6569
+[info] No shifts available for layer siglip_b_16_image_encoder/conv29/conv_op, using max shift instead. delta=1.5447
+[info] No shifts available for layer siglip_b_16_image_encoder/conv33/conv_op, using max shift instead. delta=3.8556
+[info] No shifts available for layer siglip_b_16_image_encoder/conv33/conv_op, using max shift instead. delta=1.9278
+[info] No shifts available for layer siglip_b_16_image_encoder/conv31/conv_op, using max shift instead. delta=2.6569
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax9/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv35/conv_op, using max shift instead. delta=6.3647
+[info] No shifts available for layer siglip_b_16_image_encoder/conv35/conv_op, using max shift instead. delta=3.1824
+[info] No shifts available for layer siglip_b_16_image_encoder/conv33/conv_op, using max shift instead. delta=1.9278
+[info] No shifts available for layer siglip_b_16_image_encoder/conv37/conv_op, using max shift instead. delta=3.9511
+[info] No shifts available for layer siglip_b_16_image_encoder/conv37/conv_op, using max shift instead. delta=1.9756
+[info] No shifts available for layer siglip_b_16_image_encoder/conv35/conv_op, using max shift instead. delta=3.1824
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax10/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv39/conv_op, using max shift instead. delta=5.2198
+[info] No shifts available for layer siglip_b_16_image_encoder/conv39/conv_op, using max shift instead. delta=2.6099
+[info] No shifts available for layer siglip_b_16_image_encoder/conv37/conv_op, using max shift instead. delta=1.9756
+[info] No shifts available for layer siglip_b_16_image_encoder/conv41/conv_op, using max shift instead. delta=3.7897
+[info] No shifts available for layer siglip_b_16_image_encoder/conv41/conv_op, using max shift instead. delta=1.8949
+[info] No shifts available for layer siglip_b_16_image_encoder/conv39/conv_op, using max shift instead. delta=2.6099
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax11/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv43/conv_op, using max shift instead. delta=5.0214
+[info] No shifts available for layer siglip_b_16_image_encoder/conv43/conv_op, using max shift instead. delta=2.5107
+[info] No shifts available for layer siglip_b_16_image_encoder/conv41/conv_op, using max shift instead. delta=1.8949
+[info] No shifts available for layer siglip_b_16_image_encoder/conv45/conv_op, using max shift instead. delta=2.5979
+[info] No shifts available for layer siglip_b_16_image_encoder/conv45/conv_op, using max shift instead. delta=1.2989
+[info] No shifts available for layer siglip_b_16_image_encoder/conv43/conv_op, using max shift instead. delta=2.5107
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax12/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv47/conv_op, using max shift instead. delta=4.2295
+[info] No shifts available for layer siglip_b_16_image_encoder/conv47/conv_op, using max shift instead. delta=2.1148
+[info] No shifts available for layer siglip_b_16_image_encoder/conv45/conv_op, using max shift instead. delta=1.2989
+[info] No shifts available for layer siglip_b_16_image_encoder/conv49/conv_op, using max shift instead. delta=1.7404
+[info] No shifts available for layer siglip_b_16_image_encoder/conv49/conv_op, using max shift instead. delta=0.8702
+[info] No shifts available for layer siglip_b_16_image_encoder/conv47/conv_op, using max shift instead. delta=2.1148
+[info] activation fitting started for siglip_b_16_image_encoder/reduce_sum_softmax13/act_op
+[info] No shifts available for layer siglip_b_16_image_encoder/conv51/conv_op, using max shift instead. delta=0.1414
+[info] No shifts available for layer siglip_b_16_image_encoder/conv51/conv_op, using max shift instead. delta=0.0707
+[info] No shifts available for layer siglip_b_16_image_encoder/conv53/conv_op, using max shift instead. delta=1.5464
+[info] No shifts available for layer siglip_b_16_image_encoder/conv53/conv_op, using max shift instead. delta=0.7732
+[info] No shifts available for layer siglip_b_16_image_encoder/conv51/conv_op, using max shift instead. delta=0.0707
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/siglip_b_16_image_encoder/siglip_b_16_image_encoder.har

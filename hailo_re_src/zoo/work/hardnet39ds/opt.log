@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network hardnet39ds ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to hardnet39ds from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.96)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:34<35:54, 34.19s/entries]Calibration:   5%|▍         | 3/64 [00:34<09:03,  8.90s/entries]Calibration:   8%|▊         | 5/64 [00:34<04:17,  4.36s/entries]Calibration:  11%|█         | 7/64 [00:34<02:24,  2.53s/entries]Calibration:  14%|█▍        | 9/64 [00:34<01:27,  1.60s/entries]Calibration:  19%|█▉        | 12/64 [00:34<00:47,  1.10entries/s]Calibration:  22%|██▏       | 14/64 [00:34<00:32,  1.54entries/s]Calibration:  27%|██▋       | 17/64 [00:35<00:19,  2.41entries/s]Calibration:  31%|███▏      | 20/64 [00:35<00:12,  3.53entries/s]Calibration:  36%|███▌      | 23/64 [00:35<00:08,  4.96entries/s]Calibration:  41%|████      | 26/64 [00:35<00:05,  6.72entries/s]Calibration:  45%|████▌     | 29/64 [00:35<00:04,  8.72entries/s]Calibration:  50%|█████     | 32/64 [00:35<00:02, 10.90entries/s]Calibration:  55%|█████▍    | 35/64 [00:35<00:02, 13.20entries/s]Calibration:  59%|█████▉    | 38/64 [00:35<00:01, 15.19entries/s]Calibration:  64%|██████▍   | 41/64 [00:36<00:01, 17.07entries/s]Calibration:  69%|██████▉   | 44/64 [00:36<00:01, 18.46entries/s]Calibration:  73%|███████▎  | 47/64 [00:36<00:00, 19.56entries/s]Calibration:  78%|███████▊  | 50/64 [00:36<00:00, 20.75entries/s]Calibration:  83%|████████▎ | 53/64 [00:36<00:00, 22.14entries/s]Calibration:  88%|████████▊ | 56/64 [00:36<00:00, 22.26entries/s]Calibration:  92%|█████████▏| 59/64 [00:36<00:00, 22.46entries/s]Calibration:  97%|█████████▋| 62/64 [00:36<00:00, 22.85entries/s]Calibration: 100%|██████████| 64/64 [00:37<00:00, 22.85entries/s]Calibration: 100%|██████████| 64/64 [00:37<00:00,  1.73entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:38.35)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/hardnet39ds/hardnet39ds.har

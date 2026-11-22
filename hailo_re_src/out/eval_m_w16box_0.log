@@ -1,0 +1,10 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+[qatfast] best/conv85: a16_w16 layer with 4608 taps: digit planes not exact in fp32 -> frozen-weight atomic chain
+[qatfast] best/conv99: a16_w16 layer with 4608 taps: digit planes not exact in fp32 -> frozen-weight atomic chain
+100/458 2.21 img/s
+200/458 2.62 img/s
+300/458 2.79 img/s
+400/458 2.89 img/s
+wrote stats ../out/stats_m_w16box_0.npz

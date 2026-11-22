@@ -1,0 +1,5 @@
+UNSUPPORTED scrfd_2_5g/avgpool1 (avgpool): NotImplementedError: scrfd_2_5g/avgpool1: avgpool
+UNSUPPORTED scrfd_2_5g/avgpool2 (avgpool): NotImplementedError: scrfd_2_5g/avgpool2: avgpool
+UNSUPPORTED scrfd_2_5g/avgpool3 (avgpool): NotImplementedError: scrfd_2_5g/avgpool3: avgpool
+62/65 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '57/57', 'maxpool': '1/1', 'avgpool': '0/3', 'resize': '2/2'}

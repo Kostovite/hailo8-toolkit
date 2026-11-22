@@ -1,0 +1,56 @@
+[36m<Hailo Model Zoo INFO> Start run for network ssd_mobilenet_v1 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to ssd_mobilenet_v1 from l0.alls
+[info] For NMS architecture ssd the default engine is nn_core. For other engine please use the 'engine' flag in the nms_postprocess model script command. If the NMS has been added during parsing, please parse the model again without confirming the addition of the NMS, and add the command manually with the desired engine.
+[warning] Currently `nn-core` performs only score threshold. In the near future it will perform score + IoU threshold. If you want to apply IoU threshold please use `cpu` or `auto` instead
+[info] The layer ssd_mobilenet_v1/conv14 was detected as cls layer.
+[info] The layer ssd_mobilenet_v1/conv13 was detected as reg layer.
+[info] The layer ssd_mobilenet_v1/conv18 was detected as cls layer.
+[info] The layer ssd_mobilenet_v1/conv17 was detected as reg layer.
+[info] The layer ssd_mobilenet_v1/conv22 was detected as cls layer.
+[info] The layer ssd_mobilenet_v1/conv21 was detected as reg layer.
+[info] The layer ssd_mobilenet_v1/conv26 was detected as cls layer.
+[info] The layer ssd_mobilenet_v1/conv25 was detected as reg layer.
+[info] The layer ssd_mobilenet_v1/conv30 was detected as cls layer.
+[info] The layer ssd_mobilenet_v1/conv29 was detected as reg layer.
+[info] The layer ssd_mobilenet_v1/conv34 was detected as cls layer.
+[info] The layer ssd_mobilenet_v1/conv33 was detected as reg layer.
+[info] Using the default score threshold of 0.3 (range is [0-1], where 1 performs maximum suppression) and IoU threshold of 0.6 (range is [0-1], where 0 performs maximum suppression).
+Changing the values is possible using the nms_postprocess model script command.
+[info] The activation function of layer ssd_mobilenet_v1/conv14 was replaced by a Sigmoid
+[info] The activation function of layer ssd_mobilenet_v1/conv18 was replaced by a Sigmoid
+[info] The activation function of layer ssd_mobilenet_v1/conv22 was replaced by a Sigmoid
+[info] The activation function of layer ssd_mobilenet_v1/conv26 was replaced by a Sigmoid
+[info] The activation function of layer ssd_mobilenet_v1/conv30 was replaced by a Sigmoid
+[info] The activation function of layer ssd_mobilenet_v1/conv34 was replaced by a Sigmoid
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.55)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:38<40:07, 38.22s/entries]Calibration:   5%|▍         | 3/64 [00:38<10:07,  9.96s/entries]Calibration:   8%|▊         | 5/64 [00:38<04:47,  4.87s/entries]Calibration:  11%|█         | 7/64 [00:38<02:41,  2.83s/entries]Calibration:  14%|█▍        | 9/64 [00:38<01:38,  1.79s/entries]Calibration:  17%|█▋        | 11/64 [00:38<01:02,  1.18s/entries]Calibration:  20%|██        | 13/64 [00:38<00:41,  1.24entries/s]Calibration:  23%|██▎       | 15/64 [00:39<00:27,  1.78entries/s]Calibration:  27%|██▋       | 17/64 [00:39<00:18,  2.49entries/s]Calibration:  30%|██▉       | 19/64 [00:39<00:13,  3.39entries/s]Calibration:  34%|███▍      | 22/64 [00:39<00:08,  5.10entries/s]Calibration:  39%|███▉      | 25/64 [00:39<00:05,  6.98entries/s]Calibration:  42%|████▏     | 27/64 [00:39<00:04,  8.22entries/s]Calibration:  45%|████▌     | 29/64 [00:39<00:03,  9.56entries/s]Calibration:  48%|████▊     | 31/64 [00:39<00:02, 11.15entries/s]Calibration:  53%|█████▎    | 34/64 [00:40<00:02, 13.36entries/s]Calibration:  56%|█████▋    | 36/64 [00:40<00:01, 14.32entries/s]Calibration:  59%|█████▉    | 38/64 [00:40<00:01, 15.38entries/s]Calibration:  62%|██████▎   | 40/64 [00:40<00:01, 16.24entries/s]Calibration:  66%|██████▌   | 42/64 [00:40<00:01, 17.16entries/s]Calibration:  69%|██████▉   | 44/64 [00:40<00:01, 17.41entries/s]Calibration:  72%|███████▏  | 46/64 [00:40<00:00, 18.06entries/s]Calibration:  75%|███████▌  | 48/64 [00:40<00:00, 18.09entries/s]Calibration:  78%|███████▊  | 50/64 [00:40<00:00, 18.00entries/s]Calibration:  81%|████████▏ | 52/64 [00:40<00:00, 18.23entries/s]Calibration:  84%|████████▍ | 54/64 [00:41<00:00, 18.67entries/s]Calibration:  89%|████████▉ | 57/64 [00:41<00:00, 19.13entries/s]Calibration:  92%|█████████▏| 59/64 [00:41<00:00, 18.23entries/s]Calibration:  97%|█████████▋| 62/64 [00:41<00:00, 19.07entries/s]Calibration: 100%|██████████| 64/64 [00:41<00:00, 19.07entries/s]Calibration: 100%|██████████| 64/64 [00:41<00:00, 19.07entries/s]Calibration: 100%|██████████| 64/64 [00:41<00:00,  1.54entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:43.34)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] activation fitting started for ssd_mobilenet_v1/conv13_exp1/act_op
+[info] activation fitting started for ssd_mobilenet_v1/conv17_exp1/act_op
+[info] activation fitting started for ssd_mobilenet_v1/conv21_exp1/act_op
+[info] activation fitting started for ssd_mobilenet_v1/conv25_exp1/act_op
+[info] activation fitting started for ssd_mobilenet_v1/conv29_exp1/act_op
+[info] activation fitting started for ssd_mobilenet_v1/conv33_exp1/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/ssd_mobilenet_v1/ssd_mobilenet_v1.har

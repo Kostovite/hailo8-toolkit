@@ -1,0 +1,82 @@
+UNSUPPORTED vit_tiny/const_input1 (const_input): NotImplementedError: vit_tiny/const_input1: const_input
+UNSUPPORTED vit_tiny/const_input2 (const_input): NotImplementedError: vit_tiny/const_input2: const_input
+UNSUPPORTED vit_tiny/space_to_depth1 (space_to_depth): NotImplementedError: vit_tiny/space_to_depth1: space_to_depth
+UNSUPPORTED vit_tiny/concat1 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 1 but got size 196 for tensor number 1 in the list.
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization1 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization1: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization1 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization1: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization1 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization1', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization2 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization2: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization2 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization2: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization2 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization2', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization3 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization3: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization3 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization3: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization3 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization3', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization4 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization4: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization4 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization4: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization4 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization4', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization5 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization5: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization5 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization5: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization5 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization5', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization6 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization6: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization6 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization6: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization6 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization6', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization7 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization7: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization7 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization7: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization7 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization7', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization8 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization8: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization8 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization8: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization8 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization8', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization9 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization9: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization9 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization9: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization9 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization9', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization10 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization10: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization10 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization10: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization10 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization10', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization11 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization11: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization11 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization11: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization11 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization11', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization12 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization12: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization12 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization12: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization12 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization12', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization13 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization13: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization13 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization13: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization13 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization13', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization14 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization14: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization14 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization14: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization14 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization14', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization15 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization15: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization15 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization15: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization15 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization15', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization16 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization16: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization16 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization16: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization16 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization16', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization17 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization17: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization17 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization17: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization17 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization17', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization18 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization18: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization18 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization18: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization18 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization18', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization19 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization19: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization19 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization19: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization19 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization19', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization20 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization20: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization20 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization20: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization20 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization20', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization21 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization21: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization21 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization21: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization21 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization21', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization22 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization22: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization22 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization22: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization22 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization22', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization23 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization23: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization23 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization23: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization23 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization23', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization24 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization24: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization24 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization24: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization24 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization24', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/reduce_mean1_layer_normalization25 (reduce_mean): NotImplementedError: vit_tiny/reduce_mean1_layer_normalization25: reduce_mean
+UNSUPPORTED vit_tiny/square1_layer_normalization25 (feature_multiplier): NotImplementedError: vit_tiny/square1_layer_normalization25: feature_multiplier
+UNSUPPORTED vit_tiny/ew_mult1_layer_normalization25 (ew_mult): AssertionError: ('vit_tiny/ew_mult1_layer_normalization25', 'ElementwiseMultOp', 0)
+UNSUPPORTED vit_tiny/slice37 (slice): NotImplementedError: vit_tiny/slice37: slice
+283/363 checked layers exact when chained from raw pixels
+{'const_input': '0/2', 'input_layer': '1/1', 'normalization': '1/1', 'space_to_depth': '0/1', 'conv': '99/99', 'concat': '12/13', 'ew_add': '25/25', 'reduce_mean': '0/25', 'ew_sub': '37/37', 'feature_multiplier': '0/25', 'ew_mult': '12/37', 'activation': '36/36', 'reduce_sum': '24/24', 'matmul': '24/24', 'reduce_max': '12/12', 'slice': '0/1'}

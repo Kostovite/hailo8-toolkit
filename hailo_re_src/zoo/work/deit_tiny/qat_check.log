@@ -1,0 +1,4 @@
+QATNet: 100 MAC modules, 158 APUs, 92 atomic chains
+qatfast == graph26 on 363/363 layers (0 not produced by qatfast)
+{'const_input': '2/2', 'input_layer': '1/1', 'normalization': '1/1', 'space_to_depth': '1/1', 'conv': '99/99', 'concat': '13/13', 'ew_add': '25/25', 'reduce_mean': '25/25', 'ew_sub': '37/37', 'feature_multiplier': '25/25', 'ew_mult': '37/37', 'activation': '36/36', 'reduce_sum': '24/24', 'matmul': '24/24', 'reduce_max': '12/12', 'slice': '1/1'}
+backward ok: 514/716 parameter tensors received a non-zero gradient

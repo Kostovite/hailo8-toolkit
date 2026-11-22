@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network davit_tiny ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model davit_tiny
+[info] Restored ONNX model davit_tiny (completion time: 00:00:03.23)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:06.60)
+[info] Start nodes mapped from original model: 'x.1': 'davit_tiny/input_layer1'.
+[info] End nodes mapped from original model: '/head/fc/Gemm'.
+[info] Translation completed on ONNX model davit_tiny (completion time: 00:00:19.42)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/davit_tiny/davit_tiny.har

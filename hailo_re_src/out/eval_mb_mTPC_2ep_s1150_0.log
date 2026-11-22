@@ -1,0 +1,17 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/1385 3.41 img/s
+200/1385 4.49 img/s
+300/1385 5.03 img/s
+400/1385 5.36 img/s
+500/1385 5.57 img/s
+600/1385 5.73 img/s
+700/1385 5.85 img/s
+800/1385 5.94 img/s
+900/1385 6.01 img/s
+1000/1385 6.06 img/s
+1100/1385 6.11 img/s
+1200/1385 6.14 img/s
+1300/1385 6.18 img/s
+wrote stats ../out/stats_mb_mTPC_2ep_s1150_0.npz

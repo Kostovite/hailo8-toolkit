@@ -1,0 +1,34 @@
+[36m<Hailo Model Zoo INFO> Start run for network efficientnet_s ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to efficientnet_s from l0.alls
+[warning] Model script is empty
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's no available GPU
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.42)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:21<22:52, 21.78s/entries]Calibration:   6%|▋         | 4/64 [00:21<04:09,  4.16s/entries]Calibration:  11%|█         | 7/64 [00:22<01:51,  1.95s/entries]Calibration:  16%|█▌        | 10/64 [00:22<01:00,  1.13s/entries]Calibration:  20%|██        | 13/64 [00:22<00:36,  1.40entries/s]Calibration:  25%|██▌       | 16/64 [00:22<00:23,  2.08entries/s]Calibration:  30%|██▉       | 19/64 [00:22<00:15,  2.97entries/s]Calibration:  33%|███▎      | 21/64 [00:22<00:11,  3.73entries/s]Calibration:  36%|███▌      | 23/64 [00:22<00:08,  4.71entries/s]Calibration:  39%|███▉      | 25/64 [00:23<00:06,  5.75entries/s]Calibration:  42%|████▏     | 27/64 [00:23<00:05,  6.91entries/s]Calibration:  45%|████▌     | 29/64 [00:23<00:04,  8.37entries/s]Calibration:  48%|████▊     | 31/64 [00:23<00:03,  9.93entries/s]Calibration:  52%|█████▏    | 33/64 [00:23<00:02, 11.36entries/s]Calibration:  55%|█████▍    | 35/64 [00:23<00:02, 12.73entries/s]Calibration:  58%|█████▊    | 37/64 [00:23<00:01, 13.84entries/s]Calibration:  61%|██████    | 39/64 [00:23<00:01, 14.86entries/s]Calibration:  64%|██████▍   | 41/64 [00:23<00:01, 15.64entries/s]Calibration:  67%|██████▋   | 43/64 [00:24<00:01, 16.45entries/s]Calibration:  70%|███████   | 45/64 [00:24<00:01, 17.09entries/s]Calibration:  73%|███████▎  | 47/64 [00:24<00:00, 17.55entries/s]Calibration:  78%|███████▊  | 50/64 [00:24<00:00, 18.81entries/s]Calibration:  83%|████████▎ | 53/64 [00:24<00:00, 19.55entries/s]Calibration:  88%|████████▊ | 56/64 [00:24<00:00, 20.18entries/s]Calibration:  92%|█████████▏| 59/64 [00:24<00:00, 21.01entries/s]Calibration:  97%|█████████▋| 62/64 [00:24<00:00, 20.39entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00, 20.39entries/s]Calibration: 100%|██████████| 64/64 [00:25<00:00,  2.55entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:26.14)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] The calibration set seems to not be normalized, because the values range is [(-1.1691477, 1.1665154), (-1.1479933, 1.165853), (-1.1302645, 1.1878016)].
+Since the neural core works in 8-bit (between 0 to 255), a quantization will occur on the CPU of the runtime platform.
+Add a normalization layer to the model to offload the normalization to the neural core.
+Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/efficientnet_s/efficientnet_s.har

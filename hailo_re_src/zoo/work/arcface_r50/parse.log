@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network arcface_r50 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model arcface_r50
+[info] Restored ONNX model arcface_r50 (completion time: 00:00:01.73)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:03.85)
+[info] Start nodes mapped from original model: 'data': 'arcface_r50/input_layer1'.
+[info] End nodes mapped from original model: 'BatchNormalization_130'.
+[info] Translation completed on ONNX model arcface_r50 (completion time: 00:00:04.79)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/arcface_r50/arcface_r50.har

@@ -191,6 +191,36 @@ static std::unordered_map<std::string, double>& costs() { static auto* m = new s
 static std::atomic<long> s_calls{0}, s_hits{0}, s_bad{0}, s_store{0};
 static std::atomic<long> s_miss_us{0}, s_hit_us{0}, s_saved_us{0};
 
+
+// ---- HAILO_CPSERVER=SOCKET: solve cache misses with MODERN multi-worker CP-SAT (turbo/cpserver.py) instead of the
+// compiler's embedded single-worker OR-tools 7.x. Unreachable / refused -> the stock in-process solve.
+#include <sys/socket.h>
+#include <sys/un.h>
+static std::atomic<long> s_remote{0}, s_remote_fail{0};
+static bool io_all(int fd, void* b, size_t n, bool wr) {
+    char* p = (char*)b;
+    while (n) {
+        ssize_t k = wr ? write(fd, p, n) : read(fd, p, n);
+        if (k <= 0) { if (k < 0 && errno == EINTR) continue; return false; }
+        p += k; n -= size_t(k);
+    }
+    return true;
+}
+static bool remote_solve(const std::string& req, std::string* out) {
+    const char* path = getenv("HAILO_CPSERVER");
+    if (!path || !*path) return false;
+    int fd = socket(AF_UNIX, SOCK_STREAM, 0);
+    if (fd < 0) return false;
+    sockaddr_un a{}; a.sun_family = AF_UNIX; snprintf(a.sun_path, sizeof a.sun_path, "%s", path);
+    bool ok = connect(fd, (sockaddr*)&a, sizeof a) == 0;
+    uint64_t n = req.size();
+    ok = ok && io_all(fd, &n, 8, true) && io_all(fd, (void*)req.data(), req.size(), true) && io_all(fd, &n, 8, false);
+    if (ok && n > 0 && n < (1ULL << 32)) { out->resize(n); ok = io_all(fd, &(*out)[0], n, false); } else ok = false;
+    close(fd);
+    (ok ? s_remote : s_remote_fail)++;
+    return ok;
+}
+
 static uint64_t fnv(const std::string& s, uint64_t h) {
     for (unsigned char c : s) h = (h ^ c) * 0x100000001b3ULL;
     return h;
@@ -298,10 +328,18 @@ extern "C" void* cp_hook(void* sret, const void* proto, void* model) {
         fprintf(stderr, "[cpcache] parse failed for %s\n", key);
         return sret;
     }
-    g_orig(sret, proto, model);
-    double dt = now_us() - t0;
     std::string out;
-    g_ser(sret, &out);
+    bool remote = !hit && remote_solve(req, &out);
+    if (remote) {
+        g_orig(sret, g_empty, model);  // build the response object, then fill it with the modern solver's answer
+        if (!g_parse(sret, out)) { remote = false; fprintf(stderr, "[cpcache] server answer unparsable\n"); }
+    }
+    if (!remote) {
+        g_orig(sret, proto, model);
+        out.clear();
+        g_ser(sret, &out);
+    }
+    double dt = now_us() - t0;
     if (hit) {  // verify mode
         s_hits++;
         if (strip_timing(out) != strip_timing(resp)) {
@@ -330,9 +368,9 @@ static void cp_stats() {
     if (!p) p = def.c_str();
     char line[512];
     snprintf(line, sizeof line,
-             "pid %d calls %ld hits %ld stored %ld verify_bad %ld solve_s %.1f hit_overhead_s %.2f saved_s %.1f\n",
+             "pid %d calls %ld hits %ld stored %ld verify_bad %ld solve_s %.1f hit_overhead_s %.2f saved_s %.1f remote %ld remote_fail %ld\n",
              getpid(), s_calls.load(), s_hits.load(), s_store.load(), s_bad.load(), s_miss_us.load() / 1e6,
-             s_hit_us.load() / 1e6, s_saved_us.load() / 1e6);
+             s_hit_us.load() / 1e6, s_saved_us.load() / 1e6, s_remote.load(), s_remote_fail.load());
     if (p) { if (FILE* f = fopen(p, "a")) { fputs(line, f); fclose(f); } }
     if (getenv("HAILO_TURBO_LOG")) fputs(line, stderr);
 }

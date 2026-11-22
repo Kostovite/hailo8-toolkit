@@ -1,0 +1,209 @@
+UNSUPPORTED swin_tiny/const_input1 (const_input): NotImplementedError: swin_tiny/const_input1: const_input
+UNSUPPORTED swin_tiny/const_input10 (const_input): NotImplementedError: swin_tiny/const_input10: const_input
+UNSUPPORTED swin_tiny/const_input11 (const_input): NotImplementedError: swin_tiny/const_input11: const_input
+UNSUPPORTED swin_tiny/const_input12 (const_input): NotImplementedError: swin_tiny/const_input12: const_input
+UNSUPPORTED swin_tiny/const_input13 (const_input): NotImplementedError: swin_tiny/const_input13: const_input
+UNSUPPORTED swin_tiny/const_input14 (const_input): NotImplementedError: swin_tiny/const_input14: const_input
+UNSUPPORTED swin_tiny/const_input15 (const_input): NotImplementedError: swin_tiny/const_input15: const_input
+UNSUPPORTED swin_tiny/const_input16 (const_input): NotImplementedError: swin_tiny/const_input16: const_input
+UNSUPPORTED swin_tiny/const_input17 (const_input): NotImplementedError: swin_tiny/const_input17: const_input
+UNSUPPORTED swin_tiny/const_input2 (const_input): NotImplementedError: swin_tiny/const_input2: const_input
+UNSUPPORTED swin_tiny/const_input3 (const_input): NotImplementedError: swin_tiny/const_input3: const_input
+UNSUPPORTED swin_tiny/const_input4 (const_input): NotImplementedError: swin_tiny/const_input4: const_input
+UNSUPPORTED swin_tiny/const_input5 (const_input): NotImplementedError: swin_tiny/const_input5: const_input
+UNSUPPORTED swin_tiny/const_input6 (const_input): NotImplementedError: swin_tiny/const_input6: const_input
+UNSUPPORTED swin_tiny/const_input7 (const_input): NotImplementedError: swin_tiny/const_input7: const_input
+UNSUPPORTED swin_tiny/const_input8 (const_input): NotImplementedError: swin_tiny/const_input8: const_input
+UNSUPPORTED swin_tiny/const_input9 (const_input): NotImplementedError: swin_tiny/const_input9: const_input
+MISMATCH swin_tiny/input_layer1 (input_layer): 147401/150528 max 15
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization1 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization1: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization1 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization1: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization1 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization1', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization2 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization2: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization2 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization2: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization2 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization2', 'ElementwiseMultOp', 0)
+MISMATCH swin_tiny/format_conversion3 (format_conversion): 200898/301056 max 147
+UNSUPPORTED swin_tiny/matmul1 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul2 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [3, 49] but got: [3, 3136].
+MISMATCH swin_tiny/format_conversion4 (format_conversion): 234282/301056 max 174
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization3 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization3: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization3 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization3: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization3 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization3', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization4 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization4: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization4 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization4: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization4 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization4', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/slice1 (slice): NotImplementedError: swin_tiny/slice1: slice
+UNSUPPORTED swin_tiny/slice2 (slice): NotImplementedError: swin_tiny/slice2: slice
+UNSUPPORTED swin_tiny/concat1 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 53 but got size 3 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice3 (slice): NotImplementedError: swin_tiny/slice3: slice
+UNSUPPORTED swin_tiny/slice4 (slice): NotImplementedError: swin_tiny/slice4: slice
+UNSUPPORTED swin_tiny/concat2 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 53 but got size 3 for tensor number 1 in the list.
+MISMATCH swin_tiny/format_conversion7 (format_conversion): 248860/301056 max 114
+UNSUPPORTED swin_tiny/matmul3 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul4 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [3, 49] but got: [3, 3136].
+MISMATCH swin_tiny/format_conversion8 (format_conversion): 248451/301056 max 108
+UNSUPPORTED swin_tiny/slice5 (slice): NotImplementedError: swin_tiny/slice5: slice
+UNSUPPORTED swin_tiny/slice6 (slice): NotImplementedError: swin_tiny/slice6: slice
+UNSUPPORTED swin_tiny/concat3 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 53 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice7 (slice): NotImplementedError: swin_tiny/slice7: slice
+UNSUPPORTED swin_tiny/slice8 (slice): NotImplementedError: swin_tiny/slice8: slice
+UNSUPPORTED swin_tiny/concat4 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 53 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization5 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization5: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization5 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization5: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization5 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization5', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization6 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization6: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization6 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization6: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization6 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization6', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization7 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization7: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization7 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization7: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization7 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization7', 'ElementwiseMultOp', 0)
+MISMATCH swin_tiny/format_conversion13 (format_conversion): 123886/150528 max 150
+UNSUPPORTED swin_tiny/matmul5 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul6 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [6, 49] but got: [6, 784].
+MISMATCH swin_tiny/format_conversion14 (format_conversion): 126149/150528 max 150
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization8 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization8: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization8 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization8: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization8 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization8', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization9 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization9: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization9 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization9: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization9 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization9', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/slice10 (slice): NotImplementedError: swin_tiny/slice10: slice
+UNSUPPORTED swin_tiny/slice9 (slice): NotImplementedError: swin_tiny/slice9: slice
+UNSUPPORTED swin_tiny/concat6 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 25 but got size 3 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice11 (slice): NotImplementedError: swin_tiny/slice11: slice
+UNSUPPORTED swin_tiny/slice12 (slice): NotImplementedError: swin_tiny/slice12: slice
+UNSUPPORTED swin_tiny/concat7 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 25 but got size 3 for tensor number 1 in the list.
+MISMATCH swin_tiny/format_conversion17 (format_conversion): 123386/150528 max 133
+UNSUPPORTED swin_tiny/matmul7 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul8 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [6, 49] but got: [6, 784].
+MISMATCH swin_tiny/format_conversion18 (format_conversion): 123573/150528 max 94
+UNSUPPORTED swin_tiny/slice13 (slice): NotImplementedError: swin_tiny/slice13: slice
+UNSUPPORTED swin_tiny/slice14 (slice): NotImplementedError: swin_tiny/slice14: slice
+UNSUPPORTED swin_tiny/concat8 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 25 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice15 (slice): NotImplementedError: swin_tiny/slice15: slice
+UNSUPPORTED swin_tiny/slice16 (slice): NotImplementedError: swin_tiny/slice16: slice
+UNSUPPORTED swin_tiny/concat9 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 25 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization10 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization10: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization10 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization10: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization10 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization10', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization11 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization11: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization11 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization11: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization11 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization11', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization12 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization12: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization12 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization12: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization12 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization12', 'ElementwiseMultOp', 0)
+MISMATCH swin_tiny/format_conversion23 (format_conversion): 62318/75264 max 148
+UNSUPPORTED swin_tiny/matmul9 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul10 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH swin_tiny/format_conversion24 (format_conversion): 63276/75264 max 153
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization13 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization13: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization13 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization13: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization13 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization13', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization14 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization14: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization14 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization14: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization14 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization14', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/slice17 (slice): NotImplementedError: swin_tiny/slice17: slice
+UNSUPPORTED swin_tiny/slice18 (slice): NotImplementedError: swin_tiny/slice18: slice
+UNSUPPORTED swin_tiny/concat11 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 11 but got size 3 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice19 (slice): NotImplementedError: swin_tiny/slice19: slice
+UNSUPPORTED swin_tiny/slice20 (slice): NotImplementedError: swin_tiny/slice20: slice
+UNSUPPORTED swin_tiny/concat12 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 11 but got size 3 for tensor number 1 in the list.
+MISMATCH swin_tiny/format_conversion27 (format_conversion): 62129/75264 max 159
+UNSUPPORTED swin_tiny/matmul11 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul12 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH swin_tiny/format_conversion28 (format_conversion): 62314/75264 max 127
+UNSUPPORTED swin_tiny/slice21 (slice): NotImplementedError: swin_tiny/slice21: slice
+UNSUPPORTED swin_tiny/slice22 (slice): NotImplementedError: swin_tiny/slice22: slice
+UNSUPPORTED swin_tiny/concat13 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 11 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice23 (slice): NotImplementedError: swin_tiny/slice23: slice
+UNSUPPORTED swin_tiny/slice24 (slice): NotImplementedError: swin_tiny/slice24: slice
+UNSUPPORTED swin_tiny/concat14 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 11 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization15 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization15: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization15 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization15: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization15 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization15', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization16 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization16: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization16 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization16: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization16 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization16', 'ElementwiseMultOp', 0)
+MISMATCH swin_tiny/format_conversion31 (format_conversion): 62388/75264 max 141
+UNSUPPORTED swin_tiny/matmul13 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul14 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH swin_tiny/format_conversion32 (format_conversion): 63327/75264 max 124
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization17 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization17: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization17 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization17: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization17 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization17', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization18 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization18: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization18 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization18: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization18 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization18', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/slice25 (slice): NotImplementedError: swin_tiny/slice25: slice
+UNSUPPORTED swin_tiny/slice26 (slice): NotImplementedError: swin_tiny/slice26: slice
+UNSUPPORTED swin_tiny/concat15 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 11 but got size 3 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice27 (slice): NotImplementedError: swin_tiny/slice27: slice
+UNSUPPORTED swin_tiny/slice28 (slice): NotImplementedError: swin_tiny/slice28: slice
+UNSUPPORTED swin_tiny/concat16 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 11 but got size 3 for tensor number 1 in the list.
+MISMATCH swin_tiny/format_conversion35 (format_conversion): 61637/75264 max 164
+UNSUPPORTED swin_tiny/matmul15 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul16 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH swin_tiny/format_conversion36 (format_conversion): 61012/75264 max 111
+UNSUPPORTED swin_tiny/slice29 (slice): NotImplementedError: swin_tiny/slice29: slice
+UNSUPPORTED swin_tiny/slice30 (slice): NotImplementedError: swin_tiny/slice30: slice
+UNSUPPORTED swin_tiny/concat17 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 11 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice31 (slice): NotImplementedError: swin_tiny/slice31: slice
+UNSUPPORTED swin_tiny/slice32 (slice): NotImplementedError: swin_tiny/slice32: slice
+UNSUPPORTED swin_tiny/concat18 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 11 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization19 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization19: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization19 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization19: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization19 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization19', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization20 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization20: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization20 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization20: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization20 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization20', 'ElementwiseMultOp', 0)
+MISMATCH swin_tiny/format_conversion39 (format_conversion): 61476/75264 max 120
+UNSUPPORTED swin_tiny/matmul17 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul18 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH swin_tiny/format_conversion40 (format_conversion): 62275/75264 max 118
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization21 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization21: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization21 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization21: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization21 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization21', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization22 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization22: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization22 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization22: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization22 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization22', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/slice33 (slice): NotImplementedError: swin_tiny/slice33: slice
+UNSUPPORTED swin_tiny/slice34 (slice): NotImplementedError: swin_tiny/slice34: slice
+UNSUPPORTED swin_tiny/concat19 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 11 but got size 3 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice35 (slice): NotImplementedError: swin_tiny/slice35: slice
+UNSUPPORTED swin_tiny/slice36 (slice): NotImplementedError: swin_tiny/slice36: slice
+UNSUPPORTED swin_tiny/concat20 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 11 but got size 3 for tensor number 1 in the list.
+MISMATCH swin_tiny/format_conversion43 (format_conversion): 60651/75264 max 146
+UNSUPPORTED swin_tiny/matmul19 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED swin_tiny/matmul20 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH swin_tiny/format_conversion44 (format_conversion): 57377/75264 max 79
+UNSUPPORTED swin_tiny/slice37 (slice): NotImplementedError: swin_tiny/slice37: slice
+UNSUPPORTED swin_tiny/slice38 (slice): NotImplementedError: swin_tiny/slice38: slice
+UNSUPPORTED swin_tiny/concat21 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 11 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/slice39 (slice): NotImplementedError: swin_tiny/slice39: slice
+UNSUPPORTED swin_tiny/slice40 (slice): NotImplementedError: swin_tiny/slice40: slice
+UNSUPPORTED swin_tiny/concat22 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 3 but got size 11 for tensor number 1 in the list.
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization23 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization23: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization23 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization23: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization23 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization23', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization24 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization24: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization24 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization24: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization24 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization24', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization25 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization25: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization25 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization25: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization25 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization25', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization26 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization26: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization26 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization26: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization26 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization26', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization27 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization27: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization27 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization27: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization27 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization27', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization28 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization28: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization28 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization28: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization28 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization28', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/reduce_mean1_layer_normalization29 (reduce_mean): NotImplementedError: swin_tiny/reduce_mean1_layer_normalization29: reduce_mean
+UNSUPPORTED swin_tiny/square1_layer_normalization29 (feature_multiplier): NotImplementedError: swin_tiny/square1_layer_normalization29: feature_multiplier
+UNSUPPORTED swin_tiny/ew_mult1_layer_normalization29 (ew_mult): AssertionError: ('swin_tiny/ew_mult1_layer_normalization29', 'ElementwiseMultOp', 0)
+UNSUPPORTED swin_tiny/avgpool1 (avgpool): NotImplementedError: swin_tiny/avgpool1: avgpool
+UNSUPPORTED swin_tiny/fc1 (dense): NotImplementedError: swin_tiny/fc1: dense
+342/549 checked layers exact when chained from raw pixels
+{'const_input': '0/17', 'input_layer': '0/1', 'normalization': '8/8', 'conv': '105/105', 'format_conversion': '35/55', 'activation': '57/57', 'reduce_mean': '0/29', 'ew_sub': '41/41', 'feature_multiplier': '0/29', 'ew_mult': '12/41', 'matmul': '4/24', 'ew_add': '41/41', 'reduce_max': '12/12', 'reduce_sum': '12/12', 'slice': '0/40', 'concat': '3/23', 'dw': '12/12', 'avgpool': '0/1', 'dense': '0/1'}

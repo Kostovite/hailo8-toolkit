@@ -1,0 +1,11 @@
+UNSUPPORTED nanodet_repvgg_a1_640/avgpool1 (avgpool): NotImplementedError: nanodet_repvgg_a1_640/avgpool1: avgpool
+UNSUPPORTED nanodet_repvgg_a1_640/avgpool2 (avgpool): NotImplementedError: nanodet_repvgg_a1_640/avgpool2: avgpool
+UNSUPPORTED nanodet_repvgg_a1_640/slice_0_0_conv28 (slice): NotImplementedError: nanodet_repvgg_a1_640/slice_0_0_conv28: slice
+UNSUPPORTED nanodet_repvgg_a1_640/slice_0_1_conv28 (slice): NotImplementedError: nanodet_repvgg_a1_640/slice_0_1_conv28: slice
+UNSUPPORTED nanodet_repvgg_a1_640/slice_1_0_conv31 (slice): NotImplementedError: nanodet_repvgg_a1_640/slice_1_0_conv31: slice
+UNSUPPORTED nanodet_repvgg_a1_640/slice_1_1_conv31 (slice): NotImplementedError: nanodet_repvgg_a1_640/slice_1_1_conv31: slice
+UNSUPPORTED nanodet_repvgg_a1_640/slice_2_0_conv34 (slice): NotImplementedError: nanodet_repvgg_a1_640/slice_2_0_conv34: slice
+UNSUPPORTED nanodet_repvgg_a1_640/slice_2_1_conv34 (slice): NotImplementedError: nanodet_repvgg_a1_640/slice_2_1_conv34: slice
+UNSUPPORTED nanodet_repvgg_a1_640/yolov8_nms_postprocess (postprocess): NotImplementedError: nanodet_repvgg_a1_640/yolov8_nms_postprocess: postprocess
+43/52 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'conv': '35/35', 'resize': '2/2', 'avgpool': '0/2', 'ew_add': '2/2', 'slice': '0/6', 'activation': '3/3', 'postprocess': '0/1'}

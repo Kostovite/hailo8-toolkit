@@ -1,0 +1,4 @@
+UNSUPPORTED yolox_tiny/space_to_depth1 (space_to_depth): NotImplementedError: yolox_tiny/space_to_depth1: space_to_depth
+UNSUPPORTED yolox_tiny/yolox_nms_postprocess (postprocess): NotImplementedError: yolox_tiny/yolox_nms_postprocess: postprocess
+110/112 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'space_to_depth': '0/1', 'conv': '83/83', 'ew_add': '7/7', 'concat': '13/13', 'maxpool': '3/3', 'resize': '2/2', 'postprocess': '0/1'}

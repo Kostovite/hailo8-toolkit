@@ -1,0 +1,14 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+100/916 1.11 img/s
+200/916 1.11 img/s
+300/916 1.10 img/s
+400/916 1.11 img/s
+500/916 1.12 img/s
+600/916 1.11 img/s
+700/916 1.12 img/s
+800/916 1.12 img/s
+900/916 1.13 img/s
+wrote stats ../out/stats_n_L0w16top8_0.npz
+{"mAP50": 0.5898067267152883, "mAP50_95": 0.44947887385726254, "P": 0.6754713327183227, "R": 0.5432481002108016, "kind": "hailo", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/n_L0w16top8.hn", "shape": [640, 640], "n": 916, "sec": 813}

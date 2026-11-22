@@ -1,0 +1,15 @@
+R_DFT_W done
+R_SpaceToDepth done
+R_Equal done
+R_ArgMax_C done
+R_Sign done
+R_Einsum_bchw done
+R_Floor done
+R_Ceil done
+R_Round done
+R_ArgMin_C done
+R_Hardmax_C done
+R_Mod done
+R_ReduceProd_C done
+OneHot_argmax done
+rerun2-done

@@ -1,0 +1,40 @@
+UNSUPPORTED davit_tiny/external_pad1 (external_pad): KeyError: 'perm'
+UNSUPPORTED davit_tiny/precision_splitter_matmul1 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul1: precision_splitter | chain: atomic op SplitPrecisionLow (dav
+MISMATCH davit_tiny/precision_concat_matmul1 (concat): 13250/18816 max 193
+UNSUPPORTED davit_tiny/precision_splitter_matmul3 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul3: precision_splitter | chain: atomic op SplitPrecisionLow (dav
+MISMATCH davit_tiny/precision_concat_matmul3 (concat): 129/192 max 255
+SHAPE davit_tiny/reduce_max_softmax2 (reduce_max) got (1, 1, 1, 32) ref (1, 96, 1, 1)
+SHAPE davit_tiny/reduce_sum_softmax2 (reduce_sum) got (1, 96, 1, 32) ref (1, 96, 1, 1)
+UNSUPPORTED davit_tiny/precision_splitter_matmul5 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul5: precision_splitter | chain: atomic op SplitPrecisionLow (dav
+MISMATCH davit_tiny/precision_concat_matmul5 (concat): 7218/9408 max 192
+UNSUPPORTED davit_tiny/precision_splitter_matmul7 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul7: precision_splitter | chain: atomic op SplitPrecisionLow (dav
+MISMATCH davit_tiny/precision_concat_matmul7 (concat): 344/384 max 216
+SHAPE davit_tiny/reduce_max_softmax4 (reduce_max) got (1, 1, 1, 32) ref (1, 192, 1, 1)
+SHAPE davit_tiny/reduce_sum_softmax4 (reduce_sum) got (1, 192, 1, 32) ref (1, 192, 1, 1)
+UNSUPPORTED davit_tiny/precision_splitter_matmul9 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul9: precision_splitter | chain: atomic op SplitPrecisionLow (dav
+MISMATCH davit_tiny/precision_concat_matmul9 (concat): 3670/4704 max 192
+UNSUPPORTED davit_tiny/precision_splitter_matmul11 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul11: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul11 (concat): 709/768 max 191
+SHAPE davit_tiny/reduce_max_softmax6 (reduce_max) got (1, 1, 1, 32) ref (1, 384, 1, 1)
+SHAPE davit_tiny/reduce_sum_softmax6 (reduce_sum) got (1, 384, 1, 32) ref (1, 384, 1, 1)
+UNSUPPORTED davit_tiny/precision_splitter_matmul13 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul13: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul13 (concat): 3488/4704 max 192
+UNSUPPORTED davit_tiny/precision_splitter_matmul15 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul15: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul15 (concat): 694/768 max 203
+SHAPE davit_tiny/reduce_max_softmax8 (reduce_max) got (1, 1, 1, 32) ref (1, 384, 1, 1)
+SHAPE davit_tiny/reduce_sum_softmax8 (reduce_sum) got (1, 384, 1, 32) ref (1, 384, 1, 1)
+UNSUPPORTED davit_tiny/precision_splitter_matmul17 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul17: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul17 (concat): 3622/4704 max 192
+UNSUPPORTED davit_tiny/precision_splitter_matmul19 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul19: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul19 (concat): 704/768 max 193
+SHAPE davit_tiny/reduce_max_softmax10 (reduce_max) got (1, 1, 1, 32) ref (1, 384, 1, 1)
+SHAPE davit_tiny/reduce_sum_softmax10 (reduce_sum) got (1, 384, 1, 32) ref (1, 384, 1, 1)
+MISMATCH davit_tiny/reduce_mean1_layer_normalization25 (reduce_mean): 12/49 max 1
+UNSUPPORTED davit_tiny/precision_splitter_matmul21 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul21: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul21 (concat): 1795/2352 max 192
+UNSUPPORTED davit_tiny/precision_splitter_matmul23 (precision_splitter): NotImplementedError: NotImplementedError: davit_tiny/precision_splitter_matmul23: precision_splitter | chain: atomic op SplitPrecisionLow (da
+MISMATCH davit_tiny/precision_concat_matmul23 (concat): 1218/1536 max 191
+SHAPE davit_tiny/reduce_max_softmax12 (reduce_max) got (1, 1, 1, 32) ref (1, 768, 1, 1)
+SHAPE davit_tiny/reduce_sum_softmax12 (reduce_sum) got (1, 768, 1, 32) ref (1, 768, 1, 1)
+665/703 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'activation': '144/144', 'normalization': '5/5', 'external_pad': '0/1', 'conv': '106/106', 'reduce_mean': '28/29', 'ew_sub': '41/41', 'feature_multiplier': '29/29', 'ew_mult': '41/41', 'dw': '36/36', 'ew_add': '48/48', 'format_conversion': '101/101', 'reduce_sum': '18/24', 'precision_splitter': '0/12', 'shortcut': '12/12', 'concat': '12/24', 'matmul': '24/24', 'reduce_max': '6/12', 'resize': '12/12', 'avgpool': '1/1'}

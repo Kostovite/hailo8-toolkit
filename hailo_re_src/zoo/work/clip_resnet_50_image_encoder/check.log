@@ -1,0 +1,13 @@
+UNSUPPORTED clip_resnet_50_image_encoder/const_input1 (const_input): NotImplementedError: clip_resnet_50_image_encoder/const_input1: const_input
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool1 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool1: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool2 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool2: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool3 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool3: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool4 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool4: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool5 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool5: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool6 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool6: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool7 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool7: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/avgpool8 (avgpool): NotImplementedError: clip_resnet_50_image_encoder/avgpool8: avgpool
+UNSUPPORTED clip_resnet_50_image_encoder/concat1 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 1 but got size 49 for tensor number 1 in the list.
+UNSUPPORTED clip_resnet_50_image_encoder/slice1 (slice): NotImplementedError: clip_resnet_50_image_encoder/slice1: slice
+71/82 checked layers exact when chained from raw pixels
+{'const_input': '0/1', 'input_layer': '1/1', 'normalization': '1/1', 'conv': '59/59', 'avgpool': '0/8', 'activation': '1/1', 'ew_add': '2/2', 'format_conversion': '1/1', 'concat': '0/1', 'slice': '0/1', 'matmul': '2/2', 'reduce_max': '1/1', 'ew_sub': '1/1', 'reduce_sum': '1/1', 'ew_mult': '1/1'}

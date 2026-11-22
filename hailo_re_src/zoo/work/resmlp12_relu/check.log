@@ -1,0 +1,18 @@
+MISMATCH resmlp12_relu/input_layer1 (input_layer): 145620/150528 max 15
+UNSUPPORTED resmlp12_relu/space_to_depth1 (space_to_depth): NotImplementedError: resmlp12_relu/space_to_depth1: space_to_depth
+UNSUPPORTED resmlp12_relu/conv2 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv5 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv8 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv11 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv14 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv17 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv20 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv23 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv26 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv29 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv32 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/conv35 (conv): RuntimeError: Given groups=1, weight of size [196, 196, 1, 1], expected input[1, 384, 1, 196] to have 196 channels, but got 384 channe
+UNSUPPORTED resmlp12_relu/avgpool1 (avgpool): NotImplementedError: resmlp12_relu/avgpool1: avgpool
+UNSUPPORTED resmlp12_relu/fc1 (dense): NotImplementedError: resmlp12_relu/fc1: dense
+51/67 checked layers exact when chained from raw pixels
+{'input_layer': '0/1', 'normalization': '26/26', 'space_to_depth': '0/1', 'conv': '25/37', 'avgpool': '0/1', 'dense': '0/1'}

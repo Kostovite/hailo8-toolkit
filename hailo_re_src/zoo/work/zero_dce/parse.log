@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network zero_dce ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model zero_dce
+[info] Restored ONNX model zero_dce (completion time: 00:00:00.10)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.57)
+[info] Start nodes mapped from original model: 'input.1': 'zero_dce/input_layer1'.
+[info] End nodes mapped from original model: 'Add_49'.
+[info] Translation completed on ONNX model zero_dce (completion time: 00:00:01.77)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/zero_dce/zero_dce.har

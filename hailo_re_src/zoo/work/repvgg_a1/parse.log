@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network repvgg_a1 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model repvgg_a1
+[info] Restored ONNX model repvgg_a1 (completion time: 00:00:00.71)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.91)
+[info] Start nodes mapped from original model: 'input': 'repvgg_a1/input_layer1'.
+[info] End nodes mapped from original model: 'Gemm_51'.
+[info] Translation completed on ONNX model repvgg_a1 (completion time: 00:00:02.27)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/repvgg_a1/repvgg_a1.har

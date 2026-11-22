@@ -1,0 +1,6 @@
+8/916 1.9 img/s
+208/916 4.9 img/s
+408/916 4.7 img/s
+608/916 5.3 img/s
+808/916 5.8 img/s
+saved runs/det/chip0_val.npz {'best/conv87': ((916, 56, 56, 4), dtype('uint16')), 'best/conv74': ((916, 112, 112, 14), dtype('uint16')), 'best/conv101': ((916, 28, 28, 4), dtype('uint16')), 'best/conv90': ((916, 56, 56, 14), dtype('uint16')), 'best/conv104': ((916, 28, 28, 14), dtype('uint16')), 'best/conv71': ((916, 112, 112, 4), dtype('uint16'))}

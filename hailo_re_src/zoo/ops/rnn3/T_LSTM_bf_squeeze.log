@@ -1,0 +1,50 @@
+[info] Translation started on ONNX model T_LSTM_bf_squeeze
+[info] Restored ONNX model T_LSTM_bf_squeeze (completion time: 00:00:00.30)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.22)
+[info] Simplified ONNX model for a parsing retry attempt (completion time: 00:00:01.62)
+[info] Start nodes mapped from original model: 'x': 'T_LSTM_bf_squeeze/input_layer1'.
+[info] End nodes mapped from original model: '/out/Conv'.
+[info] Translation completed on ONNX model T_LSTM_bf_squeeze (completion time: 00:00:06.13)
+[info] Loading model script commands to T_LSTM_bf_squeeze from string
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:02.82)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [02:25<2:32:58, 145.69s/entries]Calibration:   3%|▎         | 2/64 [02:29<1:04:13, 62.15s/entries] Calibration:   5%|▍         | 3/64 [02:29<34:23, 33.82s/entries]  Calibration:   6%|▋         | 4/64 [02:29<20:30, 20.51s/entries]Calibration:   8%|▊         | 5/64 [02:29<12:56, 13.16s/entries]Calibration:   9%|▉         | 6/64 [02:29<08:26,  8.73s/entries]Calibration:  11%|█         | 7/64 [02:29<05:37,  5.91s/entries]Calibration:  12%|█▎        | 8/64 [02:30<03:48,  4.07s/entries]Calibration:  14%|█▍        | 9/64 [02:30<02:36,  2.84s/entries]Calibration:  16%|█▌        | 10/64 [02:30<01:47,  2.00s/entries]Calibration:  17%|█▋        | 11/64 [02:30<01:15,  1.42s/entries]Calibration:  19%|█▉        | 12/64 [02:30<00:53,  1.03s/entries]Calibration:  20%|██        | 13/64 [02:30<00:38,  1.32entries/s]Calibration:  22%|██▏       | 14/64 [02:30<00:28,  1.78entries/s]Calibration:  23%|██▎       | 15/64 [02:30<00:20,  2.36entries/s]Calibration:  25%|██▌       | 16/64 [02:31<00:15,  3.01entries/s]Calibration:  27%|██▋       | 17/64 [02:31<00:12,  3.69entries/s]Calibration:  28%|██▊       | 18/64 [02:31<00:10,  4.43entries/s]Calibration:  30%|██▉       | 19/64 [02:31<00:08,  5.05entries/s]Calibration:  31%|███▏      | 20/64 [02:31<00:07,  5.71entries/s]Calibration:  33%|███▎      | 21/64 [02:31<00:06,  6.23entries/s]Calibration:  34%|███▍      | 22/64 [02:31<00:06,  6.91entries/s]Calibration:  36%|███▌      | 23/64 [02:31<00:05,  7.55entries/s]Calibration:  38%|███▊      | 24/64 [02:31<00:05,  7.70entries/s]Calibration:  39%|███▉      | 25/64 [02:32<00:04,  7.85entries/s]Calibration:  41%|████      | 26/64 [02:32<00:04,  8.17entries/s]Calibration:  44%|████▍     | 28/64 [02:32<00:04,  8.70entries/s]Calibration:  45%|████▌     | 29/64 [02:32<00:04,  8.70entries/s]Calibration:  47%|████▋     | 30/64 [02:32<00:03,  8.94entries/s]Calibration:  48%|████▊     | 31/64 [02:32<00:03,  8.87entries/s]Calibration:  50%|█████     | 32/64 [02:32<00:03,  8.89entries/s]Calibration:  52%|█████▏    | 33/64 [02:33<00:03,  8.79entries/s]Calibration:  53%|█████▎    | 34/64 [02:33<00:03,  8.44entries/s]Calibration:  55%|█████▍    | 35/64 [02:33<00:03,  8.60entries/s]Calibration:  56%|█████▋    | 36/64 [02:33<00:03,  8.33entries/s]Calibration:  58%|█████▊    | 37/64 [02:33<00:03,  8.64entries/s]Calibration:  59%|█████▉    | 38/64 [02:33<00:03,  8.51entries/s]Calibration:  61%|██████    | 39/64 [02:33<00:02,  8.54entries/s]Calibration:  62%|██████▎   | 40/64 [02:33<00:02,  8.85entries/s]Calibration:  64%|██████▍   | 41/64 [02:33<00:02,  8.85entries/s]Calibration:  66%|██████▌   | 42/64 [02:34<00:02,  8.93entries/s]Calibration:  67%|██████▋   | 43/64 [02:34<00:02,  8.86entries/s]Calibration:  69%|██████▉   | 44/64 [02:34<00:02,  8.88entries/s]Calibration:  70%|███████   | 45/64 [02:34<00:02,  8.64entries/s]Calibration:  72%|███████▏  | 46/64 [02:34<00:02,  8.51entries/s]Calibration:  73%|███████▎  | 47/64 [02:34<00:02,  8.14entries/s]Calibration:  75%|███████▌  | 48/64 [02:34<00:01,  8.48entries/s]Calibration:  77%|███████▋  | 49/64 [02:34<00:01,  8.58entries/s]Calibration:  78%|███████▊  | 50/64 [02:34<00:01,  8.83entries/s]Calibration:  80%|███████▉  | 51/64 [02:35<00:01,  8.76entries/s]Calibration:  81%|████████▏ | 52/64 [02:35<00:01,  8.68entries/s]Calibration:  83%|████████▎ | 53/64 [02:35<00:01,  8.30entries/s]Calibration:  84%|████████▍ | 54/64 [02:35<00:01,  8.08entries/s]Calibration:  86%|████████▌ | 55/64 [02:35<00:01,  8.42entries/s]Calibration:  88%|████████▊ | 56/64 [02:35<00:00,  8.48entries/s]Calibration:  89%|████████▉ | 57/64 [02:35<00:00,  7.70entries/s]Calibration:  91%|█████████ | 58/64 [02:35<00:00,  7.92entries/s]Calibration:  92%|█████████▏| 59/64 [02:36<00:00,  7.93entries/s]Calibration:  94%|█████████▍| 60/64 [02:36<00:00,  7.83entries/s]Calibration:  95%|█████████▌| 61/64 [02:36<00:00,  7.99entries/s]Calibration:  97%|█████████▋| 62/64 [02:36<00:00,  8.13entries/s]Calibration:  98%|█████████▊| 63/64 [02:36<00:00,  8.14entries/s]Calibration: 100%|██████████| 64/64 [02:36<00:00,  8.22entries/s]Calibration: 100%|██████████| 64/64 [02:36<00:00,  8.22entries/s]Calibration: 100%|██████████| 64/64 [02:36<00:00,  2.45s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:02:40.84)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/rnn3/T_LSTM_bf_squeeze/q.har
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 5s 150ms
+[info] Trying to compile the network in a single context
+[info] Single context flow failed: Recoverable single context error
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 5s 820ms
+[info] Using Multi-context flow
+[info] Resources optimization params: max_control_utilization=60%, max_compute_utilization=60%, max_compute_16bit_utilization=60%, max_memory_utilization (weights)=60%, max_input_aligner_utilization=60%, max_apu_utilization=60%
+[info] Finding the best partition to contexts...
+[<==>....................................] 
+[error] Mapping Failed (Timeout, allocation time: 3h 9m 42s)
+Compiler could not find a valid partition to contexts. Most common error is: Automri finished with too many resources on context_4 with 221/3,733 failures.
+Mapping Failed (Timeout, allocation time: 3h 9m 42s)
+[?25h
+[error] Failed to produce compiled graph
+{"case": "T_LSTM_bf_squeeze", "stage": "compile", "hn_types": ["activation", "avgpool", "concat", "conv", "ew_add", "ew_mult", "feature_splitter", "normalization", "slice"], "activations": ["sigmoid", "tanh"], "prec": "a8_w8", "sqnr_native_db": 137.02383190859302, "sqnr_hw_db": 23.196448410840162, "error": "BackendAllocatorException: Compilation failed: Compiler could not find a valid partition to contexts. Most common error is: Automri finished with too many resources on context_4 with 221/3,733 failures.\nMapping Failed (Timeout, allocation time: 3h 9m 42s)", "seconds": 11970.6}

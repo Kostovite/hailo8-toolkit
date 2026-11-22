@@ -1,0 +1,32 @@
+UNSUPPORTED swin_tiny/square1_layer_normalization1 (feature_multiplier): IndexError: index 752675 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED swin_tiny/square1_layer_normalization2 (feature_multiplier): IndexError: index 301058 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED swin_tiny/square1_layer_normalization3 (feature_multiplier): IndexError: index 451607 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED swin_tiny/square1_layer_normalization4 (feature_multiplier): IndexError: index 301058 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED swin_tiny/square1_layer_normalization5 (feature_multiplier): IndexError: index 752675 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED swin_tiny/square1_layer_normalization6 (feature_multiplier): IndexError: index 752675 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED swin_tiny/square1_layer_normalization7 (feature_multiplier): IndexError: index 301065 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED swin_tiny/square1_layer_normalization8 (feature_multiplier): IndexError: index 401417 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED swin_tiny/square1_layer_normalization9 (feature_multiplier): IndexError: index 602228 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED swin_tiny/square1_layer_normalization10 (feature_multiplier): IndexError: index 150572 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED swin_tiny/square1_layer_normalization11 (feature_multiplier): IndexError: index 1083965 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED swin_tiny/square1_layer_normalization12 (feature_multiplier): IndexError: index 188195 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization13 (feature_multiplier): IndexError: index 75281 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization14 (feature_multiplier): IndexError: index 150557 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization15 (feature_multiplier): IndexError: index 250889 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization16 (feature_multiplier): IndexError: index 602247 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization17 (feature_multiplier): IndexError: index 602247 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization18 (feature_multiplier): IndexError: index 78383 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization19 (feature_multiplier): IndexError: index 75807 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization20 (feature_multiplier): IndexError: index 92255 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization21 (feature_multiplier): IndexError: index 92255 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization22 (feature_multiplier): IndexError: index 92255 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization23 (feature_multiplier): IndexError: index 92255 is out of bounds for dimension 0 with size 75264
+MISMATCH swin_tiny/reduce_mean1_layer_normalization24 (reduce_mean): 18/49 max 2
+UNSUPPORTED swin_tiny/square1_layer_normalization24 (feature_multiplier): IndexError: index 98431 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED swin_tiny/square1_layer_normalization25 (feature_multiplier): IndexError: index 295295 is out of bounds for dimension 0 with size 37632
+UNSUPPORTED swin_tiny/square1_layer_normalization26 (feature_multiplier): IndexError: index 295295 is out of bounds for dimension 0 with size 37632
+UNSUPPORTED swin_tiny/square1_layer_normalization27 (feature_multiplier): IndexError: index 73919 is out of bounds for dimension 0 with size 37632
+UNSUPPORTED swin_tiny/square1_layer_normalization28 (feature_multiplier): IndexError: index 73919 is out of bounds for dimension 0 with size 37632
+UNSUPPORTED swin_tiny/square1_layer_normalization29 (feature_multiplier): IndexError: index 73919 is out of bounds for dimension 0 with size 37632
+519/549 checked layers exact when chained from raw pixels
+{'const_input': '17/17', 'input_layer': '1/1', 'normalization': '8/8', 'conv': '105/105', 'format_conversion': '55/55', 'activation': '57/57', 'reduce_mean': '28/29', 'ew_sub': '41/41', 'feature_multiplier': '0/29', 'ew_mult': '41/41', 'matmul': '24/24', 'ew_add': '41/41', 'reduce_max': '12/12', 'reduce_sum': '12/12', 'slice': '40/40', 'concat': '23/23', 'dw': '12/12', 'avgpool': '1/1', 'dense': '1/1'}

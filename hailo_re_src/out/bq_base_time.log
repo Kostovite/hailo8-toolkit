@@ -1,0 +1,2 @@
+TIME train bs2: 2.782 s/step  0.72 img/s  peak 9.8 GB
+TIME eval bs2: 2.482 s/step  0.81 img/s  peak 3.3 GB

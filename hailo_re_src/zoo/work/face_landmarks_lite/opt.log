@@ -1,0 +1,29 @@
+[36m<Hailo Model Zoo INFO> Start run for network face_landmarks_lite ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to face_landmarks_lite from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.98)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:49<52:09, 49.68s/entries]Calibration:   6%|▋         | 4/64 [00:49<09:25,  9.43s/entries]Calibration:  11%|█         | 7/64 [00:49<04:10,  4.39s/entries]Calibration:  16%|█▌        | 10/64 [00:50<02:15,  2.50s/entries]Calibration:  20%|██        | 13/64 [00:50<01:19,  1.56s/entries]Calibration:  25%|██▌       | 16/64 [00:50<00:48,  1.02s/entries]Calibration:  30%|██▉       | 19/64 [00:50<00:31,  1.45entries/s]Calibration:  34%|███▍      | 22/64 [00:50<00:20,  2.09entries/s]Calibration:  41%|████      | 26/64 [00:50<00:11,  3.25entries/s]Calibration:  47%|████▋     | 30/64 [00:50<00:07,  4.75entries/s]Calibration:  53%|█████▎    | 34/64 [00:50<00:04,  6.63entries/s]Calibration:  58%|█████▊    | 37/64 [00:50<00:03,  8.22entries/s]Calibration:  62%|██████▎   | 40/64 [00:51<00:02, 10.23entries/s]Calibration:  67%|██████▋   | 43/64 [00:51<00:01, 12.51entries/s]Calibration:  72%|███████▏  | 46/64 [00:51<00:01, 14.98entries/s]Calibration:  77%|███████▋  | 49/64 [00:51<00:00, 17.16entries/s]Calibration:  81%|████████▏ | 52/64 [00:51<00:00, 19.36entries/s]Calibration:  86%|████████▌ | 55/64 [00:51<00:00, 20.77entries/s]Calibration:  91%|█████████ | 58/64 [00:51<00:00, 21.42entries/s]Calibration:  95%|█████████▌| 61/64 [00:51<00:00, 22.18entries/s]Calibration: 100%|██████████| 64/64 [00:51<00:00, 23.22entries/s]Calibration: 100%|██████████| 64/64 [00:51<00:00, 23.22entries/s]Calibration: 100%|██████████| 64/64 [00:51<00:00,  1.23entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:53.83)
+[info] Output layer face_landmarks_lite/conv25 with sigmoid activation was detected. Forcing its output range to be [0, 1] (original range was [1.276039347430924e-05, 0.9772250652313232]).
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/face_landmarks_lite/face_landmarks_lite.har

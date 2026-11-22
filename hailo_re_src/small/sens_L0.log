@@ -1,0 +1,63 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+8/256
+16/256
+24/256
+32/256
+40/256
+48/256
+56/256
+64/256
+72/256
+80/256
+88/256
+96/256
+104/256
+112/256
+120/256
+128/256
+136/256
+144/256
+152/256
+160/256
+168/256
+176/256
+184/256
+192/256
+200/256
+208/256
+216/256
+224/256
+232/256
+240/256
+248/256
+256/256
+best/conv2                               conv           1.9988e-04  cum 24.07%
+best/conv1                               conv           9.8191e-05  cum 35.89%
+best/conv_feature_splitter1_2            conv           6.7389e-05  cum 44.01%
+best/conv_feature_splitter6_2            conv           3.4545e-05  cum 48.17%
+best/conv60                              conv           3.1188e-05  cum 51.92%
+best/dw4                                 dw             2.9608e-05  cum 55.49%
+best/conv_feature_splitter1_1            conv           2.5515e-05  cum 58.56%
+best/conv73                              conv           2.1522e-05  cum 61.15%
+best/ew_add1                             ew_add         1.8578e-05  cum 63.39%
+best/conv76                              conv           1.6526e-05  cum 65.38%
+best/conv72                              conv           1.6339e-05  cum 67.35%
+best/conv_feature_splitter11_3           conv           1.4656e-05  cum 69.11%
+best/conv6                               conv           1.3883e-05  cum 70.78%
+best/conv7                               conv           1.2805e-05  cum 72.33%
+best/normalization1                      normalization  1.2755e-05  cum 73.86%
+best/conv88                              conv           1.1507e-05  cum 75.25%
+best/conv_feature_splitter11_2           conv           1.1484e-05  cum 76.63%
+best/conv87                              conv           1.1185e-05  cum 77.98%
+best/conv39                              conv           8.7555e-06  cum 79.03%
+best/reduce_sum_softmax1                 reduce_sum     8.4539e-06  cum 80.05%
+best/conv_feature_splitter10_2           conv           6.4694e-06  cum 80.83%
+best/conv71                              conv           5.8529e-06  cum 81.53%
+best/ew_mult_softmax1                    ew_mult        5.8377e-06  cum 82.24%
+best/conv48                              conv           5.5290e-06  cum 82.90%
+best/conv86                              conv           5.3228e-06  cum 83.54%

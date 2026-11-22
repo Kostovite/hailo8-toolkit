@@ -1,0 +1,10 @@
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CausalConvWithState_op27", "err": "HailoRTException: CausalConvWithState_op27/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CenterCropPad_crop", "err": "HailoRTException: CenterCropPad_crop/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CenterCropPad_pad", "err": "HailoRTException: CenterCropPad_pad/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Col2Im_k2s2", "err": "HailoRTException: Col2Im_k2s2/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Compress_C", "err": "HailoRTException: Compress_C/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CumProd_W", "outs": [{"name": "CumProd_W/conv1", "frac": 0.0, "max": 0, "p99": 0, "corr": 1.0, "f0_only": false}]}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DeformConv_zero", "err": "HailoRTException: DeformConv_zero/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DynQuant_ConvInteger", "err": "HailoRTException: DynQuant_ConvInteger/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DynQuant_MatMulInteger_W", "err": "HailoRTException: DynQuant_MatMulInteger_W/input_layer1 numpy array item size is 2, not 1"}
+{"dir": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Einsum_conv", "err": "HailoRTException: Einsum_conv/input_layer1 numpy array item size is 2, not 1"}

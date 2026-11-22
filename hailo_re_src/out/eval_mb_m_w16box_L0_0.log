@@ -1,0 +1,22 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+[qatfast] best/conv85: a16_w16 layer with 4608 taps: digit planes not exact in fp32 -> frozen-weight atomic chain
+[qatfast] best/conv99: a16_w16 layer with 4608 taps: digit planes not exact in fp32 -> frozen-weight atomic chain
+100/1385 2.25 img/s
+200/1385 2.67 img/s
+300/1385 2.84 img/s
+400/1385 2.94 img/s
+500/1385 3.00 img/s
+600/1385 3.04 img/s
+700/1385 3.07 img/s
+800/1385 3.09 img/s
+900/1385 3.11 img/s
+1000/1385 3.12 img/s
+1100/1385 3.13 img/s
+1200/1385 3.14 img/s
+1300/1385 3.15 img/s
+wrote stats ../out/stats_mb_m_w16box_L0_0.npz

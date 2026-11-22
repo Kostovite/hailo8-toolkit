@@ -1,0 +1,38 @@
+[36m<Hailo Model Zoo INFO> Start run for network face_attr_resnet_v1_18 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to face_attr_resnet_v1_18 from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.21)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:09<10:27,  9.96s/entries]Calibration:   8%|▊         | 5/64 [00:10<01:28,  1.51s/entries]Calibration:  14%|█▍        | 9/64 [00:10<00:38,  1.44entries/s]Calibration:  20%|██        | 13/64 [00:10<00:20,  2.48entries/s]Calibration:  27%|██▋       | 17/64 [00:10<00:12,  3.84entries/s]Calibration:  33%|███▎      | 21/64 [00:10<00:07,  5.59entries/s]Calibration:  39%|███▉      | 25/64 [00:10<00:05,  7.74entries/s]Calibration:  45%|████▌     | 29/64 [00:10<00:03, 10.22entries/s]Calibration:  52%|█████▏    | 33/64 [00:10<00:02, 13.05entries/s]Calibration:  58%|█████▊    | 37/64 [00:11<00:01, 16.15entries/s]Calibration:  64%|██████▍   | 41/64 [00:11<00:01, 19.34entries/s]Calibration:  70%|███████   | 45/64 [00:11<00:00, 22.73entries/s]Calibration:  77%|███████▋  | 49/64 [00:11<00:00, 25.94entries/s]Calibration:  83%|████████▎ | 53/64 [00:11<00:00, 28.53entries/s]Calibration:  89%|████████▉ | 57/64 [00:11<00:00, 30.88entries/s]Calibration:  97%|█████████▋| 62/64 [00:11<00:00, 34.35entries/s]Calibration: 100%|██████████| 64/64 [00:11<00:00, 34.35entries/s]Calibration: 100%|██████████| 64/64 [00:11<00:00,  5.44entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:12.29)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer face_attr_resnet_v1_18/conv3/conv_op, using max shift instead. delta=0.0808
+[info] No shifts available for layer face_attr_resnet_v1_18/conv3/conv_op, using max shift instead. delta=0.0404
+[info] No shifts available for layer face_attr_resnet_v1_18/conv5/conv_op, using max shift instead. delta=0.6787
+[info] No shifts available for layer face_attr_resnet_v1_18/conv5/conv_op, using max shift instead. delta=0.3393
+[info] No shifts available for layer face_attr_resnet_v1_18/conv3/conv_op, using max shift instead. delta=0.0404
+[info] No shifts available for layer face_attr_resnet_v1_18/fc2/conv_op, using max shift instead. delta=0.3675
+[info] No shifts available for layer face_attr_resnet_v1_18/fc2/conv_op, using max shift instead. delta=0.1838
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[warning] The measured distribution for layer face_attr_resnet_v1_18/fc1 is different than expected. This could happened when the calibration set isn't normalized.
+To disable this warning add the following line to the model script:
+model_optimization_config(checker_cfg, batch_norm_checker=False)
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/face_attr_resnet_v1_18/face_attr_resnet_v1_18.har

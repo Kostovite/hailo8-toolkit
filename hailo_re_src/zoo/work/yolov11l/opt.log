@@ -1,0 +1,40 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov11l ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolov11l from l0.alls
+Traceback (most recent call last):
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/script_parser/model_script_parser.py", line 381, in parse_script
+    script_grammar.parseString(input_script, parseAll=True)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/pyparsing.py", line 1955, in parseString
+    raise exc
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/pyparsing.py", line 3814, in parseImpl
+    raise ParseException(instring, loc, self.errmsg, self)
+pyparsing.ParseException: Expected end of text, found 'l'  (at char 242), (line:6, col:1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 232, in optimize
+    optimize_model(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 351, in optimize_model
+    optimize_full_precision_model(runner, calib_feed_callback, logger, model_script, resize, input_conversion, classes)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 315, in optimize_full_precision_model
+    runner.load_model_script(model_script)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 502, in load_model_script
+    self._sdk_backend.load_model_script_from_file(model_script, append)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py", line 492, in load_model_script_from_file
+    self._script_parser.parse_script_from_file(model_script_path, nms_config, append)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/script_parser/model_script_parser.py", line 312, in parse_script_from_file
+    return self.parse_script(f.read(), append, nms_config_file)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/script_parser/model_script_parser.py", line 389, in parse_script
+    raise BackendScriptParserException(f"Parsing failed at:\n{e.markInputline()}")
+hailo_sdk_client.sdk_backend.sdk_backend_exceptions.BackendScriptParserException: Parsing failed at:
+>!<loss_types=[l2rel,l2rel,l2rel,l2rel,l2rel,l2rel,ce,ce,ce],

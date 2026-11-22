@@ -1,0 +1,15 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov6n_0.2.1 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+yolov6n_0.2.1.zip:   0%|          | 0.00/14.1M [00:00<?, ?B/s]yolov6n_0.2.1.zip:   0%|          | 20.0k/14.1M [00:00<02:34, 95.6kB/s]yolov6n_0.2.1.zip:   0%|          | 68.0k/14.1M [00:00<01:24, 174kB/s] yolov6n_0.2.1.zip:   1%|          | 120k/14.1M [00:00<01:10, 209kB/s] yolov6n_0.2.1.zip:   2%|▏         | 292k/14.1M [00:00<00:32, 451kB/s]yolov6n_0.2.1.zip:   4%|▍         | 596k/14.1M [00:01<00:17, 814kB/s]yolov6n_0.2.1.zip:   8%|▊         | 1.15M/14.1M [00:01<00:12, 1.10MB/s]yolov6n_0.2.1.zip:  17%|█▋        | 2.40M/14.1M [00:01<00:06, 1.93MB/s]yolov6n_0.2.1.zip:  25%|██▌       | 3.53M/14.1M [00:02<00:04, 2.76MB/s]yolov6n_0.2.1.zip:  29%|██▉       | 4.11M/14.1M [00:02<00:03, 2.78MB/s]yolov6n_0.2.1.zip:  33%|███▎      | 4.71M/14.1M [00:02<00:03, 2.83MB/s]yolov6n_0.2.1.zip:  38%|███▊      | 5.32M/14.1M [00:02<00:03, 2.87MB/s]yolov6n_0.2.1.zip:  42%|████▏     | 5.93M/14.1M [00:02<00:02, 2.91MB/s]yolov6n_0.2.1.zip:  47%|████▋     | 6.56M/14.1M [00:03<00:02, 2.95MB/s]yolov6n_0.2.1.zip:  51%|█████     | 7.20M/14.1M [00:03<00:02, 3.00MB/s]yolov6n_0.2.1.zip:  56%|█████▌    | 7.86M/14.1M [00:03<00:02, 3.06MB/s]yolov6n_0.2.1.zip:  60%|██████    | 8.50M/14.1M [00:03<00:01, 3.09MB/s]yolov6n_0.2.1.zip:  65%|██████▌   | 9.17M/14.1M [00:04<00:01, 3.14MB/s]yolov6n_0.2.1.zip:  70%|██████▉   | 9.83M/14.1M [00:04<00:01, 3.16MB/s]yolov6n_0.2.1.zip:  74%|███████▍  | 10.5M/14.1M [00:04<00:01, 3.20MB/s]yolov6n_0.2.1.zip:  79%|███████▉  | 11.2M/14.1M [00:04<00:00, 3.25MB/s]yolov6n_0.2.1.zip:  84%|████████▍ | 11.9M/14.1M [00:04<00:00, 3.26MB/s]yolov6n_0.2.1.zip:  89%|████████▉ | 12.5M/14.1M [00:05<00:00, 3.29MB/s]yolov6n_0.2.1.zip:  94%|█████████▍| 13.2M/14.1M [00:05<00:00, 3.32MB/s]yolov6n_0.2.1.zip:  99%|█████████▊| 13.9M/14.1M [00:05<00:00, 3.33MB/s]yolov6n_0.2.1.zip: 100%|██████████| 14.1M/14.1M [00:05<00:00, 2.65MB/s]
+[info] Found a '.' character in net_name, which isn't supported. New net_name is yolov6n_0_2_1
+[info] Translation started on ONNX model yolov6n_0_2_1
+[info] Restored ONNX model yolov6n_0_2_1 (completion time: 00:00:00.13)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.94)
+[info] NMS structure of yolov6 (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: Sigmoid_134 Conv_133 Sigmoid_148 Conv_147 Sigmoid_162 Conv_161.
+[info] Start nodes mapped from original model: 'images': 'yolov6n_0_2_1/input_layer1'.
+[info] End nodes mapped from original model: 'Conv_161', 'Sigmoid_162', 'Conv_147', 'Sigmoid_148', 'Conv_133', 'Sigmoid_134'.
+[info] Translation completed on ONNX model yolov6n_0_2_1 (completion time: 00:00:01.45)
+[info] Appending model script commands to yolov6n_0_2_1 from string
+[info] Added nms postprocess command to model script.
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov6n_0.2.1/yolov6n_0.2.1.har

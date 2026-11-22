@@ -1,0 +1,63 @@
+[36m<Hailo Model Zoo INFO> Start run for network davit_tiny ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to davit_tiny from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:06.83)
+[info] Starting LayerNorm Decomposition
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [01:16<19:04, 19.08s/entries]Calibration:  12%|█▎        | 8/64 [01:16<07:22,  7.90s/entries]Calibration:  19%|█▉        | 12/64 [01:17<03:45,  4.34s/entries]Calibration:  25%|██▌       | 16/64 [01:17<02:08,  2.67s/entries]Calibration:  31%|███▏      | 20/64 [01:17<01:16,  1.75s/entries]Calibration:  38%|███▊      | 24/64 [01:18<00:47,  1.19s/entries]Calibration:  44%|████▍     | 28/64 [01:18<00:29,  1.21entries/s]Calibration:  50%|█████     | 32/64 [01:18<00:18,  1.70entries/s]Calibration:  56%|█████▋    | 36/64 [01:19<00:12,  2.31entries/s]Calibration:  62%|██████▎   | 40/64 [01:19<00:07,  3.03entries/s]Calibration:  69%|██████▉   | 44/64 [01:20<00:05,  3.91entries/s]Calibration:  75%|███████▌  | 48/64 [01:20<00:03,  4.97entries/s]Calibration:  81%|████████▏ | 52/64 [01:20<00:02,  5.89entries/s]Calibration:  88%|████████▊ | 56/64 [01:21<00:01,  6.90entries/s]Calibration:  94%|█████████▍| 60/64 [01:21<00:00,  7.47entries/s]Calibration: 100%|██████████| 64/64 [01:22<00:00,  7.59entries/s]Calibration: 100%|██████████| 64/64 [01:22<00:00,  7.59entries/s]Calibration: 100%|██████████| 64/64 [01:22<00:00,  1.28s/entries]
+[info] Model Optimization Algorithm LayerNorm Decomposition is done (completion time is 00:01:55.99)
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [07:48<1:57:07, 117.13s/entries]Calibration:  12%|█▎        | 8/64 [07:49<45:10, 48.39s/entries]   Calibration:  19%|█▉        | 12/64 [07:50<22:53, 26.42s/entries]Calibration:  25%|██▌       | 16/64 [07:51<12:52, 16.10s/entries]Calibration:  31%|███▏      | 20/64 [07:52<07:37, 10.39s/entries]Calibration:  38%|███▊      | 24/64 [07:54<04:38,  6.97s/entries]Calibration:  44%|████▍     | 28/64 [07:55<02:52,  4.78s/entries]Calibration:  50%|█████     | 32/64 [07:56<01:47,  3.35s/entries]Calibration:  56%|█████▋    | 36/64 [07:57<01:06,  2.38s/entries]Calibration:  62%|██████▎   | 40/64 [07:58<00:41,  1.73s/entries]Calibration:  69%|██████▉   | 44/64 [07:59<00:25,  1.27s/entries]Calibration:  75%|███████▌  | 48/64 [08:00<00:15,  1.05entries/s]Calibration:  81%|████████▏ | 52/64 [08:01<00:08,  1.35entries/s]Calibration:  88%|████████▊ | 56/64 [08:08<00:08,  1.09s/entries]Calibration:  94%|█████████▍| 60/64 [08:09<00:03,  1.22entries/s]Calibration: 100%|██████████| 64/64 [08:10<00:00,  1.54entries/s]Calibration: 100%|██████████| 64/64 [08:10<00:00,  1.54entries/s]Calibration: 100%|██████████| 64/64 [08:10<00:00,  7.67s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:08:22.12)
+[info] Starting Fix zp_comp Encoding
+[warning] Matmul-correction encountered an unsupported layer: davit_tiny/format_conversion12 when adding component MatmulCorrectionType.ZP_COMP_BLOCK_3. Please consider using a different correction_type, or forcing this behivor (at the cost of model accuracy) by using pre_quantization_optimization(matmul_correction, layers=[davit_tiny/format_conversion12], correction_type=zp_comp_none)
+[warning] Matmul-correction encountered an unsupported layer: davit_tiny/format_conversion29 when adding component MatmulCorrectionType.ZP_COMP_BLOCK_3. Please consider using a different correction_type, or forcing this behivor (at the cost of model accuracy) by using pre_quantization_optimization(matmul_correction, layers=[davit_tiny/format_conversion29], correction_type=zp_comp_none)
+[warning] Matmul-correction encountered an unsupported layer: davit_tiny/format_conversion46 when adding component MatmulCorrectionType.ZP_COMP_BLOCK_3. Please consider using a different correction_type, or forcing this behivor (at the cost of model accuracy) by using pre_quantization_optimization(matmul_correction, layers=[davit_tiny/format_conversion46], correction_type=zp_comp_none)
+[warning] Matmul-correction encountered an unsupported layer: davit_tiny/format_conversion63 when adding component MatmulCorrectionType.ZP_COMP_BLOCK_3. Please consider using a different correction_type, or forcing this behivor (at the cost of model accuracy) by using pre_quantization_optimization(matmul_correction, layers=[davit_tiny/format_conversion63], correction_type=zp_comp_none)
+[warning] Matmul-correction encountered an unsupported layer: davit_tiny/format_conversion80 when adding component MatmulCorrectionType.ZP_COMP_BLOCK_3. Please consider using a different correction_type, or forcing this behivor (at the cost of model accuracy) by using pre_quantization_optimization(matmul_correction, layers=[davit_tiny/format_conversion80], correction_type=zp_comp_none)
+[warning] Matmul-correction encountered an unsupported layer: davit_tiny/format_conversion97 when adding component MatmulCorrectionType.ZP_COMP_BLOCK_3. Please consider using a different correction_type, or forcing this behivor (at the cost of model accuracy) by using pre_quantization_optimization(matmul_correction, layers=[davit_tiny/format_conversion97], correction_type=zp_comp_none)
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.26)
+[info] Starting Matmul Equalization
+[info] Matmul Equalization: Could not be apply because it has an unsuported layer davit_tiny/format_conversion28 on its inputs flow
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:02.03)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer davit_tiny/conv1/conv_op, using max shift instead. delta=1.0950
+[info] No shifts available for layer davit_tiny/conv1/conv_op, using max shift instead. delta=0.5475
+[info] activation fitting started for davit_tiny/reduce_sum_softmax1/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax2/act_op
+[info] No shifts available for layer davit_tiny/conv7/conv_op, using max shift instead. delta=1.2303
+[info] No shifts available for layer davit_tiny/conv7/conv_op, using max shift instead. delta=0.6152
+[info] activation fitting started for davit_tiny/reduce_sum_softmax3/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax4/act_op
+[info] No shifts available for layer davit_tiny/conv18/conv_op, using max shift instead. delta=0.0659
+[info] No shifts available for layer davit_tiny/conv18/conv_op, using max shift instead. delta=0.0329
+[info] No shifts available for layer davit_tiny/conv19/conv_op, using max shift instead. delta=0.1468
+[info] No shifts available for layer davit_tiny/conv19/conv_op, using max shift instead. delta=0.0734
+[info] activation fitting started for davit_tiny/reduce_sum_softmax5/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax6/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax7/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax8/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax9/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax10/act_op
+[info] No shifts available for layer davit_tiny/conv43/conv_op, using max shift instead. delta=1.2422
+[info] No shifts available for layer davit_tiny/conv43/conv_op, using max shift instead. delta=0.6211
+[info] No shifts available for layer davit_tiny/conv44/conv_op, using max shift instead. delta=1.1195
+[info] No shifts available for layer davit_tiny/conv44/conv_op, using max shift instead. delta=0.5597
+[info] activation fitting started for davit_tiny/reduce_sum_softmax11/act_op
+[info] activation fitting started for davit_tiny/reduce_sum_softmax12/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/davit_tiny/davit_tiny.har

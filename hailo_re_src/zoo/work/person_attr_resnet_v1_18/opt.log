@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network person_attr_resnet_v1_18 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to person_attr_resnet_v1_18 from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.17)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:07<08:21,  7.96s/entries]Calibration:  11%|█         | 7/64 [00:08<00:48,  1.18entries/s]Calibration:  20%|██        | 13/64 [00:08<00:19,  2.61entries/s]Calibration:  30%|██▉       | 19/64 [00:08<00:09,  4.53entries/s]Calibration:  39%|███▉      | 25/64 [00:08<00:05,  7.03entries/s]Calibration:  48%|████▊     | 31/64 [00:08<00:03, 10.20entries/s]Calibration:  58%|█████▊    | 37/64 [00:08<00:01, 14.03entries/s]Calibration:  67%|██████▋   | 43/64 [00:08<00:01, 18.44entries/s]Calibration:  77%|███████▋  | 49/64 [00:08<00:00, 23.22entries/s]Calibration:  86%|████████▌ | 55/64 [00:08<00:00, 28.29entries/s]Calibration:  95%|█████████▌| 61/64 [00:09<00:00, 33.26entries/s]Calibration: 100%|██████████| 64/64 [00:09<00:00, 33.26entries/s]Calibration: 100%|██████████| 64/64 [00:09<00:00,  7.00entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:09.53)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/person_attr_resnet_v1_18/person_attr_resnet_v1_18.har

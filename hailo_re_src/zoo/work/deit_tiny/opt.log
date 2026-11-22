@@ -1,0 +1,44 @@
+[36m<Hailo Model Zoo INFO> Start run for network deit_tiny ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to deit_tiny from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.99)
+[info] Starting LayerNorm Decomposition
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  25%|██▌       | 16/64 [01:01<03:04,  3.84s/entries]Calibration:  50%|█████     | 32/64 [01:01<00:51,  1.59s/entries]Calibration:  75%|███████▌  | 48/64 [01:02<00:14,  1.14entries/s]Calibration: 100%|██████████| 64/64 [01:02<00:00,  1.85entries/s]Calibration: 100%|██████████| 64/64 [01:02<00:00,  1.85entries/s]Calibration: 100%|██████████| 64/64 [01:02<00:00,  1.02entries/s]
+[info] Model Optimization Algorithm LayerNorm Decomposition is done (completion time is 00:01:22.38)
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  25%|██▌       | 16/64 [04:41<14:03, 17.57s/entries]Calibration:  50%|█████     | 32/64 [04:42<03:53,  7.29s/entries]Calibration:  75%|███████▌  | 48/64 [04:43<01:03,  4.00s/entries]Calibration: 100%|██████████| 64/64 [04:45<00:00,  2.46s/entries]Calibration: 100%|██████████| 64/64 [04:45<00:00,  2.46s/entries]Calibration: 100%|██████████| 64/64 [04:45<00:00,  4.46s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:04:52.03)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.06)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:03.58)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] activation fitting started for deit_tiny/reduce_sum_softmax1/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax2/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax3/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax4/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax5/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax6/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax7/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax8/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax9/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax10/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax11/act_op
+[info] activation fitting started for deit_tiny/reduce_sum_softmax12/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/deit_tiny/deit_tiny.har

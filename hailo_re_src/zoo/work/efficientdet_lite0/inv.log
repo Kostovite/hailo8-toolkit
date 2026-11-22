@@ -1,0 +1,2 @@
+225/239 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '102/102', 'dw': '80/80', 'maxpool': '4/14', 'resize': '9/12', 'ew_add': '28/28', 'postprocess': '0/1'}

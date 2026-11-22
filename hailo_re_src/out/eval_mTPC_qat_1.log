@@ -1,0 +1,5 @@
+100/458 1.59 img/s
+200/458 2.03 img/s
+300/458 2.52 img/s
+400/458 2.94 img/s
+wrote stats ../out/stats_mTPC_qat_1.npz

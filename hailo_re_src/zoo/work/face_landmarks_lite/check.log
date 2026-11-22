@@ -1,0 +1,5 @@
+UNSUPPORTED face_landmarks_lite/external_pad1 (external_pad): NotImplementedError: face_landmarks_lite/external_pad1: external_pad
+UNSUPPORTED face_landmarks_lite/external_pad2 (external_pad): NotImplementedError: face_landmarks_lite/external_pad2: external_pad
+UNSUPPORTED face_landmarks_lite/external_pad3 (external_pad): NotImplementedError: face_landmarks_lite/external_pad3: external_pad
+122/125 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '47/47', 'conv': '25/25', 'activation': '23/23', 'dw': '20/20', 'maxpool': '6/6', 'external_pad': '0/3'}

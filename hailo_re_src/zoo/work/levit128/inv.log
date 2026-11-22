@@ -1,0 +1,2 @@
+309/324 checked layers exact when chained from raw pixels
+{'const_input': '0/14', 'input_layer': '1/1', 'normalization': '1/1', 'conv': '90/90', 'format_conversion': '5/5', 'activation': '57/57', 'reduce_sum': '28/28', 'concat': '14/14', 'matmul': '28/28', 'ew_add': '41/41', 'reduce_max': '14/14', 'ew_sub': '14/14', 'ew_mult': '14/14', 'dw': '2/2', 'avgpool': '0/1'}

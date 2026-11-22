@@ -1,0 +1,17 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/916 18.60 img/s
+200/916 23.28 img/s
+300/916 26.10 img/s
+400/916 27.83 img/s
+500/916 29.06 img/s
+600/916 29.92 img/s
+700/916 30.56 img/s
+800/916 31.09 img/s
+900/916 31.41 img/s
+wrote stats ../out/stats_exp_n_qat_3ep_s6900_0.npz
+{"mAP50": 0.7776674802818971, "mAP50_95": 0.6544346906343516, "P": 0.7849523709148482, "R": 0.7224243917912658, "kind": "hailo", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/n_L0a16.hn", "shape": [640, 640], "n": 916, "sec": 29}

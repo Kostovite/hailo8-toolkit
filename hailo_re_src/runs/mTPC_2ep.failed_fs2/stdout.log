@@ -1,0 +1,88 @@
+W1023 19:56:38.686000 256304 site-packages/torch/distributed/run.py:766] 
+W1023 19:56:38.686000 256304 site-packages/torch/distributed/run.py:766] *****************************************
+W1023 19:56:38.686000 256304 site-packages/torch/distributed/run.py:766] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 19:56:38.686000 256304 site-packages/torch/distributed/run.py:766] *****************************************
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+step 1/9200 loss 0.4751 gt 0.3823 kd_cls 0.0004 kd_box 0.0924 ovf 362 0.11 img/s
+step 20/9200 loss 0.5773 gt 0.3986 kd_cls 0.0006 kd_box 0.1781 ovf 350 1.69 img/s
+step 40/9200 loss 0.4859 gt 0.4181 kd_cls 0.0004 kd_box 0.0673 ovf 354 2.72 img/s
+step 60/9200 loss 0.7935 gt 0.5943 kd_cls 0.0034 kd_box 0.1957 ovf 353 3.41 img/s
+step 80/9200 loss 0.6317 gt 0.5038 kd_cls 0.0015 kd_box 0.1265 ovf 383 3.90 img/s
+step 100/9200 loss 0.6592 gt 0.4731 kd_cls 0.0010 kd_box 0.1852 ovf 338 4.28 img/s
+step 120/9200 loss 0.3890 gt 0.2799 kd_cls 0.0001 kd_box 0.1091 ovf 340 4.57 img/s
+step 140/9200 loss 0.6156 gt 0.4414 kd_cls 0.0005 kd_box 0.1737 ovf 348 4.80 img/s
+step 160/9200 loss 0.6061 gt 0.4684 kd_cls 0.0008 kd_box 0.1369 ovf 350 4.99 img/s
+step 180/9200 loss 0.3506 gt 0.2780 kd_cls 0.0001 kd_box 0.0725 ovf 344 5.15 img/s
+step 200/9200 loss 0.4334 gt 0.3309 kd_cls 0.0009 kd_box 0.1015 ovf 341 5.29 img/s
+step 220/9200 loss 0.5459 gt 0.4713 kd_cls 0.0000 kd_box 0.0746 ovf 350 5.41 img/s
+step 240/9200 loss 0.3958 gt 0.2871 kd_cls 0.0021 kd_box 0.1065 ovf 335 5.51 img/s
+step 260/9200 loss 0.6316 gt 0.4796 kd_cls 0.0020 kd_box 0.1500 ovf 347 5.60 img/s
+step 280/9200 loss 0.5037 gt 0.4352 kd_cls 0.0001 kd_box 0.0684 ovf 353 5.67 img/s
+step 300/9200 loss 0.5403 gt 0.4638 kd_cls 0.0004 kd_box 0.0761 ovf 349 5.74 img/s
+step 320/9200 loss 0.4967 gt 0.3805 kd_cls 0.0008 kd_box 0.1154 ovf 337 5.80 img/s
+step 340/9200 loss 0.4775 gt 0.3614 kd_cls 0.0029 kd_box 0.1132 ovf 347 5.86 img/s
+step 360/9200 loss 0.3546 gt 0.2715 kd_cls 0.0001 kd_box 0.0830 ovf 333 5.91 img/s
+step 380/9200 loss 0.5430 gt 0.4583 kd_cls 0.0006 kd_box 0.0841 ovf 351 5.96 img/s
+step 400/9200 loss 0.4868 gt 0.3915 kd_cls 0.0007 kd_box 0.0945 ovf 347 5.98 img/s
+step 420/9200 loss 0.4974 gt 0.3920 kd_cls 0.0004 kd_box 0.1050 ovf 337 6.02 img/s
+step 440/9200 loss 0.4403 gt 0.3582 kd_cls 0.0003 kd_box 0.0817 ovf 338 6.05 img/s
+step 460/9200 loss 0.4636 gt 0.3721 kd_cls 0.0013 kd_box 0.0902 ovf 362 6.09 img/s
+step 480/9200 loss 0.6064 gt 0.5231 kd_cls 0.0003 kd_box 0.0830 ovf 383 6.12 img/s
+step 500/9200 loss 0.5020 gt 0.4025 kd_cls 0.0016 kd_box 0.0979 ovf 343 6.15 img/s
+step 520/9200 loss 0.3428 gt 0.2661 kd_cls 0.0002 kd_box 0.0765 ovf 334 6.17 img/s
+step 540/9200 loss 0.4939 gt 0.4026 kd_cls 0.0006 kd_box 0.0907 ovf 331 6.20 img/s
+step 560/9200 loss 0.4065 gt 0.3360 kd_cls 0.0024 kd_box 0.0681 ovf 367 6.22 img/s
+step 580/9200 loss 0.3989 gt 0.3421 kd_cls 0.0007 kd_box 0.0562 ovf 343 6.24 img/s
+step 600/9200 loss 0.3496 gt 0.2683 kd_cls 0.0001 kd_box 0.0812 ovf 340 6.26 img/s
+step 620/9200 loss 0.3880 gt 0.2962 kd_cls 0.0002 kd_box 0.0917 ovf 338 6.27 img/s
+step 640/9200 loss 0.3230 gt 0.2627 kd_cls 0.0002 kd_box 0.0601 ovf 330 6.29 img/s
+step 660/9200 loss 0.3456 gt 0.2698 kd_cls 0.0008 kd_box 0.0751 ovf 340 6.30 img/s
+step 680/9200 loss 0.4308 gt 0.3400 kd_cls 0.0014 kd_box 0.0895 ovf 338 6.31 img/s
+step 700/9200 loss 0.4249 gt 0.3355 kd_cls 0.0019 kd_box 0.0875 ovf 339 6.32 img/s
+step 720/9200 loss 0.4513 gt 0.3646 kd_cls 0.0007 kd_box 0.0860 ovf 348 6.33 img/s
+step 740/9200 loss 0.5931 gt 0.5086 kd_cls 0.0000 kd_box 0.0844 ovf 357 6.34 img/s
+step 760/9200 loss 0.4070 gt 0.3119 kd_cls 0.0043 kd_box 0.0907 ovf 360 6.35 img/s
+step 780/9200 loss 0.4422 gt 0.3302 kd_cls 0.0012 kd_box 0.1108 ovf 334 6.36 img/s
+step 800/9200 loss 0.3713 gt 0.3083 kd_cls 0.0006 kd_box 0.0624 ovf 345 6.38 img/s
+step 820/9200 loss 0.4151 gt 0.3187 kd_cls 0.0020 kd_box 0.0943 ovf 349 6.39 img/s
+step 840/9200 loss 0.4566 gt 0.3945 kd_cls 0.0008 kd_box 0.0613 ovf 334 6.40 img/s
+step 860/9200 loss 0.4269 gt 0.3451 kd_cls 0.0012 kd_box 0.0806 ovf 346 6.41 img/s
+step 880/9200 loss 0.3961 gt 0.3022 kd_cls 0.0013 kd_box 0.0926 ovf 337 6.42 img/s
+step 900/9200 loss 0.3944 gt 0.3317 kd_cls 0.0001 kd_box 0.0625 ovf 337 6.43 img/s
+step 920/9200 loss 0.3345 gt 0.2662 kd_cls 0.0019 kd_box 0.0663 ovf 348 6.44 img/s
+step 940/9200 loss 0.4415 gt 0.3501 kd_cls 0.0014 kd_box 0.0900 ovf 347 6.45 img/s
+step 960/9200 loss 0.4156 gt 0.3320 kd_cls 0.0013 kd_box 0.0823 ovf 368 6.46 img/s
+step 980/9200 loss 0.3852 gt 0.3130 kd_cls 0.0012 kd_box 0.0710 ovf 338 6.47 img/s
+W1023 20:07:11.227000 256304 site-packages/torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1023 20:07:11.230000 256304 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 256390 closing signal SIGTERM
+W1023 20:07:11.230000 256304 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 256391 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/mnt/storage/anaconda3/envs/general/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 261, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 256304 got signal: 15

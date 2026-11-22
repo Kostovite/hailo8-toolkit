@@ -1,0 +1,13 @@
+STFT_power done
+Einsum_matmul done
+R_Equal done
+OneHot_argmax done
+Hardmax_C_onehot done
+R_DFT_W done
+R_SpaceToDepth done
+R_Mod done
+CausalConvWithState_op27 done
+And_cast done
+Xor_cast done
+LinearAttention_op27 done
+Attention_op23_causal done

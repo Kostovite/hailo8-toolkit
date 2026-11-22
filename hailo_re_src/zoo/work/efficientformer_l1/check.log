@@ -1,0 +1,42 @@
+UNSUPPORTED efficientformer_l1/const_input1 (const_input): NotImplementedError: efficientformer_l1/const_input1: const_input
+UNSUPPORTED efficientformer_l1/const_input10 (const_input): NotImplementedError: efficientformer_l1/const_input10: const_input
+UNSUPPORTED efficientformer_l1/const_input11 (const_input): NotImplementedError: efficientformer_l1/const_input11: const_input
+UNSUPPORTED efficientformer_l1/const_input12 (const_input): NotImplementedError: efficientformer_l1/const_input12: const_input
+UNSUPPORTED efficientformer_l1/const_input13 (const_input): NotImplementedError: efficientformer_l1/const_input13: const_input
+UNSUPPORTED efficientformer_l1/const_input14 (const_input): NotImplementedError: efficientformer_l1/const_input14: const_input
+UNSUPPORTED efficientformer_l1/const_input15 (const_input): NotImplementedError: efficientformer_l1/const_input15: const_input
+UNSUPPORTED efficientformer_l1/const_input2 (const_input): NotImplementedError: efficientformer_l1/const_input2: const_input
+UNSUPPORTED efficientformer_l1/const_input3 (const_input): NotImplementedError: efficientformer_l1/const_input3: const_input
+UNSUPPORTED efficientformer_l1/const_input4 (const_input): NotImplementedError: efficientformer_l1/const_input4: const_input
+UNSUPPORTED efficientformer_l1/const_input5 (const_input): NotImplementedError: efficientformer_l1/const_input5: const_input
+UNSUPPORTED efficientformer_l1/const_input6 (const_input): NotImplementedError: efficientformer_l1/const_input6: const_input
+UNSUPPORTED efficientformer_l1/const_input7 (const_input): NotImplementedError: efficientformer_l1/const_input7: const_input
+UNSUPPORTED efficientformer_l1/const_input8 (const_input): NotImplementedError: efficientformer_l1/const_input8: const_input
+UNSUPPORTED efficientformer_l1/const_input9 (const_input): NotImplementedError: efficientformer_l1/const_input9: const_input
+MISMATCH efficientformer_l1/input_layer1 (input_layer): 150528/150528 max 26058
+UNSUPPORTED efficientformer_l1/avgpool1 (avgpool): NotImplementedError: efficientformer_l1/avgpool1: avgpool
+UNSUPPORTED efficientformer_l1/avgpool2 (avgpool): NotImplementedError: efficientformer_l1/avgpool2: avgpool
+UNSUPPORTED efficientformer_l1/avgpool3 (avgpool): NotImplementedError: efficientformer_l1/avgpool3: avgpool
+UNSUPPORTED efficientformer_l1/avgpool4 (avgpool): NotImplementedError: efficientformer_l1/avgpool4: avgpool
+UNSUPPORTED efficientformer_l1/avgpool5 (avgpool): NotImplementedError: efficientformer_l1/avgpool5: avgpool
+UNSUPPORTED efficientformer_l1/avgpool6 (avgpool): NotImplementedError: efficientformer_l1/avgpool6: avgpool
+UNSUPPORTED efficientformer_l1/avgpool7 (avgpool): NotImplementedError: efficientformer_l1/avgpool7: avgpool
+UNSUPPORTED efficientformer_l1/avgpool8 (avgpool): NotImplementedError: efficientformer_l1/avgpool8: avgpool
+UNSUPPORTED efficientformer_l1/avgpool9 (avgpool): NotImplementedError: efficientformer_l1/avgpool9: avgpool
+UNSUPPORTED efficientformer_l1/avgpool10 (avgpool): NotImplementedError: efficientformer_l1/avgpool10: avgpool
+UNSUPPORTED efficientformer_l1/avgpool11 (avgpool): NotImplementedError: efficientformer_l1/avgpool11: avgpool
+UNSUPPORTED efficientformer_l1/avgpool12 (avgpool): NotImplementedError: efficientformer_l1/avgpool12: avgpool
+UNSUPPORTED efficientformer_l1/avgpool13 (avgpool): NotImplementedError: efficientformer_l1/avgpool13: avgpool
+UNSUPPORTED efficientformer_l1/avgpool14 (avgpool): NotImplementedError: efficientformer_l1/avgpool14: avgpool
+UNSUPPORTED efficientformer_l1/reduce_mean1_layer_normalization1 (reduce_mean): NotImplementedError: efficientformer_l1/reduce_mean1_layer_normalization1: reduce_mean
+UNSUPPORTED efficientformer_l1/square1_layer_normalization1 (feature_multiplier): NotImplementedError: efficientformer_l1/square1_layer_normalization1: feature_multiplier
+UNSUPPORTED efficientformer_l1/ew_mult1_layer_normalization1 (ew_mult): AssertionError: ('efficientformer_l1/ew_mult1_layer_normalization1', 'ElementwiseMultOp', 0)
+UNSUPPORTED efficientformer_l1/reduce_mean1_layer_normalization2 (reduce_mean): NotImplementedError: efficientformer_l1/reduce_mean1_layer_normalization2: reduce_mean
+UNSUPPORTED efficientformer_l1/square1_layer_normalization2 (feature_multiplier): NotImplementedError: efficientformer_l1/square1_layer_normalization2: feature_multiplier
+UNSUPPORTED efficientformer_l1/ew_mult1_layer_normalization2 (ew_mult): AssertionError: ('efficientformer_l1/ew_mult1_layer_normalization2', 'ElementwiseMultOp', 0)
+UNSUPPORTED efficientformer_l1/reduce_mean1_layer_normalization3 (reduce_mean): NotImplementedError: efficientformer_l1/reduce_mean1_layer_normalization3: reduce_mean
+UNSUPPORTED efficientformer_l1/square1_layer_normalization3 (feature_multiplier): NotImplementedError: efficientformer_l1/square1_layer_normalization3: feature_multiplier
+UNSUPPORTED efficientformer_l1/ew_mult1_layer_normalization3 (ew_mult): AssertionError: ('efficientformer_l1/ew_mult1_layer_normalization3', 'ElementwiseMultOp', 0)
+UNSUPPORTED efficientformer_l1/avgpool15 (avgpool): NotImplementedError: efficientformer_l1/avgpool15: avgpool
+154/194 checked layers exact when chained from raw pixels
+{'const_input': '0/15', 'input_layer': '0/1', 'activation': '22/22', 'normalization': '16/16', 'conv': '44/44', 'avgpool': '0/15', 'ew_mult': '15/18', 'ew_sub': '18/18', 'ew_add': '32/32', 'format_conversion': '1/1', 'reduce_mean': '0/3', 'feature_multiplier': '0/3', 'reduce_sum': '2/2', 'concat': '1/1', 'matmul': '2/2', 'reduce_max': '1/1'}

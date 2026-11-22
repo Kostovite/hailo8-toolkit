@@ -1,0 +1,10 @@
+[info] Translation started on ONNX model best
+[info] Restored ONNX model best (completion time: 00:00:00.62)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:02.54)
+[info] NMS structure of yolov6 (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: /model.23/one2one_cv2.0/one2one_cv2.0.2/Conv /model.23/one2one_cv3.0/one2one_cv3.0.2/Conv /model.23/one2one_cv3.1/one2one_cv3.1.2/Conv /model.23/one2one_cv2.1/one2one_cv2.1.2/Conv /model.23/one2one_cv2.2/one2one_cv2.2.2/Conv /model.23/one2one_cv3.2/one2one_cv3.2.2/Conv.
+[info] Start nodes mapped from original model: 'images': 'best/input_layer1'.
+[info] End nodes mapped from original model: '/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv', '/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv', '/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv', '/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv', '/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv', '/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv'.
+[info] Translation completed on ONNX model best (completion time: 00:00:05.40)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/yolo26m_v14sec_parsed.har
+HN layer types: {'input_layer': 1, 'conv': 104, 'feature_splitter': 11, 'shortcut': 11, 'ew_add': 22, 'concat': 21, 'maxpool': 3, 'format_conversion': 6, 'normalization': 2, 'matmul': 4, 'activation': 2, 'dw': 8, 'softmax': 2, 'resize': 2, 'output_layer': 6}

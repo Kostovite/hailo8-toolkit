@@ -1,0 +1,3 @@
+MISMATCH davit_tiny/reduce_mean1_layer_normalization25 (reduce_mean): 12/49 max 1
+714/715 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'activation': '144/144', 'normalization': '5/5', 'external_pad': '1/1', 'conv': '106/106', 'reduce_mean': '28/29', 'ew_sub': '41/41', 'feature_multiplier': '29/29', 'ew_mult': '41/41', 'dw': '36/36', 'ew_add': '48/48', 'format_conversion': '101/101', 'reduce_sum': '24/24', 'precision_splitter': '24/24', 'shortcut': '12/12', 'concat': '24/24', 'matmul': '24/24', 'reduce_max': '12/12', 'resize': '12/12', 'avgpool': '1/1'}

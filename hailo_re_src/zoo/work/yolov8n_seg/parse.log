@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov8n_seg ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model yolov8n_seg
+[info] Restored ONNX model yolov8n_seg (completion time: 00:00:00.39)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:02.72)
+[info] Start nodes mapped from original model: 'images': 'yolov8n_seg/input_layer1'.
+[info] End nodes mapped from original model: '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv', '/model.22/cv4.2/cv4.2.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv4.1/cv4.1.2/Conv', '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv4.0/cv4.0.2/Conv', '/model.22/proto/cv3/act/Mul'.
+[info] Translation completed on ONNX model yolov8n_seg (completion time: 00:00:05.55)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov8n_seg/yolov8n_seg.har

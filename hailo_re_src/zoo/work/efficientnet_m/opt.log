@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network efficientnet_m ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to efficientnet_m from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.47)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:25<26:32, 25.27s/entries]Calibration:   3%|▎         | 2/64 [00:25<10:48, 10.47s/entries]Calibration:   6%|▋         | 4/64 [00:25<03:57,  3.96s/entries]Calibration:   9%|▉         | 6/64 [00:25<02:03,  2.13s/entries]Calibration:  12%|█▎        | 8/64 [00:25<01:14,  1.32s/entries]Calibration:  14%|█▍        | 9/64 [00:26<00:57,  1.05s/entries]Calibration:  16%|█▌        | 10/64 [00:26<00:44,  1.20entries/s]Calibration:  17%|█▋        | 11/64 [00:26<00:34,  1.54entries/s]Calibration:  20%|██        | 13/64 [00:26<00:21,  2.41entries/s]Calibration:  23%|██▎       | 15/64 [00:26<00:14,  3.39entries/s]Calibration:  27%|██▋       | 17/64 [00:26<00:10,  4.31entries/s]Calibration:  28%|██▊       | 18/64 [00:27<00:09,  4.74entries/s]Calibration:  31%|███▏      | 20/64 [00:27<00:07,  6.09entries/s]Calibration:  34%|███▍      | 22/64 [00:27<00:05,  7.26entries/s]Calibration:  38%|███▊      | 24/64 [00:27<00:04,  8.25entries/s]Calibration:  41%|████      | 26/64 [00:27<00:04,  9.16entries/s]Calibration:  44%|████▍     | 28/64 [00:27<00:03, 10.22entries/s]Calibration:  47%|████▋     | 30/64 [00:28<00:03, 11.07entries/s]Calibration:  50%|█████     | 32/64 [00:28<00:02, 10.94entries/s]Calibration:  53%|█████▎    | 34/64 [00:28<00:02, 10.81entries/s]Calibration:  56%|█████▋    | 36/64 [00:28<00:02, 11.49entries/s]Calibration:  59%|█████▉    | 38/64 [00:28<00:02, 12.04entries/s]Calibration:  62%|██████▎   | 40/64 [00:29<00:02, 10.09entries/s]Calibration:  66%|██████▌   | 42/64 [00:29<00:02,  9.62entries/s]Calibration:  69%|██████▉   | 44/64 [00:29<00:01, 10.74entries/s]Calibration:  72%|███████▏  | 46/64 [00:29<00:01, 11.77entries/s]Calibration:  75%|███████▌  | 48/64 [00:29<00:01, 12.69entries/s]Calibration:  78%|███████▊  | 50/64 [00:29<00:01, 13.22entries/s]Calibration:  81%|████████▏ | 52/64 [00:29<00:00, 13.81entries/s]Calibration:  84%|████████▍ | 54/64 [00:30<00:00, 14.21entries/s]Calibration:  88%|████████▊ | 56/64 [00:30<00:00, 14.33entries/s]Calibration:  91%|█████████ | 58/64 [00:30<00:00, 14.10entries/s]Calibration:  94%|█████████▍| 60/64 [00:30<00:00, 13.86entries/s]Calibration:  97%|█████████▋| 62/64 [00:30<00:00, 14.14entries/s]Calibration: 100%|██████████| 64/64 [00:30<00:00, 13.96entries/s]Calibration: 100%|██████████| 64/64 [00:30<00:00, 13.96entries/s]Calibration: 100%|██████████| 64/64 [00:30<00:00,  2.08entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:32.29)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/efficientnet_m/efficientnet_m.har

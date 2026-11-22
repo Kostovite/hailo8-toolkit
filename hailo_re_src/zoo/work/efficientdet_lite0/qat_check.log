@@ -1,0 +1,5 @@
+UNSUPPORTED efficientdet_lite0/ssd_nms_postprocess (postprocess): NotImplementedError: NotImplementedError: efficientdet_lite0/ssd_nms_postprocess: postprocess | chain: efficientdet_lite0/ssd_nms_postprocess
+QATNet: 183 MAC modules, 28 APUs, 17 atomic chains
+qatfast == graph26 on 238/238 layers (0 not produced by qatfast)
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '102/102', 'dw': '80/80', 'maxpool': '14/14', 'resize': '12/12', 'ew_add': '28/28'}
+backward ok: 788/788 parameter tensors received a non-zero gradient

@@ -7,3 +7,7 @@ __pycache__/
 *.npz
 *.pt
 hailo_re_src/turbo/t/
+hailo_sdk*.log
+hailort.log
+acceleras.log
+allocator.log

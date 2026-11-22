@@ -1,0 +1,65 @@
+[36m<Hailo Model Zoo INFO> Start run for network vit_base_bn ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to vit_base_bn from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.48)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  25%|██▌       | 16/64 [01:49<05:27,  6.81s/entries]Calibration:  50%|█████     | 32/64 [01:55<01:37,  3.06s/entries]Calibration:  75%|███████▌  | 48/64 [02:02<00:29,  1.86s/entries]Calibration: 100%|██████████| 64/64 [02:11<00:00,  1.34s/entries]Calibration: 100%|██████████| 64/64 [02:11<00:00,  1.34s/entries]Calibration: 100%|██████████| 64/64 [02:11<00:00,  2.06s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:02:17.38)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.00)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer vit_base_bn/conv1/conv_op, using max shift instead. delta=1.9200
+[info] No shifts available for layer vit_base_bn/conv1/conv_op, using max shift instead. delta=0.9600
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax1/act_op
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax2/act_op
+[info] No shifts available for layer vit_base_bn/conv9/conv_op, using max shift instead. delta=0.0322
+[info] No shifts available for layer vit_base_bn/conv9/conv_op, using max shift instead. delta=0.0161
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax3/act_op
+[info] No shifts available for layer vit_base_bn/conv13/conv_op, using max shift instead. delta=0.3909
+[info] No shifts available for layer vit_base_bn/conv13/conv_op, using max shift instead. delta=0.1955
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax4/act_op
+[info] No shifts available for layer vit_base_bn/conv15/conv_op, using max shift instead. delta=0.1173
+[info] No shifts available for layer vit_base_bn/conv15/conv_op, using max shift instead. delta=0.0587
+[info] No shifts available for layer vit_base_bn/conv13/conv_op, using max shift instead. delta=0.1955
+[info] No shifts available for layer vit_base_bn/conv17/conv_op, using max shift instead. delta=0.6347
+[info] No shifts available for layer vit_base_bn/conv17/conv_op, using max shift instead. delta=0.3173
+[info] No shifts available for layer vit_base_bn/conv15/conv_op, using max shift instead. delta=0.0587
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax5/act_op
+[info] No shifts available for layer vit_base_bn/conv21/conv_op, using max shift instead. delta=0.3768
+[info] No shifts available for layer vit_base_bn/conv21/conv_op, using max shift instead. delta=0.1884
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax6/act_op
+[info] No shifts available for layer vit_base_bn/conv25/conv_op, using max shift instead. delta=0.4895
+[info] No shifts available for layer vit_base_bn/conv25/conv_op, using max shift instead. delta=0.2447
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax7/act_op
+[info] No shifts available for layer vit_base_bn/conv29/conv_op, using max shift instead. delta=0.3287
+[info] No shifts available for layer vit_base_bn/conv29/conv_op, using max shift instead. delta=0.1643
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax8/act_op
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax9/act_op
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax10/act_op
+[info] No shifts available for layer vit_base_bn/conv41/conv_op, using max shift instead. delta=0.4093
+[info] No shifts available for layer vit_base_bn/conv41/conv_op, using max shift instead. delta=0.2046
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax11/act_op
+[info] No shifts available for layer vit_base_bn/conv45/conv_op, using max shift instead. delta=0.5674
+[info] No shifts available for layer vit_base_bn/conv45/conv_op, using max shift instead. delta=0.2837
+[info] activation fitting started for vit_base_bn/reduce_sum_softmax12/act_op
+[info] No shifts available for layer vit_base_bn/conv49/conv_op, using max shift instead. delta=0.0732
+[info] No shifts available for layer vit_base_bn/conv49/conv_op, using max shift instead. delta=0.0366
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/vit_base_bn/vit_base_bn.har

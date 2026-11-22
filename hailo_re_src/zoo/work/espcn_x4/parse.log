@@ -1,0 +1,10 @@
+[36m<Hailo Model Zoo INFO> Start run for network espcn_x4 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+espcn_x4.zip:   0%|          | 0.00/91.6k [00:00<?, ?B/s]espcn_x4.zip:  22%|██▏       | 20.0k/91.6k [00:00<00:00, 97.1kB/s]espcn_x4.zip:  39%|███▉      | 36.0k/91.6k [00:00<00:00, 86.3kB/s]espcn_x4.zip:  57%|█████▋    | 52.0k/91.6k [00:00<00:00, 82.8kB/s]espcn_x4.zip:  96%|█████████▌| 88.0k/91.6k [00:00<00:00, 120kB/s] espcn_x4.zip: 100%|██████████| 91.6k/91.6k [00:00<00:00, 112kB/s]
+[info] Translation started on ONNX model espcn_x4
+[info] Restored ONNX model espcn_x4 (completion time: 00:00:00.01)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.18)
+[info] Start nodes mapped from original model: 'input.1': 'espcn_x4/input_layer1'.
+[info] End nodes mapped from original model: 'DepthToSpace_5'.
+[info] Translation completed on ONNX model espcn_x4 (completion time: 00:00:00.31)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/espcn_x4/espcn_x4.har

@@ -1,0 +1,35 @@
+WARNING ⚠️ torchvision==0.27 is incompatible with torch==2.7.
+Run 'pip install torchvision==0.22' to fix torchvision or 'pip install -U torch torchvision' to update both.
+For a full compatibility table see https://github.com/pytorch/vision#installation
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/2770 4.22 img/s
+200/2770 5.20 img/s
+300/2770 5.64 img/s
+400/2770 5.89 img/s
+500/2770 6.05 img/s
+600/2770 6.16 img/s
+700/2770 6.24 img/s
+800/2770 6.31 img/s
+900/2770 6.35 img/s
+1000/2770 6.39 img/s
+1100/2770 6.43 img/s
+1200/2770 6.46 img/s
+1300/2770 6.48 img/s
+1400/2770 6.50 img/s
+1500/2770 6.52 img/s
+1600/2770 6.53 img/s
+1700/2770 6.55 img/s
+1800/2770 6.56 img/s
+1900/2770 6.57 img/s
+2000/2770 6.58 img/s
+2100/2770 6.59 img/s
+2200/2770 6.60 img/s
+2300/2770 6.61 img/s
+2400/2770 6.62 img/s
+2500/2770 6.62 img/s
+2600/2770 6.63 img/s
+2700/2770 6.63 img/s
+wrote stats ../out/stats_bench_q3a_s2000_har_0.npz
+{"mAP50": 0.917629507231139, "mAP50_95": 0.8400919917598474, "P": 0.9197483425205794, "R": 0.880787290444868, "kind": "hailo", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/q3a_s2000_har.hn", "shape": [896, 896], "n": 2770, "sec": 431}

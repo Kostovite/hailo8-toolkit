@@ -1,0 +1,26 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov8s_bbox_decoding_only ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model yolov8s_bbox_decoding_only
+[info] Restored ONNX model yolov8s_bbox_decoding_only (completion time: 00:00:00.23)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.51)
+[info] Simplified ONNX model for a parsing retry attempt (completion time: 00:00:04.08)
+[info] According to recommendations, retrying parsing with end node names: ['/model.22/Concat_3'].
+[info] Translation started on ONNX model yolov8s_bbox_decoding_only
+[info] Restored ONNX model yolov8s_bbox_decoding_only (completion time: 00:00:00.18)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.55)
+[info] NMS structure of yolov8 (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+[info] Start nodes mapped from original model: 'images': 'yolov8s_bbox_decoding_only/input_layer1'.
+[info] End nodes mapped from original model: '/model.22/Concat_3'.
+[info] Translation completed on ONNX model yolov8s_bbox_decoding_only (completion time: 00:00:03.42)
+[info] Translation started on ONNX model yolov8s_bbox_decoding_only
+[info] Restored ONNX model yolov8s_bbox_decoding_only (completion time: 00:00:00.19)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.29)
+[info] NMS structure of yolov8 (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+[info] Start nodes mapped from original model: 'images': 'yolov8s_bbox_decoding_only/input_layer1'.
+[info] End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+[info] Translation completed on ONNX model yolov8s_bbox_decoding_only (completion time: 00:00:04.45)
+[info] Appending model script commands to yolov8s_bbox_decoding_only from string
+[info] Added nms postprocess command to model script.
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov8s_bbox_decoding_only/yolov8s_bbox_decoding_only.har

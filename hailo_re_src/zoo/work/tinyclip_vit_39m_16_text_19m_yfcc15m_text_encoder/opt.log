@@ -1,0 +1,21 @@
+[36m<Hailo Model Zoo INFO> Start run for network tinyclip_vit_39m_16_text_19m_yfcc15m_text_encoder ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/hmz.py", line 13, in <module>
+    sys.exit(main())
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 122, in main
+    run(args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main.py", line 111, in run
+    return handlers[args.command](args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/main_driver.py", line 229, in optimize
+    calib_feed_callback = prepare_calibration_data(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 309, in prepare_calibration_data
+    preproc_callback = make_preprocessing(runner, network_info, input_conversion_args, resize_args)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/main_utils.py", line 204, in make_preprocessing
+    preproc_callback = preprocessing_factory.get_preprocessing(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/preprocessing/preprocessing_factory.py", line 88, in get_preprocessing
+    preprocessing_callback = PREPROCESS_FACTORY.get(name)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/utils/factory_utils.py", line 31, in get
+    raise ValueError(f"'{name}' not recognized in '{self._name}' factory ")
+ValueError: 'text_encoder' not recognized in 'preprocess_factory' factory 

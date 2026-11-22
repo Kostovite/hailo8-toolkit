@@ -1,0 +1,31 @@
+[36m<Hailo Model Zoo INFO> Start run for network tddfa_mobilenet_v1 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to tddfa_mobilenet_v1 from l0.alls
+[info] The flag emulator_support was not given for bgr_to_rgb conversion. using emulator_support=True. See usage guidelines at: Dataflow Compiler User Guide / Building Models / Model Optimization / Model Scripts
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.17)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   3%|▎         | 2/64 [00:08<04:34,  4.43s/entries]Calibration:  19%|█▉        | 12/64 [00:08<00:28,  1.81entries/s]Calibration:  34%|███▍      | 22/64 [00:09<00:10,  3.98entries/s]Calibration:  53%|█████▎    | 34/64 [00:09<00:04,  7.49entries/s]Calibration:  72%|███████▏  | 46/64 [00:09<00:01, 12.13entries/s]Calibration:  91%|█████████ | 58/64 [00:09<00:00, 18.06entries/s]Calibration: 100%|██████████| 64/64 [00:09<00:00, 18.06entries/s]Calibration: 100%|██████████| 64/64 [00:09<00:00,  6.75entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:09.95)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer tddfa_mobilenet_v1/fc1/conv_op, using max shift instead. delta=0.4256
+[info] No shifts available for layer tddfa_mobilenet_v1/fc1/conv_op, using max shift instead. delta=0.2128
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/tddfa_mobilenet_v1/tddfa_mobilenet_v1.har

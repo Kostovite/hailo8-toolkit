@@ -1,0 +1,7 @@
+UNSUPPORTED hand_landmark_lite/avgpool1 (avgpool): NotImplementedError: hand_landmark_lite/avgpool1: avgpool
+UNSUPPORTED hand_landmark_lite/fc1 (dense): NotImplementedError: hand_landmark_lite/fc1: dense
+UNSUPPORTED hand_landmark_lite/fc2 (dense): NotImplementedError: hand_landmark_lite/fc2: dense
+UNSUPPORTED hand_landmark_lite/fc3 (dense): NotImplementedError: hand_landmark_lite/fc3: dense
+UNSUPPORTED hand_landmark_lite/fc4 (dense): NotImplementedError: hand_landmark_lite/fc4: dense
+50/55 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '31/31', 'dw': '16/16', 'maxpool': '1/1', 'avgpool': '0/1', 'dense': '0/4'}

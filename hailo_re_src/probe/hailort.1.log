@@ -1,0 +1,169 @@
+[2026-10-26 02:48:32.220] [1933565] [HailoRT] [info] [hef.cpp:1994] [get_network_group_and_network_name] No name was given. Addressing all networks of default network_group: probe
+[2026-10-26 02:48:32.221] [1933565] [HailoRT] [info] [hef.cpp:1994] [get_network_group_and_network_name] No name was given. Addressing all networks of default network_group: probe
+[2026-10-26 02:48:32.221] [1933565] [HailoRT] [info] [hef.cpp:1994] [get_network_group_and_network_name] No name was given. Addressing all networks of default network_group: probe
+[2026-10-26 02:48:59.235] [1933565] [HailoRT] [info] [vdevice.cpp:535] [create] Creating vdevice with params: device_count: 1, scheduling_algorithm: NONE, multi_process_service: false
+[2026-10-26 02:48:59.238] [1933565] [HailoRT] [info] [device.cpp:51] [Device] OS Version: Linux 6.1.0-40-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.153-1 (2025-09-20) x86_64
+[2026-10-26 02:48:59.238] [1933565] [HailoRT] [info] [control.cpp:113] [control__parse_identify_results] firmware_version is: 4.23.0
+[2026-10-26 02:48:59.238] [1933565] [HailoRT] [info] [vdevice.cpp:682] [create] VDevice Infos: 0000:02:00.0
+[2026-10-26 02:48:59.244] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.244] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.246] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 7.225949 milliseconds
+[2026-10-26 02:48:59.246] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 7.459889 milliseconds
+[2026-10-26 02:48:59.246] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.205543 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.246] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.213437 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.246] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.247] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.247] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.247] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.247] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.247] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.247] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.248] [1938481] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.248] [1938481] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.248] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.248] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.382716 ms
+[2026-10-26 02:48:59.248] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.389055 ms
+[2026-10-26 02:48:59.249] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.249] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.251] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.276118 milliseconds
+[2026-10-26 02:48:59.251] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.517808 milliseconds
+[2026-10-26 02:48:59.251] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.191053 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.251] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.215078 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.252] [1938484] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.252] [1938484] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.252] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.253] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.384372 ms
+[2026-10-26 02:48:59.253] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.389485 ms
+[2026-10-26 02:48:59.253] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.253] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.255] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.234026 milliseconds
+[2026-10-26 02:48:59.255] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.452221 milliseconds
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.176253 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.181087 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.256] [1938487] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.256] [1938487] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.256] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.257] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.415391 ms
+[2026-10-26 02:48:59.257] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.420394 ms
+[2026-10-26 02:48:59.257] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.257] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.259] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.215454 milliseconds
+[2026-10-26 02:48:59.259] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.406689 milliseconds
+[2026-10-26 02:48:59.259] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.179857 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.259] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.184659 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.259] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.259] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.260] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.260] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.260] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.260] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.260] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.260] [1938490] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.260] [1938490] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.260] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.261] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.400812 ms
+[2026-10-26 02:48:59.261] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.405715 ms
+[2026-10-26 02:48:59.261] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.261] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.263] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.259546 milliseconds
+[2026-10-26 02:48:59.263] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.44508 milliseconds
+[2026-10-26 02:48:59.263] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.181061 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.263] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.185673 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.264] [1938493] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.264] [1938493] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.264] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.265] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.381147 ms
+[2026-10-26 02:48:59.265] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.386439 ms
+[2026-10-26 02:48:59.265] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.265] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.245696 milliseconds
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.431829 milliseconds
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.180989 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.18646 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.267] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.268] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.268] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.268] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.268] [1938496] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.268] [1938496] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.268] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.269] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.367002 ms
+[2026-10-26 02:48:59.269] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.371556 ms
+[2026-10-26 02:48:59.269] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.269] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.298947 milliseconds
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.493738 milliseconds
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.18244 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.186792 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.271] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.272] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.272] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.272] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.273] [1938499] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.273] [1938499] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.273] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.273] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.37765 ms
+[2026-10-26 02:48:59.273] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.382763 ms
+[2026-10-26 02:48:59.274] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.274] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.269312 milliseconds
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.471203 milliseconds
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.181173 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.185924 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.276] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.277] [1938502] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.277] [1938502] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.277] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.277] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.369766 ms
+[2026-10-26 02:48:59.277] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.374334 ms
+[2026-10-26 02:48:59.278] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:75] [print_execution_results] Default Internal buffer planner failed to meet requirements
+[2026-10-26 02:48:59.278] [1933565] [HailoRT] [info] [internal_buffer_manager.cpp:86] [print_execution_results] Default Internal buffer planner executed successfully
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [device_internal.cpp:57] [configure] Configuring HEF took 2.243704 milliseconds
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [vdevice.cpp:780] [configure] Configuring HEF on VDevice took 2.439307 milliseconds
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.169705 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [core_op.cpp:156] [activate] Activating probe took 0.174193 milliseconds. Note that the function is asynchronous and thus the network is not fully activated yet.
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [edge_elements.cpp:52] [create] Created (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [vstream.cpp:754] [InputVStreamImpl] Creating probe/input_layer1...
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [vstream_builder.cpp:102] [create_inputs] Input pipeline 'probe/input_layer1': (HwWriteEl13probe/input_layer1 | hw_frame_size: 8192) >> HW
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [edge_elements.cpp:287] [create] Created (HwReadEl12probe/conv4 | hw_frame_size: 8192)
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [queue_elements.cpp:800] [create] Created (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [vstream.cpp:1114] [OutputVStreamImpl] Creating probe/conv4...
+[2026-10-26 02:48:59.280] [1933565] [HailoRT] [info] [vstream_builder.cpp:220] [create_outputs] Output pipeline 'probe/conv4': HW >> (HwReadEl12probe/conv4 | hw_frame_size: 8192) >> (UserBuffQEl12probe/conv4 | timeout: 10s)
+[2026-10-26 02:48:59.281] [1938505] [HailoRT] [info] [queue_elements.cpp:855] [run_in_thread] Shutdown event was signaled in dequeue of UserBuffQEl12probe/conv4!
+[2026-10-26 02:48:59.281] [1938505] [HailoRT] [info] [queue_elements.cpp:68] [operator()] Thread in element UserBuffQEl12probe/conv4 is not running anymore, exiting..
+[2026-10-26 02:48:59.281] [1933565] [HailoRT] [info] [queue_elements.cpp:46] [~BaseQueueElement] Queue element UserBuffQEl12probe/conv4 has 0 frames in his Queue on destruction
+[2026-10-26 02:48:59.281] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.370523 ms
+[2026-10-26 02:48:59.281] [1933565] [HailoRT] [info] [core_op.cpp:186] [deactivate] Deactivating took 0.374576 ms

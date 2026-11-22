@@ -1,0 +1,25 @@
+In file included from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h:1929,
+                 from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h:5,
+                 from $HOME/.pyxbld/temp.linux-x86_64-cpython-310/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_zoo/core/postprocessing/cython_utils/cython_nms.c:1144:
+/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+[36m<Hailo Model Zoo INFO> Start run for network yolov11n ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+yolo11n.zip:   0%|          | 0.00/8.88M [00:00<?, ?B/s]yolo11n.zip:   0%|          | 20.0k/8.88M [00:00<01:31, 102kB/s]yolo11n.zip:   1%|          | 68.0k/8.88M [00:00<00:50, 184kB/s]yolo11n.zip:   2%|▏         | 156k/8.88M [00:00<00:30, 304kB/s] yolo11n.zip:   4%|▎         | 340k/8.88M [00:00<00:16, 551kB/s]yolo11n.zip:   8%|▊         | 716k/8.88M [00:01<00:08, 1.04MB/s]yolo11n.zip:  16%|█▌        | 1.43M/8.88M [00:01<00:03, 1.97MB/s]yolo11n.zip:  20%|██        | 1.79M/8.88M [00:01<00:05, 1.45MB/s]yolo11n.zip:  46%|████▋     | 4.11M/8.88M [00:01<00:01, 4.19MB/s]yolo11n.zip:  57%|█████▋    | 5.03M/8.88M [00:02<00:00, 4.34MB/s]yolo11n.zip:  67%|██████▋   | 5.94M/8.88M [00:02<00:00, 4.44MB/s]yolo11n.zip:  77%|███████▋  | 6.86M/8.88M [00:02<00:00, 4.53MB/s]yolo11n.zip:  85%|████████▍ | 7.55M/8.88M [00:02<00:00, 4.14MB/s]yolo11n.zip:  86%|████████▌ | 7.64M/8.88M [00:02<00:00, 3.17MB/s]yolo11n.zip: 100%|██████████| 8.88M/8.88M [00:02<00:00, 3.26MB/s]
+[info] Translation started on ONNX model yolov11n
+[info] Restored ONNX model yolov11n (completion time: 00:00:00.10)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.73)
+[info] NMS structure of yolov8 (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: /model.23/cv3.0/cv3.0.2/Conv /model.23/cv2.0/cv2.0.2/Conv /model.23/cv3.1/cv3.1.2/Conv /model.23/cv2.1/cv2.1.2/Conv /model.23/cv2.2/cv2.2.2/Conv /model.23/cv3.2/cv3.2.2/Conv.
+[info] Start nodes mapped from original model: 'images': 'yolov11n/input_layer1'.
+[info] End nodes mapped from original model: '/model.23/cv2.0/cv2.0.2/Conv', '/model.23/cv3.0/cv3.0.2/Conv', '/model.23/cv2.1/cv2.1.2/Conv', '/model.23/cv3.1/cv3.1.2/Conv', '/model.23/cv2.2/cv2.2.2/Conv', '/model.23/cv3.2/cv3.2.2/Conv'.
+[info] Translation completed on ONNX model yolov11n (completion time: 00:00:02.83)
+[info] Appending model script commands to yolov11n from string
+[info] Added nms postprocess command to model script.
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/har/yolov11n.har
+
+real	0m30.961s
+user	0m17.087s
+sys	0m12.236s

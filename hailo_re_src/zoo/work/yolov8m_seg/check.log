@@ -1,0 +1,3 @@
+UNSUPPORTED yolov8m_seg/deconv1 (deconv): NotImplementedError: yolov8m_seg/deconv1: deconv
+135/136 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '103/103', 'ew_add': '12/12', 'concat': '13/13', 'maxpool': '3/3', 'resize': '2/2', 'deconv': '0/1'}

@@ -1,0 +1,10 @@
+MISMATCH fastvit_sa12/input_layer1 (input_layer): 147401/150528 max 15
+UNSUPPORTED fastvit_sa12/batch_norm1 (batch_norm): NotImplementedError: fastvit_sa12/batch_norm1: batch_norm
+UNSUPPORTED fastvit_sa12/batch_norm2 (batch_norm): NotImplementedError: fastvit_sa12/batch_norm2: batch_norm
+UNSUPPORTED fastvit_sa12/avgpool1 (avgpool): NotImplementedError: fastvit_sa12/avgpool1: avgpool
+UNSUPPORTED fastvit_sa12/fc1 (dense): NotImplementedError: fastvit_sa12/fc1: dense
+UNSUPPORTED fastvit_sa12/fc2 (dense): NotImplementedError: fastvit_sa12/fc2: dense
+UNSUPPORTED fastvit_sa12/avgpool2 (avgpool): NotImplementedError: fastvit_sa12/avgpool2: avgpool
+UNSUPPORTED fastvit_sa12/fc3 (dense): NotImplementedError: fastvit_sa12/fc3: dense
+86/94 checked layers exact when chained from raw pixels
+{'input_layer': '0/1', 'normalization': '1/1', 'conv': '41/41', 'dw': '24/24', 'batch_norm': '0/2', 'format_conversion': '4/4', 'matmul': '4/4', 'reduce_max': '2/2', 'ew_sub': '2/2', 'reduce_sum': '2/2', 'ew_mult': '3/3', 'ew_add': '2/2', 'avgpool': '0/2', 'dense': '0/3', 'resize': '1/1'}

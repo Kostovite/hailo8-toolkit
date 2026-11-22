@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network mobilenet_v3 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to mobilenet_v3 from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.71)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:34<35:57, 34.24s/entries]Calibration:   3%|▎         | 2/64 [00:34<14:38, 14.17s/entries]Calibration:   5%|▍         | 3/64 [00:34<07:52,  7.75s/entries]Calibration:   6%|▋         | 4/64 [00:34<04:43,  4.73s/entries]Calibration:   9%|▉         | 6/64 [00:34<02:11,  2.27s/entries]Calibration:  14%|█▍        | 9/64 [00:34<00:59,  1.09s/entries]Calibration:  17%|█▋        | 11/64 [00:35<00:39,  1.35entries/s]Calibration:  20%|██        | 13/64 [00:35<00:26,  1.92entries/s]Calibration:  23%|██▎       | 15/64 [00:35<00:18,  2.64entries/s]Calibration:  27%|██▋       | 17/64 [00:35<00:13,  3.59entries/s]Calibration:  31%|███▏      | 20/64 [00:35<00:08,  5.40entries/s]Calibration:  34%|███▍      | 22/64 [00:35<00:06,  6.77entries/s]Calibration:  38%|███▊      | 24/64 [00:35<00:04,  8.30entries/s]Calibration:  42%|████▏     | 27/64 [00:35<00:03, 10.78entries/s]Calibration:  45%|████▌     | 29/64 [00:35<00:02, 12.23entries/s]Calibration:  48%|████▊     | 31/64 [00:36<00:02, 13.35entries/s]Calibration:  52%|█████▏    | 33/64 [00:36<00:02, 12.66entries/s]Calibration:  55%|█████▍    | 35/64 [00:36<00:02, 13.08entries/s]Calibration:  58%|█████▊    | 37/64 [00:36<00:02, 12.47entries/s]Calibration:  61%|██████    | 39/64 [00:36<00:01, 12.90entries/s]Calibration:  64%|██████▍   | 41/64 [00:36<00:01, 13.47entries/s]Calibration:  67%|██████▋   | 43/64 [00:37<00:01, 13.27entries/s]Calibration:  70%|███████   | 45/64 [00:37<00:01, 13.65entries/s]Calibration:  73%|███████▎  | 47/64 [00:37<00:01, 14.27entries/s]Calibration:  77%|███████▋  | 49/64 [00:37<00:01, 14.48entries/s]Calibration:  80%|███████▉  | 51/64 [00:37<00:00, 14.31entries/s]Calibration:  83%|████████▎ | 53/64 [00:37<00:00, 15.42entries/s]Calibration:  86%|████████▌ | 55/64 [00:37<00:00, 14.25entries/s]Calibration:  89%|████████▉ | 57/64 [00:38<00:00, 13.20entries/s]Calibration:  92%|█████████▏| 59/64 [00:38<00:00, 14.08entries/s]Calibration:  95%|█████████▌| 61/64 [00:38<00:00, 13.98entries/s]Calibration:  98%|█████████▊| 63/64 [00:38<00:00, 13.48entries/s]Calibration: 100%|██████████| 64/64 [00:38<00:00, 13.48entries/s]Calibration: 100%|██████████| 64/64 [00:38<00:00,  1.66entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:41.07)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/mobilenet_v3/mobilenet_v3.har

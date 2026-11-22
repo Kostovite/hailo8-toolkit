@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network arcface_mobilefacenet ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to arcface_mobilefacenet from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.37)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:20<21:55, 20.87s/entries]Calibration:   8%|▊         | 5/64 [00:20<03:04,  3.13s/entries]Calibration:  14%|█▍        | 9/64 [00:21<01:18,  1.43s/entries]Calibration:  20%|██        | 13/64 [00:21<00:41,  1.23entries/s]Calibration:  27%|██▋       | 17/64 [00:21<00:24,  1.95entries/s]Calibration:  33%|███▎      | 21/64 [00:21<00:14,  2.91entries/s]Calibration:  39%|███▉      | 25/64 [00:21<00:09,  4.19entries/s]Calibration:  45%|████▌     | 29/64 [00:21<00:06,  5.80entries/s]Calibration:  52%|█████▏    | 33/64 [00:21<00:03,  7.77entries/s]Calibration:  56%|█████▋    | 36/64 [00:22<00:02,  9.51entries/s]Calibration:  61%|██████    | 39/64 [00:22<00:02, 11.58entries/s]Calibration:  66%|██████▌   | 42/64 [00:22<00:01, 13.91entries/s]Calibration:  72%|███████▏  | 46/64 [00:22<00:01, 17.08entries/s]Calibration:  77%|███████▋  | 49/64 [00:22<00:00, 19.18entries/s]Calibration:  81%|████████▏ | 52/64 [00:22<00:00, 21.19entries/s]Calibration:  86%|████████▌ | 55/64 [00:22<00:00, 22.91entries/s]Calibration:  91%|█████████ | 58/64 [00:22<00:00, 24.34entries/s]Calibration:  95%|█████████▌| 61/64 [00:22<00:00, 25.59entries/s]Calibration: 100%|██████████| 64/64 [00:22<00:00, 26.13entries/s]Calibration: 100%|██████████| 64/64 [00:22<00:00, 26.13entries/s]Calibration: 100%|██████████| 64/64 [00:22<00:00,  2.78entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:23.86)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/arcface_mobilefacenet/arcface_mobilefacenet.har

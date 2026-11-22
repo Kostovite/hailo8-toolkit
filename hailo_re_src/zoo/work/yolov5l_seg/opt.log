@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov5l_seg ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolov5l_seg from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.97)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   3%|▎         | 2/64 [01:05<33:48, 32.72s/entries]Calibration:   6%|▋         | 4/64 [01:06<13:53, 13.89s/entries]Calibration:   9%|▉         | 6/64 [01:08<07:34,  7.83s/entries]Calibration:  12%|█▎        | 8/64 [01:09<04:39,  4.99s/entries]Calibration:  16%|█▌        | 10/64 [01:10<03:03,  3.39s/entries]Calibration:  19%|█▉        | 12/64 [01:11<02:06,  2.44s/entries]Calibration:  22%|██▏       | 14/64 [01:12<01:32,  1.84s/entries]Calibration:  25%|██▌       | 16/64 [01:14<01:11,  1.50s/entries]Calibration:  28%|██▊       | 18/64 [01:15<00:56,  1.24s/entries]Calibration:  31%|███▏      | 20/64 [01:17<00:46,  1.06s/entries]Calibration:  34%|███▍      | 22/64 [01:18<00:39,  1.06entries/s]Calibration:  38%|███▊      | 24/64 [01:19<00:35,  1.14entries/s]Calibration:  41%|████      | 26/64 [01:21<00:29,  1.27entries/s]Calibration:  44%|████▍     | 28/64 [01:22<00:26,  1.37entries/s]Calibration:  47%|████▋     | 30/64 [01:23<00:23,  1.43entries/s]Calibration:  50%|█████     | 32/64 [01:24<00:21,  1.52entries/s]Calibration:  53%|█████▎    | 34/64 [01:25<00:19,  1.53entries/s]Calibration:  56%|█████▋    | 36/64 [01:27<00:17,  1.59entries/s]Calibration:  59%|█████▉    | 38/64 [01:28<00:15,  1.67entries/s]Calibration:  62%|██████▎   | 40/64 [01:29<00:14,  1.64entries/s]Calibration:  66%|██████▌   | 42/64 [01:30<00:13,  1.66entries/s]Calibration:  69%|██████▉   | 44/64 [01:31<00:12,  1.60entries/s]Calibration:  72%|███████▏  | 46/64 [01:33<00:12,  1.48entries/s]Calibration:  75%|███████▌  | 48/64 [01:34<00:10,  1.48entries/s]Calibration:  78%|███████▊  | 50/64 [01:36<00:09,  1.42entries/s]Calibration:  81%|████████▏ | 52/64 [01:37<00:08,  1.46entries/s]Calibration:  84%|████████▍ | 54/64 [01:38<00:06,  1.53entries/s]Calibration:  88%|████████▊ | 56/64 [01:39<00:05,  1.60entries/s]Calibration:  91%|█████████ | 58/64 [01:41<00:03,  1.63entries/s]Calibration:  94%|█████████▍| 60/64 [01:42<00:02,  1.66entries/s]Calibration:  97%|█████████▋| 62/64 [01:43<00:01,  1.64entries/s]Calibration: 100%|██████████| 64/64 [01:44<00:00,  1.69entries/s]Calibration: 100%|██████████| 64/64 [01:44<00:00,  1.69entries/s]Calibration: 100%|██████████| 64/64 [01:44<00:00,  1.63s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:46.99)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov5l_seg/yolov5l_seg.har

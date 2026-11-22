@@ -1,0 +1,17 @@
+compiler script:
+resources_param(max_compute_utilization=0.9, max_compute_16bit_utilization=0.9, max_memory_utilization=0.9, max_control_utilization=0.9, max_input_aligner_utilization=0.9, max_apu_utilization=0.9)
+context_switch_param(toposort_mode=dfs)
+
+[info] Loading model script commands to best from string
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 1m 31s 932ms
+[info] Trying to compile the network in a single context
+[info] Single context flow failed: Recoverable single context error
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 1m 43s 136ms
+[info] Using Multi-context flow
+[info] Resources optimization params: max_control_utilization=90%, max_compute_utilization=90%, max_compute_16bit_utilization=90%, max_memory_utilization (weights)=90%, max_input_aligner_utilization=90%, max_apu_utilization=90%
+[info] Finding the best partition to contexts...

@@ -1,0 +1,8 @@
+status 0 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+K=5: model cost 24.50 MiB/frame (out+in), bound 24.50
+  ctx0: 37 layers subclust=102/134 apus=27/43 input_al=28/54 layer_co=50/54 l2_16bit=53904/151440
+  ctx1: 70 layers subclust=121/134 apus=43/43 input_al=43/54 layer_co=54/54 l2_16bit=151440/151440
+  ctx2: 43 layers subclust=121/134 apus=37/43 input_al=41/54 layer_co=51/54 l2_16bit=66176/151440
+  ctx3: 35 layers subclust=134/134 apus=38/43 input_al=54/54 layer_co=53/54 l2_16bit=71168/151440
+  ctx4: 10 layers subclust=22/134 apus=7/43 input_al=7/54 layer_co=14/54 l2_16bit=4224/151440
+wrote ilp_ag_k5_s1.0.json

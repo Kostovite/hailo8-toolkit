@@ -8,8 +8,9 @@ W=$RUN/fastc/$V; mkdir -p $W; A=$W/script.alls; : > $A
 s=$(date +%s)
 ( henv; export LD_PRELOAD=/mnt/storage/lib_project/models/Hailo_model/hailo_re/turbo/libhailo_turbo2.so${LD_PRELOAD:+:$LD_PRELOAD}
   export HAILO_CPCACHE=$C/compile_cache/cpsat HAILO_CPCACHE_STATS=$W/cpcache_stats
+  mkdir -p $W/sdk_home/etc/hailo/dfc; export VIRTUAL_ENV=$W/sdk_home CONDA_PREFIX=$W/sdk_home  # no shared log rotation race
   cd $W && systemd-run --user --scope -q -p MemoryMax=${MEMMAX:-24G} nice -n 5 "$HPY" -u $HRE/compile_hef.py $RUN/q.har $W/model.hef $A ) > $W/compile.log 2>&1
 rc=$?; dt=$(( $(date +%s) - s ))
 if [ $rc -ne 0 ] || [ ! -s $W/model.hef ]; then echo "$V util=${U:-default} COMPILE_FAILED ${dt}s $(grep -E '\[error\]' $W/compile.log | tail -1 | cut -c1-150)" >> $RUN/fastc/results.txt; exit 1; fi
-g=$( (henv; "$HPY" -u $QAT/tools/fixes/hailo8_guard.py $W/model.hef $RUN/q.har) 2>&1 | tail -1)
+g=$( (henv; "$HPY" -u $QAT/tools/fixes/hailo8_guard.py $W/model.hef $W/model_compiled.har "" $RUN/q.har) 2>&1 | tail -1)
 echo "$V util=${U:-default} compiled ${dt}s | $g | $($C/fastc/chipcheck.sh $RUN $W/model.hef $V)" >> $RUN/fastc/results.txt

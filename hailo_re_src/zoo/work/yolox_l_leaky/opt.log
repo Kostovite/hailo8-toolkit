@@ -1,0 +1,37 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolox_l_leaky ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolox_l_leaky from l0.alls
+[info] The flag emulator_support was not given for bgr_to_rgb conversion. using emulator_support=True. See usage guidelines at: Dataflow Compiler User Guide / Building Models / Model Optimization / Model Scripts
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.76)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/layers/activations/leaky_relu.py:41: UserWarning: Argument `alpha` is deprecated. Use `negative_slope` instead.
+  warnings.warn(
+Calibration:   3%|▎         | 2/64 [01:11<36:44, 35.56s/entries]Calibration:   6%|▋         | 4/64 [01:12<14:56, 14.95s/entries]Calibration:   9%|▉         | 6/64 [01:13<08:07,  8.40s/entries]Calibration:  12%|█▎        | 8/64 [01:14<04:58,  5.33s/entries]Calibration:  16%|█▌        | 10/64 [01:15<03:16,  3.64s/entries]Calibration:  19%|█▉        | 12/64 [01:17<02:16,  2.62s/entries]Calibration:  22%|██▏       | 14/64 [01:18<01:38,  1.97s/entries]Calibration:  25%|██▌       | 16/64 [01:19<01:13,  1.53s/entries]Calibration:  28%|██▊       | 18/64 [01:20<00:56,  1.23s/entries]Calibration:  31%|███▏      | 20/64 [01:21<00:44,  1.02s/entries]Calibration:  34%|███▍      | 22/64 [01:23<00:37,  1.11entries/s]Calibration:  38%|███▊      | 24/64 [01:24<00:32,  1.24entries/s]Calibration:  41%|████      | 26/64 [01:25<00:28,  1.32entries/s]Calibration:  44%|████▍     | 28/64 [01:26<00:24,  1.46entries/s]Calibration:  47%|████▋     | 30/64 [01:27<00:22,  1.51entries/s]Calibration:  50%|█████     | 32/64 [01:29<00:20,  1.55entries/s]Calibration:  53%|█████▎    | 34/64 [01:30<00:19,  1.55entries/s]Calibration:  56%|█████▋    | 36/64 [01:31<00:19,  1.47entries/s]Calibration:  59%|█████▉    | 38/64 [01:33<00:17,  1.51entries/s]Calibration:  62%|██████▎   | 40/64 [01:34<00:15,  1.55entries/s]Calibration:  66%|██████▌   | 42/64 [01:35<00:13,  1.62entries/s]Calibration:  69%|██████▉   | 44/64 [01:36<00:12,  1.66entries/s]Calibration:  72%|███████▏  | 46/64 [01:37<00:10,  1.72entries/s]Calibration:  75%|███████▌  | 48/64 [01:38<00:08,  1.80entries/s]Calibration:  78%|███████▊  | 50/64 [01:39<00:07,  1.83entries/s]Calibration:  81%|████████▏ | 52/64 [01:40<00:06,  1.86entries/s]Calibration:  84%|████████▍ | 54/64 [01:41<00:05,  1.92entries/s]Calibration:  88%|████████▊ | 56/64 [01:42<00:04,  1.93entries/s]Calibration:  91%|█████████ | 58/64 [01:43<00:03,  1.97entries/s]Calibration:  94%|█████████▍| 60/64 [01:44<00:02,  1.99entries/s]Calibration:  97%|█████████▋| 62/64 [01:45<00:01,  1.98entries/s]Calibration: 100%|██████████| 64/64 [01:46<00:00,  1.93entries/s]Calibration: 100%|██████████| 64/64 [01:46<00:00,  1.93entries/s]Calibration: 100%|██████████| 64/64 [01:46<00:00,  1.67s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:49.62)
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   3%|▎         | 2/64 [01:04<33:17, 32.22s/entries]Calibration:   6%|▋         | 4/64 [01:05<13:36, 13.61s/entries]Calibration:   9%|▉         | 6/64 [01:06<07:27,  7.71s/entries]Calibration:  12%|█▎        | 8/64 [01:08<04:34,  4.91s/entries]Calibration:  16%|█▌        | 10/64 [01:09<03:01,  3.37s/entries]Calibration:  19%|█▉        | 12/64 [01:11<02:09,  2.49s/entries]Calibration:  22%|██▏       | 14/64 [01:12<01:34,  1.90s/entries]Calibration:  25%|██▌       | 16/64 [01:13<01:13,  1.53s/entries]Calibration:  28%|██▊       | 18/64 [01:15<00:59,  1.29s/entries]Calibration:  31%|███▏      | 20/64 [01:16<00:48,  1.10s/entries]Calibration:  34%|███▍      | 22/64 [01:18<00:41,  1.02entries/s]Calibration:  38%|███▊      | 24/64 [01:19<00:35,  1.12entries/s]Calibration:  41%|████      | 26/64 [01:20<00:31,  1.20entries/s]Calibration:  44%|████▍     | 28/64 [01:22<00:27,  1.29entries/s]Calibration:  47%|████▋     | 30/64 [01:23<00:24,  1.37entries/s]Calibration:  50%|█████     | 32/64 [01:24<00:22,  1.41entries/s]Calibration:  53%|█████▎    | 34/64 [01:26<00:21,  1.38entries/s]Calibration:  56%|█████▋    | 36/64 [01:27<00:20,  1.38entries/s]Calibration:  59%|█████▉    | 38/64 [01:29<00:18,  1.44entries/s]Calibration:  62%|██████▎   | 40/64 [01:30<00:15,  1.56entries/s]Calibration:  66%|██████▌   | 42/64 [01:31<00:13,  1.59entries/s]Calibration:  69%|██████▉   | 44/64 [01:32<00:12,  1.57entries/s]Calibration:  72%|███████▏  | 46/64 [01:33<00:10,  1.67entries/s]Calibration:  75%|███████▌  | 48/64 [01:34<00:09,  1.76entries/s]Calibration:  78%|███████▊  | 50/64 [01:35<00:07,  1.77entries/s]Calibration:  81%|████████▏ | 52/64 [01:36<00:06,  1.78entries/s]Calibration:  84%|████████▍ | 54/64 [01:37<00:05,  1.82entries/s]Calibration:  88%|████████▊ | 56/64 [01:38<00:04,  1.85entries/s]Calibration:  91%|█████████ | 58/64 [01:39<00:03,  1.84entries/s]Calibration:  94%|█████████▍| 60/64 [01:40<00:02,  1.88entries/s]Calibration:  97%|█████████▋| 62/64 [01:41<00:01,  1.92entries/s]Calibration: 100%|██████████| 64/64 [01:43<00:00,  1.93entries/s]Calibration: 100%|██████████| 64/64 [01:43<00:00,  1.93entries/s]Calibration: 100%|██████████| 64/64 [01:43<00:00,  1.61s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:46.04)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer yolox_l_leaky/conv62/conv_op, using max shift instead. delta=0.1973
+[info] No shifts available for layer yolox_l_leaky/conv62/conv_op, using max shift instead. delta=0.0986
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolox_l_leaky/yolox_l_leaky.har

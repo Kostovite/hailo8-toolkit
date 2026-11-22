@@ -1,0 +1,6 @@
+UNSUPPORTED centernet_resnet_v1_50_postprocess/deconv1 (deconv): NotImplementedError: centernet_resnet_v1_50_postprocess/deconv1: deconv
+UNSUPPORTED centernet_resnet_v1_50_postprocess/deconv2 (deconv): NotImplementedError: centernet_resnet_v1_50_postprocess/deconv2: deconv
+UNSUPPORTED centernet_resnet_v1_50_postprocess/deconv3 (deconv): NotImplementedError: centernet_resnet_v1_50_postprocess/deconv3: deconv
+UNSUPPORTED centernet_resnet_v1_50_postprocess/external_pad1 (external_pad): NotImplementedError: centernet_resnet_v1_50_postprocess/external_pad1: external_pad
+68/72 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '63/63', 'maxpool': '2/2', 'deconv': '0/3', 'external_pad': '0/1', 'ew_add': '1/1'}

@@ -1,0 +1,33 @@
+2026-10-23 23:25:56.357699: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 23:25:56.400098: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-23 23:26:02.050223: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2026-10-23 23:26:02.050262: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:137] retrieving CUDA diagnostic information for host: uslib
+2026-10-23 23:26:02.050268: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:144] hostname: uslib
+2026-10-23 23:26:02.050293: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:168] libcuda reported version is: 560.28.3
+2026-10-23 23:26:02.050311: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:172] kernel reported version is: 560.28.3
+2026-10-23 23:26:02.050315: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:259] kernel version seems to match DSO: 560.28.3
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/capture.py", line 210, in <module>
+    flow.run(tf.data.Dataset.from_tensor_slices((img, np.zeros(1, np.float32))), 1, 1)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/inference_flow.py", line 83, in run
+    self.build(dataset)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/layers/layer.py", line 226, in build_wrapper
+    original_build_method(*args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/inference_flow.py", line 76, in build
+    self._model.build(get_build_inputs(dataset))
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/layers/layer.py", line 226, in build_wrapper
+    original_build_method(*args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/utils/distributed_utils.py", line 122, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/model/hailo_model/hailo_model.py", line 1260, in build
+    layer.build(layer.input_shapes)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/layers/layer.py", line 226, in build_wrapper
+    original_build_method(*args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/hailo_layers/base_hailo_layer.py", line 1577, in build
+    self._verify_and_set_hn_io_shapes()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/hailo_layers/hailo_io.py", line 234, in _verify_and_set_hn_io_shapes
+    super()._verify_and_set_hn_io_shapes()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/hailo_layers/base_hailo_layer.py", line 1692, in _verify_and_set_hn_io_shapes
+    raise AccelerasValueError(
+hailo_model_optimization.acceleras.utils.acceleras_exceptions.AccelerasValueError: Inference input shapes [[-1, 78, 120, 3]] for layer espcn_x4/input_layer1 does not match HN shapes [[-1, 78, 120, 1]]

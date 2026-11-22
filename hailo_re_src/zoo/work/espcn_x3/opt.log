@@ -1,0 +1,27 @@
+[36m<Hailo Model Zoo INFO> Start run for network espcn_x3 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to espcn_x3 from l0.alls
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.02)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:01<02:05,  1.99s/entries]Calibration:  30%|██▉       | 19/64 [00:02<00:03, 12.50entries/s]Calibration:  59%|█████▉    | 38/64 [00:02<00:00, 27.87entries/s]Calibration:  89%|████████▉ | 57/64 [00:02<00:00, 45.65entries/s]Calibration: 100%|██████████| 64/64 [00:02<00:00, 45.65entries/s]Calibration: 100%|██████████| 64/64 [00:02<00:00, 27.29entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:02.42)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/espcn_x3/espcn_x3.har

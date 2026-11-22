@@ -1,0 +1,51 @@
+[info] Starting Layer Noise Analysis
+Full Quant Analysis:   0%|          | 0/4 [00:00<?, ?iterations/s]Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/noise_analysis.py", line 17, in <module>
+    runner.analyze_noise(x, batch_size=8, data_count=n, analyze_mode=os.environ.get("MODE", "simple"))
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 2136, in analyze_noise
+    self._analyze_noise(
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py", line 16, in wrapped_func
+    return func(self, *args, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py", line 2158, in _analyze_noise
+    return self._sdk_backend.run_layer_analysis_tool(data, data_count, batch_size, analyze_mode, **kwargs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py", line 1114, in run_layer_analysis_tool
+    analyzer.run()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py", line 55, in run
+    return super().run()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/algorithm_base.py", line 159, in run
+    self._run_int()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/hailo_layer_noise_analysis.py", line 84, in _run_int
+    self.analyze_full_quant_net()
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/hailo_layer_noise_analysis.py", line 217, in analyze_full_quant_net
+    predict_function(inputs)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/tmp/__autograph_generated_file1n3tpeqj.py", line 13, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(lat_model), (ag__.ld(data),), dict(training=False), fscope)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/lat_utils/lat_model.py", line 423, in call
+    metric.update_state(native, numeric, partial_numeric=partial_numeric)
+  File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/lat_utils/lat_model.py", line 23, in update_state
+    self.noise_energy.assign_add(tf.reduce_mean((native - numeric) ** 2))
+ValueError: in user code:
+
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/hailo_layer_noise_analysis.py", line 211, in predict_function  *
+        return lat_model(data, training=False)
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler  **
+        raise e.with_traceback(filtered_tb) from None
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/lat_utils/lat_model.py", line 423, in call
+        metric.update_state(native, numeric, partial_numeric=partial_numeric)
+    File "/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/lat_utils/lat_model.py", line 23, in update_state
+        self.noise_energy.assign_add(tf.reduce_mean((native - numeric) ** 2))
+
+    ValueError: Exception encountered when calling LATModel.call().
+    
+    [1mDimensions must be equal, but are 64 and 66 for '{{node lat_model_1/sub_300}} = Sub[T=DT_FLOAT](lat_model_1/conv_feature_splitter6_2_1/act_op_1/Identity, lat_model_1/conv_feature_splitter6_2_3/output_op_1/mul)' with input shapes: [8,1,400,64], [8,1,400,66].[0m
+    
+    Arguments received by LATModel.call():
+      • inputs=tf.Tensor(shape=(8, 640, 640, 3), dtype=float32)
+
+Full Quant Analysis:   0%|          | 0/4 [00:46<?, ?iterations/s]

@@ -1,0 +1,32 @@
+[36m<Hailo Model Zoo INFO> Start run for network clip_resnet_50x4_image_encoder ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to clip_resnet_50x4_image_encoder from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.22)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:56<58:56, 56.13s/entries]Calibration:   3%|▎         | 2/64 [00:56<24:07, 23.35s/entries]Calibration:   5%|▍         | 3/64 [00:56<13:06, 12.89s/entries]Calibration:   6%|▋         | 4/64 [00:57<07:55,  7.92s/entries]Calibration:   8%|▊         | 5/64 [00:57<05:06,  5.19s/entries]Calibration:   9%|▉         | 6/64 [00:57<03:25,  3.54s/entries]Calibration:  11%|█         | 7/64 [00:58<02:20,  2.47s/entries]Calibration:  12%|█▎        | 8/64 [00:58<01:39,  1.78s/entries]Calibration:  14%|█▍        | 9/64 [00:58<01:12,  1.31s/entries]Calibration:  16%|█▌        | 10/64 [00:59<00:54,  1.02s/entries]Calibration:  17%|█▋        | 11/64 [00:59<00:42,  1.26entries/s]Calibration:  19%|█▉        | 12/64 [00:59<00:32,  1.58entries/s]Calibration:  20%|██        | 13/64 [00:59<00:25,  1.97entries/s]Calibration:  22%|██▏       | 14/64 [01:00<00:21,  2.34entries/s]Calibration:  23%|██▎       | 15/64 [01:00<00:18,  2.71entries/s]Calibration:  25%|██▌       | 16/64 [01:00<00:15,  3.04entries/s]Calibration:  27%|██▋       | 17/64 [01:00<00:13,  3.43entries/s]Calibration:  28%|██▊       | 18/64 [01:01<00:12,  3.67entries/s]Calibration:  30%|██▉       | 19/64 [01:01<00:11,  3.80entries/s]Calibration:  31%|███▏      | 20/64 [01:01<00:12,  3.55entries/s]Calibration:  33%|███▎      | 21/64 [01:01<00:12,  3.57entries/s]Calibration:  34%|███▍      | 22/64 [01:02<00:11,  3.79entries/s]Calibration:  36%|███▌      | 23/64 [01:02<00:11,  3.46entries/s]Calibration:  38%|███▊      | 24/64 [01:02<00:11,  3.38entries/s]Calibration:  39%|███▉      | 25/64 [01:03<00:11,  3.31entries/s]Calibration:  41%|████      | 26/64 [01:03<00:11,  3.24entries/s]Calibration:  42%|████▏     | 27/64 [01:03<00:11,  3.12entries/s]Calibration:  44%|████▍     | 28/64 [01:04<00:11,  3.03entries/s]Calibration:  45%|████▌     | 29/64 [01:04<00:11,  3.04entries/s]Calibration:  47%|████▋     | 30/64 [01:04<00:11,  2.98entries/s]Calibration:  48%|████▊     | 31/64 [01:05<00:11,  2.97entries/s]Calibration:  50%|█████     | 32/64 [01:05<00:10,  2.94entries/s]Calibration:  52%|█████▏    | 33/64 [01:05<00:11,  2.78entries/s]Calibration:  53%|█████▎    | 34/64 [01:06<00:11,  2.65entries/s]Calibration:  55%|█████▍    | 35/64 [01:06<00:11,  2.55entries/s]Calibration:  56%|█████▋    | 36/64 [01:07<00:10,  2.66entries/s]Calibration:  58%|█████▊    | 37/64 [01:07<00:10,  2.66entries/s]Calibration:  59%|█████▉    | 38/64 [01:08<00:11,  2.34entries/s]Calibration:  61%|██████    | 39/64 [01:08<00:10,  2.50entries/s]Calibration:  62%|██████▎   | 40/64 [01:08<00:09,  2.55entries/s]Calibration:  64%|██████▍   | 41/64 [01:09<00:08,  2.72entries/s]Calibration:  66%|██████▌   | 42/64 [01:09<00:07,  2.81entries/s]Calibration:  67%|██████▋   | 43/64 [01:09<00:07,  2.77entries/s]Calibration:  69%|██████▉   | 44/64 [01:10<00:07,  2.76entries/s]Calibration:  70%|███████   | 45/64 [01:10<00:06,  2.83entries/s]Calibration:  72%|███████▏  | 46/64 [01:10<00:06,  2.84entries/s]Calibration:  73%|███████▎  | 47/64 [01:22<01:04,  3.79s/entries]Calibration:  75%|███████▌  | 48/64 [01:23<00:44,  2.78s/entries]Calibration:  77%|███████▋  | 49/64 [01:23<00:31,  2.08s/entries]Calibration:  78%|███████▊  | 50/64 [01:23<00:22,  1.60s/entries]Calibration:  80%|███████▉  | 51/64 [01:24<00:16,  1.26s/entries]Calibration:  81%|████████▏ | 52/64 [01:24<00:12,  1.01s/entries]Calibration:  83%|████████▎ | 53/64 [01:25<00:08,  1.23entries/s]Calibration:  84%|████████▍ | 54/64 [01:25<00:06,  1.51entries/s]Calibration:  86%|████████▌ | 55/64 [01:25<00:05,  1.70entries/s]Calibration:  88%|████████▊ | 56/64 [01:26<00:04,  1.94entries/s]Calibration:  89%|████████▉ | 57/64 [01:26<00:03,  2.12entries/s]Calibration:  91%|█████████ | 58/64 [01:26<00:02,  2.36entries/s]Calibration:  92%|█████████▏| 59/64 [01:27<00:01,  2.55entries/s]Calibration:  94%|█████████▍| 60/64 [01:27<00:01,  2.57entries/s]Calibration:  95%|█████████▌| 61/64 [01:28<00:01,  2.62entries/s]Calibration:  97%|█████████▋| 62/64 [01:28<00:00,  2.92entries/s]Calibration:  98%|█████████▊| 63/64 [01:28<00:00,  3.23entries/s]Calibration: 100%|██████████| 64/64 [01:28<00:00,  3.25entries/s]Calibration: 100%|██████████| 64/64 [01:28<00:00,  3.25entries/s]Calibration: 100%|██████████| 64/64 [01:28<00:00,  1.39s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:32.18)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.07)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer clip_resnet_50x4_image_encoder/conv75/conv_op, using max shift instead. delta=0.1056
+[info] No shifts available for layer clip_resnet_50x4_image_encoder/conv75/conv_op, using max shift instead. delta=0.0528
+[info] activation fitting started for clip_resnet_50x4_image_encoder/reduce_sum_softmax1/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/clip_resnet_50x4_image_encoder/clip_resnet_50x4_image_encoder.har

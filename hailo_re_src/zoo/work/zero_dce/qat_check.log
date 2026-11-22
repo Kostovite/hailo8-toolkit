@@ -1,0 +1,7 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+QATNet: 8 MAC modules, 24 APUs, 8 atomic chains
+qatfast == graph26 on 44/44 layers (1 not produced by qatfast)
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '7/7', 'concat': '3/3', 'feature_multiplier': '8/8', 'ew_sub': '8/8', 'ew_mult': '8/8', 'ew_add': '8/8'}
+backward ok: 80/80 parameter tensors received a non-zero gradient

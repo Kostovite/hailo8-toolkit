@@ -1,0 +1,3 @@
+step 1/40 loss 0.7517 gt 0.5256 kd_cls 0.0004 kd_box 0.1329 ovf 92.8 0.17 img/s
+step 20/40 loss 0.7055 gt 0.5071 kd_cls 0.0035 kd_box 0.1028 ovf 92.1 2.73 img/s
+step 40/40 loss 0.6821 gt 0.4906 kd_cls 0.0008 kd_box 0.0995 ovf 91.2 4.57 img/s

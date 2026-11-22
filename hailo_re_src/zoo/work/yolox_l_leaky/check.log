@@ -1,0 +1,4 @@
+UNSUPPORTED yolox_l_leaky/space_to_depth1 (space_to_depth): NotImplementedError: yolox_l_leaky/space_to_depth1: space_to_depth
+UNSUPPORTED yolox_l_leaky/yolox_nms_postprocess (postprocess): NotImplementedError: yolox_l_leaky/yolox_nms_postprocess: postprocess
+172/174 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'conv': '132/132', 'space_to_depth': '0/1', 'ew_add': '21/21', 'concat': '13/13', 'maxpool': '3/3', 'resize': '2/2', 'postprocess': '0/1'}

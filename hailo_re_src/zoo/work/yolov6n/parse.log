@@ -1,0 +1,26 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov6n ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model yolov6n
+[info] Restored ONNX model yolov6n (completion time: 00:00:00.33)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:02.76)
+[info] Simplified ONNX model for a parsing retry attempt (completion time: 00:00:06.44)
+[info] According to recommendations, retrying parsing with end node names: ['Mul_250', 'Slice_199', 'Slice_238', 'Mul_194', 'Slice_126', 'Mul_138', 'Slice_143', 'Slice_182', 'Slice_255'].
+[info] Translation started on ONNX model yolov6n
+[info] Restored ONNX model yolov6n (completion time: 00:00:00.19)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:02.65)
+[info] NMS structure of yolox (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: Sigmoid_105 Conv_102 Sigmoid_104 Sigmoid_161 Conv_158 Sigmoid_160 Conv_214 Sigmoid_216 Sigmoid_217.
+[info] Start nodes mapped from original model: 'image_arrays': 'yolov6n/input_layer1'.
+[info] End nodes mapped from original model: 'Mul_250', 'Slice_199', 'Slice_238', 'Mul_194', 'Slice_126', 'Mul_138', 'Slice_143', 'Slice_182', 'Slice_255'.
+[info] Translation completed on ONNX model yolov6n (completion time: 00:00:04.55)
+[info] Translation started on ONNX model yolov6n
+[info] Restored ONNX model yolov6n (completion time: 00:00:00.12)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:02.10)
+[info] NMS structure of yolox (or equivalent architecture) was detected.
+[info] In order to use HailoRT post-processing capabilities, these end node names should be used: Sigmoid_105 Conv_102 Sigmoid_104 Sigmoid_161 Conv_158 Sigmoid_160 Sigmoid_217 Conv_214 Sigmoid_216.
+[info] Start nodes mapped from original model: 'image_arrays': 'yolov6n/input_layer1'.
+[info] End nodes mapped from original model: 'Sigmoid_105', 'Conv_102', 'Sigmoid_104', 'Sigmoid_161', 'Conv_158', 'Sigmoid_160', 'Conv_214', 'Sigmoid_216', 'Sigmoid_217'.
+[info] Translation completed on ONNX model yolov6n (completion time: 00:00:03.81)
+[info] Appending model script commands to yolov6n from string
+[info] Added nms postprocess command to model script.
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov6n/yolov6n.har

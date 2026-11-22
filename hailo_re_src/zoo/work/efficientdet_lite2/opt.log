@@ -1,0 +1,33 @@
+[36m<Hailo Model Zoo INFO> Start run for network efficientdet_lite2 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to efficientdet_lite2 from l0.alls
+[info] The activation function of layer efficientdet_lite2/conv92 was replaced by a Sigmoid
+[info] The activation function of layer efficientdet_lite2/conv101 was replaced by a Sigmoid
+[info] The activation function of layer efficientdet_lite2/conv110 was replaced by a Sigmoid
+[info] The activation function of layer efficientdet_lite2/conv119 was replaced by a Sigmoid
+[info] The activation function of layer efficientdet_lite2/conv128 was replaced by a Sigmoid
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:02.38)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [02:06<31:40, 31.67s/entries]Calibration:  12%|█▎        | 8/64 [02:07<12:17, 13.17s/entries]Calibration:  19%|█▉        | 12/64 [02:08<06:17,  7.25s/entries]Calibration:  25%|██▌       | 16/64 [02:09<03:36,  4.50s/entries]Calibration:  31%|███▏      | 20/64 [02:10<02:10,  2.96s/entries]Calibration:  38%|███▊      | 24/64 [02:11<01:21,  2.03s/entries]Calibration:  44%|████▍     | 28/64 [02:12<00:51,  1.43s/entries]Calibration:  50%|█████     | 32/64 [02:13<00:33,  1.05s/entries]Calibration:  56%|█████▋    | 36/64 [02:13<00:22,  1.27entries/s]Calibration:  62%|██████▎   | 40/64 [02:14<00:14,  1.64entries/s]Calibration:  69%|██████▉   | 44/64 [02:15<00:09,  2.04entries/s]Calibration:  75%|███████▌  | 48/64 [02:16<00:06,  2.47entries/s]Calibration:  81%|████████▏ | 52/64 [02:17<00:04,  2.91entries/s]Calibration:  88%|████████▊ | 56/64 [02:18<00:02,  3.34entries/s]Calibration:  94%|█████████▍| 60/64 [02:18<00:01,  3.72entries/s]Calibration: 100%|██████████| 64/64 [02:19<00:00,  4.11entries/s]Calibration: 100%|██████████| 64/64 [02:19<00:00,  4.11entries/s]Calibration: 100%|██████████| 64/64 [02:19<00:00,  2.18s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:02:24.39)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/efficientdet_lite2/efficientdet_lite2.har

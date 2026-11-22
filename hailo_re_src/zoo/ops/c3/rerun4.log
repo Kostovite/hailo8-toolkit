@@ -1,0 +1,8 @@
+R_Equal done
+LinearAttention_op27 done
+And_cast done
+STFT_power done
+OneHot_argmax done
+Hardmax_C_onehot done
+Einsum_matmul done
+R_DFT_W done

@@ -1,0 +1,2 @@
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+EXACT 567/567 layer-checks, 0 bad layers (6 imgs, ints=trained)

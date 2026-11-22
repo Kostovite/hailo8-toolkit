@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network cas_vit_t ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model cas_vit_t
+[info] Restored ONNX model cas_vit_t (completion time: 00:00:04.57)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:08.35)
+[info] Start nodes mapped from original model: 'input.1': 'cas_vit_t/input_layer1'.
+[info] End nodes mapped from original model: '/head/Gemm'.
+[info] Translation completed on ONNX model cas_vit_t (completion time: 00:00:18.82)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/cas_vit_t/cas_vit_t.har

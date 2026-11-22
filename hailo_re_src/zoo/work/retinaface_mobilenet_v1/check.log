@@ -1,0 +1,8 @@
+UNSUPPORTED retinaface_mobilenet_v1/external_pad1 (external_pad): NotImplementedError: retinaface_mobilenet_v1/external_pad1: external_pad
+UNSUPPORTED retinaface_mobilenet_v1/external_pad2 (external_pad): NotImplementedError: retinaface_mobilenet_v1/external_pad2: external_pad
+UNSUPPORTED retinaface_mobilenet_v1/external_pad3 (external_pad): NotImplementedError: retinaface_mobilenet_v1/external_pad3: external_pad
+UNSUPPORTED retinaface_mobilenet_v1/external_pad4 (external_pad): NotImplementedError: retinaface_mobilenet_v1/external_pad4: external_pad
+UNSUPPORTED retinaface_mobilenet_v1/external_pad5 (external_pad): NotImplementedError: retinaface_mobilenet_v1/external_pad5: external_pad
+UNSUPPORTED retinaface_mobilenet_v1/external_pad6 (external_pad): NotImplementedError: retinaface_mobilenet_v1/external_pad6: external_pad
+65/71 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'conv': '44/44', 'dw': '13/13', 'external_pad': '0/6', 'concat': '3/3', 'resize': '2/2', 'ew_add': '2/2'}

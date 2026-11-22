@@ -1,0 +1,6 @@
+MISMATCH efficientnet_lite4/input_layer1 (input_layer): 266233/270000 max 20
+UNSUPPORTED efficientnet_lite4/avgpool1 (avgpool): NotImplementedError: efficientnet_lite4/avgpool1: avgpool
+UNSUPPORTED efficientnet_lite4/fc1 (dense): NotImplementedError: efficientnet_lite4/fc1: dense
+UNSUPPORTED efficientnet_lite4/logits_layer1 (postprocess): NotImplementedError: efficientnet_lite4/logits_layer1: postprocess
+92/96 checked layers exact when chained from raw pixels
+{'input_layer': '0/1', 'normalization': '1/1', 'conv': '61/61', 'dw': '30/30', 'avgpool': '0/1', 'dense': '0/1', 'postprocess': '0/1'}

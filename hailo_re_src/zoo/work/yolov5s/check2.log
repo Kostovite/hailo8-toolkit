@@ -1,0 +1,4 @@
+MISMATCH yolov5s/space_to_depth1 (space_to_depth): 622796/1228800 max 207
+UNSUPPORTED yolov5s/yolov5_nms_postprocess (postprocess): NotImplementedError: NotImplementedError: yolov5s/yolov5_nms_postprocess: postprocess | chain: yolov5s/yolov5_nms_postprocess: no captured op
+105/107 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'space_to_depth': '0/1', 'conv': '70/70', 'ew_add': '7/7', 'concat': '13/13', 'batch_norm': '8/8', 'maxpool': '3/3', 'resize': '2/2', 'postprocess': '0/1'}

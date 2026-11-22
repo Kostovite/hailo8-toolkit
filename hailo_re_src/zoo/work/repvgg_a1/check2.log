@@ -1,0 +1,2 @@
+26/26 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '22/22', 'avgpool': '1/1', 'dense': '1/1'}

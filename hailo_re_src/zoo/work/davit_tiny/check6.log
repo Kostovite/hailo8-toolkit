@@ -1,0 +1,45 @@
+UNSUPPORTED davit_tiny/external_pad1 (external_pad): KeyError: 'perm'
+UNSUPPORTED davit_tiny/square1_layer_normalization1 (feature_multiplier): IndexError: index 602121 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED davit_tiny/square1_layer_normalization2 (feature_multiplier): IndexError: index 602121 is out of bounds for dimension 0 with size 301056
+MISMATCH davit_tiny/precision_concat_matmul1 (concat): 13250/18816 max 193
+UNSUPPORTED davit_tiny/square1_layer_normalization3 (feature_multiplier): IndexError: index 903224 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED davit_tiny/square1_layer_normalization4 (feature_multiplier): IndexError: index 1605667 is out of bounds for dimension 0 with size 301056
+MISMATCH davit_tiny/precision_concat_matmul3 (concat): 129/192 max 255
+UNSUPPORTED davit_tiny/square1_layer_normalization5 (feature_multiplier): IndexError: index 602121 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED davit_tiny/square1_layer_normalization6 (feature_multiplier): IndexError: index 802825 is out of bounds for dimension 0 with size 301056
+UNSUPPORTED davit_tiny/square1_layer_normalization7 (feature_multiplier): IndexError: index 752780 is out of bounds for dimension 0 with size 150528
+MISMATCH davit_tiny/precision_concat_matmul5 (concat): 7218/9408 max 192
+UNSUPPORTED davit_tiny/square1_layer_normalization8 (feature_multiplier): IndexError: index 150572 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED davit_tiny/square1_layer_normalization9 (feature_multiplier): IndexError: index 1445261 is out of bounds for dimension 0 with size 150528
+MISMATCH davit_tiny/precision_concat_matmul7 (concat): 344/384 max 216
+UNSUPPORTED davit_tiny/square1_layer_normalization10 (feature_multiplier): IndexError: index 1445261 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED davit_tiny/square1_layer_normalization11 (feature_multiplier): IndexError: index 152111 is out of bounds for dimension 0 with size 150528
+UNSUPPORTED davit_tiny/square1_layer_normalization12 (feature_multiplier): IndexError: index 602285 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/precision_concat_matmul9 (concat): 3670/4704 max 192
+UNSUPPORTED davit_tiny/square1_layer_normalization13 (feature_multiplier): IndexError: index 150563 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED davit_tiny/square1_layer_normalization14 (feature_multiplier): IndexError: index 78383 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/precision_concat_matmul11 (concat): 709/768 max 191
+UNSUPPORTED davit_tiny/square1_layer_normalization15 (feature_multiplier): IndexError: index 361316 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED davit_tiny/square1_layer_normalization16 (feature_multiplier): IndexError: index 77207 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/precision_concat_matmul13 (concat): 3488/4704 max 192
+UNSUPPORTED davit_tiny/square1_layer_normalization17 (feature_multiplier): IndexError: index 301181 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED davit_tiny/square1_layer_normalization18 (feature_multiplier): IndexError: index 90175 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/precision_concat_matmul15 (concat): 694/768 max 203
+UNSUPPORTED davit_tiny/square1_layer_normalization19 (feature_multiplier): IndexError: index 301181 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED davit_tiny/square1_layer_normalization20 (feature_multiplier): IndexError: index 602285 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/precision_concat_matmul17 (concat): 3622/4704 max 192
+UNSUPPORTED davit_tiny/square1_layer_normalization21 (feature_multiplier): IndexError: index 903467 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED davit_tiny/square1_layer_normalization22 (feature_multiplier): IndexError: index 90175 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/precision_concat_matmul19 (concat): 704/768 max 193
+UNSUPPORTED davit_tiny/square1_layer_normalization23 (feature_multiplier): IndexError: index 92255 is out of bounds for dimension 0 with size 75264
+UNSUPPORTED davit_tiny/square1_layer_normalization24 (feature_multiplier): IndexError: index 221375 is out of bounds for dimension 0 with size 75264
+MISMATCH davit_tiny/reduce_mean1_layer_normalization25 (reduce_mean): 12/49 max 1
+UNSUPPORTED davit_tiny/square1_layer_normalization25 (feature_multiplier): IndexError: index 295295 is out of bounds for dimension 0 with size 37632
+MISMATCH davit_tiny/precision_concat_matmul21 (concat): 1795/2352 max 192
+UNSUPPORTED davit_tiny/square1_layer_normalization26 (feature_multiplier): IndexError: index 38415 is out of bounds for dimension 0 with size 37632
+UNSUPPORTED davit_tiny/square1_layer_normalization27 (feature_multiplier): IndexError: index 41519 is out of bounds for dimension 0 with size 37632
+MISMATCH davit_tiny/precision_concat_matmul23 (concat): 1218/1536 max 191
+UNSUPPORTED davit_tiny/square1_layer_normalization28 (feature_multiplier): IndexError: index 38415 is out of bounds for dimension 0 with size 37632
+UNSUPPORTED davit_tiny/square1_layer_normalization29 (feature_multiplier): IndexError: index 8255 is out of bounds for dimension 0 with size 768
+660/703 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'activation': '144/144', 'normalization': '5/5', 'external_pad': '0/1', 'conv': '106/106', 'reduce_mean': '28/29', 'ew_sub': '41/41', 'feature_multiplier': '0/29', 'ew_mult': '41/41', 'dw': '36/36', 'ew_add': '48/48', 'format_conversion': '101/101', 'reduce_sum': '24/24', 'precision_splitter': '12/12', 'shortcut': '12/12', 'concat': '12/24', 'matmul': '24/24', 'reduce_max': '12/12', 'resize': '12/12', 'avgpool': '1/1'}

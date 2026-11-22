@@ -1,0 +1,11 @@
+2026-10-23 22:59:23.159329: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 22:59:23.245653: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-23 22:59:33.982961: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2026-10-23 22:59:33.983012: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:137] retrieving CUDA diagnostic information for host: uslib
+2026-10-23 22:59:33.983018: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:144] hostname: uslib
+2026-10-23 22:59:33.983045: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:168] libcuda reported version is: 560.28.3
+2026-10-23 22:59:33.983064: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:172] kernel reported version is: 560.28.3
+2026-10-23 22:59:33.983068: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:259] kernel version seems to match DSO: 560.28.3
+2026-10-23 23:00:31.280296: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+captured 59 conv layers, 259 atomic ops -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov7_tiny/cap

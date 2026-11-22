@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network deit_tiny ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model deit_tiny
+[info] Restored ONNX model deit_tiny (completion time: 00:00:02.01)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:03.27)
+[info] Start nodes mapped from original model: 'x': 'deit_tiny/input_layer1'.
+[info] End nodes mapped from original model: 'Gemm_961'.
+[info] Translation completed on ONNX model deit_tiny (completion time: 00:00:09.71)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/deit_tiny/deit_tiny.har

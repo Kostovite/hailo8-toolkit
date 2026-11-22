@@ -1,0 +1,20 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/1385 4.13 img/s
+200/1385 5.09 img/s
+300/1385 5.50 img/s
+400/1385 5.75 img/s
+500/1385 5.89 img/s
+600/1385 6.01 img/s
+700/1385 6.09 img/s
+800/1385 6.16 img/s
+900/1385 6.21 img/s
+1000/1385 6.25 img/s
+1100/1385 6.28 img/s
+1200/1385 6.31 img/s
+1300/1385 6.33 img/s
+wrote stats ../out/stats_mb_mTPC_2ep_s3450_1.npz

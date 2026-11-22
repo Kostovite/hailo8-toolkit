@@ -1,0 +1,32 @@
+W1022 03:18:36.896000 3749440 site-packages/torch/distributed/run.py:766] 
+W1022 03:18:36.896000 3749440 site-packages/torch/distributed/run.py:766] *****************************************
+W1022 03:18:36.896000 3749440 site-packages/torch/distributed/run.py:766] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1022 03:18:36.896000 3749440 site-packages/torch/distributed/run.py:766] *****************************************
+WARNING ⚠️ torchvision==0.27 is incompatible with torch==2.7.
+Run 'pip install torchvision==0.22' to fix torchvision or 'pip install -U torch torchvision' to update both.
+For a full compatibility table see https://github.com/pytorch/vision#installation
+step 1/400 loss 0.6232 gt 0.4286 kd_cls 0.0003 kd_box 0.1005 ovf 93.8 1.02 img/s
+step 20/400 loss 0.6107 gt 0.4045 kd_cls 0.0005 kd_box 0.1195 ovf 86.1 1.29 img/s
+step 40/400 loss 0.5286 gt 0.3938 kd_cls 0.0001 kd_box 0.0546 ovf 80.1 1.30 img/s
+step 60/400 loss 0.8050 gt 0.6161 kd_cls 0.0024 kd_box 0.1076 ovf 78.9 1.30 img/s
+step 80/400 loss 0.6454 gt 0.4811 kd_cls 0.0029 kd_box 0.0798 ovf 81.6 1.31 img/s
+step 100/400 loss 0.6348 gt 0.4758 kd_cls 0.0018 kd_box 0.0870 ovf 70.2 1.31 img/s
+step 120/400 loss 1.2045 gt 0.7828 kd_cls 0.0014 kd_box 0.4183 ovf 2.05 1.31 img/s
+step 140/400 loss 0.8802 gt 0.6599 kd_cls 0.0034 kd_box 0.2138 ovf 3.03 1.31 img/s
+step 160/400 loss 0.8309 gt 0.6804 kd_cls 0.0073 kd_box 0.1394 ovf 3.91 1.31 img/s
+step 180/400 loss 0.6656 gt 0.5532 kd_cls 0.0013 kd_box 0.1089 ovf 2.25 1.31 img/s
+step 200/400 loss 0.7081 gt 0.5893 kd_cls 0.0085 kd_box 0.1077 ovf 2.63 1.31 img/s
+step 220/400 loss 0.8123 gt 0.7245 kd_cls 0.0033 kd_box 0.0821 ovf 2.48 1.31 img/s
+step 240/400 loss 0.4549 gt 0.3832 kd_cls 0.0028 kd_box 0.0675 ovf 1.38 1.31 img/s
+step 260/400 loss 0.5092 gt 0.4270 kd_cls 0.0060 kd_box 0.0741 ovf 2.14 1.31 img/s
+step 280/400 loss 0.7959 gt 0.7071 kd_cls 0.0013 kd_box 0.0851 ovf 2.47 1.31 img/s
+step 300/400 loss 0.5965 gt 0.5142 kd_cls 0.0014 kd_box 0.0792 ovf 1.66 1.31 img/s
+step 320/400 loss 0.5427 gt 0.4457 kd_cls 0.0027 kd_box 0.0937 ovf 0.562 1.31 img/s
+step 340/400 loss 0.5413 gt 0.4501 kd_cls 0.0023 kd_box 0.0878 ovf 1.09 1.31 img/s
+step 360/400 loss 0.5516 gt 0.4788 kd_cls 0.0008 kd_box 0.0714 ovf 0.597 1.31 img/s
+step 380/400 loss 0.5589 gt 0.4769 kd_cls 0.0051 kd_box 0.0737 ovf 3.21 1.31 img/s
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+step 400/400 loss 0.4908 gt 0.4235 kd_cls 0.0023 kd_box 0.0644 ovf 0.541 1.31 img/s
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once

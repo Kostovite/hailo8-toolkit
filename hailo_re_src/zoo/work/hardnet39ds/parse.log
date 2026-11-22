@@ -1,0 +1,10 @@
+[36m<Hailo Model Zoo INFO> Start run for network hardnet39ds ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+hardnet39ds.zip:   0%|          | 0.00/12.4M [00:00<?, ?B/s]hardnet39ds.zip:   0%|          | 20.0k/12.4M [00:00<02:08, 101kB/s]hardnet39ds.zip:   1%|          | 68.0k/12.4M [00:00<01:10, 184kB/s]hardnet39ds.zip:   1%|          | 156k/12.4M [00:00<00:42, 304kB/s] hardnet39ds.zip:   3%|▎         | 340k/12.4M [00:00<00:23, 551kB/s]hardnet39ds.zip:   6%|▌         | 732k/12.4M [00:01<00:11, 1.07MB/s]hardnet39ds.zip:  12%|█▏        | 1.45M/12.4M [00:01<00:05, 1.99MB/s]hardnet39ds.zip:  13%|█▎        | 1.59M/12.4M [00:01<00:09, 1.19MB/s]hardnet39ds.zip:  22%|██▏       | 2.74M/12.4M [00:01<00:04, 2.42MB/s]hardnet39ds.zip:  27%|██▋       | 3.32M/12.4M [00:02<00:03, 2.58MB/s]hardnet39ds.zip:  41%|████▏     | 5.14M/12.4M [00:02<00:01, 4.50MB/s]hardnet39ds.zip:  48%|████▊     | 5.94M/12.4M [00:02<00:01, 4.39MB/s]hardnet39ds.zip:  54%|█████▍    | 6.76M/12.4M [00:02<00:01, 4.34MB/s]hardnet39ds.zip:  61%|██████    | 7.59M/12.4M [00:02<00:01, 4.33MB/s]hardnet39ds.zip:  68%|██████▊   | 8.43M/12.4M [00:03<00:00, 4.34MB/s]hardnet39ds.zip:  75%|███████▍  | 9.30M/12.4M [00:03<00:00, 4.37MB/s]hardnet39ds.zip:  82%|████████▏ | 10.2M/12.4M [00:03<00:00, 4.39MB/s]hardnet39ds.zip:  89%|████████▊ | 11.0M/12.4M [00:03<00:00, 5.12MB/s]hardnet39ds.zip:  91%|█████████ | 11.3M/12.4M [00:03<00:00, 4.70MB/s]hardnet39ds.zip:  96%|█████████▌| 11.9M/12.4M [00:03<00:00, 4.21MB/s]hardnet39ds.zip: 100%|██████████| 12.4M/12.4M [00:03<00:00, 3.37MB/s]
+[info] Translation started on ONNX model hardnet39ds
+[info] Restored ONNX model hardnet39ds (completion time: 00:00:00.10)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.17)
+[info] Start nodes mapped from original model: 'input.1': 'hardnet39ds/input_layer1'.
+[info] End nodes mapped from original model: 'Gemm_291'.
+[info] Translation completed on ONNX model hardnet39ds (completion time: 00:00:03.05)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/hardnet39ds/hardnet39ds.har

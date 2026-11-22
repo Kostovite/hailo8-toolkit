@@ -1,0 +1,29 @@
+[36m<Hailo Model Zoo INFO> Start run for network efficientnet_lite1 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to efficientnet_lite1 from l0.alls
+[warning] DEPRECATION WARNING: Performance parameter key 'optimization_level' is deprecated, please use 'compiler_optimization_level' instead.
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.52)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:29<30:43, 29.27s/entries]Calibration:   5%|▍         | 3/64 [00:29<07:45,  7.63s/entries]Calibration:   9%|▉         | 6/64 [00:29<02:53,  2.98s/entries]Calibration:  12%|█▎        | 8/64 [00:29<01:48,  1.93s/entries]Calibration:  16%|█▌        | 10/64 [00:29<01:09,  1.29s/entries]Calibration:  19%|█▉        | 12/64 [00:30<00:46,  1.13entries/s]Calibration:  22%|██▏       | 14/64 [00:30<00:31,  1.59entries/s]Calibration:  25%|██▌       | 16/64 [00:30<00:21,  2.20entries/s]Calibration:  28%|██▊       | 18/64 [00:30<00:16,  2.84entries/s]Calibration:  31%|███▏      | 20/64 [00:30<00:12,  3.57entries/s]Calibration:  34%|███▍      | 22/64 [00:31<00:09,  4.58entries/s]Calibration:  38%|███▊      | 24/64 [00:31<00:06,  5.89entries/s]Calibration:  41%|████      | 26/64 [00:31<00:05,  7.11entries/s]Calibration:  44%|████▍     | 28/64 [00:31<00:04,  8.03entries/s]Calibration:  47%|████▋     | 30/64 [00:31<00:03,  9.20entries/s]Calibration:  50%|█████     | 32/64 [00:31<00:03,  9.50entries/s]Calibration:  53%|█████▎    | 34/64 [00:31<00:02, 10.54entries/s]Calibration:  56%|█████▋    | 36/64 [00:32<00:02, 11.65entries/s]Calibration:  59%|█████▉    | 38/64 [00:32<00:02, 11.70entries/s]Calibration:  62%|██████▎   | 40/64 [00:32<00:01, 12.82entries/s]Calibration:  66%|██████▌   | 42/64 [00:32<00:01, 14.00entries/s]Calibration:  70%|███████   | 45/64 [00:32<00:01, 15.26entries/s]Calibration:  73%|███████▎  | 47/64 [00:32<00:01, 14.90entries/s]Calibration:  78%|███████▊  | 50/64 [00:32<00:00, 16.76entries/s]Calibration:  83%|████████▎ | 53/64 [00:33<00:00, 18.53entries/s]Calibration:  88%|████████▊ | 56/64 [00:33<00:00, 15.18entries/s]Calibration:  91%|█████████ | 58/64 [00:33<00:00, 15.67entries/s]Calibration:  95%|█████████▌| 61/64 [00:33<00:00, 17.32entries/s]Calibration: 100%|██████████| 64/64 [00:33<00:00, 18.22entries/s]Calibration: 100%|██████████| 64/64 [00:33<00:00, 18.22entries/s]Calibration: 100%|██████████| 64/64 [00:33<00:00,  1.90entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:35.82)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/efficientnet_lite1/efficientnet_lite1.har

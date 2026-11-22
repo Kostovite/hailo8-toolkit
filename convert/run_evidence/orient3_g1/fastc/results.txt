@@ -1,0 +1,1 @@
+srv_d util=default compiled 1065s | srv_d RESULT torch: false_turn 4/1000 correct_turn 942/1000 RESULT chip_srv_d: false_turn 4/1000 correct_turn 942/1000 RESULT decision_diffs_vs_torch 0 / 2000 GATE PASS  | Measuring FPS (and Power on supported platforms) in streaming mode FPS     (hw_only)                 = 88.8902         (streaming)               = 88.8945 

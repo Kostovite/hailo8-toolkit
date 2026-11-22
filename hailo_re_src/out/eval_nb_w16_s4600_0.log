@@ -1,0 +1,35 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/2770 17.26 img/s
+200/2770 22.39 img/s
+300/2770 24.85 img/s
+400/2770 26.34 img/s
+500/2770 27.33 img/s
+600/2770 27.57 img/s
+700/2770 27.81 img/s
+800/2770 27.98 img/s
+900/2770 27.97 img/s
+1000/2770 28.10 img/s
+1100/2770 28.22 img/s
+1200/2770 28.49 img/s
+1300/2770 28.69 img/s
+1400/2770 28.93 img/s
+1500/2770 29.00 img/s
+1600/2770 29.10 img/s
+1700/2770 29.23 img/s
+1800/2770 29.30 img/s
+1900/2770 29.33 img/s
+2000/2770 29.34 img/s
+2100/2770 29.32 img/s
+2200/2770 29.33 img/s
+2300/2770 29.40 img/s
+2400/2770 29.44 img/s
+2500/2770 29.53 img/s
+2600/2770 29.59 img/s
+2700/2770 29.69 img/s
+wrote stats ../out/stats_nb_w16_s4600_0.npz
+{"mAP50": 0.8448694105657873, "mAP50_95": 0.706609785821512, "P": 0.8286456012273299, "R": 0.7792066410210294, "kind": "hailo", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/n_L0w16top8.hn", "shape": [640, 640], "n": 2770, "sec": 95}

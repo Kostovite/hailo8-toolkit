@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network levit128 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model levit128
+[info] Restored ONNX model levit128 (completion time: 00:00:02.89)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:04.67)
+[info] Start nodes mapped from original model: 'input.1': 'levit128/input_layer1'.
+[info] End nodes mapped from original model: '/Div'.
+[info] Translation completed on ONNX model levit128 (completion time: 00:00:08.77)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/levit128/levit128.har

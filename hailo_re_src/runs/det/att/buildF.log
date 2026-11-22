@@ -1,0 +1,50 @@
+{'layers': 1, 'inputs': 1, 'outputs': 1, 'dropped': []}
+[info] Loading model script commands to best from string
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 0s 57ms
+[info] Trying to compile the network in a single context
+[info] Single context flow failed: Recoverable single context error
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 0s 39ms
+[error] Mapping Failed (allocation time: 0s)
+No successful assignments: reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 152).
+
+	reduce_sum_softmax1 failed on kernel validation: 16x4 is not supported in reduce_sum_softmax1
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 152).
+
+	reduce_sum_softmax1 failed on kernel validation: 16x4 is not supported in reduce_sum_softmax1
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 303).
+
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 302).
+
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 303).
+
+
+[?25h
+[error] Failed to produce compiled graph
+[error] BackendAllocatorException: Compilation failed: No successful assignments: reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 152).
+
+	reduce_sum_softmax1 failed on kernel validation: 16x4 is not supported in reduce_sum_softmax1
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 152).
+
+	reduce_sum_softmax1 failed on kernel validation: 16x4 is not supported in reduce_sum_softmax1
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 303).
+
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 302).
+
+reduce_sum_softmax1 errors:
+	Agent infeasible by resources sanity.: Memory units capacity exceeded (available: 128, required: 303).
+
+

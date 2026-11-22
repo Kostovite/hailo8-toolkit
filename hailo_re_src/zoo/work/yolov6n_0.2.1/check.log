@@ -1,0 +1,4 @@
+UNSUPPORTED yolov6n_0_2_1/deconv1 (deconv): NotImplementedError: yolov6n_0_2_1/deconv1: deconv
+UNSUPPORTED yolov6n_0_2_1/deconv2 (deconv): NotImplementedError: yolov6n_0_2_1/deconv2: deconv
+65/67 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'conv': '56/56', 'maxpool': '3/3', 'concat': '5/5', 'deconv': '0/2'}

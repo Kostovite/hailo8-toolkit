@@ -1,0 +1,8 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+UNSUPPORTED yolov6n/yolox_nms_postprocess (postprocess): NotImplementedError: NotImplementedError: yolov6n/yolox_nms_postprocess: postprocess | chain: yolov6n/yolox_nms_postprocess: no captured ops
+QATNet: 59 MAC modules, 0 APUs, 5 atomic chains
+qatfast == graph26 on 70/70 layers (0 not produced by qatfast)
+{'input_layer': '1/1', 'conv': '59/59', 'maxpool': '3/3', 'concat': '5/5', 'deconv': '2/2'}
+backward ok: 236/236 parameter tensors received a non-zero gradient

@@ -1,0 +1,12 @@
+UNSUPPORTED repghost_1_0x/avgpool1 (avgpool): NotImplementedError: repghost_1_0x/avgpool1: avgpool
+UNSUPPORTED repghost_1_0x/avgpool2 (avgpool): NotImplementedError: repghost_1_0x/avgpool2: avgpool
+UNSUPPORTED repghost_1_0x/avgpool3 (avgpool): NotImplementedError: repghost_1_0x/avgpool3: avgpool
+UNSUPPORTED repghost_1_0x/avgpool4 (avgpool): NotImplementedError: repghost_1_0x/avgpool4: avgpool
+UNSUPPORTED repghost_1_0x/avgpool5 (avgpool): NotImplementedError: repghost_1_0x/avgpool5: avgpool
+UNSUPPORTED repghost_1_0x/avgpool6 (avgpool): NotImplementedError: repghost_1_0x/avgpool6: avgpool
+UNSUPPORTED repghost_1_0x/avgpool7 (avgpool): NotImplementedError: repghost_1_0x/avgpool7: avgpool
+UNSUPPORTED repghost_1_0x/avgpool8 (avgpool): NotImplementedError: repghost_1_0x/avgpool8: avgpool
+UNSUPPORTED repghost_1_0x/fc1 (dense): NotImplementedError: repghost_1_0x/fc1: dense
+UNSUPPORTED repghost_1_0x/fc2 (dense): NotImplementedError: repghost_1_0x/fc2: dense
+124/134 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '8/8', 'conv': '53/53', 'dw': '41/41', 'avgpool': '0/8', 'activation': '7/7', 'resize': '7/7', 'ew_mult': '7/7', 'dense': '0/2'}

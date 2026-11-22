@@ -1,0 +1,184 @@
+MISMATCH davit_tiny/input_layer1 (input_layer): 147401/150528 max 15
+UNSUPPORTED davit_tiny/external_pad1 (external_pad): NotImplementedError: davit_tiny/external_pad1: external_pad
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization1 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization1: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization1 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization1: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization1 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization1', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization2 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization2: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization2 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization2: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization2 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization2', 'ElementwiseMultOp', 0)
+MISMATCH davit_tiny/format_conversion3 (format_conversion): 223790/301056 max 145
+UNSUPPORTED davit_tiny/precision_splitter_matmul1 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul1: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul1 (concat): 13250/18816 max 193
+UNSUPPORTED davit_tiny/matmul1 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/matmul2 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [3, 49] but got: [3, 3136].
+MISMATCH davit_tiny/format_conversion4 (format_conversion): 230483/301056 max 171
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization3 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization3: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization3 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization3: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization3 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization3', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization4 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization4: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization4 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization4: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization4 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization4', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/format_conversion10 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion11 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 3, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion12 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 3, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/precision_splitter_matmul3 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul3: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul3 (concat): 129/192 max 255
+SHAPE davit_tiny/reduce_max_softmax2 (reduce_max) got (1, 1, 1, 32) ref (1, 96, 1, 1)
+UNSUPPORTED davit_tiny/reduce_sum_softmax2 (reduce_sum): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/format_conversion13 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/matmul4 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [1, 32] but got: [1, 96].
+UNSUPPORTED davit_tiny/format_conversion14 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization5 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization5: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization5 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization5: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization5 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization5', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization6 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization6: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization6 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization6: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization6 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization6', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization7 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization7: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization7 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization7: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization7 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization7', 'ElementwiseMultOp', 0)
+MISMATCH davit_tiny/format_conversion20 (format_conversion): 122917/150528 max 140
+UNSUPPORTED davit_tiny/precision_splitter_matmul5 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul5: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul5 (concat): 7218/9408 max 192
+UNSUPPORTED davit_tiny/matmul5 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/matmul6 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [6, 49] but got: [6, 784].
+MISMATCH davit_tiny/format_conversion21 (format_conversion): 123696/150528 max 106
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization8 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization8: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization8 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization8: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization8 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization8', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization9 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization9: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization9 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization9: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization9 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization9', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/format_conversion27 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion28 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 6, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion29 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 6, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/precision_splitter_matmul7 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul7: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul7 (concat): 344/384 max 216
+SHAPE davit_tiny/reduce_max_softmax4 (reduce_max) got (1, 1, 1, 32) ref (1, 192, 1, 1)
+UNSUPPORTED davit_tiny/reduce_sum_softmax4 (reduce_sum): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/format_conversion30 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/matmul8 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [1, 32] but got: [1, 192].
+UNSUPPORTED davit_tiny/format_conversion31 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization10 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization10: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization10 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization10: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization10 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization10', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization11 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization11: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization11 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization11: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization11 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization11', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization12 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization12: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization12 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization12: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization12 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization12', 'ElementwiseMultOp', 0)
+MISMATCH davit_tiny/format_conversion37 (format_conversion): 62226/75264 max 98
+UNSUPPORTED davit_tiny/precision_splitter_matmul9 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul9: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul9 (concat): 3670/4704 max 192
+UNSUPPORTED davit_tiny/matmul9 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/matmul10 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH davit_tiny/format_conversion38 (format_conversion): 63355/75264 max 169
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization13 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization13: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization13 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization13: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization13 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization13', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization14 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization14: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization14 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization14: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization14 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization14', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/format_conversion44 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion45 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 12, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion46 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 12, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/precision_splitter_matmul11 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul11: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul11 (concat): 709/768 max 191
+SHAPE davit_tiny/reduce_max_softmax6 (reduce_max) got (1, 1, 1, 32) ref (1, 384, 1, 1)
+UNSUPPORTED davit_tiny/reduce_sum_softmax6 (reduce_sum): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/format_conversion47 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/matmul12 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [1, 32] but got: [1, 384].
+UNSUPPORTED davit_tiny/format_conversion48 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization15 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization15: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization15 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization15: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization15 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization15', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization16 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization16: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization16 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization16: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization16 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization16', 'ElementwiseMultOp', 0)
+MISMATCH davit_tiny/format_conversion54 (format_conversion): 61147/75264 max 96
+UNSUPPORTED davit_tiny/precision_splitter_matmul13 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul13: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul13 (concat): 3488/4704 max 192
+UNSUPPORTED davit_tiny/matmul13 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/matmul14 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH davit_tiny/format_conversion55 (format_conversion): 63217/75264 max 154
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization17 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization17: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization17 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization17: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization17 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization17', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization18 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization18: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization18 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization18: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization18 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization18', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/format_conversion61 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion62 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 12, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion63 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 12, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/precision_splitter_matmul15 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul15: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul15 (concat): 694/768 max 203
+SHAPE davit_tiny/reduce_max_softmax8 (reduce_max) got (1, 1, 1, 32) ref (1, 384, 1, 1)
+UNSUPPORTED davit_tiny/reduce_sum_softmax8 (reduce_sum): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/format_conversion64 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/matmul16 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [1, 32] but got: [1, 384].
+UNSUPPORTED davit_tiny/format_conversion65 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization19 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization19: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization19 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization19: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization19 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization19', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization20 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization20: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization20 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization20: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization20 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization20', 'ElementwiseMultOp', 0)
+MISMATCH davit_tiny/format_conversion71 (format_conversion): 61214/75264 max 133
+UNSUPPORTED davit_tiny/precision_splitter_matmul17 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul17: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul17 (concat): 3622/4704 max 192
+UNSUPPORTED davit_tiny/matmul17 (matmul): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/matmul18 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [12, 49] but got: [12, 196].
+MISMATCH davit_tiny/format_conversion72 (format_conversion): 62360/75264 max 136
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization21 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization21: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization21 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization21: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization21 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization21', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization22 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization22: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization22 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization22: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization22 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization22', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/format_conversion78 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion79 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 12, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion80 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 12, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/precision_splitter_matmul19 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul19: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul19 (concat): 704/768 max 193
+SHAPE davit_tiny/reduce_max_softmax10 (reduce_max) got (1, 1, 1, 32) ref (1, 384, 1, 1)
+UNSUPPORTED davit_tiny/reduce_sum_softmax10 (reduce_sum): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/format_conversion81 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/matmul20 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [1, 32] but got: [1, 384].
+UNSUPPORTED davit_tiny/format_conversion82 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization23 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization23: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization23 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization23: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization23 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization23', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization24 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization24: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization24 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization24: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization24 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization24', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization25 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization25: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization25 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization25: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization25 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization25', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/precision_splitter_matmul21 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul21: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul21 (concat): 1795/2352 max 192
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization26 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization26: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization26 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization26: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization26 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization26', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization27 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization27: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization27 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization27: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization27 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization27', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/format_conversion95 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion96 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 24, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/format_conversion97 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 24, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/precision_splitter_matmul23 (precision_splitter): NotImplementedError: davit_tiny/precision_splitter_matmul23: precision_splitter
+MISMATCH davit_tiny/precision_concat_matmul23 (concat): 1218/1536 max 191
+SHAPE davit_tiny/reduce_max_softmax12 (reduce_max) got (1, 1, 1, 32) ref (1, 768, 1, 1)
+UNSUPPORTED davit_tiny/reduce_sum_softmax12 (reduce_sum): RuntimeError: torch.searchsorted(): boundaries tensor should be 1 dimension or the first N-1 dimensions of boundaries tensor and input
+UNSUPPORTED davit_tiny/format_conversion98 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/matmul24 (matmul): RuntimeError: Expected size for first two dimensions of batch2 tensor to be: [1, 32] but got: [1, 768].
+UNSUPPORTED davit_tiny/format_conversion99 (format_conversion): AssertionError: {'conversion_type': 'transpose_width_features', 'groups': 1, 'input_windows': [1, 1, 1], 'output_windows': [1, 1, 1]}
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization28 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization28: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization28 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization28: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization28 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization28', 'ElementwiseMultOp', 0)
+UNSUPPORTED davit_tiny/avgpool1 (avgpool): NotImplementedError: davit_tiny/avgpool1: avgpool
+UNSUPPORTED davit_tiny/reduce_mean1_layer_normalization29 (reduce_mean): NotImplementedError: davit_tiny/reduce_mean1_layer_normalization29: reduce_mean
+UNSUPPORTED davit_tiny/square1_layer_normalization29 (feature_multiplier): NotImplementedError: davit_tiny/square1_layer_normalization29: feature_multiplier
+UNSUPPORTED davit_tiny/ew_mult1_layer_normalization29 (ew_mult): AssertionError: ('davit_tiny/ew_mult1_layer_normalization29', 'ElementwiseMultOp', 0)
+521/703 checked layers exact when chained from raw pixels
+{'input_layer': '0/1', 'activation': '144/144', 'normalization': '5/5', 'external_pad': '0/1', 'conv': '106/106', 'reduce_mean': '0/29', 'ew_sub': '41/41', 'feature_multiplier': '0/29', 'ew_mult': '12/41', 'dw': '36/36', 'ew_add': '48/48', 'format_conversion': '61/101', 'reduce_sum': '18/24', 'precision_splitter': '0/12', 'shortcut': '12/12', 'concat': '12/24', 'matmul': '8/24', 'reduce_max': '6/12', 'resize': '12/12', 'avgpool': '0/1'}

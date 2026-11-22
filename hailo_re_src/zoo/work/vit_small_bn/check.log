@@ -1,0 +1,7 @@
+UNSUPPORTED vit_small_bn/const_input1 (const_input): NotImplementedError: vit_small_bn/const_input1: const_input
+UNSUPPORTED vit_small_bn/const_input2 (const_input): NotImplementedError: vit_small_bn/const_input2: const_input
+UNSUPPORTED vit_small_bn/space_to_depth1 (space_to_depth): NotImplementedError: vit_small_bn/space_to_depth1: space_to_depth
+UNSUPPORTED vit_small_bn/concat1 (concat): RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 1 but got size 196 for tensor number 1 in the list.
+UNSUPPORTED vit_small_bn/slice37 (slice): NotImplementedError: vit_small_bn/slice37: slice
+150/155 checked layers exact when chained from raw pixels
+{'const_input': '0/2', 'input_layer': '1/1', 'normalization': '1/1', 'space_to_depth': '0/1', 'conv': '74/74', 'concat': '0/1', 'ew_add': '1/1', 'matmul': '24/24', 'reduce_max': '12/12', 'ew_sub': '12/12', 'activation': '1/1', 'reduce_sum': '12/12', 'ew_mult': '12/12', 'slice': '0/1'}

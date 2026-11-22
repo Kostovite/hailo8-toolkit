@@ -1,0 +1,5 @@
+UNSUPPORTED yolov6n/deconv1 (deconv): NotImplementedError: NotImplementedError: yolov6n/deconv1: deconv | chain: atomic op ConvStrippedOp (yolov6n/deconv1/conv_op)
+UNSUPPORTED yolov6n/deconv2 (deconv): NotImplementedError: NotImplementedError: yolov6n/deconv2: deconv | chain: atomic op ConvStrippedOp (yolov6n/deconv2/conv_op)
+UNSUPPORTED yolov6n/yolox_nms_postprocess (postprocess): NotImplementedError: NotImplementedError: yolov6n/yolox_nms_postprocess: postprocess | chain: yolov6n/yolox_nms_postprocess: no captured ops
+68/71 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'conv': '59/59', 'maxpool': '3/3', 'concat': '5/5', 'deconv': '0/2', 'postprocess': '0/1'}

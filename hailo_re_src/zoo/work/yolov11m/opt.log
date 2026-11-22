@@ -1,0 +1,30 @@
+[36m<Hailo Model Zoo INFO> Start run for network yolov11m ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to yolov11m from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.66)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   3%|▎         | 2/64 [01:13<37:44, 36.52s/entries]Calibration:   6%|▋         | 4/64 [01:13<15:17, 15.29s/entries]Calibration:   9%|▉         | 6/64 [01:14<08:11,  8.48s/entries]Calibration:  12%|█▎        | 8/64 [01:15<04:56,  5.29s/entries]Calibration:  16%|█▌        | 10/64 [01:16<03:10,  3.52s/entries]Calibration:  19%|█▉        | 12/64 [01:17<02:08,  2.47s/entries]Calibration:  22%|██▏       | 14/64 [01:17<01:30,  1.80s/entries]Calibration:  25%|██▌       | 16/64 [01:18<01:05,  1.36s/entries]Calibration:  28%|██▊       | 18/64 [01:19<00:48,  1.06s/entries]Calibration:  31%|███▏      | 20/64 [01:20<00:38,  1.14entries/s]Calibration:  34%|███▍      | 22/64 [01:21<00:31,  1.34entries/s]Calibration:  38%|███▊      | 24/64 [01:22<00:25,  1.54entries/s]Calibration:  41%|████      | 26/64 [01:23<00:22,  1.72entries/s]Calibration:  44%|████▍     | 28/64 [01:24<00:20,  1.75entries/s]Calibration:  47%|████▋     | 30/64 [01:25<00:18,  1.82entries/s]Calibration:  50%|█████     | 32/64 [01:26<00:16,  1.94entries/s]Calibration:  53%|█████▎    | 34/64 [01:26<00:14,  2.06entries/s]Calibration:  56%|█████▋    | 36/64 [01:27<00:13,  2.15entries/s]Calibration:  59%|█████▉    | 38/64 [01:28<00:11,  2.22entries/s]Calibration:  62%|██████▎   | 40/64 [01:29<00:12,  1.97entries/s]Calibration:  66%|██████▌   | 42/64 [01:30<00:10,  2.05entries/s]Calibration:  69%|██████▉   | 44/64 [01:31<00:10,  1.99entries/s]Calibration:  72%|███████▏  | 46/64 [01:32<00:09,  1.96entries/s]Calibration:  75%|███████▌  | 48/64 [01:34<00:08,  1.86entries/s]Calibration:  78%|███████▊  | 50/64 [01:35<00:07,  1.83entries/s]Calibration:  81%|████████▏ | 52/64 [01:36<00:06,  1.82entries/s]Calibration:  84%|████████▍ | 54/64 [01:37<00:05,  1.92entries/s]Calibration:  88%|████████▊ | 56/64 [01:38<00:04,  1.98entries/s]Calibration:  91%|█████████ | 58/64 [01:39<00:02,  2.01entries/s]Calibration:  94%|█████████▍| 60/64 [01:40<00:01,  2.03entries/s]Calibration:  97%|█████████▋| 62/64 [01:40<00:00,  2.09entries/s]Calibration: 100%|██████████| 64/64 [01:41<00:00,  2.10entries/s]Calibration: 100%|██████████| 64/64 [01:41<00:00,  2.10entries/s]Calibration: 100%|██████████| 64/64 [01:41<00:00,  1.59s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:44.84)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.05)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] activation fitting started for yolov11m/reduce_sum_softmax1/act_op
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov11m/yolov11m.har

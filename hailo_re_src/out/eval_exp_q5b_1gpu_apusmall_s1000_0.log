@@ -1,0 +1,17 @@
+WARNING ⚠️ torchvision==0.27 is incompatible with torch==2.7.
+Run 'pip install torchvision==0.22' to fix torchvision or 'pip install -U torch torchvision' to update both.
+For a full compatibility table see https://github.com/pytorch/vision#installation
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+100/916 4.15 img/s
+200/916 5.16 img/s
+300/916 5.61 img/s
+400/916 5.87 img/s
+500/916 6.03 img/s
+600/916 6.15 img/s
+700/916 6.24 img/s
+800/916 6.30 img/s
+900/916 6.35 img/s
+wrote stats ../out/stats_exp_q5b_1gpu_apusmall_s1000_0.npz
+{"mAP50": 0.8804481556561666, "mAP50_95": 0.7874421236028605, "P": 0.8804750872098653, "R": 0.8697986392919491, "kind": "hailo", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/yolo26m_v14sec_L0a16.hn", "shape": [896, 896], "n": 916, "sec": 144}

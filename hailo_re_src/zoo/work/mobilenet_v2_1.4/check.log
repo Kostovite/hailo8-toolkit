@@ -1,0 +1,4 @@
+UNSUPPORTED mobilenet_v2_1_4/avgpool1 (avgpool): NotImplementedError: mobilenet_v2_1_4/avgpool1: avgpool
+UNSUPPORTED mobilenet_v2_1_4/fc1 (dense): NotImplementedError: mobilenet_v2_1_4/fc1: dense
+54/56 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '35/35', 'dw': '17/17', 'avgpool': '0/1', 'dense': '0/1'}

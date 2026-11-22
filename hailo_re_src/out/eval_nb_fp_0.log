@@ -1,0 +1,32 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+104/2770 33.41 img/s
+200/2770 41.55 img/s
+304/2770 45.01 img/s
+400/2770 46.02 img/s
+504/2770 46.26 img/s
+600/2770 45.89 img/s
+704/2770 46.88 img/s
+800/2770 47.79 img/s
+904/2770 47.36 img/s
+1000/2770 47.67 img/s
+1104/2770 47.73 img/s
+1200/2770 47.50 img/s
+1304/2770 46.74 img/s
+1400/2770 38.93 img/s
+1504/2770 36.84 img/s
+1600/2770 37.11 img/s
+1704/2770 32.21 img/s
+1800/2770 29.50 img/s
+1904/2770 28.54 img/s
+2000/2770 28.53 img/s
+2104/2770 28.67 img/s
+2200/2770 28.60 img/s
+2304/2770 28.46 img/s
+2400/2770 28.08 img/s
+2504/2770 27.95 img/s
+2600/2770 27.83 img/s
+2704/2770 27.46 img/s
+wrote stats ../out/stats_nb_fp_0.npz
+{"mAP50": 0.8469447993919514, "mAP50_95": 0.7287408640087564, "P": 0.8325847222816743, "R": 0.788904855537973, "kind": "fp", "model": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/small/y26n_v14sec/weights/best.pt", "shape": [640, 640], "n": 2770, "sec": 102}

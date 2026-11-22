@@ -1,0 +1,12 @@
+yolov6n 68/71 checked layers exact when chained from raw pixels
+levit128 324/324 checked layers exact when chained from raw pixels
+yolov8n_seg 109/110 checked layers exact when chained from raw pixels
+yolov5s 105/107 checked layers exact when chained from raw pixels
+repvgg_a1 26/26 checked layers exact when chained from raw pixels
+hardnet68 110/110 checked layers exact when chained from raw pixels
+arcface_r50 86/86 checked layers exact when chained from raw pixels
+efficientdet_lite0 225/239 checked layers exact when chained from raw pixels
+davit_tiny 665/703 checked layers exact when chained from raw pixels
+cas_vit_t 430/430 checked layers exact when chained from raw pixels
+zero_dce 44/52 checked layers exact when chained from raw pixels
+DONE

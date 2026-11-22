@@ -1,0 +1,30 @@
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/bias_lattice.py:39: RuntimeWarning: invalid value encountered in divide
+  i = np.round(b / (factor * repeats))
+vit_tiny/conv32: bias = f32(f32(17192 * i) * 4), |i| <= 32767
+vit_tiny/conv33: bias = f32(f32(553 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization1: bias = f32(f32(321 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization10: bias = f32(f32(2024 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization11: bias = f32(f32(1403 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization12: bias = f32(f32(1757 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization13: bias = f32(f32(1391 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization14: bias = f32(f32(1819 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization15: bias = f32(f32(468 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization16: bias = f32(f32(480 * i) * 1), |i| <= 32767
+skip vit_tiny/conv_var_inv_layer_normalization17: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization18: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization19: captured bias not f32(f32(factor*i)*repeats) at [0]
+vit_tiny/conv_var_inv_layer_normalization2: bias = f32(f32(525 * i) * 1), |i| <= 32767
+skip vit_tiny/conv_var_inv_layer_normalization20: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization21: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization22: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization23: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization24: captured bias not f32(f32(factor*i)*repeats) at [0]
+skip vit_tiny/conv_var_inv_layer_normalization25: captured bias not f32(f32(factor*i)*repeats) at [0]
+vit_tiny/conv_var_inv_layer_normalization3: bias = f32(f32(462 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization4: bias = f32(f32(508 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization5: bias = f32(f32(1332 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization6: bias = f32(f32(1407 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization7: bias = f32(f32(1671 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization8: bias = f32(f32(1809 * i) * 1), |i| <= 32767
+vit_tiny/conv_var_inv_layer_normalization9: bias = f32(f32(1801 * i) * 1), |i| <= 32767
+18 layers annotated in zoo/work/vit_tiny/cap2

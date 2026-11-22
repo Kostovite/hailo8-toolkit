@@ -1,0 +1,9 @@
+[36m<Hailo Model Zoo INFO> Start run for network hardnet68 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the runner...[0m
+[info] Translation started on ONNX model hardnet68
+[info] Restored ONNX model hardnet68 (completion time: 00:00:03.09)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:05.58)
+[info] Start nodes mapped from original model: 'input.1': 'hardnet68/input_layer1'.
+[info] End nodes mapped from original model: 'Gemm_263'.
+[info] Translation completed on ONNX model hardnet68 (completion time: 00:00:07.37)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/hardnet68/hardnet68.har

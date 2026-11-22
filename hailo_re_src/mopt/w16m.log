@@ -1,0 +1,68 @@
+W16M pick ['conv70', 'conv86', 'conv100', 'conv97', 'conv69', 'conv_feature_splitter11_2', 'conv67', 'conv60'] = 96.0% of the int8 rounding-noise score
+W16M quantized
+W16M L0 captured 145 conv layers, 713 atomic ops -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/capture_m_w16top8
+W16M L0 167/167 checked layers exact when chained from raw pixels
+W16M L0 {"tag": "m_w16top8", "result": Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart#ultralytics-settings.}
+W16M best/conv_feature_splitter11_2: bias = f32(f32(5576 * i) * 1), |i| <= 32767
+W16M 8 layers annotated in /mnt/storage/lib_project/models/Hailo_model/hailo_re/capture_m_w16top8
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+./evalgpu.sh: line 18: syntax error near unexpected token `;'
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M EXP m_w16L_2ep s9200 {"tag": "exp_m_w16L_2ep_s9200", "result": {"mAP50": 0.8894204773695974, "mAP50_95": 0.8284047271731547, "P": 0.8979066972480477, "R": 0.8678436444109473, "shards": 2}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s1150", "result": {"mAP50": 0.9092782547907786, "mAP50_95": 0.8379229575929957, "P": 0.9209180313281147, "R": 0.883298885566652
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s2300", "result": {"mAP50": 0.9122771388562416, "mAP50_95": 0.8411952430654213, "P": 0.916277624760399, "R": 0.8861303869655451
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s3450", "result": {"mAP50": 0.9130027186528608, "mAP50_95": 0.842266238331096, "P": 0.923236898080907, "R": 0.8810544300548512,
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s4600", "result": {"mAP50": 0.9134326932676163, "mAP50_95": 0.8445453997624488, "P": 0.9105796268709612, "R": 0.889251154644607
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s5750", "result": {"mAP50": 0.9155354590649128, "mAP50_95": 0.8460522806187563, "P": 0.923911848332371, "R": 0.8800749968651602
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s6900", "result": {"mAP50": 0.913613505814627, "mAP50_95": 0.8450642209896906, "P": 0.9163409962859848, "R": 0.8878540869313084
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s8050", "result": {"mAP50": 0.914542920926344, "mAP50_95": 0.8452266728248651, "P": 0.9245481665989259, "R": 0.8804707604080934
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M bench {"tag": "mb_m_w16L_2ep_s9200", "result": {"mAP50": 0.9154433332121035, "mAP50_95": 0.8464215658562355, "P": 0.9245449059031258, "R": 0.882884163339207
+W16M split WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+W16M split View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+W16M split Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+W16M split bench_fp                     bench_sel 0.9233/0.8679   bench_test 0.9161/0.8553
+W16M split bench_q3a_s2000_har          bench_sel 0.9221/0.8476   bench_test 0.9197/0.8426
+W16M split mb_m_w16top8_L0              bench_sel 0.9036/0.8189   bench_test 0.8975/0.8020
+W16M split mb_m_w16L_2ep_s1150          bench_sel 0.9182/0.8508   bench_test 0.9114/0.8365
+W16M split mb_m_w16L_2ep_s2300          bench_sel 0.9223/0.8553   bench_test 0.9129/0.8392
+W16M split mb_m_w16L_2ep_s3450          bench_sel 0.9266/0.8599   bench_test 0.9128/0.8393
+W16M split mb_m_w16L_2ep_s4600          bench_sel 0.9301/0.8651   bench_test 0.9135/0.8407
+W16M split mb_m_w16L_2ep_s5750          bench_sel 0.9329/0.8670   bench_test 0.9140/0.8408
+W16M split mb_m_w16L_2ep_s6900          bench_sel 0.9292/0.8640   bench_test 0.9127/0.8405
+W16M split mb_m_w16L_2ep_s8050          bench_sel 0.9313/0.8653   bench_test 0.9140/0.8407
+W16M split mb_m_w16L_2ep_s9200          bench_sel 0.9313/0.8663   bench_test 0.9147/0.8411
+W16M best on bench_sel: step 5750
+126 layers -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/m_w16top8_s5750_ints.npz
+W16M wb best/conv60: decomposed bias (factor 3941 x 1) stored within 7880 of the trained value
+W16M wb best/conv67: decomposed bias (factor 2975 x 1) stored within 17850 of the trained value
+W16M wb best/conv86: decomposed bias (factor 8236 x 1) stored within 0 of the trained value
+W16M wb wrote 126 kernels, 118 biases -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/m_w16top8_qat.har (verified against the translated params)
+W16M rt val 167/167 checked layers exact when chained from raw pixels
+W16M rt val {"tag": "m_w16top8_qat", "result": {"mAP50": 0.891907130209654, "mAP50_95": 0.8297227646117368, "P": 0.9004352649079325, "R": 0.8723578500072198, "shards": 2}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+W16M rt bench {"tag": "mb_m_w16top8_qat_rt", "result": {"mAP50": 0.9155835562022446, "mAP50_95": 0.8461680665855982, "P": 0.9116007467131966, "R": 0.8918479229239736, "shards": 2}}
+W16M rt split bench_fp                     bench_sel 0.9233/0.8679   bench_test 0.9161/0.8553
+W16M rt split bench_q3a_s2000_har          bench_sel 0.9221/0.8476   bench_test 0.9197/0.8426
+W16M rt split mb_m_w16top8_qat_rt          bench_sel 0.9314/0.8660   bench_test 0.9145/0.8415
+W16M hef /mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/m_w16top8_qat.hef: HEF v2, 34.1 MiB, group , 5 contexts
+W16M hef   preliminary config: 4.19 MiB  {'disable_lcu': 89, 'write_data_ccw_ptr': 429, 'wait_for_module_config_done': 19, 'enable_sequencer': 8, 'wait_for_seqeuncer': 8, 'allow_input_dataflow': 1, 'enable_lcu': 89}
+W16M hef   ctx 0 : config 5.65 MiB, 564 actions, batch-switch 0
+W16M hef       boundary      in    1 tensors     2.30 MiB/frame
+W16M hef       inter_context out   2 tensors     7.66 MiB/frame
+W16M hef   ctx 1 : config 5.76 MiB, 533 actions, batch-switch 0
+W16M hef       ddr           in    2 tensors     3.50 MiB/frame
+W16M hef       ddr           out   2 tensors     3.50 MiB/frame
+W16M hef       inter_context in    1 tensors     1.53 MiB/frame
+W16M hef       inter_context out   6 tensors     3.12 MiB/frame
+W16M hef   ctx 2 : config 5.57 MiB, 669 actions, batch-switch 0
+W16M hef       inter_context in    6 tensors     8.80 MiB/frame
+W16M DONE

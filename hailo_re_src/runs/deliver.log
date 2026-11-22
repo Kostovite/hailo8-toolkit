@@ -1,0 +1,11 @@
+126 layers -> ../out/final_ints.npz
+pass 0: 6 layers stored a shifted bias: dw1 [21], conv46 [1], conv48 [42], dw6 [-8], conv95 [1], conv97 [1]
+pass 1: 6 layers stored a shifted bias: dw1 [-21], conv46 [-1], conv48 [-42], dw6 [8], conv95 [-1], conv97 [-1]
+wrote 126 kernels, 126 biases -> ../yolo26m_v14sec_final.har (verified against the translated params)
+DELIVER writeback done
+DELIVER compile started 305234
+155/155 checked layers exact when chained from raw pixels
+{"tag": "final_har", "result": {"mAP50": 0.8918718177268165, "mAP50_95": 0.8294823651409297, "P": 0.8889252723155975, "R": 0.8802585665503799, "shards": 4}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+{"tag": "TEST_final_har", "result": {"mAP50": 0.9128286909119963, "mAP50_95": 0.8394365688676693, "P": 0.9299291590650589, "R": 0.8764281689187232, "shards": 4}}
+DELIVER DONE

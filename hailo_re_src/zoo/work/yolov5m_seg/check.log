@@ -1,0 +1,2 @@
+120/120 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '85/85', 'ew_add': '14/14', 'concat': '13/13', 'maxpool': '3/3', 'resize': '3/3'}

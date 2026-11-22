@@ -1,0 +1,24 @@
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/avgpool1 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_recognition/avgpool1: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/fc1 (dense): NotImplementedError: paddle_ocr_v5_mobile_recognition/fc1: dense
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/fc2 (dense): NotImplementedError: paddle_ocr_v5_mobile_recognition/fc2: dense
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/avgpool2 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_recognition/avgpool2: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/fc3 (dense): NotImplementedError: paddle_ocr_v5_mobile_recognition/fc3: dense
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/fc4 (dense): NotImplementedError: paddle_ocr_v5_mobile_recognition/fc4: dense
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/avgpool3 (avgpool): NotImplementedError: paddle_ocr_v5_mobile_recognition/avgpool3: avgpool
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization1 (reduce_mean): NotImplementedError: paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization1: reduce_mean
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/square1_layer_normalization1 (feature_multiplier): NotImplementedError: paddle_ocr_v5_mobile_recognition/square1_layer_normalization1: feature_multiplier
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization1 (ew_mult): AssertionError: ('paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization1', 'ElementwiseMultOp', 0)
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization2 (reduce_mean): NotImplementedError: paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization2: reduce_mean
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/square1_layer_normalization2 (feature_multiplier): NotImplementedError: paddle_ocr_v5_mobile_recognition/square1_layer_normalization2: feature_multiplier
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization2 (ew_mult): AssertionError: ('paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization2', 'ElementwiseMultOp', 0)
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization3 (reduce_mean): NotImplementedError: paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization3: reduce_mean
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/square1_layer_normalization3 (feature_multiplier): NotImplementedError: paddle_ocr_v5_mobile_recognition/square1_layer_normalization3: feature_multiplier
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization3 (ew_mult): AssertionError: ('paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization3', 'ElementwiseMultOp', 0)
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization4 (reduce_mean): NotImplementedError: paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization4: reduce_mean
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/square1_layer_normalization4 (feature_multiplier): NotImplementedError: paddle_ocr_v5_mobile_recognition/square1_layer_normalization4: feature_multiplier
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization4 (ew_mult): AssertionError: ('paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization4', 'ElementwiseMultOp', 0)
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization5 (reduce_mean): NotImplementedError: paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization5: reduce_mean
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/square1_layer_normalization5 (feature_multiplier): NotImplementedError: paddle_ocr_v5_mobile_recognition/square1_layer_normalization5: feature_multiplier
+UNSUPPORTED paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization5 (ew_mult): AssertionError: ('paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization5', 'ElementwiseMultOp', 0)
+106/128 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'activation': '6/6', 'normalization': '17/17', 'conv': '38/38', 'dw': '14/14', 'avgpool': '0/3', 'dense': '0/4', 'resize': '2/2', 'ew_mult': '5/10', 'reduce_mean': '0/5', 'ew_sub': '8/8', 'feature_multiplier': '0/5', 'matmul': '4/4', 'reduce_max': '3/3', 'reduce_sum': '3/3', 'ew_add': '4/4', 'concat': '1/1'}

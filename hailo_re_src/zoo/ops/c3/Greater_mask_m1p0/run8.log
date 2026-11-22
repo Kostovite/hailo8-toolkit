@@ -1,0 +1,18 @@
+[info] Translation started on ONNX model Greater_mask_m1p0
+[info] Restored ONNX model Greater_mask_m1p0 (completion time: 00:00:00.02)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.46)
+[info] Start nodes mapped from original model: 'x': 'Greater_mask_m1p0/input_layer1'.
+[info] End nodes mapped from original model: 'Conv_7'.
+[info] Translation completed on ONNX model Greater_mask_m1p0 (completion time: 00:00:00.58)
+[info] Loading model script commands to Greater_mask_m1p0 from string
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.01)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]{"case": "Greater_mask_m1p0", "stage": "quantize", "hn_types": ["activation", "conv"], "activations": ["threshold"], "prec": "a8_w8", "error": "ValueError: Exception encountered when calling ActivationOp.call().\n\n\u001b[1mThe theta value of a Thresholded ReLU layer should be >=0. Received: -1.0\u001b[0m\n\nArguments received by ActivationOp.call():\n  \u2022 inputs=tf.Tensor(shape=(1, 24, 24, 16), dtype=float32)\n  \u2022 fully_native=None\n  \u2022 encoding_tensors=None\n  \u2022 skip_stats=False\n  \u2022 training=False\n  \u2022 kwargs={'cache_config': 'None'}", "seconds": 2.3}
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]

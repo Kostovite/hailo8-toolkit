@@ -1,0 +1,7 @@
+HN layer types: {'input_layer': 1, 'conv': 106, 'feature_splitter': 11, 'shortcut': 9, 'ew_add': 22, 'concat': 21, 'maxpool': 3, 'dw': 8, 'format_conversion': 8, 'normalization': 2, 'matmul': 4, 'softmax': 2, 'resize': 2, 'output_layer': 6}
+mTT heads ['conv72', 'conv75', 'conv88', 'conv91', 'conv103', 'conv106']
+mTT quantized
+mTT compiled
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/mTT.hef: HEF v2, 28.0 MiB, group , 5 contexts
+  preliminary config: 4.11 MiB  {'disable_lcu': 89, 'write_data_ccw_ptr': 424, 'wait_for_module_config_done': 19, 'enable_sequencer': 8, 'wait_for_seqeuncer': 8, 'allow_input_dataflow': 1, 'enable_lcu': 89}
+  ctx 0 : config 6.11 MiB, 549 actions, batch-switch 0

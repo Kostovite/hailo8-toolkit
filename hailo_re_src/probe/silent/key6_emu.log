@@ -1,0 +1,6 @@
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/res/ConvTranspose_s2
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/res/Attention_pattern
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3/Einsum_matmul
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/res/T_ViT_block
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/res/RMSNorm_pattern
+ok /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3/Attention_op23_4d

@@ -1,0 +1,4 @@
+UNSUPPORTED resnext26_32x4d/avgpool1 (avgpool): NotImplementedError: resnext26_32x4d/avgpool1: avgpool
+UNSUPPORTED resnext26_32x4d/fc1 (dense): NotImplementedError: resnext26_32x4d/fc1: dense
+32/34 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '29/29', 'maxpool': '1/1', 'avgpool': '0/1', 'dense': '0/1'}

@@ -1,0 +1,71 @@
+[36m<Hailo Model Zoo INFO> Start run for network detr_resnet_v1_18_bn ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to detr_resnet_v1_18_bn from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:02.63)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:  12%|█▎        | 8/64 [02:24<16:51, 18.06s/entries]Calibration:  25%|██▌       | 16/64 [02:31<06:20,  7.92s/entries]Calibration:  38%|███▊      | 24/64 [02:37<03:05,  4.65s/entries]Calibration:  50%|█████     | 32/64 [02:43<01:40,  3.13s/entries]Calibration:  62%|██████▎   | 40/64 [02:49<00:54,  2.27s/entries]Calibration:  75%|███████▌  | 48/64 [02:56<00:28,  1.80s/entries]Calibration:  88%|████████▊ | 56/64 [03:04<00:12,  1.52s/entries]Calibration: 100%|██████████| 64/64 [03:11<00:00,  1.33s/entries]Calibration: 100%|██████████| 64/64 [03:11<00:00,  1.33s/entries]Calibration: 100%|██████████| 64/64 [03:11<00:00,  2.99s/entries]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:03:16.00)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Starting Matmul Equalization
+[info] Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:01.37)
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax1/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax2/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax3/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv39/conv_op, using max shift instead. delta=0.4427
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv39/conv_op, using max shift instead. delta=0.2214
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax4/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv45/conv_op, using max shift instead. delta=1.1674
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv45/conv_op, using max shift instead. delta=0.5837
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax5/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv51/conv_op, using max shift instead. delta=1.1426
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv51/conv_op, using max shift instead. delta=0.5713
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax6/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv57/conv_op, using max shift instead. delta=0.0237
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv57/conv_op, using max shift instead. delta=0.0119
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax7/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv72/conv_op, using max shift instead. delta=0.3411
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv72/conv_op, using max shift instead. delta=0.1705
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax8/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax9/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax10/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax11/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv88/conv_op, using max shift instead. delta=0.3005
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv88/conv_op, using max shift instead. delta=0.1503
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax12/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax13/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv96/conv_op, using max shift instead. delta=0.9794
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv96/conv_op, using max shift instead. delta=0.4897
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax14/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax15/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv104/conv_op, using max shift instead. delta=0.8228
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv104/conv_op, using max shift instead. delta=0.4114
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax16/act_op
+[info] activation fitting started for detr_resnet_v1_18_bn/reduce_sum_softmax17/act_op
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv112/conv_op, using max shift instead. delta=1.2823
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv112/conv_op, using max shift instead. delta=0.6411
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv115/conv_op, using max shift instead. delta=0.5947
+[info] No shifts available for layer detr_resnet_v1_18_bn/conv115/conv_op, using max shift instead. delta=0.2973
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Starting Layer Noise Analysis
+Full Quant Analysis:   0%|          | 0/16 [00:00<?, ?iterations/s]Full Quant Analysis:   6%|▋         | 1/16 [06:37<1:39:16, 397.08s/iterations]Full Quant Analysis:  12%|█▎        | 2/16 [06:41<38:44, 166.01s/iterations]  Full Quant Analysis:  19%|█▉        | 3/16 [06:45<19:58, 92.15s/iterations] Full Quant Analysis:  25%|██▌       | 4/16 [06:50<11:32, 57.71s/iterations]Full Quant Analysis:  31%|███▏      | 5/16 [06:55<07:04, 38.58s/iterations]Full Quant Analysis:  38%|███▊      | 6/16 [06:58<04:27, 26.74s/iterations]Full Quant Analysis:  44%|████▍     | 7/16 [07:02<02:52, 19.15s/iterations]Full Quant Analysis:  50%|█████     | 8/16 [07:06<01:54, 14.33s/iterations]Full Quant Analysis:  56%|█████▋    | 9/16 [07:10<01:17, 11.14s/iterations]Full Quant Analysis:  62%|██████▎   | 10/16 [07:14<00:54,  9.05s/iterations]Full Quant Analysis:  69%|██████▉   | 11/16 [07:19<00:37,  7.54s/iterations]Full Quant Analysis:  75%|███████▌  | 12/16 [07:22<00:25,  6.43s/iterations]Full Quant Analysis:  81%|████████▏ | 13/16 [07:26<00:17,  5.67s/iterations]Full Quant Analysis:  88%|████████▊ | 14/16 [07:31<00:10,  5.25s/iterations]Full Quant Analysis:  94%|█████████▍| 15/16 [07:35<00:05,  5.10s/iterations]Full Quant Analysis: 100%|██████████| 16/16 [07:40<00:00,  4.87s/iterations]Full Quant Analysis: 100%|██████████| 16/16 [07:40<00:00,  4.87s/iterations]Full Quant Analysis: 100%|██████████| 16/16 [07:40<00:00, 28.77s/iterations]
+[info] Model Optimization Algorithm Layer Noise Analysis is done (completion time is 00:07:48.73)
+[info] Output layers signal-to-noise ratio (SNR): measures the quantization noise (higher is better)
+[info] 	detr_resnet_v1_18_bn/output_layer1 SNR:	14.39 dB
+[info] 	detr_resnet_v1_18_bn/output_layer2 SNR:	8.64 dB
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/detr_resnet_v1_18_bn/detr_resnet_v1_18_bn.har

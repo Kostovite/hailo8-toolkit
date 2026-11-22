@@ -1,0 +1,29 @@
+TPCQ L0 captured 155 conv layers, 709 atomic ops -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/capture_mTPC
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench L0 EVAL mb_mTPC_L0 FAILED: missing ../out/stats_mb_mTPC_L0_0.npz (see out/eval_mb_mTPC_L0_*.log)
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ EXP mTPC_2ep TRAIN FAILED
+TPCQ   rank      : 0 (local_rank: 0)
+TPCQ   exitcode  : 1 (pid: 217103)
+TPCQ   error_file: <N/A>
+TPCQ   traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+TPCQ ============================================================
+ls: cannot access 'runs/mTPC_2ep/ints_step*.pt': No such file or directory
+TPCQ split bench_fp                     bench_sel 0.9233/0.8679   bench_test 0.9161/0.8553
+TPCQ split bench_q3a_s2000_har          bench_sel 0.9221/0.8476   bench_test 0.9197/0.8426
+TPCQ split mb_mTPC_L0                   MISSING (mb_mTPC_L0)
+TPCQ best on bench_sel: step 
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/ints2npz.py", line 15, in <module>
+    ints = torch.load(ints_pt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/serialization.py", line 1479, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../runs/mTPC_2ep/ints_step.pt'

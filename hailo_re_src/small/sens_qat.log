@@ -1,0 +1,60 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+8/256
+16/256
+24/256
+32/256
+40/256
+48/256
+56/256
+64/256
+72/256
+80/256
+88/256
+96/256
+104/256
+112/256
+120/256
+128/256
+136/256
+144/256
+152/256
+160/256
+168/256
+176/256
+184/256
+192/256
+200/256
+208/256
+216/256
+224/256
+232/256
+240/256
+248/256
+256/256
+best/conv2                               conv           2.1527e-04  cum 25.00%
+best/conv1                               conv           1.1387e-04  cum 38.23%
+best/conv60                              conv           6.6832e-05  cum 45.99%
+best/conv_feature_splitter1_2            conv           6.1242e-05  cum 53.11%
+best/dw4                                 dw             2.8617e-05  cum 56.43%
+best/conv_feature_splitter6_2            conv           2.8184e-05  cum 59.70%
+best/conv76                              conv           2.2676e-05  cum 62.34%
+best/conv73                              conv           2.1263e-05  cum 64.81%
+best/conv_feature_splitter11_2           conv           2.0830e-05  cum 67.23%
+best/conv72                              conv           2.0490e-05  cum 69.61%
+best/conv_feature_splitter11_3           conv           1.8345e-05  cum 71.74%
+best/conv_feature_splitter1_1            conv           1.6689e-05  cum 73.67%
+best/conv87                              conv           1.5025e-05  cum 75.42%
+best/ew_add1                             ew_add         1.2652e-05  cum 76.89%
+best/conv6                               conv           8.4746e-06  cum 77.87%
+best/conv88                              conv           8.2049e-06  cum 78.83%
+best/conv71                              conv           7.7868e-06  cum 79.73%
+best/conv7                               conv           7.7228e-06  cum 80.63%
+best/conv39                              conv           7.6587e-06  cum 81.52%
+best/conv86                              conv           7.6398e-06  cum 82.41%
+best/conv_feature_splitter10_2           conv           6.9786e-06  cum 83.22%
+best/normalization1                      normalization  6.6792e-06  cum 83.99%
+best/ew_add16                            ew_add         6.1871e-06  cum 84.71%
+best/conv69                              conv           5.7669e-06  cum 85.38%
+best/conv48                              conv           5.4873e-06  cum 86.02%

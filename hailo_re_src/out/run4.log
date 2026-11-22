@@ -1,0 +1,5 @@
+[hw] shape=(4, 19, 5, 100) nonzero=110
+[SDK_QUANTIZED] shape=(4, 19, 5, 100) nonzero=110
+[SDK_BIT_EXACT] shape=(4, 19, 5, 100) nonzero=110
+SDK_QUANTIZED vs hw: max|d|=4.549e-01 exact=False max score d=1.078e-01 boxes hw=22 emu=22
+SDK_BIT_EXACT vs hw: max|d|=1.376e-03 exact=False max score d=0.000e+00 boxes hw=22 emu=22

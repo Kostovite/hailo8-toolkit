@@ -1,0 +1,32 @@
+[36m<Hailo Model Zoo INFO> Start run for network nanodet_repvgg ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to nanodet_repvgg from l0.alls
+[info] The flag emulator_support was not given for bgr_to_rgb conversion. using emulator_support=True. See usage guidelines at: Dataflow Compiler User Guide / Building Models / Model Optimization / Model Scripts
+[info] The layer nanodet_repvgg/conv28 was detected as combined_layer.
+[info] The layer nanodet_repvgg/conv31 was detected as combined_layer.
+[info] The layer nanodet_repvgg/conv34 was detected as combined_layer.
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.25)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   6%|▋         | 4/64 [00:16<04:03,  4.07s/entries]Calibration:  12%|█▎        | 8/64 [00:16<01:34,  1.70s/entries]Calibration:  19%|█▉        | 12/64 [00:16<00:48,  1.07entries/s]Calibration:  25%|██▌       | 16/64 [00:16<00:28,  1.71entries/s]Calibration:  31%|███▏      | 20/64 [00:16<00:17,  2.59entries/s]Calibration:  38%|███▊      | 24/64 [00:17<00:10,  3.72entries/s]Calibration:  44%|████▍     | 28/64 [00:17<00:07,  5.13entries/s]Calibration:  50%|█████     | 32/64 [00:17<00:04,  6.82entries/s]Calibration:  56%|█████▋    | 36/64 [00:17<00:03,  8.75entries/s]Calibration:  62%|██████▎   | 40/64 [00:17<00:02, 10.78entries/s]Calibration:  69%|██████▉   | 44/64 [00:17<00:01, 12.93entries/s]Calibration:  75%|███████▌  | 48/64 [00:18<00:01, 14.64entries/s]Calibration:  81%|████████▏ | 52/64 [00:18<00:00, 16.36entries/s]Calibration:  88%|████████▊ | 56/64 [00:18<00:00, 18.10entries/s]Calibration:  94%|█████████▍| 60/64 [00:18<00:00, 19.36entries/s]Calibration: 100%|██████████| 64/64 [00:18<00:00, 19.84entries/s]Calibration: 100%|██████████| 64/64 [00:18<00:00, 19.84entries/s]Calibration: 100%|██████████| 64/64 [00:18<00:00,  3.40entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:19.51)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/nanodet_repvgg/nanodet_repvgg.har

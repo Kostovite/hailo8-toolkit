@@ -1,0 +1,10 @@
+{'layers': 4, 'inputs': 2, 'outputs': 2, 'dropped': []}
+[info] Loading model script commands to best from string
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[error] Mapping Failed (allocation time: 0s)
+Compilation failed with exception: More than one output split is not supported for layer tf_rgb_to_hailo_rgb_from_input_layer502_to_matmul1
+[?25h
+[error] Failed to produce compiled graph
+[error] BackendAllocatorException: Compilation failed: Compilation failed with exception: More than one output split is not supported for layer tf_rgb_to_hailo_rgb_from_input_layer502_to_matmul1

@@ -1,0 +1,149 @@
+OK  best__conv1                              s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv10                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv100                            s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv101                            s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv102                            s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv103                            s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv104                            s=2 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv11                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv12                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv14                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv15                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv16                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv17                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv18                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv19                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv2                              s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv20                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv21                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv22                             s=3 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv24                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv25                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv26                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv27                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv28                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv29                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv30                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv31                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv32                             s=3 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv34                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv35                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv36                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv37                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv38                             s=3 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv39                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv4                              s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv40                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv41                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv42                             s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv43                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+BAD best__conv46                             s=1 linear   | accumulator: EXACT | bias: 200704/200704 differ (max 7140) | apu/output: 189356/200704 differ (max 67)
+OK  best__conv47                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+BAD best__conv48                             s=3 linear   | accumulator: EXACT | bias: 200704/200704 differ (max 12064) | apu/output: 200704/200704 differ (max 65)
+OK  best__conv49                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv5                              s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv51                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv52                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv53                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv54                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv55                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv56                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv57                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv58                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv6                              s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv60                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv61                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv62                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv63                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv64                             s=3 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv65                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv66                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv67                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv68                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv69                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv7                              s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv70                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv71                             s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv72                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv73                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv74                             s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv76                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv77                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv78                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv79                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv8                              s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv80                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv81                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv82                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv83                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv84                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv85                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv86                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv87                             s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv88                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv89                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv9                              s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv90                             s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv92                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv93                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+BAD best__conv95                             s=1 linear   | accumulator: EXACT | bias: 200704/200704 differ (max 5694) | apu/output: 184685/200704 differ (max 110)
+OK  best__conv96                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+BAD best__conv97                             s=2 linear   | accumulator: EXACT | bias: 200704/200704 differ (max 15120) | apu/output: 200704/200704 differ (max 23)
+OK  best__conv98                             s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv99                             s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter10_1          s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter10_2          s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter11_1          s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter11_2          s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter11_3          s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter1_1           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter1_2           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter2_1           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter2_2           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter3_1           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter3_2           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter4_1           s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter4_2           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter5_1           s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter5_2           s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter6_1           s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter6_2           s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter6_3           s=1 linear   | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter7_1           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter7_2           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter8_1           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter8_2           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter9_1           s=1 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__conv_feature_splitter9_2           s=2 silu     | accumulator: EXACT | bias: EXACT | apu/output: EXACT
+SKIP best__dw1.npz (depthwise/grouped/no act)
+SKIP best__dw2.npz (depthwise/grouped/no act)
+SKIP best__dw3.npz (depthwise/grouped/no act)
+SKIP best__dw4.npz (depthwise/grouped/no act)
+SKIP best__dw5.npz (depthwise/grouped/no act)
+SKIP best__dw6.npz (depthwise/grouped/no act)
+SKIP best__dw7.npz (depthwise/grouped/no act)
+SKIP best__dw8.npz (depthwise/grouped/no act)
+OK  best__ew_add1                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add13                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add14                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add15                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add16                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add17                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add18                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add19                           s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add2                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add3                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add4                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add5                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add6                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add7                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add8                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+OK  best__ew_add9                            s=1 linear   | ew_acc: EXACT | bias: EXACT | apu/output: EXACT
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/verify_conv.py", line 29, in <module>
+    outs = ew_add_layer(nchw("ew_in0"), nchw("ew_in1"), p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/models/Hailo_model/hailo_re/hailoqat/intops.py", line 187, in ew_add_layer
+    v = apu_round_shift(x.long() * kk[None, :, None, None], s, 3, True)
+                        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (4) must match the size of tensor b (3136) at non-singleton dimension 1

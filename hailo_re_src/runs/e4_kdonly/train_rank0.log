@@ -1,0 +1,16 @@
+step 1/300 loss 0.1333 gt 0.5256 kd_cls 0.0004 kd_box 0.1329 ovf 92.8 0.13 img/s
+step 20/300 loss 0.1063 gt 0.5071 kd_cls 0.0035 kd_box 0.1028 ovf 92.1 1.69 img/s
+step 40/300 loss 0.1003 gt 0.4906 kd_cls 0.0008 kd_box 0.0995 ovf 91.2 2.52 img/s
+step 60/300 loss 0.0882 gt 0.4241 kd_cls 0.0010 kd_box 0.0871 ovf 88.4 3.04 img/s
+step 80/300 loss 0.1646 gt 0.5810 kd_cls 0.0004 kd_box 0.1641 ovf 92.4 3.78 img/s
+step 100/300 loss 0.1243 gt 0.5369 kd_cls 0.0025 kd_box 0.1218 ovf 87.1 4.42 img/s
+step 120/300 loss 0.1245 gt 0.6308 kd_cls 0.0027 kd_box 0.1218 ovf 87.6 4.98 img/s
+step 140/300 loss 0.0694 gt 0.3939 kd_cls 0.0001 kd_box 0.0694 ovf 86.1 5.47 img/s
+step 160/300 loss 0.0962 gt 0.5369 kd_cls 0.0021 kd_box 0.0941 ovf 91.4 5.92 img/s
+step 180/300 loss 0.1028 gt 0.4623 kd_cls 0.0001 kd_box 0.1027 ovf 87.7 6.31 img/s
+step 200/300 loss 0.1226 gt 0.4784 kd_cls 0.0002 kd_box 0.1223 ovf 92.4 6.66 img/s
+step 220/300 loss 0.1259 gt 0.8044 kd_cls 0.0040 kd_box 0.1218 ovf 87.3 6.99 img/s
+step 240/300 loss 0.1308 gt 0.5900 kd_cls 0.0011 kd_box 0.1298 ovf 87.8 7.29 img/s
+step 260/300 loss 0.1065 gt 0.4744 kd_cls 0.0001 kd_box 0.1064 ovf 87.6 7.56 img/s
+step 280/300 loss 0.1427 gt 0.5428 kd_cls 0.0050 kd_box 0.1376 ovf 88.7 7.80 img/s
+step 300/300 loss 0.1972 gt 0.5656 kd_cls 0.0012 kd_box 0.1960 ovf 90.3 8.02 img/s

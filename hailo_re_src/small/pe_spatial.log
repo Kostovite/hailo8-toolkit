@@ -1,0 +1,4 @@
+HN layer types: {'input_layer': 1, 'conv': 96, 'feature_splitter': 11, 'shortcut': 9, 'ew_add': 20, 'concat': 19, 'maxpool': 3, 'dw': 8, 'format_conversion': 4, 'normalization': 2, 'matmul': 4, 'softmax': 2, 'resize': 2, 'output_layer': 6}
+heads ['conv62', 'conv65', 'conv78', 'conv81', 'conv93', 'conv96'] pe_v layers ['best/conv35', 'best/conv85']
+PES quantized
+PES compiled

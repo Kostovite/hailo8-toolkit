@@ -1,0 +1,28 @@
+[36m<Hailo Model Zoo INFO> Start run for network repvgg_a0_person_reid_512 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to repvgg_a0_person_reid_512 from l0.alls
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.13)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:08<08:39,  8.24s/entries]Calibration:  12%|█▎        | 8/64 [00:08<00:42,  1.31entries/s]Calibration:  25%|██▌       | 16/64 [00:08<00:15,  3.17entries/s]Calibration:  38%|███▊      | 24/64 [00:08<00:07,  5.65entries/s]Calibration:  50%|█████     | 32/64 [00:08<00:03,  8.91entries/s]Calibration:  62%|██████▎   | 40/64 [00:08<00:01, 13.03entries/s]Calibration:  75%|███████▌  | 48/64 [00:08<00:00, 18.02entries/s]Calibration:  86%|████████▌ | 55/64 [00:09<00:00, 22.99entries/s]Calibration:  97%|█████████▋| 62/64 [00:09<00:00, 28.73entries/s]Calibration: 100%|██████████| 64/64 [00:09<00:00, 28.73entries/s]Calibration: 100%|██████████| 64/64 [00:09<00:00,  6.98entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:09.93)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/repvgg_a0_person_reid_512/repvgg_a0_person_reid_512.har

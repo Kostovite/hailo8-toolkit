@@ -1,0 +1,188 @@
+whisper_tiny_10s_no_kqs_decoder	capture	34s	    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+whisper_base_5s_encoder	capture	34s	    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+whisper_tiny_10s_encoder	capture	34s	    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+whisper_base_5s_no_kqs_decoder	capture	34s	    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+cas_vit_m	done	827s	342/430 checked layers exact when chained from raw pixels
+cas_vit_s	done	836s	342/430 checked layers exact when chained from raw pixels
+cas_vit_t	done	1004s	342/430 checked layers exact when chained from raw pixels
+efficientnet_l	capture_FAIL	181s	
+deit_small	done	1298s	284/364 checked layers exact when chained from raw pixels
+efficientformer_l1	done	530s	154/194 checked layers exact when chained from raw pixels
+efficientnet_lite0	done	165s	50/54 checked layers exact when chained from raw pixels
+efficientnet_lite1	done	178s	65/69 checked layers exact when chained from raw pixels
+efficientnet_lite2	done	184s	65/69 checked layers exact when chained from raw pixels
+efficientnet_lite3	done	217s	74/78 checked layers exact when chained from raw pixels
+deit_base	done	1669s	284/364 checked layers exact when chained from raw pixels
+efficientnet_m	capture_FAIL	159s	
+efficientnet_s	capture_FAIL	126s	
+efficientnet_lite4	done	241s	92/96 checked layers exact when chained from raw pixels
+hardnet39ds	done	165s	96/98 checked layers exact when chained from raw pixels
+inception_v1	capture_FAIL	143s	
+hardnet68	done	223s	108/110 checked layers exact when chained from raw pixels
+davit_tiny	done	1931s	521/703 checked layers exact when chained from raw pixels
+deit_tiny	done	1166s	283/363 checked layers exact when chained from raw pixels
+mobilenet_v1	capture_FAIL	87s	
+fastvit_sa12	done	429s	86/94 checked layers exact when chained from raw pixels
+mobilenet_v2_1.0	capture_FAIL	135s	
+mobilenet_v2_1.4	done	216s	54/56 checked layers exact when chained from raw pixels
+mobilenet_v3	capture_FAIL	170s	
+regnetx_800mf	capture_FAIL	139s	
+regnetx_1.6gf	done	184s	61/63 checked layers exact when chained from raw pixels
+repghost_1_0x	done	253s	124/134 checked layers exact when chained from raw pixels
+repghost_2_0x	done	296s	124/134 checked layers exact when chained from raw pixels
+repvgg_a1	done	158s	24/26 checked layers exact when chained from raw pixels
+levit128	done	1133s	309/324 checked layers exact when chained from raw pixels
+repvgg_a2	done	195s	24/26 checked layers exact when chained from raw pixels
+levit256	done	1074s	309/324 checked layers exact when chained from raw pixels
+levit192	done	1225s	309/324 checked layers exact when chained from raw pixels
+resnet_v1_18	done	125s	23/25 checked layers exact when chained from raw pixels
+resmlp12_relu	done	211s	51/67 checked layers exact when chained from raw pixels
+resnet_v1_34	capture_FAIL	137s	
+resnet_v1_50	capture_FAIL	169s	
+levit384	done	1254s	309/324 checked layers exact when chained from raw pixels
+squeezenet_v1.1	capture_FAIL	87s	
+resnext26_32x4d	done	170s	32/34 checked layers exact when chained from raw pixels
+resnext50_32x4d	done	245s	56/58 checked layers exact when chained from raw pixels
+vit_small_bn	done	969s	150/155 checked layers exact when chained from raw pixels
+vit_base_bn	done	1298s	149/154 checked layers exact when chained from raw pixels
+vit_small	done	1363s	284/364 checked layers exact when chained from raw pixels
+fast_depth	done	112s	47/47 checked layers exact when chained from raw pixels
+scdepthv3	capture_FAIL	120s	
+swin_tiny	done	1734s	342/549 checked layers exact when chained from raw pixels
+vit_base	done	1773s	284/364 checked layers exact when chained from raw pixels
+face_attr_resnet_v1_18	done	141s	22/27 checked layers exact when chained from raw pixels
+lightface_slim	done	111s	44/44 checked layers exact when chained from raw pixels
+scrfd_2.5g	done	162s	62/65 checked layers exact when chained from raw pixels
+vit_tiny_bn	done	716s	149/154 checked layers exact when chained from raw pixels
+scrfd_10g	done	229s	63/66 checked layers exact when chained from raw pixels
+retinaface_mobilenet_v1	done	322s	65/71 checked layers exact when chained from raw pixels
+scrfd_500m	done	135s	64/64 checked layers exact when chained from raw pixels
+arcface_mobilefacenet	done	119s	51/52 checked layers exact when chained from raw pixels
+tddfa_mobilenet_v1	done	87s	29/31 checked layers exact when chained from raw pixels
+dncnn3	optimize_FAIL	30s	
+hand_landmark_lite	done	111s	50/55 checked layers exact when chained from raw pixels
+dncnn_color_blind	optimize_FAIL	32s	
+face_landmarks_lite	done	194s	122/125 checked layers exact when chained from raw pixels
+vit_tiny	done	1163s	283/363 checked layers exact when chained from raw pixels
+arcface_r50	done	266s	60/86 checked layers exact when chained from raw pixels
+yolov5n_seg	done	214s	91/91 checked layers exact when chained from raw pixels
+yolov5s_seg	done	306s	91/91 checked layers exact when chained from raw pixels
+yolov5m_seg	done	541s	120/120 checked layers exact when chained from raw pixels
+yolact_regnetx_800mf	done	690s	90/91 checked layers exact when chained from raw pixels
+yolact_regnetx_1.6gf	done	709s	96/97 checked layers exact when chained from raw pixels
+yolov8n_seg	done	235s	109/110 checked layers exact when chained from raw pixels
+swin_small	done	3248s	630/1047 checked layers exact when chained from raw pixels
+zero_dce	done	351s	44/52 checked layers exact when chained from raw pixels
+yolov8s_seg	done	395s	109/110 checked layers exact when chained from raw pixels
+zero_dce_pp	done	297s	43/51 checked layers exact when chained from raw pixels
+yolov8m_seg	done	631s	135/136 checked layers exact when chained from raw pixels
+yolov5l_seg	done	1166s	149/149 checked layers exact when chained from raw pixels
+centernet_resnet_v1_18_postprocess	done	279s	34/39 checked layers exact when chained from raw pixels
+damoyolo_tinynasL20_T	done	265s	109/110 checked layers exact when chained from raw pixels
+damoyolo_tinynasL25_S	done	410s	115/116 checked layers exact when chained from raw pixels
+centernet_resnet_v1_50_postprocess	done	488s	68/72 checked layers exact when chained from raw pixels
+efficientdet_lite0	done	380s	225/239 checked layers exact when chained from raw pixels
+nanodet_repvgg	done	138s	43/52 checked layers exact when chained from raw pixels
+nanodet_repvgg_a12	capture_FAIL	112s	
+damoyolo_tinynasL35_M	done	538s	152/153 checked layers exact when chained from raw pixels
+efficientdet_lite1	done	432s	270/289 checked layers exact when chained from raw pixels
+tiny_yolov3	done	117s	22/23 checked layers exact when chained from raw pixels
+ssd_mobilenet_v1	capture_FAIL	249s	
+ssd_mobilenet_v2	capture_FAIL	268s	
+efficientdet_lite2	done	509s	302/324 checked layers exact when chained from raw pixels
+tiny_yolov4	done	118s	33/36 checked layers exact when chained from raw pixels
+nanodet_repvgg_a1_640	done	342s	43/52 checked layers exact when chained from raw pixels
+yolov10n	done	257s	131/132 checked layers exact when chained from raw pixels
+yolo26n	done	387s	184/184 checked layers exact when chained from raw pixels
+yolo26s	done	464s	184/184 checked layers exact when chained from raw pixels
+yolov11l	optimize_FAIL	71s	
+yolov10s	done	328s	134/135 checked layers exact when chained from raw pixels
+yolo26m	done	717s	199/199 checked layers exact when chained from raw pixels
+yolov11n	done	78s	143/144 checked layers exact when chained from raw pixels
+yolov11x	optimize_FAIL	121s	
+yolov10b	done	809s	183/184 checked layers exact when chained from raw pixels
+detr_resnet_v1_18_bn	done	1852s	244/297 checked layers exact when chained from raw pixels
+yolov11s	done	422s	143/144 checked layers exact when chained from raw pixels
+yolov11m	done	705s	178/179 checked layers exact when chained from raw pixels
+yolov10x	done	1108s	242/243 checked layers exact when chained from raw pixels
+yolov3_416	done	771s	104/104 checked layers exact when chained from raw pixels
+yolov3_gluon_416	done	706s	104/104 checked layers exact when chained from raw pixels
+yolov5m	done	464s	128/138 checked layers exact when chained from raw pixels
+yolov3_gluon	done	1123s	104/104 checked layers exact when chained from raw pixels
+yolov4_leaky	done	972s	159/159 checked layers exact when chained from raw pixels
+yolov5m_6.1	done	460s	116/117 checked layers exact when chained from raw pixels
+yolov3	done	1536s	104/104 checked layers exact when chained from raw pixels
+yolov5s_wo_spp	optimize_FAIL	40s	
+yolov5m_wo_spp	done	467s	123/133 checked layers exact when chained from raw pixels
+yolov5s	done	290s	97/107 checked layers exact when chained from raw pixels
+yolov5s_bbox_decoding_only	done	264s	97/107 checked layers exact when chained from raw pixels
+yolov5s_c3tr	done	297s	106/108 checked layers exact when chained from raw pixels
+yolov5xs_wo_spp	done	236s	92/102 checked layers exact when chained from raw pixels
+yolov6n	done	192s	68/71 checked layers exact when chained from raw pixels
+yolov5m6_6.1	done	1061s	149/150 checked layers exact when chained from raw pixels
+yolov6n_0.2.1	done	175s	65/67 checked layers exact when chained from raw pixels
+yolov6n_0.2.1_nms_core	capture_FAIL	153s	
+yolov5xs_wo_spp_nms_core	capture_FAIL	279s	
+yolov8l	optimize_FAIL	136s	
+yolov7_tiny	done	243s	82/83 checked layers exact when chained from raw pixels
+yolov8n	done	224s	97/98 checked layers exact when chained from raw pixels
+yolov8s_bbox_decoding_only	optimize_FAIL	42s	
+yolov8x	optimize_FAIL	144s	
+yolov8s	done	324s	97/98 checked layers exact when chained from raw pixels
+yolov8m	done	566s	123/124 checked layers exact when chained from raw pixels
+yolov7	done	775s	121/122 checked layers exact when chained from raw pixels
+yolox_s_leaky	done	307s	110/112 checked layers exact when chained from raw pixels
+petrv2_repvggB0_backbone_pp_800x320	optimize_FAIL	48s	
+petrv2_repvggB0_transformer_pp_800x320	optimize_FAIL	42s	
+yolox_tiny	done	188s	110/112 checked layers exact when chained from raw pixels
+person_attr_resnet_v1_18	done	98s	22/25 checked layers exact when chained from raw pixels
+osnet_x1_0	optimize_FAIL	66s	
+yolox_s_wide_leaky	done	422s	109/111 checked layers exact when chained from raw pixels
+repvgg_a0_person_reid_512	done	87s	24/26 checked layers exact when chained from raw pixels
+yolov9c	done	869s	222/228 checked layers exact when chained from raw pixels
+deeplab_v3_mobilenet_v2	capture_FAIL	131s	
+yolov8s_pose	done	291s	106/106 checked layers exact when chained from raw pixels
+centerpose_regnetx_800mf	done	379s	67/70 checked layers exact when chained from raw pixels
+segformer_b0_bn	parse_FAIL	14s	
+deeplab_v3_mobilenet_v2_wo_dilation	capture_FAIL	112s	
+unet_mobilenet_v2	optimize_FAIL	60s	
+fcn8_resnet_v1_18	capture_FAIL	170s	
+yolov8m_pose	done	516s	132/132 checked layers exact when chained from raw pixels
+mspn_regnetx_800mf	capture_FAIL	170s	
+stereonet	optimize_FAIL	36s	
+yolox_l_leaky	done	1270s	172/174 checked layers exact when chained from raw pixels
+stdc1	capture_FAIL	319s	
+espcn_x2	capture_FAIL	50s	
+espcn_x3	capture_FAIL	44s	
+espcn_x4	capture_FAIL	45s	
+clip_resnet_50_text_encoder	optimize_FAIL	58s	
+clip_resnet_50x4_text_encoder	optimize_FAIL	98s	
+clip_vit_b_16_text_encoder	optimize_FAIL	85s	
+paddle_ocr_v5_mobile_detection	done	316s	111/146 checked layers exact when chained from raw pixels
+clip_vit_b_32_text_encoder	optimize_FAIL	89s	
+siglip_b_16_text_encoder	optimize_FAIL	159s	
+vit_pose_small_bn	done	745s	152/181 checked layers exact when chained from raw pixels
+tinyclip_vit_39m_16_text_19m_yfcc15m_text_encoder	optimize_FAIL	91s	
+siglip2_b_32_256_text_encoder	optimize_FAIL	304s	
+tinyclip_vit_8m_16_text_3m_yfcc15m_text_encoder	optimize_FAIL	63s	
+tinyclip_vit_40m_32_text_19m_laion400m_text_encoder	optimize_FAIL	131s	
+tinyclip_vit_61m_32_text_29m_laion400m_text_encoder	optimize_FAIL	111s	
+r3d_18	optimize_FAIL	67s	
+vit_pose_small	done	1294s	251/330 checked layers exact when chained from raw pixels
+clip_resnet_50_image_encoder	done	471s	71/82 checked layers exact when chained from raw pixels
+paddle_ocr_v5_mobile_recognition	done	545s	106/128 checked layers exact when chained from raw pixels
+yolov7e6	done	3051s	185/187 checked layers exact when chained from raw pixels
+clip_resnet_50x4_image_encoder	done	727s	99/110 checked layers exact when chained from raw pixels
+clip_vit_b_32_image_encoder	done	1390s	253/335 checked layers exact when chained from raw pixels
+clip_vit_b_16_image_encoder	done	1601s	252/335 checked layers exact when chained from raw pixels
+tinyclip_vit_39m_16_text_19m_yfcc15m_image_encoder	done	1201s	251/334 checked layers exact when chained from raw pixels
+siglip2_b_32_256_image_encoder	done	1468s	317/423 checked layers exact when chained from raw pixels
+siglip_b_16_image_encoder	done	1443s	198/304 checked layers exact when chained from raw pixels
+tinyclip_vit_8m_16_text_3m_yfcc15m_image_encoder	done	929s	211/282 checked layers exact when chained from raw pixels
+tinyclip_vit_40m_32_text_19m_laion400m_image_encoder	done	1186s	300/406 checked layers exact when chained from raw pixels
+tinyclip_vit_61m_32_text_29m_laion400m_image_encoder	done	1150s	252/334 checked layers exact when chained from raw pixels
+depth_anything_v2_vits	capture_FAIL	1164s	
+depth_anything_vits	capture_FAIL	1103s	
+fast_sam_s	done	307s	110/111 checked layers exact when chained from raw pixels
+real_esrgan_x2	capture_FAIL	28321s	
+COV_ALL_DONE

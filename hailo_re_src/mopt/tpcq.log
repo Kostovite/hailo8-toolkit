@@ -1,0 +1,61 @@
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench L0 {"tag": "mb_mTPC_L0", "result": {"mAP50": 0.8937385213007246, "mAP50_95": 0.78083912498414, "P": 0.9069694496566769, "R": 0.8809272177709392, "shards": 2}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ EXP mTPC_2ep s9200 {"tag": "exp_mTPC_2ep_s9200", "result": {"mAP50": 0.8910506577283855, "mAP50_95": 0.8290417430511334, "P": 0.8895157305572025, "R": 0.8782356320210262, "shards": 2}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s1150", "result": {"mAP50": 0.9127762970059997, "mAP50_95": 0.8281664457058784, "P": 0.9023381311759139, "R": 0.886170644552111, 
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s2300", "result": {"mAP50": 0.914595006520264, "mAP50_95": 0.8391445008062661, "P": 0.9075444973760184, "R": 0.890694217765522, "
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s3450", "result": {"mAP50": 0.9119081732641999, "mAP50_95": 0.8393166658718199, "P": 0.9225009283344162, "R": 0.8757639712174891,
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s4600", "result": {"mAP50": 0.9101622243481531, "mAP50_95": 0.8385410438553647, "P": 0.9126077897461883, "R": 0.8846959565746365,
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s5750", "result": {"mAP50": 0.9107471919078054, "mAP50_95": 0.8386961509219378, "P": 0.9200816417989528, "R": 0.8769269244535415,
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s6900", "result": {"mAP50": 0.908100823340302, "mAP50_95": 0.8372986563523047, "P": 0.9182452708388462, "R": 0.8794389687176593, 
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s8050", "result": {"mAP50": 0.9108305784757378, "mAP50_95": 0.8383649575694234, "P": 0.9149626184687097, "R": 0.8846808439320376,
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ bench {"tag": "mb_mTPC_2ep_s9200", "result": {"mAP50": 0.9092357291849072, "mAP50_95": 0.8369419370444356, "P": 0.9215301038449067, "R": 0.8783407882931021,
+TPCQ split WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+TPCQ split View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+TPCQ split Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+TPCQ split bench_fp                     bench_sel 0.9233/0.8679   bench_test 0.9161/0.8553
+TPCQ split bench_q3a_s2000_har          bench_sel 0.9221/0.8476   bench_test 0.9197/0.8426
+TPCQ split mb_mTPC_L0                   bench_sel 0.9017/0.7956   bench_test 0.8987/0.7803
+TPCQ split mb_mTPC_2ep_s1150            bench_sel 0.9223/0.8418   bench_test 0.9145/0.8275
+TPCQ split mb_mTPC_2ep_s2300            bench_sel 0.9242/0.8536   bench_test 0.9165/0.8390
+TPCQ split mb_mTPC_2ep_s3450            bench_sel 0.9195/0.8505   bench_test 0.9164/0.8415
+TPCQ split mb_mTPC_2ep_s4600            bench_sel 0.9149/0.8469   bench_test 0.9153/0.8411
+TPCQ split mb_mTPC_2ep_s5750            bench_sel 0.9168/0.8492   bench_test 0.9137/0.8388
+TPCQ split mb_mTPC_2ep_s6900            bench_sel 0.9145/0.8489   bench_test 0.9124/0.8381
+TPCQ split mb_mTPC_2ep_s8050            bench_sel 0.9152/0.8494   bench_test 0.9146/0.8391
+TPCQ split mb_mTPC_2ep_s9200            bench_sel 0.9140/0.8475   bench_test 0.9136/0.8377
+TPCQ best on bench_sel: step 2300
+133 layers -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/mTPC_s2300_ints.npz
+TPCQ wb 2026-10-23 22:25:04.030613: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:259] kernel version seems to match DSO: 560.28.3
+TPCQ wb pass 0: 6 layers stored a shifted bias: conv23 [9], conv24 [42], conv53 [1], conv55 [42], conv103 [-1], conv105 [1]
+TPCQ wb pass 1: 6 layers stored a shifted bias: conv23 [-9], conv24 [-42], conv53 [-1], conv55 [-42], conv103 [1], conv105 [-1]
+TPCQ wb wrote 133 kernels, 133 biases -> /mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/mTPC_qat.har (verified against the translated params)
+TPCQ rt val 167/167 checked layers exact when chained from raw pixels
+TPCQ rt val {"tag": "mTPC_qat", "result": {"mAP50": 0.8854700437682389, "mAP50_95": 0.8193957903663821, "P": 0.8927068432857849, "R": 0.864314812214298, "shards": 2}}
+/bin/bash: /mnt/storage/anaconda3/envs/hailo_env/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+TPCQ rt bench {"tag": "mb_mTPC_qat_rt", "result": {"mAP50": 0.914595006520264, "mAP50_95": 0.8391445008062661, "P": 0.9075444973760184, "R": 0.890694217765522, "shards": 2}}
+TPCQ rt split bench_fp                     bench_sel 0.9233/0.8679   bench_test 0.9161/0.8553
+TPCQ rt split bench_q3a_s2000_har          bench_sel 0.9221/0.8476   bench_test 0.9197/0.8426
+TPCQ rt split mb_mTPC_qat_rt               bench_sel 0.9242/0.8536   bench_test 0.9165/0.8390
+TPCQ hef /mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/mTPC_qat80.hef: HEF v2, 31.2 MiB, group , 4 contexts
+TPCQ hef   preliminary config: 6.06 MiB  {'disable_lcu': 104, 'write_data_ccw_ptr': 534, 'wait_for_module_config_done': 19, 'enable_sequencer': 8, 'wait_for_seqeuncer': 8, 'allow_input_dataflow': 1, 'enable_lcu': 104}
+TPCQ hef   ctx 0 : config 7.68 MiB, 821 actions, batch-switch 0
+TPCQ hef       boundary      in    1 tensors     2.30 MiB/frame
+TPCQ hef       inter_context out   3 tensors     4.59 MiB/frame
+TPCQ hef   ctx 1 : config 4.72 MiB, 742 actions, batch-switch 0
+TPCQ hef       ddr           in    1 tensors     1.53 MiB/frame
+TPCQ hef       ddr           out   1 tensors     1.53 MiB/frame
+TPCQ hef       inter_context in    4 tensors     5.36 MiB/frame
+TPCQ hef       inter_context out   4 tensors     5.80 MiB/frame
+TPCQ hef   ctx 2 : config 1.14 MiB, 282 actions, batch-switch 0
+TPCQ hef       boundary      out   4 tensors     0.60 MiB/frame
+TPCQ DONE

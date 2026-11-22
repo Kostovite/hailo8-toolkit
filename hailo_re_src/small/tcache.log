@@ -1,0 +1,16 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+shard 0: 16/18401 46.1 img/s
+shard 0: 1616/18401 61.6 img/s
+shard 0: 3216/18401 62.0 img/s
+shard 0: 4816/18401 61.8 img/s
+shard 0: 6416/18401 61.7 img/s
+shard 0: 8016/18401 61.4 img/s
+shard 0: 9616/18401 60.9 img/s
+shard 0: 11216/18401 60.9 img/s
+shard 0: 12816/18401 60.9 img/s
+shard 0: 14416/18401 60.9 img/s
+shard 0: 16016/18401 60.9 img/s
+shard 0: 17616/18401 61.0 img/s
+shard 0 DONE 18401 in 303s

@@ -1,0 +1,2 @@
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+GRADS global rel L2 1.46e-08  median 0  worst 1.08e-06 (best__normalization1, |g|=0.0093)  n>1e-3: 0/252

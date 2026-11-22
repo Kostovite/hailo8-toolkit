@@ -1,0 +1,27 @@
+[36m<Hailo Model Zoo INFO> Start run for network espcn_x2 ...[0m
+[36m<Hailo Model Zoo INFO> Initializing the hailo8 runner...[0m
+[36m<Hailo Model Zoo INFO> Preparing calibration data...[0m
+[info] Loading model script commands to espcn_x2 from l0.alls
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.03)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 64 entries for calibration
+Calibration:   0%|          | 0/64 [00:00<?, ?entries/s]Calibration:   2%|▏         | 1/64 [00:02<02:14,  2.14s/entries]Calibration:  12%|█▎        | 8/64 [00:02<00:11,  4.78entries/s]Calibration:  22%|██▏       | 14/64 [00:02<00:05,  9.26entries/s]Calibration:  33%|███▎      | 21/64 [00:02<00:02, 15.49entries/s]Calibration:  44%|████▍     | 28/64 [00:02<00:01, 22.39entries/s]Calibration:  55%|█████▍    | 35/64 [00:02<00:00, 29.52entries/s]Calibration:  66%|██████▌   | 42/64 [00:02<00:00, 36.38entries/s]Calibration:  77%|███████▋  | 49/64 [00:02<00:00, 42.94entries/s]Calibration:  88%|████████▊ | 56/64 [00:02<00:00, 47.17entries/s]Calibration:  98%|█████████▊| 63/64 [00:03<00:00, 51.72entries/s]Calibration: 100%|██████████| 64/64 [00:03<00:00, 51.72entries/s]Calibration: 100%|██████████| 64/64 [00:03<00:00, 20.46entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:03.22)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/espcn_x2/espcn_x2.har
