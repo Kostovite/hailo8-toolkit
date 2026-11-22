@@ -1,0 +1,7 @@
+0 orient3/conv21 (2000, 28, 28, 256)
+/mnt/storage/lib_project/models/Hailo_model/convert/recipes/preproc_gate.py:14: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /mnt/storage/lib_project/models/pytorch_build/pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  x = torch.from_numpy(np.ascontiguousarray(f[i, :nh[i] // 32, :nw[i] // 32])).permute(2, 0, 1)[None].float()
+RESULT torch: false_turn 4/1000 correct_turn 942/1000
+RESULT chip_c110: false_turn 4/1000 correct_turn 942/1000
+RESULT decision_diffs_vs_torch 0 / 2000
+GATE PASS

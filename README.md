@@ -12,13 +12,15 @@ document-layout, page-preprocessing and table-structure models. The toolkit incl
 It is not affiliated with Hailo. It contains no Hailo source code, binaries or firmware. You need your own installation of
 the Hailo Dataflow Compiler (tested with DFC 3.33) and HailoRT (4.23).
 
+**Start here: [convert/COMPILE_GUIDE.md](convert/COMPILE_GUIDE.md)** (build, install the fast compiler, convert, verify).
+
 ## What is here
 
 | Folder | Contents |
 |---|---|
 | `hailo8-exact-qat/` | `hailoqat/`: bit-exact Hailo-8 integer executor on CUDA. `graph26.py` is the float64 reference; `qatfast.py` is the fast fused-kernel executor and supports exact QAT. Prebuilt kernels are in `hq_ext/prebuilt/hq_ext.so` (sm_52 + sm_86 + PTX); rebuild with `hq_ext/build_prebuilt.sh`. `tools/ops/`: ONNX compatibility front end and the GPU test suite (`gpu_suite.py`, `gpu_suite_all.sh`). `results/gpu_suite/`: per-case results. Also docs on precision rules, compiler rules and chip issues. |
 | `convert/` | `convert_gpu.sh`: one-command conversion (export, prep, data, parse, quant, GPU emulator gate, compile, chip, chip gate). `recipes/` has one recipe per model, `lib/` holds the stages. `fastc/` is the fast parallel compile plus the chip check. `CPU_GPU_SPLIT.md` explains where every step runs and lists every executor fix. `run_evidence/` has logs and gate results. |
-| `hailo_re_src/` | Compiler and HEF reverse engineering. `turbo/turbo2.cpp` is an LD_PRELOAD library for the DFC `compiler` binary: it adds the CP-SAT solve cache and the level-max step control. Also there: own partitioner and per-context compiler (`turbo/`), HEF parser and differ (`hefre/`), op and hardware probes (`probe/`, `probe/RULES.md`), and the ONNX op coverage of 200 ops (`zoo/ops`). |
+| `hailo_re_src/` | Compiler and HEF reverse engineering. `turbo/turbo2.cpp` is an LD_PRELOAD library for the DFC `compiler` binary: it adds the CP-SAT solve cache and the level-max step control. A prebuilt copy is `turbo/bin/libhailo_turbo.so`; build with `turbo/build.sh` and install with `turbo/install_fast.sh`. Also there: own partitioner and per-context compiler (`turbo/`), HEF parser and differ (`hefre/`), op and hardware probes (`probe/`, `probe/RULES.md`), and the ONNX op coverage of 200 ops (`zoo/ops`). |
 | `preproc_hailo/`, `gridnet_hailo/`, `session_20261119_hailo_trt/`, `tensorrt_candidates_src/` | Earlier per-model ports, session scripts and TensorRT build scripts. |
 
 ## Verified results

@@ -326,6 +326,8 @@ extern "C" void* cp_hook(void* sret, const void* proto, void* model) {
 
 static void cp_stats() {
     const char* p = getenv("HAILO_CPCACHE_STATS");
+    std::string def = g_dir + "/stats.log";  // default: one line per compile in the cache dir (audit trail)
+    if (!p) p = def.c_str();
     char line[512];
     snprintf(line, sizeof line,
              "pid %d calls %ld hits %ld stored %ld verify_bad %ld solve_s %.1f hit_overhead_s %.2f saved_s %.1f\n",
@@ -439,7 +441,7 @@ __attribute__((constructor)) static void turbo_init() {
     if (n <= 0) return;
     exe[n] = 0;
     const char* base = strrchr(exe, '/');
-    if (!base || strcmp(base + 1, "compiler") != 0) return;
+    if (!base || (strcmp(base + 1, "compiler") != 0 && strcmp(base + 1, "compiler.real") != 0)) return;
     cp_install();
     dec_install();
     std::thread(apply).detach();

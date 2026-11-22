@@ -1,0 +1,4 @@
+u80 util=0.8 COMPILE_FAILED 777s [error] BackendAllocatorException: Compilation failed: Assignment of the node needs super-defuse
+d util=default COMPILE_FAILED 780s [error] BackendAllocatorException: Compilation failed: Assignment of the node needs super-defuse
+u70 util=0.7 COMPILE_FAILED 780s [error] BackendAllocatorException: Compilation failed: Assignment of the node needs super-defuse
+u90 util=0.9 COMPILE_FAILED 786s [error] BackendAllocatorException: Compilation failed: Assignment of the node needs super-defuse
