@@ -1,0 +1,67 @@
+66 layer classes; modes seen: ['a16_w16', 'a16_w16_a16', 'a16_w16_a8', 'a16_w4', 'a16_w4_a16', 'a16_w4_a8', 'a16_w8', 'a16_w8_a16', 'a16_w8_a8', 'a8_w4', 'a8_w4_a16', 'a8_w4_a8', 'a8_w8', 'a8_w8_a16', 'a8_w8_a8']
+HailoArgMax                                a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoAvgPool                               a16_w16 a16_w16_a16 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoBBoxDecoder                           a16_w16 a16_w16_a16 a16_w16_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoBatchNorm                             a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoBatchNormAdd                          a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoCacheInputLayer                       a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoCacheOutputLayer                      a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoConcat                                a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoConst                                 a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoConv                                  a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoConv3D                                a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoConvA16PreActSum                      a16_w4 a16_w4_a16 a16_w4_a8 a16_w8 a16_w8_a16 a16_w8_a8
+HailoConvA16W8QuantWeightGroup             a16_w4 a16_w4_a16 a16_w4_a8 a16_w8 a16_w8_a16 a16_w8_a8
+HailoConvAdd                               a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoConvDecompose                         a16_w16 a16_w16_a16 a16_w16_a8
+HailoConvDecomposePluto                    a16_w16 a16_w16_a16 a16_w16_a8
+HailoConvQuantWeightGroup                  a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoCrossCorrelationDW                    a8_w8 a8_w8_a16 a8_w8_a8
+HailoDeconv                                a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoDense                                 a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoDepthToSpace                          a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoDepthwise                             a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoDepthwiseAdd                          a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoElementwiseAdd                        a16_w16 a16_w16_a16 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoElementwiseMult                       a8_w8 a8_w8_a8
+HailoElementwiseMultOnMac                  a16_w16 a16_w16_a16
+HailoElementwiseSub                        a16_w16 a16_w16_a16 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoExternalPad                           a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoFeatureMultiplier                     a8_w8 a8_w8_a8
+HailoFeatureMultiplierOnMac                a16_w16 a16_w16_a16
+HailoFeatureShuffle                        a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoFeatureSplitter                       a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoFormatConversion                      a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoFusedBboxDecoder                      a16_w16 a16_w16_a16 a16_w16_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoInputLayer                            a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoLayerNorm                             a16_w16 a16_w16_a16 a16_w16_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoLayerNormMercury                      a8_w8 a8_w8_a16 a8_w8_a8
+HailoLayerNormalization                    a16_w16 a16_w16_a16 a16_w16_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoMatmul                                a8_w8 a8_w8_a16 a8_w8_a8
+HailoMaxPool                               a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoNMS                                   a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoNormalization                         a16_w16 a16_w16_a16 a16_w16_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoNormalizationAdd                      a16_w16 a16_w16_a16 a16_w4_a16 a16_w4_a8 a16_w8_a16 a16_w8_a8 a8_w4 a8_w4_a16 a8_w4_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoOutputLayer                           a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoPortal                                a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoPrecisionSplit                        a16_w16 a16_w16_a8
+HailoPrecisionSplitPixels                  a16_w16 a16_w16_a8
+HailoPrecisionSplitSigned                  a16_w8_a8
+HailoProposalGenerator                     a16_w16 a16_w16_a16 a8_w8_a16
+HailoReduceMax                             a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoReduceMean                            a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoReduceSum                             a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoReduceSumA16PreActSum                 a16_w8 a16_w8_a16 a16_w8_a8
+HailoResizeBilinearMac                     a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoResizeBilinearPpu                     a8_w8 a8_w8_a16 a8_w8_a8
+HailoResizeNearestNeighbor                 a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoRowSplitter                           a16_w16 a16_w16_a16 a8_w8 a8_w8_a16 a8_w8_a8
+HailoShortcut                              a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoSlice                                 a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoSoftmax                               a8_w8 a8_w8_a16 a8_w8_a8
+HailoSoftmaxMars                           a16_w16 a16_w16_a16 a16_w16_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoSoftmaxMask                           a8_w8 a8_w8_a8
+HailoSoftmaxMaskOnMac                      a16_w16 a16_w16_a16
+HailoSpaceToDepth                          a16_w16 a16_w16_a16 a8_w8 a8_w8_a8
+HailoStandaloneActivation                  a16_w16 a16_w16_a16 a16_w16_a8 a8_w8 a8_w8_a16 a8_w8_a8
+HailoWidthSplitter                         a16_w16 a16_w16_a16 a8_w8 a8_w8_a8

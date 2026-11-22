@@ -1,0 +1,19 @@
+{
+ "case": "Mod",
+ "rewrite_vs_orig_db": 340.97212396622274,
+ "ops_after": [
+  "Abs",
+  "Conv",
+  "Div",
+  "Floor",
+  "Mul",
+  "Sign",
+  "Sub"
+ ],
+ "opset_after": 17,
+ "pwl": [
+  "Floor",
+  "Sign",
+  "Trunc"
+ ]
+}

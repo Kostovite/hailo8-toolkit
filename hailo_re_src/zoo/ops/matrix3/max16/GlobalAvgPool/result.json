@@ -1,0 +1,33 @@
+{
+ "case": "GlobalAvgPool",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "avgpool1",
+   "a16_w16"
+  ],
+  [
+   "fc1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 125.62485235528754,
+ "sqnr_hw_db": 78.74373855400835,
+ "hef_MB": 0.22,
+ "seconds": 13.5
+}

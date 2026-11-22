@@ -1,0 +1,14 @@
+{
+ "case": "T_Amax_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 345.49487287559896,
+ "sqnr_hw_db": 44.37981135835551,
+ "hef_MB": 0.07,
+ "seconds": 6.6
+}

@@ -1,0 +1,17 @@
+recipe=gridnet ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/table_structure_final.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_t1 gpus=0 qmode=all16 norm=gray255 opt=0 input16=0
+== export 2026-11-22 02:31:25
+   export exit 0
+== prep 2026-11-22 02:31:30
+   prep exit 0
+== data 2026-11-22 02:31:51
+   data exit 0
+recipe=gridnet ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/table_structure_final.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_t1 gpus=0,1 qmode=all16 norm=gray255 opt=0 input16=0
+== parse 2026-11-22 02:46:52
+   parse exit 0
+== quant 2026-11-22 02:47:02
+   quant exit 0
+== emu 2026-11-22 02:54:47
+   emu exit 0
+== gate_fp 2026-11-22 03:06:47
+   gate_fp exit 0
+== gate_q 2026-11-22 03:18:39

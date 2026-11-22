@@ -1,0 +1,12 @@
+{
+ "case": "Floor",
+ "rewrite_vs_orig_db": 349.76505875120586,
+ "ops_after": [
+  "Conv",
+  "Floor"
+ ],
+ "opset_after": 17,
+ "pwl": [
+  "Floor"
+ ]
+}

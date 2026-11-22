@@ -1,0 +1,1 @@
+c=48 h=24 conv5 down_up sigmoid convt

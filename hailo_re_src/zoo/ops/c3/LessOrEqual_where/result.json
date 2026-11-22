@@ -1,0 +1,17 @@
+{
+ "case": "LessOrEqual_where",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "less"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.1883320547945,
+ "sqnr_hw_db": 32.05269346495266,
+ "hef_MB": 0.1,
+ "seconds": 11.0
+}

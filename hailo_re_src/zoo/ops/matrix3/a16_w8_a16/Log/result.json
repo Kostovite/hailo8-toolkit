@@ -1,0 +1,24 @@
+{
+ "case": "Log",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "log"
+ ],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 153.777471458154,
+ "sqnr_hw_db": 37.43549014645958,
+ "hef_MB": 0.13,
+ "seconds": 39.9
+}

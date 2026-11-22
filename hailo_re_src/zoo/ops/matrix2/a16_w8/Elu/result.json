@@ -1,0 +1,23 @@
+{
+ "case": "Elu",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "elu"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 159.19933222186847,
+ "sqnr_hw_db": 36.04143986772088,
+ "hef_MB": 0.09,
+ "seconds": 10.1
+}

@@ -1,0 +1,15 @@
+{
+ "case": "Greater_mask_p2p0",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "threshold"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 347.0731473987931,
+ "sqnr_hw_db": 22.609162876490117,
+ "seconds": 5.5
+}

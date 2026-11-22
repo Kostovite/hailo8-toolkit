@@ -1,0 +1,33 @@
+{
+ "case": "DepthToSpace",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "depth_to_space"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "depth_to_space1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 81.17605410617472,
+ "hef_MB": 0.16,
+ "seconds": 10.0
+}

@@ -1,0 +1,8 @@
+{
+ "case": "CenterCropPad_pad",
+ "rewrite_vs_orig_db": 349.19282346339094,
+ "ops_after": [
+  "Conv"
+ ],
+ "opset_after": 17
+}

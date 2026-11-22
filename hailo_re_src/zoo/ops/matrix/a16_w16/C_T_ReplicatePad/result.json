@@ -1,0 +1,15 @@
+{
+ "case": "C_T_ReplicatePad",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 352.86435276538623,
+ "sqnr_hw_db": 38.98431348700248,
+ "hef_MB": 0.17,
+ "seconds": 13.6
+}

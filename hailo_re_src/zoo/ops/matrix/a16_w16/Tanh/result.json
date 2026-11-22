@@ -1,0 +1,16 @@
+{
+ "case": "Tanh",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "tanh"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 242.49441207857535,
+ "sqnr_hw_db": 35.41340078924552,
+ "hef_MB": 0.1,
+ "seconds": 10.7
+}

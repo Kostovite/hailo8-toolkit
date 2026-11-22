@@ -1,0 +1,9 @@
+{
+ "case": "Compress_C",
+ "rewrite_vs_orig_db": 346.6761073946931,
+ "ops_after": [
+  "Conv",
+  "Gather"
+ ],
+ "opset_after": 17
+}

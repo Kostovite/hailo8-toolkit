@@ -1,0 +1,10 @@
+{
+ "case": "Mean2",
+ "rewrite_vs_orig_db": 346.00692738865376,
+ "ops_after": [
+  "Add",
+  "Conv",
+  "Mul"
+ ],
+ "opset_after": 17
+}

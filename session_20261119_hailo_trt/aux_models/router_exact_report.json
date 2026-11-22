@@ -1,0 +1,53 @@
+{
+"layers": [
+{
+"layer": "routercur/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 1024
+},
+{
+"layer": "routercur/precision_change0",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 1024
+},
+{
+"layer": "routercur/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 256
+},
+{
+"layer": "routercur/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 128
+},
+{
+"layer": "routercur/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3
+},
+{
+"layer": "routercur/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 6
+},
+{
+"layer": "routercur/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 21
+}
+]
+}

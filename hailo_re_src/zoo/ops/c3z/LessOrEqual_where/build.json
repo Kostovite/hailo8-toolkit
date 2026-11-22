@@ -1,0 +1,14 @@
+{
+ "case": "LessOrEqual_where",
+ "rewrite_vs_orig_db": 346.13429052960896,
+ "ops_after": [
+  "Add",
+  "Cast",
+  "Clip",
+  "Conv",
+  "Less",
+  "Mul",
+  "Sub"
+ ],
+ "opset_after": 17
+}

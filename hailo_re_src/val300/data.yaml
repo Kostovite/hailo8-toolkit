@@ -1,0 +1,22 @@
+names:
+  0: anno
+  1: cap
+  2: catalogue
+  3: code
+  4: equ
+  5: fig
+  6: fnote
+  7: foot
+  8: half_para
+  9: header
+  10: list
+  11: para
+  12: reference
+  13: sec_1
+  14: sec_2
+  15: sec_3
+  16: sec_4
+  17: sec_5
+  18: tab
+train: /mnt/storage/lib_project/models/Hailo_model/hailo_re/val300/list.txt
+val: /mnt/storage/lib_project/models/Hailo_model/hailo_re/val300/list.txt

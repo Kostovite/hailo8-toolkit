@@ -1,0 +1,38 @@
+{
+ "case": "c3_16__R_Floor",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a16_w16_a16|": 1,
+  "activation|a16_w16_a16|pwl": 2,
+  "ew_add|a16_w16_a16|linear": 1,
+  "conv|a16_w16_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 5,
+  "exact": 5,
+  "not_exact": [],
+  "s": 0.6
+ },
+ "T2_chained": {
+  "checked": 5,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": false,
+  "why": "RuntimeError: stack expects a non-empty TensorList"
+ },
+ "PASS": true
+}

@@ -1,0 +1,46 @@
+{
+ "case": "c3__Einsum_matmul",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "conv|a8_w8_a8|linear": 2,
+  "slice|a8_w8_a8|": 24,
+  "resize|a8_w8_a8|": 24,
+  "ew_mult|a8_w8_a8|linear": 24,
+  "reduce_sum|a8_w8_a8|linear": 24,
+  "concat|a8_w8_a8|": 1,
+  "format_conversion|a8_w8_a8|": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 101,
+  "exact": 101,
+  "not_exact": [],
+  "s": 2.9
+ },
+ "T2_chained": {
+  "checked": 75,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.4
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "Einsum_matmul/conv2": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

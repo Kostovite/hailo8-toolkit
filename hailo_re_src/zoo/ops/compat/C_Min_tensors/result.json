@@ -1,0 +1,15 @@
+{
+ "case": "C_Min_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "sqnr_native_db": 352.0554214058218,
+ "sqnr_hw_db": 34.043347763925034,
+ "hef_MB": 0.18,
+ "seconds": 17.5
+}

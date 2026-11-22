@@ -1,0 +1,36 @@
+{
+ "case": "T_Norm_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum1",
+   "a8_w8_a16"
+  ],
+  [
+   "dw1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 146.41150135757647,
+ "sqnr_hw_db": 44.37286124280361,
+ "hef_MB": 0.19,
+ "seconds": 60.9
+}

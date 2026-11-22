@@ -1,0 +1,5 @@
+normalization1 = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/unreleased/yolov8s_bbox_decoding_only_nms_config.json", meta_arch=yolov8, engine=cpu, bbox_decoding_only=True)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

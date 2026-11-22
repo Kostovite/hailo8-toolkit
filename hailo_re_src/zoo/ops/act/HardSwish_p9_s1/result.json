@@ -1,0 +1,43 @@
+{
+ "act": "HardSwish",
+ "pieces": 9,
+ "scale": 1.0,
+ "range": [
+  -7.313560962677002,
+  8.549930572509766
+ ],
+ "fit_sqnr_db": 47.00693384860816,
+ "pwl_layers": 2,
+ "native": {
+  "sqnr_hw_db": 30.12901782989502,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "hardswish",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 31.828773021697998,
+  "layers": 5,
+  "types": [
+   "conv",
+   "activation",
+   "activation",
+   "ew_sub",
+   "conv"
+  ],
+  "acts": [
+   "linear",
+   "pwl",
+   "pwl",
+   "linear",
+   "linear"
+  ],
+  "hef_MB": 0.16
+ }
+}

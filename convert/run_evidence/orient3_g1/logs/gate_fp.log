@@ -1,0 +1,2 @@
+output 0 (2000, 28, 28, 256): rel_max 8.37e-07  mae 2.031e-07
+GATE_FP PASS tol 0.001

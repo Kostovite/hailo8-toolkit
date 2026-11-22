@@ -1,0 +1,23 @@
+{
+ "case": "T_Reciprocal",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "inv_pos"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 355.6175880869358,
+ "sqnr_hw_db": 34.75621436225464,
+ "hef_MB": 0.09,
+ "seconds": 34.0
+}

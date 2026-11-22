@@ -1,0 +1,43 @@
+{
+ "case": "R_Einsum_bchw",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "reduce_sum",
+  "resize"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum1",
+   "a8_w8_a8"
+  ],
+  [
+   "resize1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv2",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 141.31140496062054,
+ "sqnr_hw_db": 29.175912218351332,
+ "hef_MB": 0.13,
+ "seconds": 13.0
+}

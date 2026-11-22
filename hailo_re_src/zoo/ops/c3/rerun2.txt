@@ -1,0 +1,14 @@
+R_SpaceToDepth
+R_DFT_W
+R_Einsum_bchw
+R_Mod
+R_Equal
+R_Floor
+R_Round
+R_Ceil
+R_Sign
+R_ArgMax_C
+R_ArgMin_C
+R_Hardmax_C
+R_ReduceProd_C
+OneHot_argmax

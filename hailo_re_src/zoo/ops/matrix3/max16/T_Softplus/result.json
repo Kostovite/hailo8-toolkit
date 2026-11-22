@@ -1,0 +1,35 @@
+{
+ "case": "T_Softplus",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "softplus"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 148.74931394297928,
+ "sqnr_hw_db": 46.75746076615348,
+ "hef_MB": 0.09,
+ "seconds": 11.6
+}

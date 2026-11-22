@@ -1,0 +1,13 @@
+{
+ "case": "ReduceMax_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_max"
+ ],
+ "activations": [],
+ "sqnr_native_db": 345.49487287559896,
+ "sqnr_hw_db": 43.15372469431892,
+ "hef_MB": 0.07,
+ "seconds": 9.3
+}

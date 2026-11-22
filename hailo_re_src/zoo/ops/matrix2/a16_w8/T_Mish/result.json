@@ -1,0 +1,23 @@
+{
+ "case": "T_Mish",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "mish"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 150.07388056206537,
+ "sqnr_hw_db": 32.23603420266005,
+ "hef_MB": 0.09,
+ "seconds": 10.7
+}

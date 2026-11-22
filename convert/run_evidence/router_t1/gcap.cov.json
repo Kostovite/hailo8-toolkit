@@ -1,0 +1,46 @@
+{
+"layers": [
+{
+"layer": "router/input_layer1",
+"type": "input_layer",
+"status": "mismatch",
+"bad": 3,
+"numel": 1024
+},
+{
+"layer": "router/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 256
+},
+{
+"layer": "router/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 128
+},
+{
+"layer": "router/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3
+},
+{
+"layer": "router/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 6
+},
+{
+"layer": "router/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 21
+}
+]
+}

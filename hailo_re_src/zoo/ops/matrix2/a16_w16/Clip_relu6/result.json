@@ -1,0 +1,23 @@
+{
+ "case": "Clip_relu6",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 349.1432664967889,
+ "sqnr_hw_db": 64.85787879547455,
+ "hef_MB": 0.09,
+ "seconds": 10.5
+}

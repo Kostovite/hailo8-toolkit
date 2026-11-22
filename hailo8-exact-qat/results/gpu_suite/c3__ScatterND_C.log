@@ -1,0 +1,4 @@
+SHAPE ScatterND_C/slice1 (slice) got (1, 4, 24, 24) ref (1, 16, 24, 24)
+SHAPE ScatterND_C/slice2 (slice) got (1, 8, 24, 24) ref (1, 16, 24, 24)
+SHAPE ScatterND_C/slice3 (slice) got (1, 4, 24, 24) ref (1, 16, 24, 24)
+{"case": "c3__ScatterND_C", "conv_mode": "gemm", "T1_per_layer": {"checked": 7, "exact": 7, "not_exact": [], "s": 0.7}, "T2_chained": {"checked": 6, "value_mismatch": [], "pass": true, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": true, "flags": [], "mismatch_per_output": {"ScatterND_C/conv2": 0}, "pass": true}, "PASS": true}

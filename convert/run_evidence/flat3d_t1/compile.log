@@ -1,0 +1,12 @@
+[info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+[info] Loading network parameters
+[info] Starting Hailo allocation and compilation flow
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 3m 46s 235ms
+[info] Trying to compile the network in a single context
+[info] Single context flow failed: Recoverable single context error
+[info] Building optimization options for network layers...
+[info] Successfully built optimization options - 4m 24s 562ms
+[info] Using Multi-context flow
+[info] Resources optimization params: max_control_utilization=60%, max_compute_utilization=60%, max_compute_16bit_utilization=60%, max_memory_utilization (weights)=60%, max_input_aligner_utilization=60%, max_apu_utilization=60%
+[info] Finding the best partition to contexts...

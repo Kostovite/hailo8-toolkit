@@ -1,0 +1,9 @@
+{
+ "case": "EyeLike_mask",
+ "rewrite_vs_orig_db": 335.1486812433087,
+ "ops_after": [
+  "Conv",
+  "Mul"
+ ],
+ "opset_after": 17
+}

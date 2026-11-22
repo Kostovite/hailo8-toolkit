@@ -1,0 +1,24 @@
+{
+ "case": "Max_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "conv1:HailoConv",
+  "concat1:HailoConcat",
+  "reduce_max1:HailoReduceMax",
+  "conv2:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.0710386649052,
+ "sqnr_hw_db": 27.50122705081587,
+ "hef_MB": 0.14,
+ "seconds": 12.8
+}

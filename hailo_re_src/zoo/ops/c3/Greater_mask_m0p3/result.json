@@ -1,0 +1,15 @@
+{
+ "case": "Greater_mask_m0p3",
+ "stage": "quantize",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "threshold"
+ ],
+ "prec": "a8_w8",
+ "error": "ValueError: Exception encountered when calling ActivationOp.call().\n\n\u001b[1mThe theta value of a Thresholded ReLU layer should be >=0. Received: -0.30000001192092896\u001b[0m\n\nArguments received by ActivationOp.call():\n  \u2022 inputs=tf.Tensor(shape=(1, 24, 24, 16), dtype=float32)\n  \u2022 fully_native=None\n  \u2022 encoding_tensors=None\n  \u2022 skip_stats=False\n  \u2022 training=False\n  \u2022 kwargs={'cache_config': 'None'}",
+ "trace": "tensors, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/hailo_layers/base_hailo_layer.py\", line 174, in call\n    op_result = op(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/atomic_ops/base_atomic_op.py\", line 1169, in call\n    outputs = self._native_run(inputs, training=training, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/atomic_ops/base_atomic_op.py\", line 1262, in _native_run\n    outputs = self.call_native(native_input, training=training, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/atomic_ops/activation_op.py\", line 1507, in call_native\n    result = self.act_func(inputs[0])\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/atomic_ops/activation_op.py\", line 1614, in threshold\n    op = tf.keras.layers.ThresholdedReLU(**self.act_native_params)\nValueError: Exception encountered when calling ActivationOp.call().\n\n\u001b[1mThe theta value of a Thresholded ReLU layer should be >=0. Received: -0.30000001192092896\u001b[0m\n\nArguments received by ActivationOp.call():\n  \u2022 inputs=tf.Tensor(shape=(1, 24, 24, 16), dtype=float32)\n  \u2022 fully_native=None\n  \u2022 encoding_tensors=None\n  \u2022 skip_stats=False\n  \u2022 training=False\n  \u2022 kwargs={'cache_config': 'None'}\n",
+ "seconds": 2.1
+}

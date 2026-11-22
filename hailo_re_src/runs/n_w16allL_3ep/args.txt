@@ -1,0 +1,1 @@
+--epochs 3 --eval_every 2300 --lr_k 6e-4 --lr_b 3e-2 --ovf 0 --k_radius 4 --b_radius 256 --bs 8 --imgsz 640 --pt /mnt/storage/lib_project/models/Hailo_model/hailo_re/small/y26n_v14sec/weights/best.pt --teacher_cache /mnt/storage/lib_project/models/Hailo_model/hailo_re/small/teacher_n640

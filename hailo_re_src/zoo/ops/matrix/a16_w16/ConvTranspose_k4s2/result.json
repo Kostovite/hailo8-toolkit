@@ -1,0 +1,14 @@
+{
+ "case": "ConvTranspose_k4s2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "deconv"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 136.23433239483342,
+ "sqnr_hw_db": 38.96482565599442,
+ "hef_MB": 0.35,
+ "seconds": 21.8
+}

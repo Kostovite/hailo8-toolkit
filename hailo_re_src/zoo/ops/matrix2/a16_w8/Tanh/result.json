@@ -1,0 +1,23 @@
+{
+ "case": "Tanh",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "tanh"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 242.49441207857535,
+ "sqnr_hw_db": 35.515839563839585,
+ "hef_MB": 0.09,
+ "seconds": 10.0
+}

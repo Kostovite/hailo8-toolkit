@@ -1,0 +1,30 @@
+{
+ "case": "C_ReduceL1_W",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "reduce_sum"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "activation1_normalization5:HailoNormalization",
+  "activation1_normalization28:HailoNormalization",
+  "activation1_relu6:HailoStandaloneActivation",
+  "activation1_ew_add7:HailoElementwiseAdd",
+  "reduce_sum1:HailoReduceSum",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 364.10786287523626,
+ "sqnr_hw_db": 47.96677022256799,
+ "hef_MB": 0.1,
+ "seconds": 15.2
+}

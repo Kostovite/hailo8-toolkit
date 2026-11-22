@@ -1,0 +1,33 @@
+{
+ "case": "T_BatchNorm2d",
+ "stage": "ok",
+ "hn_types": [
+  "batch_norm",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "batch_norm1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 138.1341781577168,
+ "sqnr_hw_db": 81.1760842616127,
+ "hef_MB": 0.09,
+ "seconds": 14.0
+}

@@ -1,0 +1,86 @@
+{
+ "case": "Attention_op23_causal",
+ "stage": "ok",
+ "hn_types": [
+  "const_input",
+  "conv",
+  "ew_add",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "const_input1",
+   "a8_w8_a8"
+  ],
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion1",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion2",
+   "a8_w8_a8"
+  ],
+  [
+   "conv2",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion3",
+   "a8_w8_a8"
+  ],
+  [
+   "conv3",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_add1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_max_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "matmul2",
+   "a8_w8_a16"
+  ],
+  [
+   "format_conversion4",
+   "a16_w16"
+  ],
+  [
+   "conv4",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 131.47536755281635,
+ "sqnr_hw_db": 15.152857205074612,
+ "hef_MB": 0.81,
+ "seconds": 53.1
+}

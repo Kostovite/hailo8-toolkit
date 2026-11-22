@@ -1,0 +1,20 @@
+{
+ "case": "MaxUnpool_2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "maxpool",
+  "normalization",
+  "resize"
+ ],
+ "activations": [
+  "less"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 348.06478928283633,
+ "sqnr_hw_db": 20.649281674164918,
+ "hef_MB": 0.24,
+ "seconds": 17.2
+}

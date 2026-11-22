@@ -1,0 +1,22 @@
+{
+ "case": "Slice_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "slice1:HailoSlice",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 349.1662947505875,
+ "sqnr_hw_db": 38.972542007055374,
+ "hef_MB": 0.08,
+ "seconds": 9.8
+}

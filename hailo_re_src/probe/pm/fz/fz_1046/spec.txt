@@ -1,0 +1,1 @@
+c=64 h=20 dw7 attn attn avgpool c2f conv5 sppf

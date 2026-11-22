@@ -1,0 +1,21 @@
+{
+ "case": "R_Round",
+ "stage": "ok",
+ "pwl_layers": [
+  "R_Round/activation1",
+  "R_Round/activation2"
+ ],
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add"
+ ],
+ "activations": [
+  "pwl"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 52.33171316678942,
+ "sqnr_hw_db": 22.21713936249867,
+ "hef_MB": 0.14,
+ "seconds": 13.3
+}

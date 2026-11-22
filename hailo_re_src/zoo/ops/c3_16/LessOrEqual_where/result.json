@@ -1,0 +1,36 @@
+{
+ "case": "LessOrEqual_where",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "less"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "activation1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 349.1883320547945,
+ "sqnr_hw_db": 32.05825869295635,
+ "hef_MB": 0.1,
+ "seconds": 12.5
+}

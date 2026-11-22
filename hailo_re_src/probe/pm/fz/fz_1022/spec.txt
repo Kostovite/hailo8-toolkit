@@ -1,0 +1,1 @@
+c=32 h=32 dw7 sigmoid dw5 softmax_c bilinear gelu

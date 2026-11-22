@@ -1,0 +1,27 @@
+{
+ "case": "Abs",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "activation1_normalization4:HailoNormalization",
+  "activation1_normalization27:HailoNormalization",
+  "activation1_relu5:HailoStandaloneActivation",
+  "activation1_ew_add6:HailoElementwiseAdd",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 36.73734668056405,
+ "hef_MB": 0.23,
+ "seconds": 24.7
+}

@@ -1,0 +1,1 @@
+c=48 h=16 conv3 groupnorm c2f avgpool gelu dw5 up_down

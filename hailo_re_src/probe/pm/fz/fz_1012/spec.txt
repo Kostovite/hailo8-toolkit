@@ -1,0 +1,1 @@
+c=48 h=20 sigmoid down_up conv1 softmax_c fpn

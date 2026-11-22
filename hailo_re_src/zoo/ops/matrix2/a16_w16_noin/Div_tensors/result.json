@@ -1,0 +1,31 @@
+{
+ "case": "Div_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "inv_pos",
+  "prelu"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "conv1_normalization6",
+  "conv1_normalization29",
+  "conv1_relu7",
+  "conv1_ew_add8",
+  "mul_and_add1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "ew_mult1:HailoElementwiseMult"
+ ],
+ "sqnr_native_db": 147.51555128087116,
+ "sqnr_hw_db": 38.394191351115076,
+ "hef_MB": 0.28,
+ "seconds": 63.5
+}

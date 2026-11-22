@@ -1,0 +1,16 @@
+{
+ "case": "HardSwish",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "hardswish"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 144.9549416374945,
+ "sqnr_hw_db": 30.941147030448878,
+ "hef_MB": 0.1,
+ "seconds": 10.5
+}

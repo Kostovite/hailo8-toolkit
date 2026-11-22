@@ -1,0 +1,44 @@
+{
+ "case": "c3_16__Hardmax_C_onehot",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "argmax|a8_w8_a8|": 1,
+  "activation|a8_w8_a16|less": 16,
+  "ew_sub|a16_w16_a16|linear": 15,
+  "concat|a16_w16_a16|": 1,
+  "conv|a16_w16_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 35,
+  "exact": 35,
+  "not_exact": [],
+  "s": 0.6
+ },
+ "T2_chained": {
+  "checked": 33,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.2
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "Hardmax_C_onehot/conv1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

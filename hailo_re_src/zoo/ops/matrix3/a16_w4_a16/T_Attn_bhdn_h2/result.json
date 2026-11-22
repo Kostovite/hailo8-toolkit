@@ -1,0 +1,39 @@
+{
+ "case": "T_Attn_bhdn_h2",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a16_w4_a16",
+ "prec_layers": [
+  "conv_feature_splitter1_1",
+  "conv_feature_splitter1_2",
+  "conv_feature_splitter1_3",
+  "conv2",
+  "conv3"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "format_conversion1:HailoFormatConversion",
+  "format_conversion2:HailoFormatConversion",
+  "format_conversion3:HailoFormatConversion",
+  "matmul1:HailoMatmul",
+  "mul_and_add1:HailoNormalization",
+  "reduce_max_softmax1:HailoReduceMax",
+  "ew_sub_softmax1:HailoElementwiseSub",
+  "reduce_sum_softmax1:HailoReduceSum",
+  "ew_mult_softmax1:HailoElementwiseMult",
+  "matmul2:HailoMatmul",
+  "format_conversion4:HailoFormatConversion",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "error": "AccelerasUnsupportedError: layer T_Attn_bhdn_h2/matmul1 does not support shift delta. To overcome this issue you should force larger range at the inputs of the layer using command quantization_param([layer_name], force_range_in=[range_min0, range_max0, range_min1, range_max1], force_range_index=[0, 1]) current range of input 0 is [-4.468, 4.522] and input 1 is [-34.913, 40.662].You should increase the multiplication of thes",
+ "trace": "rams.py\", line 353, in _run_int\n    comp_to_retry = self._create_hw_params_component(matching_component_group)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/create_hw_params/create_hw_params.py\", line 205, in _create_hw_params_component\n    layer.create_hw_params(layer_clip_cfg, self.optimization_target, hw_shifts=hw_shifts)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/hailo_layers/hailo_matmul.py\", line 201, in create_hw_params\n    self.matmul_op.create_hw_params(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/atomic_ops/matmul_op.py\", line 223, in create_hw_params\n    raise AccelerasUnsupportedError(\nhailo_model_optimization.acceleras.utils.acceleras_exceptions.AccelerasUnsupportedError: layer T_Attn_bhdn_h2/matmul1 does not support shift delta. To overcome this issue you should force larger range at the inputs of the layer using command quantization_param([layer_name], force_range_in=[range_min0, range_max0, range_min1, range_max1], force_range_index=[0, 1]) current range of input 0 is [-4.468, 4.522] and input 1 is [-34.913, 40.662].You should increase the multiplication of these ranges by a factor of 4.670, e.g. you can apply factor of sqrt(4.670) to both inputs:\nquantization_param([T_Attn_bhdn_h2/matmul1], force_range_in=[-9.655, 9.772, -75.448, 87.871], force_range_index=[0,1])\n\n",
+ "seconds": 24.6
+}

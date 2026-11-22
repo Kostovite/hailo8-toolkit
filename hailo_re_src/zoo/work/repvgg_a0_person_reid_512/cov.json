@@ -1,0 +1,186 @@
+{
+"layers": [
+{
+"layer": "repvgg_a0_person_reid_512/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 98304
+},
+{
+"layer": "repvgg_a0_person_reid_512/normalization1",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 98304
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 393216
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 98304
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 98304
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 49152
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 49152
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 49152
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 49152
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "repvgg_a0_person_reid_512/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 40960
+},
+{
+"layer": "repvgg_a0_person_reid_512/avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "repvgg_a0_person_reid_512/fc1",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+}
+]
+}

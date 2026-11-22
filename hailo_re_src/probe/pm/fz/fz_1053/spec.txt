@@ -1,0 +1,1 @@
+c=48 h=24 up_down softmax_c hswish layernorm dw7 cat

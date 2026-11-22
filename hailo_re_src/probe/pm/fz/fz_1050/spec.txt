@@ -1,0 +1,1 @@
+c=48 h=40 se softmax_c dw7 dw3 maxpool hswish conv5

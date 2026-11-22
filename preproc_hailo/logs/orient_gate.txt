@@ -1,0 +1,7 @@
+FP served (variable shape)   agree-with-FP 100.00%  (0 pages differ)  false turns 5/1000  right turns 912/1000  wrong angle 17
+FP on 896 canvas (torch)     agree-with-FP  99.65%  (7 pages differ)  false turns 5/1000  right turns 919/1000  wrong angle 17
+feat_fp.npy                  agree-with-FP  99.65%  (7 pages differ)  false turns 5/1000  right turns 919/1000  wrong angle 17
+feat_int8.npy                agree-with-FP  99.35%  (13 pages differ)  false turns 5/1000  right turns 917/1000  wrong angle 18
+feat_all16.npy               agree-with-FP  99.65%  (7 pages differ)  false turns 5/1000  right turns 919/1000  wrong angle 17
+feat_all16.npy               agree-with-FP  99.65%  (7 pages differ)  false turns 5/1000  right turns 919/1000  wrong angle 17
+chip_all16.npy               agree-with-FP  99.65%  (7 pages differ)  false turns 5/1000  right turns 919/1000  wrong angle 17

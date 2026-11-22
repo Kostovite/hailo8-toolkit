@@ -1,0 +1,10 @@
+{
+ "case": "TensorScatter_op24",
+ "rewrite_vs_orig_db": 349.1280293981344,
+ "ops_after": [
+  "Concat",
+  "Conv",
+  "Slice"
+ ],
+ "opset_after": 17
+}

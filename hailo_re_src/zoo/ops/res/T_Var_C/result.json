@@ -1,0 +1,16 @@
+{
+ "case": "T_Var_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean"
+ ],
+ "activations": [],
+ "sqnr_native_db": 139.68967879308994,
+ "sqnr_hw_db": 39.281321655465646,
+ "hef_MB": 0.18,
+ "seconds": 21.6
+}

@@ -1,0 +1,20 @@
+{
+ "case": "ReduceSum_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "reduce_sum"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "reduce_sum1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 131.43836812543015,
+ "sqnr_hw_db": 39.22442710635419,
+ "hef_MB": 0.1,
+ "seconds": 9.3
+}

@@ -1,0 +1,16 @@
+{
+ "case": "Elu",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "elu"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 159.19933222186847,
+ "sqnr_hw_db": 36.078027160730954,
+ "hef_MB": 0.09,
+ "seconds": 9.0
+}

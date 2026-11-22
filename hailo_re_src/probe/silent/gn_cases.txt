@@ -1,0 +1,9 @@
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gm_sub
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gm_rms
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gm_mean_c
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gm_mean_hw
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gn1_hw_first
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gn1_dup
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gn1_gap
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_groupnorm1
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_groupnorm

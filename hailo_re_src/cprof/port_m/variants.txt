@@ -1,0 +1,7 @@
+seed1|allocator_param(seed=1)
+seed2|allocator_param(seed=2)
+seed3|allocator_param(seed=3)
+seed4|allocator_param(seed=4)
+res70|resources_param(max_compute_utilization=0.7, max_compute_16bit_utilization=0.7, max_memory_utilization=0.7, max_control_utilization=0.7, max_input_aligner_utilization=0.7, max_apu_utilization=0.7)
+res80|resources_param(max_compute_utilization=0.8, max_compute_16bit_utilization=0.8, max_memory_utilization=0.8, max_control_utilization=0.8, max_input_aligner_utilization=0.8, max_apu_utilization=0.8)
+res70_seed1|resources_param(max_compute_utilization=0.7, max_compute_16bit_utilization=0.7, max_memory_utilization=0.7, max_control_utilization=0.7, max_input_aligner_utilization=0.7, max_apu_utilization=0.7)\nallocator_param(seed=1)

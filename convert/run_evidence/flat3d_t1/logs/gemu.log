@@ -1,0 +1,6 @@
+GPU_EMU coverage: 240/240 layers exact; 0 within 1 LSB on <0.1% elements: 
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+[gpu_emu] qatfast cannot build (conv-add on an a16_w16 layer) -> graph26 batched float64 executor
+BATCH SELF-TEST FAILED at flat3/conv45 row 0: batched != single

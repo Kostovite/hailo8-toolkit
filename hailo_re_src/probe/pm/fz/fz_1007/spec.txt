@@ -1,0 +1,1 @@
+c=16 h=40 d2s sppf up_down dw3 avgpool

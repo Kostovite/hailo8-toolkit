@@ -1,0 +1,57 @@
+{
+ "case": "Div_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "inv_pos",
+  "prelu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "conv1_normalization6",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1_normalization29",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1_relu7",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1_ew_add8",
+   "a16_w16"
+  ],
+  [
+   "mul_and_add1",
+   "a16_w16_a8"
+  ],
+  [
+   "conv2",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 147.51555128087116,
+ "sqnr_hw_db": 31.099697421503336,
+ "hef_MB": 0.34,
+ "seconds": 66.7
+}

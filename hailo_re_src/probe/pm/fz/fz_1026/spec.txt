@@ -1,0 +1,1 @@
+c=16 h=32 split2 fpn up_down hswish se layernorm

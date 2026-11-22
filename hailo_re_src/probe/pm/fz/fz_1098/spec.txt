@@ -1,0 +1,1 @@
+c=32 h=24 gelu up_down dw7 split2 res shuffle

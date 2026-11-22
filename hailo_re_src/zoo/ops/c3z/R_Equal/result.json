@@ -1,0 +1,60 @@
+{
+ "case": "R_Equal",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add",
+  "normalization"
+ ],
+ "activations": [
+  "clip",
+  "greater",
+  "less",
+  "relu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "normalization1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "normalization2",
+   "a16_w16_a16"
+  ],
+  [
+   "activation2",
+   "a16_w16_a16"
+  ],
+  [
+   "ew_add1",
+   "a16_w16_a16"
+  ],
+  [
+   "mul_and_add1",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 341.92706806612864,
+ "sqnr_hw_db": 37.15657960982571,
+ "hef_MB": 0.2,
+ "seconds": 18.3
+}

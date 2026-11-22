@@ -1,0 +1,20 @@
+{
+ "case": "T_LogSoftmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "reduce_max",
+  "reduce_sum"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 151.54906249662096,
+ "sqnr_hw_db": 43.04477454660419,
+ "hef_MB": 0.13,
+ "seconds": 57.3
+}

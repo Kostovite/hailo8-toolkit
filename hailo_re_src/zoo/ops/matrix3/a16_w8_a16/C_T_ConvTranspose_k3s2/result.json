@@ -1,0 +1,22 @@
+{
+ "case": "C_T_ConvTranspose_k3s2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "deconv"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "deconv1",
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 138.07140172415438,
+ "sqnr_hw_db": 38.352117697199404,
+ "hef_MB": 0.23,
+ "seconds": 20.2
+}

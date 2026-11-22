@@ -1,0 +1,16 @@
+{
+ "case": "Swish_beta",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "sigmoid"
+ ],
+ "sqnr_native_db": 143.80571146108318,
+ "sqnr_hw_db": 36.207821742678654,
+ "hef_MB": 0.1,
+ "seconds": 16.0
+}

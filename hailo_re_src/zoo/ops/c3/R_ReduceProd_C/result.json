@@ -1,0 +1,15 @@
+{
+ "case": "R_ReduceProd_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "ew_mult",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 337.14097079856805,
+ "sqnr_hw_db": 40.541370339759276,
+ "hef_MB": 0.41,
+ "seconds": 46.4
+}

@@ -1,0 +1,4 @@
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, batch_size=8, calibset_size=2048)
+quantization_param([conv1, conv2, conv3, conv4, conv5], precision_mode=a16_w16)
+quantization_param(input_layer1, precision_mode=a16_w16_a16)

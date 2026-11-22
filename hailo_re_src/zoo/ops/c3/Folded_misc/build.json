@@ -1,0 +1,11 @@
+{
+ "case": "Folded_misc",
+ "rewrite_vs_orig_db": 349.97101357572717,
+ "ops_after": [
+  "Add",
+  "Cast",
+  "Conv",
+  "Mul"
+ ],
+ "opset_after": 17
+}

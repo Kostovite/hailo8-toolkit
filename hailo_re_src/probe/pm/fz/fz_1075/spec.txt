@@ -1,0 +1,1 @@
+c=64 h=16 conv5 shuffle maxpool layernorm layernorm

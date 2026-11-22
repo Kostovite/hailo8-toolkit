@@ -1,0 +1,15 @@
+{
+ "case": "Mish_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "mish"
+ ],
+ "sqnr_native_db": 150.07388056206537,
+ "sqnr_hw_db": 32.23603420266005,
+ "hef_MB": 0.09,
+ "seconds": 10.3
+}

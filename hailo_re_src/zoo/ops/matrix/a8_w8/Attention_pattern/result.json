@@ -1,0 +1,17 @@
+{
+ "case": "Attention_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 130.12488399182,
+ "sqnr_hw_db": 17.956960447310625,
+ "hef_MB": 0.31,
+ "seconds": 99.3
+}

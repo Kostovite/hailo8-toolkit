@@ -1,0 +1,7 @@
+norm_layer1 = normalization([127, 127, 127], [128, 128, 128])
+quantization_param({conv*}, bias_mode=double_scale_initialization)
+model_optimization_config(calibration, batch_size=32, calibset_size=64)
+logits_layer1 = logits_layer(efficientnet_lite0/fc1, softmax, -1, cpu)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

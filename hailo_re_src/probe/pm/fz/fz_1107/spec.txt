@@ -1,0 +1,1 @@
+c=128 h=20 layernorm maxpool hswish dw5 conv3 softmax_c fpn

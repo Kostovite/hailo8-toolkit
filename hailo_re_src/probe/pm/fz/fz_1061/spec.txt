@@ -1,0 +1,1 @@
+c=96 h=24 cat split2 softmax_c res conv3 sigmoid

@@ -1,0 +1,13 @@
+{
+ "case": "Einsum_matmul",
+ "rewrite_vs_orig_db": 141.78551008091634,
+ "ops_after": [
+  "Concat",
+  "Conv",
+  "Mul",
+  "ReduceSum",
+  "Slice",
+  "Transpose"
+ ],
+ "opset_after": 17
+}

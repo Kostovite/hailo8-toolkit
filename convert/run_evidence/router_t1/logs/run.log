@@ -1,0 +1,24 @@
+recipe=router ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/region_router.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1 gpus=3 qmode=all16 norm=none opt=0 input16=1
+== export 2026-11-22 02:24:02
+   export exit 0
+== prep 2026-11-22 02:24:06
+   prep exit 0
+== data 2026-11-22 02:24:06
+   data exit 0
+== parse 2026-11-22 02:24:08
+   parse exit 0
+== quant 2026-11-22 02:24:16
+   quant exit 0
+== emu 2026-11-22 02:24:42
+   emu exit 0
+== gate_fp 2026-11-22 02:26:20
+   gate_fp exit 0
+== gate_q 2026-11-22 02:26:20
+   gate_q exit 0
+== compile 2026-11-22 02:26:20
+   compile exit 0
+== chip 2026-11-22 02:26:45
+   chip exit 0
+== gate_chip 2026-11-22 02:26:45
+   gate_chip exit 0
+ALL GATES PASSED: /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/model.hef   host contract: /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/host/

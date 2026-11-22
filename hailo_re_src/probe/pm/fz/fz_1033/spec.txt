@@ -1,0 +1,1 @@
+c=128 h=20 mul2 dw5 dw5 up_down conv3 split2

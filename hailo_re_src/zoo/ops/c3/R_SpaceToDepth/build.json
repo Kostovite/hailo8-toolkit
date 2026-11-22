@@ -1,0 +1,11 @@
+{
+ "case": "SpaceToDepth",
+ "rewrite_vs_orig_db": 349.19282346339094,
+ "ops_after": [
+  "Conv",
+  "Gather",
+  "Reshape",
+  "Transpose"
+ ],
+ "opset_after": 17
+}

@@ -1,0 +1,7 @@
+{
+ "case": "T_LSTM_bf_squeeze",
+ "stage": "parse",
+ "error": "ImportError: cannot import name 'Fuser' from 'hailo_sdk_client.model_translator.fuser.fuser' (/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/model_translator/fuser/fuser.py)",
+ "trace": "Traceback (most recent call last):\n  File \"/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/probe.py\", line 361, in run\n    from hailo_sdk_client.model_translator.fuser.fuser import Fuser\nImportError: cannot import name 'Fuser' from 'hailo_sdk_client.model_translator.fuser.fuser' (/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/model_translator/fuser/fuser.py)\n",
+ "seconds": 0.1
+}

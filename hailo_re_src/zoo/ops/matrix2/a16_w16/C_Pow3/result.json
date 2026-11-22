@@ -1,0 +1,24 @@
+{
+ "case": "C_Pow3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "square1:HailoFeatureMultiplier",
+  "ew_mult1:HailoElementwiseMult"
+ ],
+ "sqnr_native_db": 364.1266888721567,
+ "sqnr_hw_db": 40.11253171136406,
+ "hef_MB": 0.19,
+ "seconds": 17.6
+}

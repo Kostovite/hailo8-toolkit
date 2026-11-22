@@ -1,0 +1,2 @@
+[qatfast] MaxUnpool_2/normalization1: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "c3_16__MaxUnpool_2", "conv_mode": "gemm", "T1_per_layer": {"checked": 7, "exact": 7, "not_exact": [], "s": 0.6}, "T2_chained": {"checked": 5, "value_mismatch": [], "pass": true, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": true, "flags": [], "mismatch_per_output": {"MaxUnpool_2/conv1": 0}, "pass": true}, "PASS": true}

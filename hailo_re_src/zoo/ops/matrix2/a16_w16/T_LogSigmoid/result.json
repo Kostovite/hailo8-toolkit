@@ -1,0 +1,25 @@
+{
+ "case": "T_LogSigmoid",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "log",
+  "sigmoid"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "activation2",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 133.61974880784865,
+ "sqnr_hw_db": 29.930636247364934,
+ "hef_MB": 0.15,
+ "seconds": 43.4
+}

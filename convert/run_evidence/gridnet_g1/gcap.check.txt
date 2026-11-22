@@ -1,0 +1,2 @@
+47/47 checked layers exact when chained from raw pixels
+{'input_layer': '1/1', 'normalization': '1/1', 'conv': '20/20', 'avgpool': '6/6', 'resize': '10/10', 'concat': '3/3', 'activation': '4/4', 'external_pad': '1/1', 'slice': '1/1'}

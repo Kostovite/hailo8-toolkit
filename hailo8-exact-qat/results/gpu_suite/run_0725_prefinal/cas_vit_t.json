@@ -1,0 +1,53 @@
+{
+ "case": "cas_vit_t",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "conv|a8_w8_a8|linear": 94,
+  "conv|a8_w8_a8|relu": 2,
+  "dw|a8_w8_a8|gelu": 15,
+  "batch_norm|a8_w8_a8|linear": 31,
+  "dw|a8_w8_a8|relu": 30,
+  "conv|a8_w8_a8|sigmoid": 36,
+  "ew_mult|a8_w8_a8|linear": 75,
+  "avgpool|a8_w8_a8|linear": 31,
+  "resize|a8_w8_a8|": 30,
+  "ew_add|a8_w8_a8|linear": 15,
+  "dw|a8_w8_a8|linear": 30,
+  "conv|a8_w8_a8|gelu": 15,
+  "dense|a8_w8_a8|sigmoid": 24,
+  "dense|a8_w8_a8|linear": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 430,
+  "exact": 430,
+  "not_exact": [],
+  "s": 284.1
+ },
+ "T2_chained": {
+  "checked": 400,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 12.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "cas_vit_t/fc31": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

@@ -1,0 +1,1026 @@
+{
+"layers": [
+{
+"layer": "paddle_ocr_v5_mobile_detection/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change0",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2088960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw1",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 2088960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4177920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization4",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 4177920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw2",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1044480
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv3",
+"type": "conv",
+"status": "mismatch",
+"bad": 1,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization7",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw3",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization11",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 1566720
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw4",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization14",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw5",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization18",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 146880
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw6",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization21",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw7",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization25",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw8",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization29",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw9",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization33",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw10",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization37",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 391680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 85680
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw11",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 97920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change1",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change2",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool2",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc3",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc4",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change3",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool3",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc5",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc6",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change4",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 97920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool4",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc7",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc8",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/reducing_avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc1",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc2",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult1",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add1",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize15",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult9",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add9",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult2",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add2",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize3",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 97920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult3",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 97920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change5",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 97920
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization40",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw12",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization42",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool5",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc9",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc10",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize4",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult4",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change6",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization44",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw13",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/normalization48",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/dw14",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 183600
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change7",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool6",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc11",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc12",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize5",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult5",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 12240
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change8",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change9",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 12240
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool7",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc13",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc14",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize13",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 12240
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult8",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 12240
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add8",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 12240
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize14",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize6",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add4",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change10",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change11",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool8",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc15",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc16",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize11",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult7",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add7",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 48960
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize12",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize7",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add5",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change12",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change13",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool9",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc17",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc18",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize8",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add10",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change14",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/reducing_avgpool10",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/avgpool10",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc19",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/fc20",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize16",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult10",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add11",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize9",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_mult6",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/ew_add6",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 195840
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/resize10",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 3133440
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/precision_change15",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 783360
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/deconv1",
+"type": "deconv",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_detection/deconv2",
+"type": "deconv",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+}
+]
+}

@@ -1,0 +1,13 @@
+{
+ "case": "Div_by_const",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "normalization"
+ ],
+ "activations": [],
+ "sqnr_native_db": 145.85773435349634,
+ "sqnr_hw_db": 39.001140939145465,
+ "hef_MB": 0.07,
+ "seconds": 21.0
+}

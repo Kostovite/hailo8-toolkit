@@ -1,0 +1,10 @@
+{
+ "case": "GlobalLpPool_p1",
+ "rewrite_vs_orig_db": 128.77684128365453,
+ "ops_after": [
+  "Abs",
+  "Conv",
+  "ReduceSum"
+ ],
+ "opset_after": 17
+}

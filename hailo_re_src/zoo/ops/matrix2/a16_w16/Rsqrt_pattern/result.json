@@ -1,0 +1,23 @@
+{
+ "case": "Rsqrt_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 143.64134546232896,
+ "sqnr_hw_db": 43.65068870579806,
+ "hef_MB": 0.09,
+ "seconds": 11.1
+}

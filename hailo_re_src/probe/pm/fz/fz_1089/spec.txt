@@ -1,0 +1,1 @@
+c=48 h=32 se groupnorm cat dw3 dw5 dw5 conv5

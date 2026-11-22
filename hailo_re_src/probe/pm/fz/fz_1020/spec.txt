@@ -1,0 +1,1 @@
+c=16 h=16 sigmoid sppf shuffle sppf convt attn hswish

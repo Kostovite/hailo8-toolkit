@@ -1,0 +1,17 @@
+{
+ "case": "C_Greater_where",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "greater"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.1338430728699,
+ "sqnr_hw_db": 32.12489869767334,
+ "hef_MB": 0.1,
+ "seconds": 10.7
+}

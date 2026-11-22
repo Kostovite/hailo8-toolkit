@@ -1,0 +1,13 @@
+{
+ "case": "T_GroupNorm",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization"
+ ],
+ "activations": [],
+ "sqnr_native_db": 128.44585195450887,
+ "sqnr_hw_db": 35.91043242205852,
+ "hef_MB": 0.3,
+ "seconds": 32.1
+}

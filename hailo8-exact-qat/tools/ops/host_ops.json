@@ -1,0 +1,98 @@
+{
+ "Bernoulli": {
+  "tests": 3,
+  "ort": 0,
+  "ref": 3,
+  "either": 3
+ },
+ "ConcatFromSequence": {
+  "tests": 2,
+  "ort": 2,
+  "ref": 0,
+  "either": 2
+ },
+ "Multinomial": {
+  "tests": 0,
+  "ort": 0,
+  "ref": 0,
+  "either": 0
+ },
+ "Optional": {
+  "tests": 0,
+  "ort": 0,
+  "ref": 0,
+  "either": 0
+ },
+ "OptionalGetElement": {
+  "tests": 4,
+  "ort": 4,
+  "ref": 0,
+  "either": 4
+ },
+ "OptionalHasElement": {
+  "tests": 7,
+  "ort": 7,
+  "ref": 0,
+  "either": 7
+ },
+ "RandomNormal": {
+  "tests": 0,
+  "ort": 0,
+  "ref": 0,
+  "either": 0
+ },
+ "RandomNormalLike": {
+  "tests": 0,
+  "ort": 0,
+  "ref": 0,
+  "either": 0
+ },
+ "RandomUniformLike": {
+  "tests": 3,
+  "ort": 0,
+  "ref": 3,
+  "either": 3
+ },
+ "RandomUniform": {
+  "tests": 0,
+  "ort": 0,
+  "ref": 0,
+  "either": 0
+ },
+ "SequenceAt": {
+  "tests": 4,
+  "ort": 4,
+  "ref": 0,
+  "either": 4
+ },
+ "SequenceConstruct": {
+  "tests": 4,
+  "ort": 4,
+  "ref": 0,
+  "either": 4
+ },
+ "SequenceErase": {
+  "tests": 2,
+  "ort": 2,
+  "ref": 0,
+  "either": 2
+ },
+ "Loop": {
+  "tests": 13,
+  "ort": 9,
+  "ref": 0,
+  "either": 9
+ },
+ "MaxRoiPool": {
+  "tests": 0,
+  "ort": 0,
+  "ref": 0,
+  "either": 0
+ },
+ "RoiAlign": {
+  "tests": 3,
+  "ort": 0,
+  "ref": 3,
+  "either": 3
+ }
+}

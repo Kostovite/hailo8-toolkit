@@ -1,0 +1,16 @@
+{
+ "case": "LeakyRelu",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "leaky"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 349.18684970707284,
+ "sqnr_hw_db": 38.9564402406275,
+ "hef_MB": 0.1,
+ "seconds": 10.3
+}

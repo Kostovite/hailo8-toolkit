@@ -1,0 +1,2 @@
+rewrites: {'pad_mode': 2, 'dil_pad': 31, 'slice_down': 21}
+max relative output difference 1.35e-07

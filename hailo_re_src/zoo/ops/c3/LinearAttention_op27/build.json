@@ -1,0 +1,15 @@
+{
+ "case": "LinearAttention_op27",
+ "rewrite_vs_orig_db": 129.058207220607,
+ "ops_after": [
+  "Conv",
+  "MatMul",
+  "Mul",
+  "Neg",
+  "Relu",
+  "Reshape",
+  "Sub",
+  "Transpose"
+ ],
+ "opset_after": 17
+}

@@ -1,0 +1,8 @@
+normalization1 = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+model_optimization_config(calibration, batch_size=2)
+quantization_param(output_layer1, precision_mode=a16_w16)
+quantization_param(output_layer2, precision_mode=a16_w16)
+quantization_param(output_layer3, precision_mode=a16_w16)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

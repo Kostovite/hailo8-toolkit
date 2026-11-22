@@ -1,0 +1,1 @@
+c=48 h=32 maxpool dw5 softmax_c pad_conv conv5 mul2

@@ -1,0 +1,14 @@
+{
+ "case": "Hardmax_C",
+ "rewrite_vs_orig_db": 28.977798606372215,
+ "ops_after": [
+  "Add",
+  "Clip",
+  "Conv",
+  "Mul",
+  "ReduceMax",
+  "Relu",
+  "Sub"
+ ],
+ "opset_after": 17
+}

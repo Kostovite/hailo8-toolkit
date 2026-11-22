@@ -1,0 +1,165 @@
+{
+"layers": [
+{
+"layer": "tiny_yolov3/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 519168
+},
+{
+"layer": "tiny_yolov3/normalization1",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 519168
+},
+{
+"layer": "tiny_yolov3/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2768896
+},
+{
+"layer": "tiny_yolov3/maxpool1",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 692224
+},
+{
+"layer": "tiny_yolov3/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1384448
+},
+{
+"layer": "tiny_yolov3/maxpool2",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 346112
+},
+{
+"layer": "tiny_yolov3/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 692224
+},
+{
+"layer": "tiny_yolov3/maxpool3",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 173056
+},
+{
+"layer": "tiny_yolov3/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 346112
+},
+{
+"layer": "tiny_yolov3/maxpool4",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "tiny_yolov3/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 173056
+},
+{
+"layer": "tiny_yolov3/maxpool5",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 43264
+},
+{
+"layer": "tiny_yolov3/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "tiny_yolov3/maxpool6",
+"type": "maxpool",
+"status": "mismatch",
+"bad": 9991,
+"numel": 86528
+},
+{
+"layer": "tiny_yolov3/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 173056
+},
+{
+"layer": "tiny_yolov3/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 43264
+},
+{
+"layer": "tiny_yolov3/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "tiny_yolov3/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 43095
+},
+{
+"layer": "tiny_yolov3/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 21632
+},
+{
+"layer": "tiny_yolov3/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "tiny_yolov3/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 259584
+},
+{
+"layer": "tiny_yolov3/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 173056
+},
+{
+"layer": "tiny_yolov3/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172380
+}
+]
+}

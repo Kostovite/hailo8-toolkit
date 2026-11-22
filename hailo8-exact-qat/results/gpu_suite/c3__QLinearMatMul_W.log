@@ -1,0 +1,56 @@
+SHAPE QLinearMatMul_W/concat1 (concat) got (1, 384, 24, 1) ref (1, 16, 24, 24)
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 190, in run
+    y = _dispatch(n, L, t, prm, ins, P, layers, img, dev, ints)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 365, in _dispatch
+    y = I.conv_layer(ins[0], p)[2]
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 221, in conv_layer
+    acc = mac_conv(x, p["k"], p["pre_acc_shift"], tuple(p["strides"].tolist()), tuple(p["dilation"].tolist()),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 152, in mac_conv
+    total = nib_conv(x, kd, stride=stride, dilation=dilation, groups=groups)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 88, in nib_conv
+    return 16 * _iconv(hi, kk, **kw) + _iconv(lo, kk, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 77, in _iconv
+    return torch.round(_conv2d(x.to(CONV_DTYPE), k.to(CONV_DTYPE), **kw)).to(torch.float64)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 70, in _conv2d
+    return F.conv2d(x, k, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [16, 16, 1, 1], expected input[1, 384, 24, 1] to have 16 channels, but got 384 channels instead
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/gpu_suite.py", line 62, in <module>
+    t = time.time(); _, rep2 = G.run(hn, P, X[:1], dev, check=True, cont=False)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 193, in run
+    y = _chain(n, L, ins, P, layers, dev)  # generic: the layer's captured atomic-op chain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 303, in _chain
+    y = _CHAINS[n](xs)
+        ^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/atomic.py", line 204, in __call__
+    outs.append(f(r) if r["type"] == "ConstOp" else f(r, *args))
+                                                    ^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/atomic.py", line 323, in conv_stripped
+    acc = I.mac_conv(x, p["k"], p["pre_acc_shift"], tuple(p["strides"].tolist()), tuple(p["dilation"].tolist()),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 152, in mac_conv
+    total = nib_conv(x, kd, stride=stride, dilation=dilation, groups=groups)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 88, in nib_conv
+    return 16 * _iconv(hi, kk, **kw) + _iconv(lo, kk, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 77, in _iconv
+    return torch.round(_conv2d(x.to(CONV_DTYPE), k.to(CONV_DTYPE), **kw)).to(torch.float64)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/intops.py", line 70, in _conv2d
+    return F.conv2d(x, k, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [16, 16, 1, 1], expected input[1, 384, 24, 1] to have 16 channels, but got 384 channels instead

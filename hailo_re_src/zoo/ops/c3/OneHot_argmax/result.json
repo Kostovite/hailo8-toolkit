@@ -1,0 +1,19 @@
+{
+ "case": "OneHot_argmax",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "argmax",
+  "concat",
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "less"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 336.63512470415156,
+ "sqnr_hw_db": 15.428488388893392,
+ "hef_MB": 0.5,
+ "seconds": 66.2
+}

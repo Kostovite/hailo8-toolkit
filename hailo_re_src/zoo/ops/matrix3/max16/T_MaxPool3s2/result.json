@@ -1,0 +1,33 @@
+{
+ "case": "T_MaxPool3s2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "maxpool1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 350.0900610028004,
+ "sqnr_hw_db": 83.6690302741982,
+ "hef_MB": 0.25,
+ "seconds": 9.5
+}

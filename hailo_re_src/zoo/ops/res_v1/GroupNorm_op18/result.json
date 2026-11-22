@@ -1,0 +1,7 @@
+{
+ "case": "GroupNorm_op18",
+ "stage": "parse",
+ "error": "ValidationError: Field 'shape' of 'type' is required but missing.",
+ "trace": "Traceback (most recent call last):\n  File \"/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/probe.py\", line 341, in run\n    runner.translate_onnx_model(path, name.replace(\"-\", \"_\"))\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py\", line 16, in wrapped_func\n    return func(self, *args, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py\", line 1192, in translate_onnx_model\n    parser.translate_onnx_model(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/parser/parser.py\", line 190, in translate_onnx_model\n    onnx.checker.check_model(model)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/onnx/checker.py\", line 163, in check_model\n    C.check_model_path(\nonnx.onnx_cpp2py_export.checker.ValidationError: Field 'shape' of 'type' is required but missing.\n",
+ "seconds": 0.6
+}

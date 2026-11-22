@@ -1,0 +1,20 @@
+{
+ "case": "Resize2x_nearest",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "resize"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "resize1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 358.1920728892951,
+ "sqnr_hw_db": 38.98723466494453,
+ "hef_MB": 0.24,
+ "seconds": 12.3
+}

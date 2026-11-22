@@ -1,0 +1,1 @@
+--epochs 1 --eval_every 1000 --lr_k 6e-4 --lr_b 3e-2 --ovf 0 --k_radius 2 --b_radius 128

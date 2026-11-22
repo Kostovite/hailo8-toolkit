@@ -1,0 +1,25 @@
+{
+ "case": "Softmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "reduce_max_softmax1:HailoReduceMax",
+  "ew_sub_softmax1:HailoElementwiseSub",
+  "reduce_sum_softmax1:HailoReduceSum",
+  "ew_mult_softmax1:HailoElementwiseMult",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 143.86091440854278,
+ "sqnr_hw_db": 34.59585690355267,
+ "hef_MB": 0.13,
+ "seconds": 56.5
+}

@@ -1,0 +1,11 @@
+{
+ "case": "ArgMin_C",
+ "rewrite_vs_orig_db": 352.4695872848233,
+ "ops_after": [
+  "ArgMax",
+  "Cast",
+  "Conv",
+  "Neg"
+ ],
+ "opset_after": 17
+}

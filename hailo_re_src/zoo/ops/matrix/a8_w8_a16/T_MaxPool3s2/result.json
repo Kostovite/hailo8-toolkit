@@ -1,0 +1,14 @@
+{
+ "case": "T_MaxPool3s2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 350.0900610028004,
+ "sqnr_hw_db": 42.91849649619828,
+ "hef_MB": 0.49,
+ "seconds": 8.9
+}

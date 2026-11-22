@@ -1,0 +1,23 @@
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1/emu_fp_0.npy (32, 28, 28, 256)
+GPU_EMU coverage: 23/23 layers exact; 0 within 1 LSB on <0.1% elements: 
+[qatfast] orient3/conv4: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv6: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv9: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv11: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv14: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv16: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv19: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv21: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+batch self-test passed
+impl qatfast outputs ['orient3/conv21']
+8/2000
+208/2000
+408/2000
+608/2000
+808/2000
+1008/2000
+1208/2000
+1408/2000
+1608/2000
+1808/2000
+saved /mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1/emu_q [(2000, 28, 28, 256)]

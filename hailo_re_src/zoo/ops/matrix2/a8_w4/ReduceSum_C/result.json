@@ -1,0 +1,22 @@
+{
+ "case": "ReduceSum_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_sum"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "dw1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "reduce_sum1:HailoReduceSum",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 140.38240536547403,
+ "sqnr_hw_db": 36.28822855634039,
+ "hef_MB": 0.06,
+ "seconds": 8.3
+}

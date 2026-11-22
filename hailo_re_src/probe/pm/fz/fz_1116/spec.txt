@@ -1,0 +1,1 @@
+c=96 h=20 conv3 res c2f cat c2f cat

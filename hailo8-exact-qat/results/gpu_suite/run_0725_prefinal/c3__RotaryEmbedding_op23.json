@@ -1,0 +1,46 @@
+{
+ "case": "c3__RotaryEmbedding_op23",
+ "conv_mode": "gemm",
+ "coverage": {
+  "const_input|a8_w8_a8|": 2,
+  "input_layer|a8_w8_a8|": 1,
+  "ew_mult|a8_w8_a8|linear": 2,
+  "slice|a8_w8_a8|": 2,
+  "normalization|a8_w8_a8|linear": 1,
+  "concat|a8_w8_a8|": 1,
+  "ew_add|a8_w8_a8|linear": 1,
+  "conv|a8_w8_a8|linear": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 11,
+  "exact": 11,
+  "not_exact": [],
+  "s": 1.0
+ },
+ "T2_chained": {
+  "checked": 8,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.1
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "RotaryEmbedding_op23/conv1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

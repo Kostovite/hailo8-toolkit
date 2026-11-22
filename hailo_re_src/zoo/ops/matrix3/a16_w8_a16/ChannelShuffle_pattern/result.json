@@ -1,0 +1,22 @@
+{
+ "case": "ChannelShuffle_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_shuffle"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "feature_shuffle1:HailoFeatureShuffle",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 38.97550573683532,
+ "hef_MB": 0.18,
+ "seconds": 10.6
+}

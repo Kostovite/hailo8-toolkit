@@ -1,0 +1,33 @@
+{
+ "case": "Slice_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "slice1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 349.1662947505875,
+ "sqnr_hw_db": 78.21939031721477,
+ "hef_MB": 0.1,
+ "seconds": 9.0
+}

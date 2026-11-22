@@ -1,0 +1,1 @@
+c=96 h=20 pad_conv sppf softmax_c avgpool d2s sub

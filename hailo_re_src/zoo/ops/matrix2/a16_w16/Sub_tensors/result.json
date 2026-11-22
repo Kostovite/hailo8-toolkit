@@ -1,0 +1,22 @@
+{
+ "case": "Sub_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "conv1",
+  "ew_sub1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 355.1367544497851,
+ "sqnr_hw_db": 63.79300342969688,
+ "hef_MB": 0.19,
+ "seconds": 13.5
+}

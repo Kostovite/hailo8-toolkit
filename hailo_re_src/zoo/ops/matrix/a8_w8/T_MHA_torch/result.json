@@ -1,0 +1,18 @@
+{
+ "case": "T_MHA_torch",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 128.3281169296315,
+ "sqnr_hw_db": 13.81476097208893,
+ "hef_MB": 0.42,
+ "seconds": 81.5
+}

@@ -1,0 +1,9 @@
+{
+ "case": "CenterCropPad_crop",
+ "rewrite_vs_orig_db": 345.6657837669726,
+ "ops_after": [
+  "Conv",
+  "Slice"
+ ],
+ "opset_after": 17
+}

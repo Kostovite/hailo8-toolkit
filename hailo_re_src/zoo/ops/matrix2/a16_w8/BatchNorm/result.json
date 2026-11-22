@@ -1,0 +1,21 @@
+{
+ "case": "BatchNorm",
+ "stage": "ok",
+ "hn_types": [
+  "batch_norm",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "batch_norm1:HailoBatchNorm",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 141.8043929622537,
+ "sqnr_hw_db": 34.97191466321433,
+ "hef_MB": 0.09,
+ "seconds": 11.0
+}

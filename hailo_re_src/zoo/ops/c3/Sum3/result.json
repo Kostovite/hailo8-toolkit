@@ -1,0 +1,14 @@
+{
+ "case": "Sum3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 359.0677256242862,
+ "sqnr_hw_db": 34.40209759545495,
+ "hef_MB": 0.18,
+ "seconds": 13.5
+}

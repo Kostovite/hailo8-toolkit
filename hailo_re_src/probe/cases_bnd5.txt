@@ -1,0 +1,12 @@
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_GroupNorm1
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_GroupNorm
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_LayerNorm_C
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_InstanceNorm2d
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_RMSNorm_C
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_ViT_block
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_Softmax_C
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_Softmax_W
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_Argmax_C
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_AvgPool3s1_nopadcount
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_AvgPool3s1
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_T_Attention_manual

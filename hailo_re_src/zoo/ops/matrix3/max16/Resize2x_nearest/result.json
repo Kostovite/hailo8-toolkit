@@ -1,0 +1,33 @@
+{
+ "case": "Resize2x_nearest",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "resize"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "resize1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 358.1920728892951,
+ "sqnr_hw_db": 81.17605410617472,
+ "hef_MB": 0.21,
+ "seconds": 11.7
+}

@@ -1,0 +1,19 @@
+{
+ "case": "C_LRN",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "feature_multiplier"
+ ],
+ "activations": [
+  "inv_pos",
+  "pow"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 149.06035664431437,
+ "sqnr_hw_db": 38.956617866211516,
+ "hef_MB": 0.25,
+ "seconds": 68.5
+}

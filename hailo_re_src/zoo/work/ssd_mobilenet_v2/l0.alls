@@ -1,0 +1,6 @@
+normalization1 = normalization([127.5, 127.5, 127.5], [127.5, 127.5, 127.5])
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/mobilenet_v2_ssd_nms_postprocess_config.json", ssd, engine=nn_core)
+model_optimization_config(calibration, batch_size=8, calibset_size=32)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

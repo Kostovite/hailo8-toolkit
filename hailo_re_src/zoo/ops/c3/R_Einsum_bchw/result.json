@@ -1,0 +1,16 @@
+{
+ "case": "R_Einsum_bchw",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "reduce_sum",
+  "resize"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 141.31140496062054,
+ "sqnr_hw_db": 27.489412345996683,
+ "hef_MB": 0.13,
+ "seconds": 13.0
+}

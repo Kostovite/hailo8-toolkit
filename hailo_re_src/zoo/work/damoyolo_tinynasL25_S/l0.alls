@@ -1,0 +1,4 @@
+performance_param(optimization_level=max)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

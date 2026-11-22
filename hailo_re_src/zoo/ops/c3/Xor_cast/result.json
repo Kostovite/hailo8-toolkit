@@ -1,0 +1,21 @@
+{
+ "case": "Xor_cast",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "normalization"
+ ],
+ "activations": [
+  "greater",
+  "less",
+  "prelu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 340.6255942272419,
+ "sqnr_hw_db": 13.214790812072007,
+ "hef_MB": 0.49,
+ "seconds": 24.1
+}

@@ -1,0 +1,24 @@
+{
+ "case": "Max_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "conv1",
+  "concat1",
+  "reduce_max1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.0710386649052,
+ "sqnr_hw_db": 29.293576531088302,
+ "hef_MB": 0.26,
+ "seconds": 12.0
+}

@@ -1,0 +1,15 @@
+{
+ "case": "ScatterElements_C",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.1062249239128,
+ "sqnr_hw_db": 35.0504237731789,
+ "hef_MB": 0.24,
+ "seconds": 11.5
+}

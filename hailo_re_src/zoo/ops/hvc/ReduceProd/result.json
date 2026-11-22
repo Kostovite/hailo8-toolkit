@@ -1,0 +1,6 @@
+{
+ "op": "ReduceProd",
+ "chip_sqnr_db": 44.37553702271863,
+ "host_sqnr_db": 44.37553702271863,
+ "boundary_MB_per_frame": 0.401
+}

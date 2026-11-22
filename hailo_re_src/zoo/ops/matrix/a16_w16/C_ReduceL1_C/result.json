@@ -1,0 +1,17 @@
+{
+ "case": "C_ReduceL1_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "dw",
+  "reduce_sum"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 142.5036063945968,
+ "sqnr_hw_db": 46.64944388897791,
+ "hef_MB": 0.55,
+ "seconds": 18.9
+}

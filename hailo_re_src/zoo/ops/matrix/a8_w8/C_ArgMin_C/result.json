@@ -1,0 +1,15 @@
+{
+ "case": "C_ArgMin_C",
+ "stage": "ok",
+ "hn_types": [
+  "argmax",
+  "dw",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 355.471061403293,
+ "sqnr_hw_db": 19.959001965813936,
+ "hef_MB": 0.18,
+ "seconds": 9.5
+}

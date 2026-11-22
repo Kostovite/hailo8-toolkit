@@ -1,0 +1,35 @@
+{
+ "case": "T_QuickGELU",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "swish"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 143.7820274908222,
+ "sqnr_hw_db": 40.286955772989984,
+ "hef_MB": 0.09,
+ "seconds": 11.3
+}

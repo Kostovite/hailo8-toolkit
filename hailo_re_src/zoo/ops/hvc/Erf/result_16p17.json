@@ -1,0 +1,10 @@
+{
+ "op": "Erf",
+ "prec": "max16",
+ "chip_modes": {
+  "a16_w16": 2,
+  "a16_w16_a16": 11
+ },
+ "chip_sqnr_db": 71.65708609895363,
+ "host_error": "RuntimeError: skipped (SKIP_HOST=1)"
+}

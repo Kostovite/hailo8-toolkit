@@ -1,0 +1,21 @@
+{
+ "case": "T_Linear_tokens",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 347.3011827860055,
+ "sqnr_hw_db": 38.595947849911326,
+ "hef_MB": 0.11,
+ "seconds": 13.9
+}

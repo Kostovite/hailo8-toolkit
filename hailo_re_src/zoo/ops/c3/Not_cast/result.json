@@ -1,0 +1,18 @@
+{
+ "case": "Not_cast",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "greater"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.1883320547945,
+ "sqnr_hw_db": 32.05269346495266,
+ "hef_MB": 0.18,
+ "seconds": 11.8
+}

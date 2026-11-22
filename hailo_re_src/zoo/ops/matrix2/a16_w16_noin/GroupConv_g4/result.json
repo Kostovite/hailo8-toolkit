@@ -1,0 +1,19 @@
+{
+ "case": "GroupConv_g4",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 138.01764655977917,
+ "sqnr_hw_db": 38.77229493950572,
+ "hef_MB": 0.16,
+ "seconds": 12.2
+}

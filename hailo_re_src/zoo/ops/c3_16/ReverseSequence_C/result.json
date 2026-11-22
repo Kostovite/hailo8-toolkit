@@ -1,0 +1,86 @@
+{
+ "case": "ReverseSequence_C",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "slice1",
+   "a16_w16"
+  ],
+  [
+   "slice10",
+   "a16_w16"
+  ],
+  [
+   "slice11",
+   "a16_w16"
+  ],
+  [
+   "slice12",
+   "a16_w16"
+  ],
+  [
+   "slice13",
+   "a16_w16"
+  ],
+  [
+   "slice2",
+   "a16_w16"
+  ],
+  [
+   "slice3",
+   "a16_w16"
+  ],
+  [
+   "slice4",
+   "a16_w16"
+  ],
+  [
+   "slice5",
+   "a16_w16"
+  ],
+  [
+   "slice6",
+   "a16_w16"
+  ],
+  [
+   "slice7",
+   "a16_w16"
+  ],
+  [
+   "slice8",
+   "a16_w16"
+  ],
+  [
+   "slice9",
+   "a16_w16"
+  ],
+  [
+   "concat1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 81.17605410617472,
+ "hef_MB": 0.31,
+ "seconds": 19.4
+}

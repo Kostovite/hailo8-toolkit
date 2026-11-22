@@ -1,0 +1,13 @@
+{
+ "case": "Div_by_const",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "error": "ValueError: Layer mul_and_add1 not found in model",
+ "trace": "gs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 372, in step1\n    self.setup_optimization()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 394, in setup_optimization\n    self._switch_layers_by_precision()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 580, in _switch_layers_by_precision\n    algo.run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 54, in run\n    self.finalize_config()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 74, in finalize_config\n    layer_config = self.finalize_layer_cfg(config.layers)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 103, in finalize_layer_cfg\n    lname = self._model.get_layer_name_with_scope(alls_lname)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/model/hailo_model/hailo_model.py\", line 1817, in get_layer_name_with_scope\n    raise ValueError(f\"Layer {lname} not found in model\")\nValueError: Layer mul_and_add1 not found in model\n",
+ "seconds": 2.0
+}

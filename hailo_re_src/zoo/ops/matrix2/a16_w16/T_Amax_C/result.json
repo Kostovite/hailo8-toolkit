@@ -1,0 +1,21 @@
+{
+ "case": "T_Amax_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "reduce_max1",
+  "dw1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 345.49487287559896,
+ "sqnr_hw_db": 84.62494531983646,
+ "hef_MB": 0.06,
+ "seconds": 6.9
+}

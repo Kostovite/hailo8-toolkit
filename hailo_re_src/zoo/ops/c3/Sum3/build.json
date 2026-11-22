@@ -1,0 +1,9 @@
+{
+ "case": "Sum3",
+ "rewrite_vs_orig_db": 356.093118617467,
+ "ops_after": [
+  "Add",
+  "Conv"
+ ],
+ "opset_after": 17
+}

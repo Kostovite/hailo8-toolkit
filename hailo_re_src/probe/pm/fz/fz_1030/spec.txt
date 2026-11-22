@@ -1,0 +1,1 @@
+c=16 h=32 avgpool se sigmoid dw5 se

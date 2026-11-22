@@ -1,0 +1,46 @@
+{
+ "case": "RotaryEmbedding_op23_inter",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "const_input",
+  "conv",
+  "ew_add",
+  "ew_mult",
+  "normalization",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "const_input1",
+   "a8_w8_a8"
+  ],
+  [
+   "const_input2",
+   "a8_w8_a8"
+  ],
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_add1",
+   "a8_w8_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 148.0386096590886,
+ "sqnr_hw_db": 34.67716144612039,
+ "hef_MB": 1.09,
+ "seconds": 70.3
+}

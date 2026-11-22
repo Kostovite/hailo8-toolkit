@@ -1,0 +1,21 @@
+{
+ "case": "Slice_HW_stride2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "dw1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 346.16970369603763,
+ "sqnr_hw_db": 78.4543556533781,
+ "hef_MB": 0.15,
+ "seconds": 13.0
+}

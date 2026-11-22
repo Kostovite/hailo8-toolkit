@@ -1,0 +1,21 @@
+{
+ "case": "GlobalMaxPool",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "maxpool1:HailoMaxPool",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 334.4263600502375,
+ "sqnr_hw_db": 47.958496609883,
+ "hef_MB": 0.58,
+ "seconds": 13.6
+}

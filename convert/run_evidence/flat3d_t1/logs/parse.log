@@ -1,0 +1,9 @@
+[info] Translation started on ONNX model flat3
+[info] Restored ONNX model flat3 (completion time: 00:00:00.16)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.99)
+[info] Start nodes mapped from original model: 'image': 'flat3/input_layer1'.
+[info] End nodes mapped from original model: '/n/out_point_positions2D/out_point_positions2D.3/Conv'.
+[info] Translation completed on ONNX model flat3 (completion time: 00:00:02.16)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/convert/runs/flat3d_t1/parsed.har
+out flat3/output_layer1 [-1, 45, 31, 2]
+layers 139

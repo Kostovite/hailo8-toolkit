@@ -1,0 +1,15 @@
+{
+ "case": "T_MaxPool_ceil",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 41.2073184444425,
+ "sqnr_hw_db": 38.96054283501612,
+ "hef_MB": 0.21,
+ "seconds": 9.7
+}

@@ -1,0 +1,11 @@
+normalization1 = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+change_output_activation(conv74, sigmoid)
+change_output_activation(conv90, sigmoid)
+change_output_activation(conv105, sigmoid)
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/yolov11m_nms_config.json", meta_arch=yolov8, engine=cpu)
+model_optimization_config(calibration, batch_size=2)
+
+resources_param(max_apu_utilization=0.8, max_compute_16bit_utilization=0.8, max_compute_utilization=0.8, max_control_utilization=0.8, max_input_aligner_utilization=0.8, max_memory_utilization=0.8, max_utilization=0.0)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

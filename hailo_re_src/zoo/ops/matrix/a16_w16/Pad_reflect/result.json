@@ -1,0 +1,14 @@
+{
+ "case": "Pad_reflect",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 8.346803446141339,
+ "sqnr_hw_db": 8.343605481539935,
+ "hef_MB": 0.13,
+ "seconds": 8.5
+}

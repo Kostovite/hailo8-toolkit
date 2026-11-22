@@ -1,0 +1,1 @@
+c=32 h=24 softmax_c layernorm down_up maxpool down_up sub d2s

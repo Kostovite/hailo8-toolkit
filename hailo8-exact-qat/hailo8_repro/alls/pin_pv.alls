@@ -1,0 +1,1 @@
+compilation_param(matmul2, resources_allocation_strategy=manual_scs_selection, number_of_subclusters=8)

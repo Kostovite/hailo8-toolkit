@@ -1,0 +1,33 @@
+{
+ "case": "ConvTranspose_k4s2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "deconv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "deconv1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 136.23433239483342,
+ "sqnr_hw_db": 73.20955302334893,
+ "hef_MB": 0.24,
+ "seconds": 22.5
+}

@@ -1,0 +1,42 @@
+{
+ "case": "C_Split_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "slice1",
+   "a16_w16"
+  ],
+  [
+   "slice2",
+   "a16_w16"
+  ],
+  [
+   "ew_add1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.19704107370035,
+ "sqnr_hw_db": 50.556875553478534,
+ "hef_MB": 0.08,
+ "seconds": 11.9
+}

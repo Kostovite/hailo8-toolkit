@@ -1,0 +1,2 @@
+[qatfast] GlobalLpPool_p2/conv1: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "c3_16__GlobalLpPool_p2", "conv_mode": "gemm", "T1_per_layer": {"checked": 4, "exact": 4, "not_exact": [], "s": 0.4}, "T2_chained": {"checked": 3, "value_mismatch": [], "pass": true, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": false, "why": "RuntimeError: stack expects a non-empty TensorList"}, "PASS": true}

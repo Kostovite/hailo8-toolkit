@@ -1,0 +1,32 @@
+{
+ "case": "T_Linear_tokens",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 347.3011827860055,
+ "sqnr_hw_db": 75.30922785772857,
+ "hef_MB": 0.1,
+ "seconds": 11.7
+}

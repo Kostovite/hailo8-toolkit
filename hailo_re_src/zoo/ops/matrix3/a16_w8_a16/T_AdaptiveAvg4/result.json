@@ -1,0 +1,23 @@
+{
+ "case": "T_AdaptiveAvg4",
+ "stage": "compile",
+ "hn_types": [
+  "avgpool",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "avgpool1:HailoAvgPool",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 137.43572727396295,
+ "sqnr_hw_db": 39.079068005731045,
+ "error": "BackendAllocatorException: Compilation failed: No successful assignments: avgpool1 errors:\n\tavgpool1 failed on kernel validation: 16x4 is not supported in avgpool1\n\tavgpool1 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1\navgpool1 errors:\n\tavgpool1 failed on kernel validation: 16x4 is not supported in avgpool1\n\tavgpool1 failed on kernel validation: precision_mode A8_W8_A16 is not supported",
+ "trace": "pported in avgpool1_d8\n\tavgpool1_d8 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d8\navgpool1 errors:\n\tavgpool1_d8 failed on kernel validation: 16x4 is not supported in avgpool1_d8\n\tavgpool1_d8 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d8\navgpool1 errors:\n\tavgpool1_d0 failed on kernel validation: 16x4 is not supported in avgpool1_d0\n\tavgpool1_d0 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d0\navgpool1 errors:\n\tavgpool1_d0 failed on kernel validation: 16x4 is not supported in avgpool1_d0\n\tavgpool1_d0 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d0\navgpool1 errors:\n\tavgpool1_d12 failed on kernel validation: 16x4 is not supported in avgpool1_d12\n\tavgpool1_d12 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d12\navgpool1 errors:\n\tavgpool1_d0 failed on kernel validation: 16x4 is not supported in avgpool1_d0\n\tavgpool1_d0 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d0\navgpool1 errors:\n\tavgpool1_d14 failed on kernel validation: 16x4 is not supported in avgpool1_d14\n\tavgpool1_d14 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d14\navgpool1 errors:\n\tavgpool1_d14 failed on kernel validation: 16x4 is not supported in avgpool1_d14\n\tavgpool1_d14 failed on kernel validation: precision_mode A8_W8_A16 is not supported in avgpool1_d14\n\n",
+ "seconds": 9.4
+}

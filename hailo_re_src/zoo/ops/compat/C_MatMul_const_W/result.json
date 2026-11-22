@@ -1,0 +1,15 @@
+{
+ "case": "C_MatMul_const_W",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 139.1310037722398,
+ "sqnr_hw_db": 34.84723951955388,
+ "hef_MB": 2.39,
+ "seconds": 172.4
+}

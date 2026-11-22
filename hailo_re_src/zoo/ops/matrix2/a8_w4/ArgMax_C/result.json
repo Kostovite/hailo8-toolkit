@@ -1,0 +1,22 @@
+{
+ "case": "ArgMax_C",
+ "stage": "ok",
+ "hn_types": [
+  "argmax",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "dw1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "argmax1:HailoArgMax",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 355.5964213933601,
+ "sqnr_hw_db": 21.38018285734802,
+ "hef_MB": 0.08,
+ "seconds": 7.6
+}

@@ -1,0 +1,15 @@
+{
+ "case": "C_T_ReflectPad",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 352.85854926793064,
+ "sqnr_hw_db": 38.980860817880966,
+ "hef_MB": 0.17,
+ "seconds": 14.5
+}

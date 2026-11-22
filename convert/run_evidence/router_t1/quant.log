@@ -1,0 +1,38 @@
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, batch_size=8, calibset_size=2048)
+quantization_param([conv1, conv2, conv3, conv4, conv5], precision_mode=a16_w16)
+quantization_param(input_layer1, precision_mode=a16_w16_a16)
+
+[info] Loading model script commands to router from string
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.03)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 2048 entries for calibration
+Calibration:   0%|          | 0/2048 [00:00<?, ?entries/s]Calibration:   0%|          | 8/2048 [00:01<07:46,  4.37entries/s]Calibration:  11%|█         | 224/2048 [00:01<00:11, 160.40entries/s]Calibration:  22%|██▏       | 448/2048 [00:02<00:04, 354.70entries/s]Calibration:  31%|███▏      | 640/2048 [00:02<00:02, 537.28entries/s]Calibration:  43%|████▎     | 880/2048 [00:02<00:01, 802.74entries/s]Calibration:  54%|█████▍    | 1112/2048 [00:02<00:00, 1055.18entries/s]Calibration:  65%|██████▌   | 1336/2048 [00:02<00:00, 1284.60entries/s]Calibration:  77%|███████▋  | 1568/2048 [00:02<00:00, 1498.59entries/s]Calibration:  88%|████████▊ | 1800/2048 [00:02<00:00, 1679.90entries/s]Calibration:  99%|█████████▉| 2024/2048 [00:02<00:00, 1767.11entries/s]Calibration: 100%|██████████| 2048/2048 [00:02<00:00, 1767.11entries/s]Calibration: 100%|██████████| 2048/2048 [00:02<00:00, 737.31entries/s] 
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:02.91)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer router/conv1/conv_op, using max shift instead. delta=1.1066
+[info] No shifts available for layer router/conv2/conv_op, using max shift instead. delta=0.4942
+[info] No shifts available for layer router/conv2/conv_op, using max shift instead. delta=0.2471
+[info] No shifts available for layer router/conv1/conv_op, using max shift instead. delta=1.1066
+[info] No shifts available for layer router/conv3/conv_op, using max shift instead. delta=0.0442
+[info] No shifts available for layer router/conv3/conv_op, using max shift instead. delta=0.0221
+[info] No shifts available for layer router/conv2/conv_op, using max shift instead. delta=0.2471
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+optimize took 19 s
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/q.har
+saved /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/q.har

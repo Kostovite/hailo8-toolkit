@@ -1,0 +1,14 @@
+{
+ "case": "C_T_Amin_W",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "maxpool",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "error": "ValidationError: 1 validation error for ModelOptimizationConfig\nprecision_config -> precision_mode\n  Layer C_T_Amin_W/maxpool1 doesn't support precision_mode=a8_w4 because it does not support double scale bias (type=value_error.configuration; loc=['precision_config', 'precision_mode'])",
+ "trace": "36, in full_quantization\n    self.setup_quantization(data_continer, work_dir=work_dir)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1080, in setup_quantization\n    config = self.apply_quantization_script(data_continer)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1027, in apply_quantization_script\n    return self._apply_quantization_script_with_flavor()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1045, in _apply_quantization_script_with_flavor\n    config = verify_commands(self._model, mo_commands, flavor_config)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/hailo_nn/model_optimization/configuration_verifier.py\", line 66, in verify_commands\n    verifier.validate()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/hailo_nn/model_optimization/configuration_verifier.py\", line 515, in validate\n    raise ValidationError(errors, type(self._config))\npydantic.v1.error_wrappers.ValidationError: 1 validation error for ModelOptimizationConfig\nprecision_config -> precision_mode\n  Layer C_T_Amin_W/maxpool1 doesn't support precision_mode=a8_w4 because it does not support double scale bias (type=value_error.configuration; loc=['precision_config', 'precision_mode'])\n",
+ "seconds": 1.4
+}

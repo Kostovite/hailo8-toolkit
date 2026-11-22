@@ -1,0 +1,1 @@
+quantization_param([resize1, resize2, resize3, resize4, resize5, resize6], precision_mode=a8_w8_a8)

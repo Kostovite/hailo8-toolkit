@@ -1,0 +1,38 @@
+{
+ "case": "T_Attn_sdpa_h2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "conv_feature_splitter1_1:HailoConv",
+  "conv_feature_splitter1_2:HailoConv",
+  "conv_feature_splitter1_3:HailoConv",
+  "format_conversion1:HailoFormatConversion",
+  "format_conversion2:HailoFormatConversion",
+  "format_conversion3:HailoFormatConversion",
+  "matmul1:HailoMatmul",
+  "reduce_max_softmax1:HailoReduceMax",
+  "ew_sub_softmax1:HailoElementwiseSub",
+  "reduce_sum_softmax1:HailoReduceSum",
+  "ew_mult_softmax1:HailoElementwiseMult",
+  "matmul2:HailoMatmul",
+  "format_conversion4:HailoFormatConversion",
+  "conv2:HailoConv",
+  "conv3:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 132.34415234214327,
+ "sqnr_hw_db": 24.52440785074964,
+ "hef_MB": 0.45,
+ "seconds": 107.7
+}

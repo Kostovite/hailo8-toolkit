@@ -1,0 +1,15 @@
+{
+ "case": "T_QuickGELU",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "swish"
+ ],
+ "sqnr_native_db": 143.7820274908222,
+ "sqnr_hw_db": 35.18285838908957,
+ "hef_MB": 0.09,
+ "seconds": 9.8
+}

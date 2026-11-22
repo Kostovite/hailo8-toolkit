@@ -1,0 +1,38 @@
+{
+ "act": "SiLU",
+ "pieces": 9,
+ "scale": 2.5,
+ "monotone": true,
+ "range": [
+  -18.20561981201172,
+  20.97377586364746
+ ],
+ "fit_sqnr_db": 36.299270188614436,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 35.06977081298828,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "silu",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 30.36133050918579,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

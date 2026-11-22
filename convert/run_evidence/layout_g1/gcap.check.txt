@@ -1,0 +1,2 @@
+220/220 checked layers exact when chained from raw pixels
+{'const_input': '1/1', 'input_layer': '1/1', 'normalization': '2/2', 'conv': '114/114', 'external_pad': '1/1', 'maxpool': '1/1', 'concat': '19/19', 'dw': '31/31', 'ew_add': '7/7', 'activation': '5/5', 'format_conversion': '2/2', 'matmul': '2/2', 'reduce_max': '1/1', 'ew_sub': '3/3', 'reduce_sum': '1/1', 'ew_mult': '3/3', 'reduce_mean': '2/2', 'feature_multiplier': '2/2', 'resize': '6/6', 'slice': '16/16'}

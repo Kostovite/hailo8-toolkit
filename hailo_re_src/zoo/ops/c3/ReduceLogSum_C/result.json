@@ -1,0 +1,16 @@
+{
+ "case": "ReduceLogSum_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_sum"
+ ],
+ "activations": [
+  "log"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 149.513715981679,
+ "sqnr_hw_db": 54.086660112992355,
+ "hef_MB": 0.07,
+ "seconds": 26.1
+}

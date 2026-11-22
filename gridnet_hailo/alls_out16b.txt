@@ -1,0 +1,2 @@
+pre_quantization_optimization(global_avgpool_reduction, layers=avgpool7, division_factors=[4, 4])
+quantization_param([conv20], precision_mode=a8_w8_a16)

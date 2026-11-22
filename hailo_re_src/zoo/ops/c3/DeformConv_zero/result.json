@@ -1,0 +1,13 @@
+{
+ "case": "DeformConv_zero",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 353.5525844351214,
+ "sqnr_hw_db": 33.497647726722576,
+ "hef_MB": 0.11,
+ "seconds": 7.8
+}

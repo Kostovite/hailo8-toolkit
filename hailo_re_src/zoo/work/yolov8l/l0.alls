@@ -1,0 +1,11 @@
+normalization1 = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+model_optimization_config(calibration, batch_size=2)
+                                                       loss_types = [l2rel,l2rel,l2rel,l2rel,l2rel,l2rel,l2rel,ce,ce,ce],
+                                                        loss_factors=[1,1,1,1,2,2,2,2,2,2], epochs = 4, batch_size=2)
+change_output_activation(conv74, sigmoid)
+change_output_activation(conv89, sigmoid)
+change_output_activation(conv103, sigmoid)
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/yolov8l_nms_config.json", meta_arch=yolov8, engine=cpu)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

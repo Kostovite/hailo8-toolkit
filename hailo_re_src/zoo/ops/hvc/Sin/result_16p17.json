@@ -1,0 +1,10 @@
+{
+ "op": "Sin",
+ "prec": "max16",
+ "chip_modes": {
+  "a16_w16": 2,
+  "a16_w16_a16": 11
+ },
+ "chip_sqnr_db": 74.53327864384865,
+ "host_error": "RuntimeError: skipped (SKIP_HOST=1)"
+}

@@ -1,0 +1,15 @@
+{
+ "case": "TensorScatter_op24",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.10144149728205,
+ "sqnr_hw_db": 35.02894040429612,
+ "hef_MB": 0.24,
+ "seconds": 11.7
+}

@@ -1,0 +1,19 @@
+{
+ "case": "C_T_Softshrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add",
+  "ew_sub",
+  "normalization"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 349.7208673015726,
+ "sqnr_hw_db": 37.82751605949552,
+ "hef_MB": 0.23,
+ "seconds": 22.6
+}

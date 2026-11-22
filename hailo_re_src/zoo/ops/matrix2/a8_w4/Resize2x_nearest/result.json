@@ -1,0 +1,22 @@
+{
+ "case": "Resize2x_nearest",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "resize"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "resize1:HailoResizeNearestNeighbor",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 358.1920728892951,
+ "sqnr_hw_db": 39.00114139254499,
+ "hef_MB": 0.11,
+ "seconds": 9.2
+}

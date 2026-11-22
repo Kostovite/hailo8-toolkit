@@ -1,0 +1,20 @@
+{
+ "case": "R_Equal",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add",
+  "normalization"
+ ],
+ "activations": [
+  "greater",
+  "less",
+  "relu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 341.92706806612864,
+ "sqnr_hw_db": 16.65007070159808,
+ "hef_MB": 0.28,
+ "seconds": 11.6
+}

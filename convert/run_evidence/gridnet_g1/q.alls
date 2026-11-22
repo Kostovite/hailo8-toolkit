@@ -1,0 +1,4 @@
+in_norm = normalization([0.0], [255.0])
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, batch_size=8, calibset_size=2045)
+quantization_param([conv1, conv2, conv3, conv4, conv5, conv6, conv7, conv8, avgpool1, avgpool2, conv9, conv10, conv11, conv12, avgpool3, avgpool4, conv13, conv14, conv15, conv16, avgpool5, avgpool6, conv17, conv18, ew_add1, ew_add2, ew_add3, conv19, ew_add4, conv20], precision_mode=a16_w16)

@@ -1,0 +1,1 @@
+c=48 h=20 dw5 gate sppf pad_conv pad_conv avgpool gelu

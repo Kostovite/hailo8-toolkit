@@ -1,0 +1,10 @@
+{
+ "case": "Einsum_bchw",
+ "rewrite_vs_orig_db": 141.60531584344062,
+ "ops_after": [
+  "Conv",
+  "Mul",
+  "ReduceSum"
+ ],
+ "opset_after": 17
+}

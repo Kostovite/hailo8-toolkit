@@ -1,0 +1,14 @@
+{
+ "case": "CenterCropPad_crop",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 348.6783844340829,
+ "sqnr_hw_db": 36.21814568873239,
+ "hef_MB": 0.06,
+ "seconds": 6.1
+}

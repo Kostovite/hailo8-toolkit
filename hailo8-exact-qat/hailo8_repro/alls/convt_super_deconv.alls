@@ -1,0 +1,1 @@
+deconv1_defuse_conv, deconv1_defuse_d2s = defuse(deconv1, 1, defuse_type=SUPER_DECONV)

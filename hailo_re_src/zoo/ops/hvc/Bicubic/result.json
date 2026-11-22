@@ -1,0 +1,6 @@
+{
+ "op": "Bicubic",
+ "chip_error": "ParsingWithRecommendationException: Parsing failed. The errors found in the graph are:\n UnsupportedResizeLayerError in op /1/1.1/Resize: Unsupported resize method cubic\nPlease try to parse the model again, using these end node names: /1/1.1/AveragePool",
+ "host_sqnr_db": 43.92412461686489,
+ "boundary_MB_per_frame": 0.401
+}

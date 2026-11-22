@@ -1,0 +1,13 @@
+{
+ "case": "Neg",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "normalization"
+ ],
+ "activations": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 38.95235221681341,
+ "hef_MB": 0.07,
+ "seconds": 8.4
+}

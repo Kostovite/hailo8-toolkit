@@ -1,0 +1,32 @@
+{
+ "case": "DeformConv_zero",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 353.5525844351214,
+ "sqnr_hw_db": 72.34451275563968,
+ "hef_MB": 0.16,
+ "seconds": 9.2
+}

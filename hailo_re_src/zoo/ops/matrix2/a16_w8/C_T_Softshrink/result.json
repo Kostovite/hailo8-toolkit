@@ -1,0 +1,30 @@
+{
+ "case": "C_T_Softshrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add",
+  "ew_sub",
+  "normalization"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "mul_and_add1:HailoNormalization",
+  "activation1:HailoStandaloneActivation",
+  "ew_sub1:HailoElementwiseSub",
+  "mul_and_add2:HailoNormalization",
+  "ew_add1:HailoElementwiseAdd",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 349.7208673015726,
+ "sqnr_hw_db": 31.149454057769983,
+ "hef_MB": 0.24,
+ "seconds": 20.7
+}

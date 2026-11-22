@@ -1,0 +1,22 @@
+{
+ "case": "Mul_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "ew_mult1:HailoElementwiseMult"
+ ],
+ "sqnr_native_db": 355.4983653663502,
+ "sqnr_hw_db": 27.799640181185488,
+ "hef_MB": 0.22,
+ "seconds": 17.2
+}

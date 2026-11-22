@@ -1,0 +1,1084 @@
+{
+ "n": 256,
+ "total_int8": 0.0005111132861394231,
+ "rows": [
+  {
+   "layer": "best/conv70",
+   "type": "conv",
+   "score": 0.00040612082897239246,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv86",
+   "type": "conv",
+   "score": 5.425261009437131e-05,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv100",
+   "type": "conv",
+   "score": 1.3658055420290724e-05,
+   "numel": 50176,
+   "a16": false
+  },
+  {
+   "layer": "best/conv97",
+   "type": "conv",
+   "score": 8.749739836644668e-06,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv69",
+   "type": "conv",
+   "score": 3.961735962414575e-06,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv83",
+   "type": "conv",
+   "score": 3.071077726808215e-06,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter11_2",
+   "type": "conv",
+   "score": 1.8207761134364679e-06,
+   "numel": 103488,
+   "a16": false
+  },
+  {
+   "layer": "best/conv85",
+   "type": "conv",
+   "score": 1.1139655544397586e-06,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv67",
+   "type": "conv",
+   "score": 1.0381352299947335e-06,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv60",
+   "type": "conv",
+   "score": 9.531202958425814e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter6_2",
+   "type": "conv",
+   "score": 9.4797613569852e-07,
+   "numel": 103488,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter10_2",
+   "type": "conv",
+   "score": 8.269306937581463e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv66",
+   "type": "conv",
+   "score": 8.2517202251934e-07,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv2",
+   "type": "conv",
+   "score": 7.884193026028957e-07,
+   "numel": 6422528,
+   "a16": false
+  },
+  {
+   "layer": "best/dw6",
+   "type": "dw",
+   "score": 7.404545212290405e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter8_2",
+   "type": "conv",
+   "score": 7.057110084127211e-07,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv99",
+   "type": "conv",
+   "score": 7.005447095984355e-07,
+   "numel": 50176,
+   "a16": false
+  },
+  {
+   "layer": "best/conv1",
+   "type": "conv",
+   "score": 5.863036609753006e-07,
+   "numel": 12845056,
+   "a16": false
+  },
+  {
+   "layer": "best/dw2",
+   "type": "dw",
+   "score": 5.74156095101775e-07,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv73",
+   "type": "conv",
+   "score": 5.430017338335246e-07,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter11_3",
+   "type": "conv",
+   "score": 4.6416003600375386e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv58",
+   "type": "conv",
+   "score": 4.53515966649865e-07,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv64",
+   "type": "conv",
+   "score": 3.6803796581217583e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv21",
+   "type": "conv",
+   "score": 3.035688931633119e-07,
+   "numel": 6422528,
+   "a16": false
+  },
+  {
+   "layer": "best/conv98",
+   "type": "conv",
+   "score": 2.9628599338901575e-07,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv63",
+   "type": "conv",
+   "score": 2.5690662873817575e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv62",
+   "type": "conv",
+   "score": 2.490180213263836e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/matmul4",
+   "type": "matmul",
+   "score": 2.2175846078421645e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_mult_softmax1",
+   "type": "ew_mult",
+   "score": 2.2128742553620144e-07,
+   "numel": 2458624,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter1_2",
+   "type": "conv",
+   "score": 2.1631369472464456e-07,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add16",
+   "type": "ew_add",
+   "score": 2.101556995127103e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add19",
+   "type": "ew_add",
+   "score": 2.0096370010979074e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv96",
+   "type": "conv",
+   "score": 1.901559473577088e-07,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv82",
+   "type": "conv",
+   "score": 1.8990079769963943e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv65",
+   "type": "conv",
+   "score": 1.828007991090316e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv12",
+   "type": "conv",
+   "score": 1.8065952930343782e-07,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv31",
+   "type": "conv",
+   "score": 1.62195092413269e-07,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add15",
+   "type": "ew_add",
+   "score": 1.5438992239498666e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv11",
+   "type": "conv",
+   "score": 1.449047096185618e-07,
+   "numel": 12845056,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_sub_softmax2",
+   "type": "ew_sub",
+   "score": 1.4375007987988064e-07,
+   "numel": 2458624,
+   "a16": false
+  },
+  {
+   "layer": "best/conv49",
+   "type": "conv",
+   "score": 1.4021061606487933e-07,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/activation2",
+   "type": "activation",
+   "score": 1.375024811288211e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv78",
+   "type": "conv",
+   "score": 1.2604863252378197e-07,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter7_2",
+   "type": "conv",
+   "score": 1.229960203527246e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter2_2",
+   "type": "conv",
+   "score": 1.223775905610973e-07,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter9_2",
+   "type": "conv",
+   "score": 1.1623852703658782e-07,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv95",
+   "type": "conv",
+   "score": 1.158062898698121e-07,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/reduce_sum_softmax1",
+   "type": "reduce_sum",
+   "score": 1.1367816909433943e-07,
+   "numel": 3136,
+   "a16": false
+  },
+  {
+   "layer": "best/conv24",
+   "type": "conv",
+   "score": 1.0397816739373081e-07,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv76",
+   "type": "conv",
+   "score": 1.0282894387702316e-07,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/normalization1",
+   "type": "normalization",
+   "score": 9.769249714187242e-08,
+   "numel": 2408448,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter3_2",
+   "type": "conv",
+   "score": 9.676153645464978e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv48",
+   "type": "conv",
+   "score": 9.595888300860215e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv51",
+   "type": "conv",
+   "score": 9.224230336394631e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv22",
+   "type": "conv",
+   "score": 8.814852744772715e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/matmul3",
+   "type": "matmul",
+   "score": 8.026792488670596e-08,
+   "numel": 2458624,
+   "a16": false
+  },
+  {
+   "layer": "best/conv81",
+   "type": "conv",
+   "score": 6.695030938977609e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_mult_softmax2",
+   "type": "ew_mult",
+   "score": 6.589416710137489e-08,
+   "numel": 2458624,
+   "a16": false
+  },
+  {
+   "layer": "best/conv57",
+   "type": "conv",
+   "score": 6.483183202870664e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv93",
+   "type": "conv",
+   "score": 6.30084771329065e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add5",
+   "type": "ew_add",
+   "score": 6.293261280331664e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv14",
+   "type": "conv",
+   "score": 6.167872990269932e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv55",
+   "type": "conv",
+   "score": 6.163727336840686e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv53",
+   "type": "conv",
+   "score": 6.096262897586204e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv84",
+   "type": "conv",
+   "score": 6.074550688641815e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv92",
+   "type": "conv",
+   "score": 6.065226788857205e-08,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add18",
+   "type": "ew_add",
+   "score": 5.821367734571768e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv72",
+   "type": "conv",
+   "score": 5.770485011968721e-08,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv18",
+   "type": "conv",
+   "score": 5.597629963358401e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add13",
+   "type": "ew_add",
+   "score": 5.0479801149319705e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv54",
+   "type": "conv",
+   "score": 4.84381155319882e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv79",
+   "type": "conv",
+   "score": 4.806482428396911e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv26",
+   "type": "conv",
+   "score": 4.709420005124039e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv28",
+   "type": "conv",
+   "score": 4.6673078406912466e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv80",
+   "type": "conv",
+   "score": 4.6394923926152725e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv29",
+   "type": "conv",
+   "score": 4.580243966849738e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add4",
+   "type": "ew_add",
+   "score": 4.1832304333833536e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv68",
+   "type": "conv",
+   "score": 4.171840116740653e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv4",
+   "type": "conv",
+   "score": 4.1538331873099255e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv30",
+   "type": "conv",
+   "score": 4.126953739635082e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add2",
+   "type": "ew_add",
+   "score": 4.0592042958539174e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter7_1",
+   "type": "conv",
+   "score": 3.917855407682354e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv41",
+   "type": "conv",
+   "score": 3.8884692218718057e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv6",
+   "type": "conv",
+   "score": 3.8864199733997536e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add14",
+   "type": "ew_add",
+   "score": 3.873483413875843e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter8_1",
+   "type": "conv",
+   "score": 3.8580978703307966e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv16",
+   "type": "conv",
+   "score": 3.8074498280706005e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv27",
+   "type": "conv",
+   "score": 3.703418419483311e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter5_2",
+   "type": "conv",
+   "score": 3.587223316504641e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add6",
+   "type": "ew_add",
+   "score": 3.581384916391039e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/dw3",
+   "type": "dw",
+   "score": 3.572747786713296e-08,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv8",
+   "type": "conv",
+   "score": 3.4354442866453077e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add1",
+   "type": "ew_add",
+   "score": 3.394418560954025e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/dw4",
+   "type": "dw",
+   "score": 3.387069835042813e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv17",
+   "type": "conv",
+   "score": 3.178843559727094e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv7",
+   "type": "conv",
+   "score": 3.174553079256626e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/dw5",
+   "type": "dw",
+   "score": 2.9233865581371e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/dw1",
+   "type": "dw",
+   "score": 2.8860672085197592e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv20",
+   "type": "conv",
+   "score": 2.712150023659512e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/matmul2",
+   "type": "matmul",
+   "score": 2.6975943540923844e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv56",
+   "type": "conv",
+   "score": 2.6552627270955106e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter2_1",
+   "type": "conv",
+   "score": 2.6245979264168006e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv10",
+   "type": "conv",
+   "score": 2.5854567651785166e-08,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv9",
+   "type": "conv",
+   "score": 2.5462506361543807e-08,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/reduce_sum_softmax2",
+   "type": "reduce_sum",
+   "score": 2.4613172698692843e-08,
+   "numel": 3136,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add17",
+   "type": "ew_add",
+   "score": 2.406982512984923e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv32",
+   "type": "conv",
+   "score": 2.380054996971979e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/matmul1",
+   "type": "matmul",
+   "score": 2.1887284849768318e-08,
+   "numel": 2458624,
+   "a16": false
+  },
+  {
+   "layer": "best/conv89",
+   "type": "conv",
+   "score": 2.1829800178338492e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter4_2",
+   "type": "conv",
+   "score": 2.176349614780095e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_sub_softmax1",
+   "type": "ew_sub",
+   "score": 2.1718026564557972e-08,
+   "numel": 2458624,
+   "a16": false
+  },
+  {
+   "layer": "best/conv71",
+   "type": "conv",
+   "score": 2.1387388933638787e-08,
+   "numel": 50176,
+   "a16": true
+  },
+  {
+   "layer": "best/conv19",
+   "type": "conv",
+   "score": 2.1212603263090285e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add3",
+   "type": "ew_add",
+   "score": 2.107991025647324e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv34",
+   "type": "conv",
+   "score": 1.9203854003658197e-08,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter6_3",
+   "type": "conv",
+   "score": 1.8678877640375177e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter3_1",
+   "type": "conv",
+   "score": 1.828702865053735e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter10_1",
+   "type": "conv",
+   "score": 1.6250537221020217e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv46",
+   "type": "conv",
+   "score": 1.557813385615252e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv77",
+   "type": "conv",
+   "score": 1.5452333321610296e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter1_1",
+   "type": "conv",
+   "score": 1.5234660378272306e-08,
+   "numel": 3211264,
+   "a16": false
+  },
+  {
+   "layer": "best/conv88",
+   "type": "conv",
+   "score": 1.1606846274081535e-08,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv40",
+   "type": "conv",
+   "score": 1.1557816470593479e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv47",
+   "type": "conv",
+   "score": 1.1212722190562104e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter5_1",
+   "type": "conv",
+   "score": 1.0992114810593841e-08,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv43",
+   "type": "conv",
+   "score": 1.0133577519581967e-08,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add9",
+   "type": "ew_add",
+   "score": 9.482254480599467e-09,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv42",
+   "type": "conv",
+   "score": 7.956980867470315e-09,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter4_1",
+   "type": "conv",
+   "score": 6.927798264691592e-09,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv37",
+   "type": "conv",
+   "score": 6.8551377629745075e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv36",
+   "type": "conv",
+   "score": 5.426381473720917e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/activation1",
+   "type": "activation",
+   "score": 5.2832871677905694e-09,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add8",
+   "type": "ew_add",
+   "score": 5.113267769387664e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/dw8",
+   "type": "dw",
+   "score": 4.67347189684642e-09,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv38",
+   "type": "conv",
+   "score": 4.59853538072193e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv87",
+   "type": "conv",
+   "score": 4.383256312814184e-09,
+   "numel": 12544,
+   "a16": true
+  },
+  {
+   "layer": "best/conv_feature_splitter9_1",
+   "type": "conv",
+   "score": 4.1385724704562105e-09,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv61",
+   "type": "conv",
+   "score": 4.128684983554999e-09,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/ew_add7",
+   "type": "ew_add",
+   "score": 3.810834128762944e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv39",
+   "type": "conv",
+   "score": 3.67453973241233e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/dw7",
+   "type": "dw",
+   "score": 3.5104824221362916e-09,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter6_1",
+   "type": "conv",
+   "score": 3.248288431626322e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv103",
+   "type": "conv",
+   "score": 2.7959791001799496e-09,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv5",
+   "type": "conv",
+   "score": 2.6376526516854263e-09,
+   "numel": 1605632,
+   "a16": false
+  },
+  {
+   "layer": "best/conv15",
+   "type": "conv",
+   "score": 2.4609245349902797e-09,
+   "numel": 802816,
+   "a16": false
+  },
+  {
+   "layer": "best/conv102",
+   "type": "conv",
+   "score": 2.4543009489464415e-09,
+   "numel": 200704,
+   "a16": false
+  },
+  {
+   "layer": "best/conv52",
+   "type": "conv",
+   "score": 2.2756795632960263e-09,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv_feature_splitter11_1",
+   "type": "conv",
+   "score": 1.8347650305100394e-09,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv25",
+   "type": "conv",
+   "score": 1.5406766698704753e-09,
+   "numel": 401408,
+   "a16": false
+  },
+  {
+   "layer": "best/conv101",
+   "type": "conv",
+   "score": 5.354287086664042e-10,
+   "numel": 3136,
+   "a16": true
+  },
+  {
+   "layer": "best/conv35",
+   "type": "conv",
+   "score": 2.498181205321431e-10,
+   "numel": 100352,
+   "a16": false
+  },
+  {
+   "layer": "best/conv74",
+   "type": "conv",
+   "score": 9.976783864382705e-12,
+   "numel": 175616,
+   "a16": true
+  },
+  {
+   "layer": "best/conv90",
+   "type": "conv",
+   "score": 5.056721325036888e-13,
+   "numel": 43904,
+   "a16": true
+  },
+  {
+   "layer": "best/conv104",
+   "type": "conv",
+   "score": 1.128160459419423e-13,
+   "numel": 10976,
+   "a16": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/runs/bnd2/conv_c=64,o=64,h=40,w=40,k=3/conv_c=64,o=64,h=40,w=40,k=3,pre=2,post=2
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/runs/bnd2/matmul_c=64,o=32,h=10,w=10/matmul_c=64,o=32,h=10,w=10,pre=2,post=2
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_groupnorm1/op_groupnorm1
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_groupnorm/op_groupnorm
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn1c/op_gn1_compat/op_gn1_compat
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/silent/gn/op_gn1_hw_first/op_gn1_hw_first
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/runs/bnd4/op_vit/op_vit
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/runs/bnd5/op_T_GroupNorm1/op_T_GroupNorm1

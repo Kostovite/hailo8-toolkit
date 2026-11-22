@@ -1,0 +1,27 @@
+{
+ "case": "C_T_ReflectPad",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "slice1:HailoSlice",
+  "slice2:HailoSlice",
+  "concat1:HailoConcat",
+  "slice3:HailoSlice",
+  "slice4:HailoSlice",
+  "concat2:HailoConcat",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.85854926793064,
+ "sqnr_hw_db": 38.99464713705907,
+ "hef_MB": 0.13,
+ "seconds": 13.7
+}

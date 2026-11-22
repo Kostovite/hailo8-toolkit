@@ -1,0 +1,47 @@
+{
+ "case": "Tile_W",
+ "stage": "quantize",
+ "hn_types": [
+  "avgpool",
+  "concat",
+  "conv",
+  "shortcut"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "avgpool1",
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "shortcut1:HailoShortcut",
+  "shortcut10:HailoShortcut",
+  "shortcut11:HailoShortcut",
+  "shortcut12:HailoShortcut",
+  "shortcut13:HailoShortcut",
+  "shortcut14:HailoShortcut",
+  "shortcut15:HailoShortcut",
+  "shortcut16:HailoShortcut",
+  "shortcut17:HailoShortcut",
+  "shortcut18:HailoShortcut",
+  "shortcut19:HailoShortcut",
+  "shortcut2:HailoShortcut",
+  "shortcut20:HailoShortcut",
+  "shortcut21:HailoShortcut",
+  "shortcut22:HailoShortcut",
+  "shortcut23:HailoShortcut",
+  "shortcut3:HailoShortcut",
+  "shortcut4:HailoShortcut",
+  "shortcut5:HailoShortcut",
+  "shortcut6:HailoShortcut",
+  "shortcut7:HailoShortcut",
+  "shortcut8:HailoShortcut",
+  "shortcut9:HailoShortcut",
+  "concat1:HailoConcat",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "error": "ValidationError: 1 validation error for ModelOptimizationConfig\nprecision_config -> precision_mode\n  Layer Tile_W/avgpool1 doesn't support precision_mode=a8_w4 because it does not support double scale bias (type=value_error.configuration; loc=['precision_config', 'precision_mode'])",
+ "trace": "e 1136, in full_quantization\n    self.setup_quantization(data_continer, work_dir=work_dir)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1080, in setup_quantization\n    config = self.apply_quantization_script(data_continer)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1027, in apply_quantization_script\n    return self._apply_quantization_script_with_flavor()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1045, in _apply_quantization_script_with_flavor\n    config = verify_commands(self._model, mo_commands, flavor_config)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/hailo_nn/model_optimization/configuration_verifier.py\", line 66, in verify_commands\n    verifier.validate()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/hailo_nn/model_optimization/configuration_verifier.py\", line 515, in validate\n    raise ValidationError(errors, type(self._config))\npydantic.v1.error_wrappers.ValidationError: 1 validation error for ModelOptimizationConfig\nprecision_config -> precision_mode\n  Layer Tile_W/avgpool1 doesn't support precision_mode=a8_w4 because it does not support double scale bias (type=value_error.configuration; loc=['precision_config', 'precision_mode'])\n",
+ "seconds": 3.3
+}

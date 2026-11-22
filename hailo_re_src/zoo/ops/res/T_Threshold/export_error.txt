@@ -1,0 +1,10 @@
+SymbolicValueError: Unsupported: ONNX export of operator threshold, non-zero threshold. Please feel free to request support or submit a pull request on PyTorch GitHub: https://github.com/pytorch/pytorch/issues  [Caused by the value 'input.1 defined in (%input.1 : Float(1, 16, 24, 24, strides=[9216, 576, 24, 1], requires_grad=0, device=cpu), %out.weight : Float(16, 16, 1, 1, strides=[16, 1, 1, 1], requires_grad=1, device=cpu) = prim::Param()
+)' (type 'Tensor') in the TorchScript graph. The containing node has kind 'prim::Param'.] 
+
+    Inputs:
+        Empty
+    Outputs:
+        #0: input.1 defined in (%input.1 : Float(1, 16, 24, 24, strides=[9216, 576, 24, 1], requires_grad=0, device=cpu), %out.weight : Float(16, 16, 1, 1, strides=[16, 1, 1, 1], requires_grad=1, device=cpu) = prim::Param()
+    )  (type 'Tensor')
+        #1: out.weight defined in (%input.1 : Float(1, 16, 24, 24, strides=[9216, 576, 24, 1], requires_grad=0, device=cpu), %out.weight : Float(16, 16, 1, 1, strides=[16, 1, 1, 1], requires_grad=1, device=cpu) = prim::Param()
+    )  (type 'Tensor')

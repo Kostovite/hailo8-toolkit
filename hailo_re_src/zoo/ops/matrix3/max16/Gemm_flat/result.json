@@ -1,0 +1,37 @@
+{
+ "case": "Gemm_flat",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "avgpool1",
+   "a16_w16"
+  ],
+  [
+   "fc1",
+   "a16_w16_a16"
+  ],
+  [
+   "fc2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 124.20044552286875,
+ "sqnr_hw_db": 38.87656653667529,
+ "hef_MB": 0.23,
+ "seconds": 14.9
+}

@@ -1,0 +1,19 @@
+{
+ "case": "RotaryEmbedding_op23",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "const_input",
+  "conv",
+  "ew_add",
+  "ew_mult",
+  "normalization",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 148.1489660076119,
+ "sqnr_hw_db": 33.50468360307202,
+ "hef_MB": 0.25,
+ "seconds": 19.3
+}

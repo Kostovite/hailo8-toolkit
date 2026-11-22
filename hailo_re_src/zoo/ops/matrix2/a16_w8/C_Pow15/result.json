@@ -1,0 +1,25 @@
+{
+ "case": "C_Pow15",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "ew_mult1:HailoElementwiseMult",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 144.33537961942565,
+ "sqnr_hw_db": 48.10149944900644,
+ "hef_MB": 0.09,
+ "seconds": 39.7
+}

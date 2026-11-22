@@ -1,0 +1,28 @@
+{
+ "case": "T_Var_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "reduce_mean1",
+  "ew_sub1",
+  "reduce_mean2",
+  "mul_and_add1",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "square1:HailoFeatureMultiplier"
+ ],
+ "sqnr_native_db": 139.68967879308994,
+ "sqnr_hw_db": 40.991826643524945,
+ "hef_MB": 0.35,
+ "seconds": 23.3
+}

@@ -1,0 +1,23 @@
+{
+ "case": "ReduceMin_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "normalization",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a16_w4_a16",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "normalization1:HailoNormalization",
+  "reduce_max1:HailoReduceMax",
+  "normalization2:HailoNormalization",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 345.48464948416654,
+ "sqnr_hw_db": 43.05351864769864,
+ "hef_MB": 0.13,
+ "seconds": 9.6
+}

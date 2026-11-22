@@ -1,0 +1,1 @@
+c=16 h=32 res conv5 conv1 softmax_c shuffle bilinear cat

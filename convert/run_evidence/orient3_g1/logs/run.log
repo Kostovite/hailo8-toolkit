@@ -1,0 +1,19 @@
+recipe=orient3 ckpt=/mnt/storage/lib_project/models/layout_teacher/staged_v2_20261114/orient3_10000.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1 gpus=1 qmode=all16 norm=rgb255 opt=0 input16=0
+== emu 2026-11-22 04:45:11
+   emu exit 3
+STOP at emu (log /mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1/logs/emu.log)
+recipe=orient3 ckpt=/mnt/storage/lib_project/models/layout_teacher/staged_v2_20261114/orient3_10000.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1 gpus=1 qmode=all16 norm=rgb255 opt=0 input16=0
+== emu 2026-11-22 04:51:02
+recipe=orient3 ckpt=/mnt/storage/lib_project/models/layout_teacher/staged_v2_20261114/orient3_10000.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1 gpus=1 qmode=all16 norm=rgb255 opt=0 input16=0
+== emu 2026-11-22 05:20:01
+   emu exit 2
+STOP at emu (log /mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1/logs/emu.log)
+recipe=orient3 ckpt=/mnt/storage/lib_project/models/layout_teacher/staged_v2_20261114/orient3_10000.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_g1 gpus=1 qmode=all16 norm=rgb255 opt=0 input16=0
+== emu 2026-11-22 05:21:26
+   emu exit 0
+== gate_fp 2026-11-22 05:27:15
+   gate_fp exit 0
+== gate_q 2026-11-22 05:27:16
+   gate_q exit 0
+== compile 2026-11-22 05:27:31
+compile: fastc u85 (default level, resources 0.85, cpcache) 1846 s; chip PASS 0/2000, 90.09 FPS

@@ -1,0 +1,13 @@
+{
+ "case": "Floor",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 8.884700656565302,
+ "sqnr_hw_db": 8.880232985088853,
+ "hef_MB": 0.07,
+ "seconds": 7.1
+}

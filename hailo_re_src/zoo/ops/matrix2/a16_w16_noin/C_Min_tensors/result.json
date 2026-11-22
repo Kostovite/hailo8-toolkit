@@ -1,0 +1,24 @@
+{
+ "case": "C_Min_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "ew_sub1",
+  "ew_sub2",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.0554214058218,
+ "sqnr_hw_db": 39.00757240132621,
+ "hef_MB": 0.27,
+ "seconds": 18.4
+}

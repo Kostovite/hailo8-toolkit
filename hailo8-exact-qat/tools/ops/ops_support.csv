@@ -1,0 +1,262 @@
+case,status,hw_db,fix,after_db,hn,act,error
+Abs,native,36.7,,,"activation,conv",prelu,
+Acos,FAIL@parse,,pwl 9p none (2 APU),49.1,,,IndexError: list index out of range
+Acosh,FAIL@parse,,pwl 9p none (1 APU),49.7,,,IndexError: list index out of range
+Add_tensors,native,34.3,,,"conv,ew_add",,
+ArgMax_C,native-lossy,21.4,,,"argmax,dw",,
+ArgMin_C,FAIL@parse,,compat rewrite,20.0,,,UnsupportedOperationError in op ArgMin_1: ArgMin operation is unsupported
+Asin,FAIL@parse,,pwl 9p none (1 APU),42.6,,,IndexError: list index out of range
+Asinh,FAIL@parse,,pwl 9p none (1 APU),36.3,,,IndexError: list index out of range
+Atan,FAIL@parse,,pwl 9p none (1 APU),36.1,,,IndexError: list index out of range
+Atanh,FAIL@parse,,pwl 9p none (1 APU),39.0,,,IndexError: list index out of range
+Attention_pattern,native-lossy,18.0,,,"conv,format_conversion,matmul,normalization,softmax",,
+AvgPool2s2,native,36.1,,,"avgpool,conv",,
+AvgPool3s1_pad,native,34.1,,,"avgpool,const_input,conv,ew_mult",,
+AvgPool3s1_pad_incl,native,36.3,,,"avgpool,conv",,
+AvgPool3s2,native,34.5,,,"avgpool,const_input,conv,ew_mult",,
+AvgPool7s1,native,33.3,,,"avgpool,const_input,conv,ew_mult",,
+BatchNorm,native,35.0,,,"batch_norm,conv",,
+Ceil,FAIL@parse,,pwl 9p none (2 APU),-13.6,,,IndexError: list index out of range
+Celu,FAIL@parse,,pwl 9p none (1 APU),36.9,,,IndexError: list index out of range
+ChannelShuffle_pattern,native,39.0,,,"conv,feature_shuffle",,
+Clip_pm1,native,36.6,,,"activation,conv",clip,
+Clip_relu6,native,38.3,,,"activation,conv",clip,
+Concat_C,native,34.3,,,"concat,conv",,
+Concat_W,native,35.6,,,"concat,conv,slice",,
+Const_div_x,native,25.9,,,"activation,conv",inv_pos,
+Conv1d_pattern,native,33.9,,,"conv,format_conversion",,
+Conv3x3,native,33.6,,,conv,,
+Conv3x3_dil2,native,33.7,,,conv,,
+Conv3x3_s2,native,34.1,,,conv,,
+Conv7x7,native,33.3,,,conv,,
+ConvTranspose_k4s2,native,34.4,,,"conv,deconv",,
+ConvTranspose_s2,native,33.6,,,"conv,deconv",,
+Cos,FAIL@parse,,pwl 9p none (2 APU),26.4,,,IndexError: list index out of range
+Cosh,FAIL@parse,,pwl 9p none (2 APU),37.3,,,IndexError: list index out of range
+CumSum_W,FAIL@parse,,,,,,IndexError: list index out of range
+DFT_W,FAIL@parse,,,,,,UnsupportedOperationError in op DFT_3: DFT operation is unsupported
+DWConv3x3,native,34.1,,,"conv,dw",,
+DepthToSpace,native,39.0,,,"conv,depth_to_space",,
+Div_by_const,native,39.0,,,"conv,normalization",,
+Div_tensors,native,28.2,,,"conv,ew_mult,normalization","inv_pos,prelu",
+Einsum_bchw,FAIL@parse,,,,,,"UnsupportedEinsumLayerError in op Einsum_4: Layer Einsum_4 has unsupported equation: bchw,bchv->bchv. Currently supporti"
+Elu,native,36.0,,,"activation,conv",elu,
+Equal,FAIL@parse,,,,,,UnsupportedOperationError in op Round_1: Round operation is unsupported
+Erf,FAIL@parse,,pwl 9p none (1 APU),36.5,,,IndexError: list index out of range
+Exp,native-lossy,23.6,,,"activation,conv",exp,
+Expand_W,FAIL@parse,,compat rewrite,36.4,,,UnexpectedNodeError in op Expand_3: Unexpected node Expand_3 (Expand)
+Floor,SILENT-WRONG,8.9,pwl 9p none (2 APU),21.6,conv,,
+GRU_W,FAIL@parse,,,,,,UnsupportedShuffleLayerError in op Reshape_2: Failed to determine type of layer to create in node Reshape_2
+Gather_C,native,36.3,,,conv,,
+Gelu_erf_pattern,FAIL@parse,,,,,,"UnsupportedActivationLayerError in op Erf_5: Unexpected activation at Erf_5, op=Erf"
+Gelu_op20,FAIL@parse,,compat rewrite,34.6,,,IndexError: list index out of range
+Gelu_sigmoid_pattern,native,35.2,,,"activation,conv",swish,
+Gelu_tanh_op20,FAIL@parse,,compat rewrite,34.6,,,IndexError: list index out of range
+Gelu_tanh_pattern,FAIL@parse,,compat rewrite,34.6,,,IndexError: list index out of range
+Gemm_flat,native-lossy,8.3,,,"avgpool,dense",,
+GlobalAvgPool,native-lossy,11.0,,,"avgpool,dense",,
+GlobalMaxPool,native,48.0,,,"conv,maxpool",,
+Greater_where,FAIL@parse,,,,,,UnexpectedNodeError in op Where_4: Unexpected node Where_4 (Where)
+GridSample,FAIL@parse,,,,,,IndexError: list index out of range
+GroupConv_g4,native,33.5,,,conv,,
+GroupNorm_op18,FAIL@parse,,,,,,ValidationError: Field 'shape' of 'type' is required but missing.
+HardSigmoid,native,44.5,,,"activation,conv",hardsigmoid,
+HardSwish,native,30.7,,,"activation,conv",hardswish,
+HardSwish_pattern,native,30.7,,,"activation,conv",hardswish,
+Hardmax_C,FAIL@parse,,,,,,IndexError: list index out of range
+Hardmax_W,FAIL@parse,,,,,,IndexError: list index out of range
+InstanceNorm,native,33.8,,,"conv,layer_normalization,normalization",,
+L2Norm_pattern,native,35.9,,,"conv,ew_mult,feature_multiplier,normalization,reduce_sum","inv_pos,sqrt",
+LRN,FAIL@parse,,,,,,IndexError: list index out of range
+LSTM_W,FAIL@parse,,,,,,UnsupportedShuffleLayerError in op Reshape_2: Failed to determine type of layer to create in node Reshape_2
+LayerNorm_C,native,34.8,,,"conv,layer_normalization,normalization",,
+LayerNorm_W,FAIL@parse,,,,,,BackendFuserException: In layer_normalization1 given beta argument is over all dimensions which is not supported yet
+LeakyRelu,native,36.8,,,"activation,conv",leaky,
+Log,native,36.8,,,"activation,conv",log,
+LogSoftmax_C,native,43.7,,,"activation,conv,ew_sub,reduce_max,reduce_sum","exp,log",
+LogSoftmax_W,native,44.4,,,"activation,conv,ew_sub,reduce_max,reduce_sum,resize","exp,log",
+LpNorm_C,FAIL@parse,,,,,,IndexError: list index out of range
+LpPool,FAIL@parse,,,,,,IndexError: list index out of range
+MatMul_const_W,FAIL@parse,,,,,,"UnsupportedModelError: Invalid kernel shape for base conv layer base_conv1 (translated from MatMul_2).
+Either the input "
+MatMul_tensors,FAIL@parse,,,,,,UnsupportedModelError: Input features and output features must be a multiply of groups for conv layer MatMul_tensors/con
+MaxPool2s2,native,39.3,,,"conv,maxpool",,
+MaxPool3s1,native,41.4,,,"conv,maxpool",,
+MaxPool5s1,native,43.8,,,"conv,maxpool",,
+Max_tensors,native,27.5,compat rewrite,34.2,"concat,conv,reduce_max",,
+MeanVarNorm,FAIL@parse,,,,,,IndexError: list index out of range
+Min_tensors,native,33.1,compat rewrite,34.0,"concat,conv,normalization,reduce_max",,
+Mish_op18,FAIL@parse,,,,,,IndexError: list index out of range
+Mish_pattern,native,32.2,,,"activation,conv",mish,
+Mod,FAIL@parse,,,,,,IndexError: list index out of range
+Mul_tensors,native,26.0,,,"conv,ew_mult",,
+Neg,native,39.0,,,"conv,normalization",,
+PRelu,native,35.6,,,"activation,conv",prelu,
+Pad_const,native,39.0,,,"conv,external_pad",,
+Pad_edge,SILENT-WRONG,8.3,compat rewrite,39.0,"conv,external_pad",,
+Pad_reflect,SILENT-WRONG,8.3,compat rewrite,39.0,"conv,external_pad",,
+PixelShuffle_pattern,native,39.0,,,"conv,depth_to_space",,
+Pow05,native,50.3,compat rewrite,50.3,"activation,conv",pow,
+Pow15,FAIL@parse,,compat rewrite,48.1,,,IndexError: list index out of range
+Pow2,native,33.1,compat rewrite,33.1,"conv,feature_multiplier",,
+Pow3,FAIL@parse,,compat rewrite,40.1,,,IndexError: list index out of range
+Pow_m05,native-lossy,-10.7,compat rewrite,35.6,"activation,conv",pow,
+Pow_tensors,FAIL@parse,,,,,,"UnsupportedModelError: Unexpected input_shapes at base activation layer base_activation2 (translated from Pow_5), input_"
+RMSNorm_pattern,FAIL@parse,,,,,,UnsupportedModelError: Failed to process entire graph. Might be an unsupported structure due to non-output skipped verti
+RNN_W,FAIL@parse,,,,,,IndexError: list index out of range
+Reciprocal,native,25.9,,,"activation,conv",inv_pos,
+ReduceL1_C,FAIL@parse,,compat rewrite,46.0,,,IndexError: list index out of range
+ReduceL1_HW,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceL1_W,FAIL@parse,,compat rewrite,47.4,,,IndexError: list index out of range
+ReduceL2_C,native,44.0,,,"dw,feature_multiplier,reduce_sum",sqrt,
+ReduceL2_HW,native,50.8,,,"conv,feature_multiplier,reduce_sum",sqrt,
+ReduceL2_W,native,45.3,,,"conv,feature_multiplier,reduce_sum",sqrt,
+ReduceLogSumExp_C,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceLogSumExp_HW,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceLogSumExp_W,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceMax_C,native,43.2,,,"dw,reduce_max",,
+ReduceMax_HW,FAIL@parse,,compat rewrite,48.0,,,IndexError: list index out of range
+ReduceMax_W,FAIL@parse,,compat rewrite,44.0,,,IndexError: list index out of range
+ReduceMean_C,native,36.3,,,"dw,reduce_mean",,
+ReduceMean_HW,native-lossy,11.0,,,"avgpool,dense",,
+ReduceMean_W,native,36.4,,,"avgpool,conv",,
+ReduceMin_C,native,43.1,,,"dw,normalization,reduce_max",,
+ReduceMin_HW,FAIL@parse,,compat rewrite,47.2,,,IndexError: list index out of range
+ReduceMin_W,FAIL@parse,,compat rewrite,43.7,,,IndexError: list index out of range
+ReduceProd_C,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceProd_HW,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceProd_W,FAIL@parse,,,,,,IndexError: list index out of range
+ReduceSumSquare_C,native,39.2,,,"dw,feature_multiplier,reduce_sum",,
+ReduceSumSquare_HW,native,45.3,,,"conv,feature_multiplier,reduce_sum",,
+ReduceSumSquare_W,native,40.6,,,"conv,feature_multiplier,reduce_sum",,
+ReduceSum_C,native,36.3,,,"dw,reduce_sum",,
+ReduceSum_HW,native,31.5,,,"conv,reduce_sum",,
+ReduceSum_W,native,36.1,,,"conv,reduce_sum",,
+Relu,native,38.0,,,"activation,conv",relu,
+Reshape_flatHW,native,39.0,,,conv,,
+Resize2x_bicubic,FAIL@parse,,,,,,IndexError: list index out of range
+Resize2x_bilinear,FAIL@emulate,,,,"conv,resize",,AccelerasImplementationError: Not all layers in the models support bit exact
+Resize2x_bilinear_ac,FAIL@emulate,,,,"conv,resize",,AccelerasImplementationError: Not all layers in the models support bit exact
+Resize2x_nearest,native,39.0,,,"conv,resize",,
+Resize_down_bilinear,FAIL@emulate,,,,"conv,resize",,AccelerasImplementationError: Not all layers in the models support bit exact
+RoiAlign,FAIL@parse,,,,,,UnsupportedOperationError in op RoiAlign_3: RoiAlign operation is unsupported
+Round,FAIL@parse,,pwl 9p none (2 APU),22.4,,,IndexError: list index out of range
+Rsqrt_pattern,native,35.6,,,"activation,conv",inv_sqrt,
+STFT_pattern_conv,FAIL@parse,,,,,,ValueError: 'bias_add1' is not in list
+Selu,FAIL@parse,,pwl 9p none (1 APU),36.7,,,IndexError: list index out of range
+Shrink,FAIL@parse,,compat rewrite,30.6,,,IndexError: list index out of range
+SiLU_pattern,native,33.0,,,"activation,conv",silu,
+Sigmoid,native,40.7,,,"activation,conv",sigmoid,
+Sign,FAIL@parse,,pwl 9p none (1 APU),14.9,,,IndexError: list index out of range
+Sin,FAIL@parse,,pwl 9p none (2 APU),28.1,,,IndexError: list index out of range
+Sinh,FAIL@parse,,pwl 9p none (1 APU),40.0,,,IndexError: list index out of range
+Slice_C,native,36.0,,,"conv,slice",,
+Slice_HW_stride2,native,36.3,,,"conv,dw",,
+Softmax_C,native,34.5,,,"conv,softmax",,
+Softmax_W,native,33.1,,,"conv,softmax",,
+Softplus,native,38.1,,,"activation,conv",softplus,
+Softsign,native,33.7,,,"activation,conv",softsign,
+SpaceToDepth,FAIL@parse,,,,,,IndexError: list index out of range
+Split_C,FAIL@parse,,compat rewrite,36.0,,,ValueError: 'bias_add1' is not in list
+Sqrt,native,50.3,,,"activation,conv",sqrt,
+Square_mul,native,33.1,,,"conv,feature_multiplier",,
+Sub_tensors,native,34.2,,,"conv,ew_sub",,
+Swish_beta,native,35.2,,,"activation,conv",swish,
+T_Abs,native,36.7,,,"activation,conv",prelu,
+T_AdaptiveAvg4,native,36.8,,,"avgpool,conv",,
+T_AdaptiveMax4,native,44.7,,,"conv,maxpool",,
+T_Amax_C,native,43.2,,,"dw,reduce_max",,
+T_Amax_HW,FAIL@parse,,compat rewrite,48.0,,,IndexError: list index out of range
+T_Amax_W,FAIL@parse,,compat rewrite,44.0,,,IndexError: list index out of range
+T_Amin_W,FAIL@parse,,compat rewrite,43.7,,,IndexError: list index out of range
+T_Argmax_C,native-lossy,21.4,,,"argmax,dw",,
+T_Atan,FAIL@parse,,pwl 9p none (1 APU),36.1,,,IndexError: list index out of range
+T_Attention_manual,FAIL@parse,,,,,,UnsupportedShuffleLayerError in op /f/Reshape_1: Failed to determine type of layer to create in node /f/Reshape_1
+T_Attention_sdpa,FAIL@parse,,,,,,UnsupportedSoftmaxLayerError in op /f/Softmax: Unsupported softmax
+T_AvgPool3s1,native,36.3,,,"avgpool,conv",,
+T_AvgPool3s1_nopadcount,native,34.1,,,"avgpool,const_input,conv,ew_mult",,
+T_BatchNorm2d,native,39.0,,,"batch_norm,conv",,
+T_CELU,FAIL@parse,,pwl 9p none (1 APU),36.9,,,IndexError: list index out of range
+T_Chunk_add,native,36.0,,,"conv,ew_add,slice",,
+T_Clamp,native,37.6,,,"activation,conv",clip,
+T_Conv1d_seq,native,35.3,,,"conv,format_conversion",,
+T_ConvTranspose_k3s2,SILENT-WRONG,-3.0,compat rewrite,34.2,"conv,deconv",,
+T_Conv_5x1,native,34.9,,,conv,,
+T_Conv_dil3,native,35.0,,,conv,,
+T_Cos,FAIL@parse,,pwl 9p none (2 APU),26.4,,,IndexError: list index out of range
+T_Cumsum_W,FAIL@parse,,,,,,IndexError: list index out of range
+T_Div_tensor,native,31.0,,,"conv,ew_mult,normalization","inv_pos,prelu",
+T_ELU,native,36.0,,,"activation,conv",elu,
+T_Erf,FAIL@parse,,pwl 9p none (1 APU),36.5,,,IndexError: list index out of range
+T_Exp,native-lossy,23.6,,,"activation,conv",exp,
+T_F_normalize_C,native,35.9,,,"activation,conv,ew_mult,feature_multiplier,reduce_sum","clip,inv_pos,sqrt",
+T_Flip_W,FAIL@parse,,,,,,IndexError: list index out of range
+T_Floor,SILENT-WRONG,8.9,pwl 9p none (2 APU),21.6,conv,,
+T_GELU,native,34.6,,,"activation,conv",gelu,
+T_GELU_tanh,FAIL@compile,34.7,compat rewrite,34.6,"conv,ew_add,ew_mult,feature_multiplier,normalization",tanh,BackendAllocatorException: Compilation failed: map::at
+T_GRU,FAIL@parse,,,,,,UnsupportedShuffleLayerError in op /f/Reshape: Failed to determine type of layer to create in node /f/Reshape
+T_GridSample,FAIL@parse,,,,,,IndexError: list index out of range
+T_GroupNorm,native,35.9,,,"conv,layer_normalization",,
+T_GroupNorm1,native,36.4,,,"conv,layer_normalization",,
+T_Hardshrink,FAIL@parse,,,,,,UnexpectedNodeError in op /f/Where: Unexpected node /f/Where (Where)
+T_Hardsigmoid,native,45.3,,,"activation,conv",hardsigmoid,
+T_Hardswish,native,30.7,,,"activation,conv",hardswish,
+T_Hardtanh,native,36.6,,,"activation,conv",clip,
+T_InstanceNorm2d,native,36.1,,,"conv,layer_normalization",,
+T_Interp_down_bilinear,FAIL@emulate,,,,"conv,resize",,AccelerasImplementationError: Not all layers in the models support bit exact
+T_LSTM,FAIL@parse,,,,,,UnsupportedShuffleLayerError in op /f/Reshape: Failed to determine type of layer to create in node /f/Reshape
+T_LayerNorm_C,native,36.7,,,"conv,layer_normalization",,
+T_LayerNorm_CHW,native,31.5,,,"avgpool,conv,ew_mult,ew_sub,feature_multiplier,normalization,reduce_mean,resize",inv_sqrt,
+T_Linear_tokens,native,34.5,,,conv,,
+T_LocalRespNorm,FAIL@parse,,,,,,"UnsupportedModelError: Invalid kernel shape for base conv layer base_conv1 (translated from /out/Conv).
+Either the input"
+T_Log,native,36.8,,,"activation,conv",log,
+T_LogSigmoid,native,29.3,,,"activation,conv","log,sigmoid",
+T_LogSoftmax_C,native,43.7,,,"activation,conv,ew_sub,reduce_max,reduce_sum","exp,log",
+T_Logsumexp_C,FAIL@parse,,,,,,IndexError: list index out of range
+T_MaxPool3s2,native,41.6,,,"conv,maxpool",,
+T_MaxPool_ceil,native,38.4,,,"conv,external_pad,maxpool",,
+T_Max_tensor,native-lossy,10.7,compat rewrite,34.7,"concat,conv,reduce_max",,
+T_Mean_C,native,36.3,,,"dw,reduce_mean",,
+T_Mish,native,32.2,,,"activation,conv",mish,
+T_Norm_C,native,44.0,,,"dw,feature_multiplier,reduce_sum",sqrt,
+T_PixelShuffle,native,39.0,,,"conv,depth_to_space",,
+T_PixelUnshuffle,native,39.0,,,"conv,space_to_depth",,
+T_Pow05,native,50.3,,,"activation,conv",pow,
+T_Pow2,native,33.1,,,"conv,feature_multiplier",,
+T_Pow3,FAIL@parse,,compat rewrite,40.1,,,IndexError: list index out of range
+T_QuickGELU,native,35.2,,,"activation,conv",swish,
+T_RMSNorm_C,native,36.7,,,"conv,layer_normalization",,
+T_ReLU6,native,38.3,,,"activation,conv",clip,
+T_Reciprocal,native,25.9,,,"activation,conv",inv_pos,
+T_ReflectPad,SILENT-WRONG,8.3,compat rewrite,39.0,"conv,external_pad",,
+T_ReplicatePad,SILENT-WRONG,8.3,compat rewrite,39.0,"conv,external_pad",,
+T_Roll_W,native,39.0,,,"concat,conv,slice",,
+T_Round,FAIL@parse,,pwl 9p none (2 APU),22.4,,,IndexError: list index out of range
+T_Rsqrt,native,35.6,,,"activation,conv",inv_sqrt,
+T_SELU,FAIL@parse,,pwl 9p none (1 APU),36.7,,,IndexError: list index out of range
+T_SiLU,native,33.0,,,"activation,conv",silu,
+T_Sigmoid_gate,native,33.8,,,"conv,ew_mult",sigmoid,
+T_Sign,FAIL@parse,,pwl 9p none (1 APU),14.9,,,IndexError: list index out of range
+T_Sin,FAIL@parse,,pwl 9p none (2 APU),28.1,,,IndexError: list index out of range
+T_Softmax_C,native,34.5,,,"conv,softmax",,
+T_Softmax_W,native,33.1,,,"conv,softmax",,
+T_Softplus,native,38.1,,,"activation,conv",softplus,
+T_Softshrink,FAIL@parse,,compat rewrite,31.1,,,UnexpectedNodeError in op /f/Where_1: Unexpected node /f/Where_1 (Where)
+T_Sqrt,native,50.3,,,"activation,conv",sqrt,
+T_Square,native,33.1,,,"conv,feature_multiplier",,
+T_Std_HW,native,49.9,,,"avgpool,conv,ew_sub,feature_multiplier,normalization,resize",sqrt,
+T_Tanhshrink,native,33.5,,,"activation,conv,ew_sub",tanh,
+T_Upsample_bicubic,FAIL@parse,,,,,,IndexError: list index out of range
+T_Upsample_bilinear,FAIL@emulate,,,,"conv,resize",,AccelerasImplementationError: Not all layers in the models support bit exact
+T_Upsample_bilinear_ac,FAIL@emulate,,,,"conv,resize",,AccelerasImplementationError: Not all layers in the models support bit exact
+T_Var_C,native,39.3,,,"dw,ew_sub,feature_multiplier,normalization,reduce_mean",,
+T_ViT_block,native,32.7,,,"conv,ew_add,feature_splitter,format_conversion,layer_normalization,matmul,normalization,softmax",gelu,
+T_ZeroPad,native,39.0,,,"conv,external_pad",,
+Tan,FAIL@parse,,pwl 9p none (1 APU),42.5,,,IndexError: list index out of range
+Tanh,native,35.5,,,"activation,conv",tanh,
+ThresholdedRelu,FAIL@parse,,,,,,IndexError: list index out of range
+Tile_W,native,36.4,,,"avgpool,concat,conv,shortcut",,
+TopK_C,FAIL@parse,,,,,,IndexError: list index out of range
+Transpose_HW,native,39.0,,,"conv,format_conversion",,
+baseline,native,39.0,,,conv,,

@@ -1,0 +1,13 @@
+{
+ "case": "RMSNorm_op23_C",
+ "rewrite_vs_orig_db": 348.1614195577366,
+ "ops_after": [
+  "Add",
+  "Conv",
+  "Div",
+  "Mul",
+  "ReduceMean",
+  "Sqrt"
+ ],
+ "opset_after": 17
+}

@@ -1,0 +1,15 @@
+{
+ "case": "ReverseSequence_C",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 39.00114139254499,
+ "hef_MB": 0.32,
+ "seconds": 17.3
+}

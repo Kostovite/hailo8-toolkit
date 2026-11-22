@@ -1,0 +1,16 @@
+{
+ "case": "T_Rsqrt",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 143.64134546232896,
+ "sqnr_hw_db": 35.65515556148451,
+ "hef_MB": 0.09,
+ "seconds": 9.6
+}

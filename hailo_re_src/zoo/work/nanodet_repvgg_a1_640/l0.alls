@@ -1,0 +1,6 @@
+normalization1 = normalization([103.53, 116.28, 123.675], [57.375, 57.12, 58.395])
+input_conversion = input_conversion(bgr_to_rgb)
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/nanodet_repvgg_a1_640_nms_config.json", meta_arch=yolov8, engine=cpu)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

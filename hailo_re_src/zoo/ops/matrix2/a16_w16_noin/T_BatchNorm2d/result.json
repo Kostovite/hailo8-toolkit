@@ -1,0 +1,20 @@
+{
+ "case": "T_BatchNorm2d",
+ "stage": "ok",
+ "hn_types": [
+  "batch_norm",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "batch_norm1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 138.1341781577168,
+ "sqnr_hw_db": 38.98724110164367,
+ "hef_MB": 0.18,
+ "seconds": 11.8
+}

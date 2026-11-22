@@ -1,0 +1,15 @@
+{
+ "case": "Sqrt",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "sqnr_native_db": 144.74110220828004,
+ "sqnr_hw_db": 50.345679136981616,
+ "hef_MB": 0.09,
+ "seconds": 37.1
+}

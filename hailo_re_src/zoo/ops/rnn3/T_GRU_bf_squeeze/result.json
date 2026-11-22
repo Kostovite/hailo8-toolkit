@@ -1,0 +1,25 @@
+{
+ "case": "T_GRU_bf_squeeze",
+ "stage": "compile",
+ "hn_types": [
+  "avgpool",
+  "concat",
+  "const_input",
+  "conv",
+  "ew_add",
+  "ew_mult",
+  "ew_sub",
+  "feature_splitter",
+  "slice"
+ ],
+ "activations": [
+  "sigmoid",
+  "tanh"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 11.12102548760177,
+ "sqnr_hw_db": 11.352495506388674,
+ "error": "BackendAllocatorException: Compilation failed with unexpected crash",
+ "trace": "ile \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1852, in compile\n    hef, mapped_graph_file = self._compile(fps, allocator_script, mapping_timeout)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1846, in _compile\n    hef, mapped_graph_file, auto_alls = self.hef_full_build(fps, mapping_timeout, model_params, allocator_script)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1822, in hef_full_build\n    auto_alls, self._hef_data, self._integrated_graph = allocator.create_mapping_and_full_build_hef(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 764, in create_mapping_and_full_build_hef\n    self.call_builder(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 696, in call_builder\n    self.run_builder(network_graph_path, output_path, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 572, in run_builder\n    raise e.internal_exception(\"Compilation failed with unexpected crash\") from None\nhailo_sdk_client.sdk_backend.sdk_backend_exceptions.BackendAllocatorException: Compilation failed with unexpected crash\n",
+ "seconds": 7486.3
+}

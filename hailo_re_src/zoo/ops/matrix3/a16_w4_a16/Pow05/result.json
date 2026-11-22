@@ -1,0 +1,24 @@
+{
+ "case": "Pow05",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "pow"
+ ],
+ "prec": "a16_w4_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 174.24638371891533,
+ "sqnr_hw_db": 51.91715875718171,
+ "hef_MB": 0.13,
+ "seconds": 69.3
+}

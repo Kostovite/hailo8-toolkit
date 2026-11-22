@@ -1,0 +1,56 @@
+{
+ "case": "C_ReduceL1_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "dw",
+  "reduce_sum"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_normalization5",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_normalization28",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_relu6",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_ew_add7",
+   "a16_w16_a16"
+  ],
+  [
+   "reduce_sum1",
+   "a16_w16_a16"
+  ],
+  [
+   "dw1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 142.5036063945968,
+ "sqnr_hw_db": 76.20498469475505,
+ "hef_MB": 0.51,
+ "seconds": 18.9
+}

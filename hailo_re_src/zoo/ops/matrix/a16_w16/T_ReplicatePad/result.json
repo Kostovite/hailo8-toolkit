@@ -1,0 +1,14 @@
+{
+ "case": "T_ReplicatePad",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 8.313099087805593,
+ "sqnr_hw_db": 8.309930072664017,
+ "hef_MB": 0.13,
+ "seconds": 9.3
+}

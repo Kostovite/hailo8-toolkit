@@ -1,0 +1,10 @@
+{
+ "case": "Col2Im_k2s2",
+ "rewrite_vs_orig_db": 349.19282346339094,
+ "ops_after": [
+  "Conv",
+  "ConvTranspose",
+  "Reshape"
+ ],
+ "opset_after": 17
+}

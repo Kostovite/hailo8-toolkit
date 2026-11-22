@@ -1,0 +1,41 @@
+{
+ "case": "Sum3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "ew_add1",
+   "a16_w16"
+  ],
+  [
+   "ew_add2",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 359.0677256242862,
+ "sqnr_hw_db": 61.78153864107557,
+ "hef_MB": 0.22,
+ "seconds": 17.9
+}

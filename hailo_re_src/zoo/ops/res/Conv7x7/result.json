@@ -1,0 +1,12 @@
+{
+ "case": "Conv7x7",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "sqnr_native_db": 126.38153133982178,
+ "sqnr_hw_db": 33.28335578441396,
+ "hef_MB": 0.14,
+ "seconds": 12.0
+}

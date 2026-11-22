@@ -1,0 +1,1 @@
+c=128 h=16 avgpool dw5 sppf pad_conv sppf sub

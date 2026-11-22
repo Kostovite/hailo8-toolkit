@@ -1,0 +1,1 @@
+c=64 h=24 conv1 split2 dw3 split2 bilinear

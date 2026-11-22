@@ -1,0 +1,45 @@
+{
+ "case": "c3_16__MaxUnpool_2",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "maxpool|a8_w8_a8|linear": 1,
+  "resize|a8_w8_a8|": 1,
+  "ew_sub|a8_w8_a16|less": 1,
+  "normalization|a16_w16_a8|linear": 1,
+  "ew_mult|a8_w8_a8|linear": 1,
+  "conv|a8_w8_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 7,
+  "exact": 7,
+  "not_exact": [],
+  "s": 0.4
+ },
+ "T2_chained": {
+  "checked": 5,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "MaxUnpool_2/conv1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

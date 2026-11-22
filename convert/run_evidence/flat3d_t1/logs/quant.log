@@ -1,0 +1,126 @@
+in_norm = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, batch_size=8, calibset_size=1024)
+quantization_param([conv1, conv2, conv3, conv4, ew_add1, conv5, conv6, ew_add2, conv7, conv8, ew_add3, conv10, conv11, conv9, ew_add4, conv12, conv13, ew_add5, conv14, conv15, ew_add6, conv16, conv17, ew_add7, conv18, conv19, conv20, ew_add8, conv21, conv22, ew_add9, conv23, conv24, ew_add10, conv25, conv26, ew_add11, conv27, conv28, ew_add12, conv29, conv30, ew_add13, conv31, conv32, conv33, conv34, conv35, conv36, conv37, conv38, conv39, conv40, conv41, conv42, conv43, conv44, conv45], precision_mode=a16_w16)
+
+[info] Loading model script commands to flat3 from string
+[info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+[info] Starting Model Optimization
+[warning] Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+[info] Model received quantization params from the hn
+[info] MatmulDecompose skipped
+[info] Starting Mixed Precision
+[info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:02.81)
+[info] LayerNorm Decomposition skipped
+[info] Starting Statistics Collector
+[info] Using dataset with 1024 entries for calibration
+Calibration:   0%|          | 0/1024 [00:00<?, ?entries/s]/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/layers/activations/leaky_relu.py:41: UserWarning: Argument `alpha` is deprecated. Use `negative_slope` instead.
+  warnings.warn(
+Calibration:   1%|          | 8/1024 [01:17<2:43:21,  9.65s/entries]Calibration:   2%|▏         | 16/1024 [01:17<1:07:17,  4.01s/entries]Calibration:   2%|▏         | 24/1024 [01:18<36:40,  2.20s/entries]  Calibration:   3%|▎         | 32/1024 [01:18<22:21,  1.35s/entries]Calibration:   4%|▍         | 40/1024 [01:18<14:29,  1.13entries/s]Calibration:   5%|▍         | 48/1024 [01:19<09:46,  1.67entries/s]Calibration:   5%|▌         | 56/1024 [01:19<06:47,  2.37entries/s]Calibration:   6%|▋         | 64/1024 [01:20<04:51,  3.29entries/s]Calibration:   7%|▋         | 72/1024 [01:20<03:34,  4.44entries/s]Calibration:   8%|▊         | 80/1024 [01:20<02:42,  5.80entries/s]Calibration:   9%|▊         | 88/1024 [01:21<02:07,  7.35entries/s]Calibration:   9%|▉         | 96/1024 [01:21<01:42,  9.03entries/s]Calibration:  10%|█         | 104/1024 [01:22<01:25, 10.71entries/s]Calibration:  11%|█         | 112/1024 [01:22<01:13, 12.35entries/s]Calibration:  12%|█▏        | 120/1024 [01:23<01:05, 13.84entries/s]Calibration:  12%|█▎        | 128/1024 [01:23<01:00, 14.92entries/s]Calibration:  13%|█▎        | 136/1024 [01:23<00:55, 15.93entries/s]Calibration:  14%|█▍        | 144/1024 [01:24<00:52, 16.78entries/s]Calibration:  15%|█▍        | 152/1024 [01:24<00:50, 17.22entries/s]Calibration:  16%|█▌        | 160/1024 [01:25<00:49, 17.61entries/s]Calibration:  16%|█▋        | 168/1024 [01:25<00:47, 17.97entries/s]Calibration:  17%|█▋        | 176/1024 [01:26<00:46, 18.22entries/s]Calibration:  18%|█▊        | 184/1024 [01:26<00:45, 18.48entries/s]Calibration:  19%|█▉        | 192/1024 [01:26<00:44, 18.63entries/s]Calibration:  20%|█▉        | 200/1024 [01:27<00:44, 18.70entries/s]Calibration:  20%|██        | 208/1024 [01:27<00:43, 18.76entries/s]Calibration:  21%|██        | 216/1024 [01:28<00:42, 18.83entries/s]Calibration:  22%|██▏       | 224/1024 [01:28<00:42, 18.93entries/s]Calibration:  23%|██▎       | 232/1024 [01:29<00:42, 18.82entries/s]Calibration:  23%|██▎       | 240/1024 [01:29<00:41, 18.94entries/s]Calibration:  24%|██▍       | 248/1024 [01:29<00:41, 18.62entries/s]Calibration:  25%|██▌       | 256/1024 [01:30<00:40, 18.73entries/s]Calibration:  26%|██▌       | 264/1024 [01:30<00:40, 18.84entries/s]Calibration:  27%|██▋       | 272/1024 [01:31<00:39, 18.92entries/s]Calibration:  27%|██▋       | 280/1024 [01:31<00:39, 18.80entries/s]Calibration:  28%|██▊       | 288/1024 [01:32<00:39, 18.77entries/s]Calibration:  29%|██▉       | 296/1024 [01:32<00:38, 18.89entries/s]Calibration:  30%|██▉       | 304/1024 [01:32<00:38, 18.79entries/s]Calibration:  30%|███       | 312/1024 [01:33<00:37, 18.79entries/s]Calibration:  31%|███▏      | 320/1024 [01:33<00:37, 18.87entries/s]Calibration:  32%|███▏      | 328/1024 [01:34<00:37, 18.75entries/s]Calibration:  33%|███▎      | 336/1024 [01:34<00:36, 18.81entries/s]Calibration:  34%|███▎      | 344/1024 [01:35<00:36, 18.71entries/s]Calibration:  34%|███▍      | 352/1024 [01:35<00:36, 18.17entries/s]Calibration:  35%|███▌      | 360/1024 [01:36<00:40, 16.24entries/s]Calibration:  36%|███▌      | 368/1024 [01:36<00:42, 15.53entries/s]Calibration:  37%|███▋      | 376/1024 [01:37<00:43, 14.85entries/s]Calibration:  38%|███▊      | 384/1024 [01:37<00:42, 15.09entries/s]Calibration:  38%|███▊      | 392/1024 [01:38<00:42, 14.77entries/s]Calibration:  39%|███▉      | 400/1024 [01:38<00:40, 15.59entries/s]Calibration:  40%|███▉      | 408/1024 [01:39<00:37, 16.45entries/s]Calibration:  41%|████      | 416/1024 [01:39<00:35, 17.20entries/s]Calibration:  41%|████▏     | 424/1024 [01:40<00:33, 17.76entries/s]Calibration:  42%|████▏     | 432/1024 [01:40<00:32, 18.18entries/s]Calibration:  43%|████▎     | 440/1024 [01:40<00:31, 18.44entries/s]Calibration:  44%|████▍     | 448/1024 [01:41<00:31, 18.03entries/s]Calibration:  45%|████▍     | 456/1024 [01:41<00:33, 17.07entries/s]Calibration:  45%|████▌     | 464/1024 [01:42<00:34, 16.12entries/s]Calibration:  46%|████▌     | 472/1024 [01:42<00:32, 16.75entries/s]Calibration:  47%|████▋     | 480/1024 [01:43<00:31, 17.16entries/s]Calibration:  48%|████▊     | 488/1024 [01:43<00:30, 17.36entries/s]Calibration:  48%|████▊     | 496/1024 [01:44<00:29, 17.75entries/s]Calibration:  49%|████▉     | 504/1024 [01:44<00:28, 18.09entries/s]Calibration:  50%|█████     | 512/1024 [01:45<00:28, 18.09entries/s]Calibration:  51%|█████     | 520/1024 [01:45<00:27, 18.15entries/s]Calibration:  52%|█████▏    | 528/1024 [01:45<00:26, 18.38entries/s]Calibration:  52%|█████▏    | 536/1024 [01:46<00:26, 18.47entries/s]Calibration:  53%|█████▎    | 544/1024 [01:46<00:25, 18.47entries/s]Calibration:  54%|█████▍    | 552/1024 [01:47<00:25, 18.41entries/s]Calibration:  55%|█████▍    | 560/1024 [01:47<00:24, 18.67entries/s]Calibration:  55%|█████▌    | 568/1024 [01:48<00:24, 18.71entries/s]Calibration:  56%|█████▋    | 576/1024 [01:48<00:23, 18.79entries/s]Calibration:  57%|█████▋    | 584/1024 [01:48<00:23, 18.53entries/s]Calibration:  58%|█████▊    | 592/1024 [01:49<00:23, 18.55entries/s]Calibration:  59%|█████▊    | 600/1024 [01:49<00:22, 18.54entries/s]Calibration:  59%|█████▉    | 608/1024 [01:50<00:22, 18.54entries/s]Calibration:  60%|██████    | 616/1024 [01:50<00:21, 18.63entries/s]Calibration:  61%|██████    | 624/1024 [01:51<00:21, 18.66entries/s]Calibration:  62%|██████▏   | 632/1024 [01:51<00:21, 18.55entries/s]Calibration:  62%|██████▎   | 640/1024 [01:51<00:20, 18.69entries/s]Calibration:  63%|██████▎   | 648/1024 [01:52<00:20, 18.71entries/s]Calibration:  64%|██████▍   | 656/1024 [01:52<00:19, 18.69entries/s]Calibration:  65%|██████▍   | 664/1024 [01:53<00:19, 18.76entries/s]Calibration:  66%|██████▌   | 672/1024 [01:53<00:18, 18.76entries/s]Calibration:  66%|██████▋   | 680/1024 [01:54<00:18, 18.80entries/s]Calibration:  67%|██████▋   | 688/1024 [01:54<00:17, 18.93entries/s]Calibration:  68%|██████▊   | 696/1024 [01:54<00:17, 18.85entries/s]Calibration:  69%|██████▉   | 704/1024 [01:55<00:17, 18.53entries/s]Calibration:  70%|██████▉   | 712/1024 [01:55<00:16, 18.53entries/s]Calibration:  70%|███████   | 720/1024 [01:56<00:16, 18.53entries/s]Calibration:  71%|███████   | 728/1024 [01:56<00:15, 18.53entries/s]Calibration:  72%|███████▏  | 736/1024 [01:57<00:15, 18.45entries/s]Calibration:  73%|███████▎  | 744/1024 [01:57<00:15, 18.53entries/s]Calibration:  73%|███████▎  | 752/1024 [01:57<00:14, 18.23entries/s]Calibration:  74%|███████▍  | 760/1024 [01:58<00:14, 17.98entries/s]Calibration:  75%|███████▌  | 768/1024 [01:58<00:14, 17.99entries/s]Calibration:  76%|███████▌  | 776/1024 [01:59<00:13, 18.10entries/s]Calibration:  77%|███████▋  | 784/1024 [01:59<00:13, 18.13entries/s]Calibration:  77%|███████▋  | 792/1024 [02:00<00:12, 18.13entries/s]Calibration:  78%|███████▊  | 800/1024 [02:00<00:14, 16.00entries/s]Calibration:  79%|███████▉  | 808/1024 [02:01<00:13, 16.58entries/s]Calibration:  80%|███████▉  | 816/1024 [02:01<00:12, 17.04entries/s]Calibration:  80%|████████  | 824/1024 [02:02<00:11, 17.41entries/s]Calibration:  81%|████████▏ | 832/1024 [02:02<00:10, 17.63entries/s]Calibration:  82%|████████▏ | 840/1024 [02:03<00:10, 17.79entries/s]Calibration:  83%|████████▎ | 848/1024 [02:03<00:09, 17.91entries/s]Calibration:  84%|████████▎ | 856/1024 [02:03<00:09, 18.01entries/s]Calibration:  84%|████████▍ | 864/1024 [02:04<00:08, 18.07entries/s]Calibration:  85%|████████▌ | 872/1024 [02:04<00:08, 18.05entries/s]Calibration:  86%|████████▌ | 880/1024 [02:05<00:07, 18.14entries/s]Calibration:  87%|████████▋ | 888/1024 [02:05<00:07, 18.24entries/s]Calibration:  88%|████████▊ | 896/1024 [02:06<00:06, 18.43entries/s]Calibration:  88%|████████▊ | 904/1024 [02:06<00:06, 18.48entries/s]Calibration:  89%|████████▉ | 912/1024 [02:06<00:06, 18.56entries/s]Calibration:  90%|████████▉ | 920/1024 [02:07<00:05, 18.56entries/s]Calibration:  91%|█████████ | 928/1024 [02:07<00:05, 18.56entries/s]Calibration:  91%|█████████▏| 936/1024 [02:08<00:04, 18.46entries/s]Calibration:  92%|█████████▏| 944/1024 [02:08<00:04, 18.45entries/s]Calibration:  93%|█████████▎| 952/1024 [02:09<00:03, 18.52entries/s]Calibration:  94%|█████████▍| 960/1024 [02:09<00:03, 18.56entries/s]Calibration:  95%|█████████▍| 968/1024 [02:09<00:03, 18.63entries/s]Calibration:  95%|█████████▌| 976/1024 [02:10<00:02, 18.61entries/s]Calibration:  96%|█████████▌| 984/1024 [02:10<00:02, 18.60entries/s]Calibration:  97%|█████████▋| 992/1024 [02:11<00:01, 18.74entries/s]Calibration:  98%|█████████▊| 1000/1024 [02:11<00:01, 18.66entries/s]Calibration:  98%|█████████▊| 1008/1024 [02:12<00:00, 18.57entries/s]Calibration:  99%|█████████▉| 1016/1024 [02:12<00:00, 18.67entries/s]Calibration: 100%|██████████| 1024/1024 [02:12<00:00, 18.65entries/s]Calibration: 100%|██████████| 1024/1024 [02:12<00:00, 18.65entries/s]Calibration: 100%|██████████| 1024/1024 [02:12<00:00,  7.70entries/s]
+[info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:02:16.46)
+[info] Starting Fix zp_comp Encoding
+[info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+[info] Matmul Equalization skipped
+[info] Starting MatmulDecomposeFix
+[info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+[info] No shifts available for layer flat3/conv1/conv_op, using max shift instead. delta=2.0607
+[info] No shifts available for layer flat3/conv1/conv_op, using max shift instead. delta=1.0304
+[info] No shifts available for layer flat3/conv2/conv_op, using max shift instead. delta=1.5896
+[info] No shifts available for layer flat3/conv2/conv_op, using max shift instead. delta=0.7948
+[info] No shifts available for layer flat3/conv1/conv_op, using max shift instead. delta=1.0304
+[info] No shifts available for layer flat3/conv3/conv_op, using max shift instead. delta=0.6611
+[info] No shifts available for layer flat3/conv4/conv_op, using max shift instead. delta=0.9542
+[info] No shifts available for layer flat3/conv4/conv_op, using max shift instead. delta=0.4771
+[info] No shifts available for layer flat3/conv2/conv_op, using max shift instead. delta=0.7948
+[info] No shifts available for layer flat3/conv2/conv_op, using max shift instead. delta=0.7948
+[info] No shifts available for layer flat3/conv4/conv_op, using max shift instead. delta=0.4771
+[info] No shifts available for layer flat3/conv6/conv_op, using max shift instead. delta=0.2346
+[info] No shifts available for layer flat3/conv6/conv_op, using max shift instead. delta=0.1173
+[info] No shifts available for layer flat3/conv8/conv_op, using max shift instead. delta=0.6054
+[info] No shifts available for layer flat3/conv8/conv_op, using max shift instead. delta=0.3027
+[info] No shifts available for layer flat3/conv10/conv_op, using max shift instead. delta=1.0978
+[info] No shifts available for layer flat3/conv9/conv_op, using max shift instead. delta=0.2644
+[info] No shifts available for layer flat3/conv9/conv_op, using max shift instead. delta=0.1322
+[info] No shifts available for layer flat3/conv10/conv_op, using max shift instead. delta=0.4167
+[info] No shifts available for layer flat3/conv10/conv_op, using max shift instead. delta=0.4167
+[info] No shifts available for layer flat3/conv9/conv_op, using max shift instead. delta=0.1322
+[info] No shifts available for layer flat3/conv11/conv_op, using max shift instead. delta=0.8120
+[info] No shifts available for layer flat3/conv11/conv_op, using max shift instead. delta=0.4060
+[info] No shifts available for layer flat3/conv9/conv_op, using max shift instead. delta=0.1322
+[info] No shifts available for layer flat3/conv10/conv_op, using max shift instead. delta=0.4167
+[info] No shifts available for layer flat3/conv13/conv_op, using max shift instead. delta=0.4200
+[info] No shifts available for layer flat3/conv13/conv_op, using max shift instead. delta=0.2100
+[info] No shifts available for layer flat3/conv14/conv_op, using max shift instead. delta=0.1304
+[info] No shifts available for layer flat3/conv14/conv_op, using max shift instead. delta=0.0652
+[info] No shifts available for layer flat3/conv15/conv_op, using max shift instead. delta=0.4468
+[info] No shifts available for layer flat3/conv15/conv_op, using max shift instead. delta=0.2234
+[info] No shifts available for layer flat3/conv16/conv_op, using max shift instead. delta=0.2484
+[info] No shifts available for layer flat3/conv16/conv_op, using max shift instead. delta=0.1242
+[info] No shifts available for layer flat3/conv17/conv_op, using max shift instead. delta=1.3744
+[info] No shifts available for layer flat3/conv17/conv_op, using max shift instead. delta=0.6872
+[info] No shifts available for layer flat3/conv18/conv_op, using max shift instead. delta=1.6282
+[info] No shifts available for layer flat3/conv19/conv_op, using max shift instead. delta=0.7159
+[info] No shifts available for layer flat3/conv19/conv_op, using max shift instead. delta=0.3579
+[info] No shifts available for layer flat3/conv18/conv_op, using max shift instead. delta=0.4562
+[info] No shifts available for layer flat3/conv18/conv_op, using max shift instead. delta=0.4562
+[info] No shifts available for layer flat3/conv19/conv_op, using max shift instead. delta=0.3579
+[info] No shifts available for layer flat3/conv20/conv_op, using max shift instead. delta=1.5810
+[info] No shifts available for layer flat3/conv20/conv_op, using max shift instead. delta=0.7905
+[info] No shifts available for layer flat3/conv19/conv_op, using max shift instead. delta=0.3579
+[info] No shifts available for layer flat3/conv18/conv_op, using max shift instead. delta=0.4562
+[info] No shifts available for layer flat3/conv21/conv_op, using max shift instead. delta=0.7206
+[info] No shifts available for layer flat3/conv21/conv_op, using max shift instead. delta=0.3603
+[info] No shifts available for layer flat3/conv22/conv_op, using max shift instead. delta=1.1279
+[info] No shifts available for layer flat3/conv22/conv_op, using max shift instead. delta=0.5640
+[info] No shifts available for layer flat3/conv23/conv_op, using max shift instead. delta=0.5809
+[info] No shifts available for layer flat3/conv23/conv_op, using max shift instead. delta=0.2905
+[info] No shifts available for layer flat3/conv24/conv_op, using max shift instead. delta=1.0311
+[info] No shifts available for layer flat3/conv24/conv_op, using max shift instead. delta=0.5156
+[info] No shifts available for layer flat3/conv25/conv_op, using max shift instead. delta=1.2430
+[info] No shifts available for layer flat3/conv25/conv_op, using max shift instead. delta=0.6215
+[info] No shifts available for layer flat3/conv26/conv_op, using max shift instead. delta=0.9548
+[info] No shifts available for layer flat3/conv26/conv_op, using max shift instead. delta=0.4774
+[info] No shifts available for layer flat3/conv27/conv_op, using max shift instead. delta=1.0190
+[info] No shifts available for layer flat3/conv27/conv_op, using max shift instead. delta=0.5095
+[info] No shifts available for layer flat3/conv28/conv_op, using max shift instead. delta=1.1392
+[info] No shifts available for layer flat3/conv28/conv_op, using max shift instead. delta=0.5696
+[info] No shifts available for layer flat3/conv29/conv_op, using max shift instead. delta=1.5982
+[info] No shifts available for layer flat3/conv29/conv_op, using max shift instead. delta=0.7991
+[info] No shifts available for layer flat3/conv30/conv_op, using max shift instead. delta=1.0752
+[info] No shifts available for layer flat3/conv30/conv_op, using max shift instead. delta=0.5376
+[info] No shifts available for layer flat3/conv32/conv_op, using max shift instead. delta=1.0658
+[info] No shifts available for layer flat3/conv33/conv_op, using max shift instead. delta=0.1917
+[info] No shifts available for layer flat3/conv33/conv_op, using max shift instead. delta=0.0958
+[info] No shifts available for layer flat3/conv32/conv_op, using max shift instead. delta=0.4371
+[info] No shifts available for layer flat3/conv32/conv_op, using max shift instead. delta=0.4371
+[info] No shifts available for layer flat3/conv33/conv_op, using max shift instead. delta=0.0958
+[info] No shifts available for layer flat3/conv37/conv_op, using max shift instead. delta=0.6067
+[info] No shifts available for layer flat3/conv37/conv_op, using max shift instead. delta=0.3033
+[info] No shifts available for layer flat3/conv38/conv_op, using max shift instead. delta=0.4774
+[info] No shifts available for layer flat3/conv38/conv_op, using max shift instead. delta=0.2387
+[info] No shifts available for layer flat3/conv40/conv_op, using max shift instead. delta=1.0021
+[info] No shifts available for layer flat3/conv40/conv_op, using max shift instead. delta=0.5010
+[info] No shifts available for layer flat3/conv41/conv_op, using max shift instead. delta=0.8324
+[info] No shifts available for layer flat3/conv41/conv_op, using max shift instead. delta=0.4162
+[info] No shifts available for layer flat3/conv42/conv_op, using max shift instead. delta=0.1712
+[info] No shifts available for layer flat3/conv42/conv_op, using max shift instead. delta=0.0856
+[info] No shifts available for layer flat3/conv31/conv_op, using max shift instead. delta=1.9012
+[info] No shifts available for layer flat3/conv31/conv_op, using max shift instead. delta=0.9506
+[info] No shifts available for layer flat3/conv43/conv_op, using max shift instead. delta=0.6769
+[info] No shifts available for layer flat3/conv43/conv_op, using max shift instead. delta=0.3384
+[info] No shifts available for layer flat3/conv31/conv_op, using max shift instead. delta=0.9506
+[info] No shifts available for layer flat3/conv44/conv_op, using max shift instead. delta=4.3258
+[info] No shifts available for layer flat3/conv44/conv_op, using max shift instead. delta=2.1629
+[info] No shifts available for layer flat3/conv43/conv_op, using max shift instead. delta=0.3384
+[info] No shifts available for layer flat3/conv45/conv_op, using max shift instead. delta=0.5844
+[info] No shifts available for layer flat3/conv45/conv_op, using max shift instead. delta=0.2922
+[info] No shifts available for layer flat3/conv44/conv_op, using max shift instead. delta=2.1629
+[info] Finetune encoding skipped
+[info] Bias Correction skipped
+[info] Adaround skipped
+[info] Quantization-Aware Fine-Tuning skipped
+[info] Layer Noise Analysis skipped
+[info] Model Optimization is done
+optimize took 335 s
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/convert/runs/flat3d_t1/q.har
+saved /mnt/storage/lib_project/models/Hailo_model/convert/runs/flat3d_t1/q.har

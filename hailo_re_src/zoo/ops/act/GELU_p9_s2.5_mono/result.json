@@ -1,0 +1,38 @@
+{
+ "act": "GELU",
+ "pieces": 9,
+ "scale": 2.5,
+ "monotone": true,
+ "range": [
+  -18.20561981201172,
+  20.97377586364746
+ ],
+ "fit_sqnr_db": 40.71308726830171,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 35.57721138000488,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "gelu",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 32.250072956085205,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

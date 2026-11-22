@@ -1,0 +1,20 @@
+{
+ "case": "T_RNN_bf_squeeze",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "concat",
+  "conv",
+  "ew_add",
+  "normalization",
+  "slice"
+ ],
+ "activations": [
+  "tanh"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 133.2820973542077,
+ "sqnr_hw_db": 28.823476232938432,
+ "hef_MB": 1.12,
+ "seconds": 158.4
+}

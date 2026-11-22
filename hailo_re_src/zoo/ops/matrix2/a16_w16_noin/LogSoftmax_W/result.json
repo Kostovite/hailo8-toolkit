@@ -1,0 +1,33 @@
+{
+ "case": "LogSoftmax_W",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "reduce_max",
+  "reduce_sum",
+  "resize"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "reduce_max1",
+  "resize1",
+  "ew_sub1",
+  "activation1",
+  "reduce_sum1",
+  "resize2",
+  "ew_sub2",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 150.9217037840595,
+ "sqnr_hw_db": 47.71507617656126,
+ "hef_MB": 0.17,
+ "seconds": 45.3
+}

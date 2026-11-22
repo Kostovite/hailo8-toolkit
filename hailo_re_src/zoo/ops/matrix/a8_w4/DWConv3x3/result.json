@@ -1,0 +1,14 @@
+{
+ "case": "DWConv3x3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "sqnr_native_db": 142.9084836125274,
+ "sqnr_hw_db": 20.941971376708516,
+ "hef_MB": 0.58,
+ "seconds": 13.2
+}

@@ -1,0 +1,13 @@
+{
+ "case": "ReduceMean_HW",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "sqnr_native_db": 131.63144109137252,
+ "sqnr_hw_db": 10.955950616119928,
+ "hef_MB": 0.48,
+ "seconds": 18.0
+}

@@ -1,0 +1,57 @@
+{
+ "case": "yolov8n_seg",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "normalization|a8_w8_a8|linear": 1,
+  "conv|a8_w8_a8|silu": 74,
+  "ew_add|a8_w8_a8|linear": 6,
+  "concat|a8_w8_a8|": 13,
+  "maxpool|a8_w8_a8|linear": 3,
+  "resize|a8_w8_a8|": 2,
+  "conv|a8_w8_a8|linear": 6,
+  "conv|a8_w8_a8|sigmoid": 3,
+  "deconv|a8_w8_a8|linear": 1,
+  "output_layer|a8_w8_a8|": 10
+ },
+ "T1_per_layer": {
+  "checked": 110,
+  "exact": 110,
+  "not_exact": [],
+  "s": 3.9
+ },
+ "T2_chained": {
+  "checked": 92,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 3.1
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "yolov8n_seg/conv44": 0,
+   "yolov8n_seg/conv74": 0,
+   "yolov8n_seg/conv45": 0,
+   "yolov8n_seg/conv46": 0,
+   "yolov8n_seg/conv48": 0,
+   "yolov8n_seg/conv60": 0,
+   "yolov8n_seg/conv61": 0,
+   "yolov8n_seg/conv62": 0,
+   "yolov8n_seg/conv75": 0,
+   "yolov8n_seg/conv73": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

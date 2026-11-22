@@ -1,0 +1,19 @@
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1/emu_fp_0.npy (32, 448, 448, 96)
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1/emu_fp_1.npy (32, 224, 224, 128)
+GPU_EMU coverage: 47/47 layers exact; 0 within 1 LSB on <0.1% elements: 
+[qatfast] gridnet/conv18: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] gridnet/conv14: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] gridnet/conv10: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] gridnet/conv6: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] gridnet/conv3: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+batch self-test passed
+impl qatfast outputs ['gridnet/conv20', 'gridnet/conv19']
+2/400
+52/400
+102/400
+152/400
+202/400
+252/400
+302/400
+352/400
+saved /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1/emu_q [(400, 448, 448, 96), (400, 224, 224, 128)]

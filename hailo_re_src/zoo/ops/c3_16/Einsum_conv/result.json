@@ -1,0 +1,32 @@
+{
+ "case": "Einsum_conv",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 354.3877573765219,
+ "sqnr_hw_db": 63.497121787237845,
+ "hef_MB": 0.09,
+ "seconds": 9.1
+}

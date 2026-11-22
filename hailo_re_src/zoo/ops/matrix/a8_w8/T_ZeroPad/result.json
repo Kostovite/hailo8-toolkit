@@ -1,0 +1,14 @@
+{
+ "case": "T_ZeroPad",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 39.00114139254499,
+ "hef_MB": 0.08,
+ "seconds": 7.4
+}

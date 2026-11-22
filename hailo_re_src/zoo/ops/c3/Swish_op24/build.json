@@ -1,0 +1,10 @@
+{
+ "case": "Swish_op24",
+ "rewrite_vs_orig_db": 345.89142637024855,
+ "ops_after": [
+  "Conv",
+  "Mul",
+  "Sigmoid"
+ ],
+ "opset_after": 17
+}

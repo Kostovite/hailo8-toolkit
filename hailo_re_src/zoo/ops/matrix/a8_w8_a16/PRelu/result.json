@@ -1,0 +1,16 @@
+{
+ "case": "PRelu",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 349.2878021831043,
+ "sqnr_hw_db": 35.541363934390915,
+ "hef_MB": 0.2,
+ "seconds": 13.9
+}

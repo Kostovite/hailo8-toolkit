@@ -1,0 +1,11 @@
+# normalization commands
+norm_layer1 = normalization([127, 127, 127], [128, 128, 128])
+
+model_optimization_config(calibration, batch_size=4, calibset_size=64)
+
+performance_param(optimization_level=1)
+
+logits_layer1 = logits_layer(efficientnet_lite3/fc1, softmax, -1, cpu)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

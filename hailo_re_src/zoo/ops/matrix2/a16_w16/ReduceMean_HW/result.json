@@ -1,0 +1,21 @@
+{
+ "case": "ReduceMean_HW",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "avgpool1",
+  "fc1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 131.63144109137252,
+ "sqnr_hw_db": 78.74687360514639,
+ "hef_MB": 0.22,
+ "seconds": 9.9
+}

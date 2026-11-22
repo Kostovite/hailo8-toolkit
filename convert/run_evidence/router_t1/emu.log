@@ -1,0 +1,6 @@
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/emu_fp_0.npy (296, 1, 1, 21)
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/emu_fp_1.npy (296, 1, 1, 6)
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/emu_fp_2.npy (296, 1, 1, 3)
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/emu_q_0.npy (296, 1, 1, 21)
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/emu_q_1.npy (296, 1, 1, 6)
+merged /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/emu_q_2.npy (296, 1, 1, 3)

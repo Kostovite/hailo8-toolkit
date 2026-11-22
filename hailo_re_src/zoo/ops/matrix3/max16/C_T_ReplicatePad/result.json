@@ -1,0 +1,54 @@
+{
+ "case": "C_T_ReplicatePad",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "slice1",
+   "a16_w16"
+  ],
+  [
+   "slice2",
+   "a16_w16"
+  ],
+  [
+   "concat1",
+   "a16_w16"
+  ],
+  [
+   "slice3",
+   "a16_w16"
+  ],
+  [
+   "slice4",
+   "a16_w16"
+  ],
+  [
+   "concat2",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.86435276538623,
+ "sqnr_hw_db": 81.17411595085778,
+ "hef_MB": 0.13,
+ "seconds": 13.3
+}

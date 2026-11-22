@@ -1,0 +1,26 @@
+{
+ "case": "ReduceL2_W",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "reduce_sum1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "square1:HailoFeatureMultiplier"
+ ],
+ "sqnr_native_db": 145.59594320573683,
+ "sqnr_hw_db": 46.0891863280538,
+ "hef_MB": 0.13,
+ "seconds": 39.4
+}

@@ -1,0 +1,19 @@
+{
+ "case": "STFT_power",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "ew_add",
+  "feature_multiplier",
+  "format_conversion",
+  "reduce_mean",
+  "shortcut"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 135.60327580917885,
+ "sqnr_hw_db": 31.56430204148314,
+ "hef_MB": 0.2,
+ "seconds": 25.5
+}

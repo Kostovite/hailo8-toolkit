@@ -1,0 +1,43 @@
+{
+ "act": "Mish",
+ "pieces": 9,
+ "scale": 2.5,
+ "range": [
+  -18.20561981201172,
+  20.97377586364746
+ ],
+ "fit_sqnr_db": 60.161244094062226,
+ "pwl_layers": 2,
+ "native": {
+  "sqnr_hw_db": 34.74264621734619,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "mish",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 33.26343059539795,
+  "layers": 5,
+  "types": [
+   "conv",
+   "activation",
+   "activation",
+   "ew_sub",
+   "conv"
+  ],
+  "acts": [
+   "linear",
+   "pwl",
+   "pwl",
+   "linear",
+   "linear"
+  ],
+  "hef_MB": 0.16
+ }
+}

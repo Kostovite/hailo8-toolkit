@@ -1,0 +1,42 @@
+{
+ "case": "c3_16__R_ArgMin_C",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a16_w16_a16|": 1,
+  "normalization|a16_w16_a8|linear": 1,
+  "argmax|a8_w8_a8|": 1,
+  "dw|a8_w8_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 4,
+  "exact": 4,
+  "not_exact": [],
+  "s": 0.5
+ },
+ "T2_chained": {
+  "checked": 3,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "R_ArgMin_C/dw1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

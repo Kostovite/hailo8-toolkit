@@ -1,0 +1,19 @@
+{
+ "case": "RMSNorm_op23_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 140.86555995391106,
+ "sqnr_hw_db": 34.20472746938848,
+ "hef_MB": 0.17,
+ "seconds": 15.3
+}

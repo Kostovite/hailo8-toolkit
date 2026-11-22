@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/858 [00:00<?, ?it/s]Loading weights:  60%|██████    | 519/858 [00:00<00:00, 5187.58it/s]Loading weights: 100%|██████████| 858/858 [00:00<00:00, 5119.42it/s]
+/mnt/storage/lib_project/models/Hailo_model/convert/recipes/layout_torch.py:38: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /mnt/storage/lib_project/models/pytorch_build/pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  y = [t.permute(0, 2, 3, 1).half().cpu().numpy() for t in chip(torch.from_numpy(np.asarray(x[i:i + 8])).cuda().permute(0, 3, 1, 2).float() / 255)]
+ref [(1500, 112, 112, 256), (1500, 224, 224, 32), (1500, 56, 56, 256), (1500, 28, 28, 256)]
+ref (AP, box AP, box AP75): {'thesis': (0.8658, 0.9352, 0.9632), 'd4la': (0.7332, 0.7918, 0.8662), 'photo_thesis': (0.786, 0.8334, 0.9146), 'photo_d4la': (0.6908, 0.691, 0.7789)}
+ 
+FP baseline {'thesis': (0.8658, 0.9352, 0.9632), 'd4la': (0.7332, 0.7918, 0.8662), 'photo_thesis': (0.786, 0.8334, 0.9146), 'photo_d4la': (0.6908, 0.691, 0.7789)}

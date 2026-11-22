@@ -1,0 +1,17 @@
+{
+ "case": "T_Attn_bhnd_h2",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "error": "ValueError: \"LayerPrecisionConfig\" object has no field \"precision\"",
+ "trace": "on_flow.py\", line 372, in step1\n    self.setup_optimization()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 396, in setup_optimization\n    self._switch_decompose_matmul()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 853, in _switch_decompose_matmul\n    algo.run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 55, in run\n    return super().run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/algorithm_base.py\", line 159, in run\n    self._run_int()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/matmul_decompose/matmul_decompose_algo.py\", line 56, in _run_int\n    decomp.update_mo_config(self._model_config)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/matmul_decompose/matmul_decompose_blocks.py\", line 260, in update_mo_config\n    ps.precision = presicion\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/pydantic/v1/main.py\", line 357, in __setattr__\n    raise ValueError(f'\"{self.__class__.__name__}\" object has no field \"{name}\"')\nValueError: \"LayerPrecisionConfig\" object has no field \"precision\"\n",
+ "seconds": 5.6
+}

@@ -1,0 +1,16 @@
+{
+ "case": "Relu",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 349.14328095308554,
+ "sqnr_hw_db": 38.97385102920267,
+ "hef_MB": 0.1,
+ "seconds": 10.0
+}

@@ -1,0 +1,14 @@
+{
+ "case": "C_ReduceMin_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool",
+  "normalization"
+ ],
+ "activations": [],
+ "sqnr_native_db": 334.5358486100423,
+ "sqnr_hw_db": 47.19952942679871,
+ "hef_MB": 0.72,
+ "seconds": 15.3
+}

@@ -1,0 +1,8 @@
+{
+ "case": "QLinearConv",
+ "rewrite_vs_orig_db": 33.89524613780098,
+ "ops_after": [
+  "Conv"
+ ],
+ "opset_after": 17
+}

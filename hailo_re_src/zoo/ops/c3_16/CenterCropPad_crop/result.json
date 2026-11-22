@@ -1,0 +1,33 @@
+{
+ "case": "CenterCropPad_crop",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "slice1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 348.6783844340829,
+ "sqnr_hw_db": 78.37151910313855,
+ "hef_MB": 0.08,
+ "seconds": 7.8
+}

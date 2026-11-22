@@ -1,0 +1,1684 @@
+{
+"layers": [
+{
+"layer": "flat3d/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 1042368
+},
+{
+"layer": "flat3d/in_norm",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 1042368
+},
+{
+"layer": "flat3d/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2779648
+},
+{
+"layer": "flat3d/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/conv4",
+"type": "conv",
+"status": "mismatch",
+"bad": 19,
+"numel": 694912
+},
+{
+"layer": "flat3d/precision_change0",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/external_pad1",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change1",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/precision_change2",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/slice1",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad2",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change3",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/precision_change4",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/slice2",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change5",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/ew_add2",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/precision_change6",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/external_pad3",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change7",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/precision_change8",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/slice3",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad4",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change9",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/precision_change10",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 729088
+},
+{
+"layer": "flat3d/slice4",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change11",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 694912
+},
+{
+"layer": "flat3d/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/conv11",
+"type": "conv",
+"status": "mismatch",
+"bad": 68,
+"numel": 347456
+},
+{
+"layer": "flat3d/precision_change12",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/external_pad5",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change13",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/precision_change14",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/slice5",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad6",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change15",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/precision_change16",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/slice6",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change17",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/ew_add5",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/precision_change18",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/external_pad7",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change19",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/precision_change20",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/slice7",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad8",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change21",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/precision_change22",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/slice8",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change23",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/ew_add6",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/precision_change24",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/external_pad9",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change25",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/precision_change26",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/slice9",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad10",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change27",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/precision_change28",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 364544
+},
+{
+"layer": "flat3d/slice10",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change29",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/ew_add7",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 347456
+},
+{
+"layer": "flat3d/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/conv20",
+"type": "conv",
+"status": "mismatch",
+"bad": 37,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change30",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/external_pad11",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change31",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change32",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice11",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad12",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change33",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change34",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice12",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change35",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/ew_add9",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change36",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/external_pad13",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change37",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change38",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice13",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad14",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change39",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change40",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice14",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change41",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/ew_add10",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change42",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/external_pad15",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change43",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change44",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice15",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad16",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change45",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change46",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice16",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change47",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/ew_add11",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change48",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/external_pad17",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change49",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change50",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice17",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad18",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change51",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change52",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice18",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change53",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/ew_add12",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change54",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/external_pad19",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change55",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change56",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice19",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad20",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change57",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change58",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice20",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change59",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/ew_add13",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change60",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/external_pad21",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change61",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change62",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change63",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change64",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change65",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change66",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice21",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change67",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/slice22",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change68",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/slice23",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad22",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change69",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change70",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice24",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad23",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change71",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv38",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change72",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice25",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad24",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change73",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change74",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice26",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad25",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change75",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change76",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice27",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad26",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change77",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change78",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice28",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/external_pad27",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change79",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/conv42",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/precision_change80",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 184320
+},
+{
+"layer": "flat3d/slice29",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change81",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/slice30",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change82",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/slice31",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change83",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 1071360
+},
+{
+"layer": "flat3d/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/precision_change84",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 178560
+},
+{
+"layer": "flat3d/slice32",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change85",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 3968
+},
+{
+"layer": "flat3d/slice33",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change86",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 3968
+},
+{
+"layer": "flat3d/slice34",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change87",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 3968
+},
+{
+"layer": "flat3d/slice35",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change88",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 3968
+},
+{
+"layer": "flat3d/concat2",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 194432
+},
+{
+"layer": "flat3d/precision_change89",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 194432
+},
+{
+"layer": "flat3d/slice36",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change90",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 6272
+},
+{
+"layer": "flat3d/slice37",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change91",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 6272
+},
+{
+"layer": "flat3d/slice38",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change92",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 6272
+},
+{
+"layer": "flat3d/slice39",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change93",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 6272
+},
+{
+"layer": "flat3d/concat3",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 219520
+},
+{
+"layer": "flat3d/conv44",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 44640
+},
+{
+"layer": "flat3d/precision_change94",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 44640
+},
+{
+"layer": "flat3d/slice40",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change95",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 992
+},
+{
+"layer": "flat3d/slice41",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change96",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 992
+},
+{
+"layer": "flat3d/slice42",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change97",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 992
+},
+{
+"layer": "flat3d/slice43",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change98",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 992
+},
+{
+"layer": "flat3d/concat4",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 48608
+},
+{
+"layer": "flat3d/precision_change99",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 48608
+},
+{
+"layer": "flat3d/slice44",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change100",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 1568
+},
+{
+"layer": "flat3d/slice45",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change101",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 1568
+},
+{
+"layer": "flat3d/slice46",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change102",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 1568
+},
+{
+"layer": "flat3d/slice47",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "flat3d/precision_change103",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 1568
+},
+{
+"layer": "flat3d/concat5",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 54880
+},
+{
+"layer": "flat3d/conv45",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2790
+}
+]
+}

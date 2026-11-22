@@ -1,0 +1,38 @@
+{
+ "case": "C_ReduceMin_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "mul_and_add1",
+   "a16_w16_a16"
+  ],
+  [
+   "maxpool1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 334.5358486100423,
+ "sqnr_hw_db": 88.62892655935667,
+ "hef_MB": 0.44,
+ "seconds": 12.6
+}

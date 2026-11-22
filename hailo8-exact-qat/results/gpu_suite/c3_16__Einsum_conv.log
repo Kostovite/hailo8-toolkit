@@ -1,0 +1,7 @@
+MISMATCH Einsum_conv/input_layer1 (input_layer): 1/9216 max 1
+MISMATCH Einsum_conv/input_layer1 (input_layer): 1/9216 max 1
+MISMATCH Einsum_conv/conv1 (conv): 4/9216 max 1
+MISMATCH Einsum_conv/conv2 (conv): 1/9216 max 1
+[qatfast] Einsum_conv/conv1: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] Einsum_conv/conv2: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "c3_16__Einsum_conv", "conv_mode": "gemm", "T1_per_layer": {"checked": 3, "exact": 2, "not_exact": [["Einsum_conv/input_layer1", "input_layer", 1, 9216]], "s": 0.5}, "T2_chained": {"checked": 3, "value_mismatch": [["Einsum_conv/input_layer1", "input_layer", 1, 9216], ["Einsum_conv/conv1", "conv", 4, 9216], ["Einsum_conv/conv2", "conv", 1, 9216]], "pass": false, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": false, "why": "RuntimeError: stack expects a non-empty TensorList"}, "PASS": false}

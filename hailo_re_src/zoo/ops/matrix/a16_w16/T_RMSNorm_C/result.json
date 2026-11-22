@@ -1,0 +1,14 @@
+{
+ "case": "T_RMSNorm_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 141.65975920879424,
+ "sqnr_hw_db": 38.37354535267289,
+ "hef_MB": 0.28,
+ "seconds": 17.1
+}

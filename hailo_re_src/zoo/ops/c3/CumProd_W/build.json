@@ -1,0 +1,11 @@
+{
+ "case": "CumProd_W",
+ "rewrite_vs_orig_db": 138.15440801541814,
+ "ops_after": [
+  "Concat",
+  "Conv",
+  "Mul",
+  "Slice"
+ ],
+ "opset_after": 17
+}

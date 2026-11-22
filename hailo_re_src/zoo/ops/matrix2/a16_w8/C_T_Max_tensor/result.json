@@ -1,0 +1,26 @@
+{
+ "case": "C_T_Max_tensor",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "ew_sub"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "conv1:HailoConv",
+  "ew_sub1:HailoElementwiseSub",
+  "ew_add1:HailoElementwiseAdd",
+  "conv2:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 350.3199781720943,
+ "sqnr_hw_db": 34.67168254967503,
+ "hef_MB": 0.18,
+ "seconds": 15.8
+}

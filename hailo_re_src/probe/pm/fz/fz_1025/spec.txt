@@ -1,0 +1,1 @@
+c=32 h=16 down_up softmax_c up_down bilinear

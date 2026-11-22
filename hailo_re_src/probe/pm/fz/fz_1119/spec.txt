@@ -1,0 +1,1 @@
+c=16 h=40 shuffle conv5 dw7 pad_conv

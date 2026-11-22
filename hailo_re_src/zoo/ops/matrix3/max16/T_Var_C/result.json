@@ -1,0 +1,44 @@
+{
+ "case": "T_Var_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_mean1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_mean2",
+   "a8_w8_a16"
+  ],
+  [
+   "mul_and_add1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 139.68967879308994,
+ "sqnr_hw_db": 39.817349171709964,
+ "hef_MB": 0.18,
+ "seconds": 20.3
+}

@@ -1,0 +1,19 @@
+{
+ "case": "R_Sign",
+ "stage": "ok",
+ "pwl_layers": [
+  "R_Sign/activation1"
+ ],
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "pwl"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 348.6763245307108,
+ "sqnr_hw_db": 14.859759704852936,
+ "hef_MB": 0.09,
+ "seconds": 8.3
+}

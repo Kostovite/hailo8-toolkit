@@ -1,0 +1,14 @@
+{
+ "case": "T_AdaptiveAvg4",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 137.43572727396295,
+ "sqnr_hw_db": 36.80521606550712,
+ "hef_MB": 0.49,
+ "seconds": 13.3
+}

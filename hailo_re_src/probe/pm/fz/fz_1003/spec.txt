@@ -1,0 +1,1 @@
+c=64 h=40 up_down mul2 se mul2 sigmoid conv1

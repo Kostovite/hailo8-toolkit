@@ -1,0 +1,1 @@
+c=64 h=20 maxpool pad_conv se gate conv5

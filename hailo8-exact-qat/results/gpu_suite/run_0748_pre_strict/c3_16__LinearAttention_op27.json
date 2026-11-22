@@ -1,0 +1,53 @@
+{
+ "case": "c3_16__LinearAttention_op27",
+ "conv_mode": "gemm",
+ "coverage": {
+  "const_input|a8_w8_a8|": 2,
+  "input_layer|a8_w8_a8|": 1,
+  "conv|a8_w8_a8|linear": 3,
+  "format_conversion|a8_w8_a8|": 3,
+  "dw|a8_w8_a8|linear": 1,
+  "activation|a8_w8_a8|linear": 5,
+  "normalization|a8_w8_a8|linear": 1,
+  "reduce_sum|a8_w8_a8|linear": 2,
+  "concat|a8_w8_a8|": 2,
+  "matmul|a8_w8_a8|relu": 2,
+  "ew_mult|a8_w8_a8|linear": 2,
+  "matmul|a8_w8_a8|linear": 2,
+  "ew_sub|a8_w8_a16|linear": 1,
+  "format_conversion|a16_w16_a16|": 1,
+  "conv|a16_w16_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 29,
+  "exact": 29,
+  "not_exact": [],
+  "s": 0.7
+ },
+ "T2_chained": {
+  "checked": 21,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.2
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "LinearAttention_op27/conv4": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

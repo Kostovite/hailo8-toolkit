@@ -1,0 +1,1 @@
+conv1_sd0, conv1_sd1, conv1_sd2, conv1_sd3, conv1_sd4, conv1_sdc = defuse(conv1, 5, defuse_type=SPATIAL)

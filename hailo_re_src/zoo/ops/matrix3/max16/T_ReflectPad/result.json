@@ -1,0 +1,33 @@
+{
+ "case": "T_ReflectPad",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "external_pad1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 8.346803446141339,
+ "sqnr_hw_db": 8.346803252877052,
+ "hef_MB": 0.1,
+ "seconds": 10.0
+}

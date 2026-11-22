@@ -1,0 +1,34 @@
+{
+ "case": "Trilu_HW",
+ "stage": "ok",
+ "hn_types": [
+  "const_input",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "const_input1",
+   "a8_w8_a8"
+  ],
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 349.3769343202775,
+ "sqnr_hw_db": 36.093790276196245,
+ "hef_MB": 0.08,
+ "seconds": 11.6
+}

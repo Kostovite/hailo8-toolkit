@@ -1,0 +1,1 @@
+c=128 h=20 res dw3 up_down sigmoid res

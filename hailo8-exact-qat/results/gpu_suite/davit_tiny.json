@@ -1,0 +1,71 @@
+{
+ "case": "davit_tiny",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "activation|a8_w8_a16|linear": 61,
+  "normalization|a16_w16_a8|linear": 1,
+  "external_pad|a8_w8_a8|": 1,
+  "conv|a16_w16_a16|linear": 29,
+  "reduce_mean|a16_w16_a16|linear": 29,
+  "ew_sub|a16_w16_a16|linear": 29,
+  "feature_multiplier|a16_w16_a16|linear": 29,
+  "conv|a16_w16_a16|inv_sqrt": 29,
+  "ew_mult|a16_w16_a16|linear": 29,
+  "normalization|a16_w16_a16|linear": 4,
+  "activation|a16_w16_a8|linear": 70,
+  "dw|a8_w8_a16|linear": 24,
+  "ew_add|a16_w16_a16|linear": 48,
+  "format_conversion|a8_w8_a8|": 101,
+  "conv|a8_w8_a8|linear": 36,
+  "activation|a8_w8_a8|linear": 12,
+  "reduce_sum|a8_w8_a16|linear": 12,
+  "precision_splitter|a16_w16_a8|": 12,
+  "shortcut|a8_w8_a8|": 12,
+  "concat|a8_w8_a8|": 24,
+  "dw|a8_w8_a8|linear": 12,
+  "matmul|a8_w8_a8|linear": 18,
+  "reduce_max|a8_w8_a8|": 12,
+  "ew_sub|a8_w8_a8|exp": 11,
+  "reduce_sum|a8_w8_a8|inv_pos": 12,
+  "ew_mult|a8_w8_a8|linear": 12,
+  "matmul|a8_w8_a16|linear": 6,
+  "conv|a16_w16_a16|gelu": 12,
+  "resize|a8_w8_a8|": 12,
+  "ew_sub|a8_w8_a16|linear": 1,
+  "activation|a16_w16_a8|exp": 1,
+  "avgpool|a8_w8_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 715,
+  "exact": 715,
+  "not_exact": [],
+  "s": 25.3
+ },
+ "T2_chained": {
+  "checked": 507,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 18.6
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "davit_tiny/conv53": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

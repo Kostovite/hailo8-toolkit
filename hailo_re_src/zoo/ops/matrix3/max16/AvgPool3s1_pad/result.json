@@ -1,0 +1,39 @@
+{
+ "case": "AvgPool3s1_pad",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "const_input",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "const_input1",
+   "a8_w8_a8"
+  ],
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "avgpool1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 142.77979644954493,
+ "sqnr_hw_db": 34.193759069879576,
+ "hef_MB": 0.6,
+ "seconds": 19.6
+}

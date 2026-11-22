@@ -1,0 +1,8 @@
+# Hailo follow-up — 2026-11-21 ICT
+
+Claude memory `~/.claude/projects/-mnt-storage-lib-project-models/memory/hailo-preproc-port.md` already warns: run the PP-DocLayout PyTorch scoring scripts in a clean shell, without the Hailo tools/env.sh environment, due to a libtorch cblas clash. The previous scheduler ignored this; its cblas_gemm_f16f16f32 import failure is an environment problem, not a model failure. `aux_models/layout_score_retry.sh` completed with venv_hf and clean library variables. `logs/layout_score_retry.log` contains the scores (1500 images), compare `logs/layout_fp_score.log`.
+
+The same Claude note describes signed 16-bit to 8-bit attention transition issues and `Hailo_model/preproc_hailo/add_qkv_identity.py`; also consult `hailo8-exact-qat/docs/PRECISION_RULES.md`. No source examined identifies the precise PP-DocLayout compiler error `resize3_output_reshape` or proves a fix. The current `quantize_layout_mix.py` already omits explicit resize/format_conversion layers, but the generated reshape inherits unsupported A16_W16_A16. Investigate graph neighbors and precision propagation. Preserve the existing HAR and emulation results, test any new candidate on heldout data and chip before promotion.
+
+RegionRouter: expanded-data DFC level-2 QAT failed held-out decision gate. Custom `graph26` capture: 7/7 layers exact on one input. Modified local `aux_models/router_exact_work/qatfast_router.py` handles 16-bit input clamp; smoke matched 5/5 conv captures on one sample. This is not training, nor broad bit-exact or chip validation.
+GridNet: calibrated trunk comparison on 16 heldout images p2/p4 relative MAE 0.0336/0.0240; not table accuracy or chip validation. Orient3 and Flat3D have passed limited chip tests; exact QAT not completed.

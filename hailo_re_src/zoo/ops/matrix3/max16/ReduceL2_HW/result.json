@@ -1,0 +1,36 @@
+{
+ "case": "ReduceL2_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum1",
+   "a8_w8_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 134.8368420418113,
+ "sqnr_hw_db": 50.975719669574104,
+ "hef_MB": 0.1,
+ "seconds": 36.1
+}

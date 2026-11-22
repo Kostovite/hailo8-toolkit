@@ -1,0 +1,17 @@
+{
+ "case": "C_Pow15",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 144.33537961942565,
+ "sqnr_hw_db": 51.91746347117294,
+ "hef_MB": 0.12,
+ "seconds": 38.0
+}

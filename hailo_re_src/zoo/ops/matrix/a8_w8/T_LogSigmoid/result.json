@@ -1,0 +1,17 @@
+{
+ "case": "T_LogSigmoid",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "log",
+  "sigmoid"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 133.61974880784865,
+ "sqnr_hw_db": 29.268618031021774,
+ "hef_MB": 0.24,
+ "seconds": 40.0
+}

@@ -1,0 +1,16 @@
+{
+ "case": "Abs",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 36.80174201593073,
+ "hef_MB": 0.21,
+ "seconds": 14.4
+}

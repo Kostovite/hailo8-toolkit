@@ -1,0 +1,2 @@
+compilation_param(matmul2, resources_allocation_strategy=manual_scs_selection, number_of_subclusters=8)
+matmul1_fs_0, matmul1_fs_1, matmul1_d0, matmul1_d1, matmul1_dc = defuse(matmul1, 2, defuse_type=INPUT_FEATURES)

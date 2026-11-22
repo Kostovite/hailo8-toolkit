@@ -1,0 +1,16 @@
+{
+ "case": "Less_mask_p1p0",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "less"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.4712159835237,
+ "sqnr_hw_db": 24.74820563297696,
+ "seconds": 7.2
+}

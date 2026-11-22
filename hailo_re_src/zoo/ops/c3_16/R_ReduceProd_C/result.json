@@ -1,0 +1,94 @@
+{
+ "case": "R_ReduceProd_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "ew_mult",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "slice1",
+   "a8_w8_a8"
+  ],
+  [
+   "slice10",
+   "a8_w8_a8"
+  ],
+  [
+   "slice11",
+   "a8_w8_a8"
+  ],
+  [
+   "slice12",
+   "a8_w8_a8"
+  ],
+  [
+   "slice13",
+   "a8_w8_a8"
+  ],
+  [
+   "slice14",
+   "a8_w8_a8"
+  ],
+  [
+   "slice15",
+   "a8_w8_a8"
+  ],
+  [
+   "slice16",
+   "a8_w8_a8"
+  ],
+  [
+   "slice2",
+   "a8_w8_a8"
+  ],
+  [
+   "slice3",
+   "a8_w8_a8"
+  ],
+  [
+   "slice4",
+   "a8_w8_a8"
+  ],
+  [
+   "slice5",
+   "a8_w8_a8"
+  ],
+  [
+   "slice6",
+   "a8_w8_a8"
+  ],
+  [
+   "slice7",
+   "a8_w8_a8"
+  ],
+  [
+   "slice8",
+   "a8_w8_a8"
+  ],
+  [
+   "slice9",
+   "a8_w8_a8"
+  ],
+  [
+   "dw1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 337.14097079856805,
+ "sqnr_hw_db": 40.33262898827786,
+ "hef_MB": 0.41,
+ "seconds": 48.4
+}

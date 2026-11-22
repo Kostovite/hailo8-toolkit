@@ -1,0 +1,49 @@
+{
+ "case": "CausalConvWithState_op27",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "dw",
+  "external_pad",
+  "format_conversion"
+ ],
+ "activations": [
+  "silu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "format_conversion1",
+   "a16_w16"
+  ],
+  [
+   "external_pad1",
+   "a16_w16"
+  ],
+  [
+   "dw1",
+   "a16_w16"
+  ],
+  [
+   "format_conversion2",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 141.02219262999935,
+ "sqnr_hw_db": 33.30690856733678,
+ "hef_MB": 0.16,
+ "seconds": 15.8
+}

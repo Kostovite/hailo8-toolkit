@@ -1,0 +1,17 @@
+{
+ "case": "C_T_Max_tensor",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "ew_sub"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 350.3199781720943,
+ "sqnr_hw_db": 39.021734713102106,
+ "hef_MB": 0.27,
+ "seconds": 18.2
+}

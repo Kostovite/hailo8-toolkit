@@ -1,0 +1,11 @@
+SHAPE vit_tiny/slice37 (slice) got (1, 192, 1, 1) ref (1, 192, 1, 197)
+[qatfast] vit_tiny/conv_var_inv_layer_normalization17: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization18: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization19: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization20: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization21: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization22: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization23: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization24: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] vit_tiny/conv_var_inv_layer_normalization25: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "vit_tiny", "conv_mode": "gemm", "T1_per_layer": {"checked": 363, "exact": 363, "not_exact": [], "s": 5.0}, "T2_chained": {"checked": 285, "value_mismatch": [], "pass": true, "s": 4.3}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": true, "flags": [], "mismatch_per_output": {"vit_tiny/conv50": 0}, "pass": true}, "PASS": true}

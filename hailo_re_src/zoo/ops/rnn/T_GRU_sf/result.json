@@ -1,0 +1,23 @@
+{
+ "case": "T_GRU_sf",
+ "stage": "quantize",
+ "hn_types": [
+  "avgpool",
+  "concat",
+  "const_input",
+  "conv",
+  "ew_add",
+  "ew_mult",
+  "ew_sub",
+  "feature_splitter",
+  "slice"
+ ],
+ "activations": [
+  "sigmoid",
+  "tanh"
+ ],
+ "prec": "a8_w8",
+ "error": "ValueError: The shape of the target variable and the shape of the target value in `variable.assign(value)` must match. variable.shape=(1, 48), Received: value.shape=(1, 48). Target variable: <KerasVariable shape=(48,), dtype=float32, path=T_GRU_sf/conv1/bias_add_op/bias>",
+ "trace": "e_quantization_optimization\n    self._zero_static_channels()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 621, in _zero_static_channels\n    algo.run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 55, in run\n    return super().run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/algorithm_base.py\", line 159, in run\n    self._run_int()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/zero_static_channels/zero_static_channel_algo.py\", line 96, in _run_int\n    kernel_max = self._zero_static_channel(layer, channel_idx, channel_mean)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/zero_static_channels/zero_static_channel_algo.py\", line 85, in _zero_static_channel\n    layer.bias.assign(bias)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/keras/src/backend/common/variables.py\", line 226, in assign\n    raise ValueError(\nValueError: The shape of the target variable and the shape of the target value in `variable.assign(value)` must match. variable.shape=(1, 48), Received: value.shape=(1, 48). Target variable: <KerasVariable shape=(48,), dtype=float32, path=T_GRU_sf/conv1/bias_add_op/bias>\n",
+ "seconds": 237.3
+}

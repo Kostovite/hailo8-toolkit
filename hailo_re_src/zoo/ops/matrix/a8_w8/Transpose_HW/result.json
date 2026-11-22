@@ -1,0 +1,14 @@
+{
+ "case": "Transpose_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 39.00114139254499,
+ "hef_MB": 0.09,
+ "seconds": 8.7
+}

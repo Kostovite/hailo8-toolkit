@@ -1,0 +1,15 @@
+{
+ "case": "C_Split_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 352.19704107370035,
+ "sqnr_hw_db": 38.73683492753517,
+ "hef_MB": 0.13,
+ "seconds": 11.8
+}

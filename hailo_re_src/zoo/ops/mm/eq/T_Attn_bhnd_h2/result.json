@@ -1,0 +1,17 @@
+{
+ "case": "T_Attn_bhnd_h2",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "error": "ValueError: Matmul Equalization: T_Attn_bhnd_h2/matmul1: is set to policy enable but does not meet the requiremts to run",
+ "trace": "3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 441, in core_quantization\n    self._matmul_equalization()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 631, in _matmul_equalization\n    algo.run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 55, in run\n    return super().run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/algorithm_base.py\", line 159, in run\n    self._run_int()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/matmul_equalization/matmul_equalization.py\", line 100, in _run_int\n    if not self.check_validity(lname, self._softmax.softmax_blocks):  # TODO add better check\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/matmul_equalization/matmul_equalization.py\", line 191, in check_validity\n    return raise_or_false()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/matmul_equalization/matmul_equalization.py\", line 180, in raise_or_false\n    raise ValueError(\nValueError: Matmul Equalization: T_Attn_bhnd_h2/matmul1: is set to policy enable but does not meet the requiremts to run\n",
+ "seconds": 28.3
+}

@@ -1,0 +1,2 @@
+allocator_param(seed=2)
+context_switch_param(slotter_chances=3)

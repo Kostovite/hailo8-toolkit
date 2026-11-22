@@ -1,0 +1,14 @@
+{
+ "case": "C_Pad_edge",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "sqnr_native_db": 352.86435276538623,
+ "sqnr_hw_db": 38.998744091976924,
+ "hef_MB": 0.13,
+ "seconds": 13.8
+}

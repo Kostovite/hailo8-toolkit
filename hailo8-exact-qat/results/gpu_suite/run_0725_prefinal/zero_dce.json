@@ -1,0 +1,48 @@
+{
+ "case": "zero_dce",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "normalization|a8_w8_a8|linear": 1,
+  "conv|a8_w8_a8|relu": 6,
+  "concat|a8_w8_a8|": 3,
+  "conv|a8_w8_a8|tanh": 1,
+  "feature_splitter|a8_w8_a8|": 1,
+  "feature_multiplier|a8_w8_a8|linear": 8,
+  "ew_sub|a8_w8_a8|linear": 8,
+  "ew_mult|a8_w8_a8|linear": 8,
+  "ew_add|a8_w8_a8|linear": 8,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 52,
+  "exact": 52,
+  "not_exact": [],
+  "s": 8.2
+ },
+ "T2_chained": {
+  "checked": 41,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 7.1
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": "oom"
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "zero_dce/ew_add8": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

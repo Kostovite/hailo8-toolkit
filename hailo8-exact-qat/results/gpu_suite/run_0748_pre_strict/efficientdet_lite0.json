@@ -1,0 +1,59 @@
+{
+ "case": "efficientdet_lite0",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "normalization|a8_w8_a8|linear": 1,
+  "conv|a8_w8_a8|relu6": 49,
+  "dw|a8_w8_a8|relu6": 16,
+  "conv|a8_w8_a8|linear": 48,
+  "maxpool|a8_w8_a8|linear": 14,
+  "resize|a8_w8_a8|": 12,
+  "ew_add|a8_w8_a8|relu6": 21,
+  "dw|a8_w8_a8|linear": 64,
+  "ew_add|a8_w8_a8|linear": 7,
+  "conv|a8_w8_a8|sigmoid": 5,
+  "postprocess|a8_w8_a8|": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 238,
+  "exact": 238,
+  "not_exact": [],
+  "s": 6.8
+ },
+ "T2_chained": {
+  "checked": 212,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 5.7
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "efficientdet_lite0/conv65": 0,
+   "efficientdet_lite0/conv66": 0,
+   "efficientdet_lite0/conv74": 0,
+   "efficientdet_lite0/conv75": 0,
+   "efficientdet_lite0/conv83": 0,
+   "efficientdet_lite0/conv84": 0,
+   "efficientdet_lite0/conv92": 0,
+   "efficientdet_lite0/conv93": 0,
+   "efficientdet_lite0/conv101": 0,
+   "efficientdet_lite0/conv102": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

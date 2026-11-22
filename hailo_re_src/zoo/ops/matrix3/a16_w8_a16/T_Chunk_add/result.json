@@ -1,0 +1,25 @@
+{
+ "case": "T_Chunk_add",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "slice1:HailoSlice",
+  "slice2:HailoSlice",
+  "ew_add1:HailoElementwiseAdd",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.19704107370035,
+ "sqnr_hw_db": 38.730378603110324,
+ "hef_MB": 0.09,
+ "seconds": 15.0
+}

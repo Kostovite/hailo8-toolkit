@@ -1,0 +1,2 @@
+resources_param(max_compute_utilization=0.8, max_compute_16bit_utilization=0.8, max_memory_utilization=0.8, max_control_utilization=0.8, max_input_aligner_utilization=0.8, max_apu_utilization=0.8)
+context_switch_param(slotter_chances=3)

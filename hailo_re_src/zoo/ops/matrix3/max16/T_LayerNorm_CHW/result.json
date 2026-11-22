@@ -1,0 +1,65 @@
+{
+ "case": "T_LayerNorm_CHW",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean",
+  "resize"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "avgpool1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_mean1",
+   "a8_w8_a8"
+  ],
+  [
+   "resize1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub1",
+   "a8_w8_a8"
+  ],
+  [
+   "avgpool2",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_mean2",
+   "a8_w8_a8"
+  ],
+  [
+   "resize2",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 122.5724113457715,
+ "sqnr_hw_db": 31.436534962205364,
+ "hef_MB": 0.31,
+ "seconds": 31.8
+}

@@ -1,0 +1,46 @@
+{
+ "case": "Not_cast",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "clip",
+  "greater"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "normalization1",
+   "a8_w8_a16"
+  ],
+  [
+   "activation1",
+   "a16_w16"
+  ],
+  [
+   "normalization2",
+   "a16_w16_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 349.1883320547945,
+ "sqnr_hw_db": 32.05825869295635,
+ "hef_MB": 0.46,
+ "seconds": 21.5
+}

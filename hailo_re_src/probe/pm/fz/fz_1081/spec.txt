@@ -1,0 +1,1 @@
+c=64 h=24 avgpool pad_conv groupnorm softmax_c

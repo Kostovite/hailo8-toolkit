@@ -1,0 +1,368 @@
+{
+"layers": [
+{
+"layer": "nanodet_repvgg_a1_640/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 1228800
+},
+{
+"layer": "nanodet_repvgg_a1_640/input_conversion",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1228800
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 6553600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1638400
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1638400
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 409600
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 204800
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 51200
+},
+{
+"layer": "nanodet_repvgg_a1_640/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 204800
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 204800
+},
+{
+"layer": "nanodet_repvgg_a1_640/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 819200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 793600
+},
+{
+"layer": "nanodet_repvgg_a1_640/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 204800
+},
+{
+"layer": "nanodet_repvgg_a1_640/avgpool2",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 204800
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 204800
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 198400
+},
+{
+"layer": "nanodet_repvgg_a1_640/ew_add4",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 51200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 51200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 51200
+},
+{
+"layer": "nanodet_repvgg_a1_640/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 49600
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_0_0_conv28",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_0_0_sigmoid_layer",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 512000
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_0_1_conv28",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_1_0_conv31",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_1_0_sigmoid_layer",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 128000
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_1_1_conv31",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_2_0_conv34",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_2_0_sigmoid_layer",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 32000
+},
+{
+"layer": "nanodet_repvgg_a1_640/slice_2_1_conv34",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg_a1_640/yolov8_nms_postprocess",
+"type": "postprocess",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+}
+]
+}

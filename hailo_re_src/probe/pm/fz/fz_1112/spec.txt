@@ -1,0 +1,1 @@
+c=48 h=16 conv5 gelu dw5 groupnorm maxpool attn

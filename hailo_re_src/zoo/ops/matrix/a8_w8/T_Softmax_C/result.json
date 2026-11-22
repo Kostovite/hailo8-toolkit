@@ -1,0 +1,14 @@
+{
+ "case": "T_Softmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 143.86091440854278,
+ "sqnr_hw_db": 34.541315614694014,
+ "hef_MB": 0.12,
+ "seconds": 45.6
+}

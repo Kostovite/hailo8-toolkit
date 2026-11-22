@@ -1,0 +1,43 @@
+{
+ "case": "L2Norm_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier",
+  "normalization",
+  "reduce_sum"
+ ],
+ "activations": [
+  "inv_pos",
+  "sqrt"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum1",
+   "a8_w8_a16"
+  ],
+  [
+   "mul_and_add1",
+   "a16_w16_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 143.79372771654343,
+ "sqnr_hw_db": 35.47423277390604,
+ "hef_MB": 0.22,
+ "seconds": 121.1
+}

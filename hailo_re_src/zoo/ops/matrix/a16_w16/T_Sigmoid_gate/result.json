@@ -1,0 +1,16 @@
+{
+ "case": "T_Sigmoid_gate",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "sigmoid"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 144.82260315332178,
+ "sqnr_hw_db": 37.14991135024616,
+ "hef_MB": 0.21,
+ "seconds": 13.7
+}

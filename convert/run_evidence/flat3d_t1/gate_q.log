@@ -1,0 +1,5 @@
+RESULT synth_photo n 290 gt_err torch 4.3981 emu_q 4.3983
+RESULT synth_flat n 110 gt_err torch 0.6670 emu_q 0.6693
+RESULT uvdoc n 400 gt_err torch 0.3555 emu_q 0.3557
+RESULT |emu_q-torch| %frame mean 0.0197 max 0.1905
+GATE PASS

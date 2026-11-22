@@ -1,0 +1,27 @@
+{
+ "case": "Min_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "normalization",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv1",
+  "normalization1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "concat1:HailoConcat",
+  "reduce_max1:HailoReduceMax",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.055421407022,
+ "sqnr_hw_db": 20.987501259368095,
+ "hef_MB": 0.17,
+ "seconds": 14.2
+}

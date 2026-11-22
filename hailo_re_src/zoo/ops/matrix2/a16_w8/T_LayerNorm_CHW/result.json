@@ -1,0 +1,37 @@
+{
+ "case": "T_LayerNorm_CHW",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean",
+  "resize"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "avgpool1:HailoAvgPool",
+  "reduce_mean1:HailoReduceMean",
+  "resize1:HailoResizeNearestNeighbor",
+  "ew_sub1:HailoElementwiseSub",
+  "square1:HailoFeatureMultiplier",
+  "avgpool2:HailoAvgPool",
+  "reduce_mean2:HailoReduceMean",
+  "resize2:HailoResizeNearestNeighbor",
+  "ew_mult1:HailoElementwiseMult",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 122.5724113457715,
+ "sqnr_hw_db": 31.508886869134262,
+ "hef_MB": 0.61,
+ "seconds": 33.1
+}

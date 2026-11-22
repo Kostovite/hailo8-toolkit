@@ -1,0 +1,33 @@
+{
+ "case": "AvgPool2s2",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "avgpool1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 340.0743074069015,
+ "sqnr_hw_db": 61.275557012438625,
+ "hef_MB": 0.2,
+ "seconds": 14.2
+}

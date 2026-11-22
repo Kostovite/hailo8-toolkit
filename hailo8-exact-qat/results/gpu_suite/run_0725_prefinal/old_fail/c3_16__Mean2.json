@@ -1,0 +1,69 @@
+{
+ "case": "c3_16__Mean2",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a16_w16_a16|": 1,
+  "conv|a16_w16_a16|linear": 2,
+  "ew_add|a16_w16_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 4,
+  "exact": 3,
+  "not_exact": [
+   [
+    "Mean2/input_layer1",
+    "input_layer",
+    1,
+    9216
+   ]
+  ],
+  "s": 0.5
+ },
+ "T2_chained": {
+  "checked": 4,
+  "value_mismatch": [
+   [
+    "Mean2/input_layer1",
+    "input_layer",
+    1,
+    9216
+   ],
+   [
+    "Mean2/conv1",
+    "conv",
+    7,
+    9216
+   ],
+   [
+    "Mean2/ew_add1",
+    "ew_add",
+    5,
+    9216
+   ],
+   [
+    "Mean2/conv2",
+    "conv",
+    5,
+    9216
+   ]
+  ],
+  "pass": false,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": false,
+  "why": "RuntimeError: stack expects a non-empty TensorList"
+ },
+ "PASS": false
+}

@@ -1,0 +1,15 @@
+{
+ "case": "EyeLike_mask",
+ "stage": "ok",
+ "hn_types": [
+  "const_input",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 338.5001255028198,
+ "sqnr_hw_db": 36.64922799310021,
+ "hef_MB": 0.08,
+ "seconds": 10.7
+}

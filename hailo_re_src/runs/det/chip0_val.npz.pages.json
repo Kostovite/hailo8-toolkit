@@ -1,0 +1,210 @@
+{
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_DoNgocKieuChinh_2_p024.jpg": {
+  "best__conv87": [
+   1974,
+   628
+  ],
+  "best__conv74": [
+   13702,
+   1966
+  ],
+  "best__conv101": [
+   3045,
+   1395
+  ],
+  "best__conv90": [
+   8575,
+   2595
+  ],
+  "best__conv104": [
+   10949,
+   2886
+  ],
+  "best__conv71": [
+   3128,
+   449
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NgoVanHoa_2_p027.jpg": {
+  "best__conv87": [
+   2155,
+   556
+  ],
+  "best__conv74": [
+   13808,
+   1144
+  ],
+  "best__conv101": [
+   3082,
+   1199
+  ],
+  "best__conv90": [
+   9772,
+   4500
+  ],
+  "best__conv104": [
+   10944,
+   2335
+  ],
+  "best__conv71": [
+   3432,
+   631
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NguyenHaVuDuy_2_p014.jpg": {
+  "best__conv87": [
+   2077,
+   550
+  ],
+  "best__conv74": [
+   13763,
+   1113
+  ],
+  "best__conv101": [
+   3028,
+   1599
+  ],
+  "best__conv90": [
+   8922,
+   2478
+  ],
+  "best__conv104": [
+   10930,
+   3113
+  ],
+  "best__conv71": [
+   3090,
+   511
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NguyenQuocKhanhNhu_danhmuc_p001.jpg": {
+  "best__conv87": [
+   2260,
+   569
+  ],
+  "best__conv74": [
+   13576,
+   897
+  ],
+  "best__conv101": [
+   3085,
+   1505
+  ],
+  "best__conv90": [
+   9870,
+   1859
+  ],
+  "best__conv104": [
+   10945,
+   3384
+  ],
+  "best__conv71": [
+   3331,
+   403
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NguyenThanhThuy_2_p005.jpg": {
+  "best__conv87": [
+   1362,
+   606
+  ],
+  "best__conv74": [
+   9490,
+   3789
+  ],
+  "best__conv101": [
+   3032,
+   1401
+  ],
+  "best__conv90": [
+   6101,
+   3950
+  ],
+  "best__conv104": [
+   10942,
+   3646
+  ],
+  "best__conv71": [
+   2339,
+   465
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NguyenThanhThuy_danhmuc_p001.jpg": {
+  "best__conv87": [
+   1632,
+   598
+  ],
+  "best__conv74": [
+   13123,
+   1189
+  ],
+  "best__conv101": [
+   3073,
+   1503
+  ],
+  "best__conv90": [
+   7349,
+   3382
+  ],
+  "best__conv104": [
+   10951,
+   4646
+  ],
+  "best__conv71": [
+   3109,
+   509
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NguyenTienDat_1_p005.jpg": {
+  "best__conv87": [
+   1713,
+   435
+  ],
+  "best__conv74": [
+   13018,
+   1730
+  ],
+  "best__conv101": [
+   3030,
+   1152
+  ],
+  "best__conv90": [
+   7364,
+   2711
+  ],
+  "best__conv104": [
+   10953,
+   3010
+  ],
+  "best__conv71": [
+   3064,
+   567
+  ]
+ },
+ "/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/val/images/HCMUS_2020_NguyenTienDat_3_p053.jpg": {
+  "best__conv87": [
+   2317,
+   577
+  ],
+  "best__conv74": [
+   13683,
+   1128
+  ],
+  "best__conv101": [
+   3088,
+   1222
+  ],
+  "best__conv90": [
+   9909,
+   2197
+  ],
+  "best__conv104": [
+   10960,
+   2979
+  ],
+  "best__conv71": [
+   3076,
+   452
+  ]
+ }
+}

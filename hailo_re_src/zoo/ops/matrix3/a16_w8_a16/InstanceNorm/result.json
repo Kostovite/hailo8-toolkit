@@ -1,0 +1,23 @@
+{
+ "case": "InstanceNorm",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "layer_normalization1:HailoLayerNormalization",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 137.89249822177027,
+ "sqnr_hw_db": 38.79805060754902,
+ "hef_MB": 0.33,
+ "seconds": 29.2
+}

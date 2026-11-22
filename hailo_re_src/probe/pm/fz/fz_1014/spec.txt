@@ -1,0 +1,1 @@
+c=96 h=16 fpn conv5 gelu gelu sppf

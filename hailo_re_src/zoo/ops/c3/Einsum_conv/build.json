@@ -1,0 +1,8 @@
+{
+ "case": "Einsum_conv",
+ "rewrite_vs_orig_db": 351.3971582891279,
+ "ops_after": [
+  "Conv"
+ ],
+ "opset_after": 17
+}

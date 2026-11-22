@@ -1,0 +1,15 @@
+{
+ "case": "HardSigmoid",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "hardsigmoid"
+ ],
+ "sqnr_native_db": 151.29345308619304,
+ "sqnr_hw_db": 44.48667311824862,
+ "hef_MB": 0.09,
+ "seconds": 10.7
+}

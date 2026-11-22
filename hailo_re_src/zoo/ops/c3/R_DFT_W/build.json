@@ -1,0 +1,9 @@
+{
+ "case": "DFT_W",
+ "rewrite_vs_orig_db": 111.24214214197453,
+ "ops_after": [
+  "Concat",
+  "Conv"
+ ],
+ "opset_after": 17
+}

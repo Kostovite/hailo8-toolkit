@@ -1,0 +1,34 @@
+{
+ "case": "LogSoftmax_W",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "reduce_max",
+  "reduce_sum",
+  "resize"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "reduce_max1:HailoReduceMax",
+  "resize1:HailoResizeNearestNeighbor",
+  "ew_sub1:HailoElementwiseSub",
+  "activation1:HailoStandaloneActivation",
+  "reduce_sum1:HailoReduceSum",
+  "resize2:HailoResizeNearestNeighbor",
+  "ew_sub2:HailoElementwiseSub",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 150.9217037840595,
+ "sqnr_hw_db": 44.43705154416519,
+ "hef_MB": 0.16,
+ "seconds": 36.2
+}

@@ -1,0 +1,20 @@
+{
+ "case": "T_F_normalize_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "clip",
+  "inv_pos",
+  "sqrt"
+ ],
+ "sqnr_native_db": 143.81322673155674,
+ "sqnr_hw_db": 35.857258849659026,
+ "hef_MB": 0.22,
+ "seconds": 137.8
+}

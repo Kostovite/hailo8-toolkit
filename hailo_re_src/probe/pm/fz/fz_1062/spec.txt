@@ -1,0 +1,1 @@
+c=16 h=20 dw5 conv5 mul2 dw5 dw3 gate

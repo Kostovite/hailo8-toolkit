@@ -1,0 +1,14 @@
+{
+ "case": "Slice_HW_stride2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 346.16970369603763,
+ "sqnr_hw_db": 36.28273883719406,
+ "hef_MB": 0.2,
+ "seconds": 13.3
+}

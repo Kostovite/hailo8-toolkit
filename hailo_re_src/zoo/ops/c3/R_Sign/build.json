@@ -1,0 +1,12 @@
+{
+ "case": "Sign",
+ "rewrite_vs_orig_db": 345.666024574071,
+ "ops_after": [
+  "Conv",
+  "Sign"
+ ],
+ "opset_after": 17,
+ "pwl": [
+  "Sign"
+ ]
+}

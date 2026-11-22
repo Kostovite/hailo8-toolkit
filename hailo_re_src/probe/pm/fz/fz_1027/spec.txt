@@ -1,0 +1,1 @@
+c=16 h=16 pad_conv up_down conv3 hswish

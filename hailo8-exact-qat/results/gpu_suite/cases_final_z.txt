@@ -1,0 +1,1 @@
+zero_dce /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/zero_dce/zero_dce.hn /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/zero_dce/cap2 /mnt/storage/lib_project/models/Hailo_model/datasets/coco/val2017/000000000139.jpg

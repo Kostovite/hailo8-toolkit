@@ -1,0 +1,18 @@
+{
+ "case": "T_Attn_bhnd_h2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 130.9977357244548,
+ "sqnr_hw_db": 19.726274150034,
+ "hef_MB": 0.47,
+ "seconds": 117.6
+}

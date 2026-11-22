@@ -1,0 +1,14 @@
+vit_tiny
+deit_tiny
+swin_tiny
+levit128
+davit_tiny
+cas_vit_t
+yolov5s
+yolov6n
+yolov8n_seg
+repvgg_a1
+hardnet68
+arcface_r50
+efficientdet_lite0
+zero_dce

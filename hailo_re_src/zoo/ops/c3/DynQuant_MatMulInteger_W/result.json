@@ -1,0 +1,15 @@
+{
+ "case": "DynQuant_MatMulInteger_W",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 139.2170765755937,
+ "sqnr_hw_db": 34.5185565260985,
+ "hef_MB": 2.44,
+ "seconds": 202.7
+}

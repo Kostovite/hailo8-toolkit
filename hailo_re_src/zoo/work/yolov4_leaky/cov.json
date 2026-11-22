@@ -1,0 +1,1117 @@
+{
+"layers": [
+{
+"layer": "yolov4_leaky/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 786432
+},
+{
+"layer": "yolov4_leaky/normalization1",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 786432
+},
+{
+"layer": "yolov4_leaky/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 8388608
+},
+{
+"layer": "yolov4_leaky/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2097152
+},
+{
+"layer": "yolov4_leaky/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/ew_add1",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 8388608
+},
+{
+"layer": "yolov4_leaky/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "yolov4_leaky/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2097152
+},
+{
+"layer": "yolov4_leaky/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/ew_add2",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/concat2",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 2097152
+},
+{
+"layer": "yolov4_leaky/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2097152
+},
+{
+"layer": "yolov4_leaky/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add4",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add5",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add6",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add7",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add8",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add9",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add10",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/ew_add11",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/concat3",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv38",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv42",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv44",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add12",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv45",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv46",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add13",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv47",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv48",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add14",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv49",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv50",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add15",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv51",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv52",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add16",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv53",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv54",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add17",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv55",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv56",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add18",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv57",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv58",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/ew_add19",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv59",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/concat4",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv60",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv61",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv62",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv63",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv64",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv65",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv66",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/ew_add20",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv67",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv68",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/ew_add21",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv69",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv70",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/ew_add22",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv71",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv72",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/ew_add23",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv73",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/concat5",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv74",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv75",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv76",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv77",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/maxpool1",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/maxpool2",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/maxpool3",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/concat6",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv78",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv79",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv80",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv81",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 65536
+},
+{
+"layer": "yolov4_leaky/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/concat7",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv82",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv83",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv84",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv85",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv86",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv87",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/concat8",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv88",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv89",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv90",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv91",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv92",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv93",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "yolov4_leaky/conv94",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/concat9",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv95_centers",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "yolov4_leaky/conv95_obj",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 12288
+},
+{
+"layer": "yolov4_leaky/conv95_probs",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 983040
+},
+{
+"layer": "yolov4_leaky/conv95_scales",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 24576
+},
+{
+"layer": "yolov4_leaky/conv96",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv97",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv98",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv99",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv100",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv101",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "yolov4_leaky/conv102",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/concat10",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv103_centers",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 6144
+},
+{
+"layer": "yolov4_leaky/conv103_obj",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3072
+},
+{
+"layer": "yolov4_leaky/conv103_probs",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "yolov4_leaky/conv103_scales",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 6144
+},
+{
+"layer": "yolov4_leaky/conv104",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv105",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv106",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv107",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv108",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 131072
+},
+{
+"layer": "yolov4_leaky/conv109",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 262144
+},
+{
+"layer": "yolov4_leaky/conv110_centers",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1536
+},
+{
+"layer": "yolov4_leaky/conv110_obj",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 768
+},
+{
+"layer": "yolov4_leaky/conv110_probs",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 61440
+},
+{
+"layer": "yolov4_leaky/conv110_scales",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1536
+}
+]
+}

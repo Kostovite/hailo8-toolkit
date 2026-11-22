@@ -1,0 +1,43 @@
+{
+ "case": "yolov6n",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "conv|a8_w8_a8|relu": 41,
+  "maxpool|a8_w8_a8|linear": 3,
+  "concat|a8_w8_a8|": 5,
+  "deconv|a8_w8_a8|linear": 2,
+  "conv|a8_w8_a8|silu": 9,
+  "conv|a8_w8_a8|sigmoid": 6,
+  "conv|a8_w8_a8|linear": 3,
+  "postprocess|a8_w8_a8|": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 70,
+  "exact": 70,
+  "not_exact": [],
+  "s": 2.8
+ },
+ "T2_chained": {
+  "checked": 62,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 2.3
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": false,
+  "why": "KeyError: 'yolov6n/conv37'"
+ },
+ "PASS": true
+}

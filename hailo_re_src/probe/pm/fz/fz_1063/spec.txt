@@ -1,0 +1,1 @@
+c=32 h=20 bilinear attn sigmoid layernorm sigmoid softmax_c gate

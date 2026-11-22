@@ -1,0 +1,2 @@
+torch 2.7.1a0+gite2d141d cuda 12.6
+flags: -O3 -Xptxas=-O3 --extra-device-vectorization, sm_52 sm_86 compute_86, no fast-math

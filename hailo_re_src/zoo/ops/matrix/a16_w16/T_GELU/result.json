@@ -1,0 +1,16 @@
+{
+ "case": "T_GELU",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "gelu"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 144.99480490321193,
+ "sqnr_hw_db": 35.582184060627476,
+ "hef_MB": 0.1,
+ "seconds": 12.6
+}

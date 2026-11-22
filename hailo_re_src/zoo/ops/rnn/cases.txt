@@ -1,0 +1,9 @@
+T_LSTM_bf_squeeze
+T_GRU_bf_squeeze
+T_RNN_bf_squeeze
+T_LSTM_sf_squeeze
+T_GRU_sf
+T_LSTM_bf_permute
+T_LSTM_bidir
+T_LSTM_2layer
+T_GRU_unrolled

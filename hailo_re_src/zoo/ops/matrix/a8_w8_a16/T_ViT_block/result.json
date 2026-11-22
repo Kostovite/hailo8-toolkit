@@ -1,0 +1,22 @@
+{
+ "case": "T_ViT_block",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "feature_splitter",
+  "format_conversion",
+  "layer_normalization",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [
+  "gelu"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 146.54474083010177,
+ "sqnr_hw_db": 32.68588659550683,
+ "hef_MB": 0.65,
+ "seconds": 117.1
+}

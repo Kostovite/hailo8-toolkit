@@ -1,0 +1,12 @@
+{
+ "case": "Round",
+ "rewrite_vs_orig_db": 349.3753293660024,
+ "ops_after": [
+  "Conv",
+  "Round"
+ ],
+ "opset_after": 17,
+ "pwl": [
+  "Round"
+ ]
+}

@@ -1,0 +1,1 @@
+c=48 h=24 down_up dw3 dw5 d2s avgpool

@@ -1,0 +1,17 @@
+{
+ "case": "T_Norm_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 146.41150135757647,
+ "sqnr_hw_db": 43.95795908193274,
+ "hef_MB": 0.19,
+ "seconds": 54.8
+}

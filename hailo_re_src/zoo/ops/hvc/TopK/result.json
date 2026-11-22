@@ -1,0 +1,6 @@
+{
+ "op": "TopK",
+ "chip_error": "ParsingWithRecommendationException: Parsing failed. The errors found in the graph are:\n UnsupportedOperationError in op /1/1.1/TopK: TopK operation is unsupported\n UnsupportedOperationError in op /1/1.1/ScatterElements: ScatterElements operation is unsupported\nPlease try to parse the model again, using these end node names: /1/1.0/1.0",
+ "host_sqnr_db": 37.52820102299805,
+ "boundary_MB_per_frame": 0.401
+}

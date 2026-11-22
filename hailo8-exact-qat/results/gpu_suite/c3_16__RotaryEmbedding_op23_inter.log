@@ -1,0 +1,56 @@
+SHAPE RotaryEmbedding_op23_inter/concat1 (concat) got (1, 384, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice1 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice10 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice11 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice12 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice13 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice14 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice15 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice16 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice17 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice18 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice19 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice2 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice20 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice21 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice22 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice23 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice24 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice3 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice4 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice5 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice6 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice7 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice8 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23_inter/slice9 (slice) got (1, 16, 24, 1) ref (1, 16, 24, 24)
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 190, in run
+    y = _dispatch(n, L, t, prm, ins, P, layers, img, dev, ints)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 417, in _dispatch
+    a = bias_of(bss[0], mock_of(mks[0], ins[0], dev), dev)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 76, in bias_of
+    return I.hw_lossy(x + b, *lossy_of(rec))
+                      ~~^~~
+RuntimeError: The size of tensor a (384) must match the size of tensor b (16) at non-singleton dimension 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/gpu_suite.py", line 62, in <module>
+    t = time.time(); _, rep2 = G.run(hn, P, X[:1], dev, check=True, cont=False)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 193, in run
+    y = _chain(n, L, ins, P, layers, dev)  # generic: the layer's captured atomic-op chain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 303, in _chain
+    y = _CHAINS[n](xs)
+        ^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/atomic.py", line 204, in __call__
+    outs.append(f(r) if r["type"] == "ConstOp" else f(r, *args))
+                                                    ^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/atomic.py", line 104, in add_bias
+    return I.hw_lossy(x + _per_c(b, x), *lossy(rec))
+                      ~~^~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (384) must match the size of tensor b (16) at non-singleton dimension 1

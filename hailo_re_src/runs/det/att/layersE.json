@@ -1,0 +1,1 @@
+["conv_feature_splitter5_2", "conv_feature_splitter6_1", "conv_feature_splitter6_2", "ew_sub_softmax1", "format_conversion1", "matmul1", "reduce_max_softmax1", "reduce_sum_softmax1"]

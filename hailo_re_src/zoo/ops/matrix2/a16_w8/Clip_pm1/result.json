@@ -1,0 +1,23 @@
+{
+ "case": "Clip_pm1",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 346.86371680066907,
+ "sqnr_hw_db": 36.621825658885584,
+ "hef_MB": 0.09,
+ "seconds": 10.1
+}

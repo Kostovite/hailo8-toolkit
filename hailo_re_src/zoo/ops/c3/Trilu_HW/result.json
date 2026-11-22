@@ -1,0 +1,15 @@
+{
+ "case": "Trilu_HW",
+ "stage": "ok",
+ "hn_types": [
+  "const_input",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.3769343202775,
+ "sqnr_hw_db": 36.13189337661891,
+ "hef_MB": 0.08,
+ "seconds": 10.6
+}

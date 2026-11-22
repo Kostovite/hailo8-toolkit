@@ -1,0 +1,1 @@
+UnsupportedOperatorError: Exporting the operator 'aten::col2im' to ONNX opset version 17 is not supported. Support for this operator was added in version 18, try exporting with this version.

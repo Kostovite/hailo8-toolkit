@@ -1,0 +1,24 @@
+{
+ "case": "T_Conv1d_seq",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "format_conversion1:HailoFormatConversion",
+  "format_conversion2:HailoFormatConversion",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 134.00300446878987,
+ "sqnr_hw_db": 23.301063716726397,
+ "hef_MB": 0.14,
+ "seconds": 12.3
+}

@@ -1,0 +1,12 @@
+{
+ "case": "CausalConvWithState_op27",
+ "rewrite_vs_orig_db": 141.82054298860447,
+ "ops_after": [
+  "Conv",
+  "Identity",
+  "Mul",
+  "Reshape",
+  "Sigmoid"
+ ],
+ "opset_after": 17
+}

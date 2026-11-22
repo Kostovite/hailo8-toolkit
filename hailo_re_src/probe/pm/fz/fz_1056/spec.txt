@@ -1,0 +1,1 @@
+c=16 h=20 avgpool softmax_c pad_conv up_down split2 dw5

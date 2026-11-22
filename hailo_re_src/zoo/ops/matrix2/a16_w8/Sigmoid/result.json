@@ -1,0 +1,23 @@
+{
+ "case": "Sigmoid",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "sigmoid"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 145.18244642000124,
+ "sqnr_hw_db": 40.73422599308506,
+ "hef_MB": 0.09,
+ "seconds": 10.1
+}

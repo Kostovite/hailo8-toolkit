@@ -1,0 +1,15 @@
+{
+ "case": "Mean2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 348.9887858356727,
+ "sqnr_hw_db": 34.29013761733765,
+ "hef_MB": 0.11,
+ "seconds": 10.1
+}

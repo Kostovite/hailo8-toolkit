@@ -1,0 +1,16 @@
+{
+ "case": "T_Mish",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "mish"
+ ],
+ "prec": "a16_w16",
+ "sqnr_native_db": 150.07388056206537,
+ "sqnr_hw_db": 32.923809050242355,
+ "hef_MB": 0.1,
+ "seconds": 9.7
+}

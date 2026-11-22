@@ -1,0 +1,43 @@
+{
+ "case": "C_Min_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "ew_sub1",
+   "a16_w16"
+  ],
+  [
+   "ew_sub2",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.0554214058218,
+ "sqnr_hw_db": 63.83134601319219,
+ "hef_MB": 0.23,
+ "seconds": 18.0
+}

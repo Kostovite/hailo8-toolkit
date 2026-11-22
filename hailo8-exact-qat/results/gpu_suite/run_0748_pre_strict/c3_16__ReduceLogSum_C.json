@@ -1,0 +1,46 @@
+{
+ "case": "c3_16__ReduceLogSum_C",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a16_w16_a16|": 1,
+  "reduce_sum|a16_w16_a16|log": 1,
+  "dw|a16_w16_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 3,
+  "exact": 3,
+  "not_exact": [],
+  "s": 0.4
+ },
+ "T2_chained": {
+  "checked": 3,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": false,
+  "why": "RuntimeError: lossy element of 32 bits: int32 datapath supports <= 24",
+  "tb": [
+   "  File \"/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/autograd/function.py\", line 575, in apply",
+   "    return super().apply(*args, **kwargs)  # type: ignore[misc]",
+   "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+   "  File \"/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/qatfast.py\", line 223, in forward",
+   "    y, gs, _, _, aa, ap = hq.tail(x.contiguous(), e, 0, 0.0, 0, e, e, 1.0, 1.0, [], False,",
+   "                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+   "RuntimeError: lossy element of 32 bits: int32 datapath supports <= 24"
+  ]
+ },
+ "PASS": false
+}

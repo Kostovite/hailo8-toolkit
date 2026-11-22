@@ -1,0 +1,1 @@
+quantization_param([conv74, conv77, conv90, conv93, conv105, conv108], precision_mode=a8_w8_a16)

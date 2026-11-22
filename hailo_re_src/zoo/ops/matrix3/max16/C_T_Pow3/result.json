@@ -1,0 +1,30 @@
+{
+ "case": "C_T_Pow3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 364.1266888721567,
+ "sqnr_hw_db": 40.02766080701428,
+ "hef_MB": 0.13,
+ "seconds": 15.8
+}

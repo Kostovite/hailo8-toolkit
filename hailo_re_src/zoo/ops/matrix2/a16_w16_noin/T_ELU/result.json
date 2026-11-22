@@ -1,0 +1,22 @@
+{
+ "case": "T_ELU",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "elu"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 159.19933222186847,
+ "sqnr_hw_db": 37.36359918277968,
+ "hef_MB": 0.1,
+ "seconds": 11.8
+}

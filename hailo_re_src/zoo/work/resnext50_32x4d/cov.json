@@ -1,0 +1,410 @@
+{
+"layers": [
+{
+"layer": "resnext50_32x4d/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 150528
+},
+{
+"layer": "resnext50_32x4d/normalization",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 150528
+},
+{
+"layer": "resnext50_32x4d/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "resnext50_32x4d/maxpool1",
+"type": "maxpool",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "resnext50_32x4d/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "resnext50_32x4d/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "resnext50_32x4d/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "resnext50_32x4d/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "resnext50_32x4d/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "resnext50_32x4d/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv38",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv42",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv44",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "resnext50_32x4d/conv45",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv46",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 50176
+},
+{
+"layer": "resnext50_32x4d/conv47",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv48",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 50176
+},
+{
+"layer": "resnext50_32x4d/conv49",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 50176
+},
+{
+"layer": "resnext50_32x4d/conv50",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/conv51",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 50176
+},
+{
+"layer": "resnext50_32x4d/conv52",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 50176
+},
+{
+"layer": "resnext50_32x4d/conv53",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 100352
+},
+{
+"layer": "resnext50_32x4d/avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "resnext50_32x4d/fc1",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+}
+]
+}

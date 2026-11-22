@@ -1,0 +1,24 @@
+{
+ "case": "Concat_W",
+ "stage": "quantize",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "concat1:HailoConcat",
+  "slice1:HailoSlice",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "error": "IndexError: list index out of range",
+ "trace": "lo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 55, in run\n    return super().run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/algorithm_base.py\", line 159, in run\n    self._run_int()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/mixed_precision/create_mixed_precision.py\", line 97, in _run_int\n    algo_cfg = self._propagate_precision_config(algo_cfg)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/mixed_precision/create_mixed_precision.py\", line 166, in _propagate_precision_config\n    self._add_shortcut_layer(lname, targets, explicit_mode)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/mixed_precision/create_mixed_precision.py\", line 209, in _add_shortcut_layer\n    self._model.add_layer(shortcut_layer, edges)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/model/hailo_model/hailo_model.py\", line 1565, in add_layer\n    self.flow.insert_node(layer.full_name, edges, is_input)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/acceleras/model/hailo_model/model_flow.py\", line 204, in insert_node\n    predecessor = edges[0][0]\nIndexError: list index out of range\n",
+ "seconds": 3.5
+}

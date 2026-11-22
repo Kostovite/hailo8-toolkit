@@ -1,0 +1,17 @@
+{
+ "case": "C_Shrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.7208673015726,
+ "sqnr_hw_db": 30.583045499778567,
+ "hef_MB": 0.1,
+ "seconds": 11.5
+}

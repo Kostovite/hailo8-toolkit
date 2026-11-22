@@ -1,0 +1,18 @@
+{
+ "case": "C_ReduceProd_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "dw",
+  "reduce_sum"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 124.52807863242927,
+ "sqnr_hw_db": 8.936604696851829,
+ "hef_MB": 0.17,
+ "seconds": 24.4
+}

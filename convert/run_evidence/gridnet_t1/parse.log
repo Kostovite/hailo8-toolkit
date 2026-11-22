@@ -1,0 +1,10 @@
+[info] Translation started on ONNX model gridnet
+[info] Restored ONNX model gridnet (completion time: 00:00:00.08)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.86)
+[info] Start nodes mapped from original model: 'canvas': 'gridnet/input_layer1'.
+[info] End nodes mapped from original model: '/trunk/p2/p2.2/Relu', '/trunk/p4/p4.2/Relu'.
+[info] Translation completed on ONNX model gridnet (completion time: 00:00:02.70)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_t1/parsed.har
+out gridnet/output_layer2 [-1, 448, 448, 96]
+out gridnet/output_layer1 [-1, 224, 224, 128]
+layers 48

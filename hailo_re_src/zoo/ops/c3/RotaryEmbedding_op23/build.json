@@ -1,0 +1,13 @@
+{
+ "case": "RotaryEmbedding_op23",
+ "rewrite_vs_orig_db": 149.66932872428103,
+ "ops_after": [
+  "Add",
+  "Concat",
+  "Conv",
+  "Mul",
+  "Neg",
+  "Slice"
+ ],
+ "opset_after": 17
+}

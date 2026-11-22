@@ -1,0 +1,1 @@
+compilation_param(conv1, layer_output_buffers_format=consecutive)

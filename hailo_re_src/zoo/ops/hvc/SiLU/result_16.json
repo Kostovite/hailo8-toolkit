@@ -1,0 +1,19 @@
+{
+ "op": "SiLU",
+ "prec": "max16",
+ "chip_modes": {
+  "a16_w16": 2,
+  "a16_w16_a16": 7
+ },
+ "chip_sqnr_db": 39.57293440121069,
+ "part1_modes": {
+  "a16_w16": 2,
+  "a16_w16_a16": 3
+ },
+ "part2_modes": {
+  "a16_w16": 3,
+  "a16_w16_a16": 2
+ },
+ "host_sqnr_db": 71.65252435499484,
+ "boundary_MB_per_frame": 0.401
+}

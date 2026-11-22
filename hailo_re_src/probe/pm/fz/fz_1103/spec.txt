@@ -1,0 +1,1 @@
+c=64 h=32 c2f avgpool dw7 maxpool c2f sigmoid hswish

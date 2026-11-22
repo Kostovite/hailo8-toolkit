@@ -1,0 +1,1 @@
+c=64 h=16 conv5 dw5 attn mul2

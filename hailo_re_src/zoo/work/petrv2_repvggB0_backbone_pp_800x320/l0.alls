@@ -1,0 +1,5 @@
+normalization1 = normalization([103.530, 116.280, 123.675], [57.375, 57.120, 58.395])
+
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

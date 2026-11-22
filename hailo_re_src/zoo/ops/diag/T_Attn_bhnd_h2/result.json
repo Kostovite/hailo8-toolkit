@@ -1,0 +1,88 @@
+{
+ "case": "T_Attn_bhnd_h2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv_feature_splitter1_1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv_feature_splitter1_2",
+   "a8_w8_a8"
+  ],
+  [
+   "conv_feature_splitter1_3",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion1",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion2",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion3",
+   "a8_w8_a8"
+  ],
+  [
+   "matmul1",
+   "a8_w8_a16"
+  ],
+  [
+   "mul_and_add1",
+   "a16_w16_a8"
+  ],
+  [
+   "reduce_max_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "matmul2",
+   "a8_w8_a16"
+  ],
+  [
+   "format_conversion4",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "conv3",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 130.9977357244548,
+ "sqnr_hw_db": 20.100483977316678,
+ "seconds": 98.5
+}

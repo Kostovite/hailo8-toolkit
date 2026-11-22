@@ -1,0 +1,10 @@
+{
+ "case": "ScatterElements_C",
+ "rewrite_vs_orig_db": 349.1277191049742,
+ "ops_after": [
+  "Concat",
+  "Conv",
+  "Slice"
+ ],
+ "opset_after": 17
+}

@@ -1,0 +1,16 @@
+{
+ "case": "Tile_W",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "concat",
+  "conv",
+  "shortcut"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 145.9451879764972,
+ "sqnr_hw_db": 36.3533285398024,
+ "hef_MB": 0.95,
+ "seconds": 40.3
+}

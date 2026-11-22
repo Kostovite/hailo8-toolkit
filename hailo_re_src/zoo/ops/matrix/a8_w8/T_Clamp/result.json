@@ -1,0 +1,16 @@
+{
+ "case": "T_Clamp",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.1554856348333,
+ "sqnr_hw_db": 37.62424738720138,
+ "hef_MB": 0.09,
+ "seconds": 9.3
+}

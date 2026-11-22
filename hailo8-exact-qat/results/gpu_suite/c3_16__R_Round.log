@@ -1,0 +1,4 @@
+MISMATCH R_Round/input_layer1 (input_layer): 1/9216 max 1
+MISMATCH R_Round/input_layer1 (input_layer): 1/9216 max 1
+[qatfast] R_Round/conv1: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "c3_16__R_Round", "conv_mode": "gemm", "T1_per_layer": {"checked": 5, "exact": 4, "not_exact": [["R_Round/input_layer1", "input_layer", 1, 9216]], "s": 0.3}, "T2_chained": {"checked": 5, "value_mismatch": [["R_Round/input_layer1", "input_layer", 1, 9216]], "pass": false, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": false, "why": "RuntimeError: stack expects a non-empty TensorList"}, "PASS": false}

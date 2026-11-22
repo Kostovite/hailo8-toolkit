@@ -1,0 +1,33 @@
+{
+ "case": "DWConv3x3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "dw1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 142.9084836125274,
+ "sqnr_hw_db": 60.20547886009413,
+ "hef_MB": 0.44,
+ "seconds": 16.6
+}

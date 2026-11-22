@@ -1,0 +1,21 @@
+{
+ "case": "R_Ceil",
+ "stage": "ok",
+ "pwl_layers": [
+  "R_Ceil/activation1",
+  "R_Ceil/activation2"
+ ],
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add"
+ ],
+ "activations": [
+  "pwl"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.77561084016503,
+ "sqnr_hw_db": 21.47992975666041,
+ "hef_MB": 0.14,
+ "seconds": 13.3
+}

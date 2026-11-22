@@ -1,0 +1,24 @@
+{
+ "case": "C_ReduceMin_W",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "mul_and_add1",
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "maxpool1:HailoMaxPool",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 344.4859966243914,
+ "sqnr_hw_db": 43.844731415581755,
+ "hef_MB": 0.63,
+ "seconds": 13.2
+}

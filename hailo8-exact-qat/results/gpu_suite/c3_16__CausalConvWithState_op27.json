@@ -1,0 +1,43 @@
+{
+ "case": "c3_16__CausalConvWithState_op27",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a16_w16_a16|": 1,
+  "format_conversion|a16_w16_a16|": 2,
+  "external_pad|a16_w16_a16|": 1,
+  "dw|a16_w16_a16|silu": 1,
+  "conv|a16_w16_a16|linear": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 6,
+  "exact": 6,
+  "not_exact": [],
+  "s": 0.5
+ },
+ "T2_chained": {
+  "checked": 3,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "CausalConvWithState_op27/conv1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

@@ -1,0 +1,23 @@
+{
+ "case": "Mish_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "mish"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 150.07388056206537,
+ "sqnr_hw_db": 34.21386022619316,
+ "hef_MB": 0.09,
+ "seconds": 9.3
+}

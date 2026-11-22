@@ -1,0 +1,7 @@
+emu_q (AP, box AP, box AP75): {'thesis': (0.866, 0.9361, 0.9634), 'd4la': (0.7384, 0.7941, 0.8693), 'photo_thesis': (0.7895, 0.8332, 0.913), 'photo_d4la': (0.6896, 0.6895, 0.7794)}
+ 
+RESULT thesis box AP fp 0.9352 emu_q 0.9361 drop -0.0009  AP75 0.9632 -> 0.9634
+RESULT d4la box AP fp 0.7918 emu_q 0.7941 drop -0.0023  AP75 0.8662 -> 0.8693
+RESULT photo_thesis box AP fp 0.8334 emu_q 0.8332 drop +0.0002  AP75 0.9146 -> 0.9130
+RESULT photo_d4la box AP fp 0.6910 emu_q 0.6895 drop +0.0015  AP75 0.7789 -> 0.7794
+GATE PASS max drop 0.005

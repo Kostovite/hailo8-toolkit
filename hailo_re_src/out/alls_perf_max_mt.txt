@@ -1,0 +1,2 @@
+performance_param(compiler_optimization_level=max)
+allocator_param(compilation_num_threads=48, num_of_workers=32)

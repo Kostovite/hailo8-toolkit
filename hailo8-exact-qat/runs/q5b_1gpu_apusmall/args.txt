@@ -1,0 +1,1 @@
+--max_steps 1000 --eval_every 1000 --lr_k 6e-4 --lr_b 3e-2 --ovf 0 --k_radius 2 --b_radius 128 --apu_train --lr_apu_m 0.002 --lr_apu_o 0.02 --apu_m_radius 4 --apu_o_radius 8

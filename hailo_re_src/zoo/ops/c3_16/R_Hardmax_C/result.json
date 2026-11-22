@@ -1,0 +1,51 @@
+{
+ "case": "R_Hardmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "normalization",
+  "reduce_max"
+ ],
+ "activations": [
+  "clip",
+  "relu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "reduce_max1",
+   "a16_w16"
+  ],
+  [
+   "ew_sub1",
+   "a16_w16"
+  ],
+  [
+   "normalization1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 177.60887531982948,
+ "sqnr_hw_db": 48.06083474776459,
+ "hef_MB": 0.21,
+ "seconds": 14.2
+}

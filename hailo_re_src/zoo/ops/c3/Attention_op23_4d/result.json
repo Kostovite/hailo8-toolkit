@@ -1,0 +1,17 @@
+{
+ "case": "Attention_op23_4d",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 128.12940250570867,
+ "sqnr_hw_db": 15.32817736557164,
+ "hef_MB": 0.35,
+ "seconds": 88.6
+}

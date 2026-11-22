@@ -1,0 +1,21 @@
+{
+ "case": "T_Conv_5x1",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 347.53241487805576,
+ "sqnr_hw_db": 38.24332231667368,
+ "hef_MB": 0.35,
+ "seconds": 33.2
+}

@@ -1,0 +1,10 @@
+{
+ "case": "ReverseSequence_C",
+ "rewrite_vs_orig_db": 349.19282346339094,
+ "ops_after": [
+  "Concat",
+  "Conv",
+  "Slice"
+ ],
+ "opset_after": 17
+}

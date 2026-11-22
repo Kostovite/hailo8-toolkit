@@ -1,0 +1,20 @@
+{
+ "case": "Conv3x3_dil2",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "conv1:HailoConv",
+  "conv2:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 353.2995692483147,
+ "sqnr_hw_db": 33.748948326004985,
+ "hef_MB": 0.1,
+ "seconds": 9.6
+}

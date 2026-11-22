@@ -1,0 +1,21 @@
+{
+ "case": "Square_mul",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_multiplier"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "square1:HailoFeatureMultiplier"
+ ],
+ "sqnr_native_db": 360.46171734038154,
+ "sqnr_hw_db": 33.11330017348912,
+ "hef_MB": 0.15,
+ "seconds": 14.4
+}

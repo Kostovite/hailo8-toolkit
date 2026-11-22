@@ -1,0 +1,21 @@
+{
+ "case": "T_PixelShuffle",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "depth_to_space"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "depth_to_space1:HailoDepthToSpace",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 39.00114139254499,
+ "hef_MB": 0.11,
+ "seconds": 8.2
+}

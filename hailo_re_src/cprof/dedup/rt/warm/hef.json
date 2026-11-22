@@ -1,0 +1,5 @@
+warm/r.hef: HEF v2, 0.9 MiB, group , 1 contexts
+  preliminary config: 0.62 MiB  {'disable_lcu': 32, 'write_data_ccw_ptr': 65, 'wait_for_module_config_done': 13, 'enable_sequencer': 2, 'wait_for_seqeuncer': 2, 'allow_input_dataflow': 1, 'enable_lcu': 32}
+  ctx 0 : config 0.00 MiB, 1 actions, batch-switch 0
+      boundary      in    1 tensors     0.01 MiB/frame
+      boundary      out   3 tensors     0.00 MiB/frame

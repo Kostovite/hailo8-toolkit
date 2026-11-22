@@ -1,0 +1,16 @@
+{
+ "case": "AvgPool3s2",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "const_input",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 142.71052960760497,
+ "sqnr_hw_db": 34.527516881689756,
+ "hef_MB": 0.62,
+ "seconds": 16.2
+}

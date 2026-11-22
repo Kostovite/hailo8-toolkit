@@ -1,0 +1,15 @@
+{
+ "case": "C_LpNorm_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 143.81322673155674,
+ "sqnr_hw_db": 36.69157714100446,
+ "hef_MB": 0.24,
+ "seconds": 18.6
+}

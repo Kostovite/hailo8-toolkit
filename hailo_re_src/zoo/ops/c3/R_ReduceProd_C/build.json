@@ -1,0 +1,10 @@
+{
+ "case": "ReduceProd_C",
+ "rewrite_vs_orig_db": 136.9332729262595,
+ "ops_after": [
+  "Conv",
+  "Mul",
+  "Slice"
+ ],
+ "opset_after": 17
+}

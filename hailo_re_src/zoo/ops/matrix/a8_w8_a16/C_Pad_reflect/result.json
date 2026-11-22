@@ -1,0 +1,15 @@
+{
+ "case": "C_Pad_reflect",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 352.85854926793064,
+ "sqnr_hw_db": 38.97878261920344,
+ "hef_MB": 0.14,
+ "seconds": 11.5
+}

@@ -1,0 +1,10 @@
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CausalConvWithState_op27
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CenterCropPad_crop
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CenterCropPad_pad
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Col2Im_k2s2
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Compress_C
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/CumProd_W
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DeformConv_zero
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DynQuant_ConvInteger
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DynQuant_MatMulInteger_W
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Einsum_conv

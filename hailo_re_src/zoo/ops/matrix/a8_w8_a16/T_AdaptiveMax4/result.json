@@ -1,0 +1,14 @@
+{
+ "case": "T_AdaptiveMax4",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 343.3623282636091,
+ "sqnr_hw_db": 45.69697882738137,
+ "hef_MB": 0.64,
+ "seconds": 10.1
+}

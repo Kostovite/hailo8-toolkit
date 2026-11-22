@@ -1,0 +1,501 @@
+{
+"layers": [
+{
+"layer": "retinaface_mobilenet_v1/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 2826240
+},
+{
+"layer": "retinaface_mobilenet_v1/input_conversion",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2826240
+},
+{
+"layer": "retinaface_mobilenet_v1/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 7536640
+},
+{
+"layer": "retinaface_mobilenet_v1/dw1",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 7536640
+},
+{
+"layer": "retinaface_mobilenet_v1/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 15073280
+},
+{
+"layer": "retinaface_mobilenet_v1/dw2",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 3768320
+},
+{
+"layer": "retinaface_mobilenet_v1/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 7536640
+},
+{
+"layer": "retinaface_mobilenet_v1/dw3",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 7536640
+},
+{
+"layer": "retinaface_mobilenet_v1/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 7536640
+},
+{
+"layer": "retinaface_mobilenet_v1/dw4",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3768320
+},
+{
+"layer": "retinaface_mobilenet_v1/dw5",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 3768320
+},
+{
+"layer": "retinaface_mobilenet_v1/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3768320
+},
+{
+"layer": "retinaface_mobilenet_v1/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/dw6",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/dw7",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/dw8",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/dw9",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/dw10",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/dw11",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1884160
+},
+{
+"layer": "retinaface_mobilenet_v1/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/dw12",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 471040
+},
+{
+"layer": "retinaface_mobilenet_v1/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/dw13",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/external_pad1",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "retinaface_mobilenet_v1/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 29440
+},
+{
+"layer": "retinaface_mobilenet_v1/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 14720
+},
+{
+"layer": "retinaface_mobilenet_v1/external_pad2",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "retinaface_mobilenet_v1/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 14720
+},
+{
+"layer": "retinaface_mobilenet_v1/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 14720
+},
+{
+"layer": "retinaface_mobilenet_v1/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 14720
+},
+{
+"layer": "retinaface_mobilenet_v1/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 7360
+},
+{
+"layer": "retinaface_mobilenet_v1/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3680
+},
+{
+"layer": "retinaface_mobilenet_v1/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 18400
+},
+{
+"layer": "retinaface_mobilenet_v1/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/ew_add1",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/external_pad3",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "retinaface_mobilenet_v1/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 117760
+},
+{
+"layer": "retinaface_mobilenet_v1/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/external_pad4",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "retinaface_mobilenet_v1/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/concat2",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 29440
+},
+{
+"layer": "retinaface_mobilenet_v1/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 14720
+},
+{
+"layer": "retinaface_mobilenet_v1/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 73600
+},
+{
+"layer": "retinaface_mobilenet_v1/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/ew_add2",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/external_pad5",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "retinaface_mobilenet_v1/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 471040
+},
+{
+"layer": "retinaface_mobilenet_v1/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/external_pad6",
+"type": "external_pad",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "retinaface_mobilenet_v1/conv38",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 235520
+},
+{
+"layer": "retinaface_mobilenet_v1/concat3",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 942080
+},
+{
+"layer": "retinaface_mobilenet_v1/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 117760
+},
+{
+"layer": "retinaface_mobilenet_v1/conv42",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 58880
+},
+{
+"layer": "retinaface_mobilenet_v1/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294400
+}
+]
+}

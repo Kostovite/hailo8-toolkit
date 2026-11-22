@@ -1,0 +1,26 @@
+{
+ "case": "C_Pad_edge",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "slice1",
+  "slice2",
+  "concat1",
+  "slice3",
+  "slice4",
+  "concat2",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.86435276538623,
+ "sqnr_hw_db": 38.98431348700248,
+ "hef_MB": 0.17,
+ "seconds": 13.9
+}

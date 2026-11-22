@@ -1,0 +1,13 @@
+{
+ "case": "Attention_op23_3d",
+ "rewrite_vs_orig_db": 343.50528671627285,
+ "ops_after": [
+  "Conv",
+  "MatMul",
+  "Mul",
+  "Reshape",
+  "Softmax",
+  "Transpose"
+ ],
+ "opset_after": 17
+}

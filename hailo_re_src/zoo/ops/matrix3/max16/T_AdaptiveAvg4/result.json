@@ -1,0 +1,33 @@
+{
+ "case": "T_AdaptiveAvg4",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "avgpool1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 137.43572727396295,
+ "sqnr_hw_db": 64.64700831993987,
+ "hef_MB": 0.24,
+ "seconds": 10.7
+}

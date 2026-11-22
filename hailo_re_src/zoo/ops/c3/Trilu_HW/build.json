@@ -1,0 +1,9 @@
+{
+ "case": "Trilu_HW",
+ "rewrite_vs_orig_db": 346.36838351164374,
+ "ops_after": [
+  "Conv",
+  "Mul"
+ ],
+ "opset_after": 17
+}

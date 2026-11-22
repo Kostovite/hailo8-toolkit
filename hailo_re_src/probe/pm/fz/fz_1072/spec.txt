@@ -1,0 +1,1 @@
+c=64 h=32 sigmoid convt down_up dw7

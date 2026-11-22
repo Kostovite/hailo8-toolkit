@@ -1,0 +1,23 @@
+{
+ "case": "T_Log",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "log"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 153.777471458154,
+ "sqnr_hw_db": 41.0310244220046,
+ "hef_MB": 0.09,
+ "seconds": 26.6
+}

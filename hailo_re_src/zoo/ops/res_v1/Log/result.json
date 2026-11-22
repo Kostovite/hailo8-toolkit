@@ -1,0 +1,15 @@
+{
+ "case": "Log",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "log"
+ ],
+ "sqnr_native_db": 153.777471458154,
+ "sqnr_hw_db": 36.84555745139336,
+ "hef_MB": 0.09,
+ "seconds": 27.4
+}

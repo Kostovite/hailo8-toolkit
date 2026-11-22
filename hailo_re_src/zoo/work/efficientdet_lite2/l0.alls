@@ -1,0 +1,11 @@
+normalization1 = normalization([127.0, 127.0, 127.0], [128.0, 128.0, 128.0])
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/efficientdet_lite2_nms_config.json", ssd, engine=cpu)
+change_output_activation(efficientdet_lite2/conv92, sigmoid)
+change_output_activation(efficientdet_lite2/conv101, sigmoid)
+change_output_activation(efficientdet_lite2/conv110, sigmoid)
+change_output_activation(efficientdet_lite2/conv119, sigmoid)
+change_output_activation(efficientdet_lite2/conv128, sigmoid)
+model_optimization_config(calibration, batch_size=4)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/gpu_suite.py", line 70, in <module>
+    t3[bs] = all(torch.equal(single[j][n][0], b[n][j]) for j in range(min(bs, 5)) for n in outs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/gpu_suite.py", line 70, in <genexpr>
+    t3[bs] = all(torch.equal(single[j][n][0], b[n][j]) for j in range(min(bs, 5)) for n in outs)
+                             ~~~~~~~~~^^^
+KeyError: 'yolov5s/conv55'

@@ -1,0 +1,19 @@
+{
+ "case": "Conv3x3_dil2",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 353.2995692483147,
+ "sqnr_hw_db": 39.01724594631381,
+ "hef_MB": 0.4,
+ "seconds": 32.0
+}

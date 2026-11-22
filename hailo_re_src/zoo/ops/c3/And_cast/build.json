@@ -1,0 +1,14 @@
+{
+ "case": "And_cast",
+ "rewrite_vs_orig_db": 337.55174788241175,
+ "ops_after": [
+  "Add",
+  "Cast",
+  "Conv",
+  "Less",
+  "Mul",
+  "Relu",
+  "Sub"
+ ],
+ "opset_after": 17
+}

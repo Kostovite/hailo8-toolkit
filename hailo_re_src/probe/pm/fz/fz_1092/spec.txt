@@ -1,0 +1,1 @@
+c=96 h=20 fpn up_down c2f fpn d2s dw5 hswish

@@ -1,0 +1,1 @@
+pre_quantization_optimization(global_avgpool_reduction, layers=avgpool7, division_factors=[4, 4])

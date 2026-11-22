@@ -1,0 +1,1 @@
+c=32 h=16 split2 avgpool layernorm avgpool conv1 convt

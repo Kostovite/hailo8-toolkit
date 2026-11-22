@@ -1,0 +1,21 @@
+{
+ "case": "T_LayerNorm_CHW",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean",
+  "resize"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "sqnr_native_db": 122.5724113457715,
+ "sqnr_hw_db": 31.508886869134262,
+ "hef_MB": 0.61,
+ "seconds": 34.6
+}

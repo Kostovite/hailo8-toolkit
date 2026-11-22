@@ -1,0 +1,38 @@
+{
+ "act": "Tanh",
+ "pieces": 9,
+ "scale": 2.5,
+ "monotone": false,
+ "range": [
+  -18.20561981201172,
+  20.97377586364746
+ ],
+ "fit_sqnr_db": 46.1970847160697,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 32.57322549819946,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "tanh",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 32.7515172958374,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "case": "Softsign",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "softsign"
+ ],
+ "sqnr_native_db": 148.31932388937648,
+ "sqnr_hw_db": 33.732358580465714,
+ "hef_MB": 0.09,
+ "seconds": 10.9
+}

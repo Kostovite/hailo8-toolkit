@@ -1,0 +1,8 @@
+res/ConvTranspose_s2: out max 255 mismatch 0.9872 | emu saturated 0.027 -> mismatch among sat 0.519 / among in-range 1.000 | chip saturated where emu in-range 0.354 | median |d| in-range 59.0
+res/Attention_pattern: out max 255 mismatch 0.9337 | emu saturated 0.002 -> mismatch among sat 0.921 / among in-range 0.934 | chip saturated where emu in-range 0.001 | median |d| in-range 26.0
+c3_16/Sum3: out max 65535 mismatch 0.7720 | emu saturated 0.017 -> mismatch among sat 0.409 / among in-range 0.778 | chip saturated where emu in-range 0.010 | median |d| in-range 3260.0
+c3_16/Mean2: out max 65535 mismatch 0.8201 | emu saturated 0.022 -> mismatch among sat 0.463 / among in-range 0.828 | chip saturated where emu in-range 0.018 | median |d| in-range 4847.0
+c3_16/QLinearConv: out max 65535 mismatch 0.8294 | emu saturated 0.017 -> mismatch among sat 0.301 / among in-range 0.838 | chip saturated where emu in-range 0.031 | median |d| in-range 5294.0
+c3_16/ScatterND_C: out max 65535 mismatch 0.5895 | emu saturated 0.062 -> mismatch among sat 0.313 / among in-range 0.608 | chip saturated where emu in-range 0.046 | median |d| in-range 1323.0
+m2/T_Softmax_W: out max 65535 mismatch 0.2146 | emu saturated 0.502 -> mismatch among sat 0.023 / among in-range 0.408 | chip saturated where emu in-range 0.009 | median |d| in-range 129.0
+c3_16/DeformConv_zero: out max 65535 mismatch 0.9083 | emu saturated 0.005 -> mismatch among sat 0.463 / among in-range 0.911 | chip saturated where emu in-range 0.017 | median |d| in-range 5016.0

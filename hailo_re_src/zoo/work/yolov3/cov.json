@@ -1,0 +1,732 @@
+{
+"layers": [
+{
+"layer": "yolov3/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 1108992
+},
+{
+"layer": "yolov3/normalization1",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 1108992
+},
+{
+"layer": "yolov3/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 11829248
+},
+{
+"layer": "yolov3/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 5914624
+},
+{
+"layer": "yolov3/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2957312
+},
+{
+"layer": "yolov3/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 5914624
+},
+{
+"layer": "yolov3/ew_add1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 5914624
+},
+{
+"layer": "yolov3/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2957312
+},
+{
+"layer": "yolov3/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2957312
+},
+{
+"layer": "yolov3/ew_add2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2957312
+},
+{
+"layer": "yolov3/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2957312
+},
+{
+"layer": "yolov3/ew_add3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2957312
+},
+{
+"layer": "yolov3/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/ew_add11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv38",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv42",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/ew_add19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv44",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv45",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv46",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/ew_add20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv47",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv48",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/ew_add21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv49",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv50",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/ew_add22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv51",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv52",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/ew_add23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv53",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv54",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv55",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv56",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv57",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv58",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv59",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 92416
+},
+{
+"layer": "yolov3/conv60",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 92055
+},
+{
+"layer": "yolov3/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 1108992
+},
+{
+"layer": "yolov3/conv61",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv62",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv63",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv64",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv65",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 369664
+},
+{
+"layer": "yolov3/conv66",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv67",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 184832
+},
+{
+"layer": "yolov3/conv68",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 368220
+},
+{
+"layer": "yolov3/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/concat2",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 2217984
+},
+{
+"layer": "yolov3/conv69",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv70",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv71",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv72",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv73",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 739328
+},
+{
+"layer": "yolov3/conv74",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1478656
+},
+{
+"layer": "yolov3/conv75",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1472880
+}
+]
+}

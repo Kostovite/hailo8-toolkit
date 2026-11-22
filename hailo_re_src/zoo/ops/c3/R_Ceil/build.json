@@ -1,0 +1,12 @@
+{
+ "case": "Ceil",
+ "rewrite_vs_orig_db": 349.8115692511212,
+ "ops_after": [
+  "Ceil",
+  "Conv"
+ ],
+ "opset_after": 17,
+ "pwl": [
+  "Ceil"
+ ]
+}

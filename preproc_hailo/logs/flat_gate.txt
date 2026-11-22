@@ -1,0 +1,4 @@
+FP torch                   synth photo: 1.262% (p95 3.86)  synth flat: 0.633% (p95 1.63)  uvdoc real: 0.210% (p95 0.36)   |chip-FP| 0.0000% max 0.000
+mesh_fp.npy                synth photo: 1.262% (p95 3.86)  synth flat: 0.633% (p95 1.63)  uvdoc real: 0.210% (p95 0.36)   |chip-FP| 0.0000% max 0.000
+mesh_int8.npy              synth photo: 1.292% (p95 3.94)  synth flat: 0.689% (p95 1.67)  uvdoc real: 0.292% (p95 0.42)   |chip-FP| 0.1991% max 0.780
+mesh_all16.npy             synth photo: 1.262% (p95 3.85)  synth flat: 0.634% (p95 1.64)  uvdoc real: 0.211% (p95 0.36)   |chip-FP| 0.0200% max 0.139

@@ -1,0 +1,33 @@
+{
+ "case": "ChannelShuffle_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_shuffle"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "feature_shuffle1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 81.17605410617472,
+ "hef_MB": 0.08,
+ "seconds": 9.3
+}

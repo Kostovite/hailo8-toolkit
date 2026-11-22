@@ -1,0 +1,29 @@
+{
+ "case": "T_Argmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "argmax",
+  "dw"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "dw1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 355.5964213933601,
+ "sqnr_hw_db": 21.4366121447644,
+ "hef_MB": 0.06,
+ "seconds": 7.6
+}

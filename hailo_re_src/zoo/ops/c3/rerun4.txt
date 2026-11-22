@@ -1,0 +1,8 @@
+R_Equal
+R_DFT_W
+STFT_power
+Einsum_matmul
+LinearAttention_op27
+OneHot_argmax
+Hardmax_C_onehot
+And_cast

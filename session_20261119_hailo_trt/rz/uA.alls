@@ -1,0 +1,2 @@
+quantization_param([resize3, resize4, slice1, slice2, concat12, slice3, slice4, concat13, slice5, slice6, concat14, slice7, slice8, concat15, resize5, slice10, slice9, concat16, slice11, slice12, concat17, resize6, slice13, slice14, concat18, slice15, slice16, concat19], precision_mode=a8_w8_a8)
+quantization_param([dw28, dw29, dw30, dw31], precision_mode=a8_w8_a16)

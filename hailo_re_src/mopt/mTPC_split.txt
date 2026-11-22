@@ -1,0 +1,14 @@
+WARNING ⚠️ Ultralytics settings reset to default values. This may be due to a possible problem with your settings or a recent ultralytics package update. 
+View Ultralytics Settings with 'yolo settings' or at '$HOME/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+bench_fp                     bench_sel 0.9233/0.8679   bench_test 0.9161/0.8553
+bench_q3a_s2000_har          bench_sel 0.9221/0.8476   bench_test 0.9197/0.8426
+mb_mTPC_L0                   bench_sel 0.9017/0.7956   bench_test 0.8987/0.7803
+mb_mTPC_2ep_s1150            bench_sel 0.9223/0.8418   bench_test 0.9145/0.8275
+mb_mTPC_2ep_s2300            bench_sel 0.9242/0.8536   bench_test 0.9165/0.8390
+mb_mTPC_2ep_s3450            bench_sel 0.9195/0.8505   bench_test 0.9164/0.8415
+mb_mTPC_2ep_s4600            bench_sel 0.9149/0.8469   bench_test 0.9153/0.8411
+mb_mTPC_2ep_s5750            bench_sel 0.9168/0.8492   bench_test 0.9137/0.8388
+mb_mTPC_2ep_s6900            bench_sel 0.9145/0.8489   bench_test 0.9124/0.8381
+mb_mTPC_2ep_s8050            bench_sel 0.9152/0.8494   bench_test 0.9146/0.8391
+mb_mTPC_2ep_s9200            bench_sel 0.9140/0.8475   bench_test 0.9136/0.8377

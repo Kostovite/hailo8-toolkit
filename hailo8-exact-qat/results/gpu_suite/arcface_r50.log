@@ -1,0 +1,4 @@
+/mnt/storage/anaconda3/envs/general/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+{"case": "arcface_r50", "conv_mode": "gemm", "T1_per_layer": {"checked": 86, "exact": 86, "not_exact": [], "s": 28.6}, "T2_chained": {"checked": 86, "value_mismatch": [], "pass": true, "s": 4.6}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": true, "flags": [], "mismatch_per_output": {"arcface_r50/fc1": 0}, "pass": true}, "PASS": true}

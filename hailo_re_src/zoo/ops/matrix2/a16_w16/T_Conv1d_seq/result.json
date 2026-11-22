@@ -1,0 +1,23 @@
+{
+ "case": "T_Conv1d_seq",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "format_conversion1",
+  "conv1",
+  "format_conversion2",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 134.00300446878987,
+ "sqnr_hw_db": 56.19813321107898,
+ "hef_MB": 0.31,
+ "seconds": 64.9
+}

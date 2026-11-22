@@ -1,0 +1,22 @@
+{
+ "case": "AvgPool2s2",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "avgpool1:HailoAvgPool",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 340.0743074069015,
+ "sqnr_hw_db": 38.87055835225452,
+ "hef_MB": 0.48,
+ "seconds": 12.6
+}

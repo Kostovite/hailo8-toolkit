@@ -1,0 +1,7 @@
+normalization1 = normalization([111.296 , 104.263, 104.396], [64.193 , 62.547, 60.324])
+pre_quantization_optimization(activation_clipping, layers=[conv2], mode=percentile, clipping_values=[0, 99.25])
+pre_quantization_optimization(activation_clipping, layers=[conv9], mode=percentile, clipping_values=[0, 99.25])
+pre_quantization_optimization(activation_clipping, layers=[conv20], mode=percentile, clipping_values=[0, 99.45])
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

@@ -1,0 +1,14 @@
+{
+ "case": "T_PixelUnshuffle",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "space_to_depth"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 38.98723466494453,
+ "hef_MB": 0.36,
+ "seconds": 11.1
+}

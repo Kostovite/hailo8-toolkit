@@ -1,0 +1,14 @@
+{
+ "case": "Attention_op23_causal",
+ "rewrite_vs_orig_db": 114.78001373578415,
+ "ops_after": [
+  "Add",
+  "Conv",
+  "MatMul",
+  "Mul",
+  "Reshape",
+  "Softmax",
+  "Transpose"
+ ],
+ "opset_after": 17
+}

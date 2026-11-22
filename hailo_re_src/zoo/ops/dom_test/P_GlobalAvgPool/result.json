@@ -1,0 +1,13 @@
+{
+ "case": "P_GlobalAvgPool",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "sqnr_native_db": 128.40692866871169,
+ "sqnr_hw_db": 50.91941222877951,
+ "hef_MB": 0.48,
+ "seconds": 12.0
+}

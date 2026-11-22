@@ -1,0 +1,368 @@
+{
+"layers": [
+{
+"layer": "nanodet_repvgg/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 519168
+},
+{
+"layer": "nanodet_repvgg/input_conversion",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 519168
+},
+{
+"layer": "nanodet_repvgg/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2076672
+},
+{
+"layer": "nanodet_repvgg/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 519168
+},
+{
+"layer": "nanodet_repvgg/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 519168
+},
+{
+"layer": "nanodet_repvgg/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 259584
+},
+{
+"layer": "nanodet_repvgg/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 259584
+},
+{
+"layer": "nanodet_repvgg/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 259584
+},
+{
+"layer": "nanodet_repvgg/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 259584
+},
+{
+"layer": "nanodet_repvgg/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 129792
+},
+{
+"layer": "nanodet_repvgg/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "nanodet_repvgg/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 21632
+},
+{
+"layer": "nanodet_repvgg/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "nanodet_repvgg/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "nanodet_repvgg/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 346112
+},
+{
+"layer": "nanodet_repvgg/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 346112
+},
+{
+"layer": "nanodet_repvgg/avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 346112
+},
+{
+"layer": "nanodet_repvgg/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 346112
+},
+{
+"layer": "nanodet_repvgg/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 335296
+},
+{
+"layer": "nanodet_repvgg/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "nanodet_repvgg/avgpool2",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "nanodet_repvgg/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 86528
+},
+{
+"layer": "nanodet_repvgg/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 83824
+},
+{
+"layer": "nanodet_repvgg/ew_add4",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 21632
+},
+{
+"layer": "nanodet_repvgg/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 21632
+},
+{
+"layer": "nanodet_repvgg/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 21632
+},
+{
+"layer": "nanodet_repvgg/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 20956
+},
+{
+"layer": "nanodet_repvgg/slice_0_0_conv28",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/slice_0_0_sigmoid_layer",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 216320
+},
+{
+"layer": "nanodet_repvgg/slice_0_1_conv28",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/slice_1_0_conv31",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/slice_1_0_sigmoid_layer",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 54080
+},
+{
+"layer": "nanodet_repvgg/slice_1_1_conv31",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/slice_2_0_conv34",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/slice_2_0_sigmoid_layer",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 13520
+},
+{
+"layer": "nanodet_repvgg/slice_2_1_conv34",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "nanodet_repvgg/yolov8_nms_postprocess",
+"type": "postprocess",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+}
+]
+}

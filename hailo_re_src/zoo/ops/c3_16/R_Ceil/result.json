@@ -1,0 +1,48 @@
+{
+ "case": "R_Ceil",
+ "stage": "ok",
+ "pwl_layers": [
+  "R_Ceil/activation1",
+  "R_Ceil/activation2"
+ ],
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add"
+ ],
+ "activations": [
+  "pwl"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation2",
+   "a16_w16_a16"
+  ],
+  [
+   "ew_add1",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.77561084016503,
+ "sqnr_hw_db": 41.63233430157203,
+ "hef_MB": 0.18,
+ "seconds": 13.7
+}

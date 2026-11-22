@@ -1,0 +1,14 @@
+{
+ "case": "Sub_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 355.1367544497851,
+ "sqnr_hw_db": 34.15195960792619,
+ "hef_MB": 0.11,
+ "seconds": 12.7
+}

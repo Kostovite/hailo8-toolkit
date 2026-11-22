@@ -1,0 +1,8 @@
+captured 5 conv layers, 24 atomic ops -> /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/gcap
+router/conv1: bias = f32(f32(23533 * i) * 2), |i| <= 32767
+router/conv2: bias = f32(f32(598 * i) * 1), |i| <= 32767
+router/conv3: bias = f32(f32(209 * i) * 1), |i| <= 32767
+router/conv4: bias = f32(f32(184 * i) * 1), |i| <= 32767
+router/conv5: bias = f32(f32(125 * i) * 1), |i| <= 32767
+5 layers annotated in /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/gcap
+CAPTURED /mnt/storage/lib_project/models/Hailo_model/convert/runs/router_t1/gcap

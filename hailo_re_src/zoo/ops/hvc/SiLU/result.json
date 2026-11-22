@@ -1,0 +1,6 @@
+{
+ "op": "SiLU",
+ "chip_sqnr_db": 37.85511578308094,
+ "host_sqnr_db": 43.97696441438495,
+ "boundary_MB_per_frame": 0.401
+}

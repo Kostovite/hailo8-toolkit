@@ -1,0 +1,24 @@
+{
+ "case": "T_Softplus",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "softplus"
+ ],
+ "prec": "a16_w4_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 148.74931394297928,
+ "sqnr_hw_db": 40.704181609129236,
+ "hef_MB": 0.13,
+ "seconds": 11.7
+}

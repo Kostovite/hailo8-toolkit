@@ -1,0 +1,33 @@
+{
+ "case": "T_PixelUnshuffle",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "space_to_depth"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "space_to_depth1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 81.17605410617472,
+ "hef_MB": 0.35,
+ "seconds": 13.2
+}

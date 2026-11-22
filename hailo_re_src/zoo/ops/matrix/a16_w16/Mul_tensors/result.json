@@ -1,0 +1,14 @@
+{
+ "case": "Mul_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 355.4983653663502,
+ "sqnr_hw_db": 36.03383305805093,
+ "hef_MB": 0.25,
+ "seconds": 14.2
+}

@@ -1,0 +1,14 @@
+{
+ "case": "BatchNorm",
+ "stage": "ok",
+ "hn_types": [
+  "batch_norm",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 141.8043929622537,
+ "sqnr_hw_db": 37.88016408444171,
+ "hef_MB": 0.09,
+ "seconds": 9.5
+}

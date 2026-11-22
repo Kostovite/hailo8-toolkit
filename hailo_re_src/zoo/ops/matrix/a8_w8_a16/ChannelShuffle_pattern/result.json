@@ -1,0 +1,14 @@
+{
+ "case": "ChannelShuffle_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_shuffle"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 38.985492099969,
+ "hef_MB": 0.08,
+ "seconds": 8.3
+}

@@ -1,0 +1,14 @@
+{
+ "case": "InstanceNorm",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization",
+  "normalization"
+ ],
+ "activations": [],
+ "sqnr_native_db": 137.89249822177027,
+ "sqnr_hw_db": 33.81983648249848,
+ "hef_MB": 0.38,
+ "seconds": 35.7
+}

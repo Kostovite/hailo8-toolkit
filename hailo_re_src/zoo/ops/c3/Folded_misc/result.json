@@ -1,0 +1,16 @@
+{
+ "case": "Folded_misc",
+ "stage": "ok",
+ "hn_types": [
+  "const_input",
+  "conv",
+  "ew_add",
+  "ew_mult"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 150.134972986076,
+ "sqnr_hw_db": 33.334704789936225,
+ "hef_MB": 0.19,
+ "seconds": 17.8
+}

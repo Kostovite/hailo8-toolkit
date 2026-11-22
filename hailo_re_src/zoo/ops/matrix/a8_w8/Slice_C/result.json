@@ -1,0 +1,14 @@
+{
+ "case": "Slice_C",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.1662947505875,
+ "sqnr_hw_db": 36.01665058974948,
+ "hef_MB": 0.08,
+ "seconds": 7.7
+}

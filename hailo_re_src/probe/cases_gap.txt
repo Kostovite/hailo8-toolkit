@@ -1,0 +1,2 @@
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_gap_conv
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_gap_fc_bcast

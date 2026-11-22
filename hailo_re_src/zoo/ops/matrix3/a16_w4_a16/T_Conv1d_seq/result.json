@@ -1,0 +1,25 @@
+{
+ "case": "T_Conv1d_seq",
+ "stage": "compile",
+ "hn_types": [
+  "conv",
+  "format_conversion"
+ ],
+ "activations": [],
+ "prec": "a16_w4_a16",
+ "prec_layers": [
+  "conv1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "format_conversion1:HailoFormatConversion",
+  "format_conversion2:HailoFormatConversion",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 134.00300446878987,
+ "sqnr_hw_db": -0.1174728139146293,
+ "error": "BackendAllocatorException: Compilation failed: precision mode is not accurate",
+ "trace": "conda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1852, in compile\n    hef, mapped_graph_file = self._compile(fps, allocator_script, mapping_timeout)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1846, in _compile\n    hef, mapped_graph_file, auto_alls = self.hef_full_build(fps, mapping_timeout, model_params, allocator_script)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1822, in hef_full_build\n    auto_alls, self._hef_data, self._integrated_graph = allocator.create_mapping_and_full_build_hef(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 764, in create_mapping_and_full_build_hef\n    self.call_builder(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 696, in call_builder\n    self.run_builder(network_graph_path, output_path, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 570, in run_builder\n    raise e.internal_exception(\"Compilation failed:\", hailo_tools_error=compiler_msg) from None\nhailo_sdk_client.sdk_backend.sdk_backend_exceptions.BackendAllocatorException: Compilation failed: precision mode is not accurate\n",
+ "seconds": 13.3
+}

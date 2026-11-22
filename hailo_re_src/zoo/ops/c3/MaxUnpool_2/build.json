@@ -1,0 +1,14 @@
+{
+ "case": "MaxUnpool_2",
+ "rewrite_vs_orig_db": 345.1136017384699,
+ "ops_after": [
+  "Cast",
+  "Conv",
+  "Less",
+  "MaxPool",
+  "Mul",
+  "Resize",
+  "Sub"
+ ],
+ "opset_after": 17
+}

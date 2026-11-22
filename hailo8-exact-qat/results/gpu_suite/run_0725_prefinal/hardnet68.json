@@ -1,0 +1,46 @@
+{
+ "case": "hardnet68",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "normalization|a8_w8_a8|linear": 1,
+  "conv|a8_w8_a8|clip": 7,
+  "maxpool|a8_w8_a8|linear": 4,
+  "conv|a8_w8_a8|relu": 60,
+  "concat|a8_w8_a8|": 35,
+  "avgpool|a8_w8_a8|linear": 1,
+  "dense|a8_w8_a8|linear": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 110,
+  "exact": 110,
+  "not_exact": [],
+  "s": 6.9
+ },
+ "T2_chained": {
+  "checked": 71,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 2.3
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "hardnet68/fc1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

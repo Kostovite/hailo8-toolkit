@@ -1,0 +1,18 @@
+{
+ "case": "T_Div_tensor",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "inv_pos",
+  "prelu"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 147.60727714239317,
+ "sqnr_hw_db": 30.91779067914959,
+ "hef_MB": 0.19,
+ "seconds": 49.6
+}

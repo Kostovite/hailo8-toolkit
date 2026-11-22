@@ -1,0 +1,15 @@
+{
+ "case": "Exp",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "exp"
+ ],
+ "sqnr_native_db": 151.06800713387963,
+ "sqnr_hw_db": 23.577113448900413,
+ "hef_MB": 0.09,
+ "seconds": 19.9
+}

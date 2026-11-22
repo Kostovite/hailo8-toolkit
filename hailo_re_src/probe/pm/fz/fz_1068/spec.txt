@@ -1,0 +1,1 @@
+c=64 h=20 gelu attn sub dw3 down_up

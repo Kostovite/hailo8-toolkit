@@ -1,0 +1,1 @@
+c=48 h=24 res fpn layernorm dw5 split2 fpn

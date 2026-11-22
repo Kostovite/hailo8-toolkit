@@ -1,0 +1,1 @@
+quantization_param([conv20], precision_mode=a8_w8_a16)

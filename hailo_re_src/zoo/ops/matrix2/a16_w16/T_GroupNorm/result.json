@@ -1,0 +1,21 @@
+{
+ "case": "T_GroupNorm",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "layer_normalization1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 128.44585195450887,
+ "sqnr_hw_db": 59.09308541061007,
+ "hef_MB": 0.26,
+ "seconds": 30.2
+}

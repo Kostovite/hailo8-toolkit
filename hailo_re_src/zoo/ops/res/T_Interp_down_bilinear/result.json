@@ -1,0 +1,12 @@
+{
+ "case": "T_Interp_down_bilinear",
+ "stage": "emulate",
+ "hn_types": [
+  "conv",
+  "resize"
+ ],
+ "activations": [],
+ "error": "AccelerasImplementationError: Not all layers in the models support bit exact",
+ "trace": "Traceback (most recent call last):\n  File \"/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/probe.py\", line 374, in run\n    be = runner.infer(ctx, nhwc(test))\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_common/states/states.py\", line 16, in wrapped_func\n    return func(self, *args, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py\", line 388, in infer\n    return self._infer_emulator(infer_info)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/runner/client_runner.py\", line 416, in _infer_emulator\n    return self._sdk_backend.acceleras_inference(infer_info)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1297, in acceleras_inference\n    self._inference_flow.set_bit_exact(True)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/inference_flow.py\", line 248, in set_bit_exact\n    raise AccelerasImplementationError(\"Not all layers in the models support bit exact\")\nhailo_model_optimization.acceleras.utils.acceleras_exceptions.AccelerasImplementationError: Not all layers in the models support bit exact\n",
+ "seconds": 6.6
+}

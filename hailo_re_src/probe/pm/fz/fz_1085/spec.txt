@@ -1,0 +1,1 @@
+c=128 h=20 gate res groupnorm c2f dw5 dw7

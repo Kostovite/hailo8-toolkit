@@ -1,0 +1,5 @@
+output 0 (1500, 112, 112, 256): rel_max 3.21e-04  mae 8.492e-08
+output 1 (1500, 224, 224, 32): rel_max 2.92e-04  mae 2.849e-07
+output 2 (1500, 56, 56, 256): rel_max 3.34e-04  mae 6.942e-08
+output 3 (1500, 28, 28, 256): rel_max 2.82e-04  mae 6.663e-08
+GATE_FP PASS tol 0.02

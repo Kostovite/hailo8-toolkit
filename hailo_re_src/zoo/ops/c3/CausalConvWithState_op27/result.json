@@ -1,0 +1,18 @@
+{
+ "case": "CausalConvWithState_op27",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "dw",
+  "external_pad",
+  "format_conversion"
+ ],
+ "activations": [
+  "silu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 141.02219262999935,
+ "sqnr_hw_db": 31.224307303648978,
+ "hef_MB": 0.17,
+ "seconds": 9.3
+}

@@ -1,0 +1,16 @@
+{
+ "case": "C_ArgMin_C",
+ "stage": "compile",
+ "hn_types": [
+  "argmax",
+  "dw",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 355.471061403293,
+ "sqnr_hw_db": 19.95892444134448,
+ "error": "BackendAllocatorException: Compilation failed: No successful assignments: argmax1 errors:\n\targmax1 failed on kernel validation: 16x4 is not supported in argmax1\n\targmax1 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1\nargmax1 errors:\n\targmax1 failed on kernel validation: 16x4 is not supported in argmax1\n\targmax1 failed on kernel validation: precision_mode A16_W16_A16 is not supported in a",
+ "trace": "ls_error=compiler_msg) from None\nhailo_sdk_client.sdk_backend.sdk_backend_exceptions.BackendAllocatorException: Compilation failed: No successful assignments: argmax1 errors:\n\targmax1 failed on kernel validation: 16x4 is not supported in argmax1\n\targmax1 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1\nargmax1 errors:\n\targmax1 failed on kernel validation: 16x4 is not supported in argmax1\n\targmax1 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1\nargmax1 errors:\n\targmax1_sd0 failed on kernel validation: 16x4 is not supported in argmax1_sd0\n\targmax1_sd0 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1_sd0\nargmax1 errors:\n\targmax1_sd0 failed on kernel validation: 16x4 is not supported in argmax1_sd0\n\targmax1_sd0 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1_sd0\nargmax1 errors:\n\targmax1_sd0 failed on kernel validation: 16x4 is not supported in argmax1_sd0\n\targmax1_sd0 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1_sd0\nargmax1 errors:\n\targmax1_sd4 failed on kernel validation: 16x4 is not supported in argmax1_sd4\n\targmax1_sd4 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1_sd4\nargmax1 errors:\n\targmax1_sd4 failed on kernel validation: 16x4 is not supported in argmax1_sd4\n\targmax1_sd4 failed on kernel validation: precision_mode A16_W16_A16 is not supported in argmax1_sd4\n\n",
+ "seconds": 8.6
+}

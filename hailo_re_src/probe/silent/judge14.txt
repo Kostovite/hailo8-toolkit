@@ -1,0 +1,71 @@
+== c3_16/DeformConv_zero
+chip batch   SNR dB vs float per frame: [72.5, 72.3, 72.3, 72.4, 72.4, 72.4, 72.3, 72.4]
+chip 1-by-1  SNR dB vs float per frame: [72.5, 72.3, 72.3, 72.4, 72.4, 72.4, 72.3, 72.4]
+emu batch    SNR dB vs float per frame: [72.5, 72.3, 72.3, 72.4, 72.4, 72.4, 72.3, 72.4]
+emu 1-by-1   SNR dB vs float per frame: [72.5, 72.3, 72.3, 72.4, 72.4, 72.4, 72.3, 72.4]
+== c3_16/DynQuant_ConvInteger
+chip batch   SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.5, 73.5]
+chip 1-by-1  SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.5, 73.5]
+emu batch    SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.6, 73.5]
+emu 1-by-1   SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.6, 73.5]
+== c3_16/Einsum_conv
+chip batch   SNR dB vs float per frame: [72.1, 72.1, 72.1, 72.2, 72.2, 72.1, 72.0, 72.5]
+chip 1-by-1  SNR dB vs float per frame: [72.1, 72.1, 72.1, 72.2, 72.2, 72.1, 72.0, 72.5]
+emu batch    SNR dB vs float per frame: [72.1, 72.1, 72.1, 72.2, 72.2, 72.1, 72.0, 72.5]
+emu 1-by-1   SNR dB vs float per frame: [72.1, 72.1, 72.1, 72.2, 72.2, 72.1, 72.0, 72.5]
+== c3_16/Mean2
+chip batch   SNR dB vs float per frame: [66.4, 66.3, 66.4, 66.4, 66.4, 66.4, 66.4, 66.4]
+chip 1-by-1  SNR dB vs float per frame: [66.4, 66.3, 66.4, 66.4, 66.4, 66.4, 66.4, 66.4]
+emu batch    SNR dB vs float per frame: [66.4, 66.3, 66.4, 66.4, 66.4, 66.4, 66.4, 66.3]
+emu 1-by-1   SNR dB vs float per frame: [66.4, 66.3, 66.4, 66.4, 66.4, 66.4, 66.4, 66.3]
+== c3_16/QDQ_conv
+chip batch   SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.5, 73.5]
+chip 1-by-1  SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.5, 73.5]
+emu batch    SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.6, 73.5]
+emu 1-by-1   SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.6, 73.5]
+== c3_16/QLinearConv
+chip batch   SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.5, 73.5]
+chip 1-by-1  SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.5, 73.5]
+emu batch    SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.6, 73.5]
+emu 1-by-1   SNR dB vs float per frame: [73.7, 73.7, 73.6, 73.8, 73.8, 73.7, 73.6, 73.5]
+== c3_16/ReduceLogSum_C
+chip batch   SNR dB vs float per frame: [13.4, 13.4, 13.3, 12.5, 13.1, 12.6, 13.2, 12.8]
+chip 1-by-1  SNR dB vs float per frame: [13.4, 13.4, 13.3, 12.5, 13.1, 12.6, 13.2, 12.8]
+emu batch    SNR dB vs float per frame: [13.4, 13.4, 13.3, 12.5, 13.1, 12.6, 13.2, 12.8]
+emu 1-by-1   SNR dB vs float per frame: [13.4, 13.4, 13.3, 12.5, 13.1, 12.6, 13.2, 12.8]
+== c3_16/R_Mod
+chip batch   SNR dB vs float per frame: [-inf, -inf, -inf, -inf, -inf, -inf, -inf, -inf]
+chip 1-by-1  SNR dB vs float per frame: [-inf, -inf, -inf, -inf, -inf, -inf, -inf, -inf]
+emu batch    SNR dB vs float per frame: [-inf, -inf, -inf, -inf, -inf, -inf, -inf, -inf]
+emu 1-by-1   SNR dB vs float per frame: [-inf, -inf, -inf, -inf, -inf, -inf, -inf, -inf]
+== c3_16/ScatterElements_C
+chip batch   SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+chip 1-by-1  SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+emu batch    SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+emu 1-by-1   SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+== c3_16/ScatterND_C
+chip batch   SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+chip 1-by-1  SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+emu batch    SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+emu 1-by-1   SNR dB vs float per frame: [75.0, 74.8, 74.9, 75.0, 75.1, 74.9, 75.0, 75.0]
+== c3_16/Sum3
+chip batch   SNR dB vs float per frame: [61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7]
+chip 1-by-1  SNR dB vs float per frame: [61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7]
+emu batch    SNR dB vs float per frame: [61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7]
+emu 1-by-1   SNR dB vs float per frame: [61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7, 61.7]
+== c3_16/TensorScatter_op24
+chip batch   SNR dB vs float per frame: [75.6, 75.4, 75.4, 75.8, 75.7, 75.4, 75.5, 75.5]
+chip 1-by-1  SNR dB vs float per frame: [75.6, 75.4, 75.4, 75.8, 75.7, 75.4, 75.5, 75.5]
+emu batch    SNR dB vs float per frame: [75.6, 75.4, 75.4, 75.7, 75.7, 75.4, 75.5, 75.5]
+emu 1-by-1   SNR dB vs float per frame: [75.6, 75.4, 75.4, 75.7, 75.7, 75.4, 75.5, 75.5]
+== m2/InstanceNorm
+chip batch   SNR dB vs float per frame: [19.7, 19.8, 19.5, 20.3, 20.0, 19.6, 19.2, 20.0]
+chip 1-by-1  SNR dB vs float per frame: [19.7, 19.8, 19.5, 20.3, 20.0, 19.6, 19.2, 20.0]
+emu batch    SNR dB vs float per frame: [19.7, 19.8, 19.5, 20.3, 20.0, 19.6, 19.2, 20.0]
+emu 1-by-1   SNR dB vs float per frame: [19.7, 19.8, 19.5, 20.3, 20.0, 19.6, 19.2, 20.0]
+== m2/T_Softmax_W
+chip batch   SNR dB vs float per frame: [27.6, 28.2, 30.4, 28.4, 29.9, 27.7, 29.7, 29.8]
+chip 1-by-1  SNR dB vs float per frame: [27.6, 28.2, 30.4, 28.4, 29.9, 27.7, 29.7, 29.8]
+emu batch    SNR dB vs float per frame: [27.6, 28.2, 30.4, 28.4, 29.9, 27.7, 29.7, 29.8]
+emu 1-by-1   SNR dB vs float per frame: [27.6, 28.2, 30.4, 28.4, 29.9, 27.7, 29.7, 29.8]
+DONE

@@ -1,0 +1,1 @@
+c=64 h=20 d2s groupnorm sigmoid attn

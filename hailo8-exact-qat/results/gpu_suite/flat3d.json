@@ -1,0 +1,49 @@
+{
+ "case": "flat3d",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "normalization|a8_w8_a16|linear": 1,
+  "conv|a16_w16_a16|relu": 31,
+  "activation|a16_w16_a8|linear": 46,
+  "external_pad|a8_w8_a8|": 27,
+  "activation|a8_w8_a16|linear": 58,
+  "slice|a8_w8_a8|": 47,
+  "conv|a16_w16_a16|linear": 13,
+  "ew_add|a16_w16_a16|relu": 10,
+  "concat|a16_w16_a16|": 5,
+  "conv|a16_w16_a16|leaky": 1,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 240,
+  "exact": 240,
+  "not_exact": [],
+  "s": 5.4
+ },
+ "T2_chained": {
+  "checked": 208,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 4.3
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "flat3/conv45": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

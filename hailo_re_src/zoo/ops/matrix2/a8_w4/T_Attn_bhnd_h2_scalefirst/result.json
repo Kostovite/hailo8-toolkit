@@ -1,0 +1,38 @@
+{
+ "case": "T_Attn_bhnd_h2_scalefirst",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv_feature_splitter1_1",
+  "conv_feature_splitter1_2",
+  "conv_feature_splitter1_3",
+  "ew_sub_softmax1",
+  "conv2",
+  "conv3"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "format_conversion1:HailoFormatConversion",
+  "format_conversion2:HailoFormatConversion",
+  "format_conversion3:HailoFormatConversion",
+  "matmul1:HailoMatmul",
+  "reduce_max_softmax1:HailoReduceMax",
+  "reduce_sum_softmax1:HailoReduceSum",
+  "ew_mult_softmax1:HailoElementwiseMult",
+  "matmul2:HailoMatmul",
+  "format_conversion4:HailoFormatConversion",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "error": "ValueError: Unsupported value [<PrecisionMode.a8_w4: 'a8_w4'>] for fields ['precision_mode'] in layer T_Attn_bhnd_h2_scalefirst/ew_sub_softmax1.\nOriginal command was quantization_param([conv_feature_splitter1_1, conv_feature_splitter1_2, conv_feature_splitter1_3, ew_sub_softmax1, conv2, conv3], precision_mode=a8_w4)\n",
+ "trace": "t/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 397, in setup_optimization\n    self._create_mix_precision()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 785, in _create_mix_precision\n    algo.run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 54, in run\n    self.finalize_config()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 74, in finalize_config\n    layer_config = self.finalize_layer_cfg(config.layers)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 104, in finalize_layer_cfg\n    self._validate_layer_config(lname, cfg)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 140, in _validate_layer_config\n    raise ValueError(\nValueError: Unsupported value [<PrecisionMode.a8_w4: 'a8_w4'>] for fields ['precision_mode'] in layer T_Attn_bhnd_h2_scalefirst/ew_sub_softmax1.\nOriginal command was quantization_param([conv_feature_splitter1_1, conv_feature_splitter1_2, conv_feature_splitter1_3, ew_sub_softmax1, conv2, conv3], precision_mode=a8_w4)\n\n",
+ "seconds": 7.1
+}

@@ -1,0 +1,14 @@
+{
+ "case": "Conv1d_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 136.5013749017649,
+ "sqnr_hw_db": 35.33233178188738,
+ "hef_MB": 0.14,
+ "seconds": 10.9
+}

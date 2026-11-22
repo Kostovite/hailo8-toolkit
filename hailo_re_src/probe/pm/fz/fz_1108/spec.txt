@@ -1,0 +1,1 @@
+c=32 h=20 mul2 maxpool attn dw7 shuffle cat

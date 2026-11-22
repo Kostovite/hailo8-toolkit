@@ -1,0 +1,38 @@
+{
+ "act": "LeakyRelu",
+ "pieces": 9,
+ "scale": 2.5,
+ "monotone": false,
+ "range": [
+  -18.20561981201172,
+  20.97377586364746
+ ],
+ "fit_sqnr_db": 123.57746678880297,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 34.661991596221924,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "leaky",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 35.22753715515137,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

@@ -1,0 +1,1 @@
+c=16 h=16 gate conv3 c2f up_down split2 gelu

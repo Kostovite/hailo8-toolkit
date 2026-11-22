@@ -1,0 +1,14 @@
+{
+ "case": "ReduceSumSquare_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [],
+ "sqnr_native_db": 129.53925875104719,
+ "sqnr_hw_db": 45.25557634266933,
+ "hef_MB": 0.1,
+ "seconds": 14.3
+}

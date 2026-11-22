@@ -1,0 +1,24 @@
+{
+ "case": "C_Gelu_tanh_op20",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "gelu"
+ ],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 144.99480490321193,
+ "sqnr_hw_db": 35.60034178687233,
+ "hef_MB": 0.14,
+ "seconds": 11.5
+}

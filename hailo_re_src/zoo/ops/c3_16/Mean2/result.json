@@ -1,0 +1,38 @@
+{
+ "case": "Mean2",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "ew_add1",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 348.9887858356727,
+ "sqnr_hw_db": 66.74314467867455,
+ "hef_MB": 0.19,
+ "seconds": 13.8
+}

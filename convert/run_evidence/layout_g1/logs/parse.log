@@ -1,0 +1,13 @@
+[info] Translation started on ONNX model layout
+[info] Restored ONNX model layout (completion time: 00:00:01.01)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:03.66)
+[info] NMS structure of yolov5 (or equivalent architecture) was detected. Default values of NMS anchors were loaded to NMS config json
+[info] Start nodes mapped from original model: 'image': 'layout/input_layer1'.
+[info] End nodes mapped from original model: '/decoder_input_proj.0/decoder_input_proj.0.0/Conv', '/decoder_input_proj.1/decoder_input_proj.1.0/Conv', '/decoder_input_proj.2/decoder_input_proj.2.0/Conv', '/encoder/encoder_mask_output/conv/Conv'.
+[info] Translation completed on ONNX model layout (completion time: 00:00:12.32)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/convert/runs/layout_g1/parsed.har
+out layout/output_layer1 [-1, 112, 112, 256]
+out layout/output_layer2 [-1, 56, 56, 256]
+out layout/output_layer3 [-1, 28, 28, 256]
+out layout/output_layer4 [-1, 224, 224, 32]
+layers 227

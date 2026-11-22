@@ -1,0 +1,33 @@
+{
+ "case": "ReduceMax_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "reduce_max1",
+   "a16_w16"
+  ],
+  [
+   "dw1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 345.49487287559896,
+ "sqnr_hw_db": 84.62494531983646,
+ "hef_MB": 0.06,
+ "seconds": 7.4
+}

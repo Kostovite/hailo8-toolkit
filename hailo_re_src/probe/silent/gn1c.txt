@@ -1,0 +1,1 @@
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/gn/op_gn1_compat

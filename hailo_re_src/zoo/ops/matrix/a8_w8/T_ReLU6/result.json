@@ -1,0 +1,16 @@
+{
+ "case": "T_ReLU6",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 349.1432664967889,
+ "sqnr_hw_db": 38.282475447266904,
+ "hef_MB": 0.09,
+ "seconds": 8.9
+}

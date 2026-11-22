@@ -1,0 +1,20 @@
+{
+ "case": "C_T_Logsumexp_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "ew_add",
+  "ew_sub",
+  "reduce_max",
+  "reduce_sum"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 149.03344773166455,
+ "sqnr_hw_db": 48.97240426207696,
+ "hef_MB": 0.14,
+ "seconds": 42.2
+}

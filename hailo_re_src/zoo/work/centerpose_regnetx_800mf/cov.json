@@ -1,0 +1,494 @@
+{
+"layers": [
+{
+"layer": "centerpose_regnetx_800mf/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 786432
+},
+{
+"layer": "centerpose_regnetx_800mf/input_conversion",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 786432
+},
+{
+"layer": "centerpose_regnetx_800mf/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2097152
+},
+{
+"layer": "centerpose_regnetx_800mf/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4194304
+},
+{
+"layer": "centerpose_regnetx_800mf/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2097152
+},
+{
+"layer": "centerpose_regnetx_800mf/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 524288
+},
+{
+"layer": "centerpose_regnetx_800mf/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1179648
+},
+{
+"layer": "centerpose_regnetx_800mf/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv30",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv34",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 294912
+},
+{
+"layer": "centerpose_regnetx_800mf/conv38",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 688128
+},
+{
+"layer": "centerpose_regnetx_800mf/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv42",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv44",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv45",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv46",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv47",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv48",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv49",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv50",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv51",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv52",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/conv53",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 172032
+},
+{
+"layer": "centerpose_regnetx_800mf/deconv1",
+"type": "deconv",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "centerpose_regnetx_800mf/deconv2",
+"type": "deconv",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "centerpose_regnetx_800mf/deconv3",
+"type": "deconv",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "centerpose_regnetx_800mf/conv54",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv55",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv56",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv57",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv58",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv59",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1048576
+},
+{
+"layer": "centerpose_regnetx_800mf/conv60",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 16384
+},
+{
+"layer": "centerpose_regnetx_800mf/conv61",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 32768
+},
+{
+"layer": "centerpose_regnetx_800mf/conv62",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 557056
+},
+{
+"layer": "centerpose_regnetx_800mf/conv63",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 32768
+},
+{
+"layer": "centerpose_regnetx_800mf/conv64",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 278528
+},
+{
+"layer": "centerpose_regnetx_800mf/conv65",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 32768
+}
+]
+}

@@ -1,0 +1,15 @@
+{
+ "case": "Gelu_sigmoid_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "swish"
+ ],
+ "sqnr_native_db": 143.7820274908222,
+ "sqnr_hw_db": 35.18285838908957,
+ "hef_MB": 0.1,
+ "seconds": 10.7
+}

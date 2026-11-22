@@ -1,0 +1,13 @@
+{
+ "case": "Not_cast",
+ "rewrite_vs_orig_db": 346.13429052960896,
+ "ops_after": [
+  "Cast",
+  "Clip",
+  "Conv",
+  "Greater",
+  "Mul",
+  "Sub"
+ ],
+ "opset_after": 17
+}

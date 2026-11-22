@@ -1,0 +1,8 @@
+{
+ "case": "DynQuant_ConvInteger",
+ "rewrite_vs_orig_db": 41.436742426104765,
+ "ops_after": [
+  "Conv"
+ ],
+ "opset_after": 17
+}

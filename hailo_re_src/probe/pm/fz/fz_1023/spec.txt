@@ -1,0 +1,1 @@
+c=64 h=20 cat gelu d2s conv3 hswish softmax_c attn

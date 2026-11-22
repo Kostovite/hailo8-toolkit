@@ -1,0 +1,13 @@
+{
+ "case": "ReduceSum_HW",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "reduce_sum"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "error": "ValueError: Unsupported value [<PrecisionMode.a8_w4: 'a8_w4'>] for fields ['precision_mode'] in layer ReduceSum_HW/reduce_sum1.\nOriginal command was quantization_param([reduce_sum1, conv1], precision_mode=a8_w4)\n",
+ "trace": "del_optimization/flows/optimization_flow.py\", line 372, in step1\n    self.setup_optimization()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 397, in setup_optimization\n    self._create_mix_precision()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 785, in _create_mix_precision\n    algo.run()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 54, in run\n    self.finalize_config()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 74, in finalize_config\n    layer_config = self.finalize_layer_cfg(config.layers)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 104, in finalize_layer_cfg\n    self._validate_layer_config(lname, cfg)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/algorithms/optimization_algorithm.py\", line 140, in _validate_layer_config\n    raise ValueError(\nValueError: Unsupported value [<PrecisionMode.a8_w4: 'a8_w4'>] for fields ['precision_mode'] in layer ReduceSum_HW/reduce_sum1.\nOriginal command was quantization_param([reduce_sum1, conv1], precision_mode=a8_w4)\n\n",
+ "seconds": 2.1
+}

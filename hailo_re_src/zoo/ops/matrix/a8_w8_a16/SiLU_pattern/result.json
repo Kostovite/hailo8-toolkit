@@ -1,0 +1,16 @@
+{
+ "case": "SiLU_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "silu"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 143.9425731189409,
+ "sqnr_hw_db": 33.04753362263075,
+ "hef_MB": 0.09,
+ "seconds": 9.2
+}

@@ -1,0 +1,2 @@
+quantization_param([conv61, conv64, conv77, conv80, conv91, conv94], precision_mode=a8_w8_a16)
+quantization_param([conv2, conv1, conv60, conv_feature_splitter1_2, dw4, conv_feature_splitter6_2, conv76, conv73], precision_mode=a16_w16)

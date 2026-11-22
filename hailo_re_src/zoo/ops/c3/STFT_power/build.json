@@ -1,0 +1,14 @@
+{
+ "case": "STFT_power",
+ "rewrite_vs_orig_db": 135.4254175002745,
+ "ops_after": [
+  "Add",
+  "Concat",
+  "Conv",
+  "Mul",
+  "ReduceMean",
+  "Reshape",
+  "Transpose"
+ ],
+ "opset_after": 17
+}

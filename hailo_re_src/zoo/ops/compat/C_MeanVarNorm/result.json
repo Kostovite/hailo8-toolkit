@@ -1,0 +1,14 @@
+{
+ "case": "C_MeanVarNorm",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 138.73116354511714,
+ "sqnr_hw_db": 36.14116712215639,
+ "hef_MB": 0.38,
+ "seconds": 25.2
+}

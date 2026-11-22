@@ -1,0 +1,15 @@
+{
+ "case": "T_Chunk_add",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 352.19704107370035,
+ "sqnr_hw_db": 35.86289433257755,
+ "hef_MB": 0.09,
+ "seconds": 10.5
+}

@@ -1,0 +1,29 @@
+{
+ "case": "C_ReduceL1_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "dw",
+  "reduce_sum"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "activation1_normalization5",
+  "activation1_normalization28",
+  "activation1_relu6",
+  "activation1_ew_add7",
+  "reduce_sum1",
+  "dw1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 142.5036063945968,
+ "sqnr_hw_db": 76.20498469475505,
+ "hef_MB": 0.51,
+ "seconds": 19.1
+}

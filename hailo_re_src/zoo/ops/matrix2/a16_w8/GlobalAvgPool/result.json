@@ -1,0 +1,21 @@
+{
+ "case": "GlobalAvgPool",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "avgpool1:HailoAvgPool",
+  "fc1:HailoDense",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 125.62485235528754,
+ "sqnr_hw_db": 10.955950118243255,
+ "hef_MB": 0.48,
+ "seconds": 13.7
+}

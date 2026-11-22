@@ -1,0 +1,19 @@
+{
+ "case": "L2Norm_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier",
+  "normalization",
+  "reduce_sum"
+ ],
+ "activations": [
+  "inv_pos",
+  "sqrt"
+ ],
+ "sqnr_native_db": 143.79372771654343,
+ "sqnr_hw_db": 35.86882040739582,
+ "hef_MB": 0.26,
+ "seconds": 114.4
+}

@@ -1,0 +1,17 @@
+{
+ "case": "ReduceL2_HW",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 134.8368420418113,
+ "sqnr_hw_db": 55.439047737396436,
+ "hef_MB": 0.09,
+ "seconds": 35.0
+}

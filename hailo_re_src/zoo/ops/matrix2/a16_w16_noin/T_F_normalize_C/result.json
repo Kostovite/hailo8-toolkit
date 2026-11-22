@@ -1,0 +1,32 @@
+{
+ "case": "T_F_normalize_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [
+  "clip",
+  "inv_pos",
+  "sqrt"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "reduce_sum1",
+  "activation1",
+  "activation2",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "square1:HailoFeatureMultiplier",
+  "ew_mult1:HailoElementwiseMult"
+ ],
+ "sqnr_native_db": 143.81322673155674,
+ "sqnr_hw_db": 35.47376731995135,
+ "hef_MB": 0.19,
+ "seconds": 124.9
+}

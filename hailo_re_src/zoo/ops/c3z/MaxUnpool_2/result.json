@@ -1,0 +1,61 @@
+{
+ "case": "MaxUnpool_2",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "maxpool",
+  "normalization",
+  "resize"
+ ],
+ "activations": [
+  "clip",
+  "less"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "maxpool1",
+   "a8_w8_a8"
+  ],
+  [
+   "resize1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub1",
+   "a8_w8_a16"
+  ],
+  [
+   "normalization1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "normalization2",
+   "a16_w16_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 348.06478928283633,
+ "sqnr_hw_db": 20.634487381153527,
+ "hef_MB": 0.5,
+ "seconds": 24.2
+}

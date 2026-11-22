@@ -1,0 +1,9 @@
+{
+ "case": "GatherElements_C",
+ "rewrite_vs_orig_db": 343.04163028162543,
+ "ops_after": [
+  "Conv",
+  "Gather"
+ ],
+ "opset_after": 17
+}

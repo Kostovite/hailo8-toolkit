@@ -1,0 +1,15 @@
+{
+ "case": "Clip_pm1",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "sqnr_native_db": 346.86371680066907,
+ "sqnr_hw_db": 36.621825658885584,
+ "hef_MB": 0.09,
+ "seconds": 12.0
+}

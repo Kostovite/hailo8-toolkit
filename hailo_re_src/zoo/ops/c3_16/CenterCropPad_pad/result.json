@@ -1,0 +1,33 @@
+{
+ "case": "CenterCropPad_pad",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "external_pad1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 81.17605410617472,
+ "hef_MB": 0.07,
+ "seconds": 7.2
+}

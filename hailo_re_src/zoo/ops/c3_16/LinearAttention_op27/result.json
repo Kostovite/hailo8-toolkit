@@ -1,0 +1,82 @@
+{
+ "case": "LinearAttention_op27",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "const_input",
+  "conv",
+  "dw",
+  "ew_mult",
+  "ew_sub",
+  "format_conversion",
+  "matmul",
+  "normalization"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "const_input1",
+   "a8_w8_a8"
+  ],
+  [
+   "const_input2",
+   "a8_w8_a8"
+  ],
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv2",
+   "a8_w8_a8"
+  ],
+  [
+   "conv3",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion1",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion2",
+   "a8_w8_a8"
+  ],
+  [
+   "dw1",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion3",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub1",
+   "a8_w8_a16"
+  ],
+  [
+   "format_conversion4",
+   "a16_w16"
+  ],
+  [
+   "conv4",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 135.3981198268129,
+ "sqnr_hw_db": 29.052891365655107,
+ "hef_MB": 1.3,
+ "seconds": 49.7
+}

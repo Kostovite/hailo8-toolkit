@@ -1,0 +1,24 @@
+{
+ "case": "HardSwish_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "hardswish"
+ ],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 146.01425259222697,
+ "sqnr_hw_db": 30.939633897892897,
+ "hef_MB": 0.13,
+ "seconds": 10.0
+}

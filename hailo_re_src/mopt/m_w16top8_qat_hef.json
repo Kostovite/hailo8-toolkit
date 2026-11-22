@@ -1,0 +1,784 @@
+{
+ "file": "/mnt/storage/lib_project/models/Hailo_model/hailo_re/mopt/m_w16top8_qat.hef",
+ "version": 2,
+ "size": 35744071,
+ "ccw_offset": 7583503,
+ "groups": [
+  {
+   "name": "",
+   "preliminary_bytes": 4397464,
+   "preliminary_actions": {
+    "disable_lcu": 89,
+    "write_data_ccw_ptr": 429,
+    "wait_for_module_config_done": 19,
+    "enable_sequencer": 8,
+    "wait_for_seqeuncer": 8,
+    "allow_input_dataflow": 1,
+    "enable_lcu": 89
+   },
+   "contexts": [
+    {
+     "index": 0,
+     "name": "",
+     "config_bytes": 5923952,
+     "actions": {
+      "allow_input_dataflow": 1,
+      "write_data_ccw_ptr": 369,
+      "disable_lcu": 89,
+      "wait_for_module_config_done": 10,
+      "enable_sequencer": 8,
+      "wait_for_seqeuncer": 8,
+      "enable_lcu": 79
+     },
+     "edges": [
+      {
+       "name": "best/input_layer1",
+       "dir": "in",
+       "conn": "boundary",
+       "shape": [
+        896,
+        896,
+        3
+       ],
+       "frame_bytes": 2408448,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/conv22",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        512
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/conv21",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        112,
+        112,
+        512
+       ],
+       "frame_bytes": 6422528,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      }
+     ],
+     "io_bytes": {
+      "boundary/in": 2408448,
+      "inter_context/out": 8028160
+     }
+    },
+    {
+     "index": 1,
+     "name": "",
+     "config_bytes": 6040064,
+     "actions": {
+      "allow_input_dataflow": 1,
+      "write_data_ccw_ptr": 365,
+      "disable_lcu": 79,
+      "wait_for_module_config_done": 10,
+      "enable_sequencer": 8,
+      "wait_for_seqeuncer": 8,
+      "enable_lcu": 62
+     },
+     "edges": [
+      {
+       "name": "best/ddr_portal_from_conv31_dc_to_concat11",
+       "dir": "in",
+       "conn": "ddr",
+       "shape": [
+        56,
+        56,
+        512
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 114,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/ddr_portal_from_dw1_defuse_reshape_hxf_to_w_transposed_to_dw1_defuse_1x1",
+       "dir": "in",
+       "conn": "ddr",
+       "shape": [
+        28,
+        28,
+        2304
+       ],
+       "frame_bytes": 2064384,
+       "buffers": 58,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_0_to_best_context_1_7223",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        512
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/conv_feature_splitter7_2",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        256
+       ],
+       "frame_bytes": 802816,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/conv52",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        128
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/conv54",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        128
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/conv51",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        128
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/conv49",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        512
+       ],
+       "frame_bytes": 458752,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/conv_feature_splitter7_1",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        256
+       ],
+       "frame_bytes": 802816,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/dw1",
+       "dir": "out",
+       "conn": "ddr",
+       "shape": [
+        28,
+        28,
+        2304
+       ],
+       "frame_bytes": 2064384,
+       "buffers": 58,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/conv31",
+       "dir": "out",
+       "conn": "ddr",
+       "shape": [
+        56,
+        56,
+        512
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 114,
+       "peer": 1,
+       "engine": 0
+      }
+     ],
+     "io_bytes": {
+      "ddr/in": 3670016,
+      "inter_context/in": 1605632,
+      "inter_context/out": 3268608,
+      "ddr/out": 3670016
+     }
+    },
+    {
+     "index": 2,
+     "name": "",
+     "config_bytes": 5843208,
+     "actions": {
+      "allow_input_dataflow": 6,
+      "write_data_ccw_ptr": 496,
+      "disable_lcu": 62,
+      "wait_for_module_config_done": 10,
+      "enable_sequencer": 8,
+      "wait_for_seqeuncer": 8,
+      "enable_lcu": 79
+     },
+     "edges": [
+      {
+       "name": "best/best_best_context_1_to_best_context_2_7236",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        128
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_1_to_best_context_2_7232",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        128
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_1_to_best_context_2_7230",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        256
+       ],
+       "frame_bytes": 802816,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_1_to_best_context_2_7234",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        128
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_1_to_best_context_2_7228",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        256
+       ],
+       "frame_bytes": 802816,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_0_to_best_context_2_7221",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        112,
+        112,
+        512
+       ],
+       "frame_bytes": 6422528,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/precision_change2",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        112,
+        112,
+        256
+       ],
+       "frame_bytes": 3211264,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/conv58",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        512
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/conv69",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        112,
+        112,
+        64
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      }
+     ],
+     "io_bytes": {
+      "inter_context/in": 9232384,
+      "inter_context/out": 6422528
+     }
+    },
+    {
+     "index": 3,
+     "name": "",
+     "config_bytes": 1730864,
+     "actions": {
+      "allow_input_dataflow": 4,
+      "write_data_ccw_ptr": 208,
+      "disable_lcu": 79,
+      "wait_for_module_config_done": 10,
+      "enable_sequencer": 8,
+      "wait_for_seqeuncer": 8,
+      "enable_lcu": 65
+     },
+     "edges": [
+      {
+       "name": "best/best_best_context_2_to_best_context_3_7238",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        56,
+        56,
+        512
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_1_to_best_context_3_7226",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        512
+       ],
+       "frame_bytes": 458752,
+       "buffers": 4294967295,
+       "peer": 1,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_2_to_best_context_3_7242",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        112,
+        112,
+        256
+       ],
+       "frame_bytes": 3211264,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_2_to_best_context_3_7240",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        112,
+        112,
+        64
+       ],
+       "frame_bytes": 1605632,
+       "buffers": 4294967295,
+       "peer": 2,
+       "engine": 0
+      },
+      {
+       "name": "best/conv_feature_splitter11_1",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        128
+       ],
+       "frame_bytes": 114688,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/conv_feature_splitter10_2",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/conv_feature_splitter10_1",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/ew_add19",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/precision_change5",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/conv_feature_splitter11_3",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/activation2",
+       "dir": "out",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 4,
+       "engine": 0
+      },
+      {
+       "name": "best/conv90",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        56,
+        56,
+        14
+       ],
+       "frame_bytes": 100352,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/conv74",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        112,
+        112,
+        14
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/conv87",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        56,
+        56,
+        4
+       ],
+       "frame_bytes": 25088,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/conv71",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        112,
+        112,
+        4
+       ],
+       "frame_bytes": 100352,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      }
+     ],
+     "io_bytes": {
+      "inter_context/in": 6881280,
+      "inter_context/out": 1662976,
+      "boundary/out": 627200
+     }
+    },
+    {
+     "index": 4,
+     "name": "",
+     "config_bytes": 4225016,
+     "actions": {
+      "allow_input_dataflow": 7,
+      "write_data_ccw_ptr": 621,
+      "disable_lcu": 65,
+      "wait_for_module_config_done": 10,
+      "enable_sequencer": 8,
+      "wait_for_seqeuncer": 8,
+      "enable_lcu": 89
+     },
+     "edges": [
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7260",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 401408,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7258",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7256",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7253",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        128
+       ],
+       "frame_bytes": 114688,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7251",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7249",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/best_best_context_3_to_best_context_4_7247",
+       "dir": "in",
+       "conn": "inter_context",
+       "shape": [
+        28,
+        28,
+        256
+       ],
+       "frame_bytes": 229376,
+       "buffers": 4294967295,
+       "peer": 3,
+       "engine": 0
+      },
+      {
+       "name": "best/conv104",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        28,
+        28,
+        14
+       ],
+       "frame_bytes": 25088,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "best/conv101",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        28,
+        28,
+        4
+       ],
+       "frame_bytes": 12544,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      }
+     ],
+     "io_bytes": {
+      "inter_context/in": 1662976,
+      "boundary/out": 37632
+     }
+    }
+   ]
+  }
+ ]
+}

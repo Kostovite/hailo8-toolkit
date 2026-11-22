@@ -1,0 +1,13 @@
+{
+ "case": "Conv3x3",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "sqnr_native_db": 351.95223455791626,
+ "sqnr_hw_db": 18.812305316289727,
+ "hef_MB": 0.1,
+ "seconds": 8.9
+}

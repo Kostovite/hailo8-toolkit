@@ -1,0 +1,20 @@
+{
+ "case": "C_Hardmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "normalization",
+  "reduce_max"
+ ],
+ "activations": [
+  "clip",
+  "relu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 177.60887531982948,
+ "sqnr_hw_db": 8.859715261363757,
+ "hef_MB": 0.4,
+ "seconds": 12.8
+}

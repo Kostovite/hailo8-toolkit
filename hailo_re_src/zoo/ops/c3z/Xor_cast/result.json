@@ -1,0 +1,72 @@
+{
+ "case": "Xor_cast",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult",
+  "ew_sub",
+  "normalization"
+ ],
+ "activations": [
+  "clip",
+  "greater",
+  "prelu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "normalization1",
+   "a8_w8_a16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "normalization2",
+   "a8_w8_a16"
+  ],
+  [
+   "activation2",
+   "a16_w16_a16"
+  ],
+  [
+   "ew_sub1",
+   "a16_w16"
+  ],
+  [
+   "ew_sub1_normalization9",
+   "a16_w16"
+  ],
+  [
+   "ew_sub1_normalization212",
+   "a16_w16_a8"
+  ],
+  [
+   "ew_sub1_relu10",
+   "a16_w16_a8"
+  ],
+  [
+   "ew_sub1_ew_add11",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 340.6255942272419,
+ "sqnr_hw_db": 13.198975125170831,
+ "hef_MB": 1.0,
+ "seconds": 36.4
+}

@@ -1,0 +1,27 @@
+{
+ "case": "Abs",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "activation1_normalization4",
+  "activation1_normalization27",
+  "activation1_relu5",
+  "activation1_ew_add6",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 78.9579066989181,
+ "hef_MB": 0.19,
+ "seconds": 16.7
+}

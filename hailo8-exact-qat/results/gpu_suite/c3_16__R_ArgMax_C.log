@@ -1,0 +1,8 @@
+UNSUPPORTED R_ArgMax_C/argmax1 (argmax): NotImplementedError: NotImplementedError: R_ArgMax_C/argmax1: argmax | chain: atomic op ArgMaxOp (R_ArgMax_C/argmax1/argmax_op)
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/gpu_suite.py", line 62, in <module>
+    t = time.time(); _, rep2 = G.run(hn, P, X[:1], dev, check=True, cont=False)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 195, in run
+    raise NotImplementedError(f"{type(e0).__name__}: {str(e0)[:80]} | chain: {e1}") from None
+NotImplementedError: NotImplementedError: R_ArgMax_C/argmax1: argmax | chain: atomic op ArgMaxOp (R_ArgMax_C/argmax1/argmax_op)

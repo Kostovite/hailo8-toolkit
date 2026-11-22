@@ -1,0 +1,1 @@
+c=64 h=20 attn up_down dw5 dw7 pad_conv conv5 softmax_c

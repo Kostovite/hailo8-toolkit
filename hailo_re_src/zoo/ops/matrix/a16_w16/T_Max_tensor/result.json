@@ -1,0 +1,15 @@
+{
+ "case": "T_Max_tensor",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "reduce_max"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 350.3199781727068,
+ "sqnr_hw_db": 10.916918978679956,
+ "hef_MB": 0.2,
+ "seconds": 14.3
+}

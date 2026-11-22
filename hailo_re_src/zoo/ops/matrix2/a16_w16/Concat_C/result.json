@@ -1,0 +1,22 @@
+{
+ "case": "Concat_C",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "conv1",
+  "concat1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 355.0735370125698,
+ "sqnr_hw_db": 74.88983086158325,
+ "hef_MB": 0.2,
+ "seconds": 12.3
+}

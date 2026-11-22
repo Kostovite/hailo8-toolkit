@@ -1,0 +1,14 @@
+{
+ "case": "Concat_C",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 355.0735370125698,
+ "sqnr_hw_db": 36.52152932252597,
+ "hef_MB": 0.26,
+ "seconds": 12.0
+}

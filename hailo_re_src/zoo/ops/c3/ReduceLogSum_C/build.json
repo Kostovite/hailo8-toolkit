@@ -1,0 +1,10 @@
+{
+ "case": "ReduceLogSum_C",
+ "rewrite_vs_orig_db": 155.7041886384227,
+ "ops_after": [
+  "Conv",
+  "Log",
+  "ReduceSum"
+ ],
+ "opset_after": 17
+}

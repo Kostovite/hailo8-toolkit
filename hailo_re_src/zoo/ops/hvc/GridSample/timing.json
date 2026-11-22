@@ -1,0 +1,6 @@
+{
+ "host_op_ms": 0.34048622008413076,
+ "chip_error": "HailoRTException: libhailort failed with error: 13 (HAILO_OPEN_FILE_FAILURE)",
+ "host_1chip_fps": 129.50606788302804,
+ "host_2chip_fps": 264.76898400896556
+}

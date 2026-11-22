@@ -1,0 +1,36 @@
+{
+ "case": "T_MHA_torch_h4",
+ "stage": "quantize",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "format_conversion1",
+  "conv_feature_splitter1_1",
+  "conv_feature_splitter1_2",
+  "conv_feature_splitter1_3",
+  "reduce_max_softmax1",
+  "ew_sub_softmax1",
+  "reduce_sum_softmax1",
+  "conv2",
+  "format_conversion2",
+  "conv3",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "matmul1:HailoMatmul",
+  "ew_mult_softmax1:HailoElementwiseMult",
+  "matmul2:HailoMatmul"
+ ],
+ "error": "AccelerasUnsupportedError: Unsupported layers for the provided optimization target. Review the log to see exact layers and configurations",
+ "trace": "ile \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/tools/orchestator.py\", line 239, in wrapper\n    return func(self, *args, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 357, in run\n    step_func()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/tools/subprocess_wrapper.py\", line 153, in parent_wrapper\n    func(self, *args, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 373, in step1\n    self.pre_quantization_structural()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 420, in pre_quantization_structural\n    self._correct_model()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 637, in _correct_model\n    self._verify_hw_support()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_model_optimization/flows/optimization_flow.py\", line 892, in _verify_hw_support\n    raise AccelerasUnsupportedError(\nhailo_model_optimization.acceleras.utils.acceleras_exceptions.AccelerasUnsupportedError: Unsupported layers for the provided optimization target. Review the log to see exact layers and configurations\n",
+ "seconds": 7.9
+}

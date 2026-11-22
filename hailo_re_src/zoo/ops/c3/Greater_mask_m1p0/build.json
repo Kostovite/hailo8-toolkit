@@ -1,0 +1,11 @@
+{
+ "case": "Greater_mask_m1p0",
+ "rewrite_vs_orig_db": 346.52547852910294,
+ "ops_after": [
+  "Cast",
+  "Conv",
+  "Greater",
+  "Mul"
+ ],
+ "opset_after": 17
+}

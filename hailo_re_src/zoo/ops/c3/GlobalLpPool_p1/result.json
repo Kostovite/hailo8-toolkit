@@ -1,0 +1,17 @@
+{
+ "case": "GlobalLpPool_p1",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "reduce_sum"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 135.1729716103473,
+ "sqnr_hw_db": 53.94451634416605,
+ "hef_MB": 0.09,
+ "seconds": 12.5
+}

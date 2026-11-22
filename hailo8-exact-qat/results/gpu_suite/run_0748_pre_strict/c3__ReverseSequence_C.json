@@ -1,0 +1,42 @@
+{
+ "case": "c3__ReverseSequence_C",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "slice|a8_w8_a8|": 13,
+  "concat|a8_w8_a8|": 1,
+  "conv|a8_w8_a8|linear": 1,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 16,
+  "exact": 16,
+  "not_exact": [],
+  "s": 0.6
+ },
+ "T2_chained": {
+  "checked": 15,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "ReverseSequence_C/conv1": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

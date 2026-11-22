@@ -1,0 +1,1 @@
+c=64 h=16 softmax_c dw5 mul2 maxpool gelu cat up_down

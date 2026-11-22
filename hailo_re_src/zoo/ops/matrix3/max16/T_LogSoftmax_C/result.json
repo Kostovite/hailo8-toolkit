@@ -1,0 +1,55 @@
+{
+ "case": "T_LogSoftmax_C",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "reduce_max",
+  "reduce_sum"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "reduce_max1",
+   "a16_w16"
+  ],
+  [
+   "ew_sub1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "reduce_sum1",
+   "a16_w16_a16"
+  ],
+  [
+   "ew_sub2",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 151.54906249662096,
+ "sqnr_hw_db": 58.01075486158203,
+ "hef_MB": 0.14,
+ "seconds": 83.7
+}

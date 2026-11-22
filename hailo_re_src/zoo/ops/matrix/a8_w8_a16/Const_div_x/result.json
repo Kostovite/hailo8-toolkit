@@ -1,0 +1,16 @@
+{
+ "case": "Const_div_x",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "inv_pos"
+ ],
+ "prec": "a8_w8_a16",
+ "sqnr_native_db": 355.6175880869358,
+ "sqnr_hw_db": 25.86936392302571,
+ "hef_MB": 0.09,
+ "seconds": 34.2
+}

@@ -1,0 +1,29 @@
+{
+ "case": "Div_by_const",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 145.85773435349634,
+ "sqnr_hw_db": 81.17605895138354,
+ "hef_MB": 0.07,
+ "seconds": 8.6
+}

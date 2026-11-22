@@ -1,0 +1,1 @@
+c=96 h=20 bilinear fpn hswish gelu hswish

@@ -1,0 +1,38 @@
+{
+ "act": "Sigmoid",
+ "pieces": 9,
+ "scale": 1.0,
+ "monotone": false,
+ "range": [
+  -7.313560962677002,
+  8.549930572509766
+ ],
+ "fit_sqnr_db": 49.90344179599548,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 40.09671211242676,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "sigmoid",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 42.029194831848145,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

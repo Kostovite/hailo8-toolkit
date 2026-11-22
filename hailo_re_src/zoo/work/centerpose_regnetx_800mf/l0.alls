@@ -1,0 +1,9 @@
+normalization1 = normalization([104.04, 113.985, 119.85], [73.695, 69.87, 70.89])
+change_output_activation(centerpose_regnetx_800mf/conv64, sigmoid)
+change_output_activation(centerpose_regnetx_800mf/conv60, sigmoid)
+input_conversion = input_conversion(bgr_to_rgb)
+model_optimization_config(calibration, batch_size=8, calibset_size=2048)
+quantization_param(output_layer1, precision_mode=a16_w16)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

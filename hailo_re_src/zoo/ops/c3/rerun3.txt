@@ -1,0 +1,13 @@
+R_Mod
+R_Equal
+R_SpaceToDepth
+R_DFT_W
+STFT_power
+CausalConvWithState_op27
+Einsum_matmul
+LinearAttention_op27
+Attention_op23_causal
+And_cast
+Xor_cast
+OneHot_argmax
+Hardmax_C_onehot

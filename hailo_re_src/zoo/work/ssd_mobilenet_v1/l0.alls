@@ -1,0 +1,6 @@
+new_normalization1 = normalization([127.5, 127.5, 127.5], [127.5, 127.5, 127.5])
+
+nms_postprocess(meta_arch=ssd)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

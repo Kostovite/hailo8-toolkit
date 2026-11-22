@@ -1,0 +1,1 @@
+c=32 h=20 attn down_up sub dw7

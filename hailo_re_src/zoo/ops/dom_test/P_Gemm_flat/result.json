@@ -1,0 +1,13 @@
+{
+ "case": "P_Gemm_flat",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "dense"
+ ],
+ "activations": [],
+ "sqnr_native_db": 130.4435466959478,
+ "sqnr_hw_db": 43.87157182617998,
+ "hef_MB": 0.49,
+ "seconds": 14.3
+}

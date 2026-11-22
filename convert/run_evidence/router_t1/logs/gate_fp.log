@@ -1,0 +1,4 @@
+output 0 (296, 21): rel_max 2.12e-07  mae 1.801e-06
+output 1 (296, 6): rel_max 1.81e-07  mae 1.237e-06
+output 2 (296, 3): rel_max 1.91e-07  mae 1.103e-06
+GATE_FP PASS tol 0.001

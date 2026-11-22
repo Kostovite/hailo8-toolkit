@@ -1,0 +1,23 @@
+{
+ "case": "T_Sqrt",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 144.74110220828004,
+ "sqnr_hw_db": 57.93125515924575,
+ "hef_MB": 0.09,
+ "seconds": 36.5
+}

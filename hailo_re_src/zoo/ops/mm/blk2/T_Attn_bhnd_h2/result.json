@@ -1,0 +1,19 @@
+{
+ "case": "T_Attn_bhnd_h2",
+ "stage": "compile",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 130.9977357244548,
+ "sqnr_hw_db": 20.42329393188897,
+ "error": "EncodeError: Message client.ProtoIntegratedHWGraph is missing required fields: network_graph.nodes[9].type",
+ "trace": "\n    hef, mapped_graph_file = self._compile(fps, allocator_script, mapping_timeout)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1846, in _compile\n    hef, mapped_graph_file, auto_alls = self.hef_full_build(fps, mapping_timeout, model_params, allocator_script)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/sdk_backend/sdk_backend.py\", line 1822, in hef_full_build\n    auto_alls, self._hef_data, self._integrated_graph = allocator.create_mapping_and_full_build_hef(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 764, in create_mapping_and_full_build_hef\n    self.call_builder(\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 696, in call_builder\n    self.run_builder(network_graph_path, output_path, **kwargs)\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/hailo_sdk_client/allocator/hailo_tools_runner.py\", line 547, in run_builder\n    ).SerializeToString()\n  File \"/mnt/storage/anaconda3/envs/hailo_env/lib/python3.10/site-packages/google/protobuf/internal/python_message.py\", line 1074, in SerializeToString\n    raise message_mod.EncodeError(\ngoogle.protobuf.message.EncodeError: Message client.ProtoIntegratedHWGraph is missing required fields: network_graph.nodes[9].type\n",
+ "seconds": 122.3
+}

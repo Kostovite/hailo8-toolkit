@@ -1,0 +1,10 @@
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_instnorm
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_groupnorm
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_groupnorm1
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_pow2
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_unshuffle
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_argmax
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_gap
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_mean_c
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_mha
+@/mnt/storage/lib_project/models/Hailo_model/hailo_re/probe/pm/op/op_vit

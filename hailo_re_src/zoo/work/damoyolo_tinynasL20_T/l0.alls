@@ -1,0 +1,4 @@
+pre_quantization_optimization(equalization, policy=disabled)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

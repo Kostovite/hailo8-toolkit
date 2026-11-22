@@ -1,0 +1,1 @@
+c=64 h=16 down_up groupnorm dw3 c2f attn

@@ -1,0 +1,22 @@
+{
+ "case": "C_T_Amin_W",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool",
+  "normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "mul_and_add1",
+  "maxpool1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 344.4859966243914,
+ "sqnr_hw_db": 45.0644286466483,
+ "hef_MB": 0.32,
+ "seconds": 14.5
+}

@@ -1,0 +1,2 @@
+SHAPE deit_tiny/slice37 (slice) got (1, 192, 1, 1) ref (1, 192, 1, 197)
+{"case": "deit_tiny", "conv_mode": "gemm", "T1_per_layer": {"checked": 363, "exact": 363, "not_exact": [], "s": 5.0}, "T2_chained": {"checked": 285, "value_mismatch": [], "pass": true, "s": 3.8}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": true, "flags": [], "mismatch_per_output": {"deit_tiny/conv50": 0}, "pass": true}, "PASS": true}

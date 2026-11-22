@@ -1,0 +1,15 @@
+{
+ "case": "T_AvgPool3s1_nopadcount",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "const_input",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [],
+ "sqnr_native_db": 142.77979644954493,
+ "sqnr_hw_db": 34.148228025355685,
+ "hef_MB": 0.62,
+ "seconds": 21.8
+}

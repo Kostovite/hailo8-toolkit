@@ -1,0 +1,38 @@
+{
+ "act": "Mish",
+ "pieces": 9,
+ "scale": 2.5,
+ "monotone": false,
+ "range": [
+  -18.20561981201172,
+  20.97377586364746
+ ],
+ "fit_sqnr_db": 47.40914884943703,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 34.74264621734619,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "mish",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 34.873483180999756,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

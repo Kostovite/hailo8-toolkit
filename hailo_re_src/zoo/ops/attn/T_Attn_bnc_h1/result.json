@@ -1,0 +1,17 @@
+{
+ "case": "T_Attn_bnc_h1",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "feature_splitter",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "sqnr_native_db": 132.21214273630483,
+ "sqnr_hw_db": 19.605997915635164,
+ "hef_MB": 0.52,
+ "seconds": 95.7
+}

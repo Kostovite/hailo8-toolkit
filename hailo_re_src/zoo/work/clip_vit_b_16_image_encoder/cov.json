@@ -1,0 +1,2349 @@
+{
+"layers": [
+{
+"layer": "clip_vit_b_16_image_encoder/const_input1",
+"type": "const_input",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/const_input2",
+"type": "const_input",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 150528
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change0",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 150528
+},
+{
+"layer": "clip_vit_b_16_image_encoder/norm1",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 150528
+},
+{
+"layer": "clip_vit_b_16_image_encoder/space_to_depth1",
+"type": "space_to_depth",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 150528
+},
+{
+"layer": "clip_vit_b_16_image_encoder/concat1",
+"type": "concat",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add1",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization1",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization1",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization1",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization1",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/normalization1",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization2",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization2",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization2",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization2",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change1",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter1_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter1_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter1_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul1",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax1",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax1",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax1",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax1",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul2",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add2",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization3",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization3",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization3",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization3",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change2",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization4",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization4",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization4",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization4",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change3",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter2_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter2_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter2_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul3",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax2",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax2",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax2",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax2",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul4",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add4",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization5",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization5",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization5",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization5",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change4",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add5",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization6",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization6",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization6",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization6",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change5",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter3_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter3_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter3_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul5",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax3",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax3",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax3",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax3",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul6",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add6",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization7",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization7",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization7",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization7",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change6",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add7",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization8",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization8",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization8",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization8",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change7",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter4_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter4_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter4_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul7",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax4",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax4",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax4",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax4",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul8",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add8",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization9",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization9",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization9",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization9",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change8",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add9",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization10",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization10",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization10",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization10",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change9",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter5_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter5_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter5_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul9",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax5",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax5",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax5",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax5",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul10",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add10",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization11",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization11",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization11",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization11",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change10",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add11",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization12",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization12",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization12",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization12",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change11",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter6_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter6_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter6_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul11",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax6",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax6",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax6",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax6",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul12",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add12",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization13",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization13",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization13",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization13",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change12",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add13",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization14",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization14",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization14",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization14",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change13",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter7_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter7_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter7_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul13",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax7",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax7",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax7",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax7",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul14",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add14",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization15",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization15",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization15",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization15",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change14",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add15",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization16",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization16",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization16",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization16",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change15",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter8_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter8_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter8_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul15",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax8",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax8",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax8",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax8",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul16",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv31",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add16",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization17",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization17",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization17",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization17",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change16",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv32",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv33",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add17",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization18",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization18",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization18",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization18",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change17",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter9_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter9_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter9_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul17",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax9",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax9",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax9",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax9",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul18",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv35",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add18",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization19",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization19",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization19",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization19",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change18",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv36",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv37",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add19",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization20",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization20",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization20",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization20",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change19",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter10_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter10_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter10_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul19",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax10",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax10",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax10",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax10",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul20",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv39",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add20",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization21",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization21",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization21",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization21",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change20",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv40",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv41",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add21",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization22",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization22",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization22",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization22",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization22",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change21",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter11_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter11_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter11_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul21",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax11",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax11",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax11",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax11",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul22",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv43",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add22",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization23",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization23",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization23",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization23",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change22",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv44",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv45",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add23",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization24",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization24",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization24",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization24",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change23",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter12_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter12_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 153660
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_feature_splitter12_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul23",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_max_softmax12",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub_softmax12",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_sum_softmax12",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 2364
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult_softmax12",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 465708
+},
+{
+"layer": "clip_vit_b_16_image_encoder/matmul24",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv47",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add24",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization25",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization25",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization25",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 197
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization25",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change24",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv48",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 605184
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv49",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_add25",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 151296
+},
+{
+"layer": "clip_vit_b_16_image_encoder/slice1",
+"type": "slice",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/reduce_mean1_layer_normalization26",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_sub1_layer_normalization26",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 768
+},
+{
+"layer": "clip_vit_b_16_image_encoder/square1_layer_normalization26",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv_var_inv_layer_normalization26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1
+},
+{
+"layer": "clip_vit_b_16_image_encoder/ew_mult1_layer_normalization26",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "clip_vit_b_16_image_encoder/precision_change25",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 768
+},
+{
+"layer": "clip_vit_b_16_image_encoder/conv50",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 512
+}
+]
+}

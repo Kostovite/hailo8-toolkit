@@ -1,0 +1,23 @@
+{
+ "case": "Softsign",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "softsign"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 148.31932388937648,
+ "sqnr_hw_db": 33.732358580465714,
+ "hef_MB": 0.09,
+ "seconds": 10.3
+}

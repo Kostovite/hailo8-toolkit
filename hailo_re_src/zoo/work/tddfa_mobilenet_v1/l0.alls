@@ -1,0 +1,5 @@
+model_optimization_config(calibration, batch_size=2, calibset_size=64)
+tddfa_mobilenet_v1/input_conversion = input_conversion(tddfa_mobilenet_v1/input_layer1, bgr_to_rgb)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

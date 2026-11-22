@@ -1,0 +1,9 @@
+MISMATCH TensorScatter_op24/input_layer1 (input_layer): 1/9216 max 1
+MISMATCH TensorScatter_op24/input_layer1 (input_layer): 1/9216 max 1
+MISMATCH TensorScatter_op24/conv1 (conv): 10/9216 max 1
+SHAPE TensorScatter_op24/slice1 (slice) got (1, 16, 8, 24) ref (1, 16, 24, 24)
+SHAPE TensorScatter_op24/slice2 (slice) got (1, 16, 12, 24) ref (1, 16, 24, 24)
+SHAPE TensorScatter_op24/slice3 (slice) got (1, 16, 4, 24) ref (1, 16, 24, 24)
+[qatfast] TensorScatter_op24/conv1: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+[qatfast] TensorScatter_op24/conv2: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "c3_16__TensorScatter_op24", "conv_mode": "gemm", "T1_per_layer": {"checked": 7, "exact": 6, "not_exact": [["TensorScatter_op24/input_layer1", "input_layer", 1, 9216]], "s": 0.4}, "T2_chained": {"checked": 6, "value_mismatch": [["TensorScatter_op24/input_layer1", "input_layer", 1, 9216], ["TensorScatter_op24/conv1", "conv", 10, 9216]], "pass": false, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": false, "why": "RuntimeError: stack expects a non-empty TensorList"}, "PASS": false}

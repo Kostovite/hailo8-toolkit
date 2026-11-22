@@ -1,0 +1,20 @@
+{
+ "case": "C_T_Hardshrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add",
+  "ew_mult",
+  "ew_sub"
+ ],
+ "activations": [
+  "greater",
+  "less"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.129385915404,
+ "sqnr_hw_db": 33.57689579252414,
+ "hef_MB": 0.25,
+ "seconds": 18.1
+}

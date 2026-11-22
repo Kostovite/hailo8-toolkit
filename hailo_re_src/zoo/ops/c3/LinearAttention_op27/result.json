@@ -1,0 +1,23 @@
+{
+ "case": "LinearAttention_op27",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "const_input",
+  "conv",
+  "dw",
+  "ew_mult",
+  "ew_sub",
+  "format_conversion",
+  "matmul",
+  "normalization"
+ ],
+ "activations": [
+  "relu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 135.3981198268129,
+ "sqnr_hw_db": 27.514852029754646,
+ "hef_MB": 1.3,
+ "seconds": 47.6
+}

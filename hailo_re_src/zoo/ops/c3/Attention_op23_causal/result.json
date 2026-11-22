@@ -1,0 +1,19 @@
+{
+ "case": "Attention_op23_causal",
+ "stage": "ok",
+ "hn_types": [
+  "const_input",
+  "conv",
+  "ew_add",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 131.47536755281635,
+ "sqnr_hw_db": 15.111818652536167,
+ "hef_MB": 0.81,
+ "seconds": 57.4
+}

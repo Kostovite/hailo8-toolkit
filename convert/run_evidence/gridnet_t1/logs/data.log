@@ -1,0 +1,15 @@
+calib g5train    230
+calib g5train    217
+calib g5train     93
+calib g5train     74
+calib g5train    302
+calib g5train    109
+calib vttrain    170
+calib vktrain    170
+calib vntrain    170
+calib chtrain    170
+calib cvtrain    170
+calib bktrain    170
+calib (2045, 896, 896, 1) raw range 0 255 DATA /mnt/storage/lib_project/models/Dolphin/wordlid_vert/data/grid
+eval (400, 896, 896, 1) ref rows 32
+RESULT torch n 400 exact 0.8625 GriTS-Top 97.10

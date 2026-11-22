@@ -1,0 +1,165 @@
+{
+"layers": [
+{
+"layer": "orient3/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 2408448
+},
+{
+"layer": "orient3/in_norm",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 2408448
+},
+{
+"layer": "orient3/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 3211264
+},
+{
+"layer": "orient3/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1605632
+},
+{
+"layer": "orient3/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1605632
+},
+{
+"layer": "orient3/conv4",
+"type": "conv",
+"status": "mismatch",
+"bad": 14,
+"numel": 1605632
+},
+{
+"layer": "orient3/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 1605632
+},
+{
+"layer": "orient3/conv6",
+"type": "conv",
+"status": "mismatch",
+"bad": 24,
+"numel": 1605632
+},
+{
+"layer": "orient3/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "orient3/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "orient3/conv9",
+"type": "conv",
+"status": "mismatch",
+"bad": 299,
+"numel": 802816
+},
+{
+"layer": "orient3/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 802816
+},
+{
+"layer": "orient3/conv11",
+"type": "conv",
+"status": "mismatch",
+"bad": 11,
+"numel": 802816
+},
+{
+"layer": "orient3/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "orient3/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "orient3/conv14",
+"type": "conv",
+"status": "mismatch",
+"bad": 89,
+"numel": 401408
+},
+{
+"layer": "orient3/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 401408
+},
+{
+"layer": "orient3/conv16",
+"type": "conv",
+"status": "mismatch",
+"bad": 7,
+"numel": 401408
+},
+{
+"layer": "orient3/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "orient3/conv18",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "orient3/conv19",
+"type": "conv",
+"status": "mismatch",
+"bad": 8,
+"numel": 200704
+},
+{
+"layer": "orient3/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 200704
+},
+{
+"layer": "orient3/conv21",
+"type": "conv",
+"status": "mismatch",
+"bad": 7,
+"numel": 200704
+}
+]
+}

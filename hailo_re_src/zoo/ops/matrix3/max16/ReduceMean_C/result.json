@@ -1,0 +1,29 @@
+{
+ "case": "ReduceMean_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "reduce_mean"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "reduce_mean1",
+   "a16_w16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 140.38240536547403,
+ "sqnr_hw_db": 64.14553748180465,
+ "hef_MB": 0.05,
+ "seconds": 6.9
+}

@@ -1,0 +1,11 @@
+normalization1 = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+change_output_activation(conv71, sigmoid)
+change_output_activation(conv58, sigmoid)
+change_output_activation(conv44, sigmoid)
+pre_quantization_optimization(equalization, policy=disabled)
+quantization_param(output_layer3, precision_mode=a16_w16)
+quantization_param(output_layer6, precision_mode=a16_w16)
+quantization_param(output_layer9, precision_mode=a16_w16)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

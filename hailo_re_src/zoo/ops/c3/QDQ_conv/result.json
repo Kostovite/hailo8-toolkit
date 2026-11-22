@@ -1,0 +1,13 @@
+{
+ "case": "QDQ_conv",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 359.4871962952422,
+ "sqnr_hw_db": 34.24363565293669,
+ "hef_MB": 0.1,
+ "seconds": 7.8
+}

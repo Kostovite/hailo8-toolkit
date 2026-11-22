@@ -1,0 +1,15 @@
+{
+ "case": "C_Gelu_tanh_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "gelu"
+ ],
+ "sqnr_native_db": 144.99480490321193,
+ "sqnr_hw_db": 34.553688328764785,
+ "hef_MB": 0.1,
+ "seconds": 11.2
+}

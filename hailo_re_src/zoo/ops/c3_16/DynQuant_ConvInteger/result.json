@@ -1,0 +1,32 @@
+{
+ "case": "DynQuant_ConvInteger",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "conv1",
+   "a16_w16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 359.4871962952422,
+ "sqnr_hw_db": 63.06710745220408,
+ "hef_MB": 0.16,
+ "seconds": 10.7
+}

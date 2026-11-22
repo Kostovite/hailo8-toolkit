@@ -1,0 +1,18 @@
+MISMATCH ReverseSequence_C/input_layer1 (input_layer): 1/9216 max 1
+MISMATCH ReverseSequence_C/input_layer1 (input_layer): 1/9216 max 1
+SHAPE ReverseSequence_C/slice1 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice10 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice11 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice12 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice13 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice2 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice3 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice4 (slice) got (1, 4, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice5 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice6 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice7 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice8 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+SHAPE ReverseSequence_C/slice9 (slice) got (1, 1, 24, 24) ref (1, 16, 24, 24)
+MISMATCH ReverseSequence_C/conv1 (conv): 1/9216 max 1
+[qatfast] ReverseSequence_C/conv1: a16_w16 capture without bias_factor: run hailoqat/bias_lattice.py HAR CAPTURE -> frozen-weight atomic chain
+{"case": "c3_16__ReverseSequence_C", "conv_mode": "gemm", "T1_per_layer": {"checked": 16, "exact": 15, "not_exact": [["ReverseSequence_C/input_layer1", "input_layer", 1, 9216]], "s": 0.4}, "T2_chained": {"checked": 15, "value_mismatch": [["ReverseSequence_C/input_layer1", "input_layer", 1, 9216], ["ReverseSequence_C/conv1", "conv", 1, 9216]], "pass": false, "s": 0.0}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": false, "why": "RuntimeError: stack expects a non-empty TensorList"}, "PASS": false}

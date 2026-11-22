@@ -1,0 +1,1 @@
+c=48 h=40 avgpool res pad_conv c2f avgpool

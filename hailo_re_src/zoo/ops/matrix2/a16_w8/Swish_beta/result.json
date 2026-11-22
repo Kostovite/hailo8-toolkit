@@ -1,0 +1,23 @@
+{
+ "case": "Swish_beta",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "swish"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 143.80571146108318,
+ "sqnr_hw_db": 35.20891242644954,
+ "hef_MB": 0.09,
+ "seconds": 9.6
+}

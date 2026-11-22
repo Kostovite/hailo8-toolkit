@@ -1,0 +1,12 @@
+{
+ "case": "T_Linear_tokens",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "sqnr_native_db": 347.3011827860055,
+ "sqnr_hw_db": 34.4570192111074,
+ "hef_MB": 0.09,
+ "seconds": 11.4
+}

@@ -1,0 +1,64 @@
+{
+ "case": "LogSoftmax_W",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub",
+  "reduce_max",
+  "reduce_sum",
+  "resize"
+ ],
+ "activations": [
+  "exp",
+  "log"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "reduce_max1",
+   "a16_w16"
+  ],
+  [
+   "resize1",
+   "a16_w16"
+  ],
+  [
+   "ew_sub1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "reduce_sum1",
+   "a16_w16_a16"
+  ],
+  [
+   "resize2",
+   "a16_w16"
+  ],
+  [
+   "ew_sub2",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 150.9217037840595,
+ "sqnr_hw_db": 58.35826644461828,
+ "hef_MB": 0.14,
+ "seconds": 47.2
+}

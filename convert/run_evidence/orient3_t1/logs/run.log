@@ -1,0 +1,14 @@
+recipe=orient3 ckpt=/mnt/storage/lib_project/models/layout_teacher/staged_v2_20261114/orient3_10000.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_t1 gpus=2 qmode=all16 norm=rgb255 opt=0 input16=0
+== export 2026-11-22 02:28:05
+   export exit 0
+== prep 2026-11-22 02:28:09
+   prep exit 0
+== data 2026-11-22 02:28:26
+   data exit 0
+== parse 2026-11-22 02:29:06
+   parse exit 0
+== quant 2026-11-22 02:29:15
+   quant exit 0
+== emu 2026-11-22 02:30:57
+   emu exit 2
+STOP at emu (log /mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_t1/logs/emu.log)

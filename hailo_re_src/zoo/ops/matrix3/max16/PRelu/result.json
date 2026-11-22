@@ -1,0 +1,51 @@
+{
+ "case": "PRelu",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_normalization4",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_normalization27",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_relu5",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_ew_add6",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 349.2878021831043,
+ "sqnr_hw_db": 63.016430534643526,
+ "hef_MB": 0.18,
+ "seconds": 16.5
+}

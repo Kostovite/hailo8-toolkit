@@ -1,0 +1,6 @@
+u85 EXIT 0 wall 1857
+c110 EXIT 0 wall 2619
+c120 EXIT 0 wall 2630
+u100 EXIT 0 wall 2637
+u90 EXIT 0 wall 2694
+u75 EXIT 143 wall 3415

@@ -1,0 +1,11 @@
+{
+ "case": "Less_mask_m1p0",
+ "rewrite_vs_orig_db": 345.8101458535622,
+ "ops_after": [
+  "Cast",
+  "Conv",
+  "Less",
+  "Mul"
+ ],
+ "opset_after": 17
+}

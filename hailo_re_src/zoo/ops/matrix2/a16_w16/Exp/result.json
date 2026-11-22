@@ -1,0 +1,23 @@
+{
+ "case": "Exp",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "exp"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 151.06800713387963,
+ "sqnr_hw_db": 44.81546671975173,
+ "hef_MB": 0.09,
+ "seconds": 23.2
+}

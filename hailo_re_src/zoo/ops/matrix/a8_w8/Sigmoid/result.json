@@ -1,0 +1,16 @@
+{
+ "case": "Sigmoid",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "sigmoid"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 145.18244642000124,
+ "sqnr_hw_db": 40.73422599308506,
+ "hef_MB": 0.09,
+ "seconds": 10.3
+}

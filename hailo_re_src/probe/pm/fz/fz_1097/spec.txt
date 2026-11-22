@@ -1,0 +1,1 @@
+c=96 h=16 gelu pad_conv softmax_c down_up

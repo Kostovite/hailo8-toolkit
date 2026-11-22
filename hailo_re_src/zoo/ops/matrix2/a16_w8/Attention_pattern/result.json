@@ -1,0 +1,36 @@
+{
+ "case": "Attention_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "format_conversion",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "conv1:HailoConv",
+  "format_conversion1:HailoFormatConversion",
+  "format_conversion2:HailoFormatConversion",
+  "conv2:HailoConv",
+  "format_conversion3:HailoFormatConversion",
+  "conv3:HailoConv",
+  "matmul1:HailoMatmul",
+  "reduce_max_softmax1:HailoReduceMax",
+  "ew_sub_softmax1:HailoElementwiseSub",
+  "reduce_sum_softmax1:HailoReduceSum",
+  "ew_mult_softmax1:HailoElementwiseMult",
+  "matmul2:HailoMatmul",
+  "format_conversion4:HailoFormatConversion",
+  "conv4:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 130.12488399182,
+ "sqnr_hw_db": 17.956960447310625,
+ "hef_MB": 0.31,
+ "seconds": 95.9
+}

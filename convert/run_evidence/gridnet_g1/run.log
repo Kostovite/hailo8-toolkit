@@ -1,0 +1,28 @@
+recipe=gridnet ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/table_structure_final.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1 gpus=2 qmode=all16 norm=gray255 opt=0 input16=0
+== emu 2026-11-22 04:45:11
+   emu exit 1
+STOP at emu (log /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1/logs/emu.log)
+recipe=gridnet ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/table_structure_final.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1 gpus=2 qmode=all16 norm=gray255 opt=0 input16=0
+== emu 2026-11-22 04:54:38
+   emu exit 0
+== gate_fp 2026-11-22 05:07:59
+   gate_fp exit 0
+== gate_q 2026-11-22 05:08:45
+   gate_q exit 0
+== compile 2026-11-22 05:13:34
+   compile exit 1
+STOP at compile (log /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1/logs/compile.log)
+recipe=gridnet ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/table_structure_final.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1 gpus=2 qmode=all16 norm=gray255 opt=0 input16=0
+== quant 2026-11-22 05:19:29
+   quant exit 0
+== emu 2026-11-22 05:27:12
+   emu exit 1
+STOP at emu (log /mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1/logs/emu.log)
+recipe=gridnet ckpt=/mnt/storage/lib_project/models/Dolphin/wordlid/data/grid/table_structure_final.pt out=/mnt/storage/lib_project/models/Hailo_model/convert/runs/gridnet_g1 gpus=2 qmode=all16 norm=gray255 opt=0 input16=0
+== emu 2026-11-22 05:36:50
+   emu exit 0
+== gate_fp 2026-11-22 05:47:09
+   gate_fp exit 0
+== gate_q 2026-11-22 05:48:13
+   gate_q exit 0
+== compile 2026-11-22 05:52:17

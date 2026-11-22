@@ -1,0 +1,9 @@
+[qatfast] orient3/conv4: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv6: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv9: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv11: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv14: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv16: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv19: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+[qatfast] orient3/conv21: conv-add on an a16_w16 layer -> frozen exact graph26 conv-add
+{"case": "orient3", "conv_mode": "gemm", "T1_per_layer": {"checked": 23, "exact": 23, "not_exact": [], "s": 3.7}, "T2_chained": {"checked": 23, "value_mismatch": [], "pass": true, "s": 3.4}, "T3_batch": {"per_bs": {"2": true, "3": true, "5": true, "8": true, "16": true}, "pass": true}, "T4_qatfast": {"built": true, "flags": [], "mismatch_per_output": {"orient3/conv21": 0}, "pass": true}, "PASS": true}

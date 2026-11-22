@@ -1,0 +1,9 @@
+[info] Translation started on ONNX model orient3
+[info] Restored ONNX model orient3 (completion time: 00:00:00.07)
+[info] Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.68)
+[info] Start nodes mapped from original model: 'image': 'orient3/input_layer1'.
+[info] End nodes mapped from original model: '/body/body.7/Relu_1'.
+[info] Translation completed on ONNX model orient3 (completion time: 00:00:01.20)
+[info] Saved HAR to: /mnt/storage/lib_project/models/Hailo_model/convert/runs/orient3_t1/parsed.har
+out orient3/output_layer1 [-1, 28, 28, 256]
+layers 32

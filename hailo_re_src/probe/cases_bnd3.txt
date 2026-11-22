@@ -1,0 +1,17 @@
+layernorm:c=64,o=64,h=20,w=20
+instnorm:c=64,o=64,h=20,w=20
+groupnorm:c=64,o=64,h=20,w=20,g=8
+bn:c=64,o=64,h=20,w=20
+div:c=64,o=64,h=20,w=20,k=1
+l2norm:c=64,o=64,h=20,w=20
+pow2:c=64,o=64,h=20,w=20
+argmax:c=64,o=16,h=20,w=20
+tile:c=64,o=64,h=20,w=10
+avgpool_nc:c=64,h=20,w=20,k=3,s=1
+softmax_w:c=64,o=64,h=20,w=20
+reducemean:c=64,o=64,h=20,w=20,s=0
+reducemax:c=64,o=64,h=20,w=20,s=1
+min:c=64,o=64,h=20,w=20,k=1
+gap:c=64,o=64,h=20,w=20
+s2d:c=64,o=32,h=20,w=20
+vit:c=64,o=64,h=8,w=8

@@ -1,0 +1,40 @@
+{
+ "case": "c3__QDQ_conv",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a8_w8_a8|": 1,
+  "conv|a8_w8_a8|linear": 2,
+  "output_layer|a8_w8_a8|": 1
+ },
+ "T1_per_layer": {
+  "checked": 3,
+  "exact": 3,
+  "not_exact": [],
+  "s": 0.5
+ },
+ "T2_chained": {
+  "checked": 3,
+  "value_mismatch": [],
+  "pass": true,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": true,
+  "flags": [],
+  "mismatch_per_output": {
+   "QDQ_conv/conv2": 0
+  },
+  "pass": true
+ },
+ "PASS": true
+}

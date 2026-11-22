@@ -1,0 +1,1 @@
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec/bench/labels/HCMUS_2020_PhanNhutHuan_ketluan_p001.txt

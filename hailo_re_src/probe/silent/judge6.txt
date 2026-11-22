@@ -1,0 +1,19 @@
+== res/ConvTranspose_s2
+chip batch   SNR dB vs float per frame: [-16.9, -17.0, -16.9, -16.8, -16.9, -16.9, -16.9, -16.8]
+emu batch    SNR dB vs float per frame: [32.3, 32.2, 32.2, 32.3, 32.3, 32.2, 32.2, 32.3]
+== res/Attention_pattern
+chip batch   SNR dB vs float per frame: [-8.2, -10.6, -9.9, -9.4, -9.1, -8.7, -11.3, -10.1]
+emu batch    SNR dB vs float per frame: [-8.4, -11.4, -12.3, -12.4, -10.3, -11.1, -13.3, -12.2]
+== c3/Einsum_matmul
+chip batch   SNR dB vs float per frame: [9.3, 9.2, 9.3, 9.4, 9.9, 9.3, 9.0, 9.1]
+emu batch    SNR dB vs float per frame: [10.2, 10.2, 10.2, 10.5, 10.6, 10.3, 10.2, 10.3]
+== res/T_ViT_block
+chip batch   SNR dB vs float per frame: [30.4, 30.4, 30.6, 30.5, 30.5, 30.3, 30.4, 30.6]
+emu batch    SNR dB vs float per frame: [30.4, 30.4, 30.6, 30.5, 30.5, 30.3, 30.4, 30.6]
+== res/RMSNorm_pattern
+chip batch   SNR dB vs float per frame: [35.0, 35.1, 33.6, 34.7, 34.8, 34.3, 32.9, 35.3]
+emu batch    SNR dB vs float per frame: [35.0, 35.1, 33.6, 34.7, 34.8, 34.3, 32.9, 35.3]
+== c3/Attention_op23_4d
+chip batch   SNR dB vs float per frame: [12.2, 11.5, 10.7, 10.3, 10.2, 10.3, 9.5, 3.6]
+emu batch    SNR dB vs float per frame: [12.2, 11.5, 10.7, 10.3, 10.2, 10.3, 9.5, 3.6]
+DONE

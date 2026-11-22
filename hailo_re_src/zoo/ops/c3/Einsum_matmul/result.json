@@ -1,0 +1,19 @@
+{
+ "case": "Einsum_matmul",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "ew_mult",
+  "format_conversion",
+  "reduce_sum",
+  "resize",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 139.1675111769297,
+ "sqnr_hw_db": 17.300832574123564,
+ "hef_MB": 2.11,
+ "seconds": 193.9
+}

@@ -1,0 +1,1 @@
+c=64 h=40 maxpool groupnorm down_up mul2 shuffle down_up dw3

@@ -1,0 +1,25 @@
+{
+ "case": "T_Tanhshrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "tanh"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "activation1",
+  "ew_sub1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 243.74264786404925,
+ "sqnr_hw_db": 40.578935386793916,
+ "hef_MB": 0.09,
+ "seconds": 13.6
+}

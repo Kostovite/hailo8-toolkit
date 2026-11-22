@@ -1,0 +1,25 @@
+{
+ "case": "T_Sigmoid_gate",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "sigmoid"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "conv1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [
+  "ew_mult1:HailoElementwiseMult"
+ ],
+ "sqnr_native_db": 144.82260315332178,
+ "sqnr_hw_db": 33.97143819448185,
+ "hef_MB": 0.2,
+ "seconds": 17.7
+}

@@ -1,0 +1,89 @@
+{
+ "case": "T_ViT_block",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_add",
+  "feature_splitter",
+  "format_conversion",
+  "layer_normalization",
+  "matmul",
+  "normalization",
+  "softmax"
+ ],
+ "activations": [
+  "gelu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "format_conversion1",
+   "a16_w16"
+  ],
+  [
+   "layer_normalization1",
+   "a16_w16_a8"
+  ],
+  [
+   "reduce_max_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_sub_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum_softmax1",
+   "a8_w8_a8"
+  ],
+  [
+   "matmul2",
+   "a8_w8_a16"
+  ],
+  [
+   "conv2",
+   "a16_w16_a16"
+  ],
+  [
+   "ew_add1",
+   "a16_w16_a16"
+  ],
+  [
+   "layer_normalization2",
+   "a16_w16_a16"
+  ],
+  [
+   "conv3",
+   "a16_w16_a16"
+  ],
+  [
+   "conv4",
+   "a16_w16_a16"
+  ],
+  [
+   "ew_add2",
+   "a16_w16_a16"
+  ],
+  [
+   "format_conversion2",
+   "a16_w16"
+  ],
+  [
+   "conv5",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 146.54474083010177,
+ "sqnr_hw_db": 47.798190956348535,
+ "hef_MB": 0.59,
+ "seconds": 144.1
+}

@@ -1,0 +1,1 @@
+c=16 h=20 layernorm res se attn attn split2 res

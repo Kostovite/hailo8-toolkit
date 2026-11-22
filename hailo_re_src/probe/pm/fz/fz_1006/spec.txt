@@ -1,0 +1,1 @@
+c=48 h=16 se conv3 down_up layernorm conv3

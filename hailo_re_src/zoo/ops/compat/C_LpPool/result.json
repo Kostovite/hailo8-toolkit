@@ -1,0 +1,18 @@
+{
+ "case": "C_LpPool",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv",
+  "feature_multiplier",
+  "normalization"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 144.56882437013633,
+ "sqnr_hw_db": 35.33329442570669,
+ "hef_MB": 0.32,
+ "seconds": 26.1
+}

@@ -1,0 +1,56 @@
+{
+ "case": "GlobalLpPool_p1",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "reduce_sum"
+ ],
+ "activations": [
+  "prelu"
+ ],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a16_w16"
+  ],
+  [
+   "activation1",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_normalization5",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_normalization28",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_relu6",
+   "a16_w16_a16"
+  ],
+  [
+   "activation1_ew_add7",
+   "a16_w16_a16"
+  ],
+  [
+   "reduce_sum1",
+   "a16_w16_a16"
+  ],
+  [
+   "conv1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 135.1729716103473,
+ "sqnr_hw_db": 76.26811770549567,
+ "hef_MB": 0.08,
+ "seconds": 15.4
+}

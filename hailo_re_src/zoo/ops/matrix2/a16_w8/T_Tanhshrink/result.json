@@ -1,0 +1,25 @@
+{
+ "case": "T_Tanhshrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "tanh"
+ ],
+ "prec": "a16_w8",
+ "prec_layers": [],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "ew_sub1:HailoElementwiseSub",
+  "conv1:HailoConv",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 243.74264786404925,
+ "sqnr_hw_db": 33.48054230536147,
+ "hef_MB": 0.1,
+ "seconds": 13.8
+}

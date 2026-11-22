@@ -1,0 +1,20 @@
+{
+ "case": "And_cast",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add",
+  "ew_mult",
+  "normalization"
+ ],
+ "activations": [
+  "less",
+  "relu"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 340.6255942272419,
+ "sqnr_hw_db": 13.142295162463666,
+ "hef_MB": 0.24,
+ "seconds": 16.1
+}

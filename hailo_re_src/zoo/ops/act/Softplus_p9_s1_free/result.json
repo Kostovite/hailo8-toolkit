@@ -1,0 +1,38 @@
+{
+ "act": "Softplus",
+ "pieces": 9,
+ "scale": 1.0,
+ "monotone": false,
+ "range": [
+  -7.313560962677002,
+  8.549930572509766
+ ],
+ "fit_sqnr_db": 50.22708128655548,
+ "pwl_layers": 1,
+ "native": {
+  "sqnr_hw_db": 37.40539312362671,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "softplus",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ },
+ "pwl": {
+  "sqnr_hw_db": 37.66371011734009,
+  "layers": 2,
+  "types": [
+   "conv",
+   "conv"
+  ],
+  "acts": [
+   "pwl",
+   "linear"
+  ],
+  "hef_MB": 0.1
+ }
+}

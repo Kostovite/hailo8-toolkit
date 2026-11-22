@@ -1,0 +1,1 @@
+c=64 h=32 res softmax_c d2s res shuffle

@@ -1,0 +1,33 @@
+{
+ "case": "T_Std_HW",
+ "stage": "ok",
+ "hn_types": [
+  "avgpool",
+  "conv",
+  "ew_sub",
+  "feature_multiplier",
+  "normalization",
+  "resize"
+ ],
+ "activations": [
+  "sqrt"
+ ],
+ "prec": "a16_w4_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "avgpool1:HailoAvgPool",
+  "resize1:HailoResizeNearestNeighbor",
+  "ew_sub1:HailoElementwiseSub",
+  "square1:HailoFeatureMultiplier",
+  "avgpool2:HailoAvgPool",
+  "mul_and_add1:HailoNormalization",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 134.39563121876992,
+ "sqnr_hw_db": 52.74198018855828,
+ "hef_MB": 0.99,
+ "seconds": 87.7
+}

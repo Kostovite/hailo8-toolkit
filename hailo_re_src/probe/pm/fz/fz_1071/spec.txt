@@ -1,0 +1,1 @@
+c=16 h=32 conv5 dw3 se gate up_down softmax_c fpn

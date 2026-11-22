@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.har
+*.hef
+*.onnx
+*.npy
+*.npz
+*.pt

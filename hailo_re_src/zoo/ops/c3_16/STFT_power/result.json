@@ -1,0 +1,66 @@
+{
+ "case": "STFT_power",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "ew_add",
+  "feature_multiplier",
+  "format_conversion",
+  "reduce_mean",
+  "shortcut"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_mean1",
+   "a8_w8_a8"
+  ],
+  [
+   "format_conversion1",
+   "a8_w8_a8"
+  ],
+  [
+   "shortcut1",
+   "a8_w8_a8"
+  ],
+  [
+   "concat1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv1",
+   "a8_w8_a8"
+  ],
+  [
+   "conv2",
+   "a8_w8_a8"
+  ],
+  [
+   "ew_add1",
+   "a8_w8_a16"
+  ],
+  [
+   "format_conversion2",
+   "a16_w16"
+  ],
+  [
+   "conv3",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 135.60327580917885,
+ "sqnr_hw_db": 32.09675926266419,
+ "hef_MB": 0.2,
+ "seconds": 22.1
+}

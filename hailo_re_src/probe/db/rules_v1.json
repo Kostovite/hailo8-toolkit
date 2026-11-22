@@ -1,0 +1,2152 @@
+{
+ "hefs": 596,
+ "errors": {},
+ "matrix": {
+  "CONV": {
+   "Padding scheme is not supported in <L>": {
+    "1": 7675
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(1)))": 6866,
+    "!((16x4 AND !(0)))": 809
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 7675
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 7675
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 7430,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 245
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 7675
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 191,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 7484
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 7675
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 7675
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 7675
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 7675
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 7614,
+    "!((NO_CONTEXT AND !(0)))": 61
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 4432,
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(1)))": 3243
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 7675
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 7675
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 7675
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 7675
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 7848
+   }
+  },
+  "CONCAT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 3848
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 3848
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 3848
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 3848
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 3848
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 3848
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 241,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 3607
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 3848
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 3848
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 3848
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 3848
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 3848
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 3848
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 3848
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 3848
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 3848
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 3848
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 10473
+   }
+  },
+  "FORMAT_CONVERSION": {
+   "Padding scheme is not supported in <L>": {
+    "1": 1775
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 1775
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 684,
+    "!((16BIT_BIAS AND !(1)))": 1091
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 1775
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 1775
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 1775
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 419,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 1312,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(1)))": 44
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 1775
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 1775
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 1775
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 1775
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 1775
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 1415,
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(1)))": 360
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 1775
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(0)))": 1725,
+    "!(((1 BIGGER 1) AND !(1)))": 50
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((0 AND (1 BIGGER 1)))": 684,
+    "!((1 AND (1 BIGGER 1)))": 1091
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((0 AND (1 BIGGER 1)))": 684,
+    "!((1 AND (1 BIGGER 1)))": 1091
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 1769
+   },
+   "input buffers divisible by 24": {
+    "!((1 MOD 1))": 6
+   }
+  },
+  "INPUT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 13025
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 13025
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 13025
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 13025
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 13025
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 13025
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 860,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 12165
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 13025
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 13025
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 13025
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 13025
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 13025
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 13025
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 13025
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 13025
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (0 BIGGER 1)))": 13025
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 13025
+   }
+  },
+  "OUTPUT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 11519
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 11519
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 11519
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 11519
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 11519
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 11519
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 999,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 10520
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 11519
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 11519
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 11519
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 11519
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 11519
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 11519
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 11519
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 11519
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 11519
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 11519
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 11519
+   }
+  },
+  "PP_INPUT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 695
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 695
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 695
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 695
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 695
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 695
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 187,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 508
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 695
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 695
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 695
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 695
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 695
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 695
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 695
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(0)))": 695
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((0 AND (0 BIGGER 1)))": 695
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((0 AND (1 BIGGER 1)))": 695
+   }
+  },
+  "PP_OUTPUT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 695
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 695
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 695
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 695
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 695
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 695
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 187,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 508
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 695
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 695
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 695
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 695
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 695
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 695
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 695
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(0)))": 695
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((0 AND (1 BIGGER 1)))": 695
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((0 AND (1 BIGGER 1)))": 695
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 695
+   }
+  },
+  "ACTIVATION": {
+   "Padding scheme is not supported in <L>": {
+    "1": 696
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 696
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 696
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 696
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 637,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 59
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 696
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 258,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 438
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 696
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 696
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 696
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 696
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 696
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 696
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 696
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 696
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 696
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 696
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 696
+   }
+  },
+  "NORMALIZATION": {
+   "Padding scheme is not supported in <L>": {
+    "1": 395
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 395
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 395
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 395
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 343,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 52
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 395
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 112,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 283
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 395
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 395
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 395
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 395
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 395
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 395
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 395
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 395
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 395
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 395
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 452
+   }
+  },
+  "REDUCE_SUM": {
+   "Padding scheme is not supported in <L>": {
+    "1": 213
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 213
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 76,
+    "!((16BIT_BIAS AND !(1)))": 137
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 213
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 212,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 1
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 213
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 2,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 74,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(0)))": 136,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(1)))": 1
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 213
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 213
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 213
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 213
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 213
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 213
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 213
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 213
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 213
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 213
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 213
+   }
+  },
+  "FEATURE_MULTIPLIER": {
+   "Padding scheme is not supported in <L>": {
+    "1": 129
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 129
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 129
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 129
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 129
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 129
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 129
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 129
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(0)))": 129
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 129
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 129
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 129
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 129
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 129
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 129
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 129
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 129
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 129
+   }
+  },
+  "FEATURE_SPLITTER": {
+   "Padding scheme is not supported in <L>": {
+    "1": 1371
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 1371
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 1371
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 1371
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 1371
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 1371
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 1287,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 84
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 1371
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 1371
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 1371
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 1371
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 1371
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 1371
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 1371
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 1371
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 1371
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 1371
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 1371
+   }
+  },
+  "EW_MULT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 411
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 411
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 411
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 411
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 411
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 411
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 355,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(1)))": 56
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 411
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(0)))": 355,
+    "!((!(16BIT_BIAS) AND !(1)))": 56
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 411
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 411
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 411
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 411
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 411
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 411
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 411
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 411
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 822
+   }
+  },
+  "ARGMAX": {
+   "Padding scheme is not supported in <L>": {
+    "1": 28
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 28
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 28
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 28
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 28
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 28
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 28
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 28
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 28
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 28
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 28
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 28
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 28
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 28
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 28
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 28
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 28
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 28
+   }
+  },
+  "SHORTCUT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 928
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 928
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 928
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 928
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 928
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 928
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 855,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 73
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 928
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 928
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 928
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 928
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 928
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 928
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 928
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 928
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 928
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 928
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 928
+   }
+  },
+  "STANDALONE_EW_SUB": {
+   "Padding scheme is not supported in <L>": {
+    "1": 326
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 326
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 326
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 326
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 323,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 3
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 326
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(1)))": 80,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(0)))": 246
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 326
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(0)))": 326
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 326
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 326
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 326
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 326
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 326
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 326
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 326
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 326
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 652
+   }
+  },
+  "REDUCE_MAX": {
+   "Padding scheme is not supported in <L>": {
+    "1": 129
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 129
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 129
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 129
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 129
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 129
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 128,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 1
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 129
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 129
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 129
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 129
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 129
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 129
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 129
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 129
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 129
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 129
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 129
+   }
+  },
+  "SLICE": {
+   "Padding scheme is not supported in <L>": {
+    "1": 292
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 292
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 292
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 292
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 292
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 292
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 269,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 23
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 292
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 292
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 292
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 292
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 292
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 292
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 292
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 292
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 292
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 292
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 292
+   }
+  },
+  "DW": {
+   "Padding scheme is not supported in <L>": {
+    "1": 1332
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 337,
+    "!((16x4 AND !(1)))": 995
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 1332
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 1332
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 1329,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 3
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 1332
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 1254,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 78
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 1332
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 1332
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 1332
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 1332
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 1316,
+    "!((NO_CONTEXT AND !(0)))": 16
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 338,
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(1)))": 994
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 1332
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 1332
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 1332
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 1332
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 1421
+   }
+  },
+  "STANDALONE_EW_ADD": {
+   "Padding scheme is not supported in <L>": {
+    "1": 582
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 582
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 582
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 582
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 578,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 4
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 582
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(0)))": 569,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(1)))": 13
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 582
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(0)))": 582
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 582
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 582
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 582
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 582
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 582
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 582
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 582
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 582
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 1164
+   }
+  },
+  "SPACE_TO_DEPTH": {
+   "Padding scheme is not supported in <L>": {
+    "1": 3
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 3
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 3
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 3
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 3
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 3
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 2,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 1
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 3
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 3
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 3
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 3
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 3
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 3
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 3
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 3
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 3
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 3
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 3
+   }
+  },
+  "REDUCE_MEAN": {
+   "Padding scheme is not supported in <L>": {
+    "1": 39
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 39
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 25,
+    "!((16BIT_BIAS AND !(0)))": 14
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 39
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 39
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 39
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(0)))": 13,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(1) AND !(1)))": 12,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 14
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 39
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 39
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 39
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 39
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 39
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 39
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 39
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 39
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 39
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 39
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 39
+   }
+  },
+  "EXTERNAL_PAD": {
+   "Padding scheme is not supported in <L>": {
+    "1": 24
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 24
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 24
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 24
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 24
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 24
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 22,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 2
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 24
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 24
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 24
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 24
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 24
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 24
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 24
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 24
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 24
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 24
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 24
+   }
+  },
+  "FEATURE_INTERLEAVE": {
+   "Padding scheme is not supported in <L>": {
+    "1": 17
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 17
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 17
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 17
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 17
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 17
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 17
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 17
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 17
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 17
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 17
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 17
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 17
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 17
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 17
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 17
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 17
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 17
+   }
+  },
+  "CONST_INPUT": {
+   "Padding scheme is not supported in <L>": {
+    "1": 30
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 30
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 30
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 30
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 30
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 30
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 30
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 30
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 30
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 30
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 30
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 30
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 30
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 30
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 30
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (0 BIGGER 1)))": 30
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 30
+   }
+  },
+  "MATMUL": {
+   "Padding scheme is not supported in <L>": {
+    "1": 266
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 266
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 266
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 266
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 260,
+    "!((8BIT_TO_16BIT_MODE AND !(1)))": 6
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 266
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 266
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 266
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 266
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 266
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 266
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(0)))": 266
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 266
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 266
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(0)))": 266
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 266
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 266
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 266
+   },
+   "input buffers divisible by 24": {
+    "!((1 MOD 1))": 62
+   },
+   "input buffers divisible by 12": {
+    "!((1 MOD 1))": 28
+   },
+   "input buffers divisible by 3": {
+    "!((1 MOD 1))": 24
+   },
+   "input buffers divisible by 20": {
+    "!((1 MOD 1))": 110
+   },
+   "input buffers divisible by 21": {
+    "!((1 MOD 1))": 2
+   },
+   "input buffers divisible by 28": {
+    "!((1 MOD 1))": 24
+   },
+   "input buffers divisible by 16": {
+    "!((1 MOD 1))": 8
+   },
+   "input buffers divisible by 15": {
+    "!((1 MOD 1))": 8
+   }
+  },
+  "MAXPOOL": {
+   "Padding scheme is not supported in <L>": {
+    "1": 434
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 434
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 434
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 434
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 434
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 434
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 433,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 1
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 434
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 434
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 434
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 434
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 434
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 434
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 434
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 434
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 434
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 434
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 434
+   }
+  },
+  "RESIZE": {
+   "Padding scheme is not supported in <L>": {
+    "1": 190
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 190
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 105,
+    "!((16BIT_BIAS AND !(0)))": 85
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 190
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 190
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 190
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 174,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 16
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 190
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 190
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 190
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 190
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 190
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 190
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 190
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 189,
+    "!(((1 BIGGER 1) AND !(0)))": 1
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 190
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 190
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 190
+   }
+  },
+  "ROW_SPLITTER": {
+   "Padding scheme is not supported in <L>": {
+    "1": 31
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 31
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 31
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 31
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 31
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 31
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 31
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 31
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 31
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 31
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 31
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 31
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 31
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 31
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 31
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 31
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 31
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 31
+   }
+  },
+  "WIDTH_SPLITTER": {
+   "Padding scheme is not supported in <L>": {
+    "1": 185
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 185
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 185
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 185
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 185
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 185
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 183,
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(1)))": 2
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 185
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 185
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 185
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 185
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 185
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 185
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 185
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 185
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 185
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 185
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 185
+   }
+  },
+  "OUTPUT_MUX": {
+   "Padding scheme is not supported in <L>": {
+    "1": 37
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 37
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 37
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 37
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 37
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 37
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 37
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 37
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 37
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 37
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 37
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 37
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 37
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 37
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 37
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 37
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 37
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 78
+   }
+  },
+  "DEMUX": {
+   "Padding scheme is not supported in <L>": {
+    "1": 37
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 37
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 37
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 37
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 37
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 37
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 37
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 37
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 37
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 37
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 37
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 37
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 37
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 37
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 37
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 37
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 37
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 37
+   }
+  },
+  "BATCH_NORM": {
+   "Padding scheme is not supported in <L>": {
+    "1": 4
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 4
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 4
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 4
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 4
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 4
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 4
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 4
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 4
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 4
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 4
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 4
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 4
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 4
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 4
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 4
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 4
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 4
+   }
+  },
+  "FEATURE_SHUFFLE": {
+   "Padding scheme is not supported in <L>": {
+    "1": 2
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 2
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 2
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 2
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 2
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 2
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 2
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 2
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 2
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 2
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 2
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 2
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 2
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 2
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 2
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 2
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 2
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 2
+   }
+  },
+  "AVGPOOL": {
+   "Padding scheme is not supported in <L>": {
+    "1": 431
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 319,
+    "!((16x4 AND !(1)))": 112
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(0)))": 256,
+    "!((16BIT_BIAS AND !(1)))": 175
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 431
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 431
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 431
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 431
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 256,
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(1)))": 175
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 431
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 431
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 431
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 431
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 319,
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(1)))": 112
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 431
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 431
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 431
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 431
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 431
+   }
+  },
+  "DENSE": {
+   "Padding scheme is not supported in <L>": {
+    "1": 12
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 12
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 12
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 12
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 12
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 12
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 12
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 12
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 12
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 12
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 12
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 12
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 12
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 12
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 12
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 12
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 12
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 12
+   }
+  },
+  "DEPTH_TO_SPACE": {
+   "Padding scheme is not supported in <L>": {
+    "1": 10
+   },
+   "16x4 is not supported in <L>": {
+    "!((16x4 AND !(0)))": 10
+   },
+   "16bit bias is not supported in <L>": {
+    "!((16BIT_BIAS AND !(1)))": 10
+   },
+   "precision_mode A16_W16 is not supported in <L>": {
+    "!((16BIT_PRECISION_MODE AND !(1)))": 10
+   },
+   "8 bit to 16 bit transition is not supported in <L>": {
+    "!((8BIT_TO_16BIT_MODE AND !(0)))": 10
+   },
+   "16 bit to 8 bit transition is not supported in <L>": {
+    "!((16BIT_TO_8BIT_MODE AND !(1)))": 10
+   },
+   "double scale initialization is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16BIT_BIAS AND !(0) AND !(0)))": 10
+   },
+   "16x4 is not supported with precision_mode A16_W16 in <L>": {
+    "!((16BIT_PRECISION_MODE AND 16x4 AND !(0)))": 10
+   },
+   "8bit bias is not supported in <L>": {
+    "!((!(16BIT_BIAS) AND !(1)))": 10
+   },
+   "16bit bias decompision is not supported in HW, set at node <L>": {
+    "!(16BIT_BIAS_DECOMPOSTIONS)": 10
+   },
+   "4bit is not supported in <L>": {
+    "!((4BIT_WEIGHTS AND !(1)))": 10
+   },
+   "No contexts is not supported in <L>": {
+    "!((NO_CONTEXT AND !(1)))": 10
+   },
+   "Dilation is not supported in <L>": {
+    "!((((1 BIGGER 1) OR (1 BIGGER 1)) AND !(0)))": 10
+   },
+   "Buffer in l4 is not supported in <L>": {
+    "!((BUFFER_IN_L4 AND !((1 EQUAL NODE_TYPE))))": 10
+   },
+   "More than one output is not supported for layer <L>": {
+    "!(((1 BIGGER 1) AND !(1)))": 10
+   },
+   "Number of input triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 10
+   },
+   "Number of output triggers exeeds maximal for layer <L>": {
+    "!((1 AND (1 BIGGER 1)))": 10
+   },
+   "input buffers divisible by 1": {
+    "!((1 MOD 1))": 10
+   }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "case": "C_T_Pow3",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 364.1266888721567,
+ "sqnr_hw_db": 40.127384841914726,
+ "hef_MB": 0.16,
+ "seconds": 13.9
+}

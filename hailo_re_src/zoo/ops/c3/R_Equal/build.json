@@ -1,0 +1,14 @@
+{
+ "case": "Equal",
+ "rewrite_vs_orig_db": 338.90085526716325,
+ "ops_after": [
+  "Add",
+  "Cast",
+  "Conv",
+  "Greater",
+  "Less",
+  "Relu",
+  "Sub"
+ ],
+ "opset_after": 17
+}

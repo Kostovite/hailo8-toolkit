@@ -1,0 +1,21 @@
+{
+ "case": "R_Floor",
+ "stage": "ok",
+ "pwl_layers": [
+  "R_Floor/activation1",
+  "R_Floor/activation2"
+ ],
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_add"
+ ],
+ "activations": [
+  "pwl"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 352.7845406306275,
+ "sqnr_hw_db": 21.564718371255648,
+ "hef_MB": 0.14,
+ "seconds": 13.3
+}

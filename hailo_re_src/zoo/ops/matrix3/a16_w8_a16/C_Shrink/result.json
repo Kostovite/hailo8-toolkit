@@ -1,0 +1,26 @@
+{
+ "case": "C_Shrink",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "clip"
+ ],
+ "prec": "a16_w8_a16",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "activation1:HailoStandaloneActivation",
+  "ew_sub1:HailoElementwiseSub",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 349.7208673015726,
+ "sqnr_hw_db": 31.94573198438266,
+ "hef_MB": 0.12,
+ "seconds": 12.0
+}

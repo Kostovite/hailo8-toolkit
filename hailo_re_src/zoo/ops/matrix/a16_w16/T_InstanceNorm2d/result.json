@@ -1,0 +1,14 @@
+{
+ "case": "T_InstanceNorm2d",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "layer_normalization"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "sqnr_native_db": 138.3505184674009,
+ "sqnr_hw_db": 38.95594448703794,
+ "hef_MB": 0.33,
+ "seconds": 30.9
+}

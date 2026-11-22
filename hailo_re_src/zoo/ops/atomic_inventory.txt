@@ -1,0 +1,27 @@
+unsupported/inexact layer instances by type: {'feature_multiplier': 116, 'reduce_mean': 108, 'ew_mult': 108, 'batch_norm': 64, 'format_conversion': 60, 'slice': 42, 'matmul': 36, 'avgpool': 36, 'const_input': 35, 'concat': 34, 'dense': 29, 'precision_splitter': 12, 'maxpool': 10, 'reduce_max': 6, 'reduce_sum': 6, 'space_to_depth': 3, 'input_layer': 3, 'deconv': 3, 'resize': 3, 'external_pad': 1}
+
+atomic ops needed (instances): {'PassthruOp': 811, 'ActivationOp': 506, 'AddBiasOp': 475, 'ReorderOp': 232, 'ElementwiseMultOnMacOp': 216, 'SliceOp': 161, 'ReduceMeanOp': 108, 'ReduceSumWOKernelOp': 108, 'ConvStrippedOp': 96, 'ConcatOp': 76, 'MatmulOp': 36, 'AvgPoolOp': 36, 'ConstOp': 35, 'SpatialReshapeOp': 30, 'TransposeWidthFeaturesOp': 30, 'FlattenOp': 29, 'MockConvOp': 16, 'SplitPrecisionLow': 12, 'SplitPrecisionHigh': 12, 'MaxPoolOp': 10, 'ElementwiseMultOp': 8, 'ReduceMaxOp': 6, 'ReduceSumOp': 6, 'SpaceToDepthOp': 3, 'AddBiasDeconvOp': 3, 'DepthToSpaceOp': 3, 'ResizeNearestNeighborOp': 3, 'PaddingOp': 1}
+
+atomic op sequences per layer type:
+  feature_multiplier   x 108: PassthruOp > ReorderOp > ReorderOp > ElementwiseMultOnMacOp > ReduceSumWOKernelOp > AddBiasOp > ActivationOp > PassthruOp > SliceOp
+  feature_multiplier   x   8: PassthruOp > ReorderOp > MockConvOp > AddBiasOp > ReorderOp > MockConvOp > AddBiasOp > ElementwiseMultOp > ActivationOp > PassthruOp > SliceOp
+  reduce_mean          x 108: ReduceMeanOp > AddBiasOp > ActivationOp > PassthruOp
+  ew_mult              x 108: ElementwiseMultOnMacOp > PassthruOp > AddBiasOp > ActivationOp > PassthruOp
+  batch_norm           x  64: ConvStrippedOp > AddBiasOp > ActivationOp > PassthruOp
+  format_conversion    x  30: SpatialReshapeOp
+  format_conversion    x  30: TransposeWidthFeaturesOp
+  slice                x  42: PassthruOp > SliceOp > ConcatOp
+  matmul               x  36: MatmulOp > ActivationOp > PassthruOp
+  avgpool              x  36: AvgPoolOp > AddBiasOp > ActivationOp > PassthruOp
+  const_input          x  35: ConstOp
+  concat               x  34: ConcatOp
+  dense                x  29: FlattenOp > ConvStrippedOp > AddBiasOp > ActivationOp > PassthruOp
+  precision_splitter   x  12: PassthruOp > SplitPrecisionLow > PassthruOp > SplitPrecisionHigh > PassthruOp
+  maxpool              x  10: MaxPoolOp
+  reduce_max           x   6: ReduceMaxOp
+  reduce_sum           x   6: ReduceSumOp > AddBiasOp > ActivationOp > PassthruOp
+  space_to_depth       x   3: SpaceToDepthOp
+  input_layer          x   3: PassthruOp
+  deconv               x   3: ConvStrippedOp > AddBiasDeconvOp > DepthToSpaceOp > SliceOp > ActivationOp > PassthruOp
+  resize               x   3: ResizeNearestNeighborOp
+  external_pad         x   1: PaddingOp

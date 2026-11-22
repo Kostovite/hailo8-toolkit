@@ -1,0 +1,23 @@
+{
+ "case": "Concat_C",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv1",
+  "conv2"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "concat1:HailoConcat",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 355.0735370125698,
+ "sqnr_hw_db": 21.59617532667194,
+ "hef_MB": 0.15,
+ "seconds": 11.4
+}

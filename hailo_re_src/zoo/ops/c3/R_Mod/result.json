@@ -1,0 +1,20 @@
+{
+ "case": "R_Mod",
+ "stage": "ok",
+ "pwl_layers": [
+  "R_Mod/activation1"
+ ],
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_sub"
+ ],
+ "activations": [
+  "pwl"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 343.94330361545633,
+ "sqnr_hw_db": 21.788263880090923,
+ "hef_MB": 0.09,
+ "seconds": 11.7
+}

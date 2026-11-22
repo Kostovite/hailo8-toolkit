@@ -1,0 +1,22 @@
+{
+ "case": "T_AdaptiveMax4",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "maxpool1:HailoMaxPool",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 343.3623282636091,
+ "sqnr_hw_db": 44.71191194302592,
+ "hef_MB": 0.64,
+ "seconds": 12.0
+}

@@ -1,0 +1,13 @@
+{
+ "case": "GreaterOrEqual_where",
+ "rewrite_vs_orig_db": 346.23022668446777,
+ "ops_after": [
+  "Add",
+  "Cast",
+  "Conv",
+  "Greater",
+  "Mul",
+  "Sub"
+ ],
+ "opset_after": 17
+}

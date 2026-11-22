@@ -1,0 +1,50 @@
+{
+ "case": "c3_16__GatherElements_C",
+ "conv_mode": "gemm",
+ "coverage": {
+  "input_layer|a16_w16_a16|": 1,
+  "conv|a16_w16_a16|linear": 2,
+  "output_layer|a16_w16_a16|": 1
+ },
+ "T1_per_layer": {
+  "checked": 3,
+  "exact": 2,
+  "not_exact": [
+   [
+    "GatherElements_C/input_layer1",
+    "input_layer",
+    1,
+    9216
+   ]
+  ],
+  "s": 0.4
+ },
+ "T2_chained": {
+  "checked": 3,
+  "value_mismatch": [
+   [
+    "GatherElements_C/input_layer1",
+    "input_layer",
+    1,
+    9216
+   ]
+  ],
+  "pass": false,
+  "s": 0.0
+ },
+ "T3_batch": {
+  "per_bs": {
+   "2": true,
+   "3": true,
+   "5": true,
+   "8": true,
+   "16": true
+  },
+  "pass": true
+ },
+ "T4_qatfast": {
+  "built": false,
+  "why": "RuntimeError: stack expects a non-empty TensorList"
+ },
+ "PASS": false
+}

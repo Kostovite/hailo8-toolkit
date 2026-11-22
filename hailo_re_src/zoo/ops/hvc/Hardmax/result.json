@@ -1,0 +1,6 @@
+{
+ "op": "Hardmax",
+ "chip_error": "ParsingWithRecommendationException: Parsing failed. The errors found in the graph are:\n UnexpectedNodeError in op /1/1.1/OneHot: Unexpected node /1/1.1/OneHot (OneHot)\n UnsupportedShuffleLayerError in op /1/1.1/Transpose: Failed to determine type of layer to create in node /1/1.1/Transpose\nPlease try to parse the model again, using th",
+ "host_sqnr_db": 37.14907937453588,
+ "boundary_MB_per_frame": 0.401
+}

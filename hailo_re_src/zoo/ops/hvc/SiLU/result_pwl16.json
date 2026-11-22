@@ -1,0 +1,10 @@
+{
+ "op": "SiLU",
+ "prec": "max16",
+ "chip_modes": {
+  "a16_w16": 2,
+  "a16_w16_a16": 7
+ },
+ "chip_sqnr_db": 70.9681524333285,
+ "host_error": "RuntimeError: skipped (SKIP_HOST=1)"
+}

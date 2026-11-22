@@ -1,0 +1,13 @@
+{
+ "case": "Einsum_conv",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a8_w8",
+ "sqnr_native_db": 354.3877573765219,
+ "sqnr_hw_db": 33.72450485930284,
+ "hef_MB": 0.09,
+ "seconds": 8.3
+}

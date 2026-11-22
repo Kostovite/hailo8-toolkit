@@ -1,0 +1,18 @@
+path: /mnt/storage/lib_project/models/Hailo_model/hailo_re/data_v14sec
+train: train/images
+val: val/images
+names:
+  0: cap
+  1: catalogue
+  2: code
+  3: equ
+  4: fig
+  5: foot
+  6: header
+  7: list
+  8: para
+  9: reference
+  10: sec
+  11: _unused_11
+  12: _unused_12
+  13: tab

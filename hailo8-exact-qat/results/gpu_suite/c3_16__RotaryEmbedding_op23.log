@@ -1,0 +1,34 @@
+SHAPE RotaryEmbedding_op23/concat1 (concat) got (1, 32, 24, 12) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23/slice1 (slice) got (1, 16, 24, 12) ref (1, 16, 24, 24)
+SHAPE RotaryEmbedding_op23/slice2 (slice) got (1, 16, 24, 12) ref (1, 16, 24, 24)
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 190, in run
+    y = _dispatch(n, L, t, prm, ins, P, layers, img, dev, ints)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 417, in _dispatch
+    a = bias_of(bss[0], mock_of(mks[0], ins[0], dev), dev)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 76, in bias_of
+    return I.hw_lossy(x + b, *lossy_of(rec))
+                      ~~^~~
+RuntimeError: The size of tensor a (32) must match the size of tensor b (16) at non-singleton dimension 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/gpu_suite.py", line 62, in <module>
+    t = time.time(); _, rep2 = G.run(hn, P, X[:1], dev, check=True, cont=False)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 193, in run
+    y = _chain(n, L, ins, P, layers, dev)  # generic: the layer's captured atomic-op chain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/graph26.py", line 303, in _chain
+    y = _CHAINS[n](xs)
+        ^^^^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/atomic.py", line 204, in __call__
+    outs.append(f(r) if r["type"] == "ConstOp" else f(r, *args))
+                                                    ^^^^^^^^^^^
+  File "/mnt/storage/lib_project/hailo8-exact-qat/tools/ops/../../hailoqat/atomic.py", line 104, in add_bias
+    return I.hw_lossy(x + _per_c(b, x), *lossy(rec))
+                      ~~^~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (32) must match the size of tensor b (16) at non-singleton dimension 1

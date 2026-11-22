@@ -1,0 +1,14 @@
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DeformConv_zero
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/DynQuant_ConvInteger
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Einsum_conv
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Mean2
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/QDQ_conv
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/QLinearConv
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/ReduceLogSum_C
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/R_Mod
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/ScatterElements_C
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/ScatterND_C
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Sum3
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/TensorScatter_op24
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/m2/InstanceNorm
+/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/m2/T_Softmax_W

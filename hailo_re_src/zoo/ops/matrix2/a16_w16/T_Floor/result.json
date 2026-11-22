@@ -1,0 +1,19 @@
+{
+ "case": "T_Floor",
+ "stage": "ok",
+ "hn_types": [
+  "conv"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "input_layer1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 8.884700656565302,
+ "sqnr_hw_db": 8.884693895558263,
+ "hef_MB": 0.07,
+ "seconds": 9.4
+}

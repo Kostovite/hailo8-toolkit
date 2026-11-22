@@ -1,0 +1,9 @@
+{
+ "case": "QLinearMatMul_W",
+ "rewrite_vs_orig_db": 26.26309840782969,
+ "ops_after": [
+  "Concat",
+  "Conv"
+ ],
+ "opset_after": 17
+}

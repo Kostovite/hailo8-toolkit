@@ -1,0 +1,9 @@
+{
+ "case": "DynQuant_MatMulInteger_W",
+ "rewrite_vs_orig_db": 41.41521763076046,
+ "ops_after": [
+  "Concat",
+  "Conv"
+ ],
+ "opset_after": 17
+}

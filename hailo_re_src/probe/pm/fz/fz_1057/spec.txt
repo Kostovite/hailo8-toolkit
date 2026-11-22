@@ -1,0 +1,1 @@
+c=96 h=20 hswish softmax_c up_down up_down gelu

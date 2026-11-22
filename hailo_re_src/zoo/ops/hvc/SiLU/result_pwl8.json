@@ -1,0 +1,6 @@
+{
+ "op": "SiLU",
+ "prec": "a8_w8",
+ "chip_sqnr_db": 44.06524156484268,
+ "host_error": "RuntimeError: skipped (SKIP_HOST=1)"
+}

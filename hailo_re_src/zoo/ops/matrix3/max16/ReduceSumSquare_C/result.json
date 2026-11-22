@@ -1,0 +1,34 @@
+{
+ "case": "ReduceSumSquare_C",
+ "stage": "ok",
+ "hn_types": [
+  "dw",
+  "feature_multiplier",
+  "reduce_sum"
+ ],
+ "activations": [],
+ "prec": "max16",
+ "prec_layers": [
+  [
+   "input_layer1",
+   "a8_w8_a8"
+  ],
+  [
+   "reduce_sum1",
+   "a8_w8_a16"
+  ],
+  [
+   "dw1",
+   "a16_w16_a16"
+  ],
+  [
+   "output_layer1",
+   "a16_w16"
+  ]
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 142.11029466571534,
+ "sqnr_hw_db": 39.786231742346104,
+ "hef_MB": 0.2,
+ "seconds": 12.4
+}

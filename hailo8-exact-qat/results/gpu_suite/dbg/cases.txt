@@ -1,0 +1,2 @@
+yolov5s /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov5s/yolov5s.hn /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/work/yolov5s/cap2 /mnt/storage/lib_project/models/Hailo_model/datasets/coco/val2017/000000000139.jpg
+c3_16__Sum3 /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Sum3//case.hn /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Sum3//gcap /mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/ops/c3_16/Sum3//cap_in.npy

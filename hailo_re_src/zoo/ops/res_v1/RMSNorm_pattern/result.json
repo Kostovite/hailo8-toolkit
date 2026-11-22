@@ -1,0 +1,18 @@
+{
+ "case": "RMSNorm_pattern",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "ew_mult",
+  "feature_multiplier",
+  "normalization",
+  "reduce_mean"
+ ],
+ "activations": [
+  "inv_sqrt"
+ ],
+ "sqnr_native_db": 142.05598864122527,
+ "sqnr_hw_db": 35.80168174021551,
+ "hef_MB": 0.17,
+ "seconds": 19.2
+}

@@ -1,0 +1,14 @@
+{
+ "case": "Hardmax_C_onehot",
+ "rewrite_vs_orig_db": 333.62482474751175,
+ "ops_after": [
+  "ArgMax",
+  "Cast",
+  "Concat",
+  "Conv",
+  "Less",
+  "Sub",
+  "Unsqueeze"
+ ],
+ "opset_after": 17
+}

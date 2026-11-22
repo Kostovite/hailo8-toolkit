@@ -1,0 +1,22 @@
+{
+ "case": "Swish_beta",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "swish"
+ ],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "activation1",
+  "conv1",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 143.80571146108318,
+ "sqnr_hw_db": 36.43527266043656,
+ "hef_MB": 0.1,
+ "seconds": 11.6
+}

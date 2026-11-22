@@ -1,0 +1,93 @@
+{
+ "file": "base2/r.hef",
+ "version": 2,
+ "size": 947917,
+ "ccw_offset": 300477,
+ "groups": [
+  {
+   "name": "",
+   "preliminary_bytes": 647440,
+   "preliminary_actions": {
+    "disable_lcu": 32,
+    "write_data_ccw_ptr": 65,
+    "wait_for_module_config_done": 13,
+    "enable_sequencer": 2,
+    "wait_for_seqeuncer": 2,
+    "allow_input_dataflow": 1,
+    "enable_lcu": 32
+   },
+   "contexts": [
+    {
+     "index": 0,
+     "name": "",
+     "config_bytes": 0,
+     "actions": {
+      "allow_input_dataflow": 1
+     },
+     "edges": [
+      {
+       "name": "router/input_layer1",
+       "dir": "in",
+       "conn": "boundary",
+       "shape": [
+        1,
+        1,
+        1024
+       ],
+       "frame_bytes": 8192,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "router/conv5",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        1,
+        1,
+        21
+       ],
+       "frame_bytes": 48,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "router/conv4",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        1,
+        1,
+        6
+       ],
+       "frame_bytes": 16,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      },
+      {
+       "name": "router/conv3",
+       "dir": "out",
+       "conn": "boundary",
+       "shape": [
+        1,
+        1,
+        3
+       ],
+       "frame_bytes": 16,
+       "buffers": 4294967295,
+       "peer": 0,
+       "engine": 0
+      }
+     ],
+     "io_bytes": {
+      "boundary/in": 8192,
+      "boundary/out": 80
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "case": "C_Pow_tensors",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv",
+  "ew_mult"
+ ],
+ "activations": [
+  "exp",
+  "log",
+  "sigmoid"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 144.41582851884556,
+ "sqnr_hw_db": 40.02046415409887,
+ "hef_MB": 0.19,
+ "seconds": 29.1
+}

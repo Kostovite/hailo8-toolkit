@@ -1,0 +1,1 @@
+c=64 h=16 dw5 conv1 dw7 avgpool attn down_up dw5

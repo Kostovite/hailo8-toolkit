@@ -1,0 +1,15 @@
+{
+ "case": "Greater_mask_p1p0",
+ "stage": "ok",
+ "hn_types": [
+  "activation",
+  "conv"
+ ],
+ "activations": [
+  "threshold"
+ ],
+ "prec": "a8_w8",
+ "sqnr_native_db": 348.82728271162637,
+ "sqnr_hw_db": 24.242088908415234,
+ "seconds": 5.4
+}

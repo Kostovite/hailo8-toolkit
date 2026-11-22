@@ -1,0 +1,24 @@
+{
+ "case": "T_MaxPool_ceil",
+ "stage": "ok",
+ "hn_types": [
+  "conv",
+  "external_pad",
+  "maxpool"
+ ],
+ "activations": [],
+ "prec": "a8_w4",
+ "prec_layers": [
+  "conv1"
+ ],
+ "prec_skipped": [
+  "input_layer1:HailoInputLayer",
+  "external_pad1:HailoExternalPad",
+  "maxpool1:HailoMaxPool",
+  "output_layer1:HailoOutputLayer"
+ ],
+ "sqnr_native_db": 41.2073184444425,
+ "sqnr_hw_db": 38.39170827512368,
+ "hef_MB": 0.12,
+ "seconds": 8.3
+}

@@ -1,0 +1,1 @@
+c=48 h=16 conv5 softmax_c avgpool up_down groupnorm shuffle

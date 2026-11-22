@@ -1,0 +1,900 @@
+{
+"layers": [
+{
+"layer": "paddle_ocr_v5_mobile_recognition/input_layer1",
+"type": "input_layer",
+"status": "exact",
+"bad": 0,
+"numel": 46080
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/precision_change0",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 46080
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 46080
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 61440
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw1",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 61440
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 122880
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization4",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 122880
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw2",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 122880
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization8",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw3",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization12",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw4",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 122880
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization16",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw5",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv6",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization20",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 245760
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw6",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 122880
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv7",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization24",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw7",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv8",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization28",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw8",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv9",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization32",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw9",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv10",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization36",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw10",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv11",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization40",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw11",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization42",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/avgpool1",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/fc1",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/fc2",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/resize1",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult1",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv12",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization44",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw12",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization46",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/avgpool2",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/fc3",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/fc4",
+"type": "dense",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/resize2",
+"type": "resize",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult2",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv13",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization48",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 230400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw13",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv14",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization52",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/dw14",
+"type": "dw",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv15",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/normalization56",
+"type": "normalization",
+"status": "exact",
+"bad": 0,
+"numel": 115200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/avgpool3",
+"type": "avgpool",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv16",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv17",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization1",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub1_layer_normalization1",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/square1_layer_normalization1",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_var_inv_layer_normalization1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization1",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/precision_change1",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_feature_splitter1_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_feature_splitter1_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 5120
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_feature_splitter1_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/matmul1",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 12800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_max_softmax1",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 320
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub_softmax1",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 12800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_sum_softmax1",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 320
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult_softmax1",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 12800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/matmul2",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv19",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_add1",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization2",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub1_layer_normalization2",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/square1_layer_normalization2",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_var_inv_layer_normalization2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization2",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/precision_change2",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv20",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 9600
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv21",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_add2",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization3",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub1_layer_normalization3",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/square1_layer_normalization3",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_var_inv_layer_normalization3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization3",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/precision_change3",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_feature_splitter2_1",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_feature_splitter2_2",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 5120
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_feature_splitter2_3",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/matmul3",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 12800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_max_softmax2",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 320
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub_softmax2",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 12800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_sum_softmax2",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 320
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult_softmax2",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 12800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/matmul4",
+"type": "matmul",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv23",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_add3",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization4",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub1_layer_normalization4",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/square1_layer_normalization4",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_var_inv_layer_normalization4",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization4",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/precision_change4",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv24",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 9600
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv25",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_add4",
+"type": "ew_add",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_mean1_layer_normalization5",
+"type": "reduce_mean",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub1_layer_normalization5",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/square1_layer_normalization5",
+"type": "feature_multiplier",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv_var_inv_layer_normalization5",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult1_layer_normalization5",
+"type": "ew_mult",
+"status": "unsupported",
+"bad": -2,
+"numel": 0
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/precision_change5",
+"type": "activation",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv26",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 19200
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/concat1",
+"type": "concat",
+"status": "exact",
+"bad": 0,
+"numel": 38400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv27",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 2400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv28",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 4800
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/conv29",
+"type": "conv",
+"status": "exact",
+"bad": 0,
+"numel": 735400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_max_softmax3",
+"type": "reduce_max",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_sub_softmax3",
+"type": "ew_sub",
+"status": "exact",
+"bad": 0,
+"numel": 735400
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/reduce_sum_softmax3",
+"type": "reduce_sum",
+"status": "exact",
+"bad": 0,
+"numel": 40
+},
+{
+"layer": "paddle_ocr_v5_mobile_recognition/ew_mult_softmax3",
+"type": "ew_mult",
+"status": "exact",
+"bad": 0,
+"numel": 735400
+}
+]
+}

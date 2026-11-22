@@ -1,0 +1,8 @@
+normalization1 = normalization([0.0, 0.0, 0.0], [255.0, 255.0, 255.0])
+change_output_activation(conv42, sigmoid)
+change_output_activation(conv53, sigmoid)
+change_output_activation(conv63, sigmoid)
+nms_postprocess("/mnt/storage/lib_project/models/Hailo_model/hailo_re/zoo/repo_v2.18/hailo_model_zoo/cfg/postprocess_config/yolov8s_nms_config.json", meta_arch=yolov8, engine=cpu)
+
+model_optimization_flavor(optimization_level=0, compression_level=0)
+model_optimization_config(calibration, calibset_size=64)

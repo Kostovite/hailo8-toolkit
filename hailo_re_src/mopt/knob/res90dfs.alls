@@ -1,0 +1,2 @@
+resources_param(max_compute_utilization=0.9, max_compute_16bit_utilization=0.9, max_memory_utilization=0.9, max_control_utilization=0.9, max_input_aligner_utilization=0.9, max_apu_utilization=0.9)
+context_switch_param(toposort_mode=dfs)

@@ -1,0 +1,374 @@
+# Hailo-8 / DFC 3.33 compiler rules, measured by probing
+
+Black-box method: tiny parametric ONNX nets (`sweep.py`, 661-case grid in `runs/grid`, plus the 453 compiled op
+probes of `zoo/ops`) -> compile -> read the compiler's own record in the HEF (`mapping` = integrated_hw_graph
+proto: per-node resources, cycles, latency profile, rule formulas) -> firmware timings on the chip (`rtprof.py`).
+
+## 1. Where the numbers come from
+
+| HEF field | meaning |
+|---|---|
+| `resources_list[i].frame_total_cycles` | cycles per frame of node i at 400 MHz |
+| `bottleneck_fps` | exactly 400e6 / max(frame_total_cycles) |
+| `profiler_data` | per context, per layer start/end cycle = pipeline fill (latency) |
+| `se_formula` | per node: AND of clauses `"<feature used> AND !(<supported bit>)"` = capability rules |
+
+## 2. Chip
+
+* NN core 400 MHz; 8 clusters; the CP-SAT splitter allows <= 16 nodes and <= 64 subclusters per cluster.
+* Conv peak ~59-64 MAC per subcluster per cycle (8-bit) -> 8 x 64 x 64 x 2 x 400 MHz = 26.2 TOPS (the datasheet).
+* About 350 subclusters are usable in one context (16-layer chain overflows at 43 per layer).
+* Cluster input stream ~8 B/cycle (1x1 s2 conv is input-bound); a concat of spatial slices streams ~3-4 B/cycle and
+  is often THE bottleneck node.
+* No DRAM: inter-context tensors and DDR portals go to host RAM over PCIe.
+
+## 3. Capability matrix (from se_formula, 596 HEFs, `db/rules_v1.json`, `capmatrix.py`)
+
+1 = supported, 0 = never, 0/1 = depends on the node's configuration.
+
+| node type | 8->16 | 16x4 SC | dilation | 16-bit bias | 8-bit bias | no_contexts |
+|---|---|---|---|---|---|---|
+| CONV, DW | 0/1 | 0/1 | 0/1 | 1 | 1 | 0/1 |
+| MATMUL | 0/1 | 0 | 0 | 1 | 1 | **0** (and max 1 output) |
+| ACTIVATION, NORMALIZATION | 0/1 | 0 | 0 | 1 | 1 | 1 |
+| STANDALONE_EW_ADD / SUB | 0/1 | 0 | 0 | 1 | **0** | 1 |
+| EW_MULT | 0 | 0 | 0 | 1 | 0/1 | 1 |
+| AVGPOOL | 0 | 0/1 | 0/1 | 0/1 | 1 | 1 |
+| MAXPOOL, CONCAT, splitters, SLICE, SHORTCUT, IO | 0 | 0 | 0 | 0 | 1 | 1 |
+| RESIZE, REDUCE_MEAN | 0 | 0 | 0 | 0/1 | 1 | 1 |
+| FEATURE_MULTIPLIER | 0 | 0 | 0 | 1 | **0** | 1 |
+
+A16_W16 is allowed on every type; 16->8 transitions everywhere; 4-bit weights everywhere.
+
+## 4. Cost (grid medians; MAC per subcluster per cycle)
+
+| op | 8-bit | 16-bit |
+|---|---|---|
+| conv 1x1 | 48 | 7.4 |
+| conv 3x3 | 50 | **2.8** |
+| conv 5x5 / 7x7 | 55 / 56 | |
+| conv 3x3 stride 2 | 29 | |
+| depthwise 3x3 / 5x5 / 7x7 | 1.9 / 2.7 / 2.9 | 1.7 |
+
+* 16-bit costs 7-18x the compute of 8-bit (not 4x); 16-bit add 2.5x, mul 7x, concat 2x, activation 2.5x slower.
+* Activations are free (relu = silu = sigmoid = tanh = leaky; identical cycles).
+* Channels < 32 waste the MAC array (8 ch: 37 MAC/SC/cycle); >= 256 output channels force an output-feature split
+  x16 at ~40.
+
+## 5. Decisions the compiler makes
+
+* Spatial defuse of a conv = ceil(W / 8) width slices (W16->2 ... W80->10), capped ~11-16 by per-cluster limits.
+* Depthwise is defused by INPUT_FEATURES (x15-17).
+* Big output channels -> output-feature defuse x16 (`conv1_d0..d15`).
+* Pipelined chains run at the slowest layer: 2-8 equal convs = same FPS as one.
+
+## 6. Blind spots / failures (rewrite before compiling)
+
+| case | symptom | rewrite |
+|---|---|---|
+| depthwise 5x5 | never defused: 1 subcluster, 405 FPS vs 15k for 3x3 | split, or 3x3 cascade |
+| depthwise 7x7 at >= 80x80 | "microcode exceeded size" | force a defuse |
+| C2f block n=1, 128 ch | 1175 FPS vs 7318 for n=2 | (open) |
+| elementwise Max / Min | 7x / 3.6x slower than Add | max(a,b) = a + relu(b - a) |
+| spatial ReduceSum | 7x slower than spatial ReduceMean | ReduceMean x H*W |
+| nearest resize x4 | 8x slower than x2 | two x2 resizes (exact) |
+| MaxPool 5x5 s1 | 2x slower than 3x3 | maxpool3 o maxpool3 (exact) |
+| spatial ReduceMax | parser: features axis + keepdim only | global MaxPool |
+| SpaceToDepth after conv | parser: UnsupportedShuffleLayer | |
+
+## 7. Multi-context rules (the external partition pipeline, `turbo/`)
+
+* R1 a producer and its slice family stay in one context.
+* R2 a sub-network input is host IO (tf_rgb conversion needs features % 8 == 0) -> sub-compile with reshapes off.
+* R3 a context-entry layer must not be SPATIALLY defused.
+* R4 sub-compile SPATIAL_RESHAPE pieces of format conversions -> remove_node in the full script.
+* R5 an entry layer CAN be FEATURE-defused (stock: dw4 INPUT_FEATURES x4); the sub-compile does not try it.
+* R6 single-context compiles keep weights in L2 (`mixed_mem=enabled`); multi-context reloads them through the
+  sequencer at every switch (1.7 ms per context vs 0.25) -> `mixed_mem=disabled`, except nodes that become
+  infeasible.
+* Objective: a context's batch-1 time is its pipeline FILL (latency), not its period; the single-context default
+  stops at a throughput target -> `performance_param(optimize_for_batch=1)` (ctx2 of nano: 1010 -> 4034 FPS).
+* A sub-compile's choice can be infeasible inside the full model ("Validator failed on node X: Agent infeasible")
+  -> fall back to that context's next-best variant (`hcc.py`).
+* A transpose_matmul format conversion of an operand fed across a cut must be declared on the REAL producer.
+
+## 8. Parser / quantizer failures by kind (195 native op-probe failures, `db/ops.jsonl`)
+
+All 200 ONNX ops are covered after rewrites (`zoo/ops/OPS_SUPPORT.md`, `ONNX_COVERAGE.md`); natively:
+
+| kind | n | meaning / fix |
+|---|---|---|
+| `IndexError: list index out of range` | 74 | unknown op silently DROPPED by the parser; surfaces in the next layer's shape calc -> PWL (`pwl_inject.py`) or host |
+| `ParsingWithRecommendationException` | 18 | ArgMin, Equal, DFT, Einsum... -> compat rewrites |
+| `Not all layers support bit exact` | 6 | bilinear down/aligned-corners resize: no bit-exact emulation |
+| `float() argument ... list` | 6 | Pow with non-scalar exponent constant -> rewrite to Mul chains |
+| `UnsupportedModelError` | 5 | Mod, MatMul with const W / two tensors, Pow of tensors |
+| LSTM/GRU unroll limits | 5 | > 16 steps (8 bidirectional) refused; GRU crashes the allocator |
+| `Greater` with negative theta | 2 | greater = thresholded ReLU, theta >= 0 only -> Not(Less) |
+| LayerNorm over all dims | 1 | beta over all dimensions unsupported |
+| GELU tanh form | 1 | allocator `map::at` -> rewrite to erf GELU |
+
+## 9. yolo26m attention contexts (open)
+
+Partition res70_seed1 (4 ctx). Contexts holding the attention block (format_conversion -> conv_feature_splitter
+-> matmul -> softmax pieces -> matmul) do not compile as stand-alone sub-networks:
+* default / lat: `matmul1: Memory units capacity exceeded (available 128, required 165)` (per-cluster memory units)
+* relaxed resources_param 1.0: same (a hard per-cluster limit, not a cap)
+* defuse(matmul1, 2, DYNAMIC_WEIGHTS) as stock does for matmul3: `Defuse insufficient rows (needed 2, actual 1)`
+* stock's per-node compilation_param for matmul only: next node (`reduce_max_softmax1`) overflows memory
+* stock's settings for the whole attention block: the sub-network no longer fits ONE context ("Initial
+  utilization overflow")
+* the transposed matmul operand needs its explicit `matmulN_reshape = format_conversion(..., transpose_matmul)`
+* R1 as implemented is too strict here: stock keeps conv_feature_splitter11_1 and _2/_3 in different contexts
+Next: partitions whose attention context carries fewer other layers (cut right before format_conversion1 and after
+matmul2), searched with part_search.py.
+
+## 10. Hardware model (decoded from the HEF's own config actions, `hwlayout.py`, `hwjoin.py`, `hwtab.py`)
+
+The preliminary/context `enable_sequencer` action carries per-cluster bitmaps of the units switched on, and
+`enable_lcu` names each layer controller. Summed over clusters they equal the compiler's per-node resources
+exactly (sum subclusters = SC bits, sum apus = APU bits = LCUs, sum input_aligners = IA bits), so they ARE the units.
+
+| unit per cluster (8 clusters) | count | whole chip | usable at the stock 0.75 caps |
+|---|---|---|---|
+| subcluster (SC, MAC array ~50 MAC/cycle) | 64 | 512 | 384 (seen exactly) |
+| L2 memory bank | 64 | 512 | 384 (seen exactly) |
+| LCU (layer controller; 1 per placed layer piece) = APU | 16 / 20 APU | 128 | 96 (seen exactly) |
+| input aligner | 32 | 256 | 192 |
+| L4 memory cuts per model | | 28 | ("29 L4 memory cuts max (28)") |
+| L3 memory block ("memory units"; enable_sequencer initial_l3 index 0..127) | 128 | 1024 | hard, cap-independent |
+
+Max seen per context over 3,595 HEFs (all probe/zoo/portfolio compiles): SC 505/512, L2 469/512, LCU 127/128,
+APU 144/160, IA 171/256 -> the 0.75 caps are a default, not hardware (level max raises them to 0.9-1.175).
+
+Laws that follow (each observed rule is one of these):
+* **One placed layer piece lives in ONE cluster**: <= 64 SC (48 at 0.75). Per-piece ceiling = 400 MHz x 48 x ~50 MAC.
+  Anything faster MUST be defused into pieces on several clusters -> this is why the compiler defuses big
+  layers, and why single convs at 40x40 report `cl 1`.
+* **16 LCUs per cluster** -> at most 16 layer pieces per cluster (the CP-SAT "<= 16 nodes" limit); a x16 defuse
+  costs one whole cluster's controllers; a context holds <= 96 pieces at stock caps.
+* **Stream port = 8 B/cycle** (3.2 GB/s): host INPUT is exactly 8.00 B/cycle max, feature splitters 7.99; any
+  tensor wider than that per frame-time must be split into several streams (defuse/splitters).
+* Pool/dw units are slow: MaxPool and DW bottleneck nodes run at 0.2-0.4 B/cycle -> pooling/dw throughput needs
+  INPUT_FEATURES defuse (stock does x15-17).
+* Row width: w*c > 128 KiB per row does not compile (c64 w4096, c256 w512 fail; c64 w2048, c16 w4096 pass).
+* Attention: cycles/frame ~= heads * N^2 / 7.5 (the softmax/elementwise over the score maps), independent of c.
+  e0 attention (qkv fed straight from a network/context input) crashes (`_M_range_check`) or overflows the 128
+  memory units at N >= 784; the SAME block with a compute layer in front (e2) compiles up to N = 1600 -> R10.
+* Large kernels get no extra SCs (k3..k9: 43 SC) -> FPS ~ 1/k^2 (k3 12552, k9 1567, k15 615).
+
+Blind spots from this sweep (compiler under-allocates; candidates for forced defuse / seeds):
+| case | FPS | vs neighbour |
+|---|---|---|
+| residual over 4 convs (c64 80x80) | 396, 18 SC | n=8: 3717, 363 SC |
+| conv stride >= 4 | 2098, 6 SC | stride 3: 12159 |
+| conv c=72 at 40x40 | 6653, 28 SC | c=64: 12552, 43 SC |
+| dw5 / dw7 at 20x20 | 1 SC | dw9: 52 SC |
+
+## 11. R10 (multi-context)
+A context must not start at a format_conversion (the attention reshape): the producer moves forward into that
+context (`part_fix.py`), so the attention is e>=1. yolo26m ctx3 failed exactly this way (input_layer -> reshape ->
+qkv -> matmul3: "Memory units 128 vs 165/302").
+
+## 12. Blind spots are deterministic; level max fixes most
+Same FPS with allocator seed 1, seed 2 and all resources_param at 1.0 -> a fixed level-1 heuristic, not luck.
+`performance_param(compiler_optimization_level=max)` (compile <= 90 s on these nets):
+| case | level 1 | level max |
+|---|---|---|
+| C2f block n=1 c128 80x80 | 294 | 2412 |
+| dw7 20x20 | 1012 | 25203 |
+| dw5 80x80 | 204 | 5402 |
+| conv c72 / stride 4 / k9 | 6653 / 2098 / 1567 | unchanged |
+skip n=4: explicit defuse decisions (conv x5 spatial) 396 -> 1335.
+hcc variants accept a `_max` flag (e.g. lat_max, lat_fs_max).
+
+## 13. R11 LCU-path layers across a cut (assemble.py)
+A bilinear resize runs on the LCU/PPU path (`hailo_rgb_to_lcu` input conversion). When its output crosses a cut,
+declare `X_output_reshape = format_conversion(X, consumer, ppu_to_hailo_rgb)` (stock does; a sub-compile never
+emits it because its consumer is a host output). Also keep format_conversion lines whose endpoints are pre-defuse
+layer names. With this, all 34 boundary op probes (`bnd.py`, cut before and after each op) are bit-exact.
+
+## 14. Conv tiling: SC = 8 output channels x 8 columns (defuse algebra)
+* Spatial defuse count is FIXED at ceil(W/8) (8-column slices): any other count -> "Unsupported defuse".
+* SCs per spatial piece = output features / 8 (c64 -> 8 SC, o32 -> 4 SC, same cycles) -> max useful SCs of a conv =
+  ceil(o/8) x ceil(W/8); k9 c64 W40 already uses all 40 tiles = hardware-bound (FPS ~ 1/k^2 beyond that).
+* For o > 64 the level-1 heuristic packs 16 channels per SC (features_per_mac 2, padded to x16) and halves the
+  tile count. Nested defuse fills it: `L_d0, L_d1, L_dc = defuse(L, 2)` then each `L_dX` SPATIAL x ceil(W/8):
+  | conv 40x40 k3 | stock | nested 2 x 5 | feature x2 only | feature x4 only |
+  |---|---|---|---|---|
+  | c72 | 6653 | 13107 | 2668 | 3689 |
+  | c128 | 3832 | 7598 | 1535 | 2136 |
+  | c64 | 12552 | 14719 | 4026 | 4188 |
+  Feature defuse alone REPLACES the spatial split (slower). Level max does not find the nesting.
+* Stride >= 4 with padding: the compiler inserts EXTERNAL_PAD on 1 SC (0.35 B/cycle) = the bottleneck (2098 FPS,
+  stride 3 absorbs the pad into the SUPER_CONV reshape: 12159).
+* `turbo/relieve.py` turns a sub-compile's slowest convs into nested-defuse hints; `hcc.py --relieve` runs them as
+  round-2 `<best>_nd` variants and keeps them only if they rank better.
+* Measured on yolo26n (winner partition c56-127): level max = same per-context latency (175.0/408.4, 10x compile
+  time); relief hints overflow the already-full contexts (sub-network no longer fits one context) or are slower
+  (ctx2 2.02 -> 2.87 ms). Both pay only where a context has slack (isolated blocks, sparse contexts).
+
+## 15. R12 the map::at crash = an unreplayable matmul split (found with pseudo-models, mapat.py)
+Pseudo-models `attn_ctx_gen.py` (pre convs -> PSA -> post convs, 1 or 2 PSAs) in 3 cut layouts x 4 variants:
+* map::at only at N = 784 tokens (28x28), never at N <= 400 (14x14, 20x20), for c = 128 and 256, 1 or 2 PSAs.
+* It ALWAYS coincides with an attention sub-compile that INPUT_FEATURES-defused the softmax x V matmul
+  (`matmulN_fs_0, matmulN_fs_1, ... = defuse(matmulN, 2, defuse_type=INPUT_FEATURES)`: a 2-operand split, one
+  operand behind the `transpose_matmul` conversion). Not the DYNAMIC_WEIGHTS split of Q x K (it replays fine).
+* Proof: that sub-compile's own auto.alls does not replay on its own sub-HAR (map::at) -> the compiler can make this
+  solution but cannot read it back; every assembled script inherits the crash. Even stock crashes when merely given
+  `context([...])` of such a model, because it then also picks that split.
+* Fix (R12, part_fix -> c{i}.extra.alls): `compilation_param(<softmax x V matmul>, resources_allocation_strategy=
+  manual_scs_selection, number_of_subclusters=8)` keeps it whole: 1123.8 vs 1135.7 FPS, and the result replays.
+  4 SC -> 200 FPS, 16 SC -> no partition. Stock's own yolo26m script has matmul4 whole with 8 SC: same rule.
+* Infrastructure bug found on the way: parallel compiles in ONE cwd clobber each other's errors.pb / rotating SDK
+  logs -> spurious `DecodeError: Unexpected end-group tag`, empty "Compilation failed:", "unexpected crash",
+  `rotating_file_sink` errors. compile_alls.py / compile_sub.py / sweep.py now chdir into a private dir.
+
+## 16. (was open) yolo26m full compile map::at -> R12
+Every 4/5-context assembly (our R10 partition AND stock's own context partition) crashes with `map::at` at
+allocation start, while each context compiles alone (ctx3 attention 1135.7 FPS). Bisect so far: not the portals,
+not compilation_param/place; `remove_node(format_conversion4)` and the ctx3 defuse decisions of conv88/conv93/
+conv97/dw6/matmul4 change the error -> several interacting decisions (`turbo/undefuse.py` reverts one layer's
+defuse consistently for this bisect). The ctx3 variant without matmul3 DYNAMIC_WEIGHTS (lat_fs_sr) passes this
+stage and fails later in the Splitter.
+
+## 17. First yolo26m from the own pipeline (2026-10-25) + R6 is not universal
+* Partition m_part_r12 (R1 forward, R10, R12 pins), combo default+default_sr+default+default_sr, full script = the
+  assembled one WITHOUT the R6 blanket `mixed_mem=disabled`: compiled in 253 s (+ 308 s parallel sub-compiles,
+  vs stock ~96 min), BIT-EXACT vs cprof/base_default.hef, one chip: b1 24.58 (stock 26.28), b4 39.57 (stock 38.81).
+* With R6 every combo failed "Splitter failed" in ctx0 (core log: "Failed recording best-effort buffers:
+  l4_portal_from_matmul1_d0_to_matmul1_dc was not found in toposort recipe" on the pseudo-model; with all
+  mixed_mem enabled instead: "Parallel activation required but not assigned at: matmul1"). -> hcc keeps R6 and
+  falls back to the sub-compiles' own mixed_mem choice on those errors (marker file r6_off).
+* Pseudo-model check of R12: ac_c256_h28 (never assembled before) compiles bit-exact with the attention in the last
+  context (233.9 FPS b1); attention followed by a cut needs the R6 fallback.
+
+## 18. Op coverage of the own pipeline (2026-10-25, bnd.py: 2 convs -> OP -> 2 convs, cut before AND after OP)
+Layer types the parser produces from the 259 ONNX op probes: 31 (pre-quantization HN). In the quantized HAR the
+pipeline actually reads, layer_normalization / softmax / feature_splitter are already decomposed (reduce_mean,
+ew_sub, feature_multiplier, reduce_max/sum ...), at C=16 and C=64 alike, so they never reach hcc as such. Every
+remaining type is boundary-tested through hcc, chip bit-exact vs stock except where noted (bnd5/bnd6 at the
+survey's own C=16 24x24: LayerNorm_C, InstanceNorm2d, RMSNorm_C, GroupNorm(4), ViT_block, Softmax_C/W, Argmax_C,
+AvgPool3s1 +nopadcount all EXACT both cuts). Earlier count: 28 (runs bnd2 34 cases, bnd3 sweep families, bnd4 torch-exported `probe/op_ctx_gen.py` `@DIR` cases):
+conv dw gconv maxpool avgpool(+count_include_pad=0 const map) ew_add/mult/sub max/min concat split slice resize
+(nearest, bilinear) reduce_sum/max/mean softmax(C and W) matmul d2s s2d(PixelUnshuffle) deconv external_pad
+feature_shuffle C2f-block activation layer_normalization(LayerNorm/InstanceNorm/GroupNorm(4)) batch_norm
+normalization(div, L2-norm) shortcut(Tile) feature_multiplier ViT block (LN+MHA+GELU MLP, feature_splitter).
+Not reachable: dense (`No format for fc1 -> conv3`, stock fails), const_input-only, argmax/mean_C cut_after
+(op folded into the conv: probe artefact, empty first context).
+* R13 (part_fix): a context never ENDS at a feature_multiplier (x^2): core assert
+  `FeatureMultiplierKernel::set_default_power_table: m_out_amdc.size() ==` -> move it forward to its consumers.
+  op_pow2 cut_after: 0/6 -> BIT-EXACT.
+* R14 (part_fix, shares R10's loop): a context never STARTS at a mean-subtract fan-out (a tensor feeding a
+  reduce_mean AND an ew_sub = a norm block): Splitter failed in that context (T_GroupNorm C=16 cut_before 0/4);
+  moving the producer conv forward -> BIT-EXACT. (At C=64 it happened to pass.)
+* bnd.py cut locator counts dw too (1-channel convs after argmax become dw; the old locator cut at conv1).
+* STOCK SILENT-WRONG on the chip: GroupNorm(1) (= whole-tensor mean/var: reduce_mean [20,20,1] -> [1,1,1] ->
+  resize -> sub -> square -> conv_var_inv [.,1] -> inv_sqrt) at C=64 is ~98% of bytes wrong vs SDK_BIT_EXACT
+  (corr 0.66) even single-context stock; and in 2 contexts (stock forced with resources_param 0.10, or ours) the
+  frames MIX (repeated-frame input differs from varied input; 255 errors). The op survey's 36.4 dB was HSim at
+  C=16 where it fuses into one layer_normalization. GroupNorm(4) matches the emulator. -> rewrite whole-tensor
+  norms (GroupNorm(1)) as per-channel-group statistics or run them on the host; never trust HSim alone for
+  global reductions.
+* mixed_mem is NOT numerically neutral for global reductions: stock script with only mixed_mem flipped to
+  disabled differs by <=4 LSB (deterministic). Placement (resource caps) also changes it by <=4.
+* Chip vs SDK_BIT_EXACT is not byte-exact in general (op_unshuffle 1,222/204,800 bytes at <=2 LSB, frame 0 of
+  GroupNorm(4) 479 bytes): exactness of the own pipeline is judged against the stock HEF, which ours match.
+
+## 19. yolo26m on STOCK's own 5-context membership (2026-10-25, turbo/t/m_part_stock15) + attention recipes
+* R1 is stricter than the hardware: stock keeps conv22 in ctx0 and its conv_feature_splitter3_* in ctx1.
+* Attention contexts need stock's per-layer recipe (c{i}.extra.alls), otherwise "Memory units capacity exceeded
+  (available 128, required 165)" for the Q x K matmul in the sub-compile and Splitter failed in the assembly:
+  ctx1 (matmul1/2, 400 tokens): compilation_param(matmul1|matmul2, manual_scs_selection, number_of_subclusters=2,
+  mixed_mem=disabled), conv_feature_splitter6_* 1 SC.  ctx3 (matmul3/4, 784 tokens): remove_node(
+  format_conversion4/5/6) [keeps 28x28 rows; without it "Defuse insufficient rows in layer: matmul3 Needed 2
+  Actual 1"], matmul3 = defuse(2, DYNAMIC_WEIGHTS) at 4 SC each, matmul4 8 SC, conv_feature_splitter11_* 2/2/3 SC.
+* Result: 4/64 combos assemble (all with ctx3 = lat_fs, 558 FPS sub; the 1124-FPS default variants fail the full
+  Splitter / "Validator failed on node: concat21"). BIT-EXACT, one chip b1 23.44 / b4 39.15 (stock 26.28 / 38.81,
+  own m_part_r12 24.58 / 39.57). b4 beats stock, b1 does not.
+
+## 20. Why stock wins batch 1 on yolo26m: the per-context SEQUENCER phase = mixed_mem (fw actions, 2026-10-25)
+`hailortcli run2 --mode raw_async measure-fw-actions set-net X.hef --batch-size 1` (turbo/t/fwact/) gives every
+firmware action with a 200 MHz timestamp. Each dynamic context ends: output_channel_transfer_done ->
+module_config_done + trigger_sequencer (one per active cluster) -> sequencer_done_interrupt -> deactivate.
+* Same partition (stock15), same per-context bottlenecks (ctx0 107.7 FPS conv22_d0 in BOTH; ours >= stock in every
+  context), yet b1 stock 38.0 ms vs ours 42.1 ms: the sequencer phase is 0.28-0.98 ms per context in stock and a
+  flat 1.75-1.85 ms in ours (5 contexts: ~5.4 ms) -> the whole b1 gap.
+* Cause: stock's script has mixed_mem=disabled on 319 layers and `allowed` on 30, and the 30 are exactly the
+  compiler HELPER nodes (sh_from_, ws_from_, l4_portal_from_, ddr_portal_from_, auto_reshape_from_, concat_w_from_).
+  Ours (R6 fallback after the blanket R6 failed) had 296 enabled. Blanket R6 disabled the helpers too, which is
+  what broke yolo26m ("l4_portal_... not found in toposort recipe").
+* hcc R6 is now r6_stock(): disabled on model layers + their defuse pieces, allowed on helpers.
+* conv22 itself is NOT the difference: our ctx0 sub-compile chose stock's exact defuse(conv22, 16) x 4 SC.
+* Partition search (turbo/part_refine.py, scored by T(b) = sum lat + (b-1) sum 1/fps + K*2.6 ms, which reproduces
+  measured b1/b4 within 1%/3%): no boundary move around ctx0/1 beats stock's membership.
+* r6_stock applied AFTER the sub-compiles fails (ctx0: "Splitter failed"): mixed_mem must be decided BEFORE
+  allocation. hcc variant flag `_md` appends `compilation_param(L, mixed_mem=disabled)` to each sub-compile for every
+  layer of the context (defuse pieces, not removed nodes, not layers the recipe already pins: a 2nd
+  compilation_param line on a pinned layer resets its SC pin -> "input buffers should be divisible by 2").
+* RESULT (m_w_md): BIT-EXACT, b1 27.61 (stock 26.28, ours-before 23.44); sequencer 0.35-0.59 ms/context
+  (<= stock). b4 fell to 37.35. CORRECTION of a first guess (ctx1 variant): pinning ctx1 default_sr_md, plain
+  default_sr in ctx1, ctx2 lat_fs_sr_md all give 27.6/37.3; every stock15 (mixed_mem enabled) combo gives
+  23.4/39.1. Disabling mixed_mem is a b1-vs-b4 TRADE independent of variants. The sequencer phase at the END of
+  context k belongs to context k+1's config load: plain ctx1 makes ctx0's sequencer 1.80 ms (hyb build).
+  `--pin I=VARIANT[,...]` fixes contexts for such experiments.
+* Per-context sweep (plain = stock15 variants, b1/b4; all plain 23.4/39.1, all _md 27.6/37.3):
+  _md only in c0 24.0/35.3 | only c1 23.6/38.4 | only c4 24.2/39.1 | only c2 or c3: Splitter fails |
+  c1-c4 _md, c0 plain lat 26.6/37.5. NOT additive: the b4 cost needs _md in the middle contexts, the b1 gain
+  needs it everywhere. Pareto front (all BIT-EXACT) vs stock 26.28/38.81:
+    m_w_md2  full_lat_md_default_sr_md_default_md_lat_md_lat_fs_md   27.61 / 37.35  (b1 +5.1%, b4 -3.8%)
+    m_w_sw4  full_default_default_sr_lat_fs_sr_default_lat_fs_md     24.24 / 39.14  (b1 -7.8%, b4 +0.8%)
+  No single HEF beats stock at both yet; pick per deployment batch. Open lever: what mixed_mem buys at b4
+  (likely batch buffering in L3/L4 vs DDR) - next probe is ddr/l4 portal placement on the _md build.
+
+## 21. Fuzz verdict + the retry-tier rules R17-R22 (2026-10-25, 424 forced cuts over 120 random nets)
+* 393/424 bit-exact first pass (32 "void" cuts were infra: VDevice leak; recheck_infra all EXACT). 0 compile-but-wrong
+  after rerun (fz_1043 was pre-R16). The 31 failures, rerun with R13-R16 (+14 exact), then the new rules below:
+  ALL 424 bit-exact except fz_1011 cut_3_8 (SE block, Splitter fails even after R21) = 423/424.
+* Rules (consumer pulled back into the producer's context). Measured on the fuzz: applying them UP FRONT changes
+  127 cuts that already compile and costs FPS (fz_1068 -18%, fz_1111 -14%), so they are RETRY tiers: hcc compiles
+  the partition as given; only a failed context / full compile re-runs part_fix with PART_FIX_STRICT=1, then 2
+  (turbo/hcc.py strict_retry; tested: fz_1090 fixed at tier 1, fz_1075 escalates to tier 2, both BIT-EXACT).
+  tier 1  R17 format_conversion -> X crosses (attention exit; map::at, "can't spatial reshape"): fail 12 / ok 4
+          R18 token-strip tensor [., 1, N, C] crosses (inside attention; "(1,400,800) to (50,8,800) without a
+              successor format_conversion")
+          R20 feature_splitter output crosses ("non-unique elements" ValidationError)          fail 2 / ok 2
+  tier 2  R19 pieces of one decomposed layer_normalizationN / softmaxN split ("Shapes at dim #2 aren't equal")
+              fail 2 / ok 39 (+ R10 yields to R19: the norm group's start comes back instead of pulling forward)
+          R21 dense (SE squeeze) output crosses fail 1/ok 7; R22 conv_slice piece away from producer 1/7;
+          R16b any resize starts a context (nearest 8x8 failed once, fz_1055) 2/18
+* In-distribution judge (DIST=normal) of the 14 uniform-input sweep flags (DeformConv_zero, DynQuant_ConvInteger,
+  QDQ/QLinearConv, Scatter*, Sum3, Mean2, Einsum, ReduceLogSum_C, R_Mod, InstanceNorm, Softmax_W): chip == emulator
+  in ALL 14 (61-75 dB vs float for the conv-like ones; ReduceLogSum_C 13 dB / InstanceNorm 20 dB = quantization,
+  same on emulator). The uniform-input flags were saturation, not silent-wrong. GroupNorm(1) remains the only
+  chip-wrong op (gn1 rewrite fixes it).
+
+## 22. SILENT-WRONG: a dynamic matmul's 2nd operand is read as SIGNED int8 on the chip (2026-10-25)
+* The in-distribution judge's open gap (bnd2 matmul probe: chip 9-14 dB vs emulator 24-29 dB, chip batch ==
+  chip 1-by-1) is NOT frame mixing and NOT format_conversion removal (params-only compile: same). Truncating at
+  the matmul (runs/mm_fc/out/mm_att) keeps it: both operands (conv3/conv4) are bit-exact chip == emulator, the
+  matmul output is not: 9.3% of elements, ALWAYS chip < emulator (-1..-128 LSB), growing with the value.
+* The wrong KEY tokens are exactly those where the K operand (conv4, post-ReLU, quantized UNSIGNED 0..255,
+  zp 0) has a value > 127 (border pixels of the 10x10 map have smaller activations -> exact). Predicting the
+  chip as Q . wrap_int8(K) matches it to 0.17 LSB mean (closer than my linear model fits the emulator itself);
+  clip-to-127 and Q-side hypotheses are 20x worse. The emulator (SDK_BIT_EXACT) models K as uint8: STOCK HEF
+  silently wrong.
+* Workaround: quantization_param(<K producer>, force_range_out=[0, 4*max]) (scale = range/255: 2*max left 4.33% wrong) -> K data <= 127 LSB: chip ==
+  emulator, 29-36 dB vs float (was 10-14 chip / 25-32 emu). Guard: probe/dynmm_check.py Q.har lists every
+  dynamic-weights operand outside int8 and prints the fix line.
+* yolo26m (all 4 matmuls) and SmolLM2-135M: K/V operands are already signed (zp 0, symmetric) -> unaffected.
+  Affected nets: attention whose K (Q.K^T) or V (P.V) comes straight from a ReLU/non-negative layer.
+
+## 23. Emulator-vs-silicon audit, round 2 (2026-10-26)
+* YOLO26m 8/916 pages (chip != emulator on every head) = EMULATOR bug, silicon right: reduce_sum_softmax1 (acc =
+  -2*sum + 2, shift 1, inv_pos PWL from x = -32767) returns 0 in SDK_BIT_EXACT/HSim for row sums 32769/32770 (APU
+  input -32768/-32769); the chip returns 2, as both do for sums 32765 and 32774+. Bisected with attention sub-HEFs
+  fed exact intermediates (runs/det/att: matmul1 + exp exact, one reduce_sum element per bad page). Chip output
+  deterministic across both chips and 3 days.
+* ConvTranspose k2 s2 is SILENT-WRONG on silicon (-17 dB vs emulator +32 dB); k4s2/k3s2 exact. Exact rewrite: conv1x1
+  C->4C + DepthToSpace(2, CRD): chip == emulator 35.7 dB.
+* SDK_BIT_EXACT clamps raw UINT16 inputs at 32767; silicon uses 0..65535 (raw 33000: chip 30026 vs emu 29828).
+  16-bit layers differ by 1-2 LSB on ~0.2% of outputs at any amplitude.
+* dynmm_check.py fixed: qp = [zp, scale]; multi-output layers store scale 0 there (use layer_params/output_scales);
+  a signed_output operand is clipped to int8 by the quantizer itself (yolo26m K: signed, safe).
+* Full write-up: hailo8-exact-qat/docs/HAILO8_ISSUES.md and HAILO_BUG_REPORTS.md.

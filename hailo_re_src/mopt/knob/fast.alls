@@ -1,0 +1,1 @@
+allocator_param(num_of_workers=48, compilation_num_threads=48)

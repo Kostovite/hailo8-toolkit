@@ -1,0 +1,23 @@
+{
+ "case": "Concat_W",
+ "stage": "ok",
+ "hn_types": [
+  "concat",
+  "conv",
+  "slice"
+ ],
+ "activations": [],
+ "prec": "a16_w16",
+ "prec_layers": [
+  "conv1",
+  "concat1",
+  "slice1",
+  "conv2",
+  "output_layer1"
+ ],
+ "prec_skipped": [],
+ "sqnr_native_db": 352.1714729760155,
+ "sqnr_hw_db": 38.99258003175162,
+ "hef_MB": 0.2,
+ "seconds": 13.9
+}

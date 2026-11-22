@@ -1,0 +1,1 @@
+c=48 h=32 down_up sppf maxpool c2f c2f sigmoid
