@@ -1,0 +1,1 @@
+compilation_param(conv1, compress_l3_weights=disabled)

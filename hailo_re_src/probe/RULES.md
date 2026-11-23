@@ -546,3 +546,15 @@ Expect the layout HEF well below its 1.97 FPS estimate.
 * n=100 chains (same probe, all stock B=77 -> start = ceil(100/77) = 2 contexts): small 8-bit 2 ctx 76 iterations
   7 m 20 s; small 16-bit 4 ctx 243 it 15 m 26 s; big 8-bit 6 ctx 283 it 29 m 12 s; big 16-bit 9 ctx 440 it 1 h 1 m.
   Search effort grows with the distance between the count-even start and the real context count = section G.
+
+## 30. HEF back end: config writes, address map, weight layout, chip-verified edit (2026-11-23, hefre/)
+Full notes: `hefre/HEF_BACKEND_20261123.md`. Tools: `hefre/ccwdec.py`, `hefpatch.py`, `chiprun.py`, `wexp/`.
+* A context's config = CCW stream: `u32 nwords-1, u32 address, data, pad 8` (HailoRT parse_ccw_buffer).
+* Cluster k = address window `0x1100_0000 + k * 0x0200_0000` (1,814 / 1,814 grid HEF-cluster pairs).
+  `+0x00_8000..` subcluster L2 (32 KB slots); `+0x40_0000` = same memory through the decompressor.
+* Default `hef_param(params_load_time_compression=allowed)` compresses the images (62-entry byte dictionary at
+  `0x1180_0000` / `0x1980_0000` + nibble codes). Decode with `params_load_time_compression=disabled,
+  should_compress_sequencer_data=False`. `compress_l3_weights` is unrelated (L3 only).
+* 1x1 conv 8->8 int8: plain int8, 16 B per input channel (cin descending), words `[w(c,co), w(c,co+2), 0, 0]`
+  duplicated per subcluster; cout split across clusters by defuse. Bias/zero-point words per channel at ~+7360.
+* CHIP: patching 2 weight bytes + XXH3 rehash -> HailoRT loads it; only that output channel changes on hailo0.
