@@ -558,3 +558,19 @@ Full notes: `hefre/HEF_BACKEND_20261123.md`. Tools: `hefre/ccwdec.py`, `hefpatch
 * 1x1 conv 8->8 int8: plain int8, 16 B per input channel (cin descending), words `[w(c,co), w(c,co+2), 0, 0]`
   duplicated per subcluster; cout split across clusters by defuse. Bias/zero-point words per channel at ~+7360.
 * CHIP: patching 2 weight bytes + XXH3 rehash -> HailoRT loads it; only that output channel changes on hailo0.
+
+## 31. The layout tail: a 16-bit dw with a fused residual add needs a forced feature defuse (2026-11-23, probe/dw31)
+* layout_g3 dw31 = dw 3x3 VALID on 226x226x64 + `elementwise_add` of conv14 (a skip from context 0), a16_w16_a16.
+  Every context holding it failed: alone / with conv108-109 "Splitter failed"; with neighbours (177.., 207.., 210..)
+  the compiler's own 1 h allocator watchdog. Contexts 0-13 without it compiled (ctx_grow).
+* Cause, from the compiler's message with a manual SC count: its own dw rewrite (`dw31_defuse_width_feature_reshape`
+  -> `dw31_defuse_1x1` -> `reshape_hxf_to_w_transposed`, via a DDR portal) makes a 1x1 piece that "needs more than
+  1 subclusters for 16bit L2 biases and contexts" = the same wall as the AIFI precision_change (section 29A).
+* NOT the op itself: standalone dw3x3 c64 (+/- fused add) x 112/224 x 8/16-bit = 8/8 compile (probe/dw31/iso.py).
+* Variants on the real sub-HAR: defuse(dw31, 2) / (4) map::at; defuse_spatial_w Splitter; manual 8/16 SC the
+  L2-bias error; **defuse(dw31, 8) compiles (40 s)**. With it every tail span compiles in 30-40 s (214.., 210..,
+  207.., 200.., 177..216), so context 13 = layers 177..216 and the partition is complete (14 contexts).
+* CHIP (hailo0): the defuse(dw31, 8) sub-HEF vs float64 dw + bias + residual from the native weights, inputs inside
+  the calibrated ranges: max |d| 4.7e-4 = 1.5 output LSB (rel 8e-5), all 64 channels. (Inputs outside the
+  calibrated range clip on the chip: check limvals before any chip-vs-reference test.)
+* Hook: `CTXG_EXTRA="line;line"` adds model-script lines to ctx_grow span compiles (only lines naming span layers).

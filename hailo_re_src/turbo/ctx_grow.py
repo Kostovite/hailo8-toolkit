@@ -61,7 +61,12 @@ LADDER = [int(x) if x != "default" else None for x in os.environ.get("CTXG_FPS_L
 for fps in LADDER if "error" not in res else []:  # default "20": the minimum-footprint fit test only (fast, no map::at)
     try:
         r = ClientRunner(har=out + ".har")
-        r.load_model_script("context_switch_param(mode=disabled)\n" + (f"performance_param(fps={fps})\n" if fps else ""))
+        # CTXG_EXTRA: extra model-script lines (';'-separated) for layers in this span, e.g. a forced defuse
+        # (2026-11-23: dw31 of layout_g3 compiles only with "defuse(dw31, 8)"); lines naming absent layers are dropped
+        ex = [ln for ln in os.environ.get("CTXG_EXTRA", "").split(";") if ln.strip()]
+        ex = [ln for ln in ex if any(f"({n}," in ln or f"({n})" in ln for n in layers)]
+        r.load_model_script("context_switch_param(mode=disabled)\n" + (f"performance_param(fps={fps})\n" if fps else "")
+                            + "".join(ln + "\n" for ln in ex))
         r.compile()
         res.update(ok=True, fps_target=fps); res.pop("error", None)
         break
