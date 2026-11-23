@@ -10,10 +10,14 @@ r_prep(){ tenv; export PYTHONPATH=$QAT/tools/ops:${PYTHONPATH:-}; set -e; cd $OU
   python -u $CV/recipes/onnx_hailo_compat_nofuse.py model.sim.onnx model.compat.onnx
   python -u $PP/add_qkv_identity.py model.compat.onnx model.id.onnx
   python -c "import onnx;n=[x for x in onnx.load('model.id.onnx').graph.node if '/IdMatMul' in x.name];print('QKV_IDENTITY',len(n));assert len(n)==3"
-  ( henv; "$HPY" -u $CV/recipes/rewrite_resize.py model.id.onnx model.up.onnx nn && OMP_NUM_THREADS=16 "$HPY" $CV/recipes/onnx_parity.py model.id.onnx model.up.onnx )
-  mv model.onnx model.raw.onnx; cp model.up.onnx model.onnx; }
+  ( henv; "$HPY" -u $CV/recipes/rewrite_resize.py model.id.onnx model.up.onnx nn && OMP_NUM_THREADS=16 "$HPY" $CV/recipes/onnx_parity.py model.id.onnx model.up.onnx \
+    && "$HPY" -u $CV/recipes/aifi_spatial.py model.up.onnx model.sp.onnx && OMP_NUM_THREADS=16 "$HPY" $CV/recipes/onnx_parity.py model.up.onnx model.sp.onnx )
+  # AIFI in 28x28 layout (aifi_spatial.py): 16-bit token-layout rows (784 wide) do not compile ("needs super-defuse")
+  mv model.onnx model.raw.onnx; cp model.sp.onnx model.onnx; }
 r_data(){ venv; export CUDA_VISIBLE_DEVICES=$G0; $VENV_HF -u $CV/recipes/layout_torch.py data $CKPT $OUT && r_gate ref; }
-r_alls(){ henv; export CUDA_VISIBLE_DEVICES=99; [ -z "$LAYOUT_8BIT" ] && { : > $OUT/extra.alls; return 0; }
-  "$HPY" -u $CV/recipes/gen8.py $OUT/parsed.har $OUT/extra.alls $LAYOUT_8BIT; }
+r_alls(){ henv; export CUDA_VISIBLE_DEVICES=99; : > $OUT/extra.alls
+  [ -n "$LAYOUT_8BIT" ] && { "$HPY" -u $CV/recipes/gen8.py $OUT/parsed.har $OUT/extra.alls $LAYOUT_8BIT || return 1; }
+  # AIFI K/V projections sit in token layout behind an 8-bit format_conversion -> a8_w8_a8 (kv8_alls.py says why)
+  echo >> $OUT/extra.alls; "$HPY" $CV/recipes/kv8_alls.py $OUT/parsed.har >> $OUT/extra.alls; }
 EXTRA_ALLS=$OUT/extra.alls
 r_gate(){ venv; export CUDA_VISIBLE_DEVICES=$G0; $VENV_HF -u $CV/recipes/layout_gate.py $CKPT $OUT $1; }

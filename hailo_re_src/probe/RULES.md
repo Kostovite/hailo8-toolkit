@@ -450,3 +450,99 @@ module_config_done + trigger_sequencer (one per active cluster) -> sequencer_don
   HAR's script is the compiler script: forced ranges were invisible -> false S1).
 * yolo26m regression (turbo/t/m_w_regress_20261026, same pins as c0plain_b): same full.alls, BIT-EXACT, guard ok;
   re-benched side by side today: old 24.5/33.4, new 24.5/33.4, stock 24.0/35.3 (b1/b4) -> no change from the patches.
+
+## 29. 16-bit compile stalls: super-defuse, token rows, partitioner start, solve server (2026-11-22, PP-DocLayoutV3 mix16)
+
+Model: convert/runs/layout_g3 (r5_ord5, mix16, upsample blocks 16-bit). Tools: probe/layer_cost.py, turbo/compile_sub.py,
+cprof/phases.py (named stack profile), turbo/turbo2.cpp hooks.
+
+**A. "Assignment of the node needs super-defuse" = 16-bit tensors on a 784-wide token row.**
+* Localised by sub-HAR bisect: only the AIFI encoder context fails. Alone, the 16-bit positional-embedding const_input
+  (1x784x256, 392 KiB/row) is "Agent infeasible", and the 8->16 precision_change after the token reshape fails
+  "more than 1 subclusters are needed for 16bit L2 biases". Manual SUPER_CONV / feature defuse do not help.
+* Cut rules for bisecting: start a sub-HAR BEFORE a format_conversion and include const_input producers (else
+  "A16_W16_A16 is not supported in tf_rgb_to_hailo_rgb..."); a cut ending at a model output gives map::at.
+* FIX (float-exact): convert/recipes/aifi_spatial.py keeps every per-token op on 28x28 (1x1 conv WITH folded bias, LN
+  over axis 1, pos-emb as a 28x28 const, P.V bias folded into o_proj, qkv identity layers dropped). The parser still
+  puts the conv producing a matmul's 2nd operand (K, V) behind the 8-bit token format_conversion -> those two must be
+  a8_w8_a8 (convert/recipes/kv8_alls.py), or quantization re-adds an 8->16 precision_change on the token row.
+  Encoder alone: 1 context, 339 FPS. Box-AP gate PASS (max drop .0022).
+* A bias-free Conv + separate Add is parsed as a `mul_and_add` normalization layer, not folded: emit Conv with bias.
+
+**B. The stall is the Slotter's starting point, not its speed.**
+* Stack profile of the running compile: 19/20 samples in allocator code (Slotter::solve_and_validate_partition ->
+  "Adjust Edges" -> Shiftman/Racehorse::Automri), 1/20 in CP-SAT. So the CP-SAT cache/server cannot help here.
+* hailo_sdk.core.log of each candidate: ~1,200 iterations in 4 h, ~85% "Automri finished with too many resources on
+  context_N", 0 valid partitions; the context count crept 2 -> 10 at ~1 per hour.
+* Decoded (fn 0x15f5960, called once before find_initial_partition): per-context budget
+  B = max(1, floor(min(graph_estimate, ceil(hw_units * x0)) * x1)), x0 = resources_param cap: 128 * 0.6 = 77.
+  find_initial_partition fills each context greedily to B estimated units. Raising the cap (u0.7..0.9) packs fuller
+  contexts = worse; context_switch_param max_*_utilization (0.3 -> 0.15/0.10) does NOT change the start.
+* Hook: HAILO_INIT_SCALE=s (B*s) / HAILO_INIT_UNITS=n / HAILO_INIT_LOG=1. RESULT: s=0.12 (B=9) found the FIRST valid
+  partition of this net (28 contexts, Unikorn est. 1.97 FPS) 2 h 40 min after the search started; stock (B=77) and
+  s=0.5/0.3/0.2 had none after 3-7 h. A performance_param(fps=5/10/20) target does NOT change the search (same ~270
+  failed iterations at context 2); logger_param(default, file_verbosity=trace, ...) adds no detail (needs a logger name;
+  console_verbosity on `default` is refused: no console sink).
+* Compile-verified contexts (turbo/ctx_grow.py): grow each context by real single-context compiles of candidate spans
+  (context_switch_param(mode=disabled)), 8 ends in parallel. Layout: ctx0 = 29 layers (stem), ctx1 = 15. A TIMEOUT is
+  not "does not fit": infeasible spans fail fast (4-6 min), tight feasible ones search long (> 7 min).
+* Budget-hook results on layout_g3: B=9 (s 0.12) -> 28 contexts after 3 h 9 min, but final mapping of context 5 hit
+  the dynamic overall timeout (~4 h 15 min, "Resolver didn't find possible solution / Splitter shutdown timeout"):
+  the Slotter's "valid" is weaker than the final per-context mapping. B=6 (s 0.08) -> valid 41 contexts after 53 min.
+  Raise the overall limit with allocator_param(timeout=SECONDS) (mapping_timeout default is model-size dependent).
+* ctx_grow on layout_g3: 10 compile-verified contexts for layers 0-134 (29,15,1,13,4,12,4,15,18,24). 16-bit weights
+  make single layers fill a context (conv30 1664->512 1x1 = 1.7 MB; neck 3x3 256->256 ~1.2 MB). Stopped at 135:
+  conv67 alone = map::at. CORRECTED (F below): not a subhar bug, the compiler crashes in its utilization raise.
+
+**C. A layer's footprint follows the THROUGHPUT TARGET, not its width.** (probe/layer_cost.py: a layer of the real
+q.har compiled alone at its real shape/precision, resources read from the HEF.)
+* Compiled alone at the default level, the compiler spreads a layer over the idle chip: 112-wide 16-bit conv4 = 15
+  HW nodes / 113 subclusters (124 FPS), 16-bit 256->1024 1x1 conv65 = 15 nodes. These are UPPER bounds (an earlier
+  note here claiming "fixed ceil(W/8) pieces" was wrong).
+* With `performance_param(fps=20)`: conv4 = 4 nodes / 10 SC (21 FPS), conv65 = 1 node / 7 SC (85 FPS). With a 0.15 cap:
+  9 / 65 and 8 / 57. Measure footprints under a realistic FPS target, never at the default.
+* Consequence for B: contexts overflow because Automri sizes layers for an FPS goal the 16-bit net cannot reach;
+  test = full compile with performance_param(fps=N) at a realistic N.
+
+**D. Modern-solver server only for big objective models.** All 236 models PP-DocLayoutV3 sent were < 500 vars:
+server 15.6 s per INFEASIBLE, 62 s per UNKNOWN; the layer-option phase ran 40+ min instead of 4. turbo2.cpp now sends
+only models with an objective and >= HAILO_CPSERVER_MINVARS (2000) variables (wire scan, exact on 423 requests).
+
+**E. Process traps.** Killing compile_hef.py leaves its `compiler` child alive (ppid 1) with the OLD env/hook: kill
+compilers by /proc/PID/cwd. Never pkill/pgrep -f a pattern that appears in your own command line (exit 144).
+
+**F. map::at in "Trying to apply higher utilization solution" (2026-11-23).** conv67 (3x3 256->256, 2 inputs, 56x56)
+compiled alone: "Model fits in single context" -> converged 71/384 SC -> "Trying to apply higher utilization solution"
+-> map::at. It FITS; the crash is in the spread-over-the-idle-chip step. performance_param(fps=20) = OK in 12 s,
+fps=100 = map::at, fps=400 = "Failed to reach fps" (max 136.5). ctx_grow.py now retries map::at / fps-miss spans down
+CTXG_FPS_LADDER (default 400,200,100,50,20) and records fps_target. Relative OUT paths break its worker (it chdirs).
+* Full-model mapping failures (s=0.12, 28 ctx, splitter_timeout=3600 cluster_timeout=1800): context 5 again, 22
+  cluster-mapping reverts on the 16 conv30 pieces fed by shortcuts from the 1664-ch 16-bit concat4; ctx_grow found
+  conv30 fits only ALONE in a context. Longer timeouts do not fix a Slotter context that cannot be mapped.
+
+
+**G. The Slotter start budget is a NODE COUNT, not a cost (2026-11-23, static RE of compiler.dis).** 0x15f5960:
+`graph_est` = call 0xe1c670(*self) = number of graph nodes passing 0xe14980 (three exclusion predicates 0xe12960 /
+0xe12930 / vtable+0x48 and node type != 0x15: compute nodes only); `hw_units` = hw->0xb4 * hw2->0x1fc = 128 (layer
+controllers). B = max(1, floor(min(n_nodes, ceil(128 * 0.6)) * x1)) = at most 77 NODES per starting context, every
+node counted 1 whatever its size. Check: B=9 -> 28 contexts, B=6 -> 41 contexts, both ~250 nodes / B. A 1.7 MB
+16-bit conv30 piece weighs the same as a tiny ew_add, so the even start overloads 16-bit nets and the hill-climb
+never digs out. Proper fix (open): seed find_initial_partition (0x1608e70) with a size-weighted / measured split
+(ctx_grow / part_pack output) instead of the count-even one.
+* Confirmed in find_initial_partition (allocator::Slotter, slotter.cpp, 0x1608e70, 0x9d0 bytes; objdump, Ghidra not
+  needed): n_ctx = ceil(n_compute_nodes / B) (divsd + ceil at 0x1608f14..f51), then nodes in topological order, a
+  context closes when its compute-node count reaches the quota (e14980 filter + cmp at 0x16091cc..dd). Pseudo-model
+  check (probe/runs/slotcount, conv chain n=24, 16-bit 256 ch at 56x56): hook log "stock 25" = 24 convs + 1 node = min(n, 77).
+* rea (Ghidra 12.1.4) on the 50 MB compiler: import exceeds the 330 s startup deadline; with analyzers disabled it
+  fails in 17 s. Use cprof/compiler.dis + fnmap_lib.strings_of (__PRETTY_FUNCTION__ / assert strings) instead.
+
+**H. Compiler FPS estimate vs live chip, conv-chain pseudo-models (2026-11-23, probe/runs/slotcount, n=24 3x3 at
+56x56, hailortcli run -t 5 on 0000:02:00.0).** est / chip FPS, compile time:
+small 64ch 8-bit 1 ctx 1907 / 1679 (64 s); 64ch 16-bit 1 ctx 265 / 263 (65 s); 256ch 8-bit 1 ctx 144 / 143 (121 s);
+256ch 16-bit 2 ctx (stock B 25, 73 Slotter iterations, 3 m 41 s) 23.1 / 7.99, batch 8 = 7.99, batch 16 = 6.99.
+Single-context estimates are right (<= 12%); the multi-context estimate is ~2.9x optimistic for 16-bit weights
+(context switch reloads them every frame). 16-bit costs 6.3x (small) and 18x (big, 2 ctx) of 8-bit on the chip.
+Expect the layout HEF well below its 1.97 FPS estimate.
+* n=100 chains (same probe, all stock B=77 -> start = ceil(100/77) = 2 contexts): small 8-bit 2 ctx 76 iterations
+  7 m 20 s; small 16-bit 4 ctx 243 it 15 m 26 s; big 8-bit 6 ctx 283 it 29 m 12 s; big 16-bit 9 ctx 440 it 1 h 1 m.
+  Search effort grows with the distance between the count-even start and the real context count = section G.

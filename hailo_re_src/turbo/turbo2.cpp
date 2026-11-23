@@ -196,7 +196,27 @@ static std::atomic<long> s_miss_us{0}, s_hit_us{0}, s_saved_us{0};
 // compiler's embedded single-worker OR-tools 7.x. Unreachable / refused -> the stock in-process solve.
 #include <sys/socket.h>
 #include <sys/un.h>
-static std::atomic<long> s_remote{0}, s_remote_fail{0};
+static std::atomic<long> s_remote{0}, s_remote_fail{0}, s_remote_skip{0};
+// Top-level wire scan of an OR-tools 7.x CpModelProto (field 2 = variables, 4 = objective; read from the descriptor
+// embedded in the compiler, turbo/oldproto.py). Needed for the server gate below: byte size does not separate the
+// cases (a 58-variable feasibility model is 222 KB, a 6.6k-variable objective model 316 KB).
+static bool model_stats(const std::string& m, long* nvars, bool* has_obj) {
+    const unsigned char* p = (const unsigned char*)m.data(); const unsigned char* e = p + m.size();
+    auto varint = [&](uint64_t* v) { *v = 0; for (int s = 0; p < e && s < 64; s += 7) { unsigned char c = *p++; *v |= uint64_t(c & 0x7f) << s; if (!(c & 0x80)) return true; } return false; };
+    *nvars = 0; *has_obj = false;
+    while (p < e) {
+        uint64_t tag, v; if (!varint(&tag)) return false;
+        switch (tag & 7) {
+            case 0: if (!varint(&v)) return false; break;
+            case 1: if (e - p < 8) return false; p += 8; break;
+            case 5: if (e - p < 4) return false; p += 4; break;
+            case 2: if (!varint(&v) || uint64_t(e - p) < v) return false; p += v;
+                    if ((tag >> 3) == 2) ++*nvars; else if ((tag >> 3) == 4) *has_obj = true; break;
+            default: return false;
+        }
+    }
+    return true;
+}
 static bool io_all(int fd, void* b, size_t n, bool wr) {
     char* p = (char*)b;
     while (n) {
@@ -209,6 +229,14 @@ static bool io_all(int fd, void* b, size_t n, bool wr) {
 static bool remote_solve(const std::string& req, std::string* out) {
     const char* path = getenv("HAILO_CPSERVER");
     if (!path || !*path) return false;
+    // Only large OPTIMIZATION models go to the server. That is where modern multi-worker CP-SAT wins (6-7k vars:
+    // OPTIMAL in 1-8 s vs UNKNOWN after ~50 s in-process). Small feasibility models are answered by the embedded
+    // solver under the compiler's own short time limits, which the server does not see: on PP-DocLayoutV3 (2026-11-22)
+    // 236 such models (< 500 vars) took the server 15.6 s per INFEASIBLE proof and 62 s per UNKNOWN, and the
+    // layer-option phase ran 40+ min instead of 4.
+    static const long minvars = getenv("HAILO_CPSERVER_MINVARS") ? atol(getenv("HAILO_CPSERVER_MINVARS")) : 2000;
+    long nv; bool obj;
+    if (!model_stats(req, &nv, &obj) || !obj || nv < minvars) { s_remote_skip++; return false; }
     int fd = socket(AF_UNIX, SOCK_STREAM, 0);
     if (fd < 0) return false;
     sockaddr_un a{}; a.sun_family = AF_UNIX; snprintf(a.sun_path, sizeof a.sun_path, "%s", path);
@@ -368,9 +396,9 @@ static void cp_stats() {
     if (!p) p = def.c_str();
     char line[512];
     snprintf(line, sizeof line,
-             "pid %d calls %ld hits %ld stored %ld verify_bad %ld solve_s %.1f hit_overhead_s %.2f saved_s %.1f remote %ld remote_fail %ld\n",
+             "pid %d calls %ld hits %ld stored %ld verify_bad %ld solve_s %.1f hit_overhead_s %.2f saved_s %.1f remote %ld remote_fail %ld remote_skip %ld\n",
              getpid(), s_calls.load(), s_hits.load(), s_store.load(), s_bad.load(), s_miss_us.load() / 1e6,
-             s_hit_us.load() / 1e6, s_saved_us.load() / 1e6, s_remote.load(), s_remote_fail.load());
+             s_hit_us.load() / 1e6, s_saved_us.load() / 1e6, s_remote.load(), s_remote_fail.load(), s_remote_skip.load());
     if (p) { if (FILE* f = fopen(p, "a")) { fputs(line, f); fclose(f); } }
     if (getenv("HAILO_TURBO_LOG")) fputs(line, stderr);
 }
@@ -473,6 +501,37 @@ static void dec_install() {
     if (!patch_jmp(f, 16, (void*)&dec_hook)) fprintf(stderr, "[turbo] decrementer patch failed\n");
 }
 
+// ---- Slotter initial per-context budget (DFC 3.33, fn at 0x15f5960, called once from
+//   allocator::Slotter::search_multi_context_partition right before find_initial_partition(..., short budget)).
+//   Returns B = max(1, floor(min(graph_estimate, ceil(hw_units * x0)) * x1)), x0 = the resources_param cap (0.6 at the
+//   default level): 128 units * 0.6 = 77 on Hailo-8. find_initial_partition fills each context greedily up to B estimated
+//   units; the Slotter then repairs overloaded contexts ("Automri finished with too many resources on context_N") a
+//   few nodes at a time. For 16-bit-heavy nets the per-node estimate is far too low (16-bit layers are defused into
+//   more pieces), so every initial context is overloaded: PP-DocLayoutV3 mix16 ran 4 h / ~1,200 failed iterations and
+//   reached ~10 contexts without one valid partition. A smaller budget starts from more, lighter contexts.
+//   HAILO_INIT_SCALE=s  B = max(1, round(B * s))     HAILO_INIT_UNITS=n  B = n     HAILO_INIT_LOG=1  print B
+static const uintptr_t kCtxOff = 0x15f5960;
+static const unsigned char kCtxProlog[19] = {0xf3, 0x0f, 0x1e, 0xfa, 0x55, 0x53, 0x48, 0x83, 0xec, 0x28,
+                                             0x48, 0x8b, 0x3f, 0xf2, 0x0f, 0x11, 0x44, 0x24, 0x08};
+using CtxFn = int (*)(void*, double, double);
+static CtxFn g_ctx_orig;
+extern "C" int ctx_hook(void* self, double x0, double x1) {
+    int n = (short)g_ctx_orig(self, x0, x1), out = n;
+    if (const char* u = getenv("HAILO_INIT_UNITS")) out = atoi(u);
+    else if (const char* sc = getenv("HAILO_INIT_SCALE")) out = (int)(n * atof(sc) + 0.5);
+    if (out < 1) out = 1;
+    if (getenv("HAILO_INIT_LOG") || out != n)
+        fprintf(stderr, "[turbo] Slotter initial per-context budget: stock %d (x0=%g x1=%g) -> %d\n", n, x0, x1, out);
+    return (short)out;
+}
+static void ctx_install() {
+    if (!getenv("HAILO_INIT_SCALE") && !getenv("HAILO_INIT_UNITS") && !getenv("HAILO_INIT_LOG")) return;
+    unsigned char* f = (unsigned char*)(exe_base() + kCtxOff);
+    if (memcmp(f, kCtxProlog, 19) != 0) { fprintf(stderr, "[turbo] initial-context prologue mismatch: off\n"); return; }
+    g_ctx_orig = (CtxFn)make_tramp(f, kCtxProlog, 19);
+    if (!patch_jmp(f, 19, (void*)&ctx_hook)) fprintf(stderr, "[turbo] initial-context patch failed\n");
+}
+
 __attribute__((constructor)) static void turbo_init() {
     char exe[4096];
     ssize_t n = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
@@ -482,5 +541,6 @@ __attribute__((constructor)) static void turbo_init() {
     if (!base || (strcmp(base + 1, "compiler") != 0 && strcmp(base + 1, "compiler.real") != 0)) return;
     cp_install();
     dec_install();
+    ctx_install();
     std::thread(apply).detach();
 }

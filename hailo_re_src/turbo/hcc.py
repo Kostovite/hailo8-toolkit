@@ -39,6 +39,11 @@ VARIANTS = {
     "lat": "performance_param(optimize_for_batch=1)\n",
     "fps2k": "performance_param(fps=2000)\n",
     "fps4k": "performance_param(fps=4000)\n",
+    # RULES 29F: 16-bit contexts that crash (map::at) or time out spreading over the idle chip compile at a capped target
+    "f20": "performance_param(fps=20)\n",
+    "f50": "performance_param(fps=50)\n",
+    "f100": "performance_param(fps=100)\n",
+    "f200": "performance_param(fps=200)\n",
 }
 DEVS = tuple(os.environ.get("HCC_DEVS", "0000:02:00.0,0000:03:00.0").split(","))  # HCC_DEVS: keep a chip free
 CACHE = f"{R}/turbo/t/subcache"
